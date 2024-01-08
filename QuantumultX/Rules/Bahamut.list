@@ -1,0 +1,15 @@
+# NAME: Bahamut
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2023-12-14 16:55:52
+# HOST-SUFFIX: 7
+# USER-AGENT: 1
+# TOTAL: 8
+HOST-SUFFIX,bahamut.akamaized.net,PROXY
+HOST-SUFFIX,bahamut.com.tw,PROXY
+HOST-SUFFIX,digicert.com,PROXY
+HOST-SUFFIX,gamer.com.tw,PROXY
+HOST-SUFFIX,gvt1.com,PROXY
+HOST-SUFFIX,hinet.net,PROXY
+HOST-SUFFIX,viblast.com,PROXY
+USER-AGENT,Anime*,PROXY

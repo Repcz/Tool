@@ -1,0 +1,25 @@
+# Author: 可莉🅥
+# Date: 2024-01-05 22:40:35
+HOST,api.msn.com,PROXY
+HOST,assets.msn.com,PROXY
+HOST,copilot.microsoft.com,PROXY
+HOST,dealczars.bing-shopping.microsoft-falcon.io,PROXY
+# HOST,eas.outlook.com
+HOST,edgeservices.bing.com,PROXY
+HOST,functional.events.data.microsoft.com,PROXY
+HOST,gateway.bingviz.microsoftapp.net,PROXY
+HOST,location.microsoft.com,PROXY
+HOST,login.microsoftonline.com,PROXY
+HOST,proteus-assetstore.azurewebsites.net,PROXY
+HOST,self.events.data.microsoft.com,PROXY
+HOST,services.bingapis.com,PROXY
+HOST,shopping.bing-shopping.microsoft-falcon.io,PROXY
+HOST,sapphire.api.microsoftapp.net,PROXY
+HOST,sr.bing.com,PROXY
+HOST,sydney.bing.com,PROXY
+HOST,ssl.bing.com,PROXY
+HOST,th.bing.com,PROXY
+HOST,www.bing.com,PROXY
+HOST,www2.bing.com,PROXY
+HOST,www.bingapis.com,PROXY
+HOST-SUFFIX,edge.microsoft.com,PROXY

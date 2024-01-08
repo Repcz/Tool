@@ -1,0 +1,227 @@
+# 官方文档：https://book.egernapp.com
+#
+# Author:https://github.com/Repcz
+# TG:https://t.me/QVQ_Channel
+# 以 ';' 或 '#' 或 '//' 开头的配置文件行为注释行
+#
+# 最后更新时间: 2023/12/11
+#
+# ================
+
+# TUN模式
+vif_only: true
+
+# 配置为一个 DNS 服务器地址的数组，这些地址可以是 IPv4 或 IPv6 地址，也可以是 "system" 来使用系统 DNS 服务器。
+dns_servers:  # DNS服务器
+- 119.29.29.29
+- 233.5.5.5
+
+# 为特定的主机名指定 IP 地址或其他主机名，以覆盖 DNS 查询的结果
+hosts:        # DNS映射
+  "dns.alidns.com": "223.5.5.5" # https://dns.alidns.com/dns-query
+  "doh.pub": "1.12.12.12"       # https://doh.pub/dns-query
+  "dot.pub": "1.12.12.12"       # dot.pub:853
+
+# Egern 将仅使用 dns_servers 中的 DNS 服务器来解析 SecureDns 中 servers 字段的域名。
+# 所有其他 DNS 查询将通过 SecureDns 中配置的安全 DNS 服务器进行。
+secure_dns:   # 安全的DNS
+  servers:    # 支持 DoH（以 https:// 开头）、DoT（以 tls:// 开头）和 DoQ（以 quic:// 开头）
+  - https://dns.alidns.com/dns-query
+  ecs: false  # 是否启用 EDNS 客户端子网 (ECS)
+  public_ip_lookup_url: ''      # 公网 IP 查找 URL。这个 URL 必须返回设备的公网 IP 地址。
+
+policy_groups:
+- select:
+    name: 国外网站
+    policies:
+    - 🇭🇰 香港节点
+    - 🇺🇸 美国节点
+    - 🇸🇬 狮城节点
+    - 🇯🇵 日本节点
+    - 🇨🇳 台湾节点
+    - 手动选择
+- select:
+    name: 国际媒体
+    policies:
+    - 🇭🇰 香港节点
+    - 🇺🇸 美国节点
+    - 🇸🇬 狮城节点
+    - 🇯🇵 日本节点
+    - 🇨🇳 台湾节点
+    - 手动选择
+- select:
+    name: 苹果服务
+    policies:
+    - DIRECT
+    - 🇭🇰 香港节点
+    - 🇺🇸 美国节点
+    - 🇸🇬 狮城节点
+    - 🇯🇵 日本节点
+    - 🇨🇳 台湾节点
+    - 手动选择
+- select:
+    name: 微软服务
+    policies:
+    - 🇭🇰 香港节点
+    - 🇺🇸 美国节点
+    - 🇸🇬 狮城节点
+    - 🇯🇵 日本节点
+    - 🇨🇳 台湾节点
+    - 手动选择
+- select:
+    name: 谷歌服务
+    policies:
+    - 🇭🇰 香港节点
+    - 🇺🇸 美国节点
+    - 🇸🇬 狮城节点
+    - 🇯🇵 日本节点
+    - 🇨🇳 台湾节点
+    - 手动选择
+- select:
+    name: 推特消息
+    policies:
+    - 🇭🇰 香港节点
+    - 🇺🇸 美国节点
+    - 🇸🇬 狮城节点
+    - 🇯🇵 日本节点
+    - 🇨🇳 台湾节点
+    - 手动选择
+- select:
+    name: 电报消息
+    policies:
+    - 🇭🇰 香港节点
+    - 🇺🇸 美国节点
+    - 🇸🇬 狮城节点
+    - 🇯🇵 日本节点
+    - 🇨🇳 台湾节点
+    - 手动选择
+- select:
+    name: OpenAI
+    policies:
+    - 🇭🇰 香港节点
+    - 🇺🇸 美国节点
+    - 🇸🇬 狮城节点
+    - 🇯🇵 日本节点
+    - 🇨🇳 台湾节点
+    - 手动选择
+- select:
+    name: 哔哩哔哩
+    policies:
+    - DIRECT
+    - 🇭🇰 香港节点
+    - 🇨🇳 台湾节点
+- select:
+    name: 广告拦截
+    policies:
+    - REJECT
+    - DIRECT
+- select:
+    name: 兜底分流
+    policies:
+    - 🇭🇰 香港节点
+    - 🇺🇸 美国节点
+    - 🇸🇬 狮城节点
+    - 🇯🇵 日本节点
+    - 🇨🇳 台湾节点
+    - 手动选择
+- auto_test:
+    name: 🇭🇰 香港节点
+    policies:
+    - 手动选择
+    flatten: true
+    filter: ^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$
+    tolerance: 50
+- auto_test:
+    name: 🇺🇸 美国节点
+    policies:
+    - 手动选择
+    flatten: true
+    filter: ^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|United States)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$
+    tolerance: 50
+- auto_test:
+    name: 🇸🇬 狮城节点
+    policies:
+    - 手动选择
+    flatten: true
+    filter: ^(?=.*((?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$
+    tolerance: 50
+- auto_test:
+    name: 🇯🇵 日本节点
+    policies:
+    - 手动选择
+    flatten: true
+    filter: ^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|(\b(JP|Japan)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$
+    tolerance: 50
+- auto_test:
+    name: 🇨🇳 台湾节点
+    policies:
+    - 手动选择
+    flatten: true
+    filter: ^(?=.*((?i)🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$
+    tolerance: 50
+- external:
+    name: 手动选择
+    type: select
+    urls:
+    - http://your-service-provider
+    hidden: false
+
+rules:
+- rule_set:
+    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/APNs.yaml
+    policy: DIRECT
+- rule_set:
+    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Ads_ConnersHua.yaml
+    policy: 广告拦截
+- rule_set:
+    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Hijacking_ConnersHua.yaml
+    policy: 广告拦截
+- rule_set:
+    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Tracking_ConnersHua.yaml
+    policy: 广告拦截
+- rule_set:
+    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/OpenAI.yaml
+    policy: OpenAI
+- rule_set:
+    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Apple.yaml
+    policy: 苹果服务
+- rule_set:
+    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Github.yaml
+    policy: 微软服务
+- rule_set:
+    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/OneDrive.yaml
+    policy: 微软服务
+- rule_set:
+    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Microsoft.yaml
+    policy: 微软服务
+- rule_set:
+    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/YouTube.yaml
+    policy: 谷歌服务
+- rule_set:
+    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Google.yaml
+    policy: 谷歌服务
+- rule_set:
+    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Telegram.yaml
+    policy: 电报消息
+- rule_set:
+    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Twitter.yaml
+    policy: 推特消息
+- rule_set:
+    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/ProxyMedia.yaml
+    policy: 国际媒体
+- rule_set:
+    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/ProxyGFW.yaml
+    policy: 国外网站
+- rule_set:
+    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Bilibili.yaml
+    policy: 哔哩哔哩
+- rule_set:
+    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Lan.yaml
+    policy: DIRECT
+- geoip:
+    match: CN
+    policy: DIRECT
+- default:
+    policy: 兜底分流
+mitm:
+  enabled: true

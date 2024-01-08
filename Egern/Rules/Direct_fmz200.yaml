@@ -1,0 +1,70 @@
+domain_set:
+- ad.12306.cn
+- log.mmstat.com
+- sycm.mmstat.com
+- static.jssp.tv
+- lain.bgm.tv
+- tiao.cjkypo.com
+- ok.zuidapic.com
+- ts.thefilehosting.com
+- deo.shopeemobile.com
+- m3u8.255tv.tk
+- m3u8.mstopq.com
+- ain.bgm.tv
+- sdk.alibaba.com.ailbaba.me
+- img.ffzypic.com
+- img.liangzipic.com
+- img.bfzypic.com
+- img.kuaikanzy.net
+- vip.imgffzy.com
+- vip.ffzyread.com
+- cdn.jsdelivr.net
+- image.maimn.com
+- time.apple.com
+- init.ess.apple.com
+- smp-device-content.apple.com
+- itunes.apple.com
+- analytics.strava.com
+- fairplay.l.qq.com
+- livew.l.qq.com
+- vd.l.qq.com
+- vi.l.qq.com
+- msg.umeng.com
+- msg.umengcloud.com
+domain_suffix_set:
+- weather-data.apple.com
+- weather-map.apple.com
+- weather-analytics-events.apple.com
+domain_keyword_set:
+- anti-ad.net
+- vip.lz-cdn
+- ax1x.com
+- o.lencr.org
+- ttcdn-tos.kkimg.cc
+- bfzycdn.com
+- vip.kuaikan-cdn
+- vip.ffzy-play
+- vip.ffzy-online
+- push.apple.com
+- weather-edge.apple.com
+- weather-adge.apple.com
+- buy.itunes.apple.com
+- icloud.com
+- api.smoot.apple.com
+- api.smoot.apple.cn
+- ssl.apple.com
+- humb.apple.com
+- api-adservices.apple.com
+- ls.apple.com
+- gsa.apple.com
+- ess.apple.com
+- ctc.qzs.qzone.qq.com
+- aw-s.tripcdn.com
+- trip.com
+domain_regex_set:
+ip_cidr_set:
+- 192.168.0.1/24
+- 192.168.1.1/24
+ip_cidr6_set:
+asn_set:
+url_regex_set:

@@ -1,0 +1,23 @@
+# 内容：Bilibili 哔哩哔哩
+# 数量：21条
+USER-AGENT,Bilibili*
+USER-AGENT,bili*
+USER-AGENT,bili-inter*
+DOMAIN,apiintl.biliapi.net,extended-matching
+DOMAIN,upos-hz-mirrorakam.akamaized.net,extended-matching
+DOMAIN-SUFFIX,acg.tv,extended-matching
+DOMAIN-SUFFIX,acgvideo.com,extended-matching
+DOMAIN-SUFFIX,b23.tv,extended-matching
+DOMAIN-SUFFIX,bigfun.cn,extended-matching
+DOMAIN-SUFFIX,bigfunapp.cn,extended-matching
+DOMAIN-SUFFIX,biliapi.com,extended-matching
+DOMAIN-SUFFIX,biliapi.net,extended-matching
+DOMAIN-SUFFIX,bilibili.com,extended-matching
+DOMAIN-SUFFIX,bilibili.tv,extended-matching
+DOMAIN-SUFFIX,biligame.com,extended-matching
+DOMAIN-SUFFIX,biligame.net,extended-matching
+DOMAIN-SUFFIX,bilivideo.cn,extended-matching
+DOMAIN-SUFFIX,bilivideo.com,extended-matching
+DOMAIN-SUFFIX,hdslb.com,extended-matching
+DOMAIN-SUFFIX,im9.com,extended-matching
+DOMAIN-SUFFIX,smtcdns.net,extended-matching

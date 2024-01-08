@@ -1,0 +1,13 @@
+#!name=功能｜预览QX资源
+#!desc=将qx的一键导入链接复制到Safari打开可以预览 @chengkongyiban
+#!author = chengkongyiban
+#!update = 2023-7-27
+#!source = https://github.com/chengkongyiban/shadowrocket/raw/main/scripts/qx-resource-preview.js
+
+[Script]
+
+qx-resource-preview_9 = type=http-request, pattern=^https:\/\/quantumult\.app\/x\/open-app\/add-resource\?remote-resource=, requires-body=true, max-size=3145728, script-path=https://github.com/chengkongyiban/shadowrocket/raw/main/scripts/qx-resource-preview.js, timeout=60, script-update-interval=0
+
+[MITM]
+
+hostname = %APPEND% quantumult.app

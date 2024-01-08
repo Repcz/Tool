@@ -1,0 +1,20 @@
+# 内容：OneDrive
+# 数量：18条
+USER-AGENT,OneDrive*,PROXY
+USER-AGENT,OneDriveiOSApp*,PROXY
+#PROCESS-NAME,OneDrive
+#PROCESS-NAME,OneDriveUpdater
+HOST-KEYWORD,1drv,PROXY
+HOST-KEYWORD,onedrive,PROXY
+HOST-KEYWORD,skydrive,PROXY
+HOST-SUFFIX,livefilestore.com,PROXY
+HOST-SUFFIX,oneclient.sfx.ms,PROXY
+HOST-SUFFIX,onedrive.com,PROXY
+HOST-SUFFIX,onedrive.live.com,PROXY
+HOST-SUFFIX,photos.live.com,PROXY
+HOST-SUFFIX,sharepoint.com,PROXY
+HOST-SUFFIX,sharepointonline.com,PROXY
+HOST-SUFFIX,skydrive.wns.windows.com,PROXY
+HOST-SUFFIX,spoprod-a.akamaihd.net,PROXY
+HOST-SUFFIX,storage.live.com,PROXY
+HOST-SUFFIX,storage.msn.com,PROXY

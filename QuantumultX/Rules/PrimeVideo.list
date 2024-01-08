@@ -1,0 +1,33 @@
+# NAME: PrimeVideo
+# AUTHOR: blackmatrix7
+# REPO: https://github.com/blackmatrix7/ios_rule_script
+# UPDATED: 2023-12-14 16:57:21
+# DOMAIN: 9
+# HOST-KEYWORD: 1
+# HOST-SUFFIX: 15
+# TOTAL: 25
+HOST,atv-ps.amazon.com,PROXY
+HOST,avodmp4s3ww-a.akamaihd.net,PROXY
+HOST,d1v5ir2lpwr8os.cloudfront.net,PROXY
+HOST,d22qjgkvxw22r6.cloudfront.net,PROXY
+HOST,d25xi40x97liuc.cloudfront.net,PROXY
+HOST,d27xxe7juh1us6.cloudfront.net,PROXY
+HOST,dmqdd6hw24ucf.cloudfront.net,PROXY
+HOST,fls-na.amazon.com,PROXY
+HOST,www.amazon.com,PROXY
+HOST-SUFFIX,aiv-cdn.net,PROXY
+HOST-SUFFIX,aiv-delivery.net,PROXY
+HOST-SUFFIX,amazonprimevideo.cn,PROXY
+HOST-SUFFIX,amazonprimevideo.com.cn,PROXY
+HOST-SUFFIX,amazonprimevideos.com,PROXY
+HOST-SUFFIX,amazonvideo.cc,PROXY
+HOST-SUFFIX,amazonvideo.com,PROXY
+HOST-SUFFIX,media-amazon.com,PROXY
+HOST-SUFFIX,prime-video.com,PROXY
+HOST-SUFFIX,primevideo.cc,PROXY
+HOST-SUFFIX,primevideo.com,PROXY
+HOST-SUFFIX,primevideo.info,PROXY
+HOST-SUFFIX,primevideo.org,PROXY
+HOST-SUFFIX,primevideo.tv,PROXY
+HOST-SUFFIX,pv-cdn.net,PROXY
+HOST-KEYWORD,avoddashs,PROXY

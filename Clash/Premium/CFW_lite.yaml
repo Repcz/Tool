@@ -1,0 +1,127 @@
+# Author:https://github.com/Repcz
+# TG:https://t.me/QVQ_Channel
+# 以 '#' 或 '//' 开头的配置文件行为注释行
+#
+# 此配置仅适用于Clash for Windows,其他Clash客户端未经测试
+#
+# 最后更新时间: 2023/12/2
+#
+# ================
+
+mixed-port: 7893      # 混合端口 HTTP和SOCKS5用一个端口
+allow-lan: true       # 允许局域网的连接（可用来共享代理）
+bind-address: "*"     # 仅在将allow-lan设置为true时适用
+                      # #"*": 绑定所有IP地址
+ipv6: false           # 开启 IPv6 总开关,关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录
+mode: rule            # 规则模式：rule（规则） / global（全局代理）/ direct（全局直连）/ script (脚本)
+log-level: info       # 设置日志输出级别 (5 个级别：silent / error / warning / info / debug）
+external-controller: '127.0.0.1:9090'   #外部控制器,可以使用 RESTful API 来控制你的 clash 内核
+
+dns:
+  enable: true             # 关闭将使用系统 DNS
+  ipv6: false              # IPV6解析开关；如果为false，将返回ipv6结果为空
+  enhanced-mode: fake-ip   # 模式：redir-host或fake-ip
+  listen: 0.0.0.0:53       # DNS监听地址
+  fake-ip-range: 198.18.0.1/16    # Fake-IP解析地址池
+  fake-ip-filter: ['*.lan', 'cable.auth.com', '*.msftconnecttest.com', '*.msftncsi.com', 'network-test.debian.org', 'detectportal.firefox.com', 'resolver1.opendns.com', '*.srv.nintendo.net', '*.stun.playstation.net', 'xbox.*.microsoft.com', '*.xboxlive.com', 'stun.*', 'global.turn.twilio.com', 'global.stun.twilio.com', 'localhost.*.qq.com', 'localhost.*.weixin.qq.com', '*.logon.battlenet.com.cn', '*.logon.battle.net', '*.blzstatic.cn', 'music.163.com', '*.music.163.com', '*.126.net', 'musicapi.taihe.com', 'music.taihe.com', 'songsearch.kugou.com', 'trackercdn.kugou.com', '*.kuwo.cn', 'api-jooxtt.sanook.com', 'api.joox.com', 'joox.com', 'y.qq.com', '*.y.qq.com', 'streamoc.music.tc.qq.com', 'mobileoc.music.tc.qq.com', 'isure.stream.qqmusic.qq.com', 'dl.stream.qqmusic.qq.com', 'aqqmusic.tc.qq.com', 'amobile.music.tc.qq.com', '*.xiami.com', '*.music.migu.cn', 'music.migu.cn', 'proxy.golang.org', '*.mcdn.bilivideo.cn', '*.cmpassport.com', 'id6.me', 'open.e.189.cn', 'mdn.open.wo.cn', 'opencloud.wostore.cn', 'auth.wosms.cn', '*.jegotrip.com.cn', '*.icitymobile.mobi', '*.pingan.com.cn', '*.cmbchina.com', 'pool.ntp.org', '*.pool.ntp.org', 'ntp.*.com', 'time.*.com', 'ntp?.*.com', 'time?.*.com', 'time.*.gov', 'time.*.edu.cn', '*.ntp.org.cn', 'PDC._msDCS.*.*', 'DC._msDCS.*.*', 'GC._msDCS.*.*']
+                          # fake ip 白名单列表'以下地址不会下发fakeip映射用于连接
+  nameserver: [https://doh.pub/dns-query, https://dns.alidns.com/dns-query]               
+                          # 默认DNS服务器，支持udp/tcp/dot/doh/doq
+  
+# cfw-bypass: ['localhost', '*.local', 'captive.apple.com', 'e.crashlytics.com', 'sequoia.apple.com', 'seed-sequoia.siri.apple.com', 'www.baidu.com', 'passenger.t3go.cn', 'yunbusiness.ccb.com', 'wxh.wo.cn', 'gate.lagou.com', 'www.abchina.com.cn', 'login-service.mobile-bank.psbc.com', 'mobile-bank.psbc.com', '10.0.0.0/8', '100.64.0.0/10', '127.0.0.1/32', '169.254.0.0/16', '172.16.0.0/12', '192.168.0.0/16', '192.168.122.1/32', '193.168.0.1/32', '224.0.0.0/4', '240.0.0.0/4', '255.255.255.255/32', '::1/128', 'fc00::/7', 'fd00::/8', 'fe80::/10', 'ff00::/8', '2001::/32', '2001:db8::/32', '2002::/16', '::ffff:0:0:0:0/1', '::ffff:128:0:0:0/1' ]
+                          # 系统代理跳过列表
+ 
+###建立锚点
+    
+# 策略组引用相关参数
+# pr: &pr {type: select, proxies: [🚀 手动切换, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点,  🇨🇳 台湾节点, ♻️ 自动选择, DIRECT]}
+
+# 订阅更新和延迟测试相关参数
+p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1800}}
+
+# 自动选择策略组：选取延迟最低节点
+auto: &auto {type: url-test, lazy: true, url: http://www.gstatic.com/generate_204, interval: 900, use: [Subscribe]}
+
+# 手动选择策略组：手动选择想要的节点/策略组
+select: &select {type: select, use: [Subscribe]}
+
+# 故障回退策略组：策略组将按顺序选择你列表中第一个可用的节点
+fallback: &fallback {type: fallback, lazy: true, url: http://www.gstatic.com/generate_204, interval: 900, use: [Subscribe]}
+
+# 负载均衡策略组：不同的请求将使用不同的代理节点
+load-balance: &load-balance {type: load-balance, lazy: true, url: http://www.gstatic.com/generate_204, interval: 900, use: [Subscribe]}
+
+# classical规则相关
+c: &c {type: http, behavior: classical, interval: 86400}
+
+# domain规则相关
+d: &d {type: http, behavior: domain, interval: 86400}
+
+# ipcidr规则相关
+i: &i {type: http, behavior: ipcidr, interval: 86400}
+
+###结束
+
+proxy-providers:
+  Subscribe: {<<: *p, url: https://sub.xeton.dev/sub?target=clash&url=你的订阅链接&list=true&udp=true}
+    # 可以使用任意类型的链接替换上面文字,多个链接使用英文符号的竖杠|隔开一起写上即可
+    # Sub-Store生成的Gist链接(Clash类型),可以直接替换上述url引号中的部分,具体见Sub-Store教程         
+          
+proxies: null
+
+proxy-groups:
+
+ - {name: 🌏 国外网站, <<: *select}
+  
+rule-providers:
+
+ #广告拦截
+ Anti-AD: {<<: *d, path: ./ruleset/anti-ad-clash.yaml, url: https://anti-ad.net/clash.yaml}
+
+ #苹果服务
+ icloud: {<<: *d, path: ./ruleset/icloud.yaml, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt}
+ apple: {<<: *d, path: ./ruleset/apple.yaml, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt}
+
+ #代理网站
+ proxy: {<<: *d, path: ./ruleset/proxy.yaml, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt}
+
+ #直连网站
+ direct: {<<: *d, path: ./ruleset/direct.yaml, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt}
+
+ #私人域名
+ private: {<<: *d, path: ./ruleset/private.yaml, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt}
+
+ #电报消息
+ telegramcidr: {<<: *i, path: ./ruleset/telegramcidr.yaml, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt}
+
+ #中国大陆IP
+ cncidr: {<<: *i, path: ./ruleset/cncidr.yaml, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt}
+
+ #局域网
+ lancidr: {<<: *i, path: ./ruleset/lancidr.yaml, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt}
+
+ #应用
+ applications: {<<: *c, path: ./ruleset/applications.yaml, url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/applications.txt}
+
+    
+rules:
+  - SCRIPT,quic,REJECT
+  - RULE-SET,applications,DIRECT
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - RULE-SET,private,DIRECT
+  - RULE-SET,Anti-AD,REJECT
+  - RULE-SET,telegramcidr,🌏 国外网站
+  - RULE-SET,icloud,DIRECT
+  - RULE-SET,apple,DIRECT
+  - RULE-SET,proxy,🌏 国外网站
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,cncidr,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,🌏 国外网站
+  
+script:
+  shortcuts:
+    quic: network == 'udp' and dst_port == 443  
+  

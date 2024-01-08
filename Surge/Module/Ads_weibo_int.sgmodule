@@ -1,0 +1,30 @@
+#!name=去广告｜微博国际版
+#!desc=去除国内版微博广告 @keywos @kokoryh
+#!author = keywos kokoryh
+#!update = 2023-09-06 
+#!source = https://raw.githubusercontent.com/Keywos/rule/main/module/weibous.sgmodule
+
+
+# 🔗 模块链接
+#SUBSCRIBED http://script.hub/file/_start_/https://raw.githubusercontent.com/Keywos/rule/main/module/weibous.sgmodule/_end_/%E5%8E%BB%E5%B9%BF%E5%91%8A%EF%BD%9C%E5%BE%AE%E5%8D%9A%E5%9B%BD%E9%99%85%E7%89%88.sgmodule?n=%E5%8E%BB%E5%B9%BF%E5%91%8A%EF%BD%9C%E5%BE%AE%E5%8D%9A%E5%9B%BD%E9%99%85%E7%89%88%2B%40keywos%40kokoryh&type=surge-module&target=surge-module
+
+
+[Script]
+
+# 趋势页 | 开屏广告 | 用户中心 | 热搜置顶 | 我的页面 尊享专属 | 瀑布流去广告
+http-response ^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?(ct=(feed&a=trends|user&a=get_searching_info)|a=(get_coopen_ads|user_center|search_topic|open_app&auth|icon_center)) requires-body=1,script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/weibous.js
+
+http-response ^https?:\/\/api\.weibo\.cn\/\d\/statuses\/.*timeline requires-body=1,script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/weibous.js
+
+http-response ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php requires-body=1,script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/weibous.js
+
+[Map Local]
+
+# 热门视频 | 热推荐
+^https?:\/\/api\.weibo\.cn\/\d\/(cardlist\?v_f=\d|ad\/weibointl\?) data="https://raw.githubusercontent.com/Keywos/rule/main/mocks/reject-dict.json"
+
+^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=hot_search_users data="https://raw.githubusercontent.com/Keywos/rule/main/mocks/reject-dict.json"
+
+[MITM]
+
+hostname = %APPEND% *api.weibo.cn,sdkapp.uve.weibo.com

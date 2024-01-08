@@ -1,0 +1,676 @@
+# Author: 可莉🅥
+# GitLab: https://gitlab.com/lodepuly/vpn_tool/-/tree/master/tool/Clash
+# 引用: https://github.com/dogfight360/UsbEAm
+# 2023-12-18 16:00:40
+
+# EPIC游戏下载、更新[国际]
+DOMAIN,download.epicgames.com
+DOMAIN,download2.epicgames.com
+DOMAIN,download3.epicgames.com
+DOMAIN,download4.epicgames.com
+DOMAIN,epicgames-download1.akamaized.net
+DOMAIN,fastly-download.epicgames.com
+
+# Battle.net战网游戏下载、更新[国际]
+DOMAIN,blzddist1-a.akamaihd.net
+DOMAIN,blzddistkr1-a.akamaihd.net
+DOMAIN,blizzard.gcdn.cloudn.co.kr
+DOMAIN,eu.cdn.blizzard.com
+DOMAIN,kr.cdn.blizzard.com
+DOMAIN,level3.blizzard.com
+DOMAIN,us.cdn.blizzard.com
+
+# GOG游戏下载、更新[国际]
+DOMAIN,gog-cdn-fastly-cp77.gog.com
+DOMAIN,gog-cdn-fastly.gog.com
+DOMAIN,gog-cdn-lumen.secure2.footprint.net
+
+# 微软游戏下载、更新[国际]
+DOMAIN,assets1.xboxlive.com
+DOMAIN,assets2.xboxlive.com
+DOMAIN,ak.tiles.virtualearth.net
+DOMAIN,pf-cdn-content-prod.azureedge.net
+DOMAIN,xvcf1.xboxlive.com
+DOMAIN,xvcf2.xboxlive.com
+
+# 微软全家桶上传、下载、同步、在线安装[国际]
+DOMAIN,azurestackhubuat.download.prss.microsoft.com
+DOMAIN,azurestackreleases.download.prss.microsoft.com
+DOMAIN,azuremigratetest.download.prss.microsoft.com
+DOMAIN,azuremigrate.download.prss.microsoft.com
+DOMAIN,afdshield-or.download.prss.microsoft.com
+DOMAIN,azurestackhub.download.prss.microsoft.com
+DOMAIN,contentsync.onenote.com
+DOMAIN,collaborateppe.download.prss.microsoft.com
+DOMAIN,cbdstest.download.prss.microsoft.com
+DOMAIN,collaborate.download.prss.microsoft.com
+DOMAIN,d.docs.live.net
+DOMAIN,dreamspark.download.prss.microsoft.com
+DOMAIN,db.download.prss.microsoft.com
+DOMAIN,dreamsparkuat.download.prss.microsoft.com
+DOMAIN,hierarchyapi.onenote.com
+DOMAIN,itacademy.download.prss.microsoft.com
+DOMAIN,itacademyuat.download.prss.microsoft.com
+DOMAIN,lex.download.prss.microsoft.com
+DOMAIN,lexuat.download.prss.microsoft.com
+DOMAIN,msproductuat.download.prss.microsoft.com
+DOMAIN,msconnect.download.prss.microsoft.com
+DOMAIN,mbsuat.download.prss.microsoft.com
+DOMAIN,myvsuat.download.prss.microsoft.com
+DOMAIN,msdprod-ad.download.prss.microsoft.com
+DOMAIN,mpnbenefitsrtl.download.prss.microsoft.com
+DOMAIN,msdn.download.prss.microsoft.com
+DOMAIN,myvs.download.prss.microsoft.com
+DOMAIN,mpnbenefitsrtluat.download.prss.microsoft.com
+DOMAIN,msproduct.download.prss.microsoft.com
+DOMAIN,mbs.download.prss.microsoft.com
+DOMAIN,mpnbenefits.download.prss.microsoft.com
+DOMAIN,officecdn.microsoft.com
+DOMAIN,oemsocuat.download.prss.microsoft.com
+DOMAIN,officemkt.download.prss.microsoft.com
+DOMAIN,oemsoc.download.prss.microsoft.com
+DOMAIN,osrelease.download.prss.microsoft.com
+DOMAIN,officemktuat.download.prss.microsoft.com
+DOMAIN,public.bn.files.1drv.com
+DOMAIN,rsm.download.prss.microsoft.com
+DOMAIN,rsmuat.download.prss.microsoft.com
+DOMAIN,storecorefulfillment.download.prss.microsoft.com
+DOMAIN,surface.download.prss.microsoft.com
+DOMAIN,software-static.download.prss.microsoft.com
+DOMAIN,software.download.prss.microsoft.com
+DOMAIN,vlportal.download.prss.microsoft.com
+DOMAIN,volic.download.prss.microsoft.com
+DOMAIN,visualstudio.download.prss.microsoft.com
+DOMAIN,windbg.download.prss.microsoft.com
+DOMAIN-SUFFIX,storage.live.com
+
+# UBisoft Connect(Uplay)育碧游戏下载、更新[国际]
+DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com
+DOMAIN,uplaypc-s-ubisoft-ww.cdn.ubi.com
+
+# Origin艺电游戏平台[国际]
+DOMAIN,download.dm.origin.com
+DOMAIN,origin-a.akamaihd.net
+DOMAIN,ssl-lvlt.cdn.ea.com
+
+# EA Desktop游戏下载[国际]
+DOMAIN,origin-a.akamaihd.net
+DOMAIN,ssl-lvlt.cdn.ea.com
+
+# Steam游戏下载、游戏更新、创意工坊下载、Steam.TV直播、社区实况直播[国际]
+DOMAIN-SUFFIX,atl1.steamcontent.com
+DOMAIN-SUFFIX,ams1.steamcontent.com
+DOMAIN-SUFFIX,akl-tpwr.steamcontent.com
+DOMAIN-SUFFIX,akl-vgnz.steamcontent.com
+DOMAIN-SUFFIX,ala-kzkt.steamcontent.com
+DOMAIN-SUFFIX,bkk-true.steamcontent.com
+DOMAIN-SUFFIX,bkk-jast.steamcontent.com
+DOMAIN-SUFFIX,bom1.steamcontent.com
+DOMAIN-SUFFIX,bne-aubb.steamcontent.com
+DOMAIN-SUFFIX,bud-retn.steamcontent.com
+DOMAIN-SUFFIX,cfc-acol.steamcontent.com
+DOMAIN-SUFFIX,dxb1.steamcontent.com
+DOMAIN-SUFFIX,dfw1.steamcontent.com
+DOMAIN-SUFFIX,dsa-ask4.steamcontent.com
+DOMAIN-SUFFIX,eze1.steamcontent.com
+DOMAIN-SUFFIX,fra1.steamcontent.com
+DOMAIN-SUFFIX,fra2.steamcontent.com
+DOMAIN-SUFFIX,gru1.steamcontent.com
+DOMAIN-SUFFIX,got-cmhm.steamcontent.com
+DOMAIN-SUFFIX,gsv-retn.steamcontent.com
+DOMAIN-SUFFIX,gru1.steamcontent.com
+DOMAIN-SUFFIX,hkg1.steamcontent.com
+DOMAIN-SUFFIX,hrk-retn.steamcontent.com
+DOMAIN-SUFFIX,hel-retn.steamcontent.com
+DOMAIN-SUFFIX,iad1.steamcontent.com
+DOMAIN-SUFFIX,iev-datl.steamcontent.com
+DOMAIN-SUFFIX,jnb1.steamcontent.com
+DOMAIN-SUFFIX,lax1.steamcontent.com
+DOMAIN-SUFFIX,lhr1.steamcontent.com
+DOMAIN-SUFFIX,lim1.steamcontent.com
+DOMAIN-SUFFIX,man1.steamcontent.com
+DOMAIN-SUFFIX,mad1.steamcontent.com
+DOMAIN-SUFFIX,mmx-cmhm.steamcontent.com
+DOMAIN-SUFFIX,mfm-cdtm.steamcontent.com
+DOMAIN-SUFFIX,maa1.steamcontent.com
+DOMAIN-SUFFIX,mel-aubb.steamcontent.com
+DOMAIN-SUFFIX,mel-edgx.steamcontent.com
+DOMAIN-SUFFIX,ord1.steamcontent.com
+DOMAIN-SUFFIX,okc1.steamcontent.com
+DOMAIN-SUFFIX,ods-retn.steamcontent.com
+DOMAIN-SUFFIX,par1.steamcontent.com
+DOMAIN-SUFFIX,per-nxhp.steamcontent.com
+DOMAIN-SUFFIX,per-edgx.steamcontent.com
+DOMAIN-SUFFIX,rix-retn.steamcontent.com
+DOMAIN-SUFFIX,sto1.steamcontent.com
+DOMAIN-SUFFIX,sea1.steamcontent.com
+DOMAIN-SUFFIX,seo-hwng.steamcontent.com
+DOMAIN-SUFFIX,syd1.steamcontent.com
+DOMAIN-SUFFIX,scl1.steamcontent.com
+DOMAIN-SUFFIX,sgp1.steamcontent.com
+DOMAIN-SUFFIX,svo-retn.steamcontent.com
+DOMAIN-SUFFIX,sto2.steamcontent.com
+DOMAIN-SUFFIX,sof-retn.steamcontent.com
+DOMAIN-SUFFIX,seo1.steamcontent.com
+DOMAIN-SUFFIX,tyo1.steamcontent.com
+DOMAIN-SUFFIX,tyo2.steamcontent.com
+DOMAIN-SUFFIX,uln-untl.steamcontent.com
+DOMAIN-SUFFIX,vno-bite.steamcontent.com
+DOMAIN-SUFFIX,vie1.steamcontent.com
+DOMAIN-SUFFIX,waw1.steamcontent.com
+DOMAIN-SUFFIX,waw-extl.steamcontent.com
+DOMAIN-SUFFIX,yvr-shaw.steamcontent.com
+DOMAIN-SUFFIX,yyz-bell.steamcontent.com
+DOMAIN-SUFFIX,ywg-shaw.steamcontent.com
+DOMAIN-SUFFIX,yyc-tsvy.steamcontent.com
+DOMAIN-SUFFIX,yyz-tsvy.steamcontent.com
+DOMAIN-SUFFIX,ymo-bell.steamcontent.com
+DOMAIN-SUFFIX,yyc-shaw.steamcontent.com
+# DOMAIN,cache1-lax1.steamcontent.com
+# DOMAIN,cache2-lax1.steamcontent.com
+# DOMAIN,cache3-lax1.steamcontent.com
+# DOMAIN,cache4-lax1.steamcontent.com
+# DOMAIN,cache5-lax1.steamcontent.com
+# DOMAIN,cache6-lax1.steamcontent.com
+# DOMAIN,cache7-lax1.steamcontent.com
+# DOMAIN,cache8-lax1.steamcontent.com
+# DOMAIN,cache9-lax1.steamcontent.com
+# DOMAIN,cache10-lax1.steamcontent.com
+# DOMAIN,cache11-lax1.steamcontent.com
+# DOMAIN,cache12-lax1.steamcontent.com
+# DOMAIN,cache13-lax1.steamcontent.com
+# DOMAIN,cache14-lax1.steamcontent.com
+# DOMAIN,cache15-lax1.steamcontent.com
+# DOMAIN,cache16-lax1.steamcontent.com
+# DOMAIN,cache17-lax1.steamcontent.com
+# DOMAIN,cache18-lax1.steamcontent.com
+# DOMAIN,cache19-lax1.steamcontent.com
+# DOMAIN,cache20-lax1.steamcontent.com
+# DOMAIN,cache21-lax1.steamcontent.com
+# DOMAIN,cache1-iad1.steamcontent.com
+# DOMAIN,cache2-iad1.steamcontent.com
+# DOMAIN,cache3-iad1.steamcontent.com
+# DOMAIN,cache4-iad1.steamcontent.com
+# DOMAIN,cache5-iad1.steamcontent.com
+# DOMAIN,cache6-iad1.steamcontent.com
+# DOMAIN,cache7-iad1.steamcontent.com
+# DOMAIN,cache8-iad1.steamcontent.com
+# DOMAIN,cache9-iad1.steamcontent.com
+# DOMAIN,cache10-iad1.steamcontent.com
+# DOMAIN,cache11-iad1.steamcontent.com
+# DOMAIN,cache12-iad1.steamcontent.com
+# DOMAIN,cache13-iad1.steamcontent.com
+# DOMAIN,cache14-iad1.steamcontent.com
+# DOMAIN,cache15-iad1.steamcontent.com
+# DOMAIN,cache16-iad1.steamcontent.com
+# DOMAIN,cache17-iad1.steamcontent.com
+# DOMAIN,cache18-iad1.steamcontent.com
+# DOMAIN,cache19-iad1.steamcontent.com
+# DOMAIN,cache20-iad1.steamcontent.com
+# DOMAIN,cache21-iad1.steamcontent.com
+# DOMAIN,cache22-iad1.steamcontent.com
+# DOMAIN,cache23-iad1.steamcontent.com
+# DOMAIN,cache24-iad1.steamcontent.com
+# DOMAIN,cache25-iad1.steamcontent.com
+# DOMAIN,cache26-iad1.steamcontent.com
+# DOMAIN,cache27-iad1.steamcontent.com
+# DOMAIN,cache28-iad1.steamcontent.com
+# DOMAIN,cache1-yvr-shaw.steamcontent.com
+# DOMAIN,cache1-fra1.steamcontent.com
+# DOMAIN,cache2-fra1.steamcontent.com
+# DOMAIN,cache3-fra1.steamcontent.com
+# DOMAIN,cache4-fra1.steamcontent.com
+# DOMAIN,cache5-fra1.steamcontent.com
+# DOMAIN,cache6-fra1.steamcontent.com
+# DOMAIN,cache7-fra1.steamcontent.com
+# DOMAIN,cache9-fra1.steamcontent.com
+# DOMAIN,cache10-fra1.steamcontent.com
+# DOMAIN,cache11-fra1.steamcontent.com
+# DOMAIN,cache13-fra1.steamcontent.com
+# DOMAIN,cache14-fra1.steamcontent.com
+# DOMAIN,cache15-fra1.steamcontent.com
+# DOMAIN,cache16-fra1.steamcontent.com
+# DOMAIN,cache21-fra1.steamcontent.com
+# DOMAIN,cache22-fra1.steamcontent.com
+# DOMAIN,cache23-fra1.steamcontent.com
+# DOMAIN,cache24-fra1.steamcontent.com
+# DOMAIN,cache25-fra1.steamcontent.com
+# DOMAIN,cache26-fra1.steamcontent.com
+# DOMAIN,cache27-fra1.steamcontent.com
+# DOMAIN,cache28-fra1.steamcontent.com
+# DOMAIN,cache29-fra1.steamcontent.com
+# DOMAIN,cache30-fra1.steamcontent.com
+# DOMAIN,cache31-fra1.steamcontent.com
+# DOMAIN,cache32-fra1.steamcontent.com
+# DOMAIN,cache33-fra1.steamcontent.com
+# DOMAIN,cache34-fra1.steamcontent.com
+# DOMAIN,cache35-fra1.steamcontent.com
+# DOMAIN,cache36-fra1.steamcontent.com
+# DOMAIN,cache37-fra1.steamcontent.com
+# DOMAIN,cache38-fra1.steamcontent.com
+# DOMAIN,cache39-fra1.steamcontent.com
+# DOMAIN,cache40-fra1.steamcontent.com
+# DOMAIN,cache41-fra1.steamcontent.com
+# DOMAIN,cache42-fra1.steamcontent.com
+# DOMAIN,cache43-fra1.steamcontent.com
+# DOMAIN,cache44-fra1.steamcontent.com
+# DOMAIN,cache45-fra1.steamcontent.com
+# DOMAIN,cache46-fra1.steamcontent.com
+# DOMAIN,cache47-fra1.steamcontent.com
+# DOMAIN,cache48-fra1.steamcontent.com
+# DOMAIN,cache49-fra1.steamcontent.com
+# DOMAIN,cache50-fra1.steamcontent.com
+# DOMAIN,cache51-fra1.steamcontent.com
+# DOMAIN,cache52-fra1.steamcontent.com
+# DOMAIN,cache53-fra1.steamcontent.com
+# DOMAIN,cache54-fra1.steamcontent.com
+# DOMAIN,cache55-fra1.steamcontent.com
+# DOMAIN,cache56-fra1.steamcontent.com
+# DOMAIN,cache57-fra1.steamcontent.com
+# DOMAIN,cache58-fra1.steamcontent.com
+# DOMAIN,cache59-fra1.steamcontent.com
+# DOMAIN,cache61-fra1.steamcontent.com
+# DOMAIN,cache62-fra1.steamcontent.com
+# DOMAIN,cache63-fra1.steamcontent.com
+# DOMAIN,cache64-fra1.steamcontent.com
+# DOMAIN,cache65-fra1.steamcontent.com
+# DOMAIN,cache66-fra1.steamcontent.com
+# DOMAIN,cache67-fra1.steamcontent.com
+# DOMAIN,cache68-fra1.steamcontent.com
+# DOMAIN,cache69-fra1.steamcontent.com
+# DOMAIN,cache1-atl1.steamcontent.com
+# DOMAIN,cache2-atl1.steamcontent.com
+# DOMAIN,cache3-atl1.steamcontent.com
+# DOMAIN,cache4-atl1.steamcontent.com
+# DOMAIN,cache6-atl1.steamcontent.com
+# DOMAIN,cache7-atl1.steamcontent.com
+# DOMAIN,cache8-atl1.steamcontent.com
+# DOMAIN,cache9-atl1.steamcontent.com
+# DOMAIN,cache10-atl1.steamcontent.com
+# DOMAIN,cache11-atl1.steamcontent.com
+# DOMAIN,cache1-sto1.steamcontent.com
+# DOMAIN,cache2-sto1.steamcontent.com
+# DOMAIN,cache3-sto1.steamcontent.com
+# DOMAIN,cache4-sto1.steamcontent.com
+# DOMAIN,cache5-sto1.steamcontent.com
+# DOMAIN,cache6-sto1.steamcontent.com
+# DOMAIN,cache7-sto1.steamcontent.com
+# DOMAIN,cache8-sto1.steamcontent.com
+# DOMAIN,cache9-sto1.steamcontent.com
+# DOMAIN,cache10-sto1.steamcontent.com
+# DOMAIN,cache1-hkg1.steamcontent.com
+# DOMAIN,cache2-hkg1.steamcontent.com
+# DOMAIN,cache3-hkg1.steamcontent.com
+# DOMAIN,cache4-hkg1.steamcontent.com
+# DOMAIN,cache5-hkg1.steamcontent.com
+# DOMAIN,cache6-hkg1.steamcontent.com
+# DOMAIN,cache1-gru1.steamcontent.com
+# DOMAIN,cache2-gru1.steamcontent.com
+# DOMAIN,cache3-gru1.steamcontent.com
+# DOMAIN,cache4-gru1.steamcontent.com
+# DOMAIN,cache6-gru1.steamcontent.com
+# DOMAIN,cache7-gru1.steamcontent.com
+# DOMAIN,cache8-gru1.steamcontent.com
+# DOMAIN,cache1-hrk-retn.steamcontent.com
+# DOMAIN,cache2-hrk-retn.steamcontent.com
+# DOMAIN,cache1-ord1.steamcontent.com
+# DOMAIN,cache2-ord1.steamcontent.com
+# DOMAIN,cache3-ord1.steamcontent.com
+# DOMAIN,cache4-ord1.steamcontent.com
+# DOMAIN,cache5-ord1.steamcontent.com
+# DOMAIN,cache6-ord1.steamcontent.com
+# DOMAIN,cache8-ord1.steamcontent.com
+# DOMAIN,cache9-ord1.steamcontent.com
+# DOMAIN,cache10-ord1.steamcontent.com
+# DOMAIN,cache11-ord1.steamcontent.com
+# DOMAIN,cache12-ord1.steamcontent.com
+# DOMAIN,cache13-ord1.steamcontent.com
+# DOMAIN,cache14-ord1.steamcontent.com
+# DOMAIN,cache15-ord1.steamcontent.com
+# DOMAIN,cache16-ord1.steamcontent.com
+# DOMAIN,cache17-ord1.steamcontent.com
+# DOMAIN,cache18-ord1.steamcontent.com
+# DOMAIN,cache19-ord1.steamcontent.com
+# DOMAIN,cache20-ord1.steamcontent.com
+# DOMAIN,cache1-man1.steamcontent.com
+# DOMAIN,cache2-man1.steamcontent.com
+# DOMAIN,cache1-sea1.steamcontent.com
+# DOMAIN,cache2-sea1.steamcontent.com
+# DOMAIN,cache3-sea1.steamcontent.com
+# DOMAIN,cache4-sea1.steamcontent.com
+# DOMAIN,cache5-sea1.steamcontent.com
+# DOMAIN,cache6-sea1.steamcontent.com
+# DOMAIN,cache8-sea1.steamcontent.com
+# DOMAIN,cache10-sea1.steamcontent.com
+# DOMAIN,cache11-sea1.steamcontent.com
+# DOMAIN,cache12-sea1.steamcontent.com
+# DOMAIN,cache1-yyz-bell.steamcontent.com
+# DOMAIN,cache2-yyz-bell.steamcontent.com
+# DOMAIN,cache1-ywg-shaw.steamcontent.com
+# DOMAIN,cache1-lhr1.steamcontent.com
+# DOMAIN,cache2-lhr1.steamcontent.com
+# DOMAIN,cache3-lhr1.steamcontent.com
+# DOMAIN,cache4-lhr1.steamcontent.com
+# DOMAIN,cache5-lhr1.steamcontent.com
+# DOMAIN,cache6-lhr1.steamcontent.com
+# DOMAIN,cache8-lhr1.steamcontent.com
+# DOMAIN,cache10-lhr1.steamcontent.com
+# DOMAIN,cache11-lhr1.steamcontent.com
+# DOMAIN,cache12-lhr1.steamcontent.com
+# DOMAIN,cache13-lhr1.steamcontent.com
+# DOMAIN,cache14-lhr1.steamcontent.com
+# DOMAIN,cache15-lhr1.steamcontent.com
+# DOMAIN,cache16-lhr1.steamcontent.com
+# DOMAIN,cache19-lhr1.steamcontent.com
+# DOMAIN,cache20-lhr1.steamcontent.com
+# DOMAIN,cache21-lhr1.steamcontent.com
+# DOMAIN,cache22-lhr1.steamcontent.com
+# DOMAIN,cache23-lhr1.steamcontent.com
+# DOMAIN,cache24-lhr1.steamcontent.com
+# DOMAIN,cache25-lhr1.steamcontent.com
+# DOMAIN,cache26-lhr1.steamcontent.com
+# DOMAIN,cache27-lhr1.steamcontent.com
+# DOMAIN,cache28-lhr1.steamcontent.com
+# DOMAIN,cache29-lhr1.steamcontent.com
+# DOMAIN,cache30-lhr1.steamcontent.com
+# DOMAIN,cache31-lhr1.steamcontent.com
+# DOMAIN,cache32-lhr1.steamcontent.com
+# DOMAIN,cache33-lhr1.steamcontent.com
+# DOMAIN,cache34-lhr1.steamcontent.com
+# DOMAIN,cache35-lhr1.steamcontent.com
+# DOMAIN,cache1-seo-hwng.steamcontent.com
+# DOMAIN,cache2-seo-hwng.steamcontent.com
+# DOMAIN,cache3-seo-hwng.steamcontent.com
+# DOMAIN,cache4-seo-hwng.steamcontent.com
+# DOMAIN,cache5-seo-hwng.steamcontent.com
+# DOMAIN,cache6-seo-hwng.steamcontent.com
+# DOMAIN,cache1-tyo1.steamcontent.com
+# DOMAIN,cache2-tyo1.steamcontent.com
+# DOMAIN,cache1-mad1.steamcontent.com
+# DOMAIN,cache2-mad1.steamcontent.com
+# DOMAIN,cache3-mad1.steamcontent.com
+# DOMAIN,cache4-mad1.steamcontent.com
+# DOMAIN,cache5-mad1.steamcontent.com
+# DOMAIN,cache6-mad1.steamcontent.com
+# DOMAIN,cache1-par1.steamcontent.com
+# DOMAIN,cache2-par1.steamcontent.com
+# DOMAIN,cache3-par1.steamcontent.com
+# DOMAIN,cache4-par1.steamcontent.com
+# DOMAIN,cache5-par1.steamcontent.com
+# DOMAIN,cache6-par1.steamcontent.com
+# DOMAIN,cache7-par1.steamcontent.com
+# DOMAIN,cache8-par1.steamcontent.com
+# DOMAIN,cache1-tyo2.steamcontent.com
+# DOMAIN,cache2-tyo2.steamcontent.com
+# DOMAIN,cache3-tyo2.steamcontent.com
+# DOMAIN,cache4-tyo2.steamcontent.com
+# DOMAIN,cache1-per-nxhp.steamcontent.com
+# DOMAIN,cache1-syd1.steamcontent.com
+# DOMAIN,cache2-syd1.steamcontent.com
+# DOMAIN,cache3-syd1.steamcontent.com
+# DOMAIN,cache1-scl1.steamcontent.com
+# DOMAIN,cache2-scl1.steamcontent.com
+# DOMAIN,cache2-ams1.steamcontent.com
+# DOMAIN,cache3-ams1.steamcontent.com
+# DOMAIN,cache4-ams1.steamcontent.com
+# DOMAIN,cache5-ams1.steamcontent.com
+# DOMAIN,cache6-ams1.steamcontent.com
+# DOMAIN,cache7-ams1.steamcontent.com
+# DOMAIN,cache8-ams1.steamcontent.com
+# DOMAIN,cache9-ams1.steamcontent.com
+# DOMAIN,cache10-ams1.steamcontent.com
+# DOMAIN,cache11-ams1.steamcontent.com
+# DOMAIN,cache12-ams1.steamcontent.com
+# DOMAIN,cache13-ams1.steamcontent.com
+# DOMAIN,cache14-ams1.steamcontent.com
+# DOMAIN,cache15-ams1.steamcontent.com
+# DOMAIN,cache16-ams1.steamcontent.com
+# DOMAIN,cache17-ams1.steamcontent.com
+# DOMAIN,cache18-ams1.steamcontent.com
+# DOMAIN,cache1-yyc-tsvy.steamcontent.com
+# DOMAIN,cache1-waw1.steamcontent.com
+# DOMAIN,cache2-waw1.steamcontent.com
+# DOMAIN,cache3-waw1.steamcontent.com
+# DOMAIN,cache4-waw1.steamcontent.com
+# DOMAIN,cache1-sgp1.steamcontent.com
+# DOMAIN,cache2-sgp1.steamcontent.com
+# DOMAIN,cache3-sgp1.steamcontent.com
+# DOMAIN,cache4-sgp1.steamcontent.com
+# DOMAIN,cache5-sgp1.steamcontent.com
+# DOMAIN,cache6-sgp1.steamcontent.com
+# DOMAIN,cache7-sgp1.steamcontent.com
+# DOMAIN,cache8-sgp1.steamcontent.com
+# DOMAIN,cache9-sgp1.steamcontent.com
+# DOMAIN,cache10-sgp1.steamcontent.com
+# DOMAIN,cache11-sgp1.steamcontent.com
+# DOMAIN,cache12-sgp1.steamcontent.com
+# DOMAIN,cache1-vno-bite.steamcontent.com
+# DOMAIN,cache2-vno-bite.steamcontent.com
+# DOMAIN,cache1-svo-retn.steamcontent.com
+# DOMAIN,cache2-svo-retn.steamcontent.com
+# DOMAIN,cache1-mmx-cmhm.steamcontent.com
+# DOMAIN,cache1-okc1.steamcontent.com
+# DOMAIN,cache2-okc1.steamcontent.com
+# DOMAIN,cache3-okc1.steamcontent.com
+# DOMAIN,cache4-okc1.steamcontent.com
+# DOMAIN,cache5-okc1.steamcontent.com
+# DOMAIN,cache6-okc1.steamcontent.com
+# DOMAIN,cache7-okc1.steamcontent.com
+# DOMAIN,cache8-okc1.steamcontent.com
+# DOMAIN,cache1-vie1.steamcontent.com
+# DOMAIN,cache2-vie1.steamcontent.com
+# DOMAIN,cache3-vie1.steamcontent.com
+# DOMAIN,cache4-vie1.steamcontent.com
+# DOMAIN,cache5-vie1.steamcontent.com
+# DOMAIN,cache6-vie1.steamcontent.com
+# DOMAIN,cache7-vie1.steamcontent.com
+# DOMAIN,cache8-vie1.steamcontent.com
+# DOMAIN,cache9-vie1.steamcontent.com
+# DOMAIN,cache10-vie1.steamcontent.com
+# DOMAIN,cache11-vie1.steamcontent.com
+# DOMAIN,cache12-vie1.steamcontent.com
+# DOMAIN,cache1-sto2.steamcontent.com
+# DOMAIN,cache2-sto2.steamcontent.com
+# DOMAIN,cache3-sto2.steamcontent.com
+# DOMAIN,cache4-sto2.steamcontent.com
+# DOMAIN,cache5-sto2.steamcontent.com
+# DOMAIN,cache6-sto2.steamcontent.com
+# DOMAIN,cache7-sto2.steamcontent.com
+# DOMAIN,cache8-sto2.steamcontent.com
+# DOMAIN,cache9-sto2.steamcontent.com
+# DOMAIN,cache10-sto2.steamcontent.com
+# DOMAIN,cache1-bkk-true.steamcontent.com
+# DOMAIN,cache2-bkk-true.steamcontent.com
+# DOMAIN,cache1-sof-retn.steamcontent.com
+# DOMAIN,cache2-sof-retn.steamcontent.com
+# DOMAIN,cache1-got-cmhm.steamcontent.com
+# DOMAIN,cache1-mfm-cdtm.steamcontent.com
+# DOMAIN,cache2-mfm-cdtm.steamcontent.com
+# DOMAIN,cache1-yyz-tsvy.steamcontent.com
+# DOMAIN,cache1-maa1.steamcontent.com
+# DOMAIN,cache1-lim1.steamcontent.com
+# DOMAIN,cache2-lim1.steamcontent.com
+# DOMAIN,cache1-ymo-bell.steamcontent.com
+# DOMAIN,cache2-ymo-bell.steamcontent.com
+# DOMAIN,cache1-uln-untl.steamcontent.com
+# DOMAIN,cache1-mel-aubb.steamcontent.com
+# DOMAIN,cache1-dxb1.steamcontent.com
+# DOMAIN,cache2-dxb1.steamcontent.com
+# DOMAIN,cache1-bkk-jast.steamcontent.com
+# DOMAIN,cache2-bkk-jast.steamcontent.com
+# DOMAIN,cache1-hel-retn.steamcontent.com
+# DOMAIN,cache2-hel-retn.steamcontent.com
+# DOMAIN,cache1-yyc-shaw.steamcontent.com
+# DOMAIN,cache1-bom1.steamcontent.com
+# DOMAIN,cache10-gru1.steamcontent.com
+# DOMAIN,cache10-seo1.steamcontent.com
+# DOMAIN,cache12-atl1.steamcontent.com
+# DOMAIN,cache12-fra1.steamcontent.com
+# DOMAIN,cache13-atl1.steamcontent.com
+# DOMAIN,cache17-fra1.steamcontent.com
+# DOMAIN,cache18-fra1.steamcontent.com
+# DOMAIN,cache19-fra1.steamcontent.com
+# DOMAIN,cache1-akl-tpwr.steamcontent.com
+# DOMAIN,cache1-akl-vgnz.steamcontent.com
+# DOMAIN,cache1-ala-kzkt.steamcontent.com
+# DOMAIN,cache1-ams1.steamcontent.com
+# DOMAIN,cache1-bne-aubb.steamcontent.com
+# DOMAIN,cache1-bud-retn.steamcontent.com
+# DOMAIN,cache1-cfc-acol.steamcontent.com
+# DOMAIN,cache1-dfw1.steamcontent.com
+# DOMAIN,cache1-dsa-ask4.steamcontent.com
+# DOMAIN,cache1-eze1.steamcontent.com
+# DOMAIN,cache1-fra2.steamcontent.com
+# DOMAIN,cache1-iev-datl.steamcontent.com
+# DOMAIN,cache1-jnb1.steamcontent.com
+# DOMAIN,cache1-mel-edgx.steamcontent.com
+# DOMAIN,cache1-ods-retn.steamcontent.com
+# DOMAIN,cache1-per-edgx.steamcontent.com
+# DOMAIN,cache1-rix-retn.steamcontent.com
+# DOMAIN,cache1-seo1.steamcontent.com
+# DOMAIN,cache1-waw-extl.steamcontent.com
+# DOMAIN,cache20-fra1.steamcontent.com
+# DOMAIN,cache2-akl-tpwr.steamcontent.com
+# DOMAIN,cache2-akl-vgnz.steamcontent.com
+# DOMAIN,cache2-ala-kzkt.steamcontent.com
+# DOMAIN,cache2-bne-aubb.steamcontent.com
+# DOMAIN,cache2-bud-retn.steamcontent.com
+# DOMAIN,cache2-cfc-acol.steamcontent.com
+# DOMAIN,cache2-dfw1.steamcontent.com
+# DOMAIN,cache2-dsa-ask4.steamcontent.com
+# DOMAIN,cache2-eze1.steamcontent.com
+# DOMAIN,cache2-fra2.steamcontent.com
+# DOMAIN,cache2-got-cmhm.steamcontent.com
+# DOMAIN,cache2-gsv-retn.steamcontent.com
+# DOMAIN,cache2-iev-datl.steamcontent.com
+# DOMAIN,cache2-jnb1.steamcontent.com
+# DOMAIN,cache2-mel-aubb.steamcontent.com
+# DOMAIN,cache2-mel-edgx.steamcontent.com
+# DOMAIN,cache2-mmx-cmhm.steamcontent.com
+# DOMAIN,cache2-ods-retn.steamcontent.com
+# DOMAIN,cache2-per-edgx.steamcontent.com
+# DOMAIN,cache2-per-nxhp.steamcontent.com
+# DOMAIN,cache2-rix-retn.steamcontent.com
+# DOMAIN,cache2-seo1.steamcontent.com
+# DOMAIN,cache2-waw-extl.steamcontent.com
+# DOMAIN,cache2-yvr-shaw.steamcontent.com
+# DOMAIN,cache2-yyc-shaw.steamcontent.com
+# DOMAIN,cache3-dfw1.steamcontent.com
+# DOMAIN,cache3-eze1.steamcontent.com
+# DOMAIN,cache3-fra2.steamcontent.com
+# DOMAIN,cache3-seo1.steamcontent.com
+# DOMAIN,cache3-tyo1.steamcontent.com
+# DOMAIN,cache4-dfw1.steamcontent.com
+# DOMAIN,cache4-eze1.steamcontent.com
+# DOMAIN,cache4-fra2.steamcontent.com
+# DOMAIN,cache4-seo1.steamcontent.com
+# DOMAIN,cache4-syd1.steamcontent.com
+# DOMAIN,cache4-tyo1.steamcontent.com
+# DOMAIN,cache5-fra2.steamcontent.com
+# DOMAIN,cache5-seo1.steamcontent.com
+# DOMAIN,cache5-syd1.steamcontent.com
+# DOMAIN,cache5-tyo1.steamcontent.com
+# DOMAIN,cache6-fra2.steamcontent.com
+# DOMAIN,cache6-seo1.steamcontent.com
+# DOMAIN,cache6-tyo1.steamcontent.com
+# DOMAIN,cache7-fra2.steamcontent.com
+# DOMAIN,cache7-lhr1.steamcontent.com
+# DOMAIN,cache7-seo1.steamcontent.com
+# DOMAIN,cache7-seo-hwng.steamcontent.com
+# DOMAIN,cache8-fra1.steamcontent.com
+# DOMAIN,cache8-fra2.steamcontent.com
+# DOMAIN,cache8-seo1.steamcontent.com
+# DOMAIN,cache9-gru1.steamcontent.com
+# DOMAIN,cache9-seo1.steamcontent.com
+DOMAIN,edge.steam-dns.top.comcast.net
+DOMAIN,level3.cdn.steampipe.steamcontent.com
+DOMAIN,media.st.dl.eccdnx.com
+DOMAIN,media.steampowered.com
+DOMAIN,steamusercontent-a.akamaihd.net
+DOMAIN,steampipe-partner.secure2.footprint.net
+DOMAIN,steam.eca.qtlglb.com
+DOMAIN,steam.naeu.qtlglb.com
+DOMAIN,steam.ru.qtlglb.com
+DOMAIN,steampipe.akamaized.net
+DOMAIN,steampipe-kr.akamaized.net
+DOMAIN,steampipe-partner.akamaized.net
+DOMAIN,upos-hz-mirrorakam.akamaized.net
+
+# Riot游戏下载、更新[国际]
+DOMAIN,bacon.secure.dyn.riotcdn.net
+DOMAIN,bacon.dyn.riotcdn.net
+DOMAIN,ks-foundation.secure.dyn.riotcdn.net
+DOMAIN,ks-foundation.dyn.riotcdn.net
+DOMAIN,lol.secure.dyn.riotcdn.net
+DOMAIN,lol.dyn.riotcdn.net
+DOMAIN,riot-client.secure.dyn.riotcdn.net
+DOMAIN,riot-client.dyn.riotcdn.net
+DOMAIN,valorant.secure.dyn.riotcdn.net
+DOMAIN,valorant.dyn.riotcdn.net
+
+# FiveM游戏下载、更新[国际]
+DOMAIN,changelogs-live.fivem.net
+DOMAIN,c.fivem.net
+DOMAIN,cnl-hb-live.fivem.net
+DOMAIN,cookbook.fivem.net
+DOMAIN,crash-ingress.fivem.net
+DOMAIN,crashes.fivem.net
+DOMAIN,content.cfx.re
+DOMAIN,docs.fivem.net
+DOMAIN,docs-backend.fivem.net
+DOMAIN,forum.fivem.net
+DOMAIN,fx-crashingress-1.live.fivem.net
+DOMAIN,forum.cfx.re
+DOMAIN,git.fivem.net
+DOMAIN,idms.fivem.net
+DOMAIN,keymaster.fivem.net
+DOMAIN,kibana-live.fivem.net
+DOMAIN,largo.live.fivem.net
+DOMAIN,lambda.fivem.net
+DOMAIN,mirrors.fivem.net
+DOMAIN,minio-cluster.fivem.net
+DOMAIN,native-collector-live.fivem.net
+DOMAIN,netdata-internal.fivem.net
+DOMAIN,netdata.fivem.net
+DOMAIN,policy-live.fivem.net
+DOMAIN,runtime.fivem.net
+DOMAIN,rethinkdb-admin.fivem.net
+DOMAIN,servers.fivem.net
+DOMAIN,servers-staging.fivem.net
+DOMAIN,sentry.fivem.net
+DOMAIN,servers-ingress-live.fivem.net
+DOMAIN,servers-live.fivem.net
+DOMAIN,storage.fivem.net
+DOMAIN,servers-frontend.fivem.net
+DOMAIN,status.fivem.net
+DOMAIN,wiki.fivem.net
+
+# Bethesda贝塞斯达客户端、游戏及mod的下载、更新[国际]
+DOMAIN,content.cdp.bethesda.net
+DOMAIN,download.cdp.bethesda.net
+
+# Hikari Field游戏下载及更新[国际]
+DOMAIN,download.hikarifield.co.jp
+
+# Dlsite游戏下载[国际]
+DOMAIN,download.dlsite.com
+DOMAIN,file.chobit.cc
+DOMAIN,img.dlsite.jp
+DOMAIN,play.dl.dlsite.com
+DOMAIN,trial.dlsite.com
+
+# Bandai Namco万代南梦宫[国际]
+DOMAIN,account.bandainamcoid.com
+DOMAIN,account-api.bandainamcoid.com
+DOMAIN,clientpatch.aws.blue-protocol.com
+DOMAIN,clientpatch.blue-protocol.com
+DOMAIN,client-patch.gundamevogame.com
+DOMAIN,datastore-main.aws.blue-protocol.com
+DOMAIN,flg-main.aws.blue-protocol.com
+DOMAIN,g-ahpatch-prod.blue-protocol.com
+DOMAIN,masterdata-main.aws.blue-protocol.com
+DOMAIN,object-bnolauncher-ct.bandainamco-ol.jp
+DOMAIN,object-bnolauncher-pf.bandainamco-ol.jp
+DOMAIN,object-web.blue-protocol.com
+DOMAIN,object.gundamevolution.jp
+DOMAIN,object-web.gundamevolution.jp

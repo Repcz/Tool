@@ -1,0 +1,23 @@
+#!name=去广告｜什么值得买
+#!desc= @ZenmoFeiShi
+#!author=ZenmoFeiShi
+#!date=2023-12-13 22:50:13
+
+# 🔗 模块链接
+#SUBSCRIBED http://script.hub/file/_start_/https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/smzdm_remove_ads.plugin/_end_/%E5%8E%BB%E5%B9%BF%E5%91%8A%EF%BD%9C%E4%BB%80%E4%B9%88%E5%80%BC%E5%BE%97%E4%B9%B0.sgmodule?n=%E5%8E%BB%E5%B9%BF%E5%91%8A%EF%BD%9C%E4%BB%80%E4%B9%88%E5%80%BC%E5%BE%97%E4%B9%B0%2B%40ZenmoFeiShi&type=loon-plugin&target=surge-module&del=true
+
+
+[MITM]
+hostname = %APPEND% haojia-api.smzdm.com, homepage-api.smzdm.com, app-api.smzdm.com, user-api.smzdm.com, article-api.smzdm.com
+
+[Script]
+移除广告 = type=http-response, pattern=^https:\/\/app-api\.smzdm\.com\/util\/(loading|update), script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/smzdm/smzdm_remove_ads.js, requires-body=true
+
+移除广告 = type=http-response, pattern=^https:\/\/haojia-api\.smzdm\.com\/home\/list, script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/smzdm/smzdm_remove_ads.js, requires-body=true
+
+移除广告 = type=http-response, pattern=^https:\/\/homepage-api\.smzdm\.com\/v3\/home, script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/smzdm/smzdm_remove_ads.js, requires-body=true
+
+移除广告 = type=http-response, pattern=^https:\/\/user-api\.smzdm\.com\/vip, script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/smzdm/smzdm_remove_ads.js, requires-body=true
+
+移除广告 = type=http-response, pattern=^https:\/\/article-api\.smzdm\.com\/publish\/get_bubble, script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/smzdm/smzdm_remove_ads.js, requires-body=true
+

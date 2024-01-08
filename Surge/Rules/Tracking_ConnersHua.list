@@ -1,0 +1,109 @@
+# Privacy
+DOMAIN-SUFFIX,adjust.com,extended-matching
+DOMAIN-SUFFIX,airpr.com,extended-matching
+DOMAIN-SUFFIX,cr-nielsen.com,extended-matching
+DOMAIN-SUFFIX,hotjar.com,extended-matching
+DOMAIN-SUFFIX,hotjar.io,extended-matching
+DOMAIN-SUFFIX,hs-analytics.net,extended-matching
+DOMAIN-SUFFIX,kissmetrics.com,extended-matching
+DOMAIN-SUFFIX,kochava.com,extended-matching
+DOMAIN-SUFFIX,liadm.com,extended-matching
+DOMAIN-SUFFIX,marketo.com,extended-matching
+DOMAIN-SUFFIX,mobileapptracking.com,extended-matching
+DOMAIN-SUFFIX,mparticle.com,extended-matching
+DOMAIN-SUFFIX,nexac.com,extended-matching
+DOMAIN-SUFFIX,nr-data.net,extended-matching
+DOMAIN-SUFFIX,pardot.com,extended-matching
+DOMAIN-SUFFIX,parrable.com,extended-matching
+DOMAIN-SUFFIX,petametrics.com,extended-matching
+DOMAIN-SUFFIX,predic.io,extended-matching
+DOMAIN-SUFFIX,quantcount.com,extended-matching
+DOMAIN-SUFFIX,quantserve.com,extended-matching
+DOMAIN-SUFFIX,rtbasia.com,extended-matching
+DOMAIN-SUFFIX,scorecardresearch.com,extended-matching
+DOMAIN-SUFFIX,seewhy.com,extended-matching
+DOMAIN-SUFFIX,segment.com,extended-matching
+DOMAIN-SUFFIX,segment.io,extended-matching
+DOMAIN-SUFFIX,segmentify.com,extended-matching
+DOMAIN-SUFFIX,sentiance.com,extended-matching
+DOMAIN-SUFFIX,serverbid.com,extended-matching
+DOMAIN-SUFFIX,sessionm.com,extended-matching
+DOMAIN-SUFFIX,smartlook.com,extended-matching
+DOMAIN-SUFFIX,socdm.com,extended-matching
+DOMAIN-SUFFIX,socialannex.com,extended-matching
+DOMAIN-SUFFIX,socialbakers.com,extended-matching
+DOMAIN-SUFFIX,sociaplus.com,extended-matching
+DOMAIN-SUFFIX,stathat.com,extended-matching
+DOMAIN-SUFFIX,stats-locations.com,extended-matching
+DOMAIN-SUFFIX,tagcommander.com,extended-matching
+DOMAIN-SUFFIX,tailtarget.com,extended-matching
+DOMAIN-SUFFIX,tapad.com,extended-matching
+DOMAIN-SUFFIX,tapfiliate.com,extended-matching
+DOMAIN-SUFFIX,tapinfluence.com,extended-matching
+DOMAIN-SUFFIX,tapstream.com,extended-matching
+DOMAIN-SUFFIX,tend.io,extended-matching
+DOMAIN-SUFFIX,trackingio.com,extended-matching
+DOMAIN-SUFFIX,woopra.com,extended-matching
+DOMAIN-SUFFIX,wootric.com,extended-matching
+DOMAIN-SUFFIX,wowanalytics.co.uk,extended-matching
+DOMAIN-SUFFIX,zoomanalytics.co,extended-matching
+
+DOMAIN-SUFFIX,ads.linkedin.com,extended-matching
+DOMAIN,analytics.slashdotmedia.com,extended-matching
+DOMAIN,zgsdk.zhugeio.com,extended-matching
+
+# > 51.LA
+DOMAIN,js.users.51.la,extended-matching
+DOMAIN,mc.51.la,extended-matching
+DOMAIN,sdk.51.la,extended-matching
+DOMAIN,wc.51.la,extended-matching
+# > 58
+DOMAIN,track.58.com,extended-matching
+DOMAIN,tracklog.58.com,extended-matching
+# > Antiy
+DOMAIN,miav-cse.avlyun.com,extended-matching
+DOMAIN,miui-fxcse.avlyun.com,extended-matching
+# > Apple
+DOMAIN,token.safebrowsing.apple,extended-matching
+# > Baidu
+DOMAIN,hm.baidu.com,extended-matching
+DOMAIN,hmma.baidu.com,extended-matching
+# > Daum
+DOMAIN,track.tiara.daum.net,extended-matching
+DOMAIN,track.tiara.kakao.com,extended-matching
+# > Google
+DOMAIN-SUFFIX,googletagmanager.com,extended-matching
+DOMAIN-SUFFIX,google-analytics.com,extended-matching
+DOMAIN,safebrowsing.googleapis.com,extended-matching
+DOMAIN,safebrowsing.googleapis-cn.com,extended-matching
+# > GozenData
+# https://www.v2ex.com/t/772523
+DOMAIN-SUFFIX,gozendata.com,extended-matching
+DOMAIN-SUFFIX,gzads.com,extended-matching
+DOMAIN-SUFFIX,gz-data.com,extended-matching
+# > GrowingIO
+DOMAIN-SUFFIX,giocdn.com,extended-matching
+DOMAIN-SUFFIX,growingio.com,extended-matching
+# > MI
+DOMAIN-SUFFIX,tracking.miui.com,extended-matching
+# DOMAIN,api.miwifi.com // 影响 Mi Wi-Fi(id859962702)，但建议注意 https://www.v2ex.com/t/746094
+DOMAIN,data.mistat.xiaomi.com,extended-matching
+DOMAIN,flash.sec.miui.com,extended-matching
+DOMAIN,tracking.intl.miui.com,extended-matching
+DOMAIN,a0.app.xiaomi.com,extended-matching
+DOMAIN,api.installer.xiaomi.com,extended-matching
+# > Microsoft
+DOMAIN,c.bing.com,extended-matching
+DOMAIN,c.clarity.ms,extended-matching
+DOMAIN,o.clarity.ms,extended-matching
+DOMAIN,www.clarity.ms,extended-matching
+# > TalkingData
+DOMAIN-SUFFIX,cpatrk.net,extended-matching
+DOMAIN-SUFFIX,talkingdata.com,extended-matching
+DOMAIN-SUFFIX,talkingdata.net,extended-matching
+DOMAIN-SUFFIX,udrig.com,extended-matching
+# > Tencent
+DOMAIN,safebrowsing.urlsec.qq.com,extended-matching
+# > Tenjin
+DOMAIN,track.tenjin.com,extended-matching
+DOMAIN,track.tenjin.io,extended-matching

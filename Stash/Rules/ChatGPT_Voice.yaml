@@ -1,0 +1,26 @@
+payload:
+# 2023-12-07 16:00:16
+  - DOMAIN-SUFFIX,chatgpt.livekit.cloud
+  - DOMAIN-SUFFIX,host.livekit.cloud
+  - DOMAIN-SUFFIX,turn.livekit.cloud
+  - IP-CIDR,24.199.123.28/32,no-resolve
+  - IP-CIDR,45.32.12.145/32,no-resolve
+  - IP-CIDR,45.55.196.68/32,no-resolve
+  - IP-CIDR,45.76.214.191/32,no-resolve
+  - IP-CIDR,45.32.12.145/32,no-resolve
+  - IP-CIDR,64.23.132.171/32,no-resolve
+  - IP-CIDR,104.238.150.13/32,no-resolve
+  - IP-CIDR,143.198.200.27/32,no-resolve
+  - IP-CIDR,143.110.232.239/32,no-resolve
+  - IP-CIDR,159.89.204.203/32,no-resolve
+  - IP-CIDR,164.92.71.155/32,no-resolve
+  - IP-CIDR,164.92.115.213/32,no-resolve
+  - IP-CIDR,198.13.38.242/32,no-resolve
+  - IP-CIDR,207.148.108.93/32,no-resolve
+  - IP-CIDR6,2001:19f0:7001:55b3:5400:4ff:feab:ba8f/128,no-resolve
+  - IP-CIDR6,2001:19f0:7001:8e6:5400:4ff:feab:b953/128,no-resolve
+  - IP-CIDR6,2001:19f0:7001:1149:5400:4ff:feac:a0b3/128,no-resolve
+  - IP-CIDR6,2001:19f0:7001:8e6:5400:4ff:feab:b953/128,no-resolve
+  - IP-CIDR6,2401:c080:1000:47c5:5400:4ff:feab:f724/128,no-resolve
+  - IP-ASN,14061,no-resolve
+  - IP-ASN,20473,no-resolve

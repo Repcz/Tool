@@ -1,0 +1,20 @@
+# From Shadowrocket Default Profile
+
+HOST-SUFFIX,edns.ip-api.com,PROXY
+HOST-SUFFIX,ipv4.surfsharkdns.com,PROXY
+HOST-SUFFIX,dnsleaktest.com,PROXY
+HOST-SUFFIX,dnsleak.com,PROXY
+HOST-SUFFIX,expressvpn.com,PROXY
+HOST-SUFFIX,nordvpn.com,PROXY
+HOST-SUFFIX,surfshark.com,PROXY
+HOST-SUFFIX,ipleak.net,PROXY
+HOST-SUFFIX,perfect-privacy.com,PROXY
+HOST-SUFFIX,browserleaks.com,PROXY
+HOST-SUFFIX,browserleaks.org,PROXY
+HOST-SUFFIX,browserleaks.net,PROXY
+HOST-SUFFIX,vpnunlimited.com,PROXY
+HOST-SUFFIX,whoer.net,PROXY
+HOST-SUFFIX,whrq.net,PROXY
+HOST-KEYWORD,leak,PROXY
+
+

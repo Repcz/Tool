@@ -1,0 +1,109 @@
+# Privacy
+HOST-SUFFIX,adjust.com,REJECT
+HOST-SUFFIX,airpr.com,REJECT
+HOST-SUFFIX,cr-nielsen.com,REJECT
+HOST-SUFFIX,hotjar.com,REJECT
+HOST-SUFFIX,hotjar.io,REJECT
+HOST-SUFFIX,hs-analytics.net,REJECT
+HOST-SUFFIX,kissmetrics.com,REJECT
+HOST-SUFFIX,kochava.com,REJECT
+HOST-SUFFIX,liadm.com,REJECT
+HOST-SUFFIX,marketo.com,REJECT
+HOST-SUFFIX,mobileapptracking.com,REJECT
+HOST-SUFFIX,mparticle.com,REJECT
+HOST-SUFFIX,nexac.com,REJECT
+HOST-SUFFIX,nr-data.net,REJECT
+HOST-SUFFIX,pardot.com,REJECT
+HOST-SUFFIX,parrable.com,REJECT
+HOST-SUFFIX,petametrics.com,REJECT
+HOST-SUFFIX,predic.io,REJECT
+HOST-SUFFIX,quantcount.com,REJECT
+HOST-SUFFIX,quantserve.com,REJECT
+HOST-SUFFIX,rtbasia.com,REJECT
+HOST-SUFFIX,scorecardresearch.com,REJECT
+HOST-SUFFIX,seewhy.com,REJECT
+HOST-SUFFIX,segment.com,REJECT
+HOST-SUFFIX,segment.io,REJECT
+HOST-SUFFIX,segmentify.com,REJECT
+HOST-SUFFIX,sentiance.com,REJECT
+HOST-SUFFIX,serverbid.com,REJECT
+HOST-SUFFIX,sessionm.com,REJECT
+HOST-SUFFIX,smartlook.com,REJECT
+HOST-SUFFIX,socdm.com,REJECT
+HOST-SUFFIX,socialannex.com,REJECT
+HOST-SUFFIX,socialbakers.com,REJECT
+HOST-SUFFIX,sociaplus.com,REJECT
+HOST-SUFFIX,stathat.com,REJECT
+HOST-SUFFIX,stats-locations.com,REJECT
+HOST-SUFFIX,tagcommander.com,REJECT
+HOST-SUFFIX,tailtarget.com,REJECT
+HOST-SUFFIX,tapad.com,REJECT
+HOST-SUFFIX,tapfiliate.com,REJECT
+HOST-SUFFIX,tapinfluence.com,REJECT
+HOST-SUFFIX,tapstream.com,REJECT
+HOST-SUFFIX,tend.io,REJECT
+HOST-SUFFIX,trackingio.com,REJECT
+HOST-SUFFIX,woopra.com,REJECT
+HOST-SUFFIX,wootric.com,REJECT
+HOST-SUFFIX,wowanalytics.co.uk,REJECT
+HOST-SUFFIX,zoomanalytics.co,REJECT
+
+HOST-SUFFIX,ads.linkedin.com,REJECT
+HOST,analytics.slashdotmedia.com,REJECT
+HOST,zgsdk.zhugeio.com,REJECT
+
+# > 51.LA
+HOST,js.users.51.la,REJECT
+HOST,mc.51.la,REJECT
+HOST,sdk.51.la,REJECT
+HOST,wc.51.la,REJECT
+# > 58
+HOST,track.58.com,REJECT
+HOST,tracklog.58.com,REJECT
+# > Antiy
+HOST,miav-cse.avlyun.com,REJECT
+HOST,miui-fxcse.avlyun.com,REJECT
+# > Apple
+HOST,token.safebrowsing.apple,REJECT
+# > Baidu
+HOST,hm.baidu.com,REJECT
+HOST,hmma.baidu.com,REJECT
+# > Daum
+HOST,track.tiara.daum.net,REJECT
+HOST,track.tiara.kakao.com,REJECT
+# > Google
+HOST-SUFFIX,googletagmanager.com,REJECT
+HOST-SUFFIX,google-analytics.com,REJECT
+HOST,safebrowsing.googleapis.com,REJECT
+HOST,safebrowsing.googleapis-cn.com,REJECT
+# > GozenData
+# https://www.v2ex.com/t/772523
+HOST-SUFFIX,gozendata.com,REJECT
+HOST-SUFFIX,gzads.com,REJECT
+HOST-SUFFIX,gz-data.com,REJECT
+# > GrowingIO
+HOST-SUFFIX,giocdn.com,REJECT
+HOST-SUFFIX,growingio.com,REJECT
+# > MI
+HOST-SUFFIX,tracking.miui.com,REJECT
+# HOST,api.miwifi.com
+HOST,data.mistat.xiaomi.com,REJECT
+HOST,flash.sec.miui.com,REJECT
+HOST,tracking.intl.miui.com,REJECT
+HOST,a0.app.xiaomi.com,REJECT
+HOST,api.installer.xiaomi.com,REJECT
+# > Microsoft
+HOST,c.bing.com,REJECT
+HOST,c.clarity.ms,REJECT
+HOST,o.clarity.ms,REJECT
+HOST,www.clarity.ms,REJECT
+# > TalkingData
+HOST-SUFFIX,cpatrk.net,REJECT
+HOST-SUFFIX,talkingdata.com,REJECT
+HOST-SUFFIX,talkingdata.net,REJECT
+HOST-SUFFIX,udrig.com,REJECT
+# > Tencent
+HOST,safebrowsing.urlsec.qq.com,REJECT
+# > Tenjin
+HOST,track.tenjin.com,REJECT
+HOST,track.tenjin.io,REJECT

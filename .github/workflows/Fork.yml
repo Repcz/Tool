@@ -1,0 +1,1087 @@
+name: Fork Filter lists
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 * * * *"
+  
+jobs:
+  Fork-FLITER-list:
+    runs-on: ubuntu-latest
+    env:
+      TZ: 'Asia/Shanghai'
+    
+    steps: 
+    - name: Checkout target repository
+      uses: actions/checkout@v4.1.0
+      with:
+        repository: Repcz/Tool
+        path: Tool-repo
+    
+    - name: Download files to GeoIP
+      run: |
+        mkdir -p Tool-repo/GeoIP
+        curl -L -o Tool-repo/GeoIP/CN_Country.mmdb "https://raw.githubusercontent.com/Masaiki/GeoIP2-CN/release/Country.mmdb"
+        curl -L -o Tool-repo/GeoIP/Global_Country.mmdb "https://raw.githubusercontent.com/Masaiki/GeoIP2-CN/release/Country.mmdb"
+        curl -L -o Tool-repo/GeoIP/ChinaIPv4.list "https://raw.githubusercontent.com/soffchen/GeoIP2-CN/release/CN-ip-cidr.txt"
+        curl -L -o Tool-repo/GeoIP/ChinaIPv6.list "https://raw.githubusercontent.com/missuo/ASN-China/main/IPv6.China.list"
+
+    - name: Download files to Surge
+      run: |
+        mkdir -p Tool-repo/Surge/Rules
+        # 苹果
+        curl -L -o Tool-repo/Surge/Rules/APNs.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ApplePushNotificationService.list"
+        curl -L -o Tool-repo/Surge/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
+        curl -L -o Tool-repo/Surge/Rules/AppStore.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rule/AppStore/AppStore.list"
+        curl -L -o Tool-repo/Surge/Rules/AppleID.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleID/AppleID.list"
+        curl -L -o Tool-repo/Surge/Rules/AppleMusic.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleMusic/AppleMusic.list"
+        curl -L -o Tool-repo/Surge/Rules/iCloud.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/iCloud/iCloud.list"
+        curl -L -o Tool-repo/Surge/Rules/TestFlight.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TestFlight/TestFlight.list"
+        curl -L -o Tool-repo/Surge/Rules/AppleProxy.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleProxy/AppleProxy.list"
+        # OpenAI
+        curl -L -o Tool-repo/Surge/Rules/OpenAI.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/OpenAI.list"
+        curl -L -o Tool-repo/Surge/Rules/ChatGPT_Voice.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ChatGPT_Voice.list"
+        # 社交媒体
+        curl -L -o Tool-repo/Surge/Rules/Twitter.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list"
+        curl -L -o Tool-repo/Surge/Rules/Instagram.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Instagram.list"
+        curl -L -o Tool-repo/Surge/Rules/Facebook.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Facebook.list"
+        # 谷歌
+        curl -L -o Tool-repo/Surge/Rules/YouTube.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list"
+        curl -L -o Tool-repo/Surge/Rules/Google.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list"
+        # 微软
+        curl -L -o Tool-repo/Surge/Rules/Copilot.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/Copilot.list"
+        curl -L -o Tool-repo/Surge/Rules/Github.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list"
+        curl -L -o Tool-repo/Surge/Rules/OneDrive.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OneDrive.list"
+        curl -L -o Tool-repo/Surge/Rules/Microsoft.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Microsoft.list"
+        # 流媒体
+        curl -L -o Tool-repo/Surge/Rules/TikTok.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/TikTok.list"
+        curl -L -o Tool-repo/Surge/Rules/Netflix.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list"
+        curl -L -o Tool-repo/Surge/Rules/HBO.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.list"
+        curl -L -o Tool-repo/Surge/Rules/Disney.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list"
+        curl -L -o Tool-repo/Surge/Rules/Spotify.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.list"
+        curl -L -o Tool-repo/Surge/Rules/PrimeVideo.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PrimeVideo/PrimeVideo.list"
+        curl -L -o Tool-repo/Surge/Rules/FitnessPlus.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/FitnessPlus/FitnessPlus.list"
+        curl -L -o Tool-repo/Surge/Rules/AppleMedia.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleMedia/AppleMedia.list"
+        curl -L -o Tool-repo/Surge/Rules/Bahamut.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Bahamut/Bahamut.list"
+        curl -L -o Tool-repo/Surge/Rules/ProxyMedia.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"
+        # PayPal
+        curl -L -o Tool-repo/Surge/Rules/PayPal.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list"
+        # GFW
+        curl -L -o Tool-repo/Surge/Rules/ProxyGFW.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list"
+        # 游戏规则 
+        curl -L -o Tool-repo/Surge/Rules/Steam.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list"
+        curl -L -o Tool-repo/Surge/Rules/Epic.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Epic/Epic.list"
+        curl -L -o Tool-repo/Surge/Rules/Game.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Game/Game.list"
+        # 下载CDN
+        curl -L -o Tool-repo/Surge/Rules/DownloadCDN_Global.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Clash/Rule/InternationalDownloadCDN.yaml"
+        curl -L -o Tool-repo/Surge/Rules/DownloadCDN_CN.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Clash/Rule/ChinaDownloadCDN.yaml"
+        # 国内规则 
+        curl -L -o Tool-repo/Surge/Rules/Bilibili.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list"
+        curl -L -o Tool-repo/Surge/Rules/WeChat.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/WeChat.list"
+        curl -L -o Tool-repo/Surge/Rules/ChinaASN.list "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
+        curl -L -o Tool-repo/Surge/Rules/ChinaDomain.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list"
+        # 广告规则 
+        curl -L -o Tool-repo/Surge/Rules/Ads_RuCu6.list "https://raw.githubusercontent.com/RuCu6/QuanX/main/Rules/MyBlockAds.list"
+        curl -L -o Tool-repo/Surge/Rules/Ads_limbopro.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Surge/rule/Adblock4limbo_surge.list"
+        curl -L -o Tool-repo/Surge/Rules/Ads_EasyListChina.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easylistchina_surge.list"
+        curl -L -o Tool-repo/Surge/Rules/Ads_EasyListPrivacy.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easyprivacy_surge.list"
+        curl -L -o Tool-repo/Surge/Rules/Ads_Dlerio.list "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Reject.list"
+        curl -L -o Tool-repo/Surge/Rules/AdGuardChinese.list "https://raw.githubusercontent.com/geekdada/surge-list/master/domain-set/chinese-filter.txt"
+        # fmz200
+        curl -L -o Tool-repo/Surge/Rules/Direct_fmz200.list "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliuxiuzheng.list"
+        curl -L -o Tool-repo/Surge/Rules/Ads_fmz200.list "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliu.list"
+        # ConnersHua
+        curl -L -o Tool-repo/Surge/Rules/Ads_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Advertising.list"
+        curl -L -o Tool-repo/Surge/Rules/Hijacking_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Hijacking.list"
+        curl -L -o Tool-repo/Surge/Rules/Tracking_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Tracking.list"
+
+    - name: Edit Surge/Rules/ yaml to text
+      run: |
+        cd Tool-repo/Surge/Rules
+        for file in DownloadCDN_Global.list DownloadCDN_CN.list; do
+          if [ -f "$file" ]; then
+            # 删除payload
+            sed -i 's/payload://g' "$file"
+            # 删除 - 号
+            sed -i 's/#  - /# /g' "$file"
+            sed -i 's/  # - /# /g' "$file"
+            sed -i 's/  - //g' "$file"
+            # 删除单引号
+            sed -i "s/'//g" "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+    - name: Edit Surge/Rules
+      run: |
+        cd Tool-repo/Surge/Rules
+        for file in *.list; do
+          if [ -f "$file" ]; then
+            # 修改，& ; 以及大小写
+            sed -i -e 's/, /,/g' -e 's/;/# /g' -e 's/host,/HOST,/g' -e 's/host-/HOST-/g'  -e 's/suffix/SUFFIX/g' -e 's/-keyword/-KEYWORD/g' -e 's/,reject/,REJECT/g' -e 's/ip-cidr/IP-CIDR/g' -e 's/geoip/GEOIP/g' "$file"
+            # 删除“,REJECT”
+            sed -i 's/,REJECT//g' "$file"
+            # 修改HOST为DOMAIN
+            sed -i -e 's/HOST,/DOMAIN,/g' -e 's/HOST-/DOMAIN-/g' "$file"
+            # 修改IP6-CIDR为IP-CIDR6
+            sed -i 's/IP6-CIDR,/IP-CIDR6,/g' "$file"
+            # 如果包含IP-CIDR且不包含,no-resolve 则添加,no-resolve
+            awk '/^IP-CIDR/ && !/,no-resolve/ {print $0",no-resolve"; next} {print}' "$file" > tmpfile
+            mv tmpfile "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+    
+    - name: Edit Surge/Rules to rule-set
+      run: |
+        cd Tool-repo/Surge/Rules
+        for file in *_RuleSet.list; do
+          if [ -f "$file" ]; then
+            # 删除 DOMAIN 和 DOMAIN-SUFFIX 行
+            awk '!/^(DOMAIN|DOMAIN-SUFFIX),/' "$file" > tmpfile
+            mv tmpfile "$file"
+            # 删除空行
+            sed -i '/^[[:space:]]*$/d' "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+    - name: Edit Surge/Rules to domain-set
+      run: |
+        cd Tool-repo/Surge/Rules
+        for file in *_DomainSet.list; do
+          if [ -f "$file" ]; then
+            # DOMAIN, 移除
+            sed -i 's/DOMAIN,//g' "$file"
+            # DOMAIN-SUFFIX, 替换为 .
+            sed -i 's/DOMAIN-SUFFIX,/./g' "$file"
+            # 删除多种规则
+            sed -i '/^\(PROCESS-NAME\|DOMAIN-KEYWORD\|IP-CIDR\|IP-CIDR6\|IP-ASN\|URL-REGEX\|USER-AGENT\|OR\|AND\),.*$/d' "$file"
+            # 删除空行
+            sed -i '/^[[:space:]]*$/d' "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+    - name: Edit Surge/Rules/ domain-set to rule-set
+      run: |
+        cd Tool-repo/Surge/Rules
+        for file in AdGuardChinese.list; do
+          if [ -f "$file" ]; then
+          # 将每一行的第一个.替换为 DOMAIN-SUFFIX,
+          sed -i 's/^\./DOMAIN-SUFFIX,/g' "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+    - name: Edit Surge/Rules add extended-matching
+      run: |
+        cd Tool-repo/Surge/Rules
+        for file in Ads_*.list  WeChat.list Tracking_*.list Hijacking_*.list Bilibili.list Netflix.list; do
+          if [ "$file" != "Ads_QQMusic.list" ] && [ "$file" != "ChatGPT_Voice.list" ]; then
+            # 在包含 DOMAIN 的行的最后面添加 ,extended-matching
+            sed -i -e '/^DOMAIN-SUFFIX,/ s/$/,extended-matching/' \
+                    -e '/^DOMAIN,/ s/$/,extended-matching/' \
+                    -e '/^\./ s/$/,extended-matching/' "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+    - name: Download files to Clash
+      run: |
+        mkdir -p Tool-repo/Clash/Rules
+        # 流媒体
+        curl -L -o Tool-repo/Clash/Rules/Emby.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Emby.list"
+        curl -L -o Tool-repo/Clash/Rules/TikTok.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/TikTok.list"
+        curl -L -o Tool-repo/Clash/Rules/Netflix.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list"
+        curl -L -o Tool-repo/Clash/Rules/HBO.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.list"
+        curl -L -o Tool-repo/Clash/Rules/Disney.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list"
+        curl -L -o Tool-repo/Clash/Rules/Spotify.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.list"
+        curl -L -o Tool-repo/Clash/Rules/PrimeVideo.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PrimeVideo/PrimeVideo.list"
+        curl -L -o Tool-repo/Clash/Rules/FitnessPlus.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/FitnessPlus/FitnessPlus.list"
+        curl -L -o Tool-repo/Clash/Rules/AppleMedia.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleMedia/AppleMedia.list"
+        curl -L -o Tool-repo/Clash/Rules/Bahamut.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Bahamut/Bahamut.list"
+        curl -L -o Tool-repo/Clash/Rules/ProxyMedia.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"
+        # 下载规则
+        curl -L -o Tool-repo/Clash/Rules/Download.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.list"
+        # 苹果
+        curl -L -o Tool-repo/Clash/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
+        # OpenAI
+        curl -L -o Tool-repo/Clash/Rules/OpenAI.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/OpenAI.list"
+        curl -L -o Tool-repo/Clash/Rules/ChatGPT_Voice.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ChatGPT_Voice.list"
+        # 社交媒体
+        curl -L -o Tool-repo/Clash/Rules/Telegram.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Telegram.list"
+        curl -L -o Tool-repo/Clash/Rules/Twitter.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list"
+        curl -L -o Tool-repo/Clash/Rules/Instagram.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Instagram.list"
+        curl -L -o Tool-repo/Clash/Rules/Facebook.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Facebook.list"
+        # 谷歌
+        curl -L -o Tool-repo/Clash/Rules/YouTube.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list"
+        curl -L -o Tool-repo/Clash/Rules/Google.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list"
+        # 微软
+        curl -L -o Tool-repo/Clash/Rules/Copilot.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/Copilot.list"
+        curl -L -o Tool-repo/Clash/Rules/Github.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list"
+        curl -L -o Tool-repo/Clash/Rules/OneDrive.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OneDrive.list"
+        curl -L -o Tool-repo/Clash/Rules/Microsoft.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Microsoft.list"
+        # GFW
+        curl -L -o Tool-repo/Clash/Rules/ProxyGFW.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list"
+        # Trust
+        curl -L -o Tool-repo/Clash/Rules/Trust.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Trust.list"
+        # Talkatone
+        curl -L -o Tool-repo/Clash/Rules/Talkatone.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Talkatone.list"
+        # PayPal
+        curl -L -o Tool-repo/Clash/Rules/PayPal.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list"
+        # 国内规则 
+        curl -L -o Tool-repo/Clash/Rules/Bilibili.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list"
+        curl -L -o Tool-repo/Clash/Rules/WeChat.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Wechat.list"
+        curl -L -o Tool-repo/Clash/Rules/ChinaDomain.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list"
+        curl -L -o Tool-repo/Clash/Rules/ChinaIPv4.list "https://raw.githubusercontent.com/soffchen/GeoIP2-CN/release/CN-ip-cidr.txt"
+        curl -L -o Tool-repo/Clash/Rules/ChinaIPv6.list "https://raw.githubusercontent.com/missuo/ASN-China/main/IPv6.China.list"
+        # 游戏规则 
+        curl -L -o Tool-repo/Clash/Rules/Game.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.list"
+        curl -L -o Tool-repo/Clash/Rules/Steam.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list"
+        curl -L -o Tool-repo/Clash/Rules/Epic.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Epic/Epic.list"
+        # 下载CDN
+        curl -L -o Tool-repo/Clash/Rules/DownloadCDN_Global.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Clash/Rule/InternationalDownloadCDN.yaml"
+        curl -L -o Tool-repo/Clash/Rules/DownloadCDN_CN.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Clash/Rule/ChinaDownloadCDN.yaml"
+        # 广告规则 
+        curl -L -o Tool-repo/Clash/Rules/Ads_EasyListChina.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easylistchina_surge.list"
+        curl -L -o Tool-repo/Clash/Rules/Ads_EasyListPrivacy.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easyprivacy_surge.list"
+        curl -L -o Tool-repo/Clash/Rules/Ads_Dlerio.list "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Reject.list"
+        curl -L -o Tool-repo/Clash/Rules/Anti-ad.list "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml"
+        curl -L -o Tool-repo/Clash/Rules/AdGuardChinese.list "https://raw.githubusercontent.com/geekdada/surge-list/master/domain-set/chinese-filter.txt"
+        # QQ音乐广告规则
+        curl -L -o Tool-repo/Clash/Rules/Ads_QQMusic.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Ads_QQMusic.list"
+        # ConnersHua
+        curl -L -o Tool-repo/Clash/Rules/Ads_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Advertising.list"
+        curl -L -o Tool-repo/Clash/Rules/Hijacking_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Hijacking.list"
+        curl -L -o Tool-repo/Clash/Rules/Tracking_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Tracking.list"
+        # Lan
+        curl -L -o Tool-repo/Clash/Rules/Lan.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Lan.list"
+        
+    - name: Edit Clash/Rules
+      run: |
+        cd Tool-repo/Clash/Rules
+        for file in *.list; do
+          if [ -f "$file" ]; then
+            # 修改，& ; 以及大小写
+            sed -i -e 's/, /,/g' -e 's/;/# /g' -e 's/host,/HOST,/g' -e 's/host-/HOST-/g'  -e 's/suffix/SUFFIX/g' -e 's/-keyword/-KEYWORD/g' -e 's/,reject/,REJECT/g' -e 's/ip-cidr/IP-CIDR/g' -e 's/geoip/GEOIP/g' "$file"
+            # 删除extended-matching
+            sed -i 's/,extended-matching//g' "$file"
+            # 注释不支持的规则
+            sed -i -e '/\(OR\|AND\|NOT\|USER-AGENT\|URL-REGEX\|IP-ASN\),/ s/^/#/' "$file"
+            # 如果包含IP-CIDR且不包含,no-resolve 则添加,no-resolve
+            awk '/^IP-CIDR/ && !/,no-resolve/ {print $0",no-resolve"; next} {print}' "$file" > tmpfile
+            mv tmpfile "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+    - name: Edit Clash/Rules/ domain-set to rule-set
+      run: |
+        cd Tool-repo/Clash/Rules
+        for file in AdGuardChinese.list; do
+          if [ -f "$file" ]; then
+          # 将每一行的第一个.替换为 DOMAIN-SUFFIX,
+          sed -i 's/^\./DOMAIN-SUFFIX,/g' "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+    - name: Edit Clash/Rules/ yaml to text
+      run: |
+        cd Tool-repo/Clash/Rules
+        for file in Anti-ad.list DownloadCDN_Global.list DownloadCDN_CN.list; do
+          if [ -f "$file" ]; then
+            # 删除payload
+            sed -i 's/payload://g' "$file"
+            # 删除 - 号
+            sed -i 's/#  - /# /g' "$file"
+            sed -i 's/  # - /# /g' "$file"
+            sed -i 's/  - //g' "$file"
+            # 删除单引号
+            sed -i "s/'//g" "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+    
+    - name: Download files to QuantumultX
+      run: |
+        mkdir -p Tool-repo/QuantumultX/Rules
+        # Apple规则
+        curl -L -o Tool-repo/QuantumultX/Rules/APNs.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ApplePushNotificationService.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/Lan.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/AppStore.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rule/AppStore/AppStore.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/AppleID.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleID/AppleID.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/AppleMusic.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleMusic/AppleMusic.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/TestFlight.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TestFlight/TestFlight.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/iCloud.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/iCloud/iCloud.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/AppleProxy.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleProxy/AppleProxy.list"
+        # OpenAI
+        curl -L -o Tool-repo/QuantumultX/Rules/OpenAI.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/QuantumultX/Rule/OpenAI.snippet"
+        curl -L -o Tool-repo/QuantumultX/Rules/ChatGPT_Voice.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/QuantumultX/Rule/ChatGPT_Voice.snippet"
+        # 社交媒体
+        curl -L -o Tool-repo/QuantumultX/Rules/Telegram.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Telegram.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/Twitter.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/Instagram.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Instagram.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/Facebook.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Facebook.list"
+        # 谷歌
+        curl -L -o Tool-repo/QuantumultX/Rules/YouTube.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/Google.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/Github.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list"
+        # 微软
+        curl -L -o Tool-repo/QuantumultX/Rules/Copilot.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/Copilot.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/OneDrive.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OneDrive.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/Microsoft.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Microsoft.list"
+        # 流媒体
+        curl -L -o Tool-repo/QuantumultX/Rules/Emby.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Emby.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/TikTok.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/TikTok.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/Netflix.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/HBO.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/Disney.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/Spotify.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/PrimeVideo.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PrimeVideo/PrimeVideo.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/FitnessPlus.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/FitnessPlus/FitnessPlus.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/AppleMedia.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleMedia/AppleMedia.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/Bahamut.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Bahamut/Bahamut.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/ProxyMedia.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"
+        # PayPal
+        curl -L -o Tool-repo/QuantumultX/Rules/PayPal.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list"
+        # GFW
+        curl -L -o Tool-repo/QuantumultX/Rules/ProxyGFW.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list"
+        # Trust
+        curl -L -o Tool-repo/QuantumultX/Rules/Trust.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Trust.list"
+        # Talkatone
+        curl -L -o Tool-repo/QuantumultX/Rules/Talkatone.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Talkatone.list"
+        # 国内规则
+        curl -L -o Tool-repo/QuantumultX/Rules/Bilibili.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/WeChat.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Wechat.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/ChinaDomain.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/ChinaASN.list "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
+        # 游戏规则
+        curl -L -o Tool-repo/QuantumultX/Rules/Steam.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/Epic.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Epic/Epic.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/Game.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.list"
+        # 防DNS泄漏
+        curl -L -o Tool-repo/QuantumultX/Rules/Prevent_DNS_Leaks.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Prevent_DNS_Leaks.list"
+        # 广告规则
+        curl -L -o Tool-repo/QuantumultX/Rules/Ads_EasyListChina.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easylistchina_surge.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/Ads_EasyListPrivacy.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/QuantumultX/easyprivacy.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/Ads_Dlerio.list "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Reject.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/AdGuardChinese.list "https://raw.githubusercontent.com/geekdada/surge-list/master/domain-set/chinese-filter.txt"
+        curl -L -o Tool-repo/QuantumultX/Rules/Ads_limbopro.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Surge/rule/Adblock4limbo_surge.list"
+        # QQ音乐广告规则
+        curl -L -o Tool-repo/QuantumultX/Rules/Ads_QQMusic.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Ads_QQMusic.list"
+        # ConnersHua
+        curl -L -o Tool-repo/QuantumultX/Rules/Ads_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Advertising.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/Hijacking_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Hijacking.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/Tracking_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Tracking.list"
+        # Lan
+        curl -L -o Tool-repo/QuantumultX/Rules/Lan.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Lan.list"
+
+    - name: Edit QuantumultX/Rules/AdGuardChinese.list
+      run: |
+        cd Tool-repo/QuantumultX/Rules
+        for file in AdGuardChinese.list; do
+          if [ -f "$file" ]; then
+          # 将每一行的第一个.替换为 HOST-SUFFIX,
+          sed -i 's/^\./HOST-SUFFIX,/g' "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+    - name: Edit QuantumultX/Rules
+      run: |
+        cd Tool-repo/QuantumultX/Rules
+        for file in *.list; do
+          if [ "$file" != "OpenAI.list" ] && [ "$file" != "ChatGPT_Voice.list" ]; then
+            # 修改, 为,
+            sed -i 's/, /,/g' "$file"
+            # 修改DOMAIN为HOST
+            sed -i -e 's/DOMAIN,/HOST,/g' -e 's/DOMAIN-/HOST-/g' "$file"
+            # 修改IP-CIDR6为IP6-CIDR
+            sed -i 's/IP-CIDR6,/IP6-CIDR,/g' "$file"
+            # 删除no-resolve
+            sed -i 's/,no-resolve//g' "$file"
+            # 删除extended-matching
+            sed -i 's/,extended-matching//g' "$file"
+            # 注释不支持的规则
+            sed -i -e '/\(OR\|AND\|NOT\|PROCESS-NAME\),/ s/^/#/' "$file"
+            # 删除" //" 以及后面的所有字符
+            sed -i 's| \{1,\}//.*$||' "$file"
+            # 在非注释后添加PROXY
+            awk '!/\/\/|#|,PROXY|,DIRECT|,REJECT|^ *$/ {print $0",PROXY"; next} {print}' "$file" > tmpfile
+            mv tmpfile "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+    - name: Edit QuantumultX/Rules/Ads
+      run: |
+        cd Tool-repo/QuantumultX/Rules
+        for file in Ads_*.list AdGuardChinese.list  *_ConnersHua.list; do
+          if [ -f "$file" ]; then
+            # 修改PROXY为REJECT
+            sed -i 's/,PROXY/,REJECT/g' "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+    - name: Edit QuantumultX/Rules/CN
+      run: |
+        cd Tool-repo/QuantumultX/Rules
+        for file in APNs.list Bilibili.list WeChat.list ChinaDomain.list ChinaASN.list; do
+          if [ -f "$file" ]; then
+            # 修改PROXY为DIRECT
+            sed -i 's/,PROXY/,DIRECT/g' "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+    - name: Download files to Loon
+      run: |
+        mkdir -p Tool-repo/Loon/Rules
+        # Apple
+        curl -L -o Tool-repo/Loon/Rules/APNs.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ApplePushNotificationService.list"
+        curl -L -o Tool-repo/Loon/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
+        curl -L -o Tool-repo/Loon/Rules/AppStore.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rule/AppStore/AppStore.list"
+        curl -L -o Tool-repo/Loon/Rules/AppleID.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleID/AppleID.list"
+        curl -L -o Tool-repo/Loon/Rules/AppleMusic.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleMusic/AppleMusic.list"
+        curl -L -o Tool-repo/Loon/Rules/iCloud.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/iCloud/iCloud.list"
+        curl -L -o Tool-repo/Loon/Rules/TestFlight.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TestFlight/TestFlight.list"
+        curl -L -o Tool-repo/Loon/Rules/AppleProxy.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleProxy/AppleProxy.list"
+        # OpenAI
+        curl -L -o Tool-repo/Loon/Rules/OpenAI.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/OpenAI.list"
+        curl -L -o Tool-repo/Loon/Rules/ChatGPT_Voice.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ChatGPT_Voice.list"
+        # 社交媒体
+        curl -L -o Tool-repo/Loon/Rules/Telegram.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Telegram.list"
+        curl -L -o Tool-repo/Loon/Rules/Twitter.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list"
+        curl -L -o Tool-repo/Loon/Rules/Instagram.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Instagram.list"
+        curl -L -o Tool-repo/Loon/Rules/Facebook.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Facebook.list"
+        # 谷歌
+        curl -L -o Tool-repo/Loon/Rules/YouTube.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list"
+        curl -L -o Tool-repo/Loon/Rules/Google.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list"
+        # 微软
+        curl -L -o Tool-repo/Loon/Rules/Copilot.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/Copilot.list"
+        curl -L -o Tool-repo/Loon/Rules/Github.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list"
+        curl -L -o Tool-repo/Loon/Rules/OneDrive.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OneDrive.list"
+        curl -L -o Tool-repo/Loon/Rules/Microsoft.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Microsoft.list"
+        # 流媒体
+        curl -L -o Tool-repo/Loon/Rules/TikTok.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/TikTok.list"
+        curl -L -o Tool-repo/Loon/Rules/Netflix.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list"
+        curl -L -o Tool-repo/Loon/Rules/HBO.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.list"
+        curl -L -o Tool-repo/Loon/Rules/Disney.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list"
+        curl -L -o Tool-repo/Loon/Rules/Spotify.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.list"
+        curl -L -o Tool-repo/Loon/Rules/PrimeVideo.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PrimeVideo/PrimeVideo.list"
+        curl -L -o Tool-repo/Loon/Rules/FitnessPlus.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/FitnessPlus/FitnessPlus.list"
+        curl -L -o Tool-repo/Loon/Rules/AppleMedia.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleMedia/AppleMedia.list"
+        curl -L -o Tool-repo/Loon/Rules/Bahamut.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Bahamut/Bahamut.list"
+        curl -L -o Tool-repo/Loon/Rules/ProxyMedia.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"
+        curl -L -o Tool-repo/Loon/Rules/Emby.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Emby.list"
+        # PayPal
+        curl -L -o Tool-repo/Loon/Rules/PayPal.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list"
+        # GFW
+        curl -L -o Tool-repo/Loon/Rules/ProxyGFW.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list"
+        # Trust
+        curl -L -o Tool-repo/Loon/Rules/Trust.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Trust.list"
+        # Talkatone
+        curl -L -o Tool-repo/Loon/Rules/Talkatone.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Talkatone.list"
+        # 国内规则 
+        curl -L -o Tool-repo/Loon/Rules/Bilibili.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list"
+        curl -L -o Tool-repo/Loon/Rules/WeChat.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Wechat.list"
+        curl -L -o Tool-repo/Loon/Rules/ChinaDomain.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list"
+        curl -L -o Tool-repo/Loon/Rules/ChinaASN.list "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
+        # 游戏规则 
+        curl -L -o Tool-repo/Loon/Rules/Game.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.list"
+        curl -L -o Tool-repo/Loon/Rules/Steam.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list"
+        curl -L -o Tool-repo/Loon/Rules/Epic.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Epic/Epic.list"
+        # 广告规则 
+        curl -L -o Tool-repo/Loon/Rules/Ads_EasyListChina.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easylistchina_surge.list"
+        curl -L -o Tool-repo/Loon/Rules/Ads_EasyListPrivacy.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easyprivacy_surge.list"
+        curl -L -o Tool-repo/Loon/Rules/Ads_Dlerio.list "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Reject.list"
+        curl -L -o Tool-repo/Loon/Rules/Ads_RuCu6.list "https://raw.githubusercontent.com/RuCu6/QuanX/main/Rules/MyBlockAds.list"
+        curl -L -o Tool-repo/Loon/Rules/AdGuardChinese.list "https://raw.githubusercontent.com/geekdada/surge-list/master/domain-set/chinese-filter.txt"
+        curl -L -o Tool-repo/Loon/Rules/Ads_limbopro.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Surge/rule/Adblock4limbo_surge.list"
+        # QQ音乐广告规则
+        curl -L -o Tool-repo/Loon/Rules/Ads_QQMusic.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Ads_QQMusic.list"
+        # fmz200
+        curl -L -o Tool-repo/Loon/Rules/Direct_fmz200.list "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliuxiuzheng.list"
+        curl -L -o Tool-repo/Loon/Rules/Ads_fmz200.list "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliu.list"
+        # ConnersHua
+        curl -L -o Tool-repo/Loon/Rules/Ads_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Advertising.list"
+        curl -L -o Tool-repo/Loon/Rules/Hijacking_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Hijacking.list"
+        curl -L -o Tool-repo/Loon/Rules/Tracking_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Tracking.list"
+        # Lan
+        curl -L -o Tool-repo/Loon/Rules/Lan.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Lan.list"
+
+        
+    - name: Edit Loon/Rules
+      run: |
+        cd Tool-repo/Loon/Rules
+        for file in *.list; do
+          if [ -f "$file" ]; then
+            # 修改，& ; 以及大小写
+            sed -i -e 's/, /,/g' -e 's/;/# /g' -e 's/host,/HOST,/g' -e 's/host-/HOST-/g'  -e 's/suffix/SUFFIX/g' -e 's/-keyword/-KEYWORD/g' -e 's/,reject/,REJECT/g' -e 's/ip-cidr/IP-CIDR/g' -e 's/geoip/GEOIP/g' "$file"
+            # 删除不必要的部分
+            sed -i 's/,REJECT//g' "$file"
+            # 删除extended-matching
+            sed -i 's/,extended-matching//g' "$file"
+            # 修改HOST为DOMAIN
+            sed -i -e 's/HOST,/DOMAIN,/g' -e 's/HOST-/DOMAIN-/g' "$file"
+            # 修改IP6-CIDR为IP-CIDR6
+            sed -i 's/IP6-CIDR,/IP-CIDR6,/g' "$file"
+            # 注释不支持的规则
+            sed -i -e '/\(OR\|AND\|NOT\|PROCESS-NAME\),/ s/^/#/' "$file"
+            # 如果包含IP-CIDR且不包含,no-resolve 则添加,no-resolve
+            awk '/^IP-CIDR/ && !/,no-resolve/ {print $0",no-resolve"; next} {print}' "$file" > tmpfile
+            mv tmpfile "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+    - name: Edit Loon/Rules/AdGuardChinese.list
+      run: |
+        cd Tool-repo/Loon/Rules
+        for file in AdGuardChinese.list; do
+          if [ -f "$file" ]; then
+          # 将每一行的第一个.替换为 DOMAIN-SUFFIX,
+          sed -i 's/^\./DOMAIN-SUFFIX,/g' "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+    - name: Download files to Shadowrocket
+      run: |
+        mkdir -p Tool-repo/Shadowrocket/Rules
+        # Apple
+        curl -L -o Tool-repo/Shadowrocket/Rules/APNs.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ApplePushNotificationService.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/AppStore.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rule/AppStore/AppStore.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/AppleID.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleID/AppleID.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/AppleMusic.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleMusic/AppleMusic.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/iCloud.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/iCloud/iCloud.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/TestFlight.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TestFlight/TestFlight.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/AppleProxy.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleProxy/AppleProxy.list"
+        # OpenAI
+        curl -L -o Tool-repo/Shadowrocket/Rules/OpenAI.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/OpenAI.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/ChatGPT_Voice.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ChatGPT_Voice.list"
+        # 社交媒体
+        curl -L -o Tool-repo/Shadowrocket/Rules/Telegram.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Telegram.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/Twitter.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/Instagram.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Instagram.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/Facebook.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Facebook.list"
+        # 谷歌
+        curl -L -o Tool-repo/Shadowrocket/Rules/YouTube.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/Google.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list"
+        # 微软
+        curl -L -o Tool-repo/Shadowrocket/Rules/Copilot.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/Copilot.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/Github.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/OneDrive.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OneDrive.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/Microsoft.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Microsoft.list"
+        # 流媒体
+        curl -L -o Tool-repo/Shadowrocket/Rules/TikTok.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/TikTok.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/Netflix.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/HBO.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/Disney.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/Spotify.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/PrimeVideo.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PrimeVideo/PrimeVideo.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/FitnessPlus.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/FitnessPlus/FitnessPlus.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/AppleMedia.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleMedia/AppleMedia.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/Bahamut.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Bahamut/Bahamut.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/ProxyMedia.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/Emby.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Emby.list"
+        # PayPal
+        curl -L -o Tool-repo/Shadowrocket/Rules/PayPal.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list"
+        # GFW
+        curl -L -o Tool-repo/Shadowrocket/Rules/ProxyGFW.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list"
+        # Trust
+        curl -L -o Tool-repo/Shadowrocket/Rules/Trust.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Trust.list"
+        # Talkatone
+        curl -L -o Tool-repo/Shadowrocket/Rules/Talkatone.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Talkatone.list"
+        # 国内规则 
+        curl -L -o Tool-repo/Shadowrocket/Rules/Bilibili.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/WeChat.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Wechat.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/ChinaDomain.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/ChinaASN.list "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
+        # 游戏规则 
+        curl -L -o Tool-repo/Shadowrocket/Rules/Game.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/Steam.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/Epic.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Epic/Epic.list"
+        # 广告规则 
+        curl -L -o Tool-repo/Shadowrocket/Rules/Ads_EasyListChina.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easylistchina_surge.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/Ads_EasyListPrivacy.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easyprivacy_surge.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/Ads_Dlerio.list "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Reject.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/Ads_RuCu6.list "https://raw.githubusercontent.com/RuCu6/QuanX/main/Rules/MyBlockAds.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/AdGuardChinese.list "https://raw.githubusercontent.com/geekdada/surge-list/master/domain-set/chinese-filter.txt"
+        curl -L -o Tool-repo/Shadowrocket/Rules/Ads_limbopro.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Surge/rule/Adblock4limbo_surge.list"
+        # QQ音乐广告规则
+        curl -L -o Tool-repo/Shadowrocket/Rules/Ads_QQMusic.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Ads_QQMusic.list"
+        # fmz200
+        curl -L -o Tool-repo/Shadowrocket/Rules/Direct_fmz200.list "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliuxiuzheng.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/Ads_fmz200.list "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliu.list"
+        # ConnersHua
+        curl -L -o Tool-repo/Shadowrocket/Rules/Ads_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Advertising.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/Hijacking_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Hijacking.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/Tracking_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Tracking.list"
+        # Lan
+        curl -L -o Tool-repo/Shadowrocket/Rules/Lan.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Lan.list"
+
+    - name: Edit Shadowrocket/Rules/AdGuardChinese.list
+      run: |
+        cd Tool-repo/Shadowrocket/Rules
+        for file in AdGuardChinese.list; do
+          if [ -f "$file" ]; then
+          # 将每一行的第一个.替换为 DOMAIN-SUFFIX,
+          sed -i 's/^\./DOMAIN-SUFFIX,/g' "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+    - name: Edit Shadowrocket/Rules
+      run: |
+        cd Tool-repo/Shadowrocket/Rules
+        for file in *.list; do
+          if [ -f "$file" ]; then
+            # 修改，& ; 以及大小写
+            sed -i -e 's/, /,/g' -e 's/;/# /g' -e 's/host,/HOST,/g' -e 's/host-/HOST-/g'  -e 's/suffix/SUFFIX/g' -e 's/-keyword/-KEYWORD/g' -e 's/,reject/,REJECT/g' -e 's/ip-cidr/IP-CIDR/g' -e 's/geoip/GEOIP/g' "$file"
+            # 删除不必要的部分
+            sed -i 's/,REJECT//g' "$file"
+            # 删除extended-matching
+            sed -i 's/,extended-matching//g' "$file"
+            # 修改HOST为DOMAIN
+            sed -i -e 's/HOST,/DOMAIN,/g' -e 's/HOST-/DOMAIN-/g' "$file"
+            # 修改IP6-CIDR为IP-CIDR6
+            sed -i 's/IP6-CIDR,/IP-CIDR6,/g' "$file"
+            # 注释不支持的规则
+            sed -i -e '/\(PROCESS-NAME\),/ s/^/#/' "$file"
+            # 如果包含IP-CIDR且不包含,no-resolve 则添加,no-resolve
+            awk '/^IP-CIDR/ && !/,no-resolve/ {print $0",no-resolve"; next} {print}' "$file" > tmpfile
+            mv tmpfile "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+
+    - name: Download files to Stash
+      run: |
+        mkdir -p Tool-repo/Stash/Rules
+
+        #### YAML ####
+        # 苹果
+        curl -L -o Tool-repo/Stash/Rules/APNs.yaml "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ApplePushNotificationService.list"
+        curl -L -o Tool-repo/Stash/Rules/Apple.yaml "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
+        curl -L -o Tool-repo/Stash/Rules/AppStore.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rule/AppStore/AppStore.list"
+        curl -L -o Tool-repo/Stash/Rules/AppleID.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleID/AppleID.list"
+        curl -L -o Tool-repo/Stash/Rules/AppleMusic.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleMusic/AppleMusic.list"
+        curl -L -o Tool-repo/Stash/Rules/iCloud.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/iCloud/iCloud.list"
+        curl -L -o Tool-repo/Stash/Rules/TestFlight.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TestFlight/TestFlight.list"
+        curl -L -o Tool-repo/Stash/Rules/AppleProxy.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleProxy/AppleProxy.list"
+        # OpenAI
+        curl -L -o Tool-repo/Stash/Rules/OpenAI.yaml "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/OpenAI.list"
+        curl -L -o Tool-repo/Stash/Rules/ChatGPT_Voice.yaml "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ChatGPT_Voice.list"
+        # 社交媒体
+        curl -L -o Tool-repo/Stash/Rules/Telegram.yaml "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Telegram.list"
+        curl -L -o Tool-repo/Stash/Rules/Twitter.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list"
+        curl -L -o Tool-repo/Stash/Rules/Instagram.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Instagram.list"
+        curl -L -o Tool-repo/Stash/Rules/Facebook.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Facebook.list"
+        # 谷歌
+        curl -L -o Tool-repo/Stash/Rules/YouTube.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list"
+        curl -L -o Tool-repo/Stash/Rules/Google.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list"
+        # 微软
+        curl -L -o Tool-repo/Stash/Rules/Copilot.yaml "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/Copilot.list"
+        curl -L -o Tool-repo/Stash/Rules/Github.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list"
+        curl -L -o Tool-repo/Stash/Rules/OneDrive.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OneDrive.list"
+        curl -L -o Tool-repo/Stash/Rules/Microsoft.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Microsoft.list"
+        # 流媒体
+        curl -L -o Tool-repo/Stash/Rules/TikTok.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/TikTok.list"
+        curl -L -o Tool-repo/Stash/Rules/Netflix.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list"
+        curl -L -o Tool-repo/Stash/Rules/HBO.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.list"
+        curl -L -o Tool-repo/Stash/Rules/Disney.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list"
+        curl -L -o Tool-repo/Stash/Rules/Spotify.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.list"
+        curl -L -o Tool-repo/Stash/Rules/PrimeVideo.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PrimeVideo/PrimeVideo.list"
+        curl -L -o Tool-repo/Stash/Rules/FitnessPlus.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/FitnessPlus/FitnessPlus.list"
+        curl -L -o Tool-repo/Stash/Rules/AppleMedia.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleMedia/AppleMedia.list"
+        curl -L -o Tool-repo/Stash/Rules/Bahamut.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Bahamut/Bahamut.list"
+        curl -L -o Tool-repo/Stash/Rules/ProxyMedia.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"
+        curl -L -o Tool-repo/Stash/Rules/Emby.yaml "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Emby.list"
+        # 国内规则 
+        curl -L -o Tool-repo/Stash/Rules/Bilibili.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list"
+        curl -L -o Tool-repo/Stash/Rules/WeChat.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Wechat.list"
+        curl -L -o Tool-repo/Stash/Rules/ChinaDomain.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list"
+        curl -L -o Tool-repo/Stash/Rules/ChinaASN.yaml "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
+        # PayPal
+        curl -L -o Tool-repo/Stash/Rules/PayPal.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list"
+        # GFW
+        curl -L -o Tool-repo/Stash/Rules/ProxyGFW.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list"
+        # Trust
+        curl -L -o Tool-repo/Stash/Rules/Trust.yaml "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Trust.list"
+        # Talkatone
+        curl -L -o Tool-repo/Stash/Rules/Talkatone.yaml "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Talkatone.list"
+        # 游戏规则 
+        curl -L -o Tool-repo/Stash/Rules/Game.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.list"
+        curl -L -o Tool-repo/Stash/Rules/Steam.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list"
+        curl -L -o Tool-repo/Stash/Rules/Epic.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Epic/Epic.list"
+        # 广告规则 
+        curl -L -o Tool-repo/Stash/Rules/Ads_EasyListChina.yaml "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easylistchina_surge.list"
+        curl -L -o Tool-repo/Stash/Rules/Ads_EasyListPrivacy.yaml "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easyprivacy_surge.list"
+        curl -L -o Tool-repo/Stash/Rules/Ads_Dlerio.yaml "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Reject.list"
+        curl -L -o Tool-repo/Stash/Rules/AdGuardChinese.yaml "https://raw.githubusercontent.com/geekdada/surge-list/master/domain-set/chinese-filter.txt"
+        curl -L -o Tool-repo/Stash/Rules/Ads_RuCu6.yaml "https://raw.githubusercontent.com/RuCu6/QuanX/main/Rules/MyBlockAds.list"
+        # QQ音乐广告规则
+        curl -L -o Tool-repo/Stash/Rules/Ads_QQMusic.yaml "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Ads_QQMusic.list"
+        # ConnersHua
+        curl -L -o Tool-repo/Stash/Rules/Ads_ConnersHua.yaml "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Advertising.list"
+        curl -L -o Tool-repo/Stash/Rules/Hijacking_ConnersHua.yaml "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Hijacking.list"
+        curl -L -o Tool-repo/Stash/Rules/Tracking_ConnersHua.yaml "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Tracking.list"
+        # fmz200
+        curl -L -o Tool-repo/Stash/Rules/Direct_fmz200.yaml "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliuxiuzheng.list"
+        curl -L -o Tool-repo/Stash/Rules/Ads_fmz200.yaml "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliu.list"
+        # Lan
+        curl -L -o Tool-repo/Stash/Rules/Lan.yaml "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Lan.list"
+
+        #### TEXT ####
+        # 苹果
+        curl -L -o Tool-repo/Stash/Rules/APNs.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ApplePushNotificationService.list"
+        curl -L -o Tool-repo/Stash/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
+        curl -L -o Tool-repo/Stash/Rules/AppStore.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rule/AppStore/AppStore.list"
+        curl -L -o Tool-repo/Stash/Rules/AppleID.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleID/AppleID.list"
+        curl -L -o Tool-repo/Stash/Rules/AppleMusic.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleMusic/AppleMusic.list"
+        curl -L -o Tool-repo/Stash/Rules/iCloud.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/iCloud/iCloud.list"
+        curl -L -o Tool-repo/Stash/Rules/TestFlight.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TestFlight/TestFlight.list"
+        curl -L -o Tool-repo/Stash/Rules/AppleProxy.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleProxy/AppleProxy.list"
+        # OpenAI
+        curl -L -o Tool-repo/Stash/Rules/OpenAI.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/OpenAI.list"
+        curl -L -o Tool-repo/Stash/Rules/ChatGPT_Voice.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ChatGPT_Voice.list"
+        # 社交媒体
+        curl -L -o Tool-repo/Stash/Rules/Telegram.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Telegram.list"
+        curl -L -o Tool-repo/Stash/Rules/Twitter.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list"
+        curl -L -o Tool-repo/Stash/Rules/Instagram.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Instagram.list"
+        curl -L -o Tool-repo/Stash/Rules/Facebook.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Facebook.list"
+        # 谷歌
+        curl -L -o Tool-repo/Stash/Rules/YouTube.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list"
+        curl -L -o Tool-repo/Stash/Rules/Google.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list"
+        # 微软
+        curl -L -o Tool-repo/Stash/Rules/Copilot.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/Copilot.list"
+        curl -L -o Tool-repo/Stash/Rules/Github.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list"
+        curl -L -o Tool-repo/Stash/Rules/OneDrive.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OneDrive.list"
+        curl -L -o Tool-repo/Stash/Rules/Microsoft.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Microsoft.list"
+        # 流媒体
+        curl -L -o Tool-repo/Stash/Rules/TikTok.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/TikTok.list"
+        curl -L -o Tool-repo/Stash/Rules/Netflix.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list"
+        curl -L -o Tool-repo/Stash/Rules/HBO.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.list"
+        curl -L -o Tool-repo/Stash/Rules/Disney.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list"
+        curl -L -o Tool-repo/Stash/Rules/Spotify.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.list"
+        curl -L -o Tool-repo/Stash/Rules/PrimeVideo.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PrimeVideo/PrimeVideo.list"
+        curl -L -o Tool-repo/Stash/Rules/FitnessPlus.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/FitnessPlus/FitnessPlus.list"
+        curl -L -o Tool-repo/Stash/Rules/AppleMedia.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleMedia/AppleMedia.list"
+        curl -L -o Tool-repo/Stash/Rules/Bahamut.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Bahamut/Bahamut.list"
+        curl -L -o Tool-repo/Stash/Rules/ProxyMedia.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"
+        curl -L -o Tool-repo/Stash/Rules/Emby.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Emby.list"
+        # 国内规则 
+        curl -L -o Tool-repo/Stash/Rules/Bilibili.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list"
+        curl -L -o Tool-repo/Stash/Rules/WeChat.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Wechat.list"
+        curl -L -o Tool-repo/Stash/Rules/ChinaDomain.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list"
+        curl -L -o Tool-repo/Stash/Rules/ChinaASN.list "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
+        # PayPal
+        curl -L -o Tool-repo/Stash/Rules/PayPal.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list"
+        # GFW
+        curl -L -o Tool-repo/Stash/Rules/ProxyGFW.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list"
+        # Trust
+        curl -L -o Tool-repo/Stash/Rules/Trust.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Trust.list"
+        # Talkatone
+        curl -L -o Tool-repo/Stash/Rules/Talkatone.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Talkatone.list"
+        # 游戏规则 
+        curl -L -o Tool-repo/Stash/Rules/Game.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.list"
+        curl -L -o Tool-repo/Stash/Rules/Steam.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list"
+        curl -L -o Tool-repo/Stash/Rules/Epic.list "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Epic/Epic.list"
+        # 广告规则 
+        curl -L -o Tool-repo/Stash/Rules/Ads_EasyListChina.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easylistchina_surge.list"
+        curl -L -o Tool-repo/Stash/Rules/Ads_EasyListPrivacy.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easyprivacy_surge.list"
+        curl -L -o Tool-repo/Stash/Rules/Ads_Dlerio.list "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Reject.list"
+        curl -L -o Tool-repo/Stash/Rules/AdGuardChinese.list "https://raw.githubusercontent.com/geekdada/surge-list/master/domain-set/chinese-filter.txt"
+        curl -L -o Tool-repo/Stash/Rules/Ads_RuCu6.list "https://raw.githubusercontent.com/RuCu6/QuanX/main/Rules/MyBlockAds.list"
+        # QQ音乐广告规则
+        curl -L -o Tool-repo/Stash/Rules/Ads_QQMusic.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Ads_QQMusic.list"
+        # ConnersHua
+        curl -L -o Tool-repo/Stash/Rules/Ads_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Advertising.list"
+        curl -L -o Tool-repo/Stash/Rules/Hijacking_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Hijacking.list"
+        curl -L -o Tool-repo/Stash/Rules/Tracking_ConnersHua.list "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Tracking.list"
+        # fmz200
+        curl -L -o Tool-repo/Stash/Rules/Direct_fmz200.list "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliuxiuzheng.list"
+        curl -L -o Tool-repo/Stash/Rules/Ads_fmz200.list "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliu.list"
+        # Lan
+        curl -L -o Tool-repo/Stash/Rules/Lan.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Lan.list"
+
+    - name: Edit Stash/Rules/AdGuardChinese.yaml
+      run: |
+        cd Tool-repo/Stash/Rules
+        for file in AdGuardChinese.yaml AdGuardChinese.list; do
+          if [ -f "$file" ]; then
+          # 将每一行的第一个.替换为 DOMAIN-SUFFIX,
+          sed -i 's/^\./DOMAIN-SUFFIX,/g' "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+        
+    - name: Edit Stash/Rules yaml
+      run: |
+        cd Tool-repo/Stash/Rules
+        for file in *.yaml; do
+          if [ -f "$file" ]; then
+            # 修改，& ; 以及大小写
+            sed -i -e 's/, /,/g' -e 's/;/# /g' -e 's/host,/HOST,/g' -e 's/host-/HOST-/g'  -e 's/suffix/SUFFIX/g' -e 's/-keyword/-KEYWORD/g' -e 's/,reject/,REJECT/g' -e 's/ip-cidr/IP-CIDR/g' -e 's/geoip/GEOIP/g' "$file"
+            # 删除不必要的部分
+            sed -i 's/,REJECT//g' "$file"
+            # 删除extended-matching
+            sed -i 's/,extended-matching//g' "$file"
+            # 修改HOST为DOMAIN
+            sed -i -e 's/HOST,/DOMAIN,/g' -e 's/HOST-/DOMAIN-/g' "$file"
+            # 修改IP6-CIDR为IP-CIDR6
+            sed -i 's/IP6-CIDR,/IP-CIDR6,/g' "$file"
+            # 在首行添加 "payload:"
+            sed -i '1s/^/payload:\n/' "$file"
+            # 注释不支持的规则
+            sed -i -e '/\(USER-AGENT\|URL-REGEX\|OR\|AND\|NOT\),/ s/^/#/' "$file"
+            # 删除" //" 以及后面的所有字符
+            sed -i 's| \{1,\}//.*$||' "$file"
+            # 如果包含IP-CIDR且不包含,no-resolve 则添加,no-resolve
+            awk '/^IP-CIDR/ && !/,no-resolve/ {print $0",no-resolve"; next} {print}' "$file" > tmpfile
+            mv tmpfile "$file"
+            # 在非注释或空行前添加“  - ”
+            awk '!/\/\/|#|payload:|^ *$/ {print "  - " $0; next} {print}' "$file" > tmpfile
+            mv tmpfile "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+    - name: Edit Stash/Rules text
+      run: |
+        cd Tool-repo/Stash/Rules
+        for file in *.list; do
+          if [ -f "$file" ]; then
+            # 修改，& ; 以及大小写
+            sed -i -e 's/, /,/g' -e 's/;/# /g' -e 's/host,/HOST,/g' -e 's/host-/HOST-/g'  -e 's/suffix/SUFFIX/g' -e 's/-keyword/-KEYWORD/g' -e 's/,reject/,REJECT/g' -e 's/ip-cidr/IP-CIDR/g' -e 's/geoip/GEOIP/g' "$file"
+            # 删除不必要的部分
+            sed -i 's/,REJECT//g' "$file"
+            # 删除extended-matching
+            sed -i 's/,extended-matching//g' "$file"
+            # 修改HOST为DOMAIN
+            sed -i -e 's/HOST,/DOMAIN,/g' -e 's/HOST-/DOMAIN-/g' "$file"
+            # 修改IP6-CIDR为IP-CIDR6
+            sed -i 's/IP6-CIDR,/IP-CIDR6,/g' "$file"
+            # 注释不支持的规则
+            sed -i -e '/\(USER-AGENT\|URL-REGEX\|OR\|AND\|NOT\),/ s/^/#/' "$file"
+            # 删除" //" 以及后面的所有字符
+            sed -i 's| \{1,\}//.*$||' "$file"
+            # 如果包含IP-CIDR且不包含,no-resolve 则添加,no-resolve
+            awk '/^IP-CIDR/ && !/,no-resolve/ {print $0",no-resolve"; next} {print}' "$file" > tmpfile
+            mv tmpfile "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+    - name: Download files to Egern
+      run: |
+        mkdir -p Tool-repo/Egern/Rules
+        # 苹果
+        curl -L -o Tool-repo/Egern/Rules/APNs.yaml "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ApplePushNotificationService.list"
+        curl -L -o Tool-repo/Egern/Rules/Apple.yaml "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
+        curl -L -o Tool-repo/Egern/Rules/AppStore.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/source/rule/AppStore/AppStore.list"
+        curl -L -o Tool-repo/Egern/Rules/AppleID.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleID/AppleID.list"
+        curl -L -o Tool-repo/Egern/Rules/AppleMusic.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleMusic/AppleMusic.list"
+        curl -L -o Tool-repo/Egern/Rules/iCloud.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/iCloud/iCloud.list"
+        curl -L -o Tool-repo/Egern/Rules/TestFlight.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TestFlight/TestFlight.list"
+        curl -L -o Tool-repo/Egern/Rules/AppleProxy.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleProxy/AppleProxy.list"
+        # OpenAI
+        curl -L -o Tool-repo/Egern/Rules/OpenAI.yaml "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/OpenAI.list"
+        curl -L -o Tool-repo/Egern/Rules/ChatGPT_Voice.yaml "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ChatGPT_Voice.list"
+        # 社交媒体
+        curl -L -o Tool-repo/Egern/Rules/Telegram.yaml "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Telegram.list"
+        curl -L -o Tool-repo/Egern/Rules/Twitter.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list"
+        curl -L -o Tool-repo/Egern/Rules/Instagram.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Instagram.list"
+        curl -L -o Tool-repo/Egern/Rules/Facebook.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Facebook.list"
+        # 谷歌
+        curl -L -o Tool-repo/Egern/Rules/YouTube.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list"
+        curl -L -o Tool-repo/Egern/Rules/Google.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Google.list"
+        # 微软
+        curl -L -o Tool-repo/Egern/Rules/Copilot.yaml "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/Copilot.list"
+        curl -L -o Tool-repo/Egern/Rules/Github.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Github.list"
+        curl -L -o Tool-repo/Egern/Rules/OneDrive.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OneDrive.list"
+        curl -L -o Tool-repo/Egern/Rules/Microsoft.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Microsoft.list"
+        # 流媒体
+        curl -L -o Tool-repo/Egern/Rules/TikTok.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/TikTok.list"
+        curl -L -o Tool-repo/Egern/Rules/Netflix.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list"
+        curl -L -o Tool-repo/Egern/Rules/HBO.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.list"
+        curl -L -o Tool-repo/Egern/Rules/Disney.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list"
+        curl -L -o Tool-repo/Egern/Rules/Spotify.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.list"
+        curl -L -o Tool-repo/Egern/Rules/PrimeVideo.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PrimeVideo/PrimeVideo.list"
+        curl -L -o Tool-repo/Egern/Rules/FitnessPlus.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/FitnessPlus/FitnessPlus.list"
+        curl -L -o Tool-repo/Egern/Rules/AppleMedia.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/AppleMedia/AppleMedia.list"
+        curl -L -o Tool-repo/Egern/Rules/Bahamut.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Bahamut/Bahamut.list"
+        curl -L -o Tool-repo/Egern/Rules/ProxyMedia.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list"
+        curl -L -o Tool-repo/Egern/Rules/Emby.yaml "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Emby.list"
+        # PayPal
+        curl -L -o Tool-repo/Egern/Rules/PayPal.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/PayPal/PayPal.list"
+        # GFW
+        curl -L -o Tool-repo/Egern/Rules/ProxyGFW.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list"
+        # Trust
+        curl -L -o Tool-repo/Egern/Rules/Trust.yaml "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Trust.list"
+        # Talkatone
+        curl -L -o Tool-repo/Egern/Rules/Talkatone.yaml "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Talkatone.list"
+        # 国内规则 
+        curl -L -o Tool-repo/Egern/Rules/Bilibili.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list"
+        curl -L -o Tool-repo/Egern/Rules/WeChat.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Wechat.list"
+        curl -L -o Tool-repo/Egern/Rules/ChinaDomain.yaml "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list"
+        curl -L -o Tool-repo/Egern/Rules/ChinaASN.yaml "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list"
+        curl -L -o Tool-repo/Egern/Rules/ChinaIPv4.yaml "https://raw.githubusercontent.com/soffchen/GeoIP2-CN/release/surge-ruleset.list"
+        curl -L -o Tool-repo/Egern/Rules/ChinaIPv6.yaml "https://raw.githubusercontent.com/missuo/ASN-China/main/IPv6.China.list"
+        # 游戏规则 
+        curl -L -o Tool-repo/Egern/Rules/Game.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.list"
+        curl -L -o Tool-repo/Egern/Rules/Steam.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Steam/Steam.list"
+        curl -L -o Tool-repo/Egern/Rules/Epic.yaml "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Epic/Epic.list"
+        # 广告规则 
+        curl -L -o Tool-repo/Egern/Rules/Ads_EasyListChina.yaml "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easylistchina_surge.list"
+        curl -L -o Tool-repo/Egern/Rules/Ads_EasyListPrivacy.yaml "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/rule/Surge/easyprivacy_surge.list"
+        curl -L -o Tool-repo/Egern/Rules/Ads_Dlerio.yaml "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Reject.list"
+        curl -L -o Tool-repo/Egern/Rules/Anti-ad.yaml "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt"
+        curl -L -o Tool-repo/Egern/Rules/AdGuardChinese.yaml "https://raw.githubusercontent.com/geekdada/surge-list/master/domain-set/chinese-filter.txt"
+        curl -L -o Tool-repo/Egern/Rules/Ads_RuCu6.yaml "https://raw.githubusercontent.com/RuCu6/QuanX/main/Rules/MyBlockAds.list"
+        # QQ音乐广告规则
+        curl -L -o Tool-repo/Egern/Rules/Ads_QQMusic.yaml "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Ads_QQMusic.list"
+        # ConnersHua
+        curl -L -o Tool-repo/Egern/Rules/Ads_ConnersHua.yaml "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Advertising.list"
+        curl -L -o Tool-repo/Egern/Rules/Hijacking_ConnersHua.yaml "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Hijacking.list"
+        curl -L -o Tool-repo/Egern/Rules/Tracking_ConnersHua.yaml "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Tracking.list"
+        # fmz200
+        curl -L -o Tool-repo/Egern/Rules/Direct_fmz200.yaml "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliuxiuzheng.list"
+        curl -L -o Tool-repo/Egern/Rules/Ads_fmz200.yaml "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliu.list"
+        # Lan
+        curl -L -o Tool-repo/Egern/Rules/Lan.yaml "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Lan.list"
+
+    - name: Edit Egern/Rules/AdGuardChinese.yaml
+      run: |
+        cd Tool-repo/Egern/Rules
+        for file in AdGuardChinese.yaml; do
+          if [ -f "$file" ]; then
+          # 将每一行的第一个.替换为 DOMAIN-SUFFIX,
+          sed -i 's/^\./DOMAIN-SUFFIX,/g' "$file"
+          else
+            echo "$file not found."
+          fi
+        done        
+       
+    - name: Edit Egern/Rules/ChinaIPv6.yaml
+      run: |
+        cd Tool-repo/Egern/Rules
+        for file in ChinaIPv6.yaml; do
+          if [ -f "$file" ]; then
+            # 直接在非注释或空行前添加 "IP-CIDR6,"
+            awk '!/\/\/|#|payload:|^ *$/ {print "IP-CIDR6," $0; next} {print}' "$file" > tmpfile
+            mv tmpfile "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+      
+    - name: Edit Egern/Rules
+      run: |
+        cd Tool-repo/Egern/Rules
+        for file in *.yaml; do
+          if [ -f "$file" ]; then
+            # 修改，& ; 以及大小写
+            sed -i -e 's/, /,/g' -e 's/;/# /g' -e 's/host,/HOST,/g' -e 's/host-/HOST-/g'  -e 's/suffix/SUFFIX/g' -e 's/-keyword/-KEYWORD/g' -e 's/,reject/,REJECT/g' -e 's/ip-cidr/IP-CIDR/g' -e 's/geoip/GEOIP/g' "$file"
+            # 删除不必要的部分
+            sed -i 's/,REJECT//g' "$file"
+            # 删除extended-matching
+            sed -i 's/,extended-matching//g' "$file"
+            # 修改HOST为DOMAIN
+            sed -i -e 's/HOST,/DOMAIN,/g' -e 's/HOST-/DOMAIN-/g' "$file"
+            # 修改IP6-CIDR为IP-CIDR6
+            sed -i 's/IP6-CIDR,/IP-CIDR6,/g' "$file"
+            # 在首行添加 "payload:"
+            sed -i '1s/^/payload:\n/' "$file"
+            # 注释不支持的规则
+            sed -i -e '/\(USER-AGENT\|OR\|AND\|NOT\),/ s/^/#/' "$file"
+            # 删除" //" 以及后面的所有字符
+            sed -i 's| \{1,\}//.*$||' "$file" && cp "$file" tmpfile
+
+            # 重置集合
+            domain_set=""
+            domain_suffix_set=""
+            domain_keyword_set=""
+            domain_regex_set=""
+            ip_cidr_set=""
+            ip_cidr6_set=""
+            asn_set=""
+            url_regex_set=""
+            geoip_set=""
+    
+            # 处理规则，将匹配的行添加到相应的集合中
+            awk -F, '
+              /^DOMAIN,/ {domain_set = domain_set "\n- " $2}
+              /^DOMAIN-SUFFIX,/ {domain_suffix_set = domain_suffix_set "\n- " $2}
+              /^DOMAIN-KEYWORD,/ {domain_keyword_set = domain_keyword_set "\n- " $2}
+              /^DOMAIN-WILDCARD,/ {domain_regex_set = domain_regex_set "\n- " $2}
+              /^IP-CIDR,/ {ip_cidr_set = ip_cidr_set "\n- " $2}
+              /^IP-CIDR6,/ {ip_cidr6_set = ip_cidr6_set "\n- " $2}
+              /^IP-ASN,/ {asn_set = asn_set "\n- " $2}
+              /^URL-REGEX,/ {url_regex_set = url_regex_set "\n- " $2}
+            END {
+              # 输出集合
+              print "domain_set:" domain_set
+              print "domain_suffix_set:" domain_suffix_set
+              print "domain_keyword_set:" domain_keyword_set
+              print "domain_regex_set:" domain_regex_set
+              print "ip_cidr_set:" ip_cidr_set
+              print "ip_cidr6_set:" ip_cidr6_set
+              print "asn_set:" asn_set
+              print "url_regex_set:" url_regex_set
+            }
+            ' tmpfile > "$file"
+
+          else
+            echo "$file not found."
+          fi
+        done
+
+        # 循环结束后删除tmpfile
+        rm tmpfile
+
+    - name: Add and Commits
+      run: |
+        cd Tool-repo
+        if [[ -n $(git status -s) ]]; then
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add Surge/Rules/* Clash/Rules/* QuantumultX/Rules/* Loon/Rules/* Shadowrocket/Rules/* Stash/Rules/* Egern/Rules/* GeoIP/*
+          git commit -m "Auto Update $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M')"
+          git push origin HEAD
+        else
+          echo "No changes to commit."
+        fi
+
+    - name: Cleanup Workflow
+      uses: Mattraks/delete-workflow-runs@main
+      with:
+        retain_days: 0
+        keep_minimum_runs: 2

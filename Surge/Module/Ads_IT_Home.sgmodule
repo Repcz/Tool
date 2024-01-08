@@ -1,0 +1,24 @@
+#!name=去广告｜it之家
+#!desc=去除IT之家广告 @keywos 
+#!author = keywos 
+#!update = 2023-10-23 
+#!source = https://github.com/Keywos/rule/raw/main/module/noAdrule.sgmodule
+
+[General]
+
+tcp-connection = true
+
+[URL Rewrite]
+
+# it之家 api.zuihuimai.com, dat.ruanmei.com
+^https?:\/\/api\.zuihuimai\.com\/static\/.*\/hongbao - reject
+^https?:\/\/dat\.ruanmei\.com\/ithome\/money\/acd\.json$ - reject
+
+[Script]
+
+# it之家 napi.ithome.com
+it之家 = type=http-response,pattern=^https:\/\/napi\.ithome\.com\/api\/(news\/index|topmenu\/getfeeds\?),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/surgeithome.js
+
+[MITM]
+h2 = true
+hostname = %APPEND% api.zuihuimai.com, dat.ruanmei.com,napi.ithome.com

@@ -1,0 +1,30 @@
+domain_set:
+- api.msn.com
+- assets.msn.com
+- copilot.microsoft.com
+- dealczars.bing-shopping.microsoft-falcon.io
+- edgeservices.bing.com
+- functional.events.data.microsoft.com
+- gateway.bingviz.microsoftapp.net
+- location.microsoft.com
+- login.microsoftonline.com
+- proteus-assetstore.azurewebsites.net
+- self.events.data.microsoft.com
+- services.bingapis.com
+- shopping.bing-shopping.microsoft-falcon.io
+- sapphire.api.microsoftapp.net
+- sr.bing.com
+- sydney.bing.com
+- ssl.bing.com
+- th.bing.com
+- www.bing.com
+- www2.bing.com
+- www.bingapis.com
+domain_suffix_set:
+- edge.microsoft.com
+domain_keyword_set:
+domain_regex_set:
+ip_cidr_set:
+ip_cidr6_set:
+asn_set:
+url_regex_set:

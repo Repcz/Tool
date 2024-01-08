@@ -1,0 +1,230 @@
+# 2023-12-18 17:05
+
+# ======= A ======= #
+# 阿里巴巴
+DOMAIN,ossgw.alicdn.com,extended-matching
+DOMAIN,ems.youku.com,extended-matching
+DOMAIN,hudong.alicdn.com,extended-matching
+DOMAIN-SUFFIX,ut.taobao.com,extended-matching
+# 阿里云盘
+IP-CIDR,203.107.1.1/24,no-resolve
+# 爱奇艺
+DOMAIN,api.iqiyi.com,extended-matching
+# Apple
+DOMAIN,advertising.apple.com,extended-matching
+DOMAIN,api-adservices.apple.com,extended-matching
+DOMAIN,apple.comscoreresearch.com,extended-matching
+DOMAIN,banners.itunes.apple.com,extended-matching
+DOMAIN,iad.apple.com,extended-matching
+DOMAIN,iadcontent.apple.com,extended-matching
+DOMAIN,iadctest.qwapi.com,extended-matching
+DOMAIN,iadmoo.apple.com,extended-matching
+DOMAIN,iadworkbench.apple.com,extended-matching
+DOMAIN,launch.apple.com,extended-matching
+DOMAIN,qwapi.apple.com,extended-matching
+DOMAIN-SUFFIX,advp.apple.com,extended-matching
+DOMAIN-SUFFIX,iad-apple.com,extended-matching
+DOMAIN-SUFFIX,iadsdk.apple.com,extended-matching
+# 安全浏览限制解除
+DOMAIN,lookup.api.bsb.baidu.com,extended-matching
+DOMAIN-SUFFIX,u3.ucweb.com,extended-matching
+DOMAIN-KEYWORD,safebrowsing.
+
+# ======= B ======= #
+# 百度
+DOMAIN,mobads.baidu.com,extended-matching
+DOMAIN-SUFFIX,pos.baidu.com,extended-matching
+# 百度地图
+DOMAIN,afd.baidu.com,extended-matching
+DOMAIN,afdconf.baidu.com,extended-matching
+DOMAIN,lc.map.baidu.com,extended-matching
+# 百度贴吧
+IP-CIDR,180.76.76.200/32,no-resolve
+
+# ======= C ======= #
+# 彩云天气
+DOMAIN,ad.cyapi.cn,extended-matching
+# 昌原云充
+DOMAIN,m.adyounger.com,extended-matching
+# Clue 智库
+DOMAIN,api.helloclue.com,extended-matching
+DOMAIN,brahe.apptimize.com,extended-matching
+DOMAIN,collector.clue.run,extended-matching
+DOMAIN,images.ctfassets.net,extended-matching
+DOMAIN,mapi.apptimize.com,extended-matching
+DOMAIN,md-i-s.apptimize.com,extended-matching
+
+# ======= F ======= #
+# Foreca & Google
+DOMAIN,pagead2.googlesyndication.com,extended-matching
+DOMAIN,www.googleadservices.com,extended-matching
+DOMAIN-SUFFIX,adservice.google.com,extended-matching
+DOMAIN-KEYWORD,ads.g.doubleclick
+
+# ======= G ======= #
+# 高德地图
+DOMAIN,amap-aos-info-nogw.amap.com,extended-matching
+DOMAIN,awaken.amap.com,extended-matching
+DOMAIN,free-aos-cdn-image.amap.com,extended-matching
+# 工商银行 开屏广告
+DOMAIN,pageviewp.icbc.com.cn,extended-matching
+# 广告联盟
+DOMAIN,ad.zijieapi.com,extended-matching
+DOMAIN,i.snssdk.com,extended-matching
+DOMAIN,is.snssdk.com,extended-matching
+DOMAIN,open.e.kuaishou.com,extended-matching
+DOMAIN-SUFFIX,miaozhen.com,extended-matching
+DOMAIN-KEYWORD,-ad-sign.byteimg.com
+DOMAIN-KEYWORD,-tos.pstatp.com
+DOMAIN-KEYWORD,asiad.byteactivity
+DOMAIN-KEYWORD,pangolin-sdk-toutiao
+DOMAIN-KEYWORD,pangolin.snssdk.com
+DOMAIN-KEYWORD,pglstatp-toutiao
+DOMAIN-KEYWORD,video-cn.snssdk.com
+
+# ======= H ======= #
+# 海尔智家
+DOMAIN-SUFFIX,ehaier.com,extended-matching
+# httpdns
+DOMAIN,hdns.ksyun.com,extended-matching
+DOMAIN-KEYWORD,httpdns.
+DOMAIN-KEYWORD,httpdns-
+
+# ======= J ======= #
+# 建设银行
+DOMAIN-KEYWORD,adv.ccb.com
+# 京东
+DOMAIN,dns.jd.com,extended-matching
+IP-CIDR,101.124.19.122/32,no-resolve
+IP-CIDR6,2402:db40:5100:1011::5/128,no-resolve
+# JavDB
+DOMAIN,api.liquidlink.cn,extended-matching
+
+# ======= K ======= #
+# 酷我音乐
+DOMAIN,ad.tencentmusic.com,extended-matching
+DOMAIN,g.koowo.com,extended-matching
+DOMAIN,mobilead.kuwo.cn,extended-matching
+DOMAIN,rich.kuwo.cn,extended-matching
+DOMAIN,tmead.y.qq.com,extended-matching
+DOMAIN,tmeadcomm.y.qq.com,extended-matching
+
+# ======= L ======= #
+# 蓝奏云
+DOMAIN,statics.woozooo.com,extended-matching
+
+# ======= M ======= #
+# 芒果TV
+DOMAIN,credits.bz.mgtv.com,extended-matching
+DOMAIN,credits2.bz.mgtv.com,extended-matching
+DOMAIN,credits3.bz.mgtv.com,extended-matching
+DOMAIN,dflow.bz.mgtv.com,extended-matching
+DOMAIN,encounter.bz.mgtv.com,extended-matching
+DOMAIN,floor.bz.mgtv.com,extended-matching
+DOMAIN,layer.bz.mgtv.com,extended-matching
+DOMAIN,mob.bz.mgtv.com,extended-matching
+DOMAIN,rc-topic-api.bz.mgtv.com,extended-matching
+DOMAIN,rprain.bz.mgtv.com,extended-matching
+DOMAIN,rprain.log.mgtv.com,extended-matching
+DOMAIN,vip.bz.mgtv.com,extended-matching
+DOMAIN-SUFFIX,da.mgtv.com,extended-matching
+# 美团
+DOMAIN,al-log.d.meituan.net,extended-matching
+DOMAIN,babel-statistics-android.d.meituan.net,extended-matching
+DOMAIN,maplocatesdksnapshot.d.meituan.net,extended-matching
+DOMAIN,metrics-picture.d.meituan.net,extended-matching
+DOMAIN,open.kuaishouzt.com,extended-matching
+DOMAIN,route-stats.d.meituan.net,extended-matching
+# 美颜相机
+DOMAIN,aaid.uyunad.com,extended-matching
+DOMAIN,adui.tg.meitu.com,extended-matching
+
+# ======= O ======= #
+# Outlook
+DOMAIN,acdn.adnxs.com,extended-matching
+DOMAIN,mediation.adnxs.com,extended-matching
+DOMAIN,sin3-ib.adnxs.com,extended-matching
+
+# ======= S ======= #
+# 什么值得买
+DOMAIN,api.zuihuimai.com,extended-matching
+# 数字联盟
+DOMAIN-SUFFIX,shuzilm.cn,extended-matching
+# Speedtest
+DOMAIN-SUFFIX,ad.gt,extended-matching
+
+# ======= T ======= #
+# 腾讯
+DOMAIN,adsmind.gdtimg.com,extended-matching
+DOMAIN,info4.video.qq.com,extended-matching
+DOMAIN,info6.video.qq.com,extended-matching
+DOMAIN,ios.video.mpush.qq.com,extended-matching
+DOMAIN,otheve.beacon.qq.com,extended-matching
+DOMAIN,pgdt.gtimg.cn,extended-matching
+DOMAIN,tpns.qq.com,extended-matching
+DOMAIN-SUFFIX,gdt.qq.com,extended-matching
+DOMAIN-SUFFIX,l.qq.com,extended-matching
+DOMAIN-KEYWORD,trace.qq.com
+DOMAIN-KEYWORD,trace.video.qq.com
+IP-CIDR,47.110.187.87/32,no-resolve
+
+# ======= W ======= #
+# 网易云音乐
+DOMAIN,iadmat.nosdn.127.net,extended-matching
+DOMAIN,iadmatapk.nosdn.127.net,extended-matching
+DOMAIN,iadmusicmat.music.126.net,extended-matching
+DOMAIN,iadmusicmatvideo.music.126.net,extended-matching
+DOMAIN,ipv4.music.163.com,extended-matching
+DOMAIN,ipv6.music.163.com,extended-matching
+DOMAIN-SUFFIX,163jiasu.com,extended-matching
+# 微博 开屏广告
+DOMAIN-SUFFIX,biz.weibo.com,extended-matching
+
+# ======= X ======= #
+# 小米
+DOMAIN,sdkconfig.ad.xiaomi.com,extended-matching
+# 迅雷 解除版权限制
+# DOMAIN,hub5btmain.v6.shub.sandai.net
+# DOMAIN,hub5emu.v6.shub.sandai.net
+# DOMAIN,hub5idx.v6.shub.sandai.net
+
+# ======= Y ======= #
+# 优酷 & 菜鸟
+# DOMAIN,acs.youku.com
+DOMAIN,acs4baichuan.m.taobao.com,extended-matching
+DOMAIN,adsmind.ugdtimg.com,extended-matching
+DOMAIN,amdc.m.youku.com,extended-matching
+DOMAIN,api.sm.cn,extended-matching
+DOMAIN,apiv4-iyes.youku.com,extended-matching
+DOMAIN,baichuan-sdk.alicdn.com,extended-matching
+DOMAIN,cad.youku.com,extended-matching
+DOMAIN,huichuan-mc.sm.cn,extended-matching
+DOMAIN,huichuan.sm.cn,extended-matching
+DOMAIN,iyes.youku.com,extended-matching
+DOMAIN,m-vali.cp31.ott.cibntv.net,extended-matching
+DOMAIN,mc.atm.youku.com,extended-matching
+DOMAIN,nbsdk-baichuan.alicdn.com,extended-matching
+DOMAIN,pre-acs.youku.com,extended-matching
+DOMAIN,vali-g1.cp31.ott.cibntv.net,extended-matching
+DOMAIN,vali-ugc.cp31.ott.cibntv.net,extended-matching
+DOMAIN,yk-ssp.ad.youku.com,extended-matching
+DOMAIN,ykad-data.youku.com,extended-matching
+DOMAIN,youku-acs.m.taobao.com,extended-matching
+# 云闪付 开屏广告
+DOMAIN,ads.95516.com,extended-matching
+DOMAIN,switch.cup.com.cn,extended-matching
+DOMAIN,tysdk.95516.com,extended-matching
+# Yandex
+DOMAIN,yandexmetrica.com,extended-matching
+
+# ======= Z ======= #
+# 知乎
+DOMAIN,appcloud.zhihu.com,extended-matching
+DOMAIN,appcloud2.in.zhihu.com,extended-matching
+DOMAIN,crash2.zhihu.com,extended-matching
+DOMAIN,mqtt.zhihu.com,extended-matching
+DOMAIN,sugar.zhihu.com,extended-matching
+DOMAIN,zxid-m.mobileservice.cn,extended-matching
+IP-CIDR,103.41.167.237/32,no-resolve
+IP-CIDR,118.89.204.198/32,no-resolve
+IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,no-resolve

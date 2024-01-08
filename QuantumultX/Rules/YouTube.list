@@ -1,0 +1,19 @@
+# 内容：YouTube
+# 数量：17条
+USER-AGENT,*youtube*,PROXY
+USER-AGENT,YouTube*,PROXY
+USER-AGENT,com.google.ios.youtube*,PROXY
+HOST-KEYWORD,youtube,PROXY
+HOST,youtubei.googleapis.com,PROXY
+HOST,yt3.ggpht.com,PROXY
+HOST-SUFFIX,googlevideo.com,PROXY
+HOST-SUFFIX,gvt2.com,PROXY
+HOST-SUFFIX,withyoutube.com,PROXY
+HOST-SUFFIX,youtu.be,PROXY
+HOST-SUFFIX,youtube-nocookie.com,PROXY
+HOST-SUFFIX,youtube.com,PROXY
+HOST-SUFFIX,youtubeeducation.com,PROXY
+HOST-SUFFIX,youtubegaming.com,PROXY
+HOST-SUFFIX,youtubekids.com,PROXY
+HOST-SUFFIX,yt.be,PROXY
+HOST-SUFFIX,ytimg.com,PROXY
