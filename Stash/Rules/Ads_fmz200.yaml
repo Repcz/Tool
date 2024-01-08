@@ -1879,7 +1879,7 @@ payload:
   - DOMAIN-SUFFIX,adx.open-adx.com
   - DOMAIN-SUFFIX,adservice.sigmob.cn
   - DOMAIN-SUFFIX,gwp.xiaojukeji.com
-  - DOMAIN-SUFFIX,ct.xiaojukeji.com
+# DOMAIN-SUFFIX,ct.xiaojukeji.com
   - DOMAIN-SUFFIX,unidesk.alicdn.com
   - DOMAIN-SUFFIX,idealads.net
   - DOMAIN-SUFFIX,ironsrc.com

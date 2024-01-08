@@ -1878,7 +1878,7 @@ DOMAIN-SUFFIX,mcupdate.gstarcad.com,extended-matching
 DOMAIN-SUFFIX,adx.open-adx.com,extended-matching
 DOMAIN-SUFFIX,adservice.sigmob.cn,extended-matching
 DOMAIN-SUFFIX,gwp.xiaojukeji.com,extended-matching
-DOMAIN-SUFFIX,ct.xiaojukeji.com,extended-matching
+# DOMAIN-SUFFIX,ct.xiaojukeji.com
 DOMAIN-SUFFIX,unidesk.alicdn.com,extended-matching
 DOMAIN-SUFFIX,idealads.net,extended-matching
 DOMAIN-SUFFIX,ironsrc.com,extended-matching
