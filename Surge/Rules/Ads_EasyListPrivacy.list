@@ -1,7 +1,7 @@
 ## [Adblock Plus 1.1]
-## ! Version: 202401071502
+## ! Version: 202401081528
 ## ! Title: EasyPrivacy
-## ! Last modified: 07 Jan 2024 15:02 UTC
+## ! Last modified: 08 Jan 2024 15:28 UTC
 ## ! Expires: 4 days (update frequency)
 ## ! *** easylist:template_header.txt ***
 ## ! 
@@ -3119,6 +3119,7 @@ DOMAIN-SUFFIX,tags.cdn.circlesix.co,extended-matching
 DOMAIN-SUFFIX,tags.dxmdp.com,extended-matching
 DOMAIN-SUFFIX,tags.fullcontact.com,extended-matching
 DOMAIN-SUFFIX,tags.master-perf-tools.com,extended-matching
+DOMAIN-SUFFIX,tags.newscgp.com,extended-matching
 DOMAIN-SUFFIX,tags.refinery89.com,extended-matching
 DOMAIN-SUFFIX,tagtracking.vibescm.com,extended-matching
 DOMAIN-SUFFIX,target.mixi.media,extended-matching
@@ -4222,6 +4223,7 @@ DOMAIN-SUFFIX,health-metrics-api.setapp.com,extended-matching
 DOMAIN-SUFFIX,heap.drop.com,extended-matching
 DOMAIN-SUFFIX,hits.cyberdrop.me,extended-matching
 DOMAIN-SUFFIX,hlogger.heraldcorp.com,extended-matching
+DOMAIN-SUFFIX,hn-ping*.hashnode.com,extended-matching
 DOMAIN-SUFFIX,htrace.wetvinfo.com,extended-matching
 DOMAIN-SUFFIX,i.pokernews.com,extended-matching
 DOMAIN-SUFFIX,iam-rum-intake.datadoghq.com,extended-matching
@@ -4313,6 +4315,7 @@ DOMAIN-SUFFIX,perr.hola.org,extended-matching
 DOMAIN-SUFFIX,pf.newegg.com,extended-matching
 DOMAIN-SUFFIX,pftk.temu.com,extended-matching
 DOMAIN-SUFFIX,ph.thenextweb.com,extended-matching
+DOMAIN-SUFFIX,ping.hashnode.com,extended-matching
 DOMAIN-SUFFIX,ping.hungama.com,extended-matching
 DOMAIN-SUFFIX,pingback.giphy.com,extended-matching
 DOMAIN-SUFFIX,pingback.issuu.com,extended-matching

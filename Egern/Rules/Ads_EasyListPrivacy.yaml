@@ -3103,6 +3103,7 @@ domain_suffix_set:
 - tags.dxmdp.com
 - tags.fullcontact.com
 - tags.master-perf-tools.com
+- tags.newscgp.com
 - tags.refinery89.com
 - tagtracking.vibescm.com
 - target.mixi.media
@@ -4206,6 +4207,7 @@ domain_suffix_set:
 - heap.drop.com
 - hits.cyberdrop.me
 - hlogger.heraldcorp.com
+- hn-ping*.hashnode.com
 - htrace.wetvinfo.com
 - i.pokernews.com
 - iam-rum-intake.datadoghq.com
@@ -4297,6 +4299,7 @@ domain_suffix_set:
 - pf.newegg.com
 - pftk.temu.com
 - ph.thenextweb.com
+- ping.hashnode.com
 - ping.hungama.com
 - pingback.giphy.com
 - pingback.issuu.com

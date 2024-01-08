@@ -1,7 +1,7 @@
 ## [Adblock Plus 1.1]
-## ! Version: 202401071502
+## ! Version: 202401081528
 ## ! Title: EasyPrivacy
-## ! Last modified: 07 Jan 2024 15:02 UTC
+## ! Last modified: 08 Jan 2024 15:28 UTC
 ## ! Expires: 4 days (update frequency)
 ## ! *** easylist:template_header.txt ***
 ## ! 
@@ -3119,6 +3119,7 @@ HOST-SUFFIX,tags.cdn.circlesix.co,reject,REJECT
 HOST-SUFFIX,tags.dxmdp.com,reject,REJECT
 HOST-SUFFIX,tags.fullcontact.com,reject,REJECT
 HOST-SUFFIX,tags.master-perf-tools.com,reject,REJECT
+HOST-SUFFIX,tags.newscgp.com,reject,REJECT
 HOST-SUFFIX,tags.refinery89.com,reject,REJECT
 HOST-SUFFIX,tagtracking.vibescm.com,reject,REJECT
 HOST-SUFFIX,target.mixi.media,reject,REJECT
@@ -4222,6 +4223,7 @@ HOST-SUFFIX,health-metrics-api.setapp.com,reject,REJECT
 HOST-SUFFIX,heap.drop.com,reject,REJECT
 HOST-SUFFIX,hits.cyberdrop.me,reject,REJECT
 HOST-SUFFIX,hlogger.heraldcorp.com,reject,REJECT
+HOST-SUFFIX,hn-ping*.hashnode.com,reject,REJECT
 HOST-SUFFIX,htrace.wetvinfo.com,reject,REJECT
 HOST-SUFFIX,i.pokernews.com,reject,REJECT
 HOST-SUFFIX,iam-rum-intake.datadoghq.com,reject,REJECT
@@ -4313,6 +4315,7 @@ HOST-SUFFIX,perr.hola.org,reject,REJECT
 HOST-SUFFIX,pf.newegg.com,reject,REJECT
 HOST-SUFFIX,pftk.temu.com,reject,REJECT
 HOST-SUFFIX,ph.thenextweb.com,reject,REJECT
+HOST-SUFFIX,ping.hashnode.com,reject,REJECT
 HOST-SUFFIX,ping.hungama.com,reject,REJECT
 HOST-SUFFIX,pingback.giphy.com,reject,REJECT
 HOST-SUFFIX,pingback.issuu.com,reject,REJECT
