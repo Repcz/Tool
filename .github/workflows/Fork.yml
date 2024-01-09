@@ -416,7 +416,7 @@ jobs:
             # 删除extended-matching
             sed -i 's/,extended-matching//g' "$file"
             # 注释不支持的规则
-            sed -i -e '/\(OR\|AND\|NOT\|PROCESS-NAME\),/ s/^/#/' "$file"
+            sed -i -e '/\(OR\|AND\|NOT\|PROCESS-NAME\|URL-REGEX\),/ s/^/#/' "$file"
             # 删除" //" 以及后面的所有字符
             sed -i 's| \{1,\}//.*$||' "$file"
             # 在非注释后添加PROXY
