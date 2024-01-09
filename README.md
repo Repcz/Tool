@@ -1,7 +1,7 @@
 ## 自用 勿Fork
 > **🚨🚨禁止任何形式的转载或发布至国内平台🚨🚨**
 
-[![tg](https://img.shields.io/badge/Telegram-Channel-blue)](https://t.me/QVQ_Channel)
+[![tg](https://img.shields.io/badge/Telegram-LᴜᴄʏCʜᴀɴɴᴇʟ-blue)](https://t.me/QVQ_Channel)
 
    
 <details>
