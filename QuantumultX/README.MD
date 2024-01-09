@@ -31,23 +31,7 @@
 https://raw.githubusercontent.com/Repcz/Tool/X/QuantumultX/QuantumultX.conf
 ```
 
-<details>
-  <summary>QuantumultX_Pro.conf</summary>
 
-- [x] 地区分流（香港、美国、日本、台湾、新加坡）
-- [x] 苹果、谷歌、微软、电报、推特分流
-- [x] 流媒体（不支持单独分流）
-- [x] 自动选择最低延迟
-- [x] 负载均衡
-- [x] 故障转移
-- [x] 广告屏蔽重写
-- [x] 适用于软路由环境
-
-</details>
-
-```
-https://raw.githubusercontent.com/Repcz/Tool/X/QuantumultX/QuantumultX_Pro.conf
-```
 
 <details>
   <summary>QuantumultX_tvOS.conf</summary>
@@ -66,6 +50,27 @@ https://raw.githubusercontent.com/Repcz/Tool/X/QuantumultX/QuantumultX_Pro.conf
 
 ```
 https://raw.githubusercontent.com/Repcz/Tool/X/QuantumultX/QuantumultX_tvOS.conf
+```
+
+<details>
+  <summary>QuantumultX_Pro.conf</summary>
+
+> **🚨🚨新手勿碰！！🚨🚨**
+
+
+- [x] 地区分流（香港、美国、日本、台湾、新加坡）
+- [x] 苹果、谷歌、微软、电报、推特分流
+- [x] 流媒体（不支持单独分流）
+- [x] 自动选择最低延迟
+- [x] 负载均衡
+- [x] 故障转移
+- [x] 广告屏蔽重写
+- [x] 适用于软路由环境
+
+</details>
+
+```
+https://raw.githubusercontent.com/Repcz/Tool/X/QuantumultX/QuantumultX_Pro.conf
 ```
 
 * 运行 **Quantumult X** ，点击右下角的 **风车** 图标
