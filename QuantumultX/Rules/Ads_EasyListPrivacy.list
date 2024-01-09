@@ -1,7 +1,7 @@
 ## [Adblock Plus 1.1]
-## ! Version: 202401081528
+## ! Version: 202401091502
 ## ! Title: EasyPrivacy
-## ! Last modified: 08 Jan 2024 15:28 UTC
+## ! Last modified: 09 Jan 2024 15:02 UTC
 ## ! Expires: 4 days (update frequency)
 ## ! *** easylist:template_header.txt ***
 ## ! 
@@ -2374,6 +2374,7 @@ HOST-SUFFIX,analytics.urx.io,reject,REJECT
 HOST-SUFFIX,analytics.vanillaforums.com,reject,REJECT
 HOST-SUFFIX,analytics.vdo.ai,reject,REJECT
 HOST-SUFFIX,analytics.vendemore.com,reject,REJECT
+HOST-SUFFIX,analytics.vixcloud.co,reject,REJECT
 HOST-SUFFIX,analytics.webgains.io,reject,REJECT
 HOST-SUFFIX,analytics.webpushr.com,reject,REJECT
 HOST-SUFFIX,analytics.websolute.it,reject,REJECT
@@ -2600,6 +2601,7 @@ HOST-SUFFIX,ea.youmaker.com,reject,REJECT
 HOST-SUFFIX,ec.walkme.com,reject,REJECT
 HOST-SUFFIX,ecomm.events,reject,REJECT
 HOST-SUFFIX,ecommstats.s3.amazonaws.com,reject,REJECT
+HOST-SUFFIX,edge.adobedc.net,reject,REJECT
 HOST-SUFFIX,eel.transistor.fm,reject,REJECT
 HOST-SUFFIX,ele26126.jscrambler.com,reject,REJECT
 HOST-SUFFIX,eq.userneeds.com,reject,REJECT
@@ -2739,6 +2741,7 @@ HOST-SUFFIX,jly24aw29n5m-a.akamaihd.net,reject,REJECT
 HOST-SUFFIX,jtracking-gate.lulusoft.com,reject,REJECT
 HOST-SUFFIX,k.keyade.com,reject,REJECT
 HOST-SUFFIX,k.streamrail.com,reject,REJECT
+HOST-SUFFIX,k8s-tracking-tracking-6c17add7fc-253503024.eu-central-1.elb.amazonaws.com,reject,REJECT
 HOST-SUFFIX,kalstats.kaltura.com,reject,REJECT
 HOST-SUFFIX,kiwi.mdldb.net,reject,REJECT
 HOST-SUFFIX,l.ooyala.com,reject,REJECT
@@ -30558,6 +30561,7 @@ HOST-SUFFIX,link.abandonedmonkey.codes,reject,REJECT
 HOST-SUFFIX,link.adhdinsight.com,reject,REJECT
 HOST-SUFFIX,link.admin.kodakmoments.com,reject,REJECT
 HOST-SUFFIX,link.afterpay.com,reject,REJECT
+HOST-SUFFIX,link.ag.fan,reject,REJECT
 HOST-SUFFIX,link.alerts.busuu.app,reject,REJECT
 HOST-SUFFIX,link.angelstudios.com,reject,REJECT
 HOST-SUFFIX,link.announce.busuu.app,reject,REJECT
@@ -30566,6 +30570,7 @@ HOST-SUFFIX,link.carfax.com,reject,REJECT
 HOST-SUFFIX,link.cdl.freshly.com,reject,REJECT
 HOST-SUFFIX,link.cheerz.com,reject,REJECT
 HOST-SUFFIX,link.clickipo.com,reject,REJECT
+HOST-SUFFIX,link.clubmanagergame.com,reject,REJECT
 HOST-SUFFIX,link.cluno.com,reject,REJECT
 HOST-SUFFIX,link.cofyz.com,reject,REJECT
 HOST-SUFFIX,link.collectivebenefits.com,reject,REJECT
@@ -31804,6 +31809,7 @@ HOST-SUFFIX,ens.nzz.ch,reject,REJECT
 HOST-SUFFIX,ens.tagblatt.ch,reject,REJECT
 HOST-SUFFIX,epimetheus.navigator.web.de,reject,REJECT
 HOST-SUFFIX,event-collector.prd.data.s.joyn.de,reject,REJECT
+HOST-SUFFIX,events.limango.com,reject,REJECT
 HOST-SUFFIX,fc.vodafone.de,reject,REJECT
 HOST-SUFFIX,froglytics.eventfrog.ch,reject,REJECT
 HOST-SUFFIX,geoip.finanzen.net,reject,REJECT

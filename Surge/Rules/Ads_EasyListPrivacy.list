@@ -1,7 +1,7 @@
 ## [Adblock Plus 1.1]
-## ! Version: 202401081528
+## ! Version: 202401091502
 ## ! Title: EasyPrivacy
-## ! Last modified: 08 Jan 2024 15:28 UTC
+## ! Last modified: 09 Jan 2024 15:02 UTC
 ## ! Expires: 4 days (update frequency)
 ## ! *** easylist:template_header.txt ***
 ## ! 
@@ -2374,6 +2374,7 @@ DOMAIN-SUFFIX,analytics.urx.io,extended-matching
 DOMAIN-SUFFIX,analytics.vanillaforums.com,extended-matching
 DOMAIN-SUFFIX,analytics.vdo.ai,extended-matching
 DOMAIN-SUFFIX,analytics.vendemore.com,extended-matching
+DOMAIN-SUFFIX,analytics.vixcloud.co,extended-matching
 DOMAIN-SUFFIX,analytics.webgains.io,extended-matching
 DOMAIN-SUFFIX,analytics.webpushr.com,extended-matching
 DOMAIN-SUFFIX,analytics.websolute.it,extended-matching
@@ -2600,6 +2601,7 @@ DOMAIN-SUFFIX,ea.youmaker.com,extended-matching
 DOMAIN-SUFFIX,ec.walkme.com,extended-matching
 DOMAIN-SUFFIX,ecomm.events,extended-matching
 DOMAIN-SUFFIX,ecommstats.s3.amazonaws.com,extended-matching
+DOMAIN-SUFFIX,edge.adobedc.net,extended-matching
 DOMAIN-SUFFIX,eel.transistor.fm,extended-matching
 DOMAIN-SUFFIX,ele26126.jscrambler.com,extended-matching
 DOMAIN-SUFFIX,eq.userneeds.com,extended-matching
@@ -2739,6 +2741,7 @@ DOMAIN-SUFFIX,jly24aw29n5m-a.akamaihd.net,extended-matching
 DOMAIN-SUFFIX,jtracking-gate.lulusoft.com,extended-matching
 DOMAIN-SUFFIX,k.keyade.com,extended-matching
 DOMAIN-SUFFIX,k.streamrail.com,extended-matching
+DOMAIN-SUFFIX,k8s-tracking-tracking-6c17add7fc-253503024.eu-central-1.elb.amazonaws.com,extended-matching
 DOMAIN-SUFFIX,kalstats.kaltura.com,extended-matching
 DOMAIN-SUFFIX,kiwi.mdldb.net,extended-matching
 DOMAIN-SUFFIX,l.ooyala.com,extended-matching
@@ -30558,6 +30561,7 @@ DOMAIN-SUFFIX,link.abandonedmonkey.codes,extended-matching
 DOMAIN-SUFFIX,link.adhdinsight.com,extended-matching
 DOMAIN-SUFFIX,link.admin.kodakmoments.com,extended-matching
 DOMAIN-SUFFIX,link.afterpay.com,extended-matching
+DOMAIN-SUFFIX,link.ag.fan,extended-matching
 DOMAIN-SUFFIX,link.alerts.busuu.app,extended-matching
 DOMAIN-SUFFIX,link.angelstudios.com,extended-matching
 DOMAIN-SUFFIX,link.announce.busuu.app,extended-matching
@@ -30566,6 +30570,7 @@ DOMAIN-SUFFIX,link.carfax.com,extended-matching
 DOMAIN-SUFFIX,link.cdl.freshly.com,extended-matching
 DOMAIN-SUFFIX,link.cheerz.com,extended-matching
 DOMAIN-SUFFIX,link.clickipo.com,extended-matching
+DOMAIN-SUFFIX,link.clubmanagergame.com,extended-matching
 DOMAIN-SUFFIX,link.cluno.com,extended-matching
 DOMAIN-SUFFIX,link.cofyz.com,extended-matching
 DOMAIN-SUFFIX,link.collectivebenefits.com,extended-matching
@@ -31804,6 +31809,7 @@ DOMAIN-SUFFIX,ens.nzz.ch,extended-matching
 DOMAIN-SUFFIX,ens.tagblatt.ch,extended-matching
 DOMAIN-SUFFIX,epimetheus.navigator.web.de,extended-matching
 DOMAIN-SUFFIX,event-collector.prd.data.s.joyn.de,extended-matching
+DOMAIN-SUFFIX,events.limango.com,extended-matching
 DOMAIN-SUFFIX,fc.vodafone.de,extended-matching
 DOMAIN-SUFFIX,froglytics.eventfrog.ch,extended-matching
 DOMAIN-SUFFIX,GEOIP.finanzen.net,extended-matching
