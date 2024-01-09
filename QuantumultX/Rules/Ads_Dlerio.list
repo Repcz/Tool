@@ -36,8 +36,8 @@ HOST-SUFFIX,store.iqiyi.com,REJECT
 HOST-SUFFIX,t7z.cupid.iqiyi.com,REJECT
 HOST-SUFFIX,tracker.sns.iqiyi.com,REJECT
 HOST-SUFFIX,yuedu.iqiyi.com,REJECT
-URL-REGEX,https?:\/\/.+\/videos\/other\/.+,REJECT
-URL-REGEX,https?:\/\/paopao\w?\.qiyipic\.com,REJECT
+#URL-REGEX,https?:\/\/.+\/videos\/other\/.+
+#URL-REGEX,https?:\/\/paopao\w?\.qiyipic\.com
 IP-CIDR,101.227.97.240/32,REJECT
 IP-CIDR,101.227.200.11/32,REJECT
 IP-CIDR,101.227.200.28/32,REJECT
@@ -102,7 +102,7 @@ IP-CIDR,223.87.182.101/32,REJECT
 IP-CIDR,223.87.182.102/32,REJECT
 IP-CIDR,223.87.182.11/32,REJECT
 IP-CIDR,223.87.182.52/32,REJECT
-URL-REGEX,https?:\/\/\.+\.atm\.youku\.com,REJECT
+#URL-REGEX,https?:\/\/\.+\.atm\.youku\.com
 
 # > MGTV
 HOST-SUFFIX,ads-api.videojj.com,REJECT
@@ -195,7 +195,7 @@ HOST-SUFFIX,jp.as.pptv.com,REJECT
 HOST-SUFFIX,pp2.pptv.com,REJECT
 HOST-SUFFIX,stat.pptv.com,REJECT
 HOST-SUFFIX,static.g.pptv.com,REJECT
-URL-REGEX,https?:\/\/img\w\.g\.pptv\.com,REJECT
+#URL-REGEX,https?:\/\/img\w\.g\.pptv\.com
 
 # > Site
 HOST-SUFFIX,deliver.ifeng.com,REJECT
@@ -203,7 +203,7 @@ HOST-SUFFIX,hxjs.tool.hexun.com,REJECT
 HOST-SUFFIX,hxsame.hexun.com,REJECT
 HOST-SUFFIX,itv.hexun.com,REJECT
 HOST-SUFFIX,utrack.hexun.com,REJECT
-URL-REGEX,https?:\/\/h\w{2}\.hxsame\.hexun\.com,REJECT
+#URL-REGEX,https?:\/\/h\w{2}\.hxsame\.hexun\.com
 
 # > Vod
 HOST-SUFFIX,ad.cmvideo.cn,REJECT
@@ -8203,25 +8203,25 @@ HOST,offnavi.map.baidu.com,REJECT
 HOST,newvector.map.baidu.com,REJECT
 HOST,ulog.imap.baidu.com,REJECT
 HOST,newloc.map.n.shifen.com,REJECT
-URL-REGEX,http:\/\/[\s\S]*baidu\.com\/\.*ad[xs]\.php,REJECT
-URL-REGEX,http:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule,REJECT
+#URL-REGEX,http:\/\/[\s\S]*baidu\.com\/\.*ad[xs]\.php
+#URL-REGEX,http:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule
 
 # > Bilibili
 HOST,miniapp.bilibili.com,REJECT
 HOST,thirdparty.biliapi.com,REJECT
-URL-REGEX,https:\/\/app\.bilibili\.com\/x\/v2\/param,REJECT
-URL-REGEX,https:\/\/app\.bilibili\.com\/x\/resource\/abtest,REJECT
-URL-REGEX,http:\/\/app\.bilibili\.com\/x\/v2\/dataflow\/report-TINYGIF,REJECT
-URL-REGEX,https:\/\/app\.bilibili\.com\/x\/v2\/search\/(defaultword|hot|recommend|resource),REJECT
-URL-REGEX,https:\/\/app\.bilibili\.com\/x\/v2\/rank\.*rid=(168|5),REJECT
-URL-REGEX,https:\/\/api\.bilibili\.com\/pgc\/season\/rank\/cn,REJECT
+#URL-REGEX,https:\/\/app\.bilibili\.com\/x\/v2\/param
+#URL-REGEX,https:\/\/app\.bilibili\.com\/x\/resource\/abtest
+#URL-REGEX,http:\/\/app\.bilibili\.com\/x\/v2\/dataflow\/report-TINYGIF
+#URL-REGEX,https:\/\/app\.bilibili\.com\/x\/v2\/search\/(defaultword|hot|recommend|resource)
+#URL-REGEX,https:\/\/app\.bilibili\.com\/x\/v2\/rank\.*rid=(168|5)
+#URL-REGEX,https:\/\/api\.bilibili\.com\/pgc\/season\/rank\/cn
 
 # > OpenAI
 HOST,o33249.ingest.sentry.io,REJECT
 HOST,openaicom.imgix.net,REJECT
 
 # > Didi
-URL-REGEX,https:\/\/img-ys011\.didistatic\.com\/static\/ad_oss\/image-\d{4}-\d{4}\/,REJECT
+#URL-REGEX,https:\/\/img-ys011\.didistatic\.com\/static\/ad_oss\/image-\d{4}-\d{4}\/
 
 # > ele
 HOST,log.star.ele.me,REJECT
@@ -8243,8 +8243,8 @@ HOST,pr.da.netease.com,REJECT
 HOST,rd.da.netease.com,REJECT
 HOST,wr.da.netease.com,REJECT
 HOST,yt-adp.nosdn.127.net,REJECT
-URL-REGEX,http:\/\/p\d\.music\.126\.net\/\w+==\/\d+\.jpg,REJECT
-URL-REGEX,http:\/\/iad\.*mat\.[a-z]*\.12[67]\.net\/\w+\.(jpg|mp4),REJECT
+#URL-REGEX,http:\/\/p\d\.music\.126\.net\/\w+==\/\d+\.jpg
+#URL-REGEX,http:\/\/iad\.*mat\.[a-z]*\.12[67]\.net\/\w+\.(jpg|mp4)
 
 # > Zhihu
 HOST,appcloud2.in.zhihu.com,REJECT
@@ -8255,32 +8255,32 @@ HOST,zhihu-web-analytics.zhihu.com,REJECT
 HOST,118.89.204.198,REJECT
 HOST-SUFFIX,xdrig.com,REJECT
 HOST-SUFFIX,zhihu.xmcimg.com,REJECT
-URL-REGEX,https:\/\/api\.zhihu\.com\/(fringe|zst|real_time|ad-style-service|banners|topstory/hot-lists|market/popover|mqtt|me|.*launch|.*featured-comment-ad|search/(top|tabs|preset)),REJECT
-URL-REGEX,https:\/\/api\.zhihu\.com\.*(launch|recommendations),REJECT
-URL-REGEX,https:\/\/api\.zhihu\.com\/search\/(top|tabs|preset),REJECT
-URL-REGEX,https:\/\/api\.zhihu\.com\/answers\/\.*\/comments\/featured-comment-ad,REJECT
+#URL-REGEX,https:\/\/api\.zhihu\.com\/(fringe|zst|real_time|ad-style-service|banners|topstory/hot-lists|market/popover|mqtt|me|.*launch|.*featured-comment-ad|search/(top|tabs|preset))
+#URL-REGEX,https:\/\/api\.zhihu\.com\.*(launch|recommendations)
+#URL-REGEX,https:\/\/api\.zhihu\.com\/search\/(top|tabs|preset)
+#URL-REGEX,https:\/\/api\.zhihu\.com\/answers\/\.*\/comments\/featured-comment-ad
 
-URL-REGEX,https?:\/\/(e|m).+\/((uu|oo).php.+|\d+.x?html\?$),REJECT
-URL-REGEX,https?:\/\/[^(apple|10010)]+.(com|cn)\/(a|A)d(s|v)?(/|.js),REJECT
-URL-REGEX,https?:\/\/[^bbs]\.tianya\.cn,REJECT
-URL-REGEX,https?:\/\/\w.?up\.qingdaonews\.com,REJECT
-URL-REGEX,https?:\/\/\w{6}\.com1\.z0\.glb\.clouddn\.com,REJECT
-URL-REGEX,https?:\/\/\w{8}\.logic\.cpm\.cm\.kankan\.com,REJECT
-URL-REGEX,https?:\/\/\w+\.cloudfront\.net\/banner,REJECT
-URL-REGEX,https?:\/\/\w+\.gdt\.qq\.com,REJECT
-URL-REGEX,https?:\/\/\w+\.kingsoft-office-service\.com,REJECT
-URL-REGEX,https?:\/\/9377\w{2}\.com,REJECT
-URL-REGEX,https?:\/\/a0b\w{2}\.com,REJECT
-URL-REGEX,https?:\/\/(a?d|sax)\d\.sina\.com,REJECT
-URL-REGEX,https?:\/\/d\d\.sinaimg\.cn,REJECT
-URL-REGEX,https?:\/\/dl\.app\.gtja\.com\/\.+\d+\.jpg,REJECT
-URL-REGEX,https?:\/\/impservice\.+?youdao\.com,REJECT
-URL-REGEX,https?:\/\/mi\.gdt\.qq\.com\/gdt_mview\.fcg,REJECT
-URL-REGEX,https?:\/\/notice\.send-anywhere\.com\/banner,REJECT
-URL-REGEX,https?:\/\/sax\w?\.sina\.cn,REJECT
-URL-REGEX,https?:\/\/sax\w?\.sina\.com\.cn,REJECT
-URL-REGEX,https?:\/\/server-\w+\.imrworldwide\.com,REJECT
-URL-REGEX,https?:\/\/www\.bldimg\.com\/(background|splash)\/\.+\.png,REJECT
+#URL-REGEX,https?:\/\/(e|m).+\/((uu|oo).php.+|\d+.x?html\?$)
+#URL-REGEX,https?:\/\/[^(apple|10010)]+.(com|cn)\/(a|A)d(s|v)?(/|.js)
+#URL-REGEX,https?:\/\/[^bbs]\.tianya\.cn
+#URL-REGEX,https?:\/\/\w.?up\.qingdaonews\.com
+#URL-REGEX,https?:\/\/\w{6}\.com1\.z0\.glb\.clouddn\.com
+#URL-REGEX,https?:\/\/\w{8}\.logic\.cpm\.cm\.kankan\.com
+#URL-REGEX,https?:\/\/\w+\.cloudfront\.net\/banner
+#URL-REGEX,https?:\/\/\w+\.gdt\.qq\.com
+#URL-REGEX,https?:\/\/\w+\.kingsoft-office-service\.com
+#URL-REGEX,https?:\/\/9377\w{2}\.com
+#URL-REGEX,https?:\/\/a0b\w{2}\.com
+#URL-REGEX,https?:\/\/(a?d|sax)\d\.sina\.com
+#URL-REGEX,https?:\/\/d\d\.sinaimg\.cn
+#URL-REGEX,https?:\/\/dl\.app\.gtja\.com\/\.+\d+\.jpg
+#URL-REGEX,https?:\/\/impservice\.+?youdao\.com
+#URL-REGEX,https?:\/\/mi\.gdt\.qq\.com\/gdt_mview\.fcg
+#URL-REGEX,https?:\/\/notice\.send-anywhere\.com\/banner
+#URL-REGEX,https?:\/\/sax\w?\.sina\.cn
+#URL-REGEX,https?:\/\/sax\w?\.sina\.com\.cn
+#URL-REGEX,https?:\/\/server-\w+\.imrworldwide\.com
+#URL-REGEX,https?:\/\/www\.bldimg\.com\/(background|splash)\/\.+\.png
 
 IP-CIDR,39.107.15.115/32,REJECT
 IP-CIDR,47.89.59.182/32,REJECT

@@ -45,7 +45,7 @@ HOST-SUFFIX,amazonvideo.com,PROXY
 HOST-SUFFIX,media-amazon.com,PROXY
 HOST-SUFFIX,pv-cdn.net,PROXY
 HOST-SUFFIX,seattlespheres.com,PROXY
-URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/,PROXY
+#URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/
 
 # AppleNews
 USER-AGENT,AppleNews*,PROXY
