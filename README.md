@@ -89,6 +89,9 @@ Stash
 Surfboard
 ---
 
+<a href="https://github.com/getsurfboard/surfboard/releases/latest">
+<img src="https://github.com/Repcz/Tool/blob/X/Surfboard/Photo/logo.png"  width="110" height="110"></a>
+
 * [自用配置](https://github.com/Repcz/Tool/raw/X/Surfboard/Surfboard.confv)
 * [订阅转换配置 | 自动配置](https://github.com/Repcz/Tool/raw/X/Surfboard/Online_Full_Auto.ini)
 * [订阅转换配置 | 手动配置](https://github.com/Repcz/Tool/raw/X/Surfboard/Online_Full_NoAuto.ini)
