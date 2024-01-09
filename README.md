@@ -140,7 +140,7 @@ Surge
 特别感谢
 ---
 
- #### 排名不分先后,如有遗漏请提醒补充：
+排名不分先后,如有遗漏请提醒补充：
 
 - [@ACL4SSR](https://github.com/ACL4SSR/ACL4SSR)
 - [@Anti-AD](https://github.com/privacy-protection-tools/anti-AD)
