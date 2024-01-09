@@ -111,7 +111,8 @@ Surge
 <details>
   <summary>申明</summary>
    
- #### 免责声明：
+免责声明
+---
 
 * 本项目涉及的脚本仅用于资源共享和学习研究，不能保证其合法性，准确性，完整性和有效性，请根据情况自行判断.
 
@@ -133,6 +134,9 @@ Surge
 <details>
   <summary>特别感谢</summary>
   
+特别感谢
+---
+
  #### 排名不分先后,如有遗漏请提醒补充：
 
 - [@ACL4SSR](https://github.com/ACL4SSR/ACL4SSR)
