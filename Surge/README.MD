@@ -17,7 +17,7 @@ https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Surge.conf
 * 运行 **Surge** ，在 **首页** ， 点击 **顶部区域**
 * 弹出的 **设置** 菜单中，在下方 **导入** 区域，点击 **从URL下载配置**
 * 将配置文件链接填入并保存
-![Image text](https://github.com/Repcz/Tool/blob/X/Surge/Photo/1.PNG)
+<img width="600px"  src="https://github.com/Repcz/Tool/blob/X/Surge/Photo/1.PNG"/>
 
 ### 2.添加机场订阅
 > 机场订阅本地转换可参考[Sub-Store 教程](https://getupnote.com/share/notes/8SiMnOcwXxZ3xEtK4k2v9Gr3pv32/7522F394-6D73-414E-BE04-1455EDB15B9F)
@@ -63,7 +63,9 @@ https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Surge.conf
 * **首页** —— **通用** —— **模块** 中，点击 **模块** 按钮
 * 弹出的页面中，下滑至 **安装的模块** 最下方，点击 **安装新模块**
 * 将模块链接(raw链接)填入并保存，等待下载外部资源
-* 下载完成后，点击最下方的 **调整生效顺序**，按需调整模块生效顺序
+* 下载完成后，点击最下方的 **调整生效顺序**，按需调整模块生效顺序（按需）
+
+![Image text](https://github.com/Repcz/Tool/blob/X/Surge/Photo/5.PNG) 
 
 <details>
   <summary>自用模块</summary>
