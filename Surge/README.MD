@@ -74,6 +74,41 @@ https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Surge.conf
 ---
 > 以`http://script.hub`开头的模块，需安装[ScriptHub模块](https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/modules/script-hub.surge.sgmodule)后使用！！具体使用方法见[ScriptHub项目官方](https://github.com/Repcz/Open-Proflies/wiki/Script-Hub)
 
+### 功能类
+
+- ScriptHub资源转换模块 [@ScriptHub](https://github.com/Repcz/Open-Proflies/wiki/Script-Hub)
+```
+https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/modules/script-hub.surge.sgmodule
+```
+
+- B站繁体字幕翻译 [@ddkgsf2013](https://github.com/ddkgsf2013)
+```
+http://script.hub/file/_start_/https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/Function/Bilibili_CC.conf/_end_/Bilibili_CC.sgmodule?n=%E5%8A%9F%E8%83%BD%EF%BD%9CB%E7%AB%99%E5%AD%97%E5%B9%95%E7%BF%BB%E8%AF%91%2B%40ddkgsf2013&type=qx-rewrite&target=surge-module
+```
+
+- NetISP 面板 [@Keywos](https://github.com/Keywos)
+```
+https://github.com/Keywos/rule/raw/main/module/NetIspmini.sgmodule
+```
+
+> 须搭配此分流一同使用
+```
+DOMAIN-SUFFIX,ip.api.com,PROXY
+```
+
+- QX Url Scheme 资源解析 [@chengkongyiban](https://github.com/chengkongyiban)
+> 复制QX Url Scheme格式的资源到浏览器打开
+```
+https://github.com/Repcz/Tool/raw/X/Surge/Module/QX-resource-preview.sgmodule
+```
+
+- 京东历史价格 [@githubdulong](https://github.com/githubdulong)
+```
+http://script.hub/file/_start_/https://raw.githubusercontent.com/githubdulong/Script/master/jd_price2.sgmodule/_end_/jd_price2.sgmodule?n=%E5%8A%9F%E8%83%BD%EF%BD%9C%E4%BA%AC%E4%B8%9C%E5%8E%86%E5%8F%B2%E4%BB%B7%E6%A0%BC%2B%40githubdulong&type=surge-module&target=surge-module
+```
+
+
+
 ### 去广告类
 
 - YouTube去广告+YouTubeMusic歌词翻译 [@Maasea](www.github.com/Maasea)
@@ -132,37 +167,10 @@ http://script.hub/file/_start_/https://raw.githubusercontent.com/RuCu6/QuanX/mai
 http://script.hub/file/_start_/https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/Cube/zhihu.snippet/_end_/zhihu.sgmodule?n=%E5%8E%BB%E5%B9%BF%E5%91%8A%EF%BD%9C%E7%9F%A5%E4%B9%8E%2B%40RuCu6&type=qx-rewrite&target=surge-module
 ```
 
-- 知乎去广告 [@ZenmoFeiShi](https://github.com/ZenmoFeiShi)
+- 什么值得买去广告 [@ZenmoFeiShi](https://github.com/ZenmoFeiShi)
 ```
 http://script.hub/file/_start_/https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/smzdm_remove_ads.plugin/_end_/%E5%8E%BB%E5%B9%BF%E5%91%8A%EF%BD%9C%E4%BB%80%E4%B9%88%E5%80%BC%E5%BE%97%E4%B9%B0.sgmodule?n=%E5%8E%BB%E5%B9%BF%E5%91%8A%EF%BD%9C%E4%BB%80%E4%B9%88%E5%80%BC%E5%BE%97%E4%B9%B0%2B%40ZenmoFeiShi&type=loon-plugin&target=surge-module&del=true
 ```
 
-### 功能类
-
-- B站繁体字幕翻译 [@ddkgsf2013](https://github.com/ddkgsf2013)
-```
-http://script.hub/file/_start_/https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/Function/Bilibili_CC.conf/_end_/Bilibili_CC.sgmodule?n=%E5%8A%9F%E8%83%BD%EF%BD%9CB%E7%AB%99%E5%AD%97%E5%B9%95%E7%BF%BB%E8%AF%91%2B%40ddkgsf2013&type=qx-rewrite&target=surge-module
-```
-
-- NetISP 面板 [@Keywos](https://github.com/Keywos)
-```
-https://github.com/Keywos/rule/raw/main/module/NetIspmini.sgmodule
-```
-
-> 须搭配此分流一同使用
-```
-DOMAIN-SUFFIX,ip.api.com,PROXY
-```
-
-- QX Url Scheme 资源解析 [@chengkongyiban](https://github.com/chengkongyiban)
-> 复制QX Url Scheme格式的资源到浏览器打开
-```
-https://github.com/Repcz/Tool/raw/X/Surge/Module/QX-resource-preview.sgmodule
-```
-
-- 京东历史价格 [@githubdulong](https://github.com/githubdulong)
-```
-http://script.hub/file/_start_/https://raw.githubusercontent.com/githubdulong/Script/master/jd_price2.sgmodule/_end_/jd_price2.sgmodule?n=%E5%8A%9F%E8%83%BD%EF%BD%9C%E4%BA%AC%E4%B8%9C%E5%8E%86%E5%8F%B2%E4%BB%B7%E6%A0%BC%2B%40githubdulong&type=surge-module&target=surge-module
-```
 
 </details>
