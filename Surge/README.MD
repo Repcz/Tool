@@ -72,13 +72,13 @@ https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Surge.conf
 
 自用模块
 ---
-> 以`http://script.hub`开头的模块，需安装[ScriptHub](https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/modules/script-hub.surge.sgmodule)后使用！！具体使用方法见[ScriptHub](https://github.com/Repcz/Open-Proflies/wiki/Script-Hub)
+> 以`http://script.hub`开头的模块，需安装[ScriptHub模块](https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/modules/script-hub.surge.sgmodule)后使用！！具体使用方法见[ScriptHub项目官方](https://github.com/Repcz/Open-Proflies/wiki/Script-Hub)
 
 ### 去广告类
 
 - YouTube去广告+YouTubeMusic歌词翻译 [@Maasea](www.github.com/Maasea)
 ```
-http://script.hub/file/_start_/https://raw.githubusercontent.com/Maasea/sgmodule/master/YoutubeAds.sgmodule/_end_/%E5%8E%BB%E5%B9%BF%E5%91%8A%EF%BD%9CYouTube.sgmodule?n=%E5%8E%BB%E5%B9%BF%E5%91%8A%EF%BD%9CYouTube%2B%40Maasea&type=qx-rewrite&target=surge-module&del=true
+https://raw.githubusercontent.com/Maasea/sgmodule/master/YoutubeAds.sgmodule
 ```
 
 - Keep去广告 [@Maasea](www.github.com/Maasea)
