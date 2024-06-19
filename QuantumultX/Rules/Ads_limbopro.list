@@ -1,0 +1,723 @@
+## /*
+## Written by limbopro
+## 原文参阅 https://limbopro.com/archives/12904.html
+## 电报群组 https://t.me/Adblock4limbo  
+## Repo: https://github.com/limbopro/Adblock4limbo  
+## Adblock4limbo: 519 Domains/IP/Others From https://github.com/limbopro/Adblock4limbo
+## EasyList/EasylistChina/EasyPrivacy 隐私追踪器/去广告分流规则请在Github仓库 Adblock4limbo -> rule 文件夹下查找，按需添加...
+## 仓库地址：https://github.com/limbopro/Adblock4limbo/tree/main/rule
+## Peter Lowe’s Ad and tracking server list: 3552 Domains/IP/Others From https://pgl.yoyo.org/adservers/serverlist.php
+## EasyList: 40442 Domains/IP/Others From https://easylist.to/easylist/easylist.txt
+## EasyPrivacy: 39633 Domains/IP/Others From https://easylist.to/easylist/easyprivacy.txt
+## EasyList China: 6062 Domains/IP/Others From https://raw.githubusercontent.com/easylist/easylistchina/master/easylistchina.txt
+## ACL4SSR BadAD: 592 Domains/IP/Others From https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+## 以上共计: 90800 Domains/IP/Others (非去重统计)
+## Last updated at 19/6月/2024/10:42
+## */
+
+
+#### 毒奶去广告计划
+## 原文参阅 https://limbopro.com/archives/12904.html
+
+
+##### https://m.diyibanzhu.me/ 第一版主小说网
+HOST,25e87c0802f91cf8cgg.6uzxtlv.cn,REJECT
+HOST-SUFFIX,5mgrgsc.cn,REJECT
+HOST-SUFFIX,2700.5mgrgsc.cn,REJECT
+HOST-SUFFIX,6fi3bv9.cn,REJECT
+HOST-SUFFIX,6uzxtlv.cn,REJECT
+HOST-SUFFIX,xn--qrq171dxpq.com,REJECT
+HOST-SUFFIX,clarity.ms,REJECT
+HOST-SUFFIX,histats.com,REJECT
+HOST-SUFFIX,5e87c0802f91cf8cgg.6uzxtlv.cn,REJECT
+
+##### https://www.novel543.com/ 小说网
+HOST-SUFFIX,popin.cc,REJECT
+HOST-SUFFIX,double.net,REJECT
+HOST-SUFFIX,spotxchange.com,REJECT
+HOST-SUFFIX,stat.gn01.top,REJECT
+HOST-SUFFIX,ad.vidverto.io,REJECT
+HOST-SUFFIX,googlesyndication.com,REJECT
+HOST-SUFFIX,pagead2.googlesyndication.com,REJECT
+HOST-SUFFIX,gn01.top,REJECT
+HOST-SUFFIX,b1sync.zemanta.com,REJECT
+
+##### https://www.lyxsjmm.com/
+HOST-SUFFIX,tu.xasnjafnvn.com,REJECT
+HOST-SUFFIX,bn.ufitjvn.com,REJECT
+
+##### https://javmost.xyz/  
+#HOST,delivery-node-aziz.voe-network.net
+#HOST,inspiringaccurate.com
+#HOST,track.aso1.net
+HOST-SUFFIX,v3.fstats.xyz,REJECT
+HOST-SUFFIX,wpadmngr.com,REJECT
+HOST-SUFFIX,histats.com,REJECT
+HOST-SUFFIX,son-in-lawmorbid.com,REJECT
+HOST-SUFFIX,mc.yandex.ru,REJECT
+HOST-SUFFIX,amung.us,REJECT
+HOST-SUFFIX,widgets.amung.us,REJECT
+HOST-SUFFIX,s10.histats.com,REJECT
+HOST-SUFFIX,eyebrowscrambledlater.com,REJECT
+HOST-SUFFIX,a.realsrv.com,REJECT
+HOST-SUFFIX,media.aso1.net,REJECT
+HOST-SUFFIX,js.wpshsdk.com,REJECT
+HOST-SUFFIX,js.wpushsdk.com,REJECT
+HOST-SUFFIX,9e77b6e6e2.2e3f31faae.com,REJECT
+HOST-SUFFIX,playersb.com,REJECT
+#HOST-SUFFIX,dood.la
+
+##### https://www.tvc.cc/  
+HOST-SUFFIX,42yenxh.cn,REJECT
+HOST-SUFFIX,dwyhup.cn,REJECT
+HOST-SUFFIX,netdjs.net,REJECT
+HOST-SUFFIX,pc.stgowan.com,REJECT
+
+##### https://avple.tv/  
+HOST-SUFFIX,tapioni.com,REJECT
+#HOST-SUFFIX,107iwh.cn:4032
+#HOST-SUFFIX,qinhemuye.com:443
+HOST-SUFFIX,107iwh.cn,REJECT
+HOST-SUFFIX,hbhuatie.com,REJECT
+HOST-SUFFIX,qinzhihao.com,REJECT
+HOST-SUFFIX,nby360.com,REJECT
+HOST-SUFFIX,tfosrv.com,REJECT
+HOST-SUFFIX,trafforsrv.com,REJECT
+HOST-SUFFIX,trafficforce.com,REJECT
+HOST-SUFFIX,s.csyfe.com,REJECT
+
+##### https://www.tvn.cc/ 韩剧TV  
+HOST-SUFFIX,qw2v.changshuohr.net,REJECT
+HOST-SUFFIX,wss.haoyundmn.com,REJECT
+
+##### missav.com  
+HOST-SUFFIX,video.ktkjmp.com,REJECT
+HOST-SUFFIX,go.myavlive.com,REJECT
+HOST-SUFFIX,gsjln04hd.com,REJECT
+HOST-SUFFIX,creative.myavlive.com,REJECT
+HOST-SUFFIX,creative.live.missav.com,REJECT
+HOST-SUFFIX,cashewsforlife208.com,REJECT
+HOST-SUFFIX,ingest.sentry,REJECT
+HOST-SUFFIX,phloxsub73ulata.com,REJECT
+HOST-SUFFIX,xxxjmp.com,REJECT
+HOST-SUFFIX,pitrespite.com,REJECT
+HOST-SUFFIX,alexametrics.com,REJECT
+HOST-SUFFIX,designslicensedeep.com,REJECT
+HOST-SUFFIX,a.bestcontentfood.top,REJECT
+HOST-SUFFIX,tsyndicate.com,REJECT
+HOST-SUFFIX,cashewsforlife208.com,REJECT
+HOST-SUFFIX,e67repidwnfu7gcha.com,REJECT
+HOST-SUFFIX,mc7clurd09pla4nrtat7ion.com,REJECT
+HOST-SUFFIX,e67repidwnfu7gcha.com,REJECT
+HOST-SUFFIX,wuzbhjpvsf.com,REJECT
+HOST-SUFFIX,a.realsrv.com,REJECT
+
+##### Jable.tv av吃到饱  
+HOST-SUFFIX,a.shukriya90.com,REJECT
+HOST-SUFFIX,a.shukriya90.com,REJECT
+HOST-SUFFIX,creative.xlviirdr.com,REJECT
+HOST-SUFFIX,realsrv.com,REJECT
+HOST-SUFFIX,asewlfjqwlflkew.com,REJECT
+HOST-SUFFIX,uus52.com,REJECT
+HOST-SUFFIX,uus58.com,REJECT
+HOST-SUFFIX,ddmax20.xyz,REJECT
+HOST-SUFFIX,ads.exosrv.com,REJECT
+HOST-KEYWORD,exosrv,REJECT
+HOST-KEYWORD,asewlfjqwlflkew,REJECT
+HOST-SUFFIX,tyrantdb.com,REJECT
+HOST-SUFFIX,adserve.work,REJECT
+
+##### nfmovies.com 奈菲影视  
+HOST-KEYWORD,brushshopy,REJECT
+HOST-KEYWORD,onenews,REJECT
+HOST-SUFFIX,s96.cnzz.com,REJECT
+#HOST-SUFFIX,yabo729.com
+
+###### m.pianku.me/ 手机片库网  
+HOST-SUFFIX,xn--3bs795g.zone,REJECT
+HOST-SUFFIX,xn--2qux23c9ziyrq.plus,REJECT
+HOST-SUFFIX,xn--2qux23c9ziyrq.club,REJECT
+HOST-SUFFIX,xn--xhq9mt12cf5v.xn--io0a7i,REJECT
+HOST-SUFFIX,ddmax20.xyz,REJECT
+HOST-SUFFIX,xn--3bs795g.link,REJECT
+HOST-SUFFIX,show.suning.beer,REJECT
+HOST-SUFFIX,www.govshenzhen.cn,REJECT
+HOST-SUFFIX,mm9842.com,REJECT
+HOST-KEYWORD,e2wysbacctt1,REJECT
+#HOST-SUFFIX,streamtape.com
+
+##### netflav.com Netflav  
+HOST-SUFFIX,xlvirdr.com,REJECT
+HOST-SUFFIX,media.dalysv.com,REJECT
+HOST-SUFFIX,creative.mnaspm.com,REJECT
+HOST-SUFFIX,go.mnaspm.com,REJECT
+HOST-SUFFIX,solestudious.com,REJECT
+HOST-SUFFIX,enrichyummy.com,REJECT
+HOST-SUFFIX,maphuahin.com,REJECT
+HOST-SUFFIX,ggsfq.com,REJECT
+HOST-SUFFIX,ad.pornimg.xyz,REJECT
+HOST-SUFFIX,yandex.ru,REJECT
+HOST-SUFFIX,awaitcola.com,REJECT
+#HOST-SUFFIX,jsdelivr.net
+HOST-SUFFIX,wine-api.net,REJECT
+#HOST-KEYWORD,wixsite.com
+HOST-SUFFIX,exosrv.com,REJECT
+HOST-SUFFIX,juicyads.com,REJECT
+#HOST-SUFFIX,wixstatic.com
+HOST-SUFFIX,thumb.fvs.io,REJECT
+HOST-SUFFIX,itnuzleafan.com,REJECT
+HOST-SUFFIX,oawhaursaith.com,REJECT
+HOST-SUFFIX,unreshiramor.com,REJECT
+HOST-SUFFIX,regulationprivilegescan.top,REJECT
+HOST-SUFFIX,in-page-push.com,REJECT
+HOST-SUFFIX,farmcrapsubsist.com,REJECT
+
+##### avgle.me  
+HOST-SUFFIX,jads.co,REJECT
+HOST-SUFFIX,adxadserv.com,REJECT
+HOST-SUFFIX,moatads.com,REJECT
+HOST-SUFFIX,juicyads.in,REJECT
+HOST-SUFFIX,dtscout.com,REJECT
+
+##### dilili.tv  
+HOST-SUFFIX,51.la,REJECT
+HOST-SUFFIX,51daeka.com,REJECT
+
+##### www.cocomanhua.com  
+HOST-SUFFIX,exdynsrv.com,REJECT
+#HOST-SUFFIX,cloudfront.net
+HOST-SUFFIX,d227cncaprzd7y.cloudfront.net,REJECT
+HOST-SUFFIX,d10lumateci472.cloudfront.net,REJECT
+
+##### m.yhdm.io  
+HOST-SUFFIX,dvzk66.cn,REJECT
+HOST-SUFFIX,pu0glv.cn,REJECT
+
+##### www.porntrex.com/  
+#HOST-SUFFIX,ads.bullionyield.com
+
+##### https://www.zhenbuka.com/  
+HOST-KEYWORD,dlads,REJECT
+HOST,dagonghuzhu.com,REJECT
+#HOST-SUFFIX,byteimg.com
+HOST-KEYWORD,xxshuyuan,REJECT
+HOST-KEYWORD,haowanyou,REJECT
+HOST-KEYWORD,dat8,REJECT
+HOST-KEYWORD,112wan,REJECT
+HOST-KEYWORD,dfkj8,REJECT
+HOST-KEYWORD,mifengv,REJECT
+HOST-KEYWORD,lieyou,REJECT
+HOST-KEYWORD,789htbet,REJECT
+HOST-KEYWORD,mdapp09,REJECT
+HOST-KEYWORD,juruigj,REJECT
+#HOST-KEYWORD,mmiyue
+
+##### pornhub.com  
+HOST-SUFFIX,etahub.com,REJECT
+HOST-SUFFIX,evtubescms.phncdn.com,REJECT
+
+##### www.hptoon.com  
+HOST-SUFFIX,22c.in,REJECT
+HOST-SUFFIX,imgxxx.shunxincar.cn,REJECT
+#HOST-SUFFIX,cc58.oss-cn-beijing.aliyuncs.com
+#HOST-SUFFIX,oss-accelerate.aliyuncs.com
+HOST-SUFFIX,kk.braincf.com,REJECT
+HOST-SUFFIX,run.haireig.com,REJECT
+HOST-SUFFIX,d.zxptw.cn,REJECT
+HOST-SUFFIX,new.xiongzhangad.com,REJECT
+HOST-SUFFIX,js.users.51.la,REJECT
+HOST-SUFFIX,maxwellsery.com,REJECT
+HOST-SUFFIX,annabelleabe.com,REJECT
+
+##### https://91mjw.com/  
+HOST-SUFFIX,jidukeji.com,REJECT
+HOST-SUFFIX,atmib.com,REJECT
+HOST-SUFFIX,bjzysd.net,REJECT
+HOST-SUFFIX,iycwl.com,REJECT
+HOST-SUFFIX,haoyundm.com,REJECT
+HOST-SUFFIX,qqq123987.site,REJECT
+HOST-SUFFIX,qweewq2021.online,REJECT
+HOST-SUFFIX,qqq123987.site,REJECT
+HOST-SUFFIX,jianxinshanghai.com,REJECT
+HOST-SUFFIX,js.51toubu.com,REJECT
+HOST-SUFFIX,img.hylmxing.com,REJECT
+HOST-SUFFIX,777.000123456789.space,REJECT
+HOST-SUFFIX,bhichong.com,REJECT
+HOST-SUFFIX,tskdfjksldk.sdhsgcj.com,REJECT
+HOST-SUFFIX,haoyuntj.com,REJECT
+
+##### https://m.biquge.com.cn/  
+HOST-SUFFIX,bizhixiang.cn,REJECT
+HOST-SUFFIX,jspassport.ssl.qhimg.com,REJECT
+
+##### https://gimy.tv/ 剧迷tv  
+HOST-SUFFIX,ads.superad.cc,REJECT
+
+##### https://hpjav.tv/ JAVFAN #NSFW  
+HOST-SUFFIX,wpncdn.com,REJECT
+HOST-SUFFIX,exosrv.com,REJECT
+HOST-SUFFIX,jads.co,REJECT
+HOST-KEYWORD,toateeli,REJECT
+HOST-KEYWORD,greenplasticdua,REJECT
+HOST-KEYWORD,bongacash,REJECT
+HOST-KEYWORD,bngpt,REJECT
+HOST-KEYWORD,stunninglover,REJECT
+HOST-KEYWORD,jads,REJECT
+HOST-KEYWORD,trwl1,REJECT
+#HOST-KEYWORD,vidoza
+HOST-KEYWORD,o333o,REJECT
+HOST-SUFFIX,ad.pornimg.xyz,REJECT
+
+##### https://javgg.net/  
+HOST-SUFFIX,x2sfa.javgg.eu,REJECT
+HOST-SUFFIX,xd3r.javgg.eu,REJECT
+HOST-SUFFIX,p242.plainwrk.name,REJECT
+
+##### https://www5.javmost.com/  
+HOST-KEYWORD,histats,REJECT
+HOST-KEYWORD,dtscout,REJECT
+HOST-KEYWORD,adform,REJECT
+HOST-KEYWORD,mathtag,REJECT
+HOST-KEYWORD,pagespeed-mod,REJECT
+HOST-KEYWORD,in-page-push,REJECT
+
+##### https://hanime1.me/
+HOST-SUFFIX,impactserving.com,REJECT
+HOST-SUFFIX,addthis.com,REJECT
+HOST-SUFFIX,magsrv.com,REJECT
+HOST-SUFFIX,creative.kbnmnl.com,REJECT
+
+##### https://supjav.com/
+HOST-SUFFIX,adxadserv.com,REJECT
+HOST-SUFFIX,xlivrdr.com,REJECT
+HOST-SUFFIX,fanza.cc,REJECT
+
+#### disqus  
+HOST-SUFFIX,referrer.disqus.com,REJECT
+HOST-SUFFIX,links.services.disqus.com,REJECT
+HOST-SUFFIX,disqusads.com,REJECT
+HOST,glitter.services.disqus.com,REJECT
+HOST,juggler.services.disqus.com,REJECT
+HOST,tempest.services.disqus.com,REJECT
+HOST,mc.viglink.com,REJECT
+HOST,qa.viglink.com,REJECT
+HOST,ns4.viglink.com,REJECT
+HOST,ns2.viglink.com,REJECT
+HOST,ns3.viglink.com,REJECT
+HOST,apicdn.viglink.com,REJECT
+HOST-SUFFIX,cdn.viglink.com,REJECT
+
+#### www.tz659.com  
+HOST,nggfe.fdgem.com,REJECT
+HOST,rthmnj.xyz,REJECT
+HOST-SUFFIX,jknmthwd.xyz,REJECT
+HOST,koprtgh.omhoa.com,REJECT
+HOST,hbftgh.ibjkqnhjwd.xyz,REJECT
+HOST,kmopoer.jkbuymjhp.xyz,REJECT
+HOST,kmef.ikjwmfeds.xyz,REJECT
+HOST,hnrtg.iujkegbpo.xyz,REJECT
+HOST-SUFFIX,tcc.qscvli.com,REJECT
+HOST,fg.knlk2md.cn,REJECT
+HOST,tg.gtlpaj.com,REJECT
+HOST-SUFFIX,gtlpaj.com,REJECT
+HOST-SUFFIX,knlk2md.cn,REJECT
+HOST-SUFFIX,7tad.cn,REJECT
+HOST,tc.vpubmi.com,REJECT
+HOST-SUFFIX,qoiw1xw.cn,REJECT
+HOST-SUFFIX,purpleads.io,REJECT
+
+#### cn1.91short.com
+HOST-SUFFIX,ioacfu.com,REJECT
+
+#### 91porn.com
+#### HOST-SUFFIX,killcovid2021.com
+
+#### xiaobaotv.net
+HOST-SUFFIX,onerousethelpictures.com,REJECT
+HOST-SUFFIX,exemptambientcream.com,REJECT
+HOST-SUFFIX,catdomepimyth.com,REJECT
+
+#### javday.tv
+HOST-SUFFIX,farwine.com,REJECT
+
+#### www.ntdm9.com
+HOST-SUFFIX,pc.stgowan.com,REJECT
+HOST-SUFFIX,2xmzazd.cn,REJECT
+HOST-SUFFIX,2qpqwkx.cn,REJECT
+HOST-SUFFIX,server.mch3.com,REJECT
+
+
+
+#### Guard Advertising.list 神机规则
+## 参阅 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list
+
+# Advertising
+# > General
+HOST-KEYWORD,adservice,REJECT
+
+# (0~9)
+# > 51wnl
+HOST,ad.51wnl-cq.com,REJECT
+HOST,adextra.51wnl-cq.com,REJECT
+HOST,log.51wnl-cq.com,REJECT
+HOST,r.51wnl-cq.com,REJECT
+
+# (A)
+# > Apple
+HOST-SUFFIX,iadsdk.apple.com,REJECT
+HOST-SUFFIX,ads.internal.unity3d.com,REJECT
+HOST-SUFFIX,ads.prd.ie.internal.unity3d.com,REJECT
+HOST-SUFFIX,unityads.unity3d.com,REJECT
+# --- (Alibaba) ---
+HOST,tunion-api.m.taobao.com,REJECT
+# > YOUKU
+HOST-SUFFIX,atm.youku.com,REJECT
+HOST,ad.mobile.youku.com,REJECT
+HOST,adx.op.cp18.ott.cibntv.net,REJECT
+HOST,iyes.youku.com,REJECT
+HOST,pl.cp31.ott.cibntv.net,REJECT
+# > AMap
+HOST,optimus-ads.amap.com,REJECT
+HOST,optimus-ads.amap.com.w.alikunlun.com,REJECT
+# ------
+# > Autohome
+HOST,adproxy.autohome.com.cn,REJECT
+HOST,rd.autohome.com.cn,REJECT
+HOST,al.autohome.com.cn,REJECT
+HOST,applogapi.autohome.com.cn,REJECT
+HOST,adm0.autoimg.cn,REJECT
+HOST,adm1.autoimg.cn,REJECT
+HOST,adm2.autoimg.cn,REJECT
+HOST,adm3.autoimg.cn,REJECT
+
+# (B)
+# --- (Baidu) ---
+HOST-SUFFIX,duapps.com,REJECT
+HOST-SUFFIX,cpro.baidu.com,REJECT
+HOST-SUFFIX,pos.baidu.com,REJECT
+HOST,afd.baidu.com,REJECT
+HOST,als.baidu.com,REJECT
+HOST,duclick.baidu.com,REJECT
+HOST,mobads.baidu.com,REJECT
+HOST,mobads-logs.baidu.com,REJECT
+HOST,nadvideo2.baidu.com,REJECT
+HOST,nsclick.baidu.com,REJECT
+# > iQIYI
+HOST,t7z.cupid.iqiyi.com,REJECT
+HOST,t7z.cupid.ptqy.gitv.tv,REJECT
+## IP-CIDR,101.227.97.240/32
+## IP-CIDR,101.227.200.11/32
+## IP-CIDR,101.227.200.28/32
+## IP-CIDR,124.192.153.42/32
+# ------
+# > ByteDance
+HOST-SUFFIX,pangolin-sdk-toutiao.com,REJECT
+HOST-SUFFIX,pangolin-sdk-toutiao-b.com,REJECT
+HOST,ad.toutiao.com,REJECT
+HOST,dsp.toutiao.com,REJECT
+HOST,pangolin.snssdk.com,REJECT
+# > baicizhan
+HOST,advertise.baicizhan.com,REJECT
+HOST,advertise.baicizhan.org,REJECT
+# > BitAuto
+HOST,adx.yiche.com,REJECT
+HOST,log.ycapp.yiche.com,REJECT
+# > Braze
+HOST-SUFFIX,iad.appboy.com,REJECT
+HOST-SUFFIX,iad-03.appboy.com,REJECT
+HOST-SUFFIX,iad-01.braze.com,REJECT
+HOST-SUFFIX,iad-02.braze.com,REJECT
+HOST-SUFFIX,iad-03.braze.com,REJECT
+HOST-SUFFIX,iad-04.braze.com,REJECT
+HOST-SUFFIX,iad-05.braze.com,REJECT
+HOST-SUFFIX,iad-06.braze.com,REJECT
+HOST-SUFFIX,iad-08.braze.com,REJECT
+
+# (C)
+# > CCTVVideo
+HOST,adstore-index-1252524079.file.myqcloud.com,REJECT
+# > CNTV
+HOST,galaxy.bjcathay.com,REJECT
+HOST,mdrecv.app.cntvwb.cn,REJECT
+HOST,sdapprecv.app.cntvwb.cn,REJECT
+HOST,vdapprecv.app.cntvwb.cn,REJECT
+# > ChinaTelecom
+HOST,ad.21cn.com,REJECT
+HOST,ad.k.21cn.com,REJECT
+HOST,admarket.21cn.com,REJECT
+HOST,adshows.21cn.com,REJECT
+# > Chelaile
+HOST,atrace.chelaile.net.cn,REJECT
+HOST,logs.chelaile.net.cn,REJECT
+# > Camera360
+HOST,dispatcher.360in.com,REJECT
+HOST,ad.360in.com,REJECT
+HOST,exp.360in.com,REJECT
+
+# (D)
+# > Douban
+## AND,((USER-AGENT,Frodo*),(HOST,119.29.29.29))
+
+# (G)
+# > Google
+HOST-SUFFIX,doubleclick.net,REJECT
+HOST-SUFFIX,googleadservices.com,REJECT
+HOST-SUFFIX,googleadsserving.cn,REJECT
+HOST-SUFFIX,googlesyndication.com,REJECT
+HOST-SUFFIX,googletagservices.com,REJECT
+HOST,ads.youtube.com,REJECT
+
+# (H)
+# > HunanTV
+HOST-SUFFIX,da.mgtv.com,REJECT
+HOST-SUFFIX,da.hunantv.com,REJECT
+HOST-SUFFIX,log.hunantv.com,REJECT
+HOST-SUFFIX,v2.hunantv.com,REJECT
+# > Hupu
+HOST,adx.hupu.com,REJECT
+HOST,adx-api.hupu.com,REJECT
+HOST,goblin.hupu.com,REJECT
+# > happycast
+HOST,ad.hpplay.cn,REJECT
+HOST,adc.hpplay.cn,REJECT
+HOST,adcdn.hpplay.cn,REJECT
+HOST,adeng.hpplay.cn,REJECT
+HOST,pin.hpplay.cn,REJECT
+HOST,rp.hpplay.cn,REJECT
+HOST,rpt.hpplay.cn,REJECT
+
+# (J)
+# >jxedt
+HOST,richmanapi.jxedt.com,REJECT
+HOST,richmanmain.jxedt.com,REJECT
+HOST,richmanrules.jxedt.com,REJECT
+
+# (K)
+# > Kingsoft
+HOST,ad-stat.ksosoft.com,REJECT
+HOST,img.auction-ads.wpscdn.cn,REJECT
+HOST,counter.kingsoft.com,REJECT
+HOST,counter.ksosoft.com,REJECT
+HOST,minfo.wps.cn,REJECT
+HOST,mobad.ijinshan.com,REJECT
+HOST,ups.ksmobile.net,REJECT
+HOST,ws.ksmobile.net,REJECT
+# > Kuaishou
+HOST-SUFFIX,e.kuaishou.com,REJECT
+HOST,js-ad.a.yximgs.com,REJECT
+
+# (L)
+# > Le
+HOST-SUFFIX,webp2p.letv.com,REJECT
+HOST,ark.letv.com,REJECT
+HOST,emma-414870e223.huodonghezi.com,REJECT
+HOST,g3.letv.com,REJECT
+HOST,n.mark.letv.com,REJECT
+# > LinkWiFi
+HOST,a.wkanx.com,REJECT
+HOST,cwx.lianwangtech.com,REJECT
+HOST,c1wx.lianwangtech.com,REJECT
+
+# (M)
+# > Microsoft
+HOST-SUFFIX,ads.msn.com,REJECT
+HOST-SUFFIX,ads1.msn.com,REJECT
+HOST-SUFFIX,ads2.msn.com,REJECT
+HOST-SUFFIX,bingads.microsoft.com,REJECT
+HOST-SUFFIX,rads.msn.com,REJECT
+HOST,mobileads.msn.com,REJECT
+# > MojiWeather
+HOST,ad.api.moji.com,REJECT
+HOST,adlaunch.moji.com,REJECT
+HOST,ads.mojicdn.com,REJECT
+HOST,v1.log.moji.com,REJECT
+# > MiguVideo
+HOST-SUFFIX,ad.cmvideo.cn,REJECT
+HOST,ggc.cmvideo.cn,REJECT
+HOST,ggic03.miguvideo.com,REJECT
+HOST,ggmk.miguvideo.com,REJECT
+HOST,ggv.cmvideo.cn,REJECT
+HOST,ggx.cmvideo.cn,REJECT
+HOST,ggx03.miguvideo.com,REJECT
+
+# (N)
+# > NetEase
+HOST-SUFFIX,dsp.youdao.com,REJECT
+HOST-SUFFIX,union.youdao.com,REJECT
+HOST,ad.bn.netease.com,REJECT
+HOST,ad.yixin.im,REJECT
+HOST,admusicpic.music.126.net,REJECT
+HOST,g1.163.com,REJECT
+HOST,gorgon.youdao.com,REJECT
+HOST,iad.g.163.com,REJECT
+HOST,iadmat.nosdn.127.net,REJECT
+HOST,iadmusicmat.music.126.net,REJECT
+HOST,iadmusicmatvideo.music.126.net,REJECT
+HOST,impservice.dictapp.youdao.com,REJECT
+HOST,impservice.youdao.com,REJECT
+HOST,n.3g.163.com,REJECT
+HOST,nex.163.com,REJECT
+HOST,yt-adp.nosdn.127.net,REJECT
+HOST,yt-adp.ws.126.net,REJECT
+
+# (P)
+# > PPTV
+HOST,ads.aplus.pptv.com,REJECT
+HOST,ads.aplusapi.pptv.com,REJECT
+HOST,asimgs.pplive.cn,REJECT
+HOST,de.as.pptv.com,REJECT
+# > Photoable
+HOST,regist.fotoable.com,REJECT
+HOST,cdn.adapi.fotoable.com,REJECT
+# > PeanutWiFi
+HOST,adnew.wifi8.com,REJECT
+HOST,adfile.wifi8.com,REJECT
+# > PConline
+HOST,ad-analysis.pconline.com.cn,REJECT
+HOST,iad0ssl.pcauto.com.cn,REJECT
+HOST,iad0ssl.pconline.com.cn,REJECT
+HOST,imgad0.pcauto.com.cn,REJECT
+HOST,imgad0.pconline.com.cn,REJECT
+HOST,ivy.pchouse.com.cn,REJECT
+# > Phoenix New Media
+HOST-SUFFIX,deliver.ifeng.com,REJECT
+HOST,api.newad.ifeng.com,REJECT
+HOST,ifengad.3g.ifeng.com,REJECT
+
+# (Q)
+# > QingTing
+HOST,ad.qingting.fm,REJECT
+HOST,adlaunch.qingting.fm,REJECT
+HOST,ad-cdn.qingting.fm,REJECT
+# > OPPO
+HOST-SUFFIX,ads.oppomobile.com,REJECT
+HOST,adsfs.oppomobile.com,REJECT
+
+# (S)
+# > Sina
+HOST-SUFFIX,alitui.weibo.com,REJECT
+HOST-SUFFIX,beacon.sina.com.cn,REJECT
+HOST,adimg.uve.weibo.com,REJECT
+HOST,adimg.vue.weibo.com,REJECT
+HOST,u1.img.mobile.sina.cn,REJECT
+HOST,sax.sina.com.cn,REJECT
+HOST,saxs.sina.com.cn,REJECT
+HOST,saxn.sina.com.cn,REJECT
+# > SOHU
+HOST-SUFFIX,ad.sohu.com,REJECT
+HOST-SUFFIX,ads.sohu.com,REJECT
+HOST-SUFFIX,aty.sohu.com,REJECT
+HOST,hui.sohu.com,REJECT
+HOST-SUFFIX,pv.sohu.com,REJECT
+# > Snapchat
+HOST,ads.snapchat.com,REJECT
+HOST,adsapi.snapchat.com,REJECT
+# > Skyworth
+HOST-SUFFIX,hoisin.coocaa.com,REJECT
+HOST-SUFFIX,hoisin.coocaatv.com,REJECT
+HOST,data-hoisin.coocaa.com,REJECT
+
+# (T)
+# --- (Tencent) ---
+HOST-SUFFIX,e.qq.com,REJECT
+HOST-SUFFIX,gdt.qq.com,REJECT
+HOST-SUFFIX,l.qq.com,REJECT
+HOST,adsmind.apdcdn.tc.qq.com,REJECT
+HOST,adsmind.gdtimg.com,REJECT
+HOST,adsmind.tc.qq.com,REJECT
+HOST,adsmind.ugdtimg.com,REJECT
+HOST,livep.l.t002.ottcn.com,REJECT
+HOST,pgdt.gtimg.cn,REJECT
+HOST,pgdt.gtimg.com,REJECT
+HOST,pgdt.ugdtimg.com,REJECT
+HOST,splashqqlive.gtimg.com,REJECT
+HOST,wa.gtimg.com,REJECT
+# HOST,wxsnsdy.wxs.qq.com
+# HOST,wxsnsdythumb.wxs.qq.com
+# > Tencent Music (TME)
+HOST,ad.tencentmusic.com,REJECT
+HOST,adstats.tencentmusic.com,REJECT
+HOST,adserviceretry.kugou.com,REJECT
+HOST,ads.service.kugou.com,REJECT
+HOST,adsfile.bssdlbig.kugou.com,REJECT
+HOST,g.koowo.com,REJECT
+HOST,kgmobilestat.kugou.com,REJECT
+HOST,kgmobilestatbak.kugou.com,REJECT
+HOST,mobilelog.kugou.com,REJECT
+HOST,mobilead.kuwo.cn,REJECT
+HOST,rich.kuwo.cn,REJECT
+HOST,tmead.y.qq.com,REJECT
+HOST,splashimgbssdl.yun.kugou.com,REJECT
+HOST,adsfilebssdlbig.tx.kugou.com,REJECT
+# ------
+# > TongHuaShun
+HOST,adm.10jqka.com.cn,REJECT
+HOST,stat.10jqka.com.cn,REJECT
+# > The Paper
+HOST,admonitor.thepaper.cn,REJECT
+HOST,adpai.thepaper.cn,REJECT
+HOST,imgadpai.thepaper.cn,REJECT
+# > Thunder
+HOST,adsp.xunlei.com,REJECT
+HOST,etl.xlmc.sandai.net,REJECT
+
+# (V)
+# > VariFlight
+HOST,adv-adlog.variflight.com,REJECT
+HOST,adv-ads.variflight.com,REJECT
+HOST,app-ad.variflight.com,REJECT
+# > vivo
+HOST,adlog.vivo.com.cn,REJECT
+HOST,adreq.vivo.com.cn,REJECT
+HOST,ads-marketing-vivofs.vivo.com.cn,REJECT
+HOST,adsdk.vivo.com.cn,REJECT
+HOST,adsstatic.vivo.com.cn,REJECT
+HOST,adxlog.vivo.com.cn,REJECT
+HOST,vcardsdkservice.vivo.com.cn,REJECT
+HOST-KEYWORD,stsdk.vivo.com.cn,REJECT
+HOST-KEYWORD,stsdk.vivoglobal.com,REJECT
+# > Viber
+HOST,ads.viber.com,REJECT
+HOST,ads-d.viber.com,REJECT
+HOST,ads.aws.viber.com,REJECT
+
+# (X)
+# > Ximalaya
+HOST,ad.ximalaya.com,REJECT
+HOST,adbs.ximalaya.com,REJECT
+HOST,adse.ximalaya.com,REJECT
+HOST,adse.wsa.ximalaya.com,REJECT
+HOST,adbehavior.wsa.ximalaya.com,REJECT
+HOST,adbehavior.ximalaya.com,REJECT
+HOST,adsebs.ximalaya.com,REJECT
+HOST,adwbs.ximalaya.com,REJECT
+# > Xiaohongshu
+HOST,ads-img-qc.xhscdn.com,REJECT
+HOST,ads-video-al.xhscdn.com,REJECT
+HOST,ads-video-qc.xhscdn.com,REJECT
+HOST,t-ads.xiaohongshu.com,REJECT
+
+# (Y)
+# > Yahoo
+HOST-SUFFIX,adserver.yahoo.com,REJECT
+HOST-SUFFIX,adspecs.yahoo.com,REJECT
+HOST-SUFFIX,advertising.yahoo.com,REJECT
+HOST-SUFFIX,gemini.yahoo.com,REJECT
+HOST,admarketing.yahoo.net,REJECT
+HOST,ads.auctions.yahoo.com,REJECT
+HOST,ads.finance.yahoo.com,REJECT
+HOST,ads.yahoo.com,REJECT
+HOST,ads.yahoo.de,REJECT
+
+# (Z)
+# > Zhihu
+# USER-AGENT,AVOS*
+HOST,appcloud2.in.zhihu.com,REJECT
+HOST,mqtt.zhihu.com,REJECT
+HOST,sugar.zhihu.com,REJECT
+HOST,118.89.204.198,REJECT
+## IP-CIDR,118.89.204.198/32
+## IP6-CIDR,2402:4e00:1200:ed00:0:9089:6dac:96b6/128
+# > ZOL
+HOST,apppv.zol.com.cn,REJECT
+HOST,pvnapp.zol.com.cn,REJECT

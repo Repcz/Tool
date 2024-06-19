@@ -1,0 +1,18 @@
+#!name = QQ链接解锁
+#!desc = 解除QQ内访问非白名单之外的地址提示停止访问该页面的限制，并移除跟踪参数。此插件需要Loon 3.1.4(649)及以上版本方可使用，使用前需要清除QQ的缓存数据。
+#!openUrl = 
+#!author = 可莉🅥
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/QQ.png
+#!date = 2024-01-12 20:21:38
+
+[Rewrite]
+(^https:\/\/c\.pc\.qq\.com\/middlem\.html\?pfurl=)(http.*)(&pfuin=.*) 302 $2
+(^https:\/\/pingtas\.qq\.com\/webview\/pingd\?dm=c\.pc\.qq\.com&pvi=\d+&si=s\d+&url=\/middlem\.html\?pfurl%3d)(http.*)(%26pfuin%3d.*%26pfuin%3d.*) 302 $2
+(^https:\/\/cgi\.connect\.qq\.com\/qqconnectopen\/get_urlinfoForQQV2\?url=)(http.*) 302 $2
+(^https:\/\/c\.pc\.qq\.com\/index\.html\?pfurl=)(http.*)(&pfuin=.*) 302 $2
+(^https:\/\/c\.pc\.qq\.com\/ios\.html\?url=)(http.*)(&level=.*) 302 $2
+(^https:\/\/pingtas\.qq\.com\/webview\/pingd\?dm=c\.pc\.qq\.com&pvi=\d+&si=s\d+&url=\/ios\.html\?url%3d)(http.*)(%26level.*%26level.*) 302 $2
+
+[Mitm]
+hostname = pingtas.qq.com, c.pc.qq.com, cgi.connect.qq.com

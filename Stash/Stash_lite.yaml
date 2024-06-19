@@ -1,0 +1,101 @@
+# Author:https://github.com/Repcz
+# TG:https://t.me/QVQ_Channel
+# 以 ';' 或 '#' 或 '//' 开头的配置文件行为注释行
+#
+# Stash Version ≥ 2.6.0 
+#
+# 最后更新时间: 2024-06-12 20:25
+#
+# ================
+
+# 规则模式：rule/global/direct/script
+mode: rule
+# 设置日志输出级别: silent/error/warning/info/debug
+log-level: info       
+
+dns:
+  # 解析非 IP 的 dns 用的 dns 服务器,只支持纯 IP
+  default-nameserver: [223.5.5.5, 119.29.29.29]
+  # fake ip 白名单列表'以下地址不会下发fakeip映射用于连接
+  fake-ip-filter: ['*.lan','*.direct', cable.auth.com, '*.msftconnecttest.com', '*.msftncsi.com', network-test.debian.org, detectportal.firefox.com, resolver1.opendns.com, '*.srv.nintendo.net', '*.stun.playstation.net', xbox.*.microsoft.com, '*.xboxlive.com', stun.*, global.turn.twilio.com, global.stun.twilio.com, app.yinxiang.com, injections.adguard.org, local.adguard.org, cable.auth.com, localhost.*.qq.com, localhost.*.weixin.qq.com, '*.logon.battlenet.com.cn', '*.logon.battle.net', '*.blzstatic.cn', music.163.com, '*.music.163.com', '*.126.net', musicapi.taihe.com, music.taihe.com, songsearch.kugou.com, trackercdn.kugou.com, '*.kuwo.cn', api-jooxtt.sanook.com, api.joox.com, joox.com, y.qq.com, '*.y.qq.com', streamoc.music.tc.qq.com, mobileoc.music.tc.qq.com, isure.stream.qqmusic.qq.com, dl.stream.qqmusic.qq.com, aqqmusic.tc.qq.com, amobile.music.tc.qq.com, '*.xiami.com', '*.music.migu.cn', music.migu.cn, proxy.golang.org, '*.mcdn.bilivideo.cn', '*.cmpassport.com', id6.me, open.e.189.cn, mdn.open.wo.cn, opencloud.wostore.cn, auth.wosms.cn, '*.jegotrip.com.cn', '*.icitymobile.mobi', '*.pingan.com.cn', '*.cmbchina.com', '*.10099.com.cn', pool.ntp.org, '*.pool.ntp.org', ntp.*.com, time.*.com, 'ntp?.*.com', 'time?.*.com', time.*.gov, time.*.edu.cn, '*.ntp.org.cn', PDC._msDCS.*.*, DC._msDCS.*.*, GC._msDCS.*.*]
+  # 默认 DNS 服务器，支持 udp/tcp/dot/doh/doq
+  nameserver: [quic://223.5.5.5, quic://223.6.6.6, https://1.12.12.12/dns-query, https://120.53.53.53/dns-query]               
+
+# > 订阅信息展示
+subscribe-url: 
+
+# > 远程服务器
+proxy-providers:
+  Subscribe: {interval: 86400, url: http://your-service-provider}
+
+proxy-groups:
+
+  # 分流分组
+
+  - {name: 手动切换, icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/%24tash.png, type: select, include-all: true, proxies: [香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, 欧洲节点, DIRECT]}
+
+  - {name: 国外网站, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png, type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, 欧洲节点]}
+
+  - {name: 国际媒体, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png, type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, 欧洲节点]}
+
+  - {name: 微软服务, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png, type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, 欧洲节点]}
+
+  - {name: 谷歌服务, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png, type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, 欧洲节点]}
+
+  - {name: 电报消息, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png, type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, 欧洲节点]}
+
+  - {name: 推特消息, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png, type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, 欧洲节点]}
+
+  - {name: AI, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png, type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, 欧洲节点]}
+
+  - {name: 游戏平台, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png, type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, 欧洲节点, DIRECT]}
+
+  - {name: Emby, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png, type: select, include-all: true ,proxies: [香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, 欧洲节点]}
+
+  - {name: Spotify, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png, type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, 欧洲节点]}
+
+  - {name: 兜底分流, icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/friestash.png, type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, 欧洲节点, DIRECT]}
+
+  # 节点地区分流
+
+  - {name: 香港节点, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png, type: url-test, lazy: true, interval: 300, include-all: true, filter: "(?i)🇭🇰|香港|(\b(HK|Hong)\b)"}
+
+  - {name: 美国节点, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png, type: url-test, lazy: true, interval: 300, include-all: true, filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)"}
+
+  - {name: 狮城节点, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png, type: url-test, lazy: true, interval: 300, include-all: true, filter: "(?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)"}
+
+  - {name: 日本节点, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png, type: url-test, lazy: true, interval: 300, include-all: true, filter: "(?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)"}
+
+  - {name: 台湾节点, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png, type: url-test, lazy: true, interval: 300, include-all: true, filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)"}
+
+  - {name: 欧洲节点, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/European_Union.png, type: url-test, lazy: true, interval: 300, include-all: true, filter: "🇬🇧|🇫🇷|🇳🇱|🇮🇸|🇩🇪|🇺🇦|🇨🇭|🇪🇺"}
+
+rules:
+  - GEOIP,lan,直连,no-resolve
+  - GEOSITE,openai,AI
+  - GEOSITE,category-games,游戏平台
+  - GEOSITE,netflix,国际媒体
+  - GEOSITE,hbo,国际媒体
+  - GEOSITE,disney,国际媒体
+  - GEOSITE,primevideo,国际媒体
+  - GEOSITE,github,微软服务
+  - GEOSITE,telegram,电报消息
+  - GEOSITE,twitter,推特消息
+  - GEOSITE,apple,苹果服务
+  - GEOSITE,microsoft,微软服务
+  - GEOSITE,youtube,谷歌服务
+  - GEOSITE,google,谷歌服务
+  - GEOSITE,Spotify,Spotify
+  - GEOSITE,geolocation-!cn,国外网站
+  - GEOSITE,cn,DIRECT
+
+  - GEOIP,netflix,国际媒体
+  - GEOIP,google,谷歌服务
+  - GEOIP,telegram,电报消息,no-resolve
+  - GEOIP,twitter,推特消息
+  - GEOIP,CN,DIRECT
+
+  - MATCH,兜底分流
+
+
+

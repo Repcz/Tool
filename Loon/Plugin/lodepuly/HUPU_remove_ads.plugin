@@ -1,0 +1,24 @@
+#!name = 虎扑去广告
+#!desc = 移除虎扑开屏广告、首页顶部推广、我的页面多余模块及各类横幅推广。
+#!open= https://apps.apple.com/app/id1286983622
+#!author = ZenmoFeiShi
+#!homepage = https://gitlab.com/isous/loonresource/-/tree/main/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/HUPU.png
+#!date = 2024-06-16 20:22:11
+
+[Rewrite]
+^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bplapi\/reddot\/v1\/app\/getReddot reject-dict
+^https:\/\/bbs\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/(bbsallapi\/tag\/v1\/heatTag|bbsrankapi\/v1\/rating\/list) reject-dict
+^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/search\/v2\/(hintkeylist|hotkeylist) reject-dict
+^https:\/\/goblin\.hupu\.com\/\d\/\d\.\d\.\d+\/interfaceAd\/getOther\/v\d reject-dict
+^https:\/\/goblin\.hupu\.com\/\d\/\d\.\d\.\d+\/interfaceAd\/getOther\/batch reject-dict
+^https:\/\/fairy\.mobileapi\.hupu\.com\/gallery\/getmod2 reject-200
+
+[Script]
+http-response ^https:\/\/fairy\.mobileapi\.hupu\.com\/mang\/preview\/banners script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/HUPU/HUPU_remove_ads.js, requires-body = true, tag = 移除虎扑广告
+http-response ^https:\/\/bbs\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bbsallapi\/lego\/data script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/HUPU/HUPU_remove_ads.js, requires-body = true, tag = 移除虎扑广告
+http-response ^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/buffer\/hotList script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/HUPU/HUPU_remove_ads.js, requires-body = true, tag = 移除虎扑广告
+http-response ^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bplapi\/user\/v1\/more script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/HUPU/HUPU_remove_ads.js, requires-body = true, tag = 移除虎扑广告
+  
+[Mitm]
+hostname = games.mobileapi.hupu.com, fairy.mobileapi.hupu.com, bbs.mobileapi.hupu.com, goblin.hupu.com

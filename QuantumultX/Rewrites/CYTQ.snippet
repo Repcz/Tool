@@ -1,0 +1,12 @@
+#!name=解锁｜彩云天气
+#!desc=解锁@RuCu6 去广告@Keywos
+#2023-10-21 21:42
+
+# 彩云天气 //biz.cyapi.cn, wrapper.cyapi.cn
+^https:\/\/biz\.cyapi\.cn\/(p\/v1\/vip_info|v2\/user) url script-response-body https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/caiyun.js
+
+^https?:\/\/wrapper\.cyapi\.cn\/v1\/activity\? url echo-response application/json echo-response https://raw.githubusercontent.com/Keywos/rule/main/mocks/caiyun.json
+
+^https?:\/\/api\.caiyunapp\.com\/v1\/activity url reject-dict
+
+hostname = biz.cyapi.cn,wrapper.cyapi.cn,api.caiyunapp.com

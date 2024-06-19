@@ -1,0 +1,69 @@
+# Author:https://github.com/Repcz
+# TG:https://t.me/QVQ_Channel
+# 以 '#' 或 '//' 开头的配置文件行为注释行
+#
+# Mihomo ≥ 1.8.4
+#
+# 最后更新时间: 2024-06-08 23:00
+#
+# ================
+
+mixed-port: 7893
+tcp-concurrent: true
+allow-lan: true
+ipv6: false
+mode: rule
+log-level: info
+find-process-mode: strict
+
+geodata-mode: true
+geox-url:
+  geoip: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
+  geosite: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb"
+
+tun:
+  enable: true
+  stack: mixed
+  dns-hijack: [null]
+  auto-route: true
+  auto-detect-interface: true
+        
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  listen: :1053
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter: ['*.lan','*.direct', cable.auth.com, '*.msftconnecttest.com', '*.msftncsi.com', network-test.debian.org, detectportal.firefox.com, resolver1.opendns.com, '*.srv.nintendo.net', '*.stun.playstation.net', xbox.*.microsoft.com, '*.xboxlive.com', stun.*, global.turn.twilio.com, global.stun.twilio.com, app.yinxiang.com, injections.adguard.org, local.adguard.org, cable.auth.com, localhost.*.qq.com, localhost.*.weixin.qq.com, '*.logon.battlenet.com.cn', '*.logon.battle.net', '*.blzstatic.cn', music.163.com, '*.music.163.com', '*.126.net', musicapi.taihe.com, music.taihe.com, songsearch.kugou.com, trackercdn.kugou.com, '*.kuwo.cn', api-jooxtt.sanook.com, api.joox.com, joox.com, y.qq.com, '*.y.qq.com', streamoc.music.tc.qq.com, mobileoc.music.tc.qq.com, isure.stream.qqmusic.qq.com, dl.stream.qqmusic.qq.com, aqqmusic.tc.qq.com, amobile.music.tc.qq.com, '*.xiami.com', '*.music.migu.cn', music.migu.cn, proxy.golang.org, '*.mcdn.bilivideo.cn', '*.cmpassport.com', id6.me, open.e.189.cn, mdn.open.wo.cn, opencloud.wostore.cn, auth.wosms.cn, '*.jegotrip.com.cn', '*.icitymobile.mobi', '*.pingan.com.cn', '*.cmbchina.com', '*.10099.com.cn', pool.ntp.org, '*.pool.ntp.org', ntp.*.com, time.*.com, 'ntp?.*.com', 'time?.*.com', time.*.gov, time.*.edu.cn, '*.ntp.org.cn', PDC._msDCS.*.*, DC._msDCS.*.*, GC._msDCS.*.*]
+  nameserver: [quic://223.5.5.5:853, quic://223.6.6.6:853, https://1.12.12.12/dns-query, https://120.53.53.53/dns-query]                     
+
+proxy-providers:
+  Subscribe: {<<: *p, path: ./proxy-providers/Sub.yaml, url: http://your-service-provider}
+
+proxy-groups:
+  - {name: Proxy, type: fallback, include-all: true}
+
+rules:
+  - PROCESS-PATH,/opt/nezha/agent/nezha-agent,DIRECT
+  - GEOSITE,openai,Proxy
+  - GEOSITE,category-games,Proxy
+  - GEOSITE,github,Proxy
+  - GEOSITE,telegram,Proxy
+  - GEOSITE,twitter,Proxy
+  - GEOSITE,microsoft,Proxy
+  - GEOSITE,youtube,Proxy
+  - GEOSITE,google,Proxy
+  - GEOSITE,private,DIRECT
+  - GEOSITE,cn,DIRECT
+  - GEOSITE,geolocation-!cn,Proxy
+
+  - GEOIP,telegram,Proxy
+  - GEOIP,twitter,Proxy
+  - GEOIP,apple,Proxy
+  - GEOIP,google,Proxy
+  - GEOIP,private,DIRECT
+  - GEOIP,lan,DIRECT
+  - GEOIP,CN,DIRECT
+
+  - MATCH,Proxy

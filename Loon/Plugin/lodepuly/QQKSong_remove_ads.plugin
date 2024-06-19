@@ -1,0 +1,26 @@
+#!name = 全民K歌去广告
+#!desc = 移除开屏广告、歌房页面弹窗广告、消息页广告和我的页面广告。
+#!openUrl = 
+#!author = 可莉🅥
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/QQKSong.png
+#!date = 2024-01-20 16:42:07
+
+[Rule]
+DOMAIN, adsmind.gdtimg.com, REJECT
+DOMAIN, ii.gdt.qq.com, REJECT
+DOMAIN, sdk.e.qq.com, REJECT
+DOMAIN, us.l.qq.com, REJECT
+DOMAIN, tmead.y.qq.com, REJECT-NO-DROP
+DOMAIN, tmeadkg.y.qq.com, REJECT-NO-DROP
+URL-REGEX, ^http:\/\/y\.gtimg\.cn\/music\/common\/upload\/t_k_main_page_banner\/, REJECT
+
+[Rewrite]
+^https:\/\/wallpaper-\d+\.file\.myqcloud\.com\/dsl\/ reject-dict
+^https?:\/\/wallpaper-\d+\.file\.myqcloud\.com\/hikari\/ reject-dict
+^https:\/\/amsweb-cdn-\S+-\d+\.file\.myqcloud\.com\/video\/ad_profile\/ reject-dict
+# ^https:\/\/adsmind\.gdtimg\.com\/ads_svp_video.*(jpeg|jpg|png|webp) reject-img
+# ^https:\/\/adsmind\.gdtimg\.com\/ads_svp_video.*mp4 reject-video
+
+[Mitm]
+hostname = wallpaper-1258344696.file.myqcloud.com, amsweb-cdn-gz-1258344696.file.myqcloud.com

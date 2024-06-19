@@ -1,0 +1,20 @@
+#!name = 银行去广告
+#!desc = 去除部分银行应用的广告
+#!openUrl = 
+#!author = 可莉🅥
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/Bank.png
+#!date = 2024-01-15 23:20:17
+
+[Rule]
+# 广发银行 - 内页广告
+URL-REGEX, ^http:\/\/mps\.95508\.com\/mps\/icppweb\/images\/mps\/migration\/mpspics\/, REJECT
+
+[Rewrite]
+# 广发银行 - 开屏广告、内页广告
+^https:\/\/static\.95508\.com\/icppweb\/images\/modelMaterial\/advertising\/ reject
+# 广发银行 - 国寿联盟悬浮组件
+^https:\/\/unionsr\.chinalifeonline\.com\.cn\/gslm\/upload\/ reject-200
+
+[Mitm]
+hostname = static.95508.com, unionsr.chinalifeonline.com.cn

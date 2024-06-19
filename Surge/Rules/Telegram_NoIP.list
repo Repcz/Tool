@@ -1,0 +1,40 @@
+# Telegram
+DOMAIN-SUFFIX,comments.app
+DOMAIN-SUFFIX,contest.com
+DOMAIN-SUFFIX,graph.org
+DOMAIN-SUFFIX,legra.ph
+DOMAIN-SUFFIX,mbrx.app
+DOMAIN-SUFFIX,quiz.directory
+DOMAIN-SUFFIX,stel.com
+DOMAIN-SUFFIX,t.me
+DOMAIN-SUFFIX,tdesktop.com
+DOMAIN-SUFFIX,telega.one
+DOMAIN-SUFFIX,telegra.ph
+DOMAIN-SUFFIX,telegram-cdn.org
+DOMAIN-SUFFIX,cdn-telegram.org
+DOMAIN-SUFFIX,telegram.dog
+DOMAIN-SUFFIX,telegram.me
+DOMAIN-SUFFIX,telegram.org
+DOMAIN-SUFFIX,telegram.space
+DOMAIN-SUFFIX,telegramdownload.com
+DOMAIN-SUFFIX,telesco.pe
+DOMAIN-SUFFIX,tg.dev
+DOMAIN-SUFFIX,tx.me
+DOMAIN-SUFFIX,usercontent.dev
+DOMAIN-KEYWORD,telegram
+
+DOMAIN,events-gateway.ncdev.site
+DOMAIN-SUFFIX,walletbot.me
+
+# Nicegram
+DOMAIN-KEYWORD,nicegram
+
+# iMe
+DOMAIN,api.mixpanel.com
+DOMAIN-SUFFIX,imem.app
+
+# Swiftgram
+DOMAIN-SUFFIX,swiftgram.app
+
+# Turrit
+DOMAIN-SUFFIX,iturrit.com

@@ -1,0 +1,16 @@
+domain_set:
+domain_suffix_set:
+- local
+domain_keyword_set:
+domain_regex_set:
+ip_cidr_set:
+- 192.168.0.0/16
+- 10.0.0.0/8
+- 172.16.0.0/12
+- 127.0.0.0/8
+- 100.64.0.0/10
+- 224.0.0.0/4
+ip_cidr6_set:
+- fe80::/10
+asn_set:
+url_regex_set:

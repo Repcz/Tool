@@ -1,0 +1,279 @@
+
+# 来源： https://github.com/MisakaFxxk/MisakaF_Subconverter/blob/main/Sub/Emby.list
+# 最后更新时间： 2024-05-22 21:46
+
+
+##### A #####
+
+# ACA & MisakaF
+HOST-SUFFIX,emby.aca.best,PROXY
+HOST-SUFFIX,porn.aca.best,PROXY
+
+##### B #####
+
+##### C #####
+
+# ccemby
+HOST,cc.coemn.com,PROXY
+HOST-SUFFIX,cc.ccemby.tk,PROXY
+HOST-SUFFIX,carryz.net,PROXY
+
+# CherryEmby
+HOST-SUFFIX,cherrytv.one,PROXY
+
+##### D #####
+
+##### E #####
+
+# Exflux 
+HOST-SUFFIX,line.emby.men,PROXY
+
+# Emby餐厅
+HOST-SUFFIX,mius.uk,PROXY
+
+##### F #####
+
+# Facmata
+HOST-SUFFIX,cinema.facmata.net,PROXY
+
+# 飞跃彩虹
+HOST-SUFFIX,7777777.buzz,PROXY
+HOST-SUFFIX,581658.best,PROXY
+
+##### G #####
+
+# Godetia
+HOST-SUFFIX,emby.ssltd.xyz,PROXY
+
+##### H #####
+
+# 花云
+HOST-SUFFIX,emby.flowercloud,PROXY
+
+# 黑猫影视EMBY
+HOST-SUFFIX,uuuoo.cc,PROXY
+HOST-SUFFIX,emby.bid,PROXY
+HOST-SUFFIX,emby.date,PROXY
+HOST-SUFFIX,emby.loan,PROXY
+HOST-SUFFIX,emby.trade,PROXY
+
+##### I #####
+
+# Immtel
+HOST-SUFFIX,emby.immtel.com,PROXY
+
+##### J #####
+
+# jmsooo
+HOST-SUFFIX,agahk1.jmsooo.com,PROXY
+HOST-SUFFIX,agasg1.jmsooo.com,PROXY
+HOST-SUFFIX,agajp1.jmsooo.com,PROXY
+HOST-SUFFIX,aws.jmsooo.com,PROXY
+HOST-SUFFIX,ntt1.jmsooo.com,PROXY
+HOST-SUFFIX,hinet.jmsooo.com,PROXY
+HOST-SUFFIX,cf1.jmsooo.com,PROXY
+
+# 剧狗
+HOST-SUFFIX,ju.dog,PROXY
+IP-CIDR,202.61.255.248/32,PROXY
+
+# 江湖
+HOST-SUFFIX,reddust.link,PROXY
+
+##### K #####
+
+# 卡戎
+HOST-SUFFIX,charontv.com,PROXY
+
+##### L #####
+
+# Land Emby
+HOST-SUFFIX,emby.lcloud.wiki,PROXY
+
+##### M #####
+
+# MisakaF
+HOST-SUFFIX,misakaf.org,PROXY
+HOST-SUFFIX,cloudfront.net,PROXY
+
+# mjjemby
+HOST-SUFFIX,mjjemby.org,PROXY
+
+# Maying
+HOST-SUFFIX,emby.maying.club,PROXY
+
+##### N #####
+
+# ntRRR
+HOST-SUFFIX,ntrrr.am.sb,PROXY
+
+# nexitally
+HOST-SUFFIX,emby.nexitally.com,PROXY
+
+# Nebula
+HOST-SUFFIX,nebula-emby.com,PROXY
+
+##### O #####
+
+# odyssey
+HOST-SUFFIX,cf.odysseyplus.site,PROXY
+HOST-SUFFIX,agahk.odysseyplus.site,PROXY
+HOST-SUFFIX,agasg.odysseyplus.site,PROXY
+HOST-SUFFIX,ru.odysseyplus.site,PROXY
+
+##### P #####
+
+# PiliPili 
+HOST-SUFFIX,pilipiliultra.top,PROXY
+HOST-SUFFIX,pilipiliultra.com,PROXY
+
+# pornemby
+HOST-SUFFIX,pornemby.club,PROXY
+HOST-SUFFIX,ii00.cc,PROXY
+
+# polo
+HOST-SUFFIX,poloemby.xyz,PROXY
+HOST-SUFFIX,pololine.ml,PROXY
+
+# 品云
+HOST-SUFFIX,embyplus.club,PROXY
+
+# paoche
+HOST-SUFFIX,emby.cjpc.cc,PROXY
+
+# prpr
+HOST-SUFFIX,emby.prprcloud.com,PROXY
+
+# 普拉斯影业
+HOST-SUFFIX,emby.plusmedia.site,PROXY
+HOST-SUFFIX,emby-cf.plusmedia.site,PROXY
+HOST-SUFFIX,emby-sg.plusmedia.site,PROXY
+
+##### Q #####
+
+##### R #####
+
+##### S #####
+
+# SYN
+HOST-SUFFIX,stream.synn.cc,PROXY
+HOST-SUFFIX,stream.ntrrr.top,PROXY
+
+# 私房菜Emby
+HOST,notnetflix.cos.cat,PROXY
+
+# 守候网络Emby
+HOST-SUFFIX,emby.cn2gias.uk,PROXY
+HOST-SUFFIX,post.cn2gias.uk,PROXY
+
+##### T #####
+
+# TreeDiagram
+HOST-SUFFIX,123456.al,PROXY
+
+# 太空人
+HOST-SUFFIX,tkremby.xyz,PROXY
+
+##### U #####
+
+##### V #####
+
+##### W #####
+
+##### X #####
+
+# 熊猫
+HOST-SUFFIX,embyclub.com,PROXY
+HOST-SUFFIX,az-hk.embyclub.com,PROXY
+HOST-SUFFIX,azsgp.embyclub.com,PROXY
+
+# xeton
+HOST-SUFFIX,emby.xeton.dev,PROXY
+HOST-SUFFIX,jellyfin.xeton.dev,PROXY
+HOST-SUFFIX,movie.xeton.dev,PROXY
+HOST-SUFFIX,servers.xeton.dev,PROXY
+
+##### Y #####
+
+# ytoo
+HOST-SUFFIX,emby.ytoo.li,PROXY
+
+##### Z #####
+
+##### 0-9 #####
+
+##### 未分类 #####
+
+HOST-SUFFIX,emby.mdss.cloud,PROXY
+HOST-SUFFIX,embyserver.ga,PROXY
+HOST-SUFFIX,emby.nyancat.net,PROXY
+HOST-SUFFIX,emby.otakudrive.life,PROXY
+HOST-SUFFIX,emby2.otakudrive.life,PROXY
+HOST-SUFFIX,emby.run,PROXY
+HOST-SUFFIX,emby.wtf,PROXY
+HOST-SUFFIX,pub1back.emby.wtf,PROXY
+HOST-SUFFIX,pub2back.emby.wtf,PROXY
+HOST-SUFFIX,pub3back.emby.wtf,PROXY
+HOST-SUFFIX,pub1.emby.wtf,PROXY
+HOST-SUFFIX,pub2.emby.wtf,PROXY
+HOST-SUFFIX,pub3.emby.wtf,PROXY
+HOST-SUFFIX,emby.p-p.men,PROXY
+HOST-SUFFIX,emby.aiyowei.ml,PROXY
+HOST-SUFFIX,gfwemby.org,PROXY
+HOST-SUFFIX,loseremby.org,PROXY
+HOST-SUFFIX,magpie.cyou,PROXY
+HOST-SUFFIX,speedx.one,PROXY
+HOST-SUFFIX,embymv.tk,PROXY
+HOST-SUFFIX,bddup.com,PROXY
+HOST-SUFFIX,emby.cl,PROXY
+HOST-SUFFIX,emby.ml,PROXY
+HOST-SUFFIX,nivod4.tv,PROXY
+HOST-SUFFIX,newpppp.com,PROXY
+HOST-SUFFIX,freetz.top,PROXY
+HOST-SUFFIX,newwan.top,PROXY
+HOST-SUFFIX,shuipo.lol,PROXY
+HOST-SUFFIX,dicarerhome.com,PROXY
+HOST-SUFFIX,emby77.cf,PROXY
+HOST-SUFFIX,embyplus.org,PROXY
+IP-CIDR,188.172.228.49/32,PROXY
+HOST-SUFFIX,embytv.cf,PROXY
+HOST-SUFFIX,zox.show,PROXY
+HOST-SUFFIX,acemby.org,PROXY
+HOST-SUFFIX,bili.rip,PROXY
+HOST-SUFFIX,misty.ltd,PROXY
+HOST-SUFFIX,ednovas.org,PROXY
+HOST-SUFFIX,deja-vu.beauty,PROXY
+HOST-SUFFIX,studyfun.live,PROXY
+HOST-SUFFIX,gtlx.org,PROXY
+HOST-SUFFIX,9191001.xyz,PROXY
+HOST-SUFFIX,carlos.trade,PROXY
+HOST-SUFFIX,agon.cf,PROXY
+HOST-SUFFIX,imetyou.top,PROXY
+HOST-SUFFIX,goodisp.org,PROXY
+HOST-SUFFIX,emby77.org,PROXY
+HOST-SUFFIX,emby.eu.org,PROXY
+HOST-SUFFIX,wiri.tk,PROXY
+HOST-SUFFIX,285286.xyz,PROXY
+HOST-SUFFIX,zi0.icu,PROXY
+HOST-SUFFIX,bangumi.ca,PROXY
+HOST-SUFFIX,emby.kim,PROXY
+HOST-SUFFIX,4545.cf,PROXY
+HOST-SUFFIX,ggtt.cf,PROXY
+HOST-SUFFIX,mulgore.net,PROXY
+HOST-SUFFIX,happyav.eu.org,PROXY
+HOST-SUFFIX,emby.pro,PROXY
+HOST-SUFFIX,xiaoyi.one,PROXY
+HOST-SUFFIX,embymv.me,PROXY
+HOST-SUFFIX,infinityfly.top,PROXY
+HOST-SUFFIX,lucasmedia.top,PROXY
+HOST-SUFFIX,nvidia.rip,PROXY
+HOST-SUFFIX,emby77.org,PROXY
+HOST-SUFFIX,20120714.xyz,PROXY
+HOST-SUFFIX,gugumedia.link,PROXY
+HOST-SUFFIX,dicarerhome.com,PROXY
+HOST-SUFFIX,starcat.eu.org,PROXY
+HOST-SUFFIX,catlinks.co.uk,PROXY
+HOST-SUFFIX,emby.ws,PROXY
+HOST-SUFFIX,ohhhh.org,PROXY
+HOST-SUFFIX,xmsl.org,PROXY
+HOST-SUFFIX,9521732.xyz,PROXY

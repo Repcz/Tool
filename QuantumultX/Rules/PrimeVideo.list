@@ -1,0 +1,21 @@
+# NAME: PrimeVideo
+# DOMAIN: 9
+# HOST-KEYWORD: 1
+# HOST-SUFFIX: 6
+# TOTAL: 16
+HOST,atv-ps.amazon.com,PROXY
+HOST,avodmp4s3ww-a.akamaihd.net,PROXY
+HOST,d1v5ir2lpwr8os.cloudfront.net,PROXY
+HOST,d22qjgkvxw22r6.cloudfront.net,PROXY
+HOST,d25xi40x97liuc.cloudfront.net,PROXY
+HOST,d27xxe7juh1us6.cloudfront.net,PROXY
+HOST,dmqdd6hw24ucf.cloudfront.net,PROXY
+HOST,fls-na.amazon.com,PROXY
+HOST,www.amazon.com,PROXY
+HOST-SUFFIX,aiv-cdn.net,PROXY
+HOST-SUFFIX,aiv-delivery.net,PROXY
+HOST-SUFFIX,amazonvideo.com,PROXY
+HOST-SUFFIX,media-amazon.com,PROXY
+HOST-SUFFIX,primevideo.com,PROXY
+HOST-SUFFIX,pv-cdn.net,PROXY
+HOST-KEYWORD,avoddashs,PROXY

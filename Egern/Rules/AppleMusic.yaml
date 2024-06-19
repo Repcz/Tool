@@ -1,0 +1,18 @@
+no_resolve: true
+domain_set:
+- aod-ssl.itunes.apple.com
+- aod.itunes.apple.com
+- audio-ssl.itunes.apple.com
+- audio.itunes.apple.com
+- mvod.itunes.apple.com
+- streamingaudio.itunes.apple.com
+domain_suffix_set:
+- applemusic.com
+- blobstore.apple.com
+- music.apple.com
+domain_keyword_set:
+domain_regex_set:
+ip_cidr_set:
+ip_cidr6_set:
+asn_set:
+url_regex_set:

@@ -1,0 +1,16 @@
+#!name=去广告｜IT 之家
+#!desc=IT 之家去广告\n作者：@keywos
+#!category=⚙️ ▸ NoAds
+
+[URL Rewrite]
+# IT之家 api.zuihuimai.com, dat.ruanmei.com
+^https?:\/\/api\.zuihuimai\.com\/static\/.*\/hongbao - reject
+^https?:\/\/dat\.ruanmei\.com\/ithome\/money\/acd\.json$ - reject
+
+[Script]
+# IT之家 napi.ithome.com
+IT之家 = type=http-response,pattern=^https:\/\/napi\.ithome\.com\/api\/(news\/index|topmenu\/getfeeds\?),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/surgeithome.js
+
+[MITM]
+h2 = true
+hostname = %APPEND% api.zuihuimai.com, dat.ruanmei.com,napi.ithome.com

@@ -1,0 +1,20 @@
+no_resolve: true
+domain_set:
+domain_suffix_set:
+- periscope.tv
+- pscp.tv
+- t.co
+- twimg.co
+- twimg.com
+- twimg.org
+- twitpic.com
+- twitter.com
+- twitter.jp
+- vine.co
+domain_keyword_set:
+- twitter
+domain_regex_set:
+ip_cidr_set:
+ip_cidr6_set:
+asn_set:
+url_regex_set:

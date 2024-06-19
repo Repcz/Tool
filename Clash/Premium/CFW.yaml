@@ -1,0 +1,199 @@
+# Author:https://github.com/Repcz
+# TG:https://t.me/QVQ_Channel
+# 以 '#' 或 '//' 开头的配置文件行为注释行
+#
+# 此配置仅适用于Clash for Windows,其他Clash客户端未经测试
+#
+# 最后更新时间: 2024-4-15 18:15
+#
+# ================
+
+mixed-port: 7893      # 混合端口 HTTP和SOCKS5用一个端口
+allow-lan: true       # 允许局域网的连接（可用来共享代理）
+bind-address: "*"     # 仅在将allow-lan设置为true时适用
+                      # #"*": 绑定所有IP地址
+ipv6: false           # 开启 IPv6 总开关,关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录
+mode: rule            # 规则模式：rule（规则） / global（全局代理）/ direct（全局直连）/ script (脚本)
+log-level: info       # 设置日志输出级别 (5 个级别：silent / error / warning / info / debug）
+external-controller: '127.0.0.1:9090'   #外部控制器,可以使用 RESTful API 来控制你的 clash 内核
+
+dns:
+  enable: true             # 关闭将使用系统 DNS
+  ipv6: false              # IPV6解析开关；如果为false，将返回ipv6结果为空
+  enhanced-mode: fake-ip   # 模式：redir-host或fake-ip
+  listen: 0.0.0.0:53       # DNS监听地址
+  fake-ip-range: 198.18.0.1/16    # Fake-IP解析地址池
+  fake-ip-filter: ['*.lan', 'cable.auth.com', '*.msftconnecttest.com', '*.msftncsi.com', 'network-test.debian.org', 'detectportal.firefox.com', 'resolver1.opendns.com', '*.srv.nintendo.net', '*.stun.playstation.net', 'xbox.*.microsoft.com', '*.xboxlive.com', 'stun.*', 'global.turn.twilio.com', 'global.stun.twilio.com', 'localhost.*.qq.com', 'localhost.*.weixin.qq.com', '*.logon.battlenet.com.cn', '*.logon.battle.net', '*.blzstatic.cn', 'music.163.com', '*.music.163.com', '*.126.net', 'musicapi.taihe.com', 'music.taihe.com', 'songsearch.kugou.com', 'trackercdn.kugou.com', '*.kuwo.cn', 'api-jooxtt.sanook.com', 'api.joox.com', 'joox.com', 'y.qq.com', '*.y.qq.com', 'streamoc.music.tc.qq.com', 'mobileoc.music.tc.qq.com', 'isure.stream.qqmusic.qq.com', 'dl.stream.qqmusic.qq.com', 'aqqmusic.tc.qq.com', 'amobile.music.tc.qq.com', '*.xiami.com', '*.music.migu.cn', 'music.migu.cn', 'proxy.golang.org', '*.mcdn.bilivideo.cn', '*.cmpassport.com', 'id6.me', 'open.e.189.cn', 'mdn.open.wo.cn', 'opencloud.wostore.cn', 'auth.wosms.cn', '*.jegotrip.com.cn', '*.icitymobile.mobi', '*.pingan.com.cn', '*.cmbchina.com', 'pool.ntp.org', '*.pool.ntp.org', 'ntp.*.com', 'time.*.com', 'ntp?.*.com', 'time?.*.com', 'time.*.gov', 'time.*.edu.cn', '*.ntp.org.cn', 'PDC._msDCS.*.*', 'DC._msDCS.*.*', 'GC._msDCS.*.*']
+                          # fake ip 白名单列表'以下地址不会下发fakeip映射用于连接
+  nameserver: [https://doh.pub/dns-query, https://dns.alidns.com/dns-query]               
+                          # 默认DNS服务器，支持udp/tcp/dot/doh/doq
+  
+# cfw-bypass: ['localhost', '*.local', 'captive.apple.com', 'e.crashlytics.com', 'sequoia.apple.com', 'seed-sequoia.siri.apple.com', 'www.baidu.com', 'passenger.t3go.cn', 'yunbusiness.ccb.com', 'wxh.wo.cn', 'gate.lagou.com', 'www.abchina.com.cn', 'login-service.mobile-bank.psbc.com', 'mobile-bank.psbc.com', '10.0.0.0/8', '100.64.0.0/10', '127.0.0.1/32', '169.254.0.0/16', '172.16.0.0/12', '192.168.0.0/16', '192.168.122.1/32', '193.168.0.1/32', '224.0.0.0/4', '240.0.0.0/4', '255.255.255.255/32', '::1/128', 'fc00::/7', 'fd00::/8', 'fe80::/10', 'ff00::/8', '2001::/32', '2001:db8::/32', '2002::/16', '::ffff:0:0:0:0/1', '::ffff:128:0:0:0/1' ]
+                          # 系统代理跳过列表,仅支持ClashForWindows
+ 
+###建立锚点
+    
+# 策略组引用相关参数
+pg: &pg {type: select, proxies: [🚀 手动切换, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点,  🇨🇳 台湾节点, ♻️ 自动选择, ⚠️ 故障转移, DIRECT]}
+
+# 订阅更新和延迟测试相关参数
+p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1800}}
+
+# 自动选择策略组：选取延迟最低节点
+auto: &auto {type: url-test, lazy: true, url: http://www.gstatic.com/generate_204, interval: 900, use: [Subscribe]}
+
+# 手动选择策略组：手动选择想要的节点/策略组
+select: &select {type: select, use: [Subscribe]}
+
+# 故障回退策略组：策略组将按顺序选择你列表中第一个可用的节点
+fallback: &fallback {type: fallback, lazy: true, url: http://www.gstatic.com/generate_204, interval: 900, use: [Subscribe]}
+
+# 负载均衡策略组：不同的请求将使用不同的代理节点
+load-balance: &load-balance {type: load-balance, lazy: true, url: http://www.gstatic.com/generate_204, interval: 900, use: [Subscribe]}
+
+# classical规则相关
+c: &c {type: http, behavior: classical, interval: 86400}
+
+# domain规则相关
+d: &d {type: http, behavior: domain, interval: 86400}
+
+# ipcidr规则相关
+i: &i {type: http, behavior: ipcidr, interval: 86400}
+
+###结束
+
+proxy-providers:
+  Subscribe: {<<: *p, url: https://sub.xeton.dev/sub?target=clash&url=你的订阅链接&list=true&udp=true}
+    # 可以使用任意类型的链接替换上面文字,多个链接使用英文符号的竖杠|隔开一起写上即可
+    # Sub-Store生成的Gist链接(Clash类型),可以直接替换上述url引号中的部分,具体见Sub-Store教程         
+               
+proxies: null
+
+proxy-groups:
+
+  #分流分组
+
+  - {name: 🚀 手动切换, type: select, use: [Subscribe], proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, DIRECT]}
+
+  - {name: 🌏 国外网站, <<: *pg}
+
+  - {name: 📽️ 国际媒体, <<: *pg}
+
+  - {name: 🍎 苹果服务, <<: *pg}
+
+  - {name: 🖥️ 微软服务, <<: *pg}
+
+  - {name: 🌌 谷歌服务, <<: *pg}
+
+  - {name: 📟 电报消息, <<: *pg}
+
+  - {name: 🐦 推特消息, <<: *pg}
+
+  - {name: 🤖 OpenAI, <<: *pg}
+
+  - {name: 🎮 游戏平台, <<: *pg}
+
+  - {name: 📽️ Emby, <<: *pg, use: [Subscribe]}
+
+  - {name: 📺 哔哩哔哩, type: select, proxies: [DIRECT, 🇭🇰 香港节点, 🇨🇳 台湾节点]}
+
+  - {name: 🌏 国内网站, type: select, proxies: [DIRECT, 🚀 手动切换]}
+
+  - {name: 🛑 广告拦截, type: select, proxies: [REJECT, DIRECT]}
+
+  - {name: 🐟 兜底分流, <<: *pg}
+
+  #节点地区分组
+
+  - {name: 🇭🇰 香港节点, <<: *auto, filter: "^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$"}
+
+  - {name: 🇺🇸 美国节点, <<: *auto, filter: "^(?=.*((?i)🇺🇸|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(\b(US|United States)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$"}
+
+  - {name: 🇸🇬 狮城节点, <<: *auto, filter: "^(?=.*((?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$"}
+
+  - {name: 🇯🇵 日本节点, <<: *auto, filter: "^(?=.*((?i)🇯🇵|日本|川日|东京|大阪|泉日|埼玉|(\b(JP|Japan)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$"}
+
+  - {name: 🇨🇳 台湾节点, <<: *auto, filter: "(?i)🇹🇼|台|台湾|(\b(TW|Tai|Taiwan)\b)"}
+
+  - {name: ♻️ 自动选择, <<: *auto}
+
+  - {name: ⚠️ 故障转移, <<: *fallback}
+
+rule-providers:
+
+  # 局域网   
+  Lan: {<<: *c, format: text, path: ./rule-providers/Lan.list,  url: https://git.988896.xyz/https://github.com/Repcz/Tool/raw/X/Clash/Rules/Lan.list}
+
+  # 下载服务
+  Download: {<<: *c, format: text, path: ./rule-providers/Download.list,  url: https://git.988896.xyz/https://github.com/Repcz/Tool/raw/X/Clash/Rules/Download.list}
+      
+  #广告拦截
+  AD: {<<: *d, format: text, path: ./rule-providers/AD.list, url: https://git.988896.xyz/https://github.com/Repcz/Tool/raw/X/Clash/Rules/Anti-ad.list}
+
+  # 苹果服务
+  Apple: {<<: *c, format: text, path: ./rule-providers/Apple.list,  url: https://git.988896.xyz/https://github.com/Repcz/Tool/raw/X/Clash/Rules/Apple.list}
+
+  # 微软服务 
+  OneDrive: {<<: *c, format: text, path: ./rule-providers/OneDrive.list,  url: https://git.988896.xyz/https://github.com/Repcz/Tool/raw/X/Clash/Rules/OneDrive.list}
+  Github: {<<: *c, format: text, path: ./rule-providers/Github.list,  url: https://git.988896.xyz/https://github.com/Repcz/Tool/raw/X/Clash/Rules/Github.list}
+  Microsoft: {<<: *c, format: text, path: ./rule-providers/Microsoft.list,  url: https://git.988896.xyz/https://github.com/Repcz/Tool/raw/X/Clash/Rules/Microsoft.list}
+
+  # 谷歌服务
+  YouTube: {<<: *c, format: text, path: ./rule-providers/YouTube.list,  url: https://git.988896.xyz/https://github.com/Repcz/Tool/raw/X/Clash/Rules/YouTube.list}
+  Google: {<<: *c, format: text, path: ./rule-providers/Google.list,  url: https://git.988896.xyz/https://github.com/Repcz/Tool/raw/X/Clash/Rules/Google.list}
+
+  # 电报消息
+  Telegram: {<<: *c, format: text, path: ./rule-providers/Telegram.list,  url: https://git.988896.xyz/https://github.com/Repcz/Tool/raw/X/Clash/Rules/Telegram.list}
+
+  # 推特消息
+  Twitter: {<<: *c, format: text, path: ./rule-providers/Twitter.list,  url: https://git.988896.xyz/https://github.com/Repcz/Tool/raw/X/Clash/Rules/Twitter.list}
+
+  # 哔哩哔哩
+  BiliBili: {<<: *c, format: text, path: ./rule-providers/BiliBili.list,  url: https://git.988896.xyz/https://github.com/Repcz/Tool/raw/X/Clash/Rules/Bilibili.list}
+
+  # 游戏平台
+  Steam: {<<: *c, format: text, path: ./rule-providers/steam.list,  url: https://git.988896.xyz/https://github.com/Repcz/Tool/raw/X/Clash/Rules/Steam.list}
+  Epic: {<<: *c, format: text, path: ./rule-providers/Epic.list,  url: https://git.988896.xyz/https://github.com/Repcz/Tool/raw/X/Clash/Rules/Epic.list}
+
+  # AI平台
+  OpenAI: {<<: *c, format: text, path: ./rule-providers/OpenAI.list,  url: https://git.988896.xyz/https://github.com/Repcz/Tool/raw/X/Clash/Rules/OpenAI.list}
+
+  # 中国大陆
+  ChinaDomain: {<<: *c, format: text, path: ./rule-providers/ChinaDomain.list,  url: https://git.988896.xyz/https://github.com/Repcz/Tool/raw/X/Clash/Rules/ChinaDomain.list}
+
+  # Emby
+  Emby: {<<: *c, format: text, path: ./rule-providers/Emby.list,  url: https://git.988896.xyz/https://github.com/Repcz/Tool/raw/X/Clash/Rules/Emby.list}
+
+  # 国际媒体
+  ProxyMedia: {<<: *c, format: text, path: ./rule-providers/ProxyMedia.list,  url: https://git.988896.xyz/https://github.com/Repcz/Tool/raw/X/Clash/Rules/ProxyMedia.list}
+
+  # 代理网站
+  ProxyGFW: {<<: *c, format: text, path: ./rule-providers/ProxyGFW.list,  url: https://git.988896.xyz/https://github.com/Repcz/Tool/raw/X/Clash/Rules/ProxyGFW.list}
+ 
+rules:
+  #- SCRIPT,quic,REJECT
+  #- RULE-SET,Download,DIRECT
+  - RULE-SET,AD,🛑 广告拦截
+  - RULE-SET,OpenAI,🤖 OpenAI
+  - RULE-SET,Apple,🍎 苹果服务
+  - RULE-SET,OneDrive,🖥️ 微软服务
+  - RULE-SET,Github,🖥️ 微软服务
+  - RULE-SET,Microsoft,🖥️ 微软服务
+  - RULE-SET,YouTube,🌌 谷歌服务
+  - RULE-SET,Google,🌌 谷歌服务
+  - RULE-SET,Telegram,📟 电报消息
+  - RULE-SET,Twitter,🐦 推特消息
+  - RULE-SET,BiliBili,📺 哔哩哔哩
+  - RULE-SET,Steam,🎮 游戏平台
+  - RULE-SET,Epic,🎮 游戏平台
+  - RULE-SET,Emby,📽️ Emby
+  - RULE-SET,ProxyMedia,📽️ 国际媒体
+  - RULE-SET,ProxyGFW,🌏 国外网站
+  - RULE-SET,ChinaDomain,🌏 国内网站
+  - RULE-SET,Lan,DIRECT
+  - GEOIP,CN,🌏 国内网站
+  - MATCH,🐟 兜底分流
+
+script:
+  shortcuts:
+    quic: network == 'udp' and dst_port == 443

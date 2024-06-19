@@ -1,0 +1,23 @@
+no_resolve: true
+domain_set:
+- youtubei.googleapis.com
+- yt3.ggpht.com
+domain_suffix_set:
+- googlevideo.com
+- gvt2.com
+- withyoutube.com
+- youtu.be
+- youtube-nocookie.com
+- youtube.com
+- youtubeeducation.com
+- youtubegaming.com
+- youtubekids.com
+- yt.be
+- ytimg.com
+domain_keyword_set:
+- youtube
+domain_regex_set:
+ip_cidr_set:
+ip_cidr6_set:
+asn_set:
+url_regex_set:

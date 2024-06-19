@@ -1,0 +1,23 @@
+#!name = 微博轻享版去广告
+#!desc = 过滤轻享国际版广告及去除各部分推广模块
+#!openUrl = 
+#!author = Keywos kokoryh
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Weibo_intl.png
+#!date = 2023-09-07 23:18:14
+
+[Rewrite]
+# 热门视频、热推荐
+^https?:\/\/api\.weibo\.cn\/\d\/(cardlist\?v_f=\d|ad\/weibointl\?) reject-dict
+^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=hot_search_users reject-dict
+
+[Script]
+# 趋势页、开屏广告、用户中心、热搜置顶、我的页面、尊享专属、信息流
+http-response ^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?(ct=(feed&a=trends|user&a=get_searching_info)|a=(get_coopen_ads|user_center|search_topic|open_app&auth|icon_center)) script-path = https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/Weibo_intl/Weibo_intl_remove_ads.js, requires-body = true, tag = 微博轻享版去广告
+
+http-response ^https?:\/\/api\.weibo\.cn\/\d\/statuses\/.*timeline script-path = https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/Weibo_intl/Weibo_intl_remove_ads.js, requires-body = true, tag = 微博轻享版去广告
+
+http-response ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php script-path = https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/Weibo_intl/Weibo_intl_remove_ads.js, requires-body = true, tag = 微博轻享版去广告
+
+[Mitm]
+hostname = *api.weibo.cn, sdkapp.uve.weibo.com

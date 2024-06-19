@@ -1,0 +1,52 @@
+# NAME: HBO
+# DOMAIN: 1
+# HOST-SUFFIX: 45
+# PROCESS-NAME: 1
+# TOTAL: 47
+HOST,wmff.warnermediacdn.com,PROXY
+HOST-SUFFIX,bcbolthboa-a.akamaihd.net,PROXY
+HOST-SUFFIX,cf-images.ap-southeast-1.prod.boltdns.net,PROXY
+HOST-SUFFIX,cinemax.com,PROXY
+HOST-SUFFIX,dai3fd1oh325y.cloudfront.net,PROXY
+HOST-SUFFIX,execute-api.ap-southeast-1.amazonaws.com,PROXY
+HOST-SUFFIX,execute-api.us-east-1.amazonaws.com,PROXY
+HOST-SUFFIX,forthethrone.com,PROXY
+HOST-SUFFIX,hbo.com,PROXY
+HOST-SUFFIX,hbo.com.c.footprint.net,PROXY
+HOST-SUFFIX,hbo.com.edgesuite.net,PROXY
+HOST-SUFFIX,hbo.map.fastly.net,PROXY
+HOST-SUFFIX,hboasia.com,PROXY
+HOST-SUFFIX,hboasia1-i.akamaihd.net,PROXY
+HOST-SUFFIX,hboasia2-i.akamaihd.net,PROXY
+HOST-SUFFIX,hboasia3-i.akamaihd.net,PROXY
+HOST-SUFFIX,hboasia4-i.akamaihd.net,PROXY
+HOST-SUFFIX,hboasia5-i.akamaihd.net,PROXY
+HOST-SUFFIX,hboasialive.akamaized.net,PROXY
+HOST-SUFFIX,hbogeo.cust.footprint.net,PROXY
+HOST-SUFFIX,hbogo.co.th,PROXY
+HOST-SUFFIX,hbogo.com,PROXY
+HOST-SUFFIX,hbogo.eu,PROXY
+HOST-SUFFIX,hbogoasia.com,PROXY
+HOST-SUFFIX,hbogoasia.hk,PROXY
+HOST-SUFFIX,hbogoasia.id,PROXY
+HOST-SUFFIX,hbogoasia.ph,PROXY
+HOST-SUFFIX,hbogoasia.sg,PROXY
+HOST-SUFFIX,hbogoasia.tw,PROXY
+HOST-SUFFIX,hbogoprod-vod.akamaized.net,PROXY
+HOST-SUFFIX,hbolb.onwardsmg.com,PROXY
+HOST-SUFFIX,hbomax.com,PROXY
+HOST-SUFFIX,hbomaxcdn.com,PROXY
+HOST-SUFFIX,hbomaxdash.s.llnwi.net,PROXY
+HOST-SUFFIX,hbonow.com,PROXY
+HOST-SUFFIX,hbounify-prod.evergent.com,PROXY
+HOST-SUFFIX,manifest.prod.boltdns.net,PROXY
+HOST-SUFFIX,maxgo.com,PROXY
+HOST-SUFFIX,now-ashare.com,PROXY
+HOST-SUFFIX,now-tv.com,PROXY
+HOST-SUFFIX,now.com,PROXY
+HOST-SUFFIX,now.com.hk,PROXY
+HOST-SUFFIX,nowe.com,PROXY
+HOST-SUFFIX,nowe.hk,PROXY
+HOST-SUFFIX,players.brightcove.net,PROXY
+HOST-SUFFIX,youboranqs01.com,PROXY
+#PROCESS-NAME,com.hbo.hbonow

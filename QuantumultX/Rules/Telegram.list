@@ -1,0 +1,77 @@
+# 2024-04-21 16:00
+
+HOST-SUFFIX,comments.app,PROXY
+HOST-SUFFIX,contest.com,PROXY
+HOST-SUFFIX,graph.org,PROXY
+HOST-SUFFIX,legra.ph,PROXY
+HOST-SUFFIX,mbrx.app,PROXY
+HOST-SUFFIX,quiz.directory,PROXY
+HOST-SUFFIX,stel.com,PROXY
+HOST-SUFFIX,t.me,PROXY
+HOST-SUFFIX,tdesktop.com,PROXY
+HOST-SUFFIX,telega.one,PROXY
+HOST-SUFFIX,telegra.ph,PROXY
+HOST-SUFFIX,telegram-cdn.org,PROXY
+HOST-SUFFIX,cdn-telegram.org,PROXY
+HOST-SUFFIX,telegram.dog,PROXY
+HOST-SUFFIX,telegram.me,PROXY
+HOST-SUFFIX,telegram.org,PROXY
+HOST-SUFFIX,telegram.space,PROXY
+HOST-SUFFIX,telegramdownload.com,PROXY
+HOST-SUFFIX,telesco.pe,PROXY
+HOST-SUFFIX,tg.dev,PROXY
+HOST-SUFFIX,tx.me,PROXY
+HOST-SUFFIX,usercontent.dev,PROXY
+HOST-KEYWORD,telegram,PROXY
+
+HOST,events-gateway.ncdev.site,PROXY
+HOST-SUFFIX,walletbot.me,PROXY
+
+# Nicegram
+HOST-KEYWORD,nicegram,PROXY
+
+# iMe
+HOST,api.mixpanel.com,PROXY
+HOST-SUFFIX,imem.app,PROXY
+
+# Swiftgram
+HOST-SUFFIX,swiftgram.app,PROXY
+
+# Turrit
+HOST-SUFFIX,iturrit.com,PROXY
+
+# > Americas(DC1 🇺🇸US & 🇧🇷BR)
+IP-ASN,59930,PROXY
+IP-CIDR,91.108.12.0/22,PROXY
+IP6-CIDR,2a0a:f280::/32,PROXY
+
+# > Europe(DC2 🇮🇳IN ➜ 🇪🇺EU)
+IP-ASN,44907,PROXY
+IP-CIDR,91.108.20.0/22,PROXY
+IP6-CIDR,2001:b28:f23c::/48,PROXY
+
+# > Americas(DC3 🇷🇺RU ➜ 🇺🇸US)
+IP-ASN,211157,PROXY
+IP-CIDR,91.105.192.0/23,PROXY
+IP-CIDR,185.76.151.0/24,PROXY
+
+# > Europe(DC4 🇪🇺EU)
+IP-ASN,62041,PROXY
+IP-CIDR,149.154.160.0/20,PROXY
+IP-CIDR,91.108.4.0/22,PROXY
+IP-CIDR,91.108.8.0/22,PROXY
+IP6-CIDR,2001:b28:f23d::/48,PROXY
+IP6-CIDR,2001:67c:4e8::/48,PROXY
+
+# > Singapore(DC5 🇸🇬SG))
+IP-ASN,62014,PROXY
+IP-CIDR,91.108.16.0/22,PROXY
+IP-CIDR,91.108.56.0/22,PROXY
+IP6-CIDR,2001:b28:f23f::/48,PROXY
+
+IP-CIDR,95.161.76.101/32,PROXY
+IP-CIDR,5.28.195.80/32,PROXY
+
+#PROCESS-NAME,nekox.messenger
+#PROCESS-NAME,org.telegram.messenger
+#PROCESS-NAME,telegram-desktop

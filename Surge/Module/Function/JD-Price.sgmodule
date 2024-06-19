@@ -1,0 +1,16 @@
+#!name=功能｜JD历史价格
+#!desc=获取京东历史价格\n作者：@githubdulong
+#!category=⚙️ ▸ Function
+#!system=ios
+
+# 🔗 模块链接
+#SUBSCRIBED http://script.hub/file/_start_/https://raw.githubusercontent.com/githubdulong/Script/master/jd_price2.sgmodule/_end_/%E5%8A%9F%E8%83%BD%EF%BD%9C%E4%BA%AC%E4%B8%9C%E5%8E%86%E5%8F%B2%E4%BB%B7%E6%A0%BC.sgmodule?n=%E5%8A%9F%E8%83%BD%EF%BD%9CJD%E5%8E%86%E5%8F%B2%E4%BB%B7%E6%A0%BC+%E8%8E%B7%E5%8F%96%E4%BA%AC%E4%B8%9C%E5%8E%86%E5%8F%B2%E4%BB%B7%E6%A0%BC%5Cn%E4%BD%9C%E8%80%85%EF%BC%9A%40githubdulong&type=surge-module&target=surge-module&del=true&category=%E2%9A%99%EF%B8%8F%20%E2%96%B8%20Function
+
+
+[Script]
+# > 京东App 历史价格 
+京东比价 = type=http-response, pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig), script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js, requires-body=true
+
+[MITM]
+hostname = %APPEND% api.m.jd.com
+

@@ -1,0 +1,60 @@
+no_resolve: true
+domain_set:
+- events-gateway.ncdev.site
+- api.mixpanel.com
+domain_suffix_set:
+- comments.app
+- contest.com
+- graph.org
+- legra.ph
+- mbrx.app
+- quiz.directory
+- stel.com
+- t.me
+- tdesktop.com
+- telega.one
+- telegra.ph
+- telegram-cdn.org
+- cdn-telegram.org
+- telegram.dog
+- telegram.me
+- telegram.org
+- telegram.space
+- telegramdownload.com
+- telesco.pe
+- tg.dev
+- tx.me
+- usercontent.dev
+- walletbot.me
+- imem.app
+- swiftgram.app
+- iturrit.com
+domain_keyword_set:
+- telegram
+- nicegram
+domain_regex_set:
+ip_cidr_set:
+- 91.108.12.0/22
+- 91.108.20.0/22
+- 91.105.192.0/23
+- 185.76.151.0/24
+- 149.154.160.0/20
+- 91.108.4.0/22
+- 91.108.8.0/22
+- 91.108.16.0/22
+- 91.108.56.0/22
+- 95.161.76.101/32
+- 5.28.195.80/32
+ip_cidr6_set:
+- 2a0a:f280::/32
+- 2001:b28:f23c::/48
+- 2001:b28:f23d::/48
+- 2001:67c:4e8::/48
+- 2001:b28:f23f::/48
+asn_set:
+- '59930'
+- '44907'
+- '211157'
+- '62041'
+- '62014'
+url_regex_set:

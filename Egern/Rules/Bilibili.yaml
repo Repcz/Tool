@@ -1,0 +1,28 @@
+domain_set:
+- apiintl.biliapi.net
+- upos-hz-mirrorakam.akamaized.net
+domain_suffix_set:
+- acg.tv
+- acgvideo.com
+- b23.tv
+- bigfun.cn
+- bigfunapp.cn
+- biliapi.com
+- biliapi.net
+- bilibili.co
+- bilibili.com
+- bilibili.tv
+- biligame.com
+- biligame.net
+- biliintl.co
+- bilivideo.cn
+- bilivideo.com
+- hdslb.com
+- im9.com
+- smtcdns.net
+domain_keyword_set:
+domain_regex_set:
+ip_cidr_set:
+ip_cidr6_set:
+asn_set:
+url_regex_set:

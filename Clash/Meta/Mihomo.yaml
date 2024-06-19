@@ -1,0 +1,200 @@
+# Author:https://github.com/Repcz
+# TG:https://t.me/QVQ_Channel
+# 以 '#' 或 '//' 开头的配置文件行为注释行
+#
+# Mihomo Version ≥ 1.8.5
+#
+# 最后更新时间: 2024-06-17 07:50
+#
+# ================
+
+# 混合端口 HTTP和SOCKS5用一个端口
+mixed-port: 7893
+# TCP 并发连接所有 IP, 将使用最快握手的 TCP
+tcp-concurrent: true
+# 允许局域网的连接（可用来共享代理）
+allow-lan: true
+# 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录  
+ipv6: false
+# 规则模式：rule/global/direct/script
+mode: rule
+# 设置日志输出级别: silent/error/warning/info/debug
+log-level: info
+# 全局 TLS 指纹
+global-client-fingerprint: chrome
+# 匹配所有进程（always/strict/off）
+find-process-mode: strict
+
+# 使用geoip.dat数据库
+geodata-mode: true
+geox-url:
+  geoip: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
+  geosite: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb"
+                         
+profile:
+  # 存储 select 选择记录
+  store-selected: true 
+  # 持久化 fake-ip
+  store-fake-ip: true  
+
+# 嗅探域名 可选配置
+sniffer:               
+  enable: true
+  # 是否使用嗅探结果作为实际访问，默认 true
+  parse-pure-ip: true  
+  sniff:
+    TLS:
+      ports: [443, 8443]
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    QUIC:
+      ports: [443, 8443]
+
+# Tun 配置  
+tun:
+  enable: true
+  # 可选： system/gvisor/mixed；
+  stack: mixed
+  # dns劫持,一般设置为 any:53 即可, 即劫持所有53端口的udp流量
+  dns-hijack: [any:53]
+  # 自动设置全局路由，可以自动将全局流量路由进入tun网卡。
+  auto-route: true
+  # 自动识别出口网卡
+  auto-detect-interface: true
+        
+dns:
+  enable: true
+  # IPV6解析开关；如果为false，将返回ipv6结果为空
+  ipv6: false
+  # 模式：redir-host或fake-ip
+  enhanced-mode: fake-ip
+  # DNS监听地址
+  listen: :1053
+  # Fake-IP解析地址池
+  fake-ip-range: 198.18.0.1/16
+  # fakeip 过滤，以下地址不会下发 fakeip 映射用于连接
+  fake-ip-filter: ['*.lan','*.direct', cable.auth.com, '*.msftconnecttest.com', '*.msftncsi.com', network-test.debian.org, detectportal.firefox.com, resolver1.opendns.com, '*.srv.nintendo.net', '*.stun.playstation.net', xbox.*.microsoft.com, '*.xboxlive.com', stun.*, global.turn.twilio.com, global.stun.twilio.com, app.yinxiang.com, injections.adguard.org, local.adguard.org, cable.auth.com, localhost.*.qq.com, localhost.*.weixin.qq.com, '*.logon.battlenet.com.cn', '*.logon.battle.net', '*.blzstatic.cn', music.163.com, '*.music.163.com', '*.126.net', musicapi.taihe.com, music.taihe.com, songsearch.kugou.com, trackercdn.kugou.com, '*.kuwo.cn', api-jooxtt.sanook.com, api.joox.com, joox.com, y.qq.com, '*.y.qq.com', streamoc.music.tc.qq.com, mobileoc.music.tc.qq.com, isure.stream.qqmusic.qq.com, dl.stream.qqmusic.qq.com, aqqmusic.tc.qq.com, amobile.music.tc.qq.com, '*.xiami.com', '*.music.migu.cn', music.migu.cn, proxy.golang.org, '*.mcdn.bilivideo.cn', '*.cmpassport.com', id6.me, open.e.189.cn, mdn.open.wo.cn, opencloud.wostore.cn, auth.wosms.cn, '*.jegotrip.com.cn', '*.icitymobile.mobi', '*.pingan.com.cn', '*.cmbchina.com', '*.10099.com.cn', pool.ntp.org, '*.pool.ntp.org', ntp.*.com, time.*.com, 'ntp?.*.com', 'time?.*.com', time.*.gov, time.*.edu.cn, '*.ntp.org.cn', PDC._msDCS.*.*, DC._msDCS.*.*, GC._msDCS.*.*]
+  #默认的域名解析服务器
+  nameserver: [quic://223.5.5.5, quic://223.6.6.6, https://1.12.12.12/dns-query, https://120.53.53.53/dns-query]                     
+    
+# 策略组引用相关参数
+pg: &pg {type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, 欧洲节点, DIRECT]}
+# 订阅更新和延迟测试相关参数
+p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://latency-test.skk.moe/endpoint, interval: 1800}}
+# 自动选择策略组：选取延迟最低节点
+url-test: &url-test {type: url-test, lazy: true, url: http://latency-test.skk.moe/endpoint, interval: 300, tolerance: 0, include-all: true}
+# 手动选择策略组：手动选择想要的节点/策略组
+select: &select {type: select, include-all: true}
+# 故障回退策略组：策略组将按顺序选择你列表中第一个可用的节点
+fallback: &fallback {type: fallback, lazy: true, url: http://latency-test.skk.moe/endpoint, interval: 300, include-all: true}
+# 负载均衡策略组：不同的请求将使用不同的代理节点
+load-balance: &load-balance {type: load-balance, lazy: true, strategy: consistent-hashing, url: http://latency-test.skk.moe/endpoint, interval: 300, include-all: true}
+# classical规则相关
+c: &c {type: http, behavior: classical, format: text, interval: 86400}
+# domain规则相关
+d: &d {type: http, behavior: domain, format: text, interval: 86400}
+# ipcidr规则相关
+i: &i {type: http, behavior: ipcidr, format: text, interval: 86400}
+
+proxy-providers:
+  Subscribe: {<<: *p, path: ./proxy-providers/Sub.yaml, url: http://your-service-provider}
+    # 在此将"http://your-service-provider"替换为你的机场订阅，推荐使用 base64 或者 node list
+    # Sub-Store生成的链接,可以直接替换上述 url 引号中的部分,具体见 Sub-Store 教程         
+
+proxy-groups:
+
+  #分流分组
+
+  - {name: 手动切换, type: select, include-all: true, proxies: [香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, 欧洲节点, DIRECT], icon: https://github.com/clash-verge-rev/clash-verge-rev/raw/main/src-tauri/icons/icon.png}
+
+  - {name: 国外网站, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png}
+
+  - {name: 国际媒体, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png}
+
+  - {name: 苹果服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_1.png}
+
+  - {name: 微软服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png}
+
+  - {name: 谷歌服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png}
+
+  - {name: 电报消息, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png}
+
+  - {name: 推特消息, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png}
+
+  - {name: AI, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png}
+
+  - {name: 游戏平台, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png}
+
+  - {name: Emby, <<: *pg, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png}
+
+  - {name: 广告拦截, type: select, proxies: [REJECT, DIRECT], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png}
+
+  - {name: 兜底分流, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color//Final.png}
+
+  #节点地区分组
+
+  - {name: 香港节点, <<: *url-test, filter: "(?i)🇭🇰|香港|(\b(HK|Hong)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png}
+
+  - {name: 美国节点, <<: *url-test, filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png}
+
+  - {name: 狮城节点, <<: *url-test, filter: "(?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png}
+
+  - {name: 日本节点, <<: *url-test, filter: "(?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png}
+
+  - {name: 台湾节点, <<: *url-test, filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png}
+
+  - {name: 欧洲节点, <<: *url-test, filter: "🇬🇧|🇫🇷|🇳🇱|🇮🇸|🇩🇪|🇺🇦|🇨🇭|🇪🇺", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/European_Union.png}
+
+rule-providers:
+
+  #广告拦截
+  AD: {<<: *c, path: ./rule-providers/AD.list, url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Reject.list}
+
+  # 苹果服务
+  Apple: {<<: *c, path: ./rule-providers/Apple.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Apple.list}
+
+  # 谷歌服务
+  YouTube: {<<: *c, path: ./rule-providers/YouTube.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/YouTube.list}
+  Google: {<<: *c, path: ./rule-providers/Google.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Google.list}
+
+  # 电报消息
+  Telegram: {<<: *c, path: ./rule-providers/Telegram.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Telegram.list}
+
+  # 推特消息
+  Twitter: {<<: *c, path: ./rule-providers/Twitter.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Twitter.list}
+
+  # 游戏平台
+  Steam: {<<: *c, path: ./rule-providers/steam.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Steam.list}
+  Epic: {<<: *c, path: ./rule-providers/Epic.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Epic.list}
+
+  # AI平台
+  AI: {<<: *c, path: ./rule-providers/AI.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/AI.list}
+
+  # Emby
+  Emby: {<<: *c, path: ./rule-providers/Emby.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Emby.list}
+
+  # 国际媒体
+  ProxyMedia: {<<: *c, path: ./rule-providers/ProxyMedia.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/ProxyMedia.list}
+ 
+rules:
+  - RULE-SET,AD,广告拦截
+  - RULE-SET,AI,AI
+  - RULE-SET,Apple,苹果服务
+  - RULE-SET,YouTube,谷歌服务
+  - RULE-SET,Google,谷歌服务
+  - RULE-SET,Telegram,电报消息
+  - RULE-SET,Twitter,推特消息
+  - RULE-SET,Steam,游戏平台
+  - RULE-SET,Epic,游戏平台
+  - RULE-SET,Emby,Emby
+  - RULE-SET,ProxyMedia,国际媒体
+  - GEOSITE,onedrive,微软服务
+  - GEOSITE,github,微软服务
+  - GEOSITE,microsoft,微软服务
+  - GEOSITE,gfw,国外网站
+  - GEOSITE,cn,DIRECT
+  - GEOIP,lan,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,兜底分流

@@ -1,0 +1,29 @@
+domain_set:
+domain_suffix_set:
+- qlogo.cn
+- qpic.cn
+- weixin.qq.com
+- wxapp.tc.qq.com
+- servicewechat.com
+- tenpay.com
+- wechat.com
+- wechatlegal.net
+- wechatpay.com
+- weixin.com
+- weixinbridge.com
+- weixinsxy.com
+domain_keyword_set:
+domain_regex_set:
+ip_cidr_set:
+- 101.32.104.4/32
+- 101.32.104.41/32
+- 101.32.104.56/32
+- 101.32.118.25/32
+- 101.32.133.16/32
+- 101.32.133.53/32
+- 101.32.133.209/32
+- 129.226.3.47/32
+- 129.226.107.244/32
+ip_cidr6_set:
+asn_set:
+url_regex_set:

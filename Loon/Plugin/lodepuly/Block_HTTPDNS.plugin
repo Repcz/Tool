@@ -1,0 +1,151 @@
+#!name = 拦截HTTPDNS
+#!desc = 拦截常见的HTTPDNS服务，以确保这些请求都能够在Loon的DNS框架下工作。
+#!openUrl = 
+#!author = 可莉🅥 VirgilClyne
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/HTTPDNS.png
+#!date = 2024-05-16 20:16:26
+
+[Rule]
+# YY语音
+DOMAIN, yyapp-httpdns.gslb.yy.com, REJECT
+DOMAIN, httpdns-v6.gslb.yy.com, REJECT
+
+# 抖音
+AND, ((DOMAIN-KEYWORD, api100-core-quic-), (DOMAIN-SUFFIX, amemv.com)), REJECT
+AND, ((DOMAIN-KEYWORD, api100-normal-quic-), (DOMAIN-SUFFIX, amemv.com)), REJECT
+AND, ((DOMAIN-KEYWORD, api100-normal-quic-aweme-), (DOMAIN-SUFFIX, amemv.com)), REJECT
+AND, ((DOMAIN-KEYWORD, api100-quic-core-), (DOMAIN-SUFFIX, amemv.com)), REJECT
+AND, ((DOMAIN-KEYWORD, api100-quic-normal-), (DOMAIN-SUFFIX, amemv.com)), REJECT
+AND, ((DOMAIN-KEYWORD, frontier-aweme-), (AND, ((OR, ((DOMAIN-KEYWORD, -ipa.), (DOMAIN-KEYWORD, -ipainner.), (DOMAIN-KEYWORD, -origin.), (DOMAIN-KEYWORD, -ipainner-))), (OR, ((DOMAIN-SUFFIX, snssdk.com), (DOMAIN-SUFFIX, amemv.com)))))), REJECT
+AND, ((DOMAIN-KEYWORD, frontier100-aweme), (DOMAIN-SUFFIX, amemv.com)), REJECT
+AND, ((DOMAIN-KEYWORD, ma5-normal-), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
+AND, ((DOMAIN-KEYWORD, polaris5-normal-), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
+AND, ((DOMAIN-KEYWORD, webcast100-ws-c-), (DOMAIN-SUFFIX, amemv.com)), REJECT
+AND, ((OR, ((DOMAIN-KEYWORD, tnc3-bjlgy), (DOMAIN-KEYWORD, tnc11-bjlgy))), (OR, ((DOMAIN-SUFFIX, bytedance), (DOMAIN-SUFFIX, zijieapi.com)))), REJECT
+DOMAIN, frontier-aweme-hl.snssdk.com, REJECT
+DOMAIN, frontier-aweme.snssdk.com, REJECT
+DOMAIN, frontier-quic-test.bytedance.com, REJECT
+AND, ((IP-CIDR, 110.249.199.75/32, no-resolve), (DEST-PORT, 6443)), REJECT
+AND, ((IP-CIDR, 111.225.147.191/32, no-resolve), (DEST-PORT, 6443)), REJECT
+AND, ((IP-CIDR, 111.63.61.101/32, no-resolve), (DEST-PORT, 6443)), REJECT
+AND, ((IP-CIDR, 220.243.141.0/32, no-resolve), (DEST-PORT, 6443)), REJECT
+
+# 微信
+DOMAIN, dns.weixin.qq.com, REJECT
+DOMAIN, dns.weixin.qq.com.cn, REJECT
+IP-CIDR, 42.187.182.106/32, REJECT, no-resolve
+IP-CIDR, 42.187.182.123/32, REJECT, no-resolve
+IP-CIDR, 42.187.184.154/32, REJECT, no-resolve
+IP-CIDR, 42.81.232.18/32, REJECT, no-resolve
+IP-CIDR, 123.151.54.50/32, REJECT, no-resolve
+IP-CIDR6, 2402:4e00:1900:1700:0:9554:1ad9:c3a/128, REJECT, no-resolve
+IP-CIDR6, 240e:928:1400:10::25/128, REJECT, no-resolve
+
+# QQ音乐
+DOMAIN, httpdns.kg.qq.com, REJECT
+URL-REGEX, ^http:\/\/182\.256\.116\.116\/d, REJECT
+
+# 哔哩哔哩
+DOMAIN, httpdns.bilivideo.com, REJECT
+# KEY_EXT_P2P_HTTPDNS_BILI_IP
+URL-REGEX, ^http:\/\/47\.101\.175\.206\/resolve, REJECT
+URL-REGEX, ^http:\/\/47\.100\.123\.169\/resolve, REJECT
+URL-REGEX, ^http:\/\/120\.46\.169\.234\/resolve, REJECT
+URL-REGEX, ^http:\/\/121\.36\.72\.124\/resolve, REJECT
+# KEY_EXT_P2P_BILIDNS_CMCC_IP
+URL-REGEX, ^http:\/\/116\.63\.10\.135\/resolve, REJECT
+URL-REGEX, ^http:\/\/117\.185\.228\.108\/resolve, REJECT
+URL-REGEX, ^http:\/\/117\.144\.238\.29\/resolve, REJECT
+URL-REGEX, ^http:\/\/122\.9\.7\.134\/resolve, REJECT
+# KEY_EXT_P2P_BILIDNS_CT_IP
+URL-REGEX, ^http:\/\/101\.91\.140\.124\/resolve, REJECT
+URL-REGEX, ^http:\/\/101\.91\.140\.224\/resolve, REJECT
+URL-REGEX, ^http:\/\/122\.9\.13\.79\/resolve, REJECT
+URL-REGEX, ^http:\/\/122\.9\.15\.129\/resolve, REJECT
+# KEY_EXT_P2P_BILIDNS_CU_IP
+URL-REGEX, ^http:\/\/112\.65\.200\.117\/resolve, REJECT
+URL-REGEX, ^http:\/\/112\.64\.218\.119\/resolve, REJECT
+URL-REGEX, ^http:\/\/114\.116\.215\.110\/resolve, REJECT
+URL-REGEX, ^http:\/\/116\.63\.10\.31\/resolve, REJECT
+
+# 阿里巴巴
+DOMAIN, httpdns.alicdn.com, REJECT
+
+# 阿里云
+DOMAIN, httpdns-api.aliyuncs.com, REJECT
+DOMAIN, httpdns-sc.aliyuncs.com, REJECT
+IP-CIDR, 203.107.1.0/24, REJECT, no-resolve
+
+# 百度
+DOMAIN, httpdns.baidu.com, REJECT
+DOMAIN, httpsdns.baidu.com, REJECT
+URL-REGEX, ^http:\/\/180\.76\.76\.112\/v4\/resolve, REJECT
+URL-REGEX, ^http:\/\/180\.76\.76\.220\/v4\/resolve, REJECT
+
+# 百度智能云
+DOMAIN, httpdns.baidubce.com, REJECT
+IP-CIDR, 186.76.76.200/32, REJECT, no-resolve
+
+# 华为
+DOMAIN, httpdns.c.cdnhwc2.com, REJECT
+
+# 京东
+DOMAIN, dns.jd.com, REJECT
+IP-CIDR, 101.124.19.122/32, REJECT, no-resolve
+IP-CIDR6, 2402:db40:5100:1011::5/128, REJECT, no-resolve
+
+# 京东云
+IP-CIDR, 103.224.222.208/32, REJECT, no-resolve
+
+# 腾讯云
+URL-REGEX, ^https?:\/\/119\.29\.29\.29\/d, REJECT
+IP-CIDR, 119.29.29.98/32, REJECT, no-resolve
+IP-CIDR, 119.29.29.99/32, REJECT, no-resolve
+
+# 字节跳动
+DOMAIN, httpdns.volcengineapi.com, REJECT
+DOMAIN, dig.bdurl.net, REJECT
+DOMAIN, dig.zjurl.cn, REJECT
+
+# OPPO
+DOMAIN, httpdns.push.oppomobile.com, REJECT
+
+# 快手
+DOMAIN, kuaishou.httpdns.pro, REJECT
+
+# 美团
+DOMAIN, httpdns.meituan.com, REJECT
+URL-REGEX, ^http:\/\/103\.37\.155\.60\/fetch, REJECT
+
+# 拼多多
+URL-REGEX, ^http:\/\/101\.35\.204\.35\/d, REJECT
+URL-REGEX, ^http:\/\/101\.35\.212\.35\/d, REJECT
+URL-REGEX, ^http:\/\/114\.110\.96\.26\/d, REJECT
+URL-REGEX, ^http:\/\/114\.110\.97\.97\/d, REJECT
+
+# 网易
+DOMAIN, httpdns.music.163.com, REJECT
+DOMAIN, httpdns.n.netease.com, REJECT
+DOMAIN, httpdns.yunxindns.com, REJECT
+DOMAIN, lofter.httpdns.c.163.com, REJECT
+DOMAIN, music.httpdns.c.163.com, REJECT
+IP-CIDR, 59.111.239.61/32, REJECT, no-resolve
+IP-CIDR, 59.111.239.62/32, REJECT, no-resolve
+IP-CIDR, 115.236.121.51/32, REJECT, no-resolve
+IP-CIDR, 115.236.121.195/32, REJECT, no-resolve
+
+# 微博
+DOMAIN, dns.weibo.cn, REJECT
+IP-CIDR, 39.97.130.51/32, REJECT, no-resolve
+IP-CIDR, 39.97.128.148/32, REJECT, no-resolve
+URL-REGEX, ^http:\/\/api\.weibo\.cn\/2\/httpdns\/config, REJECT
+URL-REGEX, ^http:\/\/api\.weibo\.cn\/httpdns\/config, REJECT
+
+# 知乎
+URL-REGEX, ^http:\/\/103\.41\.167\.237\/v2\/resolv, REJECT
+IP-CIDR, 118.89.204.198/23, REJECT, no-resolve
+IP-CIDR6, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128, REJECT, no-resolve
+
+[Mitm]
+hostname = 119.29.29.29

@@ -1,0 +1,21 @@
+#!name = VVebo时间线修复
+#!desc = 修复失效的用户时间线和我的页面
+#!openUrl = 
+#!author = suiyuran androidcn
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/VVebo.png
+#!date = 2024-01-19 22:25:07
+
+[Script]
+http-request ^https:\/\/api\.weibo\.cn\/2\/users\/show\? script-path = https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/VVebo/VVebo_repair.js, tag = 修复时间线
+
+http-request ^https:\/\/api\.weibo\.cn\/2\/statuses\/user_timeline\? script-path = https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/VVebo/VVebo_repair.js, tag = 修复时间线
+
+http-request ^https:\/\/api\.weibo\.cn\/2\/remind\/unread_count\? script-path = https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/VVebo/VVebo_repair.js, tag = 修复时间线
+
+http-response ^https:\/\/api\.weibo\.cn\/2\/profile\/statuses\/tab\? script-path = https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/VVebo/VVebo_repair.js, requires-body = true, tag = 修复时间线
+
+http-response ^https:\/\/api\.weibo\.cn\/2\/cardlist\? script-path = https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/VVebo/VVebo_repair.js, requires-body = true, tag = 修复我的页面
+
+[Mitm]
+hostname = api.weibo.cn

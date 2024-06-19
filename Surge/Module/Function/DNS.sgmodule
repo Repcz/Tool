@@ -1,0 +1,140 @@
+#!name=功能｜DNS
+#!desc=1.域名按所属DNS进行分流解析\n2.路由器地址使用系统DNS进行解析\n3.特殊地址使用规范DNS进行解析\nFork @VirgilClyne
+#!category=⚙️ ▸ Function
+
+[General]
+# ---(DNS 服务器)---
+# > 通过代理请求使用本地DNS映射结果
+use-local-host-item-for-proxy = false
+
+# > 加密DNS服务器
+# 使加密DNS请求通过代理策略执行
+encrypted-dns-follow-outbound-mode = false
+
+[Host]
+# --- CUSTOM HOSTS ---
+# > IPv6
+ip6-localhost = ::1 // IPv6 Localhost
+ip6-loopback = ::1 // IPv6 Loopback
+ip6-localnet = fe00::0 // IPv6 Link-Local
+ip6-mcastprefix = ff00::0 // IPv6 Multicast
+ip6-allnodes = ff02::1 // IPv6 All Nodes
+ip6-allrouters = ff02::2 // IPv6 All Routers
+ip6-allhosts = ff02::3 // IPv6 All Hosts
+
+# > Encrypted DNS
+dns.google = 8.8.8.8, 8.8.4.4, 2001:4860:4860::8888, 2001:4860:4860::8844 // https://dns.google/dns-query
+dns64.dns.google = 2001:4860:4860::6464, 2001:4860:4860::64 // https://dns64.dns.google/dns-query
+cloudflare-dns.com = 104.16.249.249, 104.16.248.249, 2606:4700::6810:f8f9, 2606:4700::6810:f9f9 // https://cloudflare-dns.com/dns-query
+1dot1dot1dot1.cloudflare-dns.com = 1.1.1.1, 1.0.0.1, 2606:4700:4700::1001, 2606:4700:4700::1111 // 1dot1dot1dot1.cloudflare-dns.com:853
+one.one.one.one = 1.1.1.1, 1.0.0.1, 2606:4700:4700::1001, 2606:4700:4700::1111  // one.one.one.one:853
+dns.alidns.com = 223.5.5.5, 223.6.6.6, 2400:3200:baba::1, 2400:3200::1 // https://dns.alidns.com/dns-query
+doh.pub = 1.12.12.12, 120.53.53.53 // https://doh.pub/dns-query
+dot.pub = 1.12.12.12, 120.53.53.53 // dot.pub:853
+doh.360.cn = 23.6.48.18, 112.65.69.15 // https://doh.360.cn/dns-query
+dot.360.cn = 101.198.198.198, 101.198.199.200, 101.198.192.33, 112.65.69.15 // dot.360.cn:853
+dns.twnic.tw = 101.101.101.101, 2001:de4::101, 2001:de4::102 // https://dns.twnic.tw/dns-query
+ordns.he.net = 74.82.42.42, 2001:470:20::2 // https://ordns.he.net/dns-query
+
+# > Modify Contents
+# services.googleapis.cn = 74.125.193.94 // Google API Services China
+talk.google.com = 108.177.125.188 // Firebase Cloud Messaging
+mtalk.google.com = 108.177.125.188, 2404:6800:4008:c07::bc, 142.250.31.188 // Firebase Cloud Messaging
+alt1-mtalk.google.com = 3.3.3.3, 2607:f8b0:4023:c0b::bc, 64.233.171.188 // Firebase Cloud Messaging
+alt2-mtalk.google.com = 3.3.3.3, 142.250.115.188 // Firebase Cloud Messaging
+alt3-mtalk.google.com = 74.125.200.188, 173.194.77.188 // Firebase Cloud Messaging
+alt4-mtalk.google.com = 74.125.200.188, 173.194.219.188 // Firebase Cloud Messaging
+alt5-mtalk.google.com = 3.3.3.3, 2607:f8b0:4023:1::bc, 142.250.112.188 // Firebase Cloud Messaging
+alt6-mtalk.google.com = 3.3.3.3, 172.217.197.188 // Firebase Cloud Messaging
+alt7-mtalk.google.com = 74.125.200.188, 2607:f8b0:4002:c03::bc, 108.177.12.188 // Firebase Cloud Messaging
+alt8-mtalk.google.com = 3.3.3.3 // Firebase Cloud Messaging
+# dl.google.com = 180.163.151.161 // Google CDN
+# dl.l.google.com = 180.163.151.161 // Google CDN
+
+# --- CUSTOM DNS ---
+
+# > Router Admin Panel
+*.id.ui.direct = server:syslib // Ubiquiti Unifi Network App
+# unifi.ui.com = server:syslib // Ubiquiti Unifi Portal
+unifi.local = server:syslib // Ubiquiti Unifi OS
+# network.unifi.ui.com = server:syslib // Ubiquiti Unifi Controller
+amplifi.lan = server:syslib // Ubiquiti Amplifi Router
+router.synology.com = server:syslib // Synology Router
+sila.razer.com = server:syslib // Razer Sila Router
+router.asus.com = server:syslib // Asus Router
+routerlogin.net = server:syslib // Netgear Router
+orbilogin.com = server:syslib // Netgear Obri Router
+www.LinksysSmartWiFi.com = server:syslib // Linksys Router
+LinksysSmartWiFi.com = server:syslib // Linksys Router
+myrouter.local = server:syslib // Linksys Router
+instant.arubanetworks.com = server:syslib // Aurba Router
+setmeup.arubanetworks.com = server:syslib // Aurba Router
+www.miwifi.com = server:syslib // 小米 Mi WiFi Router
+miwifi.com = server:syslib // 小米 Mi WiFi Router
+mediarouter.home = server:syslib // 华为 Huawei Router
+tplogin.cn = server:syslib // TP-Link Router
+tplinklogin.net = server:syslib // TP-Link Router
+tplinkwifi.net = server:syslib // TP-Link Router
+melogin.cn = server:syslib // 水星 MERCURY Router
+falogin.cn = server:syslib // 迅捷 FAST Router
+tendawifi.com = server:syslib // 腾达 Tenda Router
+leike.cc = server:syslib // 磊科 Netcore Router
+zte.home = server:syslib // 中兴 ZTE Router
+p.to = server:syslib // 斐讯 PHICOMM Router
+phicomm.me = server:syslib // 斐讯 PHICOMM Router
+hiwifi.com = server:syslib // 极路由 HiWiFi Router
+peiluyou.com = server:syslib // 迅雷路由
+_hotspot_.m2m = server:syslib // M2M routers at MiFi Hotspot
+hotspot.cslwifi.com = server:syslib // csl Wi-Fi
+
+# > 阿里巴巴
+# refer: https://www.alidns.com
+*.alibaba.cn = server:quic://dns.alidns.com // 阿里巴巴
+*.alibaba.com.cn = server:quic://dns.alidns.com // 阿里巴巴
+*.china.alibaba.com = server:quic://dns.alidns.com // Alibaba 中国
+*.1688.com = server:quic://dns.alidns.com // 1688
+*.taobao.com = server:quic://dns.alidns.com // 淘宝
+*.tbcache.com = server:quic://dns.alidns.com // 淘宝 缓存
+*.tmall.com = server:quic://dns.alidns.com // 天猫
+*.alicdn.com = server:quic://dns.alidns.com // 阿里 CDN
+*.alikunlun.com = server:quic://dns.alidns.com // 阿里昆仑
+*.aliapp.com = server:quic://dns.alidns.com // 云引擎应用平台
+*.aliapp.org = server:quic://dns.alidns.com // 上云平台
+*.alibabausercontent.com = server:quic://dns.alidns.com // 阿里用户上传资料
+*.mmstat.com = server:quic://dns.alidns.com // mmstat 数据统计 广告追踪
+tb.cn = server:quic://dns.alidns.com // 淘宝短网址
+
+# > 阿里云
+# refer: https://www.alidns.com
+*.aliyun.* = server:quic://dns.alidns.com // 阿里云
+*.aliyuncdn.* = server:quic://dns.alidns.com // 阿里云 CDN
+*.aliyuncs.com = server:quic://dns.alidns.com // 阿里云 API 服务
+*.aliyunddos????.com = server:quic://dns.alidns.com // 阿里云 DDoS防护
+*.aliyundrive.com = server:quic://dns.alidns.com // 阿里云盘
+*.aliyundun.com = server:quic://dns.alidns.com // 阿里云盾
+*.aliyundunwaf.com = server:quic://dns.alidns.com // 阿里云盾 Web 应用防火墙
+*.aliyun-inc.com = server:quic://dns.alidns.com // 阿里云 内部
+
+# > 蚂蚁集团
+# refer: https://www.alidns.com
+*.antgroup.com = server:quic://dns.alidns.com // 蚂蚁集团
+*.antfin.com = server:quic://dns.alidns.com // 蚂蚁金服
+*.antfinancial.com = server:quic://dns.alidns.com // 蚂蚁金服
+*.alipay.com = server:quic://dns.alidns.com // 支付宝
+*.alipay.com.cn = server:quic://dns.alidns.com // 支付宝
+*.alipaydns.com = server:quic://dns.alidns.com // 支付宝 HTTP DNS
+*.alipayeshop.com = server:quic://dns.alidns.com // 支付宝 商家资源
+*.alipaylog.com = server:quic://dns.alidns.com // 支付宝 Mdap
+*.alipayobjects.com = server:quic://dns.alidns.com // 支付宝 静态资源
+*.alipay-eco.com = server:quic://dns.alidns.com // 支付宝 开放技术生态体系
+
+# > BiliBili
+upos-sz-mirrorali.bilivideo.com = server:quic://dns.alidns.com // BiliBili upos视频服务器（阿里云）
+upos-sz-mirrorali?.bilivideo.com = server:quic://dns.alidns.com // BiliBili upos视频服务器（阿里云）
+upos-sz-mirrorali??.bilivideo.com = server:quic://dns.alidns.com // BiliBili upos视频服务器（阿里云）
+upos-sz-mirrorbos.bilivideo.com = server:180.76.76.76 // BiliBili upos视频服务器（百度云）
+upos-sz-mirrorcos.bilivideo.com = server:https://doh.pub/dns-query // BiliBili upos视频服务器（腾讯云）
+upos-sz-mirrorcos?.bilivideo.com = server:https://doh.pub/dns-query // BiliBili upos视频服务器（腾讯云）
+upos-sz-mirrorcos??.bilivideo.com = server:https://doh.pub/dns-query // BiliBili upos视频服务器（腾讯云）
+upos-sz-upcdnbd??.bilivideo.com = server:180.76.76.76 // BiliBili upos视频服务器（百度云）
+upos-sz-upcdntx.bilivideo.com = server:https://doh.pub/dns-query // BiliBili upos视频服务器（腾讯云）

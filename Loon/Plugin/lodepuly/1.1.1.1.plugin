@@ -1,0 +1,18 @@
+#!name = 1.1.1.1配置管理
+#!desc = 提取1.1.1.1应用的配置并生成Loon可用的节点配置
+#!openUrl = http://boxjs.com/#/app/Cloudflare.1dot1dot1dot1
+#!author = VirgilClyne R·E
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/1.1.1.1.png
+#!date = 2024-03-04 09:24:55
+
+[Script]
+# WARP Personal
+http-request ^https?:\/\/(api|zero-trust-client)\.cloudflareclient\.com\/(.*)\/reg\/[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}$ script-path = https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/js/1.1.1.1.request.js, requires-body = true, tag = WARP Personal Request
+http-response ^https?:\/\/(api|zero-trust-client)\.cloudflareclient\.com\/(.*)\/reg\/[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}$ script-path = https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/js/1.1.1.1.response.js, requires-body = true, tag = WARP Personal Response
+# Cloudflare for Teams
+http-request ^https?:\/\/(api|zero-trust-client)\.cloudflareclient\.com\/(.*)\/reg\/t\.[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}$ script-path = https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/js/1.1.1.1.request.js, requires-body = true, tag = WARP Teams Request
+http-response ^https?:\/\/(api|zero-trust-client)\.cloudflareclient\.com\/(.*)\/reg\/t\.[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}$ script-path = https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/js/1.1.1.1.response.js, requires-body = true, tag = WARP Teams Response
+
+[Mitm]
+hostname = api.cloudflareclient.com, zero-trust-client.cloudflareclient.com

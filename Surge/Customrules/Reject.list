@@ -1,0 +1,9 @@
+# Custom Rejcet Rules
+
+# > KFC Dns-filed
+DOMAIN,adttrackingprd.hwwt8.com
+
+# > DiDi
+IP-CIDR,123.207.209.60/32,no-resolve
+IP-CIDR,123.207.209.39/32,no-resolve
+

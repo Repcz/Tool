@@ -1,0 +1,37 @@
+# NAME: Spotify
+# DOMAIN: 6
+# HOST-KEYWORD: 2
+# HOST-SUFFIX: 19
+# IP-CIDR: 2
+# PROCESS-NAME: 1
+# TOTAL: 30
+HOST,audio4-ak-spotify-com.akamaized.net,PROXY
+HOST,cdn-spotify-experiments.conductrics.com,PROXY
+HOST,heads-ak-spotify-com.akamaized.net,PROXY
+HOST,spotify.com.edgesuite.net,PROXY
+HOST,spotify.map.fastly.net,PROXY
+HOST,spotify.map.fastlylb.net,PROXY
+HOST-SUFFIX,audio-ak-spotify-com.akamaized.net,PROXY
+HOST-SUFFIX,byspotify.com,PROXY
+HOST-SUFFIX,heads4-ak-spotify-com.akamaized.net,PROXY
+HOST-SUFFIX,pscdn.co,PROXY
+HOST-SUFFIX,scdn.co,PROXY
+HOST-SUFFIX,spoti.fi,PROXY
+HOST-SUFFIX,spotify-com.akamaized.net,PROXY
+HOST-SUFFIX,spotify-everywhere.com,PROXY
+HOST-SUFFIX,spotify.com,PROXY
+HOST-SUFFIX,spotify.design,PROXY
+HOST-SUFFIX,spotifycdn.com,PROXY
+HOST-SUFFIX,spotifycdn.net,PROXY
+HOST-SUFFIX,spotifycharts.com,PROXY
+HOST-SUFFIX,spotifycodes.com,PROXY
+HOST-SUFFIX,spotifyforbrands.com,PROXY
+HOST-SUFFIX,spotifyjobs.com,PROXY
+HOST-SUFFIX,spotifynewsroom.jp,PROXY
+HOST-SUFFIX,spotilocal.com,PROXY
+HOST-SUFFIX,tospotify.com,PROXY
+HOST-KEYWORD,-spotify-,PROXY
+HOST-KEYWORD,spotify.com,PROXY
+IP-CIDR,104.154.127.126/32,PROXY
+IP-CIDR,35.186.224.47/32,PROXY
+#PROCESS-NAME,com.spotify.music

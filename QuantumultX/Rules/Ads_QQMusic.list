@@ -1,0 +1,20 @@
+# 来源：https://gitlab.com/lodepuly/vpn_tool/-/blob/master/Tool/Loon/Plugin/QQMusic_remove_ads.plugin
+
+HOST,adstats.tencentmusic.com,REJECT
+HOST,ad.tencentmusic.com,REJECT
+HOST,adcdn.tencentmusic.com,REJECT
+HOST,adcdn6.tencentmusic.com,REJECT
+HOST,adexpo.tencentmusic.com,REJECT
+HOST,adclick.tencentmusic.com,REJECT
+HOST,otheve.beacon.qq.com,REJECT
+HOST,mazu.m.qq.com,REJECT
+HOST,monitor.music.qq.com,REJECT
+HOST,stat.y.qq.com,REJECT
+HOST,tmead.y.qq.com-NO,REJECT
+HOST,oth.str.mdt.qq.com,REJECT
+HOST,h.trace.qq.com,REJECT
+HOST,sdk.e.qq.com,REJECT
+HOST,p.l.qq.com,REJECT
+HOST,us.l.qq.com,REJECT
+HOST,tangram.e.qq.com,REJECT
+HOST-SUFFIX,imtmp.net,REJECT

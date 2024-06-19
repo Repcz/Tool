@@ -1,0 +1,24 @@
+#!name = TubeMax去广告
+#!desc = 过滤TubeMax广告
+#!openUrl = 
+#!author = 可莉🅥
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/TubeMax.png
+#!date = 2023-09-08 13:48:55
+
+[Rule]
+DOMAIN, app.tubemaxapp.com, PROXY
+DOMAIN-SUFFIX, adjust.com, REJECT
+DOMAIN-SUFFIX, applvn.com, REJECT
+DOMAIN-SUFFIX, app-measurement.com, REJECT
+DOMAIN-SUFFIX, pangle.io, REJECT
+DOMAIN-SUFFIX, applovin.com, REJECT
+DOMAIN-SUFFIX, appier.net, REJECT
+DOMAIN-SUFFIX, adsmoloco.com, REJECT
+DOMAIN-SUFFIX, adcanvas.com, REJECT
+
+[Rewrite]
+^https:\/\/.*\.i18n-pglstatp\.com\/obj\/ad-pattern-sg reject
+
+[Mitm]
+hostname = *.i18n-pglstatp.com

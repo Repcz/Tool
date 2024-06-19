@@ -1,0 +1,53 @@
+no_resolve: true
+domain_set:
+- apple.comscoreresearch.com
+domain_suffix_set:
+- apple.co
+- apple.cn
+- apple.com
+- apple.com.cn
+- apple.com.cdn20.com
+- apple.com.mwcloudcdn.com
+- apple.com.mwcname.com
+- apple.news
+- appsto.re
+- appstore.com
+- cdn-apple.com
+- apple-cloudkit.com
+- apple-dns.net
+- apple-livephotoskit.com
+- apple-mapkit.com
+- itunes.com.edgekey.net
+- apple.com.edgekey.net
+- apple-support.akadns.net
+- apple.com.edgekey.net.globalredir.akadns.net
+- aaplimg.com
+- crashlytics.com
+- digicert.com
+- itunes.com
+- me.com
+- mzstatic.com
+- apple
+domain_keyword_set:
+- icloud
+- testflight
+- apple.com.akadns.net
+domain_regex_set:
+ip_cidr_set:
+- 139.178.128.0/18
+- 144.178.0.0/19
+- 144.178.36.0/22
+- 144.178.48.0/20
+- 192.35.50.0/24
+- 198.183.17.0/24
+- 205.180.175.0/24
+- 63.92.224.0/19
+- 65.199.22.0/23
+- 17.0.0.0/8
+ip_cidr6_set:
+- 2403:300::/32
+- 2620:149::/32
+- 2a01:b740::/32
+- 2a01:b747::/32
+asn_set:
+url_regex_set:
