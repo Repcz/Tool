@@ -4,16 +4,21 @@
 #!author = kelv1n1n 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/PuPuMall.png
-#!date = 2024-06-19 15:51:02
+#!date = 2024-06-19 21:42:02
+
+[General]
+force-http-engine-hosts = 54.222.159.138:8053, 101.42.130.147:8053, 106.55.220.18:8053, 139.196.12.179:8053
 
 [Rule]
-URL-REGEX, ^http:\/\/139\.196\.12\.179:8053\/httpdns\/, REJECT
-URL-REGEX, ^http:\/\/106\.55\.220\.18:8053\/httpdns\/, REJECT
 URL-REGEX, ^http:\/\/54\.222\.159\.138:8053\/httpdns\/, REJECT
+URL-REGEX, ^http:\/\/101\.42\.130\.147:8053\/httpdns\/, REJECT
+URL-REGEX, ^http:\/\/106\.55\.220\.18:8053\/httpdns\/, REJECT
+URL-REGEX, ^http:\/\/139\.196\.12\.179:8053\/httpdns\/, REJECT
 
 [Rewrite]
 ^https:\/\/j1\.pupuapi\.com\/client\/account\/discount\/order reject
 ^https:\/\/j1\.pupuapi\.com\/client\/marketing\/banner\/v7\?position_types=100 reject
+^https:\/\/j1\.pupuapi\.com\/client\/member_card\/index\/my reject
 
 [Script]
 http-response ^https:\/\/j1\.pupuapi\.com\/client\/marketing\/banner\/v7 script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/PuPuMall/PuPuMall_remove_ads.js, requires-body = true, tag = 移除朴朴超市广告
