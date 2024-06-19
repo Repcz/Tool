@@ -4,7 +4,7 @@
 #
 # Mihomo Version ≥ 1.8.5
 #
-# 最后更新时间: 2024-06-17 07:50
+# 最后更新时间: 2024-06-19 20:40
 #
 # ================
 
@@ -176,8 +176,13 @@ rule-providers:
   Emby: {<<: *c, path: ./rule-providers/Emby.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Emby.list}
 
   # 国际媒体
-  ProxyMedia: {<<: *c, path: ./rule-providers/ProxyMedia.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/ProxyMedia.list}
- 
+  Spotify: {<<: *c, path: ./rule-providers/Spotify.list,  url: https://github.com/Repcz/Tool/raw/X/Surge/Rules/Spotify.list}
+  Bahamut: {<<: *c, path: ./rule-providers/Bahamut.list,  url: https://github.com/Repcz/Tool/raw/X/Surge/Rules/Bahamut.list}
+  Netflix: {<<: *c, path: ./rule-providers/Netflix.list,  url: https://github.com/Repcz/Tool/raw/X/Surge/Rules/Netflix.list}
+  Disney: {<<: *c, path: ./rule-providers/Disney.list,  url: https://github.com/Repcz/Tool/raw/X/Surge/Rules/Disney.list}
+  PrimeVideo: {<<: *c, path: ./rule-providers/PrimeVideo.list,  url: https://github.com/Repcz/Tool/raw/X/Surge/Rules/PrimeVideo.list}
+  HBO: {<<: *c, path: ./rule-providers/HBO.list,  url: https://github.com/Repcz/Tool/raw/X/Surge/Rules/HBO.list}
+
 rules:
   - RULE-SET,AD,广告拦截
   - RULE-SET,AI,AI
@@ -189,7 +194,12 @@ rules:
   - RULE-SET,Steam,游戏平台
   - RULE-SET,Epic,游戏平台
   - RULE-SET,Emby,Emby
-  - RULE-SET,ProxyMedia,国际媒体
+  - RULE-SET,Spotify,国际媒体
+  - RULE-SET,Bahamut,国际媒体
+  - RULE-SET,Netflix,国际媒体
+  - RULE-SET,Disney,国际媒体
+  - RULE-SET,PrimeVideo,国际媒体
+  - RULE-SET,HBO,国际媒体
   - GEOSITE,onedrive,微软服务
   - GEOSITE,github,微软服务
   - GEOSITE,microsoft,微软服务
