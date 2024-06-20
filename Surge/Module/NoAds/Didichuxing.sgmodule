@@ -2,15 +2,14 @@
 #!desc=滴滴出行去广告 [需卸载重装]\n作者：@ZenmoFeiShi
 #!author=怎么肥事
 #!category=⚙️ ▸ NoAds
-#!update=2024-03-18 20:05
-#!ps=需要分流禁用掉 ip-cidr, 123.207.209.39/32, ip-cidr, 123.207.209.60/32
+#!update=2024-06-20 11:38
+
 
 [Rule]
-IP-CIDR,123.207.209.60/32,REJECT,no-resolve
-IP-CIDR,123.207.209.39/32,REJECT,no-resolve
+DOMAIN,gwp.xiaojukeji.com,REJECT
 
 [Map Local]
-^https:\/\/hd\.xiaojukeji\.com\/d data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+^https:\/\/hd\.xiaojukeji\.com\/d data-type=text data="{}" status-code=200
 
 [Script]
 Didichuxing = type=http-response, pattern=^https:\/\/common\.diditaxi\.com\.cn\/common\/v\d\/usercenter\/me, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js, requires-body=true, max-size=-1, timeout=60
