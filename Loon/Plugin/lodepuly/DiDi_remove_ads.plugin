@@ -4,9 +4,10 @@
 #!author = ZenmoFeiShi
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/DiDi.png
-#!date = 2024-04-11 15:37:55
+#!date = 2024-06-20 22:24:21
 
 [Rule]
+DOMAIN, gwp.xiaojukeji.com, REJECT
 IP-CIDR, 123.207.209.39/32, REJECT
 IP-CIDR, 123.207.209.60/32, REJECT
 

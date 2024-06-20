@@ -37,17 +37,19 @@ if (url.indexOf(recommend) != -1) {
 }
 
 if (url.indexOf(recommendPro) != -1) {
-  obj.data = {};
+  //obj.data = {};
+  obj.data.activities = [];
+  obj.data.products = [];
   body = JSON.stringify(obj);
   $done({body});
 }
 
 if (url.indexOf(adv) != -1) {
-  obj.data = obj.data.filter(item => ![50,90,320,100].includes(item.region_code)); 
+  obj.data = obj.data.filter(item => ![30,50,90,320,100].includes(item.region_code)); 
 
   obj.data = obj.data.map(item => {  
   if (item.region_code === 2) {  
-    // 过滤掉positions数组中component_code等于860和60的元素  
+    // 过滤掉positions数组中component_code等于890和60的元素  
     item.positions = item.positions.filter(position => ![890, 60].includes(position.component_code));  
   }  
     // 返回最终的元素
@@ -61,5 +63,7 @@ if (url.indexOf(adv) != -1) {
 const typeArr = [50, 2, 90, 770, 80, 320];
 obj.data = obj.data.filter(item => !typeArr.includes(item.position_type));
 
+
 body = JSON.stringify(obj);
 $done({body});
+
