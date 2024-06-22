@@ -4,7 +4,7 @@
 #
 # Stash Version ≥ 2.6.0 
 #
-# 最后更新时间: 2024-06-12 20:25
+# 最后更新时间: 2024-06-22 13:15
 #
 # ================
 
@@ -71,7 +71,7 @@ proxy-groups:
   - {name: 欧洲节点, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/European_Union.png, type: url-test, lazy: true, interval: 300, include-all: true, filter: "🇬🇧|🇫🇷|🇳🇱|🇮🇸|🇩🇪|🇺🇦|🇨🇭|🇪🇺"}
 
 rules:
-  - GEOIP,lan,直连,no-resolve
+  - GEOIP,lan,DIRECT,no-resolve
   - GEOSITE,openai,AI
   - GEOSITE,category-games,游戏平台
   - GEOSITE,netflix,国际媒体
