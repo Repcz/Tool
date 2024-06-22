@@ -1,5 +1,5 @@
 payload:
-  # 2024-06-01 07:00
+  # 2024-06-22 13:00
 
   # ======= A ======= #
   # 阿里巴巴
@@ -61,6 +61,10 @@ payload:
   # DNS 无响应
   - DOMAIN,adttrackingprd.hwwt8.com
 
+  # ======= F ======= #
+  # 放松双眼
+  - DOMAIN,adservice.sigmob.cn
+
   # ======= G ======= #
   # 高德地图
   - DOMAIN,amap-aos-info-nogw.amap.com
@@ -69,6 +73,7 @@ payload:
   - DOMAIN-SUFFIX,mall.icbc.com.cn
   # 广告联盟
   - DOMAIN,ad.zijieapi.com
+  - DOMAIN,adtracker.adfunlink.com
   - DOMAIN,init.supersonicads.com
   - DOMAIN,is.snssdk.com
   - DOMAIN,open.e.kuaishou.com
