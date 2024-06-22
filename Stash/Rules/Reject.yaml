@@ -105,6 +105,7 @@ payload:
   - DOMAIN,adse.ximalaya.com
   - DOMAIN,adsebs.ximalaya.com
   - DOMAIN,adserver.pandora.com
+  - DOMAIN,adservice.sigmob.cn
   - DOMAIN,adservice.tohsoft.com
   - DOMAIN,adserviceretry.kugou.com
   - DOMAIN,adsfile.bssdlbig.kugou.com
@@ -120,6 +121,7 @@ payload:
   - DOMAIN,adsstatic.vivo.com.cn
   - DOMAIN,adstats.tencentmusic.com
   - DOMAIN,adstore-index-1252524079.file.myqcloud.com
+  - DOMAIN,adtracker.adfunlink.com
   - DOMAIN,adttrackingprd.hwwt8.com
   - DOMAIN,adui.tg.meitu.com
   - DOMAIN,adv-adlog.variflight.com

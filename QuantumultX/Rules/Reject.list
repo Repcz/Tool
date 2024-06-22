@@ -104,6 +104,7 @@ HOST,adse.wsa.ximalaya.com,REJECT
 HOST,adse.ximalaya.com,REJECT
 HOST,adsebs.ximalaya.com,REJECT
 HOST,adserver.pandora.com,REJECT
+HOST,adservice.sigmob.cn,REJECT
 HOST,adservice.tohsoft.com,REJECT
 HOST,adserviceretry.kugou.com,REJECT
 HOST,adsfile.bssdlbig.kugou.com,REJECT
@@ -119,6 +120,7 @@ HOST,adsp.xunlei.com,REJECT
 HOST,adsstatic.vivo.com.cn,REJECT
 HOST,adstats.tencentmusic.com,REJECT
 HOST,adstore-index-1252524079.file.myqcloud.com,REJECT
+HOST,adtracker.adfunlink.com,REJECT
 HOST,adttrackingprd.hwwt8.com,REJECT
 HOST,adui.tg.meitu.com,REJECT
 HOST,adv-adlog.variflight.com,REJECT
