@@ -157,6 +157,7 @@ DOMAIN-SUFFIX,ce33m7.com
 DOMAIN-SUFFIX,clotfun.mobi
 DOMAIN-SUFFIX,clotfun.online
 DOMAIN-SUFFIX,cloudmobi.net
+DOMAIN-SUFFIX,cmgadx.com
 DOMAIN-SUFFIX,comscore.com
 DOMAIN-SUFFIX,cpmstar.com
 DOMAIN-SUFFIX,cpx.to
@@ -579,6 +580,11 @@ DOMAIN,videoads-cloud.rovio.com
 DOMAIN,video-ads-module.ad-tech.nbcuni.com
 
 # (0~9)
+# > 360
+DOMAIN,ad.jia.360.cn
+DOMAIN,ad.life.360.cn
+DOMAIN,ad.iot.360.cn
+
 # > 51wnl
 DOMAIN,ad.51wnl-cq.com
 DOMAIN,adextra.51wnl-cq.com
@@ -638,6 +644,7 @@ IP-CIDR,124.192.153.42/32,no-resolve
 # ------
 # > ByteDance
 DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
+DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com
 DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com
 DOMAIN,ad.toutiao.com
 DOMAIN,dsp.toutiao.com
