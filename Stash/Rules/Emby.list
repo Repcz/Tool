@@ -1,6 +1,6 @@
 
 # 来源： https://github.com/MisakaFxxk/MisakaF_Subconverter/blob/main/Sub/Emby.list
-# 最后更新时间： 2024-05-22 21:46
+# 最后更新时间： 2024-06-23 19:33
 
 
 ##### A #####
@@ -152,6 +152,10 @@ DOMAIN-SUFFIX,emby-sg.plusmedia.site
 ##### Q #####
 
 ##### R #####
+
+# 忍者云Emby
+DOMAIN-SUFFIX,emby1.medi4.org
+DOMAIN-SUFFIX,emby2.medi4.org
 
 ##### S #####
 
