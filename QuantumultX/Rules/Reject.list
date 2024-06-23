@@ -27,8 +27,11 @@ HOST,ad.flurry.com,REJECT
 HOST,ad.hpplay.cn,REJECT
 HOST,ad.huajiao.com,REJECT
 HOST,ad.hzyoka.com,REJECT
+HOST,ad.iot.360.cn,REJECT
+HOST,ad.jia.360.cn,REJECT
 HOST,ad.jiemian.com,REJECT
 HOST,ad.k.21cn.com,REJECT
+HOST,ad.life.360.cn,REJECT
 HOST,ad.mobile.youku.com,REJECT
 HOST,ad.period-calendar.com,REJECT
 HOST,ad.qingting.fm,REJECT
@@ -733,6 +736,7 @@ HOST-SUFFIX,clarity.ms,REJECT
 HOST-SUFFIX,clotfun.mobi,REJECT
 HOST-SUFFIX,clotfun.online,REJECT
 HOST-SUFFIX,cloudmobi.net,REJECT
+HOST-SUFFIX,cmgadx.com,REJECT
 HOST-SUFFIX,codesoftchina.com,REJECT
 HOST-SUFFIX,comscore.com,REJECT
 HOST-SUFFIX,coreldrawchina.com,REJECT
@@ -1049,6 +1053,7 @@ HOST-SUFFIX,pagefair.net,REJECT
 HOST-SUFFIX,pangle.io,REJECT
 HOST-SUFFIX,pangolin-sdk-toutiao-b.com,REJECT
 HOST-SUFFIX,pangolin-sdk-toutiao.com,REJECT
+HOST-SUFFIX,pangolin-sdk-toutiao1.com,REJECT
 HOST-SUFFIX,pardot.com,REJECT
 HOST-SUFFIX,parrable.com,REJECT
 HOST-SUFFIX,passwordrecovery.cn,REJECT

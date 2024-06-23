@@ -29,8 +29,11 @@ domain_set:
 - ad.hpplay.cn
 - ad.huajiao.com
 - ad.hzyoka.com
+- ad.iot.360.cn
+- ad.jia.360.cn
 - ad.jiemian.com
 - ad.k.21cn.com
+- ad.life.360.cn
 - ad.mobile.youku.com
 - ad.period-calendar.com
 - ad.qingting.fm
@@ -684,6 +687,7 @@ domain_suffix_set:
 - clotfun.mobi
 - clotfun.online
 - cloudmobi.net
+- cmgadx.com
 - codesoftchina.com
 - comscore.com
 - coreldrawchina.com
@@ -1000,6 +1004,7 @@ domain_suffix_set:
 - pangle.io
 - pangolin-sdk-toutiao-b.com
 - pangolin-sdk-toutiao.com
+- pangolin-sdk-toutiao1.com
 - pardot.com
 - parrable.com
 - passwordrecovery.cn
