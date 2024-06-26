@@ -76,8 +76,6 @@ domain_set:
 - is.snssdk.com
 - i.snssdk.com
 - v6-novelapp.ixigua.com
-- .*novelapp.ixigua.com
-- .*default.ixigua.com
 - msync-im1-vip6-std.easemob.com
 - apd-pcdnwxlogin.teg.tencent-cloud.net
 - api.iegadp.qq.com
@@ -632,6 +630,8 @@ domain_suffix_set:
 - bayescom.com
 - ad.duoduo.link
 - byteimg.com
+- novelapp.ixigua.com
+- default.ixigua.com
 - byteorge.com
 - bytegoofy.com
 - bytedance.com
