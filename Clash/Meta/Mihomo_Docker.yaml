@@ -4,7 +4,7 @@
 #
 # Mihomo ≥ 1.8.4
 #
-# 最后更新时间: 2024-06-08 23:00
+# 最后更新时间: 2024-06-28 21:32
 #
 # ================
 
@@ -37,6 +37,25 @@ dns:
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter: ['*.lan','*.direct', cable.auth.com, '*.msftconnecttest.com', '*.msftncsi.com', network-test.debian.org, detectportal.firefox.com, resolver1.opendns.com, '*.srv.nintendo.net', '*.stun.playstation.net', xbox.*.microsoft.com, '*.xboxlive.com', stun.*, global.turn.twilio.com, global.stun.twilio.com, app.yinxiang.com, injections.adguard.org, local.adguard.org, cable.auth.com, localhost.*.qq.com, localhost.*.weixin.qq.com, '*.logon.battlenet.com.cn', '*.logon.battle.net', '*.blzstatic.cn', music.163.com, '*.music.163.com', '*.126.net', musicapi.taihe.com, music.taihe.com, songsearch.kugou.com, trackercdn.kugou.com, '*.kuwo.cn', api-jooxtt.sanook.com, api.joox.com, joox.com, y.qq.com, '*.y.qq.com', streamoc.music.tc.qq.com, mobileoc.music.tc.qq.com, isure.stream.qqmusic.qq.com, dl.stream.qqmusic.qq.com, aqqmusic.tc.qq.com, amobile.music.tc.qq.com, '*.xiami.com', '*.music.migu.cn', music.migu.cn, proxy.golang.org, '*.mcdn.bilivideo.cn', '*.cmpassport.com', id6.me, open.e.189.cn, mdn.open.wo.cn, opencloud.wostore.cn, auth.wosms.cn, '*.jegotrip.com.cn', '*.icitymobile.mobi', '*.pingan.com.cn', '*.cmbchina.com', '*.10099.com.cn', pool.ntp.org, '*.pool.ntp.org', ntp.*.com, time.*.com, 'ntp?.*.com', 'time?.*.com', time.*.gov, time.*.edu.cn, '*.ntp.org.cn', PDC._msDCS.*.*, DC._msDCS.*.*, GC._msDCS.*.*]
   nameserver: [quic://223.5.5.5:853, quic://223.6.6.6:853, https://1.12.12.12/dns-query, https://120.53.53.53/dns-query]                     
+
+# 策略组引用相关参数
+pg: &pg {type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, 欧洲节点, DIRECT]}
+# 订阅更新和延迟测试相关参数
+p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://latency-test.skk.moe/endpoint, interval: 1800}}
+# 自动选择策略组：选取延迟最低节点
+url-test: &url-test {type: url-test, url: http://latency-test.skk.moe/endpoint, interval: 300, tolerance: 0, include-all: true}
+# 手动选择策略组：手动选择想要的节点/策略组
+select: &select {type: select, include-all: true}
+# 故障回退策略组：策略组将按顺序选择你列表中第一个可用的节点
+fallback: &fallback {type: fallback, url: http://latency-test.skk.moe/endpoint, interval: 300, include-all: true}
+# 负载均衡策略组：不同的请求将使用不同的代理节点
+load-balance: &load-balance {type: load-balance, strategy: consistent-hashing, url: http://latency-test.skk.moe/endpoint, interval: 300, include-all: true}
+# classical规则相关
+c: &c {type: http, behavior: classical, format: text, interval: 86400}
+# domain规则相关
+d: &d {type: http, behavior: domain, format: text, interval: 86400}
+# ipcidr规则相关
+i: &i {type: http, behavior: ipcidr, format: text, interval: 86400}
 
 proxy-providers:
   Subscribe: {<<: *p, path: ./proxy-providers/Sub.yaml, url: http://your-service-provider}
