@@ -1,7 +1,7 @@
 #Title: AWAvenue 秋风广告规则（AWAvenue-Ads-Rule）
 
 #版本号: 1.4.9-release
-#上次更新日期: 2024-06-22
+#上次更新日期: 2024-06-29
 
 #项目地址：https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 
@@ -140,6 +140,8 @@ DOMAIN-SUFFIX,analytics.woozooo.com
 DOMAIN-SUFFIX,analyze.lemurbrowser.com
 DOMAIN-SUFFIX,andrqd.play.aiseet.atianqi.com
 DOMAIN-SUFFIX,apd-pcdnwxlogin.teg.tencent-cloud.net
+DOMAIN-SUFFIX,apd-pcdnwxnat.teg.tencent-cloud.net
+DOMAIN-SUFFIX,apd-pcdnwxstat.teg.tencent-cloud.net
 DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao.com
 DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao1.com
 DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao2.com
@@ -592,6 +594,7 @@ DOMAIN-SUFFIX,ws-keyboard.shouji.sogou.com
 DOMAIN-SUFFIX,ws.sj.qq.com
 DOMAIN-SUFFIX,www42.zskwai.com
 DOMAIN-SUFFIX,wxa.wxs.qq.com
+DOMAIN-SUFFIX,wximg.wxs.qq.com
 DOMAIN-SUFFIX,wxsnsad.tc.qq.com
 DOMAIN-SUFFIX,wxsnsdy.wxs.qq.com
 DOMAIN-SUFFIX,wxsnsdythumb.wxs.qq.com
