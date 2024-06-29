@@ -52,6 +52,7 @@ DOMAIN-SUFFIX,adexpo.tencentmusic.com
 DOMAIN-SUFFIX,adfilter.imtt.qq.com
 DOMAIN-SUFFIX,adguanggao.eee114.com
 DOMAIN-SUFFIX,adjust.cn
+DOMAIN-SUFFIX,adjust.com
 DOMAIN-SUFFIX,adkwai.com
 DOMAIN-SUFFIX,adlink-api.huan.tv
 DOMAIN-SUFFIX,adm.funshion.com
@@ -107,6 +108,8 @@ DOMAIN-SUFFIX,adv.sec.intl.miui.com
 DOMAIN-SUFFIX,adv.sec.miui.com
 DOMAIN-SUFFIX,advertiseonbing.azureedge.net
 DOMAIN-SUFFIX,advertising-api-eu.amazon.com
+DOMAIN-SUFFIX,advertising-api-fe.amazon.com
+DOMAIN-SUFFIX,advertising-api.amazon.com
 DOMAIN-SUFFIX,advertising.apple.com
 DOMAIN-SUFFIX,advertising.yahoo.com
 DOMAIN-SUFFIX,advertising.yandex.ru
@@ -177,11 +180,13 @@ DOMAIN-SUFFIX,beacon-api.aliyuncs.com
 DOMAIN-SUFFIX,beacon.qq.com
 DOMAIN-SUFFIX,beacons.gvt2.com
 DOMAIN-SUFFIX,beizi.biz
+DOMAIN-SUFFIX,bianxian.com
 DOMAIN-SUFFIX,bingads.microsoft.com
 DOMAIN-SUFFIX,bj.ad.track.66mobi.com
 DOMAIN-SUFFIX,books-analytics-events.apple.com
 DOMAIN-SUFFIX,bugly.qq.com
 DOMAIN-SUFFIX,business-api.tiktok.com
+DOMAIN-SUFFIX,c.bidtoolads.com
 DOMAIN-SUFFIX,c.evidon.com
 DOMAIN-SUFFIX,c.gj.qq.com
 DOMAIN-SUFFIX,c.kuaiduizuoye.com
@@ -264,6 +269,7 @@ DOMAIN-SUFFIX,grs.hicloud.com
 DOMAIN-SUFFIX,grs.platform.dbankcloud.ru
 DOMAIN-SUFFIX,h-adashx.ut.taobao.com
 DOMAIN-SUFFIX,h.trace.qq.com
+DOMAIN-SUFFIX,hanlanad.com
 DOMAIN-SUFFIX,henzanapp.com
 DOMAIN-SUFFIX,hexagon-analytics.com
 DOMAIN-SUFFIX,hiboard-drcn.ai.dbankcloud.cn
@@ -312,6 +318,7 @@ DOMAIN-SUFFIX,ks.pull.yximgs.com
 DOMAIN-SUFFIX,launcher.smart-tv.cn
 DOMAIN-SUFFIX,launcherimg.smart-tv.cn
 DOMAIN-SUFFIX,lf3-ad-union-sdk.pglstatp-toutiao.com
+DOMAIN-SUFFIX,litchiads.com
 DOMAIN-SUFFIX,liveats-vod.video.ptqy.gitv.tv
 DOMAIN-SUFFIX,livemonitor.huan.tv
 DOMAIN-SUFFIX,livep.l.aiseet.atianqi.com
@@ -456,6 +463,7 @@ DOMAIN-SUFFIX,sdk.beizi.biz
 DOMAIN-SUFFIX,sdk.cferw.com
 DOMAIN-SUFFIX,sdk.e.qq.com
 DOMAIN-SUFFIX,sdk.hzsanjiaomao.com
+DOMAIN-SUFFIX,sdk.markmedia.com.cn
 DOMAIN-SUFFIX,sdk.mobads.adwangmai.com
 DOMAIN-SUFFIX,sdkconf.avlyun.com
 DOMAIN-SUFFIX,sdkconfig.ad.intl.xiaomi.com
@@ -534,6 +542,7 @@ DOMAIN-SUFFIX,tracker.ai.xiaomi.com
 DOMAIN-SUFFIX,tracker.gitee.com
 DOMAIN-SUFFIX,tracking.miui.com
 DOMAIN-SUFFIX,tracking.rus.miui.com
+DOMAIN-SUFFIX,tsvrv.com
 DOMAIN-SUFFIX,tvuser-ch.cedock.com
 DOMAIN-SUFFIX,tx-ad.a.yximgs.com
 DOMAIN-SUFFIX,tx-kmpaudio.pull.yximgs.com
