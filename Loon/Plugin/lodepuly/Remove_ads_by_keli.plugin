@@ -4,7 +4,7 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/KeLee.png
-#!date = 2024-06-19 16:29:36
+#!date = 2024-06-29 16:37:45
 
 [Rule]
 # 广告联盟放行
@@ -136,8 +136,11 @@ DOMAIN, adshows.21cn.com, REJECT
 IP-CIDR, 122.229.8.47/32, REJECT, no-resolve
 IP-CIDR, 122.229.29.89/32, REJECT, no-resolve
 
-# 京东
-# 弃用地址
+# 快递100
+URL-REGEX, ^http:\/\/p\.kuaidi100\.com\/mobile\/mobileapi\.do, REJECT-DICT
+URL-REGEX, ^http:\/\/p\.kuaidi100\.com\/advertisement\/, REJECT-DICT
+
+# 京东 - 弃用地址
 DOMAIN, waapdg.jd.com, REJECT
 
 [Rewrite]
