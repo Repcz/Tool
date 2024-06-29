@@ -4,7 +4,7 @@
 #!author = 可莉🅥 VirgilClyne
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/HTTPDNS.png
-#!date = 2024-05-16 20:16:26
+#!date = 2024-06-29 18:12:37
 
 [Rule]
 # YY语音
@@ -80,8 +80,9 @@ IP-CIDR, 203.107.1.0/24, REJECT, no-resolve
 # 百度
 DOMAIN, httpdns.baidu.com, REJECT
 DOMAIN, httpsdns.baidu.com, REJECT
-URL-REGEX, ^http:\/\/180\.76\.76\.112\/v4\/resolve, REJECT
-URL-REGEX, ^http:\/\/180\.76\.76\.220\/v4\/resolve, REJECT
+URL-REGEX, ^http:\/\/180\.76\.76\.112\/v\d\/, REJECT
+URL-REGEX, ^http:\/\/180\.76\.76\.112\/v\d\/resolve, REJECT
+URL-REGEX, ^http:\/\/180\.76\.76\.220\/v\d\/resolve, REJECT
 
 # 百度智能云
 DOMAIN, httpdns.baidubce.com, REJECT
