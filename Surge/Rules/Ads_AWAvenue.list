@@ -1,6 +1,6 @@
 #Title: AWAvenue 秋风广告规则（AWAvenue-Ads-Rule）
 
-#版本号: 1.4.9-release
+#版本号: 1.5.0-release
 #上次更新日期: 2024-06-29
 
 #项目地址：https://github.com/TG-Twilight/AWAvenue-Ads-Rule
@@ -14,7 +14,7 @@
 #This project is licensed under the Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license.
 
 #AD:
-#倾城极速 - 畅游世界，高速互联！官网：https://wcnmdmht.lol/sb 官网2：https://panel.qc02.xyz
+#倾城极速 - 畅游世界，高速互联！官网：https://panel.qqcjs.top 官网2：https://n3b53vrt.wcnmdmht.biz
 
 
 DOMAIN-SUFFIX,1010pic.com
@@ -202,6 +202,12 @@ DOMAIN-SUFFIX,cnzz.com
 DOMAIN-SUFFIX,collect.kugou.com
 DOMAIN-SUFFIX,commdata.v.qq.com
 DOMAIN-SUFFIX,config.chsmarttv.com
+DOMAIN-SUFFIX,conn-service-cn-03.allawntech.com
+DOMAIN-SUFFIX,conn-service-cn-04.allawntech.com
+DOMAIN-SUFFIX,conn-service-cn-05.allawntech.com
+DOMAIN-SUFFIX,conn-service-in-03.allawnos.com
+DOMAIN-SUFFIX,conn-service-in-04.allawnos.com
+DOMAIN-SUFFIX,conn-service-in-05.allawnos.com
 DOMAIN-SUFFIX,crashlytics.com
 DOMAIN-SUFFIX,crashlyticsreports-pa.googleapis.com
 DOMAIN-SUFFIX,csjplatform.com
