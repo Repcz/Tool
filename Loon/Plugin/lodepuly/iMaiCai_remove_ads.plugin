@@ -1,10 +1,10 @@
 #!name = 小象超市去广告
-#!desc = 移除开屏广告、应用内弹窗、悬浮窗。
+#!desc = 移除开屏广告、应用内弹窗、猜你想买、横幅推广和悬浮窗。
 #!openUrl = https://apps.apple.com/app/id1444411068
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/iMaiCai.png
-#!date = 2024-06-30 20:21:58
+#!date = 2024-06-30 21:57:48
 
 [Rule]
 # 广告下发
@@ -26,12 +26,20 @@ IP-CIDR6, 2405:1480:1000:3::20/128, REJECT, no-resolve
 [Rewrite]
 # 开屏广告
 ^https:\/\/mall\.meituan\.com\/api\/c\/homepage\/splash reject-dict
-# 首页领券悬浮红包
+# 首页 - 领券悬浮红包
 ^https:\/\/mall\.meituan\.com\/api\/c\/homepage\/bubble\/operate\/info reject-dict
+# 分类 - 横幅推广
+^https:\/\/mall\.meituan\.com\/api\/c\/jigsaw\/code\/category-banner-\d+\/ reject-dict
+# 购物车 - 您可能想买
+^https:\/\/mall\.meituan\.com\/api\/c\/poi\/\d+\/order\/recommend\/v\d reject-dict
+# 我的页面 - 轮播图
+^https:\/\/mall\.meituan\.com\/api\/c\/banner\/ reject-dict
+# 我的页面 - 您可能想买
+^https:\/\/mall\.meituan\.com\/api\/c\/poi\/\d+\/personal\/recommend reject-dict
 
 [Script]
 # 下发广告
-http-response ^https:\/\/portal-portm\.meituan\.com\/horn_ios\/mergeRequest script-path = imaicai.js, requires-body = true, tag = 移除下发广告
+http-response ^https:\/\/portal-portm\.meituan\.com\/horn_ios\/mergeRequest script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/iMaiCai/iMaiCai_remove_ads.js, requires-body = true, tag = 移除下发广告
 
 [Mitm]
 hostname = portal-portm.meituan.com, mall.meituan.com
