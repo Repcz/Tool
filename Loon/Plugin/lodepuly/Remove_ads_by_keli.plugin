@@ -4,7 +4,7 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/KeLee.png
-#!date = 2024-06-30 03:21:55
+#!date = 2024-06-30 20:22:56
 
 [Rule]
 # 广告联盟放行
@@ -152,13 +152,6 @@ DOMAIN, waapdg.jd.com, REJECT
 
 # 米家
 ^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|carousel\/banners|myTab|openingBanner) reject-dict
-
-# 小象买菜 - 广告下发
-^https:\/\/portal-portm\.meituan\.com\/horn_ios\/mergeRequest reject-dict
-# 小象买菜 - 开屏广告
-^https:\/\/mall\.meituan\.com\/api\/c\/homepage\/splash reject-dict
-# 小象买菜 - 首页领券悬浮红包
-^https:\/\/mall\.meituan\.com\/api\/c\/homepage\/bubble\/operate\/info reject-dict
 
 # 小米
 ^https?:\/\/api\.m\.mi\.com\/v\d\/app\/start reject-200
@@ -328,4 +321,4 @@ http-response ^https:\/\/mi\.gdt\.qq\.com\/gdt_mview\.fcg\? script-path = https:
 ^https:\/\/api\.flydigi\.com\/android\/v2\/ad reject-dict
 
 [Mitm]
-hostname = *.huami.com, *.ubixioe.com, acs.m.goofish.com, acs.m.taobao.com, api-access.pangolin-sdk-toutiao*.com, api-overmind.youdao.com, api.ahmobile.cn, api.jr.mi.com, api.m.mi.com, api.mh.163.com, api.pinduoduo.com, api.wfdata.club, api.yangkeduo.com, api.flydigi.com, app.10099.com.cn, app.missevan.com, app.zhoudamozi.com, ccmsupport-sz.tenpay.com, cdke.youdao.com, client-api-v2.oray.com, client.app.coc.10086.cn, conf-darwin.xycdn.com, dict.youdao.com, god.gameyw.netease.com, guide-acs.m.taobao.com, gw.alicdn.com, gw.chuangkit.com, gx.10086.cn, heic.alicdn.com, hfapp-service.qweather.net, home.mi.com, home.umetrip.com, img.allahall.com, img.dailmo.com, is.snssdk.com, iyes.youku.com, m.qianbao.qq.com, m.sd.10086.cn, mall.meituan.com, mercury-gateway.ixiaochuan.cn, mi.gdt.qq.com, mob.mddcloud.com.cn, mobads-pre-config.cdn.bcebos.com, open.e.kuaishou.com, p.du.163.com, portal-portm.meituan.com, qiye.gaoding.com, sdk1xyajs.data.kuiniuca.com, service.gd.10086.cn, sfo.mddcloud.com.cn, shopapi.io.mi.com, t-dsp.pinduoduo.com, toblog.ctobsnssdk.com, umerp.umetrip.com, us.l.qq.com, v6ii.gdt.qq.com, wap.js.10086.cn, sf3-fe-tos.pglstatp-toutiao.com, ether-pack.pangolin-sdk-toutiao.com, lf3-analytics.bytescm.com, p0.pipi.cn
+hostname = *.huami.com, *.ubixioe.com, acs.m.goofish.com, acs.m.taobao.com, api-access.pangolin-sdk-toutiao*.com, api-overmind.youdao.com, api.ahmobile.cn, api.jr.mi.com, api.m.mi.com, api.mh.163.com, api.pinduoduo.com, api.wfdata.club, api.yangkeduo.com, api.flydigi.com, app.10099.com.cn, app.missevan.com, app.zhoudamozi.com, ccmsupport-sz.tenpay.com, cdke.youdao.com, client-api-v2.oray.com, client.app.coc.10086.cn, conf-darwin.xycdn.com, dict.youdao.com, god.gameyw.netease.com, guide-acs.m.taobao.com, gw.alicdn.com, gw.chuangkit.com, gx.10086.cn, heic.alicdn.com, hfapp-service.qweather.net, home.mi.com, home.umetrip.com, img.allahall.com, img.dailmo.com, is.snssdk.com, iyes.youku.com, m.qianbao.qq.com, m.sd.10086.cn, mercury-gateway.ixiaochuan.cn, mi.gdt.qq.com, mob.mddcloud.com.cn, mobads-pre-config.cdn.bcebos.com, open.e.kuaishou.com, p.du.163.com, qiye.gaoding.com, sdk1xyajs.data.kuiniuca.com, service.gd.10086.cn, sfo.mddcloud.com.cn, shopapi.io.mi.com, t-dsp.pinduoduo.com, toblog.ctobsnssdk.com, umerp.umetrip.com, us.l.qq.com, v6ii.gdt.qq.com, wap.js.10086.cn, sf3-fe-tos.pglstatp-toutiao.com, ether-pack.pangolin-sdk-toutiao.com, lf3-analytics.bytescm.com, p0.pipi.cn
