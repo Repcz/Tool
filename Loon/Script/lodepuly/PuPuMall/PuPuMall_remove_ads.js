@@ -63,7 +63,5 @@ if (url.indexOf(adv) != -1) {
 const typeArr = [50, 2, 90, 770, 80, 320];
 obj.data = obj.data.filter(item => !typeArr.includes(item.position_type));
 
-
 body = JSON.stringify(obj);
 $done({body});
-
