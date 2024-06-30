@@ -4,7 +4,7 @@
 #!author = 可莉🅥 VirgilClyne
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/HTTPDNS.png
-#!date = 2024-06-29 18:12:37
+#!date = 2024-06-30 19:18:22
 
 [Rule]
 # YY语音
@@ -34,6 +34,7 @@ AND, ((IP-CIDR, 220.243.141.0/32, no-resolve), (DEST-PORT, 6443)), REJECT
 # 微信
 DOMAIN, dns.weixin.qq.com, REJECT
 DOMAIN, dns.weixin.qq.com.cn, REJECT
+DOMAIN, aedns.weixin.qq.com, REJECT
 IP-CIDR, 42.187.182.106/32, REJECT, no-resolve
 IP-CIDR, 42.187.182.123/32, REJECT, no-resolve
 IP-CIDR, 42.187.184.154/32, REJECT, no-resolve
