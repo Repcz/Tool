@@ -1,6 +1,5 @@
 no_resolve: true
 domain_set:
-- api-abematv.bucketeer.jp
 - atv-ps.amazon.com
 - avodmp4s3ww-a.akamaihd.net
 - d1v5ir2lpwr8os.cloudfront.net
@@ -63,12 +62,10 @@ domain_set:
 domain_suffix_set:
 - edgedatg.com
 - go.com
-- abema-tv.com
 - abema.io
 - abema.tv
 - ameba.jp
 - hayabusa.io
-- hayabusa.media
 - c4assets.com
 - channel4.com
 - aboutamazon.com

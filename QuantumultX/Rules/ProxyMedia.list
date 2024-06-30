@@ -1,5 +1,5 @@
 # 内容：国外媒体列表
-# 数量：370条
+# 数量：367条
 
 # ABC
 HOST-SUFFIX,edgedatg.com,PROXY
@@ -8,13 +8,10 @@ HOST-SUFFIX,go.com,PROXY
 # AbemaTV
 USER-AGENT,AbemaTV*,PROXY
 HOST-KEYWORD,abematv.akamaized.net,PROXY
-HOST,api-abematv.bucketeer.jp,PROXY
-HOST-SUFFIX,abema-tv.com,PROXY
 HOST-SUFFIX,abema.io,PROXY
 HOST-SUFFIX,abema.tv,PROXY
 HOST-SUFFIX,ameba.jp,PROXY
 HOST-SUFFIX,hayabusa.io,PROXY
-HOST-SUFFIX,hayabusa.media,PROXY
 
 # All4
 USER-AGENT,All4*,PROXY

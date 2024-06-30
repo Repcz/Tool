@@ -174,6 +174,7 @@ domain_suffix_set:
 - 9gag.com
 - 9news.com.au
 - a-normal-day.com
+- a5.com.ru
 - aamacau.com
 - abc.com
 - abc.net.au
@@ -289,7 +290,6 @@ domain_suffix_set:
 - am730.com.hk
 - amazon.co.jp
 - amazon.com
-- amazonaws.com
 - ameblo.jp
 - america.gov
 - american.edu
@@ -365,6 +365,7 @@ domain_suffix_set:
 - apkmonk.com
 - apkplz.com
 - apkpure.com
+- apkpure.net
 - aplusvpn.com
 - appbrain.com
 - appdownloader.net
@@ -469,6 +470,7 @@ domain_suffix_set:
 - badiucao.com
 - badjojo.com
 - badoo.com
+- bahamut.com.tw
 - baidu.jp
 - baijie.org
 - bailandaily.com
@@ -829,6 +831,7 @@ domain_suffix_set:
 - cdp1989.org
 - cdp1998.org
 - cdp2006.org
+- cdpa.url.tw
 - cdpeu.org
 - cdpusa.org
 - cdpweb.org
@@ -857,6 +860,7 @@ domain_suffix_set:
 - channelnewsasia.com
 - chaoex.com
 - chapm25.com
+- chatgpt.com
 - chatnook.com
 - chaturbate.com
 - checkgfw.com
@@ -868,7 +872,9 @@ domain_suffix_set:
 - cherrysave.com
 - chhongbi.org
 - chicagoncmtv.com
+- china-mmm.jp.net
 - china-mmm.net
+- china-mmm.sa.com
 - china-review.com.ua
 - china-week.com
 - china101.com
@@ -996,7 +1002,6 @@ domain_suffix_set:
 - cloakpoint.com
 - cloudcone.com
 - cloudflare-ipfs.com
-- cloudfront.net
 - cloudfunctions.net
 - club1069.com
 - clubhouseapi.com
@@ -1010,7 +1015,6 @@ domain_suffix_set:
 - cmule.org
 - cmx.im
 - cn-proxy.com
-- cn.com
 - cn6.eu
 - cna.com.tw
 - cnabc.com
@@ -1046,7 +1050,6 @@ domain_suffix_set:
 - collateralmurder.com
 - collateralmurder.org
 - com.google
-- com.ru
 - com.uk
 - comedycentral.com
 - comefromchina.com
@@ -1134,8 +1137,12 @@ domain_suffix_set:
 - d-fukyu.com
 - d0z.net
 - d100.net
+- d1b183sg0nvnuh.cloudfront.net
+- d1c37gjwa26taa.cloudfront.net
 - d2bay.com
 - d2pass.com
+- d3c33hcgiwev3.cloudfront.net
+- d3rhr7kgmtrq1v.cloudfront.net
 - dabr.co.uk
 - dabr.eu
 - dabr.me
@@ -1221,6 +1228,7 @@ domain_suffix_set:
 - democrats.org
 - demosisto.hk
 - depositphotos.com
+- derekhsu.homeip.net
 - desc.se
 - design.google
 - desipro.de
@@ -1231,6 +1239,7 @@ domain_suffix_set:
 - deviantart.net
 - devio.us
 - devpn.com
+- devv.ai
 - dfas.mil
 - dfn.org
 - dharamsalanet.com
@@ -1622,7 +1631,6 @@ domain_suffix_set:
 - fartit.com
 - farwestchina.com
 - fastestvpn.com
-- fastly.net
 - fastpic.ru
 - fastssh.com
 - faststone.org
@@ -2277,6 +2285,7 @@ domain_suffix_set:
 - gotrusted.com
 - gotw.ca
 - gov.taipei
+- gov.tw
 - gr8domain.biz
 - gr8name.biz
 - gradconnection.com
@@ -2508,7 +2517,6 @@ domain_suffix_set:
 - holymountaincn.com
 - holyspiritspeaks.org
 - homedepot.com
-- homeip.net
 - homeperversion.com
 - homeservershow.com
 - honeynet.org
@@ -2649,6 +2657,7 @@ domain_suffix_set:
 - idouga.com
 - idreamx.com
 - idsam.com
+- idv.tw
 - ieasy5.com
 - ied2k.net
 - ienergy1.com
@@ -2885,7 +2894,6 @@ domain_suffix_set:
 - journalofdemocracy.org
 - joymiihub.com
 - joyourself.com
-- jp.net
 - jpopforum.net
 - jqueryui.com
 - jsdelivr.net
@@ -3077,6 +3085,7 @@ domain_suffix_set:
 - lianyue.net
 - liaowangxizang.net
 - liberal.org.hk
+- libertysculpturepark.com
 - libertytimes.com.tw
 - libraryinformationtechnology.com
 - libredd.it
@@ -3121,7 +3130,6 @@ domain_suffix_set:
 - livedoor.jp
 - liveleak.com
 - livemint.com
-- livestation.com
 - livestream.com
 - livevideo.com
 - livingonline.us
@@ -3129,7 +3137,7 @@ domain_suffix_set:
 - liwangyang.com
 - lizhizhuangbi.com
 - lkcn.net
-- llss.me
+- lmsys.org
 - lncn.org
 - load.to
 - lobsangwangyal.com
@@ -3721,6 +3729,7 @@ domain_suffix_set:
 - nytco.com
 - nyti.ms
 - nytimes.com
+- nytimes.map.fastly.net
 - nytimg.com
 - nytlog.com
 - nytstyle.com
@@ -3973,6 +3982,7 @@ domain_suffix_set:
 - piposay.com
 - piraattilahti.org
 - piring.com
+- pixeldrain.com
 - pixelqi.com
 - pixiv.net
 - pixnet.in
@@ -4132,6 +4142,7 @@ domain_suffix_set:
 - pythonic.life
 - pytorch.org
 - qanote.com
+- qbittorrent.org
 - qgirl.com.tw
 - qhigh.com
 - qi-gong.me
@@ -4169,9 +4180,9 @@ domain_suffix_set:
 - qz.com
 - r0.ru
 - r18.com
-- ra.gg
 - radicalparty.org
 - radiko.jp
+- radio-canada.ca
 - radio.garden
 - radioaustralia.net.au
 - radiohilight.net
@@ -4324,9 +4335,11 @@ domain_suffix_set:
 - s-dragon.org
 - s1heng.com
 - s1s1s1.com
+- s3-ap-northeast-1.amazonaws.com
+- s3-ap-southeast-2.amazonaws.com
+- s3.amazonaws.com
 - s4miniarchive.com
 - s8forum.com
-- sa.com
 - saboom.com
 - sacks.com
 - sacom.hk
@@ -4780,6 +4793,7 @@ domain_suffix_set:
 - taipei.gov.tw
 - taipeisociety.org
 - taipeitimes.com
+- taisounds.com
 - taiwan-sex.com
 - taiwanbible.com
 - taiwancon.com
@@ -5306,6 +5320,7 @@ domain_suffix_set:
 - ultraxs.com
 - umich.edu
 - unblock-us.com
+- unblock.cn.com
 - unblockdmm.com
 - unblocker.yt
 - unblocksit.es
@@ -5346,7 +5361,6 @@ domain_suffix_set:
 - urbansurvival.com
 - urchin.com
 - url.com.tw
-- url.tw
 - urlborg.com
 - urlparser.com
 - us.to
@@ -5711,6 +5725,7 @@ domain_suffix_set:
 - wqyd.org
 - wrchina.org
 - wretch.cc
+- writesonic.com
 - wsj.com
 - wsj.net
 - wsjhk.com
@@ -5734,6 +5749,7 @@ domain_suffix_set:
 - x-berry.com
 - x-wall.org
 - x.co
+- x.com
 - x.company
 - x1949x.com
 - x24hr.com
@@ -5791,7 +5807,6 @@ domain_suffix_set:
 - xn--i2ru8q2qg.com
 - xn--ngstr-lra8j.com
 - xn--oiq.cc
-- xn--p8j9a0d9c9a.xn--q9jyb4c
 - xnxx.com
 - xpdo.net
 - xpud.org
@@ -5867,7 +5882,6 @@ domain_suffix_set:
 - yingsuoss.com
 - yinlei.org
 - yipub.com
-- yiyechat.com
 - yizhihongxing.com
 - yobit.net
 - yobt.com
@@ -5916,13 +5930,13 @@ domain_suffix_set:
 - yuanzhengtang.org
 - yulghun.com
 - yunchao.net
-- yuntipub.com
 - yuvutu.com
 - yvesgeleyn.com
 - ywpw.com
 - yx51.net
 - yyii.org
 - yyjlymb.xyz
+- yysub.net
 - yzzk.com
 - z-lib.org
 - zacebook.com
@@ -5939,6 +5953,7 @@ domain_suffix_set:
 - zello.com
 - zengjinyan.org
 - zenmate.com
+- zenmate.com.ru
 - zerohedge.com
 - zeronet.io
 - zeutch.com
@@ -6012,6 +6027,7 @@ domain_suffix_set:
 - bbc.com
 - apache.org
 - docker.com
+- docker.io
 - elastic.co
 - elastic.com
 - gcr.io
