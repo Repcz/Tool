@@ -377,14 +377,23 @@ function nfTest() {
                 if (ourl == undefined) {
                     ourl = response.headers['X-Originating-Url']
                 }
-                console.log("X-Originating-URL:" + ourl)
-                let region = ourl.split('/')[3]
-                region = region.split('-')[0];
-                if (region == 'title') {
-                    region = 'us'
+                if (ourl == undefined) {
+                    ourl = response.headers['x-originating-url']
                 }
-                result["Netflix"] = "<b>Netflix: </b>完整支持"+arrow+ "⟦"+flags.get(region.toUpperCase())+"⟧ 🎉"
-                resolve(region);
+                if (ourl == undefined) {
+                    console.log("未知地区")
+                    result["Netflix"] = "<b>Netflix: </b>完整支持"+arrow+ "⟦未知地区⟧ 🎉"
+                    resolve(region);
+                } else {
+                    console.log("X-Originating-URL:" + ourl)
+                    let region = ourl.split('/')[3]
+                    region = region.split('-')[0];
+                    if (region == 'title') {
+                        region = 'us'
+                    }
+                    result["Netflix"] = "<b>Netflix: </b>完整支持"+arrow+ "⟦"+flags.get(region.toUpperCase())+"⟧ 🎉"
+                    resolve(region);
+                }
             } else {
                 result["Netflix"] = "<b>Netflix: </b>检测失败 ❗️";
                 resolve(response.status)
