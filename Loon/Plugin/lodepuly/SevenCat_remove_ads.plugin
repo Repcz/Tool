@@ -1,6 +1,6 @@
 #!name = 七猫小说去广告
 #!desc = 移除大部分七猫小说广告，但受限于七猫小说自身对MitM和VPN状态的检测，部分页面广告无法移除。
-#!openUrl = 
+#!openUrl = https://apps.apple.com/app/id1387717110
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/SevenCat.png
