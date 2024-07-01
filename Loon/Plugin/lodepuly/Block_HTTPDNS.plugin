@@ -4,7 +4,7 @@
 #!author = 可莉🅥 VirgilClyne
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/HTTPDNS.png
-#!date = 2024-06-30 19:18:22
+#!date = 2024-07-02 00:56:06
 
 [Rule]
 # YY语音
@@ -149,5 +149,9 @@ URL-REGEX, ^http:\/\/103\.41\.167\.237\/v2\/resolv, REJECT
 IP-CIDR, 118.89.204.198/23, REJECT, no-resolve
 IP-CIDR6, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128, REJECT, no-resolve
 
+[Rewrite]
+https:\/\/203\.107\.1\.97/\d+/ss
+https:\/\/203\.107\.1\.33/\d+/ss
+
 [Mitm]
-hostname = 119.29.29.29
+hostname = 119.29.29.29, 203.107.1.97, 203.107.1.33
