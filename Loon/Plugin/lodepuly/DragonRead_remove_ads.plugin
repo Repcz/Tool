@@ -21,14 +21,11 @@ DOMAIN, rtlog5-applog.fqnovel.com, REJECT
 
 [Rewrite]
 ^https:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ reject
-^https:\/\/lf-cdn-tos\.bytescm\.com\/obj\/static\/ad\/ reject
-
-# 域名解析
-^https:\/\/tnc3-alisc1\.zijieapi\.com\/get_domains\/ reject
+^https:\/\/lf\d?-cdn-tos\.bytescm\.com\/obj\/static\/ad\/ reject
 
 [Script]
 # 字节跳动穿山甲
 http-response ^https:\/\/(api-access\.pangolin-sdk-toutiao(\d|-b)?|is\.snssdk)\.com\/api\/ad\/union\/sdk\/get_ads script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Remove_ads_by_keli/adsense.js, requires-body = true, tag = 移除字节跳动广告
 
 [Mitm]
-hostname = sf3-fe-tos.pglstatp-toutiao.com, tnc3-alisc1.zijieapi.com, api-access.pangolin-sdk-toutiao*.com, lf-cdn-tos.bytescm.com, is.snssdk.com
+hostname = sf3-fe-tos.pglstatp-toutiao.com, tnc3-alisc1.zijieapi.com, api-access.pangolin-sdk-toutiao*.com, lf?-cdn-tos.bytescm.com, is.snssdk.com
