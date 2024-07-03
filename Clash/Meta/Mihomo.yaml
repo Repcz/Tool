@@ -4,7 +4,7 @@
 #
 # Clash Verg Rev Version ≥ 1.6.2
 #
-# 最后更新时间: 2024-07-03 19:42
+# 最后更新时间: 2024-07-03 20:25
 #
 # ================
 
@@ -75,7 +75,7 @@ dns:
   # Fake-IP解析地址池
   fake-ip-range: 198.18.0.1/16
   # fakeip 过滤，以下地址不会下发 fakeip 映射用于连接
-  fake-ip-filter: ['*.lan','*.direct', cable.auth.com, '*.msftconnecttest.com', '*.msftncsi.com', network-test.debian.org, detectportal.firefox.com, resolver1.opendns.com, '*.srv.nintendo.net', '*.stun.playstation.net', xbox.*.microsoft.com, '*.xboxlive.com', stun.*, global.turn.twilio.com, global.stun.twilio.com, app.yinxiang.com, injections.adguard.org, local.adguard.org, cable.auth.com, localhost.*.qq.com, localhost.*.weixin.qq.com, '*.logon.battlenet.com.cn', '*.logon.battle.net', '*.blzstatic.cn', music.163.com, '*.music.163.com', '*.126.net', musicapi.taihe.com, music.taihe.com, songsearch.kugou.com, trackercdn.kugou.com, '*.kuwo.cn', api-jooxtt.sanook.com, api.joox.com, joox.com, y.qq.com, '*.y.qq.com', streamoc.music.tc.qq.com, mobileoc.music.tc.qq.com, isure.stream.qqmusic.qq.com, dl.stream.qqmusic.qq.com, aqqmusic.tc.qq.com, amobile.music.tc.qq.com, '*.xiami.com', '*.music.migu.cn', music.migu.cn, proxy.golang.org, '*.mcdn.bilivideo.cn', '*.cmpassport.com', id6.me, open.e.189.cn, mdn.open.wo.cn, opencloud.wostore.cn, auth.wosms.cn, '*.jegotrip.com.cn', '*.icitymobile.mobi', '*.pingan.com.cn', '*.cmbchina.com', '*.10099.com.cn', pool.ntp.org, '*.pool.ntp.org', ntp.*.com, time.*.com, 'ntp?.*.com', 'time?.*.com', time.*.gov, time.*.edu.cn, '*.ntp.org.cn', PDC._msDCS.*.*, DC._msDCS.*.*, GC._msDCS.*.*]
+  fake-ip-filter: ['*.lan','*.direct', cable.auth.com, '*.msftconnecttest.com', '*.msftncsi.com', network-test.debian.org, detectportal.firefox.com, resolver1.opendns.com, '*.srv.nintendo.net', '*.stun.playstation.net', 'xbox.*.microsoft.com', '*.xboxlive.com', 'stun.*', global.turn.twilio.com, global.stun.twilio.com, app.yinxiang.com, injections.adguard.org, local.adguard.org, cable.auth.com, 'localhost.*.qq.com', 'localhost.*.weixin.qq.com', '*.logon.battlenet.com.cn', '*.logon.battle.net', '*.blzstatic.cn', 'music.163.com', '*.music.163.com', '*.126.net', musicapi.taihe.com, music.taihe.com, songsearch.kugou.com, trackercdn.kugou.com, '*.kuwo.cn', api-jooxtt.sanook.com, api.joox.com, joox.com, y.qq.com, '*.y.qq.com', streamoc.music.tc.qq.com, mobileoc.music.tc.qq.com, isure.stream.qqmusic.qq.com, dl.stream.qqmusic.qq.com, aqqmusic.tc.qq.com, amobile.music.tc.qq.com, '*.xiami.com', '*.music.migu.cn', music.migu.cn, proxy.golang.org, '*.mcdn.bilivideo.cn', '*.cmpassport.com', id6.me, 'open.e.189.cn', mdn.open.wo.cn, opencloud.wostore.cn, auth.wosms.cn, '*.jegotrip.com.cn', '*.icitymobile.mobi', '*.pingan.com.cn', '*.cmbchina.com', '*.10099.com.cn', pool.ntp.org, '*.pool.ntp.org', 'ntp.*.com', 'time.*.com', 'ntp?.*.com', 'time?.*.com', 'time.*.gov', 'time.*.edu.cn', '*.ntp.org.cn', 'PDC._msDCS.*.*', 'DC._msDCS.*.*', 'GC._msDCS.*.*'],
   # 解析非 IP 的 dns 用的 dns 服务器,只支持纯 IP
   default-nameserver: [223.5.5.5, 119.29.29.29]
   # 默认的域名解析服务器
@@ -137,7 +137,7 @@ proxy-groups:
 
   - {name: 广告拦截, type: select, proxies: [REJECT, DIRECT], icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png}
 
-  - {name: 兜底分流, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color//Final.png}
+  - {name: 兜底分流, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png}
 
   #节点地区分组
 
