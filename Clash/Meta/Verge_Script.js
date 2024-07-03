@@ -2,7 +2,7 @@
 //
 // Clash Verg Rev Version ≥ 1.6.2
 //
-// 最后更新时间: 2024-07-03 20:30
+// 最后更新时间: 2024-07-03 20:50
 
 // DNS 配置
 const dnsConfig = {
@@ -11,10 +11,83 @@ const dnsConfig = {
   "ipv6": true,
   "enhanced-mode": "fake-ip",
   "fake-ip-range": "198.18.0.1/16",
-  "fake-ip-filter": ['*.lan','*.direct', cable.auth.com, '*.msftconnecttest.com', '*.msftncsi.com', network-test.debian.org, detectportal.firefox.com, resolver1.opendns.com, '*.srv.nintendo.net', '*.stun.playstation.net', 'xbox.*.microsoft.com', '*.xboxlive.com', 'stun.*', global.turn.twilio.com, global.stun.twilio.com, app.yinxiang.com, injections.adguard.org, local.adguard.org, cable.auth.com, 'localhost.*.qq.com', 'localhost.*.weixin.qq.com', '*.logon.battlenet.com.cn', '*.logon.battle.net', '*.blzstatic.cn', 'music.163.com', '*.music.163.com', '*.126.net', musicapi.taihe.com, music.taihe.com, songsearch.kugou.com, trackercdn.kugou.com, '*.kuwo.cn', api-jooxtt.sanook.com, api.joox.com, joox.com, y.qq.com, '*.y.qq.com', streamoc.music.tc.qq.com, mobileoc.music.tc.qq.com, isure.stream.qqmusic.qq.com, dl.stream.qqmusic.qq.com, aqqmusic.tc.qq.com, amobile.music.tc.qq.com, '*.xiami.com', '*.music.migu.cn', music.migu.cn, proxy.golang.org, '*.mcdn.bilivideo.cn', '*.cmpassport.com', id6.me, 'open.e.189.cn', mdn.open.wo.cn, opencloud.wostore.cn, auth.wosms.cn, '*.jegotrip.com.cn', '*.icitymobile.mobi', '*.pingan.com.cn', '*.cmbchina.com', '*.10099.com.cn', pool.ntp.org, '*.pool.ntp.org', 'ntp.*.com', 'time.*.com', 'ntp?.*.com', 'time?.*.com', 'time.*.gov', 'time.*.edu.cn', '*.ntp.org.cn', 'PDC._msDCS.*.*', 'DC._msDCS.*.*', 'GC._msDCS.*.*'],
+  "fake-ip-filter":[
+    "*.lan",
+    "*.direct",
+    "cable.auth.com",
+    "*.msftconnecttest.com",
+    "*.msftncsi.com",
+    "network-test.debian.org",
+    "detectportal.firefox.com",
+    "resolver1.opendns.com",
+    "*.srv.nintendo.net",
+    "*.stun.playstation.net",
+    "xbox.*.microsoft.com",
+    "*.xboxlive.com",
+    "stun.*",
+    "global.turn.twilio.com",
+    "global.stun.twilio.com",
+    "app.yinxiang.com",
+    "injections.adguard.org",
+    "local.adguard.org",
+    "cable.auth.com",
+    "localhost.*.qq.com",
+    "localhost.*.weixin.qq.com",
+    "*.logon.battlenet.com.cn",
+    "*.logon.battle.net",
+    "*.blzstatic.cn",
+    "music.163.com",
+    "*.music.163.com",
+    "*.126.net",
+    "musicapi.taihe.com",
+    "music.taihe.com",
+    "songsearch.kugou.com",
+    "trackercdn.kugou.com",
+    "*.kuwo.cn",
+    "api-jooxtt.sanook.com",
+    "api.joox.com",
+    "joox.com",
+    "y.qq.com",
+    "*.y.qq.com",
+    "streamoc.music.tc.qq.com",
+    "mobileoc.music.tc.qq.com",
+    "isure.stream.qqmusic.qq.com",
+    "dl.stream.qqmusic.qq.com",
+    "aqqmusic.tc.qq.com",
+    "amobile.music.tc.qq.com",
+    "*.xiami.com",
+    "*.music.migu.cn",
+    "music.migu.cn",
+    "proxy.golang.org",
+    "*.mcdn.bilivideo.cn",
+    "*.cmpassport.com",
+    "id6.me",
+    "open.e.189.cn",
+    "mdn.open.wo.cn",
+    "opencloud.wostore.cn",
+    "auth.wosms.cn",
+    "*.jegotrip.com.cn",
+    "*.icitymobile.mobi",
+    "*.pingan.com.cn",
+    "*.cmbchina.com",
+    "*.10099.com.cn",
+    "pool.ntp.org",
+    "*.pool.ntp.org",
+    "ntp.*.com",
+    "time.*.com",
+    "ntp?.*.com",
+    "time?.*.com",
+    "time.*.gov",
+    "time.*.edu.cn",
+    "*.ntp.org.cn",
+    "PDC._msDCS.*.*",
+    "DC._msDCS.*.*",
+    "GC._msDCS.*.*"
+  ],
   "default-nameserver": ["223.5.5.5", "119.29.29.29"],
   "nameserver": ["quic://223.5.5.5", "quic://223.6.6.6", "https://1.12.12.12/dns-query", "https://120.53.53.53/dns-query"]
 };
+
 
 // 规则集通用配置
 const ruleProviderCommon = {
@@ -66,6 +139,12 @@ const ruleProviders = {
     "behavior": "classical",
     "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Steam.list",
     "path": "./rule-providers/Steam.list"
+  },
+  "Epic": {
+    ...ruleProviderCommon,
+    "behavior": "classical",
+    "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/Epic.list",
+    "path": "./rule-providers/Epic.list"
   },
   "AI": {
     ...ruleProviderCommon,
@@ -199,7 +278,7 @@ function main(config) {
       ...groupBaseOption,
       "name": "手动切换",
       "type": "select",
-      "proxies": ["香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, 欧洲节点, DIRECT"],
+      "proxies": ["香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "欧洲节点", "DIRECT"],
       "include-all": true,
       "icon": "https://github.com/clash-verge-rev/clash-verge-rev/raw/main/src-tauri/icons/icon.png"
     },
