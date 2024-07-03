@@ -1,8 +1,8 @@
 // 参考 Verge 示例 Script 配置
 //
-// Clash Verg Rev Version ≥ 1.6.2
+// Clash Verg Rev Version ≥ 1.7.2
 //
-// 最后更新时间: 2024-07-03 21:50
+// 最后更新时间: 2024-07-03 22:00
 
 
 // 规则集通用配置
@@ -12,7 +12,7 @@ const ruleProviderCommon = {
   "interval": 86400
 };
 
-// 代理组通用配置
+// 策略组通用配置
 const groupBaseOption = {
   "interval": 300,
   "url": "http://latency-test.skk.moe/endpoint",
@@ -28,7 +28,17 @@ function main(config) {
     throw new Error("配置文件中未找到任何代理");
   }
 
-  // 覆盖原配置中 DNS 配置
+  // 覆盖通用配置
+  config["mixed-port"] = "7893";
+  config["tcp-concurrent"] = true;
+  config["allow-lan"] = true;
+  config["ipv6"] = false;
+  config["mode"] = "rule";
+  config["log-level"] = "info";
+  config["find-process-mode"] = "strict";
+  config["global-client-fingerprint"] = "chrome";
+
+  // 覆盖 dns 配置
   config["dns"] = {
     "enable": true,
     "listen": "0.0.0.0:1053",
@@ -116,7 +126,7 @@ function main(config) {
     }
   };
 
-  // 添加新的 geodata 配置
+  // 覆盖 geodata 配置
   config["geodata-mode"] = true;
   config["geox-url"] = {
     "geoip": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat",
@@ -124,7 +134,7 @@ function main(config) {
     "mmdb": "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb"
   };
 
-  // 添加或覆盖 sniffer 配置
+  // 覆盖 sniffer 配置
   config["sniffer"] = {
     "enable": true,
     "parse-pure-ip": true,
@@ -142,7 +152,7 @@ function main(config) {
     }
   };
 
-  // 添加或覆盖 tun 配置
+  // 覆盖 tun 配置
   config["tun"] = {
     "enable": true,
     "stack": "mixed",
@@ -151,7 +161,7 @@ function main(config) {
     "auto-detect-interface": true  
   };
 
-  // 覆盖原配置中的策略组
+  // 覆盖策略组
   config["proxy-groups"] = [
     {
       ...groupBaseOption,
@@ -303,7 +313,7 @@ function main(config) {
     }
   ];
 
-  // 覆盖原配置中的规则集
+  // 覆盖规则集
   config["rule-providers"] = {
     "AD": {
       ...ruleProviderCommon,
@@ -433,7 +443,7 @@ function main(config) {
     }
   };
 
-  // 覆盖原配置中的规则
+  // 覆盖规则
   config["rules"] = [
     "RULE-SET,AD,广告拦截",
     "RULE-SET,AI,AI",
