@@ -4,7 +4,7 @@
 #
 # Clash Verg Rev Version ≥ 1.6.2
 #
-# 最后更新时间: 2024-06-05 08:20
+# 最后更新时间: 2024-07-03 18:55
 #
 # ================
 
@@ -32,13 +32,13 @@ geox-url:
   geosite: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
   mmdb: "https://mirror.ghproxy.com/https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb"
 
-profile:w
+profile:
   # 存储 select 选择记录
   store-selected: true 
   # 持久化 fake-ip
   store-fake-ip: true  
 
-# 嗅探域名 可选配置
+# 嗅探域名
 sniffer:               
   enable: true
   # 是否使用嗅探结果作为实际访问，默认 true
@@ -68,7 +68,7 @@ dns:
   enable: true
   # IPV6解析开关；如果为false，将返回ipv6结果为空
   ipv6: false
-  # 模式：redir-host或fake-ip
+  # DNS处理模式，可选值 normal/fake-ip/redir-host
   enhanced-mode: fake-ip
   # DNS监听地址
   listen: :1053
@@ -76,5 +76,9 @@ dns:
   fake-ip-range: 198.18.0.1/16
   # fakeip 过滤，以下地址不会下发 fakeip 映射用于连接
   fake-ip-filter: ['*.lan','*.direct', cable.auth.com, '*.msftconnecttest.com', '*.msftncsi.com', network-test.debian.org, detectportal.firefox.com, resolver1.opendns.com, '*.srv.nintendo.net', '*.stun.playstation.net', xbox.*.microsoft.com, '*.xboxlive.com', stun.*, global.turn.twilio.com, global.stun.twilio.com, app.yinxiang.com, injections.adguard.org, local.adguard.org, cable.auth.com, localhost.*.qq.com, localhost.*.weixin.qq.com, '*.logon.battlenet.com.cn', '*.logon.battle.net', '*.blzstatic.cn', music.163.com, '*.music.163.com', '*.126.net', musicapi.taihe.com, music.taihe.com, songsearch.kugou.com, trackercdn.kugou.com, '*.kuwo.cn', api-jooxtt.sanook.com, api.joox.com, joox.com, y.qq.com, '*.y.qq.com', streamoc.music.tc.qq.com, mobileoc.music.tc.qq.com, isure.stream.qqmusic.qq.com, dl.stream.qqmusic.qq.com, aqqmusic.tc.qq.com, amobile.music.tc.qq.com, '*.xiami.com', '*.music.migu.cn', music.migu.cn, proxy.golang.org, '*.mcdn.bilivideo.cn', '*.cmpassport.com', id6.me, open.e.189.cn, mdn.open.wo.cn, opencloud.wostore.cn, auth.wosms.cn, '*.jegotrip.com.cn', '*.icitymobile.mobi', '*.pingan.com.cn', '*.cmbchina.com', '*.10099.com.cn', pool.ntp.org, '*.pool.ntp.org', ntp.*.com, time.*.com, 'ntp?.*.com', 'time?.*.com', time.*.gov, time.*.edu.cn, '*.ntp.org.cn', PDC._msDCS.*.*, DC._msDCS.*.*, GC._msDCS.*.*]
-  #默认的域名解析服务器
-  nameserver: [quic://223.5.5.5, quic://223.6.6.6, https://1.12.12.12/dns-query, https://120.53.53.53/dns-query]                     
+  # 默认的域名解析服务器
+  nameserver: [223.5.5.5, 119.29.29.29]
+  # 指定域名查询的解析服务器，可使用 geosite, 优先于 nameserver/fallback 查询
+  nameserver-policy:
+  'geosite:cn': system
+  'geosite:gfw,geolocation-!cn': [quic://223.5.5.5, quic://223.6.6.6, https://1.12.12.12/dns-query, https://120.53.53.53/dns-query]
