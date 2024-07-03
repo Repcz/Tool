@@ -8217,10 +8217,6 @@ HOST,thirdparty.biliapi.com,REJECT
 #URL-REGEX,https:\/\/app\.bilibili\.com\/x\/v2\/rank\.*rid=(168|5)
 #URL-REGEX,https:\/\/api\.bilibili\.com\/pgc\/season\/rank\/cn
 
-# > OpenAI
-HOST,o33249.ingest.sentry.io,REJECT
-HOST,openaicom.imgix.net,REJECT
-
 # > Didi
 #URL-REGEX,https:\/\/img-ys011\.didistatic\.com\/static\/ad_oss\/image-\d{4}-\d{4}\/
 
