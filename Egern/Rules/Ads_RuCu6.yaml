@@ -95,8 +95,7 @@ domain_set:
 - ipv4.music.163.com
 - ipv6.music.163.com
 - huodong.weibo.cn
-- wxsnsdy.wxs.qq.com
-- wxsnsdythumb.wxs.qq.com
+- badjs.weixinbridge.com
 - sdkconfig.ad.xiaomi.com
 - tong.8888888888.bid
 - acs4baichuan.m.taobao.com
@@ -167,9 +166,7 @@ domain_keyword_set:
 - -adsystem.com
 - trace.qq.com
 - trace.video.qq.com
-- kc.saigmpl.com
-- kcc.fwxhvvd.com
-- kg.oiocklg.com
+- 4240585f1fb7266
 domain_regex_set:
 ip_cidr_set:
 - 203.107.1.1/24
@@ -177,11 +174,6 @@ ip_cidr_set:
 - 180.76.76.200/32
 - 101.124.19.122/32
 - 103.37.155.60/32
-- 47.56.131.76/32
-- 47.97.215.55/32
-- 47.99.42.29/32
-- 120.27.235.201/32
-- 121.196.197.147/32
 - 47.110.187.87/32
 - 103.41.167.237/32
 - 118.89.204.198/32
