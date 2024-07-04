@@ -4,7 +4,7 @@
 #!author = 可莉🅥 VirgilClyne
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/HTTPDNS.png
-#!date = 2024-07-02 00:56:06
+#!date = 2024-07-04 17:33:25
 
 [Rule]
 # YY语音
@@ -152,6 +152,7 @@ IP-CIDR6, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128, REJECT, no-resolve
 [Rewrite]
 https:\/\/203\.107\.1\.97/\d+/ss
 https:\/\/203\.107\.1\.33/\d+/ss
+^https:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/http\/urlConfig\.do$ reject-dict // 网易邮箱
 
 [Mitm]
-hostname = 119.29.29.29, 203.107.1.97, 203.107.1.33
+hostname = 119.29.29.29, 203.107.1.97, 203.107.1.33, appconf.mail.163.com
