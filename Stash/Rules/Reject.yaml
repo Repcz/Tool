@@ -173,6 +173,7 @@ payload:
   - DOMAIN,ark.letv.com
   - DOMAIN,asimgs.pplive.cn
   - DOMAIN,atrace.chelaile.net.cn
+  - DOMAIN,badjs.weixinbridge.com
   - DOMAIN,baichuan-sdk.alicdn.com
   - DOMAIN,banners.itunes.apple.com
   - DOMAIN,brahe.apptimize.com
@@ -425,6 +426,7 @@ payload:
   - DOMAIN-KEYWORD,-ad-sign.byteimg.com
   - DOMAIN-KEYWORD,-adsystem.com
   - DOMAIN-KEYWORD,112wan
+  - DOMAIN-KEYWORD,4240585f1fb7266
   - DOMAIN-KEYWORD,789htbet
   - DOMAIN-KEYWORD,adform
   - DOMAIN-KEYWORD,ads.g.doubleclick

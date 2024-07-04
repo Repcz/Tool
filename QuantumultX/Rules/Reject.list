@@ -172,6 +172,7 @@ HOST,apppv.zol.com.cn,REJECT
 HOST,ark.letv.com,REJECT
 HOST,asimgs.pplive.cn,REJECT
 HOST,atrace.chelaile.net.cn,REJECT
+HOST,badjs.weixinbridge.com,REJECT
 HOST,baichuan-sdk.alicdn.com,REJECT
 HOST,banners.itunes.apple.com,REJECT
 HOST,brahe.apptimize.com,REJECT
@@ -424,6 +425,7 @@ HOST,zxid-m.mobileservice.cn,REJECT
 HOST-KEYWORD,-ad-sign.byteimg.com,REJECT
 HOST-KEYWORD,-adsystem.com,REJECT
 HOST-KEYWORD,112wan,REJECT
+HOST-KEYWORD,4240585f1fb7266,REJECT
 HOST-KEYWORD,789htbet,REJECT
 HOST-KEYWORD,adform,REJECT
 HOST-KEYWORD,ads.g.doubleclick,REJECT
