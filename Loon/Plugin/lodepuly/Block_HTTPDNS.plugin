@@ -4,7 +4,7 @@
 #!author = 可莉🅥 VirgilClyne
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/HTTPDNS.png
-#!date = 2024-07-04 17:33:25
+#!date = 2024-07-05 17:19:31
 
 [Rule]
 # YY语音
@@ -101,7 +101,6 @@ IP-CIDR6, 2402:db40:5100:1011::5/128, REJECT, no-resolve
 IP-CIDR, 103.224.222.208/32, REJECT, no-resolve
 
 # 腾讯云
-URL-REGEX, ^https?:\/\/119\.29\.29\.29\/d, REJECT
 IP-CIDR, 119.29.29.98/32, REJECT, no-resolve
 IP-CIDR, 119.29.29.99/32, REJECT, no-resolve
 
@@ -150,9 +149,11 @@ IP-CIDR, 118.89.204.198/23, REJECT, no-resolve
 IP-CIDR6, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128, REJECT, no-resolve
 
 [Rewrite]
-https:\/\/203\.107\.1\.97/\d+/ss
-https:\/\/203\.107\.1\.33/\d+/ss
-^https:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/http\/urlConfig\.do$ reject-dict // 网易邮箱
+^https?:\/\/119\.29\.29\.29\/d reject
+^https?:\/\/203\.107\.1\.97/\d+/ss // 小川在线HTTPDNS
+^https?:\/\/203\.107\.1\.33/\d+/ss // 小川在线HTTPDNS
+^https?:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/http\/urlConfig\.do$ reject-dict // 网易邮箱
+^https?:\/\/amdc\.alipay\.com\/query // 闲鱼
 
 [Mitm]
-hostname = 119.29.29.29, 203.107.1.97, 203.107.1.33, appconf.mail.163.com
+hostname = 119.29.29.29, 203.107.1.97, 203.107.1.33, appconf.mail.163.com, amdc.alipay.com
