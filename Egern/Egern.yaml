@@ -6,7 +6,7 @@
 #
 # Egern Version ≥ 1.16.0
 #
-# 最后更新时间: 2024-06-04 18:40
+# 最后更新时间: 2024-07-05 18:10
 #
 # ================
 
@@ -53,7 +53,6 @@ policy_groups:
     - 狮城节点
     - 日本节点
     - 台湾节点
-    - 欧洲节点
     - 手动选择
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
 - select:
@@ -64,7 +63,6 @@ policy_groups:
     - 狮城节点
     - 日本节点
     - 台湾节点
-    - 欧洲节点
     - 手动选择
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
 - select:
@@ -75,7 +73,6 @@ policy_groups:
     - 狮城节点
     - 日本节点
     - 台湾节点
-    - 欧洲节点
     - 手动选择
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png
 - select:
@@ -86,7 +83,6 @@ policy_groups:
     - 狮城节点
     - 日本节点
     - 台湾节点
-    - 欧洲节点
     - 手动选择
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png
 - select:
@@ -97,7 +93,6 @@ policy_groups:
     - 狮城节点
     - 日本节点
     - 台湾节点
-    - 欧洲节点
     - 手动选择
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
 - select:
@@ -108,7 +103,6 @@ policy_groups:
     - 狮城节点
     - 日本节点
     - 台湾节点
-    - 欧洲节点
     - 手动选择
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png
 - select:
@@ -119,7 +113,6 @@ policy_groups:
     - 狮城节点
     - 日本节点
     - 台湾节点
-    - 欧洲节点
     - 手动选择
     icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png
 - select:
@@ -130,7 +123,6 @@ policy_groups:
     - 狮城节点
     - 日本节点
     - 台湾节点
-    - 欧洲节点
     - 手动选择
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png
 - select:
@@ -147,7 +139,6 @@ policy_groups:
     - 狮城节点
     - 日本节点
     - 台湾节点
-    - 欧洲节点
     - 手动选择
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
 - auto_test:
@@ -190,14 +181,6 @@ policy_groups:
     filter: (?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)
     tolerance: 0
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png
-- auto_test:
-    name: 欧洲节点
-    policies:
-    - 手动选择
-    flatten: true
-    filter: 🇬🇧|🇫🇷|🇳🇱|🇮🇸|🇩🇪|🇺🇦|🇨🇭|🇪🇺
-    tolerance: 0
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/European_Union.png
 
 rules:
 - rule_set:
