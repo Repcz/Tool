@@ -4,7 +4,7 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/KeLee.png
-#!date = 2024-07-04 17:39:23
+#!date = 2024-07-05 15:56:44
 
 [Rule]
 # 广告联盟放行
@@ -21,7 +21,6 @@ DOMAIN, mon.zijieapi.com, REJECT
 DOMAIN, mssdk-bu.bytedance.com, REJECT
 DOMAIN, toblog.ctobsnssdk.com, REJECT
 DOMAIN, lf-cdn-tos.bytescm.com, REJECT
-# DOMAIN-KEYWORD, -sign.douyinpic.com, REJECT
 DOMAIN-KEYWORD, -be-pack-sign.pglstatp-toutiao.com, REJECT
 DOMAIN-KEYWORD, -be-pack.pglstatp-toutiao.com, REJECT
 DOMAIN-KEYWORD, -fe-tos.pglstatp-toutiao.com, REJECT
@@ -46,6 +45,17 @@ DOMAIN-SUFFIX, admobile.top, REJECT
 
 # 极光 - 广告服务商
 DOMAIN-SUFFIX, jiguang.cn, REJECT
+DOMAIN-SUFFIX, jpush.cn, REJECT
+# DOMAIN, ce3e75d5.jpush.cn, REJECT
+# DOMAIN, config.jpush.cn, REJECT
+# DOMAIN, status-ipv6.jpush.cn, REJECT
+# DOMAIN, tsis.jpush.cn, REJECT
+# DOMAIN, ali-stats.jpush.cn, REJECT
+# DOMAIN, sis-ipv6.jpush.cn, REJECT
+# DOMAIN, s.jpush.cn, REJECT
+# DOMAIN, gd-stats.jpush.cn, REJECT
+# DOMAIN, smartop-sdkapi.jiguang.cn, REJECT
+# DOMAIN, sdk.verification.jiguang.cn, REJECT
 
 # 百度联盟 - 广告服务商
 DOMAIN, mobads.baidu.com, REJECT
