@@ -7,10 +7,10 @@ if ($request.url.includes("/oc/exhibitions/template/resources")) {
     if (json.pits && json.pits[0]) {
         delete json.pits[0].delivery_materials;
     }
-    // 移除首页会员入口
-    if (json.pits && json.pits[1]) {
-        delete json.pits[1].materials;
-    }
+    // // 移除首页会员入口
+    // if (json.pits && json.pits[1]) {
+    //     delete json.pits[1].materials;
+    // }
 }
 
 if ($request.url.includes("/oc/exhibitions/app_mine/resources")) {

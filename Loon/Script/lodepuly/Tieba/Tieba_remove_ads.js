@@ -18,6 +18,8 @@ if (url.includes("/sidebar/home")) {
     
 if (url.includes("/frs/frsBottom")) {
     delete obj.card_activity.small_card;
+    delete obj.card_activity.big_card;
+    delete obj.ai_chatroom_guide;
     }
     
 if (url.includes("/user/profile")) {
@@ -54,3 +56,4 @@ if (url.includes("/livefeed/feed")) {
 }
 
 $done({body: JSON.stringify(obj)});
+

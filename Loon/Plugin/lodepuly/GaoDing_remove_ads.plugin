@@ -4,14 +4,14 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/GaoDing.png
-#!date = 2024-07-06 23:15:00
+#!date = 2024-07-07 00:32:37
 
 [Rewrite]
 # 开屏广告
 ^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/v\d\/delivery-pits\/ios-splash\/modules$ reject-dict
 
 # 模板中心弹窗
-^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/delivery-pits\/template-page-dialog\/modules$ reject-dict
+^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/delivery-pits\/(template|mine)-page-dialog\/modules$ reject-dict
 
 # 搜索栏填充词
 ^https:\/\/www\.gaoding\.com\/api\/v3\/cp\/search-words\/v2\/placeholder reject-dict
