@@ -1,27 +1,22 @@
-// 2024-07-06 22:29:43
+// 2024-07-06 23:06:39
+
 var json = JSON.parse($response.body);
 
-// 检查 URL 路径是否包含 /oc/exhibitions/template/resources
 if ($request.url.includes("/oc/exhibitions/template/resources")) {
-    // 设置 pits[2].delivery_materials 的所有属性值为空字符串
-    if (json.pits && json.pits[0] && json.pits[0].delivery_materials) {
-        json.pits[0].delivery_materials.forEach(function (bannerData) {
-            for (var prop in bannerData) {
-                bannerData[prop] = "";
-            }
-        });
+    // 移除首页轮播图
+    if (json.pits && json.pits[0]) {
+        delete json.pits[0].delivery_materials;
+    }
+    // 移除首页会员入口
+    if (json.pits && json.pits[1]) {
+        delete json.pits[1].materials;
     }
 }
 
-// 检查 URL 路径是否包含 /oc/exhibitions/app_mine/resources
 if ($request.url.includes("/oc/exhibitions/app_mine/resources")) {
-    // 设置 pits[2].delivery_materials 的所有属性值为空字符串
-    if (json.pits && json.pits[2] && json.pits[2].delivery_materials) {
-        json.pits[2].delivery_materials.forEach(function (bannerData) {
-            for (var prop in bannerData) {
-                bannerData[prop] = "";
-            }
-        });
+    // 移除我的页面轮播图
+    if (json.pits && json.pits[2]) {
+        delete json.pits[2].delivery_materials;
     }
 }
 
