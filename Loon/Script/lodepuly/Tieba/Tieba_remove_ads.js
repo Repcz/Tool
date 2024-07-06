@@ -1,65 +1,54 @@
-// 2024-07-06 11:30:17
-var json = JSON.parse($response.body);
+// 2024-07-06 12:01:26
 
-// 删除签到内容
-if (json.user.user_growth.task_info[1]) {
-    delete json.user.user_growth.task_info[1];
+const url = $request.url;
+let obj;
+try {
+    obj = JSON.parse($response.body);
+} catch (error) {
+    console.error("JSON 解析错误：", error);
+    $done({});
+    return;
 }
 
-// 删除金融内容
-if (json.finance_tab) {
-    delete json.finance_tab;
+// 清理侧拉抽屉
+if (url.includes("/sidebar/home")) {
+    delete obj.vip_banner;
+    delete obj.tools;
+    }
+
+// 清理会员横幅、金融板块、小程序
+if (url.includes("/user/profile")) {
+    delete obj.vip_banner; // 会员
+    delete obj.finance_tab; // 金融
+    delete obj.namoaixud_entry; // 金融
+    delete obj.zone_info; // 金融
+    delete obj.banner; // 金融
+    delete obj.duxiaoman_entry; // 金融
+    delete obj.recom_naws_list; // 小程序
 }
 
-if (json.namoaixud_entry) {
-    delete json.namoaixud_entry;
+if (obj.hasOwnProperty("user") && obj["user"].hasOwnProperty("user_growth")) {
+    delete obj["user"]["user_growth"];
 }
 
-if (json.zone_info) {
-    delete json.zone_info;
+const typesToRemove = [60, 53,  58, 50, 10, 64, 51, 52, 55, 57, 62];
+
+if (obj.custom_grid && Array.isArray(obj.custom_grid)) {
+    obj.custom_grid = obj.custom_grid.filter(item => !typesToRemove.includes(item.type));
 }
 
-if (json.banner) {
-    delete json.banner;
-}
-if (json.duxiaoman_entry) {
-    delete json.duxiaoman_entry;
-}
-
-
-// 精简常用功能
-// if (json.custom_grid[4]) {
-//     delete json.custom_grid[4];
-// }
-
-// if (json.custom_grid[5]) {
-//     delete json.custom_grid[5];
-// }
-
-// if (json.custom_grid[6]) {
-//     delete json.custom_grid[6];
-// }
-
-// if (json.custom_grid[10]) {
-//     delete json.custom_grid[10];
-// }
-
-// if (json.custom_grid[11]) {
-//     delete json.custom_grid[11];
-// }
-
-// if (json.custom_grid[12]) {
-//     delete json.custom_grid[12];
-// }
-
-// 删除小程序列表
-if (json.recom_naws_list) {
-    delete json.recom_naws_list;
+if (url.includes('c/s/sync')) {
+    delete obj.floating_icon?.homepage?.icon_url;
+    delete obj.floating_icon?.pb?.icon_url
+    delete obj.mainbar;
+    delete obj.duxiaoman_url;
+    delete obj.whitelist;
+    delete obj.yy_live_tab;
 }
 
-if (json.recom_swan_list) {
-    delete json.recom_swan_list;
+if (url.includes("/livefeed/feed")) {
+    delete obj.data?.banner?.items;
 }
 
-// console.log(json);
-$done({ body: JSON.stringify(json) });
+$done({body: JSON.stringify(obj)});
+
