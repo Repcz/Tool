@@ -1,4 +1,4 @@
-// 2024-07-06 12:01:26
+// 2024-07-06 17:18:14
 
 const url = $request.url;
 let obj;
@@ -15,8 +15,11 @@ if (url.includes("/sidebar/home")) {
     delete obj.vip_banner;
     delete obj.tools;
     }
-
-// 清理会员横幅、金融板块、小程序
+    
+if (url.includes("/frs/frsBottom")) {
+    delete obj.card_activity.small_card;
+    }
+    
 if (url.includes("/user/profile")) {
     delete obj.vip_banner; // 会员
     delete obj.finance_tab; // 金融
@@ -51,4 +54,3 @@ if (url.includes("/livefeed/feed")) {
 }
 
 $done({body: JSON.stringify(obj)});
-
