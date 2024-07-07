@@ -4,7 +4,7 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/KeLee.png
-#!date = 2024-07-06 11:57:35
+#!date = 2024-07-07 15:28:51
 
 [Rule]
 # 广告联盟放行
@@ -21,6 +21,7 @@ DOMAIN, mon.zijieapi.com, REJECT
 DOMAIN, mssdk-bu.bytedance.com, REJECT
 DOMAIN, toblog.ctobsnssdk.com, REJECT
 DOMAIN, lf-cdn-tos.bytescm.com, REJECT
+DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT
 DOMAIN-KEYWORD, -be-pack-sign.pglstatp-toutiao.com, REJECT
 DOMAIN-KEYWORD, -be-pack.pglstatp-toutiao.com, REJECT
 DOMAIN-KEYWORD, -fe-tos.pglstatp-toutiao.com, REJECT
