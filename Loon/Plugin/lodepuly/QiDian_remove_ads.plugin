@@ -4,10 +4,10 @@
 #!author = app2smile
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/QiDian.png
-#!date = 2024-05-10 15:52:06
+#!date = 2024-07-07 15:54:03
 
 [Script]
-http-response ^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/(v4\/client\/getsplashscreen|v2\/deeplink\/geturl|v1\/(client\/getconf$|bookshelf\/getHoverAdv|adv\/getadvlistbatch\?positions=iOS_tab|dailyrecommend\/getdailyrecommend)) script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/QiDian/QiDian_remove_ads.js, requires-body = true, tag = 起点读书去广告
+http-response =^https:\/\/magev6\.if\.qidian\.com\/argus\/api\/(v4\/client\/getsplashscreen|v2\/(deeplink\/geturl|dailyrecommend\/getdailyrecommend)|v1\/(client\/getconf$|bookshelf\/getHoverAdv|adv\/getadvlistbatch\?positions=iOS_tab)) script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/QiDian/QiDian_remove_ads.js, requires-body = true, tag = 起点读书去广告
 
 [Mitm]
 hostname = magev6.if.qidian.com
