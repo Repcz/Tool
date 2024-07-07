@@ -1,5 +1,5 @@
 /*
-脚本引用https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js
+脚本引用 https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-proto.js
 */
 console.log('2024-06-08');
 // text-decoder

@@ -1,5 +1,5 @@
 /*
-脚本引用https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js
+脚本引用 https://raw.githubusercontent.com/app2smile/rules/master/js/tieba-json.js
 */
 const url = $request.url;
 const method = $request.method;
@@ -256,3 +256,4 @@ function removeLive(threadList) {
     }
     return newThreadList;
 }
+
