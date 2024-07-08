@@ -1,5 +1,7 @@
-// 2024-07-06 17:18:14
-
+/*
+脚本引用 https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/TB.js
+更新时间 2024-07-08 10:50:32
+*/
 const url = $request.url;
 let obj;
 try {
@@ -41,7 +43,7 @@ const typesToRemove = [60, 53,  58, 50, 10, 64, 51, 52, 55, 57, 62];
 if (obj.custom_grid && Array.isArray(obj.custom_grid)) {
     obj.custom_grid = obj.custom_grid.filter(item => !typesToRemove.includes(item.type));
 }
-
+/*
 if (url.includes('c/s/sync')) {
     delete obj.floating_icon?.homepage?.icon_url;
     delete obj.floating_icon?.pb?.icon_url
@@ -50,10 +52,9 @@ if (url.includes('c/s/sync')) {
     delete obj.whitelist;
     delete obj.yy_live_tab;
 }
-
+*/
 if (url.includes("/livefeed/feed")) {
     delete obj.data?.banner?.items;
 }
 
 $done({body: JSON.stringify(obj)});
-
