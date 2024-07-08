@@ -1,36 +1,48 @@
-#########################################
-# Sukka's Ruleset - AIGC Domains
-# Last Updated: 2024-04-23T05:16:56.286Z
-# Size: 25
-# License: AGPL 3.0
-# Homepage: https://ruleset.skk.moe
-# GitHub: https://github.com/SukkaW/Surge
-#
-# This file contains domains of OpenAI,Claude.
-#########################################
-DOMAIN,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe
-DOMAIN,ai.google.dev
-DOMAIN,alkalicore-pa.clients6.google.com
-DOMAIN,alkalimakersuite-pa.clients6.google.com
-DOMAIN-SUFFIX,openai.com
+# 2024-07-08 12:57:55
+# ChatGPT
+AND,((DOMAIN-KEYWORD,chatgpt-async-webps-prod-eastus-),(DOMAIN-SUFFIX,webpubsub.azure.com))
+DOMAIN,chat.openai.com.cdn.cloudflare.net
+DOMAIN,o33249.ingest.sentry.io
+DOMAIN,openaiapi-site.azureedge.net
+DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+DOMAIN,openaicom.imgix.net
+DOMAIN,openaicomproductionae4b.blob.core.windows.net
+DOMAIN,production-openaicom-storage.azureedge.net
+DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,ai.com
-DOMAIN-SUFFIX,x.ai
-DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,openai.com
+
+# Copilot
+DOMAIN,api.githubcopilot.com
+DOMAIN,copilot-proxy.githubusercontent.com
+DOMAIN,copilot.microsoft.com
+DOMAIN,sydney.bing.com
+DOMAIN,www.bing.com
+
+# Gemini
+DOMAIN,bard.google.com
+DOMAIN,gemini.google.com
+DOMAIN,generativelanguage.googleapis.com
+DOMAIN,ai.google.dev
+DOMAIN,aida.googleapis.com
+DOMAIN,aistudio.google.com
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,makersuite.google.com
+
+# Claude
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,bard.google.com
-DOMAIN-SUFFIX,gemini.google.com
-DOMAIN-SUFFIX,deepmind.com
-DOMAIN-SUFFIX,deepmind.google
-DOMAIN-SUFFIX,generativelanguage.googleapis.com
-DOMAIN-SUFFIX,geller-pa.googleapis.com
-DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
-DOMAIN-SUFFIX,makersuite.google.com
-DOMAIN-SUFFIX,generativeai.google
-DOMAIN-SUFFIX,poe.com
+IP-CIDR,160.79.104.0/23,no-resolve
+IP-CIDR6,2607:6bc0::/48,no-resolve
+
+# JetBrains AI
+DOMAIN-SUFFIX,grazie.ai
+DOMAIN-SUFFIX,grazie.aws.intellij.net
+
+# Meta
+DOMAIN,imagine.meta.com
 DOMAIN-SUFFIX,meta.ai
-DOMAIN-KEYWORD,openai
-################## EOF ##################
+
+# Perplexity
+DOMAIN-SUFFIX,perplexity.ai
