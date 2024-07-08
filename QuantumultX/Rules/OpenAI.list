@@ -1,34 +1,48 @@
-# 2024-04-15 10:00:44
-HOST,api.statsig.com,PROXY
-HOST,browser-intake-datadoghq.com,PROXY
-HOST,cdn.openai.com,PROXY
-HOST,chat.openai.com,PROXY
+# 2024-07-08 12:57:55
+# ChatGPT
+#AND,((HOST-KEYWORD,chatgpt-async-webps-prod-eastus-),(HOST-SUFFIX,webpubsub.azure.com))
 HOST,chat.openai.com.cdn.cloudflare.net,PROXY
-HOST,ios.chat.openai.com,PROXY
 HOST,o33249.ingest.sentry.io,PROXY
-HOST,openai-api.arkoselabs.com,PROXY
+HOST,openaiapi-site.azureedge.net,PROXY
 HOST,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net,PROXY
+HOST,openaicom.imgix.net,PROXY
 HOST,openaicomproductionae4b.blob.core.windows.net,PROXY
 HOST,production-openaicom-storage.azureedge.net,PROXY
-HOST,static.cloudflareinsights.com,PROXY
-HOST-SUFFIX,algolia.net,PROXY
-HOST-SUFFIX,auth0.com,PROXY
 HOST-SUFFIX,chatgpt.com,PROXY
-HOST-SUFFIX,challenges.cloudflare.com,PROXY
-HOST-SUFFIX,client-api.arkoselabs.com,PROXY
-HOST-SUFFIX,events.statsigapi.net,PROXY
-HOST-SUFFIX,featuregates.org,PROXY
-HOST-SUFFIX,identrust.com,PROXY
-HOST-SUFFIX,intercom.io,PROXY
-HOST-SUFFIX,intercomcdn.com,PROXY
-HOST-SUFFIX,launchdarkly.com,PROXY
 HOST-SUFFIX,oaistatic.com,PROXY
 HOST-SUFFIX,oaiusercontent.com,PROXY
-HOST-SUFFIX,observeit.net,PROXY
 HOST-SUFFIX,openai.com,PROXY
-HOST-SUFFIX,openaiapi-site.azureedge.net,PROXY
-HOST-SUFFIX,openaicom.imgix.net,PROXY
-HOST-SUFFIX,segment.io,PROXY
-HOST-SUFFIX,sentry.io,PROXY
-HOST-SUFFIX,stripe.com,PROXY
-HOST-KEYWORD,openaicom-api,PROXY
+
+# Copilot
+HOST,api.githubcopilot.com,PROXY
+HOST,copilot-proxy.githubusercontent.com,PROXY
+HOST,copilot.microsoft.com,PROXY
+HOST,sydney.bing.com,PROXY
+HOST,www.bing.com,PROXY
+
+# Gemini
+HOST,bard.google.com,PROXY
+HOST,gemini.google.com,PROXY
+HOST,generativelanguage.googleapis.com,PROXY
+HOST,ai.google.dev,PROXY
+HOST,aida.googleapis.com,PROXY
+HOST,aistudio.google.com,PROXY
+HOST,alkalimakersuite-pa.clients6.google.com,PROXY
+HOST,makersuite.google.com,PROXY
+
+# Claude
+HOST-SUFFIX,anthropic.com,PROXY
+HOST-SUFFIX,claude.ai,PROXY
+IP-CIDR,160.79.104.0/23,PROXY
+IP6-CIDR,2607:6bc0::/48,PROXY
+
+# JetBrains AI
+HOST-SUFFIX,grazie.ai,PROXY
+HOST-SUFFIX,grazie.aws.intellij.net,PROXY
+
+# Meta
+HOST,imagine.meta.com,PROXY
+HOST-SUFFIX,meta.ai,PROXY
+
+# Perplexity
+HOST-SUFFIX,perplexity.ai,PROXY
