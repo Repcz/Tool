@@ -4,7 +4,7 @@
 #!author = 可莉🅥 VirgilClyne
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/HTTPDNS.png
-#!date = 2024-07-07 00:56:16
+#!date = 2024-07-09 13:07:34
 
 [Rule]
 # YY语音
@@ -36,13 +36,49 @@ AND, ((IP-CIDR, 220.243.141.0/32, no-resolve), (DEST-PORT, 6443)), REJECT
 DOMAIN, dns.weixin.qq.com, REJECT
 DOMAIN, dns.weixin.qq.com.cn, REJECT
 DOMAIN, aedns.weixin.qq.com, REJECT
+IP-CIDR, 39.156.140.30/32, REJECT, no-resolve
+IP-CIDR, 39.156.140.47/32, REJECT, no-resolve
+IP-CIDR, 39.156.140.245/32, REJECT, no-resolve
+IP-CIDR, 42.81.232.18/32, REJECT, no-resolve
 IP-CIDR, 42.187.182.106/32, REJECT, no-resolve
 IP-CIDR, 42.187.182.123/32, REJECT, no-resolve
 IP-CIDR, 42.187.184.154/32, REJECT, no-resolve
-IP-CIDR, 42.81.232.18/32, REJECT, no-resolve
+IP-CIDR, 43.130.30.237/32, REJECT, no-resolve
+IP-CIDR, 43.130.30.240/32, REJECT, no-resolve
+IP-CIDR, 43.137.153.151/32, REJECT, no-resolve
+IP-CIDR, 43.137.159.31/32, REJECT, no-resolve
+IP-CIDR, 43.152.112.101/32, REJECT, no-resolve
+IP-CIDR, 43.153.248.120/32, REJECT, no-resolve
+IP-CIDR, 60.28.172.100/32, REJECT, no-resolve
+IP-CIDR, 61.151.231.157/32, REJECT, no-resolve
+IP-CIDR, 101.32.104.104/32, REJECT, no-resolve
+IP-CIDR, 106.39.206.21/32, REJECT, no-resolve
+IP-CIDR, 106.39.206.25/32, REJECT, no-resolve
+IP-CIDR, 106.39.206.70/32, REJECT, no-resolve
+IP-CIDR, 111.31.201.194/32, REJECT, no-resolve
+IP-CIDR, 111.31.241.76/32, REJECT, no-resolve
+IP-CIDR, 111.31.241.140/32, REJECT, no-resolve
+IP-CIDR, 111.206.147.156/32, REJECT, no-resolve
+IP-CIDR, 111.206.147.210/32, REJECT, no-resolve
+IP-CIDR, 111.206.148.27/32, REJECT, no-resolve
+IP-CIDR, 116.128.177.249/32, REJECT, no-resolve
+IP-CIDR, 116.130.224.150/32, REJECT, no-resolve
+IP-CIDR, 116.130.224.205/32, REJECT, no-resolve
+IP-CIDR, 117.185.247.73/32, REJECT, no-resolve
+IP-CIDR, 123.151.48.171/32, REJECT, no-resolve
+IP-CIDR, 123.151.48.193/32, REJECT, no-resolve
+IP-CIDR, 123.151.48.208/32, REJECT, no-resolve
 IP-CIDR, 123.151.54.50/32, REJECT, no-resolve
-IP-CIDR6, 2402:4e00:1900:1700:0:9554:1ad9:c3a/128, REJECT, no-resolve
+IP-CIDR, 180.153.202.85/32, REJECT, no-resolve
+IP-CIDR, 183.192.196.31/32, REJECT, no-resolve
+IP-CIDR, 203.205.129.102/32, REJECT, no-resolve
+IP-CIDR, 203.205.234.132/32, REJECT, no-resolve
+IP-CIDR, 220.196.159.73/32, REJECT, no-resolve
 IP-CIDR6, 240e:928:1400:10::25/128, REJECT, no-resolve
+IP-CIDR6, 2402:4e00:8030:1::17/128, REJECT, no-resolve
+IP-CIDR6, 2402:4e00:1900:1700:0:9554:1ad9:c3a/128, REJECT, no-resolve
+IP-CIDR6, 2408:8711:10:10::20/128, REJECT, no-resolve
+IP-CIDR6, 2409:8702:4860:10::4d/128, REJECT, no-resolve
 
 # QQ音乐
 DOMAIN, httpdns.kg.qq.com, REJECT
