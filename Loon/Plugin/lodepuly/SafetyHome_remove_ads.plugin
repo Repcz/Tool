@@ -1,0 +1,17 @@
+#!name = 360智慧生活去广告
+#!desc = 移除开屏广告、首页推广横幅、商城入口及我的页面推广。
+#!openUrl = https://apps.apple.com/app/id1488904375
+#!author = 可莉🅥
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/SafetyHome.png
+#!date = 2024-07-09 15:43:16
+
+[Rule]
+DOMAIN, ad.iot.360.cn, REJECT
+
+[Rewrite]
+# 商城入口
+^https:\/\/app\.home\.360\.cn\/v1\/config\/custom_config reject-dict
+
+[Mitm]
+hostname = app.home.360.cn
