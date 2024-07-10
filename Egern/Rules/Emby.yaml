@@ -147,6 +147,7 @@ domain_keyword_set:
 domain_regex_set:
 ip_cidr_set:
 - 202.61.255.248/32
+- 152.53.67.239/32
 - 188.172.228.49/32
 ip_cidr6_set:
 asn_set:

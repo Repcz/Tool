@@ -1,6 +1,6 @@
 
 # 来源： https://github.com/MisakaFxxk/MisakaF_Subconverter/blob/main/Sub/Emby.list
-# 最后更新时间： 2024-06-23 19:33
+# 最后更新时间： 2024-07-10 21:56
 
 
 ##### A #####
@@ -171,6 +171,9 @@ DOMAIN-SUFFIX,emby.cn2gias.uk
 DOMAIN-SUFFIX,post.cn2gias.uk
 
 ##### T #####
+
+# 探花TV
+IP-CIDR,152.53.67.239/32,no-resolve
 
 # TreeDiagram
 DOMAIN-SUFFIX,123456.al
