@@ -4,7 +4,7 @@
 #!author = 可莉🅥 VirgilClyne
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/HTTPDNS.png
-#!date = 2024-07-09 13:07:34
+#!date = 2024-07-10 11:22:49
 
 [Rule]
 # YY语音
@@ -140,6 +140,7 @@ IP-CIDR, 103.224.222.208/32, REJECT, no-resolve
 # 腾讯云
 IP-CIDR, 119.29.29.98/32, REJECT, no-resolve
 IP-CIDR, 119.29.29.99/32, REJECT, no-resolve
+URL-REGEX, ^http:\/\/182\.254\.116\.116\/d, REJECT
 
 # 字节跳动
 DOMAIN, httpdns.volcengineapi.com, REJECT
@@ -186,7 +187,7 @@ IP-CIDR, 118.89.204.198/23, REJECT, no-resolve
 IP-CIDR6, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128, REJECT, no-resolve
 
 [Rewrite]
-^https?:\/\/119\.29\.29\.29\/d reject
+^https?:\/\/119\.29\.29\.29\/d reject // 腾讯DNS
 ^https?:\/\/203\.107\.1\.97/\d+/ss // 小川在线HTTPDNS
 ^https?:\/\/203\.107\.1\.33/\d+/ss // 小川在线HTTPDNS
 ^https?:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/http\/urlConfig\.do$ reject-dict // 网易邮箱

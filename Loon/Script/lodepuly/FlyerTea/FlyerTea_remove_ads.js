@@ -1,4 +1,4 @@
-// 2024-07-10 10:14:08
+// 2024-07-10 10:53:30
 var url = $request.url;
 var body = $response.body;
 
@@ -8,12 +8,13 @@ if (url.includes("/api/mobile/index.php?module=basicdata&type=app_onoff")) {
     // 删除我的页面横幅
     delete banner.Variables.data.xinren;
 
-    // 删除我的页面横幅
     var pathsToClear = [
+        // 删除发帖界面评选推广
         "goodhotel",
         "goodhotel_txt",
         "goodthread",
         "goodthread_txt",
+        // 删除我的页面横幅广告
         "homeinns_already_joined",
         "homeinns_entry",
         "homeinns_entry_banner",
