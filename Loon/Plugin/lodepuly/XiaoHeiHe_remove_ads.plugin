@@ -1,0 +1,18 @@
+#!name = 小黑盒去广告
+#!desc = 移除开屏广告和热点板块信息流广告
+#!openUrl = https://apps.apple.com/app/id1244505010
+#!author = 可莉🅥
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/XiaoHeiHe.png
+#!date = 2024-07-11 07:58:15
+
+[Rewrite]
+# 开屏广告
+^https:\/\/api\.xiaoheihe\.cn\/account\/get_ads_info_v2 reject-dict
+
+[Script]
+# 移除热点板块信息流广告
+http-response ^https:\/\/api\.xiaoheihe\.cn\/bbs\/app\/feeds\/news script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/XiaoHeiHe/XiaoHeiHe_remove_ads.js, requires-body = true, tag = 移除热点板块信息流广告
+
+[Mitm]
+hostname = api.xiaoheihe.cn
