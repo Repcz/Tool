@@ -4,9 +4,11 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/Bank.png
-#!date = 2024-01-15 23:20:17
+#!date = 2024-07-11 19:10:01
 
 [Rule]
+# 建设银行
+DOMAIN, adv.ccb.com, REJECT
 # 广发银行 - 内页广告
 URL-REGEX, ^http:\/\/mps\.95508\.com\/mps\/icppweb\/images\/mps\/migration\/mpspics\/, REJECT
 
@@ -15,6 +17,14 @@ URL-REGEX, ^http:\/\/mps\.95508\.com\/mps\/icppweb\/images\/mps\/migration\/mpsp
 ^https:\/\/static\.95508\.com\/icppweb\/images\/modelMaterial\/advertising\/ reject
 # 广发银行 - 国寿联盟悬浮组件
 ^https:\/\/unionsr\.chinalifeonline\.com\.cn\/gslm\/upload\/ reject-200
+# 中信银行 - 开屏广告 @jFrecht
+^https:\/\/imcs\.citicbank\.com\/cloud\/([a-fA-F0-9]{32})\.(jpg|png)\?width=(1125|1242|750|563|1400|1863)&height=(2436|2688|1624|1218|3031|4032) reject
+# 浦发银行
+^https:\/\/lban\.spdb\.com\.cn\/mspmk-web-component\/getAdvertisementList\.ah$ reject-dict
+^https:\/\/lban\.spdb\.com\.cn\/mspmk-web-component\/getAdvList\.ah$ reject-dict
+^https:\/\/lban\.spdb\.com\.cn\/mspmk-web-component\/prefetchAdvList\.ah reject-dict
+# 招商银行 - 去开屏广告
+^https:\/\/s3gw\.cmbimg\.com\/mbappinitads\/ reject
 
 [Mitm]
-hostname = static.95508.com, unionsr.chinalifeonline.com.cn
+hostname = static.95508.com, unionsr.chinalifeonline.com.cn, imcs.citicbank.com, lban.spdb.com.cn, s3gw.cmbimg.com
