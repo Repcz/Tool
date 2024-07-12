@@ -4,13 +4,16 @@
 #!author = 可莉🅥 VirgilClyne
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/HTTPDNS.png
-#!date = 2024-07-10 11:22:49
+#!date = 2024-07-13 01:04:29
 
 [Rule]
 # YY语音
 DOMAIN, yyapp-httpdns.gslb.yy.com, REJECT
 DOMAIN, union-httpdns.gslb.yy.com, REJECT
 DOMAIN, httpdns-v6.gslb.yy.com, REJECT
+
+# 小川在线HTTPDNS
+URL-REGEX, ^http:\/\/2401:b180:2000:30::1c\/184840\/d, REJECT
 
 # 抖音
 AND, ((DOMAIN-KEYWORD, api100-core-quic-), (DOMAIN-SUFFIX, amemv.com)), REJECT
