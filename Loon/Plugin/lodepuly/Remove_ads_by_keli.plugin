@@ -4,7 +4,7 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/KeLee.png
-#!date = 2024-07-11 01:33:20
+#!date = 2024-07-14 01:34:02
 
 [Rule]
 # 广告联盟放行
@@ -55,7 +55,6 @@ DOMAIN, api.verify.mob.com, REJECT
 DOMAIN, log-verify.mob.com, REJECT
 DOMAIN, sdk.push.mob.com, REJECT
 
-
 # 极光 - 广告服务商
 DOMAIN-SUFFIX, jiguang.cn, REJECT
 DOMAIN-SUFFIX, jpush.cn, REJECT
@@ -98,12 +97,23 @@ DOMAIN-SUFFIX, gdt.qq.com, REJECT
 # 友盟
 DOMAIN, cnlogs.umeng.com, REJECT
 DOMAIN, errlog.umeng.com, REJECT
+DOMAIN, errnewlog.umeng.com, REJECT
 DOMAIN, ucc.umeng.com, REJECT
 DOMAIN, ulogs.umeng.com, REJECT
 DOMAIN, utoken.umeng.com, REJECT
 
+# TANX广告
+DOMAIN, et.tanx.com, REJECT
+
 # 天目 - 广告服务商
 DOMAIN, sdk.tianmu.mobi, REJECT
+
+# 上海优比客思科技有限公司 - 广告服务商
+DOMAIN, e-u1.ubixioe.com, REJECT
+DOMAIN, sdk-data.ubixioe.com, REJECT
+DOMAIN, tower.ubixioe.com, REJECT
+DOMAIN, tx-cfg-u1.ubixioe.com, REJECT
+DOMAIN, tx-data-u1.ubixioe.com, REJECT
 
 # 阿里巴巴
 DOMAIN, ossgw.alicdn.com, REJECT
@@ -205,7 +215,6 @@ URL-REGEX, ^http:\/\/p\.kuaidi100\.com\/advertisement\/, REJECT-DICT
 
 # 京东 - 弃用地址
 DOMAIN, dsp-x.jd.com, REJECT
-DOMAIN, waapdg.jd.com, REJECT
 DOMAIN, xlog.jd.com, REJECT
 DOMAIN, janapi.jd.com, REJECT
 
