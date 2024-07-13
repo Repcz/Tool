@@ -1,6 +1,6 @@
 
 # 来源： https://github.com/MisakaFxxk/MisakaF_Subconverter/blob/main/Sub/Emby.list
-# 最后更新时间： 2024-07-10 21:56
+# 最后更新时间： 2024-07-13 12:50
 
 
 ##### A #####
@@ -46,6 +46,10 @@ HOST-SUFFIX,581658.best,PROXY
 HOST-SUFFIX,emby.ssltd.xyz,PROXY
 
 ##### H #####
+
+# HXD
+HOST-SUFFIX,hxd.as174.com,PROXY
+HOST-SUFFIX,bili.rip,PROXY
 
 # 花云
 HOST-SUFFIX,emby.flowercloud,PROXY
@@ -246,7 +250,6 @@ IP-CIDR,188.172.228.49/32,PROXY
 HOST-SUFFIX,embytv.cf,PROXY
 HOST-SUFFIX,zox.show,PROXY
 HOST-SUFFIX,acemby.org,PROXY
-HOST-SUFFIX,bili.rip,PROXY
 HOST-SUFFIX,misty.ltd,PROXY
 HOST-SUFFIX,ednovas.org,PROXY
 HOST-SUFFIX,deja-vu.beauty,PROXY
