@@ -1,5 +1,5 @@
 #!name = 书旗小说去广告
-#!desc = 移除书城横幅广告、听书广告、阅读广告、章末推荐、福利入口、悬浮窗，精简我的页面。
+#!desc = 移除书城横幅广告、听书广告、阅读广告、章末推荐、福利入口、悬浮窗、推荐搜索词，精简我的页面。
 #!openUrl = https://apps.apple.com/app/id733689509
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
@@ -14,7 +14,7 @@ DOMAIN, render-web.11222.cn, REJECT
 # 阅读页面广告
 ^https:\/\/ocean\.shuqireader\.com\/api\/route\/iosReadPage\/adV2 reject-dict
 ^https:\/\/ocean\.shuqireader\.com\/api\/route\/ios\/readPage$ reject-dict
-# 移除渲染资源 - 移除福利入口、悬浮窗资源、我的页面推广
+# 移除渲染资源 - 移除福利入口、悬浮窗资源、我的页面推广、推荐搜索词
 ^https:\/\/ocean\.shuqireader\.com\/api\/render\/load\/resource reject
 
 [Script]
