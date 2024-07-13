@@ -1,6 +1,6 @@
 
 # 来源： https://github.com/MisakaFxxk/MisakaF_Subconverter/blob/main/Sub/Emby.list
-# 最后更新时间： 2024-07-10 21:56
+# 最后更新时间： 2024-07-13 12:50
 
 
 ##### A #####
@@ -46,6 +46,10 @@ DOMAIN-SUFFIX,581658.best
 DOMAIN-SUFFIX,emby.ssltd.xyz
 
 ##### H #####
+
+# HXD
+DOMAIN-SUFFIX,hxd.as174.com
+DOMAIN-SUFFIX,bili.rip
 
 # 花云
 DOMAIN-SUFFIX,emby.flowercloud
@@ -246,7 +250,6 @@ IP-CIDR,188.172.228.49/32,no-resolve
 DOMAIN-SUFFIX,embytv.cf
 DOMAIN-SUFFIX,zox.show
 DOMAIN-SUFFIX,acemby.org
-DOMAIN-SUFFIX,bili.rip
 DOMAIN-SUFFIX,misty.ltd
 DOMAIN-SUFFIX,ednovas.org
 DOMAIN-SUFFIX,deja-vu.beauty
