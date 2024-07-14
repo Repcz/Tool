@@ -4,7 +4,7 @@
 #
 # Mihomo ≥ 1.8.4
 #
-# 最后更新时间: 2024-06-28 21:32
+# 最后更新时间: 2024-07-14 16:22
 #
 # ================
 
@@ -79,7 +79,6 @@ rules:
 
   - GEOIP,telegram,Proxy
   - GEOIP,twitter,Proxy
-  - GEOIP,apple,Proxy
   - GEOIP,google,Proxy
   - GEOIP,private,DIRECT
   - GEOIP,lan,DIRECT
