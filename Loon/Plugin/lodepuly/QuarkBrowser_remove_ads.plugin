@@ -1,10 +1,10 @@
 #!name = 夸克去广告
-#!desc = 移除精简我的页面。
+#!desc = 移除阅读广告，精简我的页面。
 #!openUrl = https://apps.apple.com/app/id1160172628
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/QuarkBrowser.png
-#!date = 2024-07-14 03:12:21
+#!date = 2024-07-14 21:08:34
 
 [Rewrite]
 # 小说底部文案广告
