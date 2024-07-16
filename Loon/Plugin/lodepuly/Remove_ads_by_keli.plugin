@@ -4,7 +4,7 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/KeLee.png
-#!date = 2024-07-14 01:34:02
+#!date = 2024-07-16 18:00:12
 
 [Rule]
 # 广告联盟放行
@@ -32,6 +32,9 @@ DOMAIN-KEYWORD, log-api.pangolin-sdk-toutiao, REJECT
 DOMAIN, gdfp.gifshow.com, REJECT
 DOMAIN, open.e.kuaishou.com, REJECT
 DOMAIN-SUFFIX, adukwai.com, REJECT
+
+# 上海倍孜
+DOMAIN, sdk.beizi.biz, REJECT
 
 # 秒针系统 - 广告服务商
 DOMAIN-SUFFIX, miaozhen.com, REJECT
@@ -93,6 +96,12 @@ DOMAIN-SUFFIX, gdt.qq.com, REJECT
 # DOMAIN, mi.gdt.qq.com, REJECT
 # DOMAIN, win.gdt.qq.com, REJECT
 # DOMAIN, v2.gdt.qq.com, REJECT
+
+# App全渠道统计
+DOMAIN-SUFFIX, openinstall.io, REJECT
+
+# 个推
+DOMAIN, zxid-m.mobileservice.cn, REJECT
 
 # 友盟
 DOMAIN, cnlogs.umeng.com, REJECT

@@ -1,12 +1,74 @@
 #!name = 驾校一点通去广告
-#!desc = 过滤驾校一点通广告
+#!desc = 移除开屏广告、各页面广告横幅、弹窗广告，移除社区广告。
 #!openUrl = https://apps.apple.com/app/id620262310
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/JiaXiaoDrive.png
-#!date = 2024-07-16 17:25:12
+#!date = 2024-07-16 18:11:53
 
 [Rule]
+# 字节跳动广告
+AND, ((DOMAIN-KEYWORD, ads), (DOMAIN-KEYWORD, normal), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
+AND, ((DOMAIN-KEYWORD, -ad-), (DOMAIN-SUFFIX, byteimg.com)), REJECT
+AND, ((DOMAIN-KEYWORD, minigame), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
+AND, ((DOMAIN-KEYWORD, tnc), (AND, ((OR, ((DOMAIN-KEYWORD, -bjlgy), (DOMAIN-KEYWORD, -alisc), (DOMAIN-KEYWORD, -aliec))), (OR, ((DOMAIN-SUFFIX, snssdk.com), (DOMAIN-SUFFIX, toutiaoapi.com), (DOMAIN-SUFFIX, bytedance.com), (DOMAIN-SUFFIX, zijieapi.com)))))), REJECT // 拦截HTTPDNS
+DOMAIN, mon.zijieapi.com, REJECT
+DOMAIN, mssdk-bu.bytedance.com, REJECT
+DOMAIN, toblog.ctobsnssdk.com, REJECT
+DOMAIN, lf-cdn-tos.bytescm.com, REJECT
+DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT
+DOMAIN-KEYWORD, -be-pack-sign.pglstatp-toutiao.com, REJECT
+DOMAIN-KEYWORD, -be-pack.pglstatp-toutiao.com, REJECT
+DOMAIN-KEYWORD, -fe-tos.pglstatp-toutiao.com, REJECT
+DOMAIN-KEYWORD, api-access.pangolin-sdk-toutiao, REJECT
+DOMAIN-KEYWORD, log-api.pangolin-sdk-toutiao, REJECT
+
+# 快手联盟 - 广告服务商
+DOMAIN, gdfp.gifshow.com, REJECT
+DOMAIN, open.e.kuaishou.com, REJECT
+DOMAIN-SUFFIX, adukwai.com, REJECT
+
+# 上海倍孜
+DOMAIN, sdk.beizi.biz, REJECT
+
+# 百度联盟 - 广告服务商
+DOMAIN, mobads.baidu.com, REJECT
+DOMAIN, mobads-logs.baidu.com, REJECT
+DOMAIN, wn.pos.baidu.com, REJECT
+DOMAIN, bgg.baidu.com, REJECT
+DOMAIN, als.baidu.com, REJECT
+DOMAIN, feed-image.baidu.com, REJECT
+DOMAIN-SUFFIX, union.baidu.cn, REJECT
+DOMAIN-SUFFIX, union.baidu.com, REJECT
+
+# 腾讯优量汇 - 广告服务商
+DOMAIN, ios.bugly.qq.com, REJECT
+DOMAIN, mazu.m.qq.com, REJECT
+DOMAIN, sdk.e.qq.com, REJECT
+DOMAIN-SUFFIX, ugdtimg.com, REJECT
+# DOMAIN, adsmind.ugdtimg.com, REJECT
+# DOMAIN, pgdt.ugdtimg.com, REJECT
+DOMAIN, i.gtimg.cn, REJECT
+DOMAIN-SUFFIX, gdtimg.com, REJECT
+# DOMAIN, qzs.gdtimg.com, REJECT
+DOMAIN-SUFFIX, gdt.qq.com, REJECT
+# DOMAIN, mi.gdt.qq.com, REJECT
+# DOMAIN, win.gdt.qq.com, REJECT
+# DOMAIN, v2.gdt.qq.com, REJECT
+
+# App全渠道统计
+DOMAIN-SUFFIX, openinstall.io, REJECT
+
+# 个推
+DOMAIN, zxid-m.mobileservice.cn, REJECT
+
+# 友盟
+DOMAIN, cnlogs.umeng.com, REJECT
+DOMAIN, errlog.umeng.com, REJECT
+DOMAIN, errnewlog.umeng.com, REJECT
+DOMAIN, ucc.umeng.com, REJECT
+DOMAIN, ulogs.umeng.com, REJECT
+DOMAIN, utoken.umeng.com, REJECT
 
 [Rewrite]
 # 广告配置
@@ -14,7 +76,7 @@
 # 弹窗广告
 ^https:\/\/gouche\.ksedt\.com\/config\/popup\/info$ reject-dict
 # 直播课
-^https:\/\/muses\.ksedt\.com\/jxedtLiving\/ reject
+# ^https:\/\/muses\.ksedt\.com\/jxedtLiving\/ reject
 # 考试 - 信息流广告、右上角免费领秘籍入口
 ^https:\/\/richmanrules\.ksedt\.com\/intellectWaterfallBidding\/find$ reject-dict
 # 考试 - 满分通关技巧直播课入口
