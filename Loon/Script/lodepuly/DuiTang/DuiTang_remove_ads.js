@@ -1,4 +1,4 @@
-// 2024-07-16 23:54:41
+// 2024-07-17 00:14:28
 let obj = JSON.parse($response.body);
 
 // 删除广告参数
@@ -11,6 +11,7 @@ const pathsToDelete = [
     "data.AD_SCREEN_WAKEUP_TIME",
     "data.REWARD_AD_CUTOUT_NUM",
     "data.AD_HOME_ENTER_POP_COUNT",
+    "data.SHARE_BANNER", // 横幅
     "data.AD_MENU_SELECTIONS", // 广告反馈
     "data.ME_TAB.ANNOUNCEMENT", // 清朗·网络戾气整治”专项行动
     "data.ME_TAB.MEMBERSHIP", // 我的页面横幅

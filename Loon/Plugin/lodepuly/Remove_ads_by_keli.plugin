@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/KeLee.png
-#!date = 2024-07-16 18:00:12
+#!date = 2024-07-17 00:48:06
 
 [Rule]
 # 广告联盟放行
@@ -22,12 +22,20 @@ DOMAIN, mon.zijieapi.com, REJECT
 DOMAIN, mssdk-bu.bytedance.com, REJECT
 DOMAIN, toblog.ctobsnssdk.com, REJECT
 DOMAIN, lf-cdn-tos.bytescm.com, REJECT
+DOMAIN, mssdk.volces.com, REJECT
 DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT
 DOMAIN-KEYWORD, -be-pack-sign.pglstatp-toutiao.com, REJECT
 DOMAIN-KEYWORD, -be-pack.pglstatp-toutiao.com, REJECT
 DOMAIN-KEYWORD, -fe-tos.pglstatp-toutiao.com, REJECT
 DOMAIN-KEYWORD, api-access.pangolin-sdk-toutiao, REJECT
 DOMAIN-KEYWORD, log-api.pangolin-sdk-toutiao, REJECT
+
+# 讯飞AI营销
+DOMAIN-KEYWORD, iflyad.bj.openstorage.cn, REJECT
+DOMAIN-KEYWORD, bjimp.voiceads.cn, REJECT
+
+# 北京锐讯灵通科技有限公司
+DOMAIN, ztoken.uyunad.com, REJECT
 
 # 快手联盟 - 广告服务商
 DOMAIN, gdfp.gifshow.com, REJECT
@@ -79,6 +87,9 @@ DOMAIN, mobads-logs.baidu.com, REJECT
 DOMAIN, wn.pos.baidu.com, REJECT
 DOMAIN, bgg.baidu.com, REJECT
 DOMAIN, als.baidu.com, REJECT
+DOMAIN, a.dtstatic.com, REJECT
+DOMAIN, mobads-pre-config.cdn.bcebos.com, REJECT
+DOMAIN, cpro.baidustatic.com, REJECT
 DOMAIN, feed-image.baidu.com, REJECT
 DOMAIN-SUFFIX, union.baidu.cn, REJECT
 DOMAIN-SUFFIX, union.baidu.com, REJECT
@@ -87,22 +98,29 @@ DOMAIN-SUFFIX, union.baidu.com, REJECT
 DOMAIN, ios.bugly.qq.com, REJECT
 DOMAIN, mazu.m.qq.com, REJECT
 DOMAIN, sdk.e.qq.com, REJECT
+
 DOMAIN-SUFFIX, ugdtimg.com, REJECT
 # DOMAIN, adsmind.ugdtimg.com, REJECT
 # DOMAIN, pgdt.ugdtimg.com, REJECT
-DOMAIN, i.gtimg.cn, REJECT
-DOMAIN-SUFFIX, gdtimg.com, REJECT
 # DOMAIN, qzs.gdtimg.com, REJECT
+
+DOMAIN, i.gtimg.cn, REJECT
 DOMAIN-SUFFIX, gdt.qq.com, REJECT
 # DOMAIN, mi.gdt.qq.com, REJECT
 # DOMAIN, win.gdt.qq.com, REJECT
 # DOMAIN, v2.gdt.qq.com, REJECT
+# v.gdt.qq.com, REJECT
+# t.gdt.qq.com, REJECT
+# c2.gdt.qq.com, REJECT
+
 
 # App全渠道统计
 DOMAIN-SUFFIX, openinstall.io, REJECT
 
 # 个推
-DOMAIN, zxid-m.mobileservice.cn, REJECT
+DOMAIN-SUFFIX, mobileservice.cn, REJECT
+DOMAIN-SUFFIX, getui.com, REJECT
+DOMAIN-SUFFIX, igexin.com, REJECT
 
 # 友盟
 DOMAIN, cnlogs.umeng.com, REJECT
@@ -111,12 +129,17 @@ DOMAIN, errnewlog.umeng.com, REJECT
 DOMAIN, ucc.umeng.com, REJECT
 DOMAIN, ulogs.umeng.com, REJECT
 DOMAIN, utoken.umeng.com, REJECT
+DOMAIN, deeplink.umeng.com, REJECT
+DOMAIN, aspect-upush.umeng.com, REJECT
 
 # TANX广告
 DOMAIN, et.tanx.com, REJECT
 
 # 天目 - 广告服务商
 DOMAIN, sdk.tianmu.mobi, REJECT
+
+# 穿山甲SDK
+DOMAIN, toblog.ctobsnssdk.com, REJECT
 
 # 上海优比客思科技有限公司 - 广告服务商
 DOMAIN, e-u1.ubixioe.com, REJECT
@@ -419,6 +442,12 @@ https?:\/\/m\.sd\.10086\.cn\/zapi\/app_common\/homeWelcome\/welcome\.do reject-d
 # 水印相机 - 去开屏广告
 ^https:\/\/api\.xiangji\.qq\.com\/splash$ reject-dict
 
+# 拼多多广告平台
+^https:\/\/video-dsp\.pddpic\.com\/market-dsp-video\/ reject
+^https:\/\/t-dsp\.pinduoduo\.com\/dspcb\/i\/mrk_union reject
+^https:\/\/images\.pinduoduo\.com\/mrk\/ reject
+^https:\/\/images\.pinduoduo\.com\/marketing_api\/ reject
+
 [Script]
 # 字节跳动穿山甲
 http-response ^https:\/\/(api-access\.pangolin-sdk-toutiao(\d|-b)?|is\.snssdk)\.com\/api\/ad\/union\/sdk\/get_ads script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Remove_ads_by_keli/adsense.js, requires-body = true, tag = 移除字节跳动广告
@@ -428,4 +457,4 @@ http-response ^https:\/\/open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$ script
 http-response ^https:\/\/mi\.gdt\.qq\.com\/gdt_mview\.fcg\? script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Remove_ads_by_keli/adsense.js, requires-body = true, tag = 移除腾讯优量汇广告
 
 [Mitm]
-hostname = api.zcool.com.cn, acs.m.goofish.com, acs.m.taobao.com, api-access.pangolin-sdk-toutiao*.com, api-access.pangolin-sdk-toutiao.com, api-mifit*.huami.com, api-mifit-cn2.huami.com, api-mifit.huami.com, api-overmind.youdao.com, api.ahmobile.cn, api.angkeduo.com, api.jr.mi.com, api.m.mi.com, api.pinduoduo.com, api.wfdata.club, apiwz.midukanshu.com, app.10086.cn, app.missevan.com, app.zhoudamozi.com, cdke.youdao.com, client.app.coc.10086.cn, conf-darwin.xycdn.com, dict.youdao.com, ecard.shenzhentong.com, ether-pack.pangolin-sdk-toutiao.com, god.gameyw.netease.com, gromore.pangolin-sdk-toutiao.com, gw.alicdn.com, gw.chuangkit.com, gx.10086.cn, h.app.coc.10086.cn, hfapp-service.qweather.net, home.mi.com, home.umetrip.com, img.allahall.com, img.dailmo.com, iyes.youku.com, lfd?-analytics.bytescm.com, lfd?-cdn-tos.bytescm.com, m.qianbao.qq.com, m.sd.10086.cn, mercury-gateway.ixiaochuan.cn, mob.mddcloud.com.cn, mobads-pre-config.cdn.bcebos.com, p0.pipi.cn, qiye.gaoding.com, sdk1xyajs.data.kuiniuca.com, service.gd.10086.cn, sfd?-fe-tos.pglstatp-toutiao.com, sfo.mddcloud.com.cn, shopapi.io.mi.com, shealthyapi.senssun.com, t-dsp.pinduoduo.com, toblog.ctobsnssdk.com, tower.ubixioe.com, umerp.umetrip.com, us.l.qq.com, wap.js.10086.cn, lanfanapp.com, api.xiachufang.com, info.mina.xiaoaisound.com, api.xiangji.qq.com
+hostname = api.zcool.com.cn, acs.m.goofish.com, acs.m.taobao.com, api-access.pangolin-sdk-toutiao*.com, api-access.pangolin-sdk-toutiao.com, api-mifit*.huami.com, api-mifit-cn2.huami.com, api-mifit.huami.com, api-overmind.youdao.com, api.ahmobile.cn, api.angkeduo.com, api.jr.mi.com, api.m.mi.com, api.pinduoduo.com, api.wfdata.club, apiwz.midukanshu.com, app.10086.cn, app.missevan.com, app.zhoudamozi.com, cdke.youdao.com, client.app.coc.10086.cn, conf-darwin.xycdn.com, dict.youdao.com, ecard.shenzhentong.com, ether-pack.pangolin-sdk-toutiao.com, god.gameyw.netease.com, gromore.pangolin-sdk-toutiao.com, gw.alicdn.com, gw.chuangkit.com, gx.10086.cn, h.app.coc.10086.cn, hfapp-service.qweather.net, home.mi.com, home.umetrip.com, img.allahall.com, img.dailmo.com, iyes.youku.com, lfd?-analytics.bytescm.com, lfd?-cdn-tos.bytescm.com, m.qianbao.qq.com, m.sd.10086.cn, mercury-gateway.ixiaochuan.cn, mob.mddcloud.com.cn, mobads-pre-config.cdn.bcebos.com, p0.pipi.cn, qiye.gaoding.com, sdk1xyajs.data.kuiniuca.com, service.gd.10086.cn, sfd?-fe-tos.pglstatp-toutiao.com, sfo.mddcloud.com.cn, shopapi.io.mi.com, shealthyapi.senssun.com, t-dsp.pinduoduo.com, toblog.ctobsnssdk.com, tower.ubixioe.com, umerp.umetrip.com, us.l.qq.com, wap.js.10086.cn, lanfanapp.com, api.xiachufang.com, info.mina.xiaoaisound.com, api.xiangji.qq.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com, images.pinduoduo.com
