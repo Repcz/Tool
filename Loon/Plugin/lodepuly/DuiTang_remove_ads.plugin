@@ -1,11 +1,11 @@
 #!name = 堆糖去广告
-#!desc = 移除开屏广告、信息流广告、热搜排行榜广告、我的页面横幅广告。
+#!desc = 移除开屏广告、信息流广告、热搜排行榜广告、我的页面横幅广告，移除关注推荐。
 #!openUrl = https://apps.apple.com/app/id533415763
 #!author = 可莉🅥
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/DuiTang.png
-#!date = 2024-07-17 01:08:28
+#!date = 2024-07-17 01:54:45
 
 [Rule]
 DOMAIN, sdk.1rtb.net, REJECT
@@ -45,7 +45,6 @@ DOMAIN, mobads-logs.baidu.com, REJECT
 DOMAIN, wn.pos.baidu.com, REJECT
 DOMAIN, bgg.baidu.com, REJECT
 DOMAIN, als.baidu.com, REJECT
-DOMAIN, a.dtstatic.com, REJECT
 DOMAIN, mobads-pre-config.cdn.bcebos.com, REJECT
 DOMAIN, cpro.baidustatic.com, REJECT
 DOMAIN, feed-image.baidu.com, REJECT
@@ -90,9 +89,10 @@ DOMAIN, toblog.ctobsnssdk.com, REJECT
 [Rewrite]
 # 信息流广告
 ^https:\/\/(www|api)\.duitang\.com\/napi\/(ad|ads)\/ reject-dict
-# 关注推荐
-^https:\/\/www\.duitang\.com\/napi\/vienna\/graphic\/svip\/channel\/home\/ reject-dict
+# 其他广告
 ^https:\/\/api\.duitang\.com\/napi\/infra\/settings\/ reject-dict
+# 达人推荐
+^https:\/\/api\.duitang\.com\/napi\/vienna\/daren\/daren\/recommend\/ reject-dict
 
 # 拼多多广告平台
 ^https:\/\/video-dsp\.pddpic\.com\/market-dsp-video\/ reject

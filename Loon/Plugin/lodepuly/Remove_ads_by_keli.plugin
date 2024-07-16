@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/KeLee.png
-#!date = 2024-07-17 00:48:06
+#!date = 2024-07-17 01:55:03
 
 [Rule]
 # 广告联盟放行
@@ -87,7 +87,6 @@ DOMAIN, mobads-logs.baidu.com, REJECT
 DOMAIN, wn.pos.baidu.com, REJECT
 DOMAIN, bgg.baidu.com, REJECT
 DOMAIN, als.baidu.com, REJECT
-DOMAIN, a.dtstatic.com, REJECT
 DOMAIN, mobads-pre-config.cdn.bcebos.com, REJECT
 DOMAIN, cpro.baidustatic.com, REJECT
 DOMAIN, feed-image.baidu.com, REJECT
