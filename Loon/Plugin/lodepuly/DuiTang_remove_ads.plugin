@@ -1,0 +1,22 @@
+#!name = 堆糖去广告
+#!desc = 移除开屏广告、信息流广告、热搜排行榜广告、我的页面横幅广告。
+#!openUrl = https://apps.apple.com/app/id533415763
+#!author = 可莉🅥
+#!keyword = 去广告, 可莉
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/DuiTang.png
+#!date = 2024-07-16 23:12:51
+
+[Rule]
+DOMAIN, sdk.1rtb.net, REJECT
+
+[Rewrite]
+# 信息流广告
+^https:\/\/(www|api)\.duitang\.com\/napi\/(ad|ads)\/ reject-dict
+
+[Script]
+# 清理配置文件
+http-response ^https:\/\/(www|api)\.duitang\.com\/napi\/settings\/ script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/DuiTang/DuiTang_remove_ads.js, requires-body = true, tag = 清理配置文件
+
+[Mitm]
+hostname = api.duitang.com, www.duitang.com
