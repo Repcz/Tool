@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/DuiTang.png
-#!date = 2024-07-16 23:12:51
+#!date = 2024-07-16 23:54:41
 
 [Rule]
 DOMAIN, sdk.1rtb.net, REJECT
@@ -13,6 +13,8 @@ DOMAIN, sdk.1rtb.net, REJECT
 [Rewrite]
 # 信息流广告
 ^https:\/\/(www|api)\.duitang\.com\/napi\/(ad|ads)\/ reject-dict
+# 关注推荐
+^https:\/\/www\.duitang\.com\/napi\/vienna\/graphic\/svip\/channel\/home\/ reject-dict
 
 [Script]
 # 清理配置文件
