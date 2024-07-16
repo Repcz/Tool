@@ -2,6 +2,7 @@
 #!desc = 拦截常见的HTTPDNS服务，以确保这些请求都能够在Loon的DNS框架下工作。
 #!openUrl = 
 #!author = 可莉🅥 VirgilClyne
+#!keyword = DNS, 可莉, VirgilClyne
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/HTTPDNS.png
 #!date = 2024-07-13 01:40:46

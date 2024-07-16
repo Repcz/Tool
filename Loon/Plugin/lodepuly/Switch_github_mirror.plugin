@@ -2,6 +2,7 @@
 #!desc = 此插件通过重定向至镜像站的方式解决GitHub的RAW资源下载困难的问题，使用前需要配置此插件的镜像源。由于镜像站均为热心网友提供，可能无法保证服务的长期可用性。若开启此插件后无法下载RAW资源，可尝试切换镜像源，或者禁用此插件。
 #!openUrl = https://apps.apple.com/app/id1477376905
 #!author = 可莉🅥
+#!keyword = 反代加速, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/GitHub.png
 #!select = 镜像源, A镜像, B镜像

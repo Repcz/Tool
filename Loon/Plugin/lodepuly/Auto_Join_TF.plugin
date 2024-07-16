@@ -2,6 +2,7 @@
 #!desc = 自动监控TestFlight名额，一旦有新的名额即刻加入。
 #!openUrl = https://apps.apple.com/app/id899247664
 #!author = DecoAri xream
+#!keyword = 定时任务, DecoAri, xream
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/TestFlight.png
 #!input = APP_ID
