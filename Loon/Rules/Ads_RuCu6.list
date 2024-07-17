@@ -1,4 +1,4 @@
-# 2024-07-04 08:50
+# 2024-07-13 22:40
 
 # ======= A ======= #
 # 阿里巴巴
@@ -84,6 +84,7 @@ DOMAIN,www.googleadservices.com
 DOMAIN-SUFFIX,ads.linkedin.com
 DOMAIN-SUFFIX,ads.vungle.com
 DOMAIN-SUFFIX,adservice.google.com
+DOMAIN-SUFFIX,adukwai.com
 DOMAIN-SUFFIX,applovin.com
 DOMAIN-SUFFIX,applvn.com
 DOMAIN-SUFFIX,appsflyer.com
@@ -156,6 +157,10 @@ DOMAIN,adui.tg.meitu.com
 DOMAIN,acdn.adnxs.com
 DOMAIN,mediation.adnxs.com
 DOMAIN,sin3-ib.adnxs.com
+
+# ======= Q ======= #
+# 其他
+DOMAIN,affcpatrk.com
 
 # ======= S ======= #
 # 什么值得买
