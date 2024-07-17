@@ -1,4 +1,4 @@
-// 2024-07-17 10:39:22
+// 2024-07-17 11:27:46
 let url = $request.url;
 try {
     let obj = JSON.parse($response.body);
@@ -19,28 +19,24 @@ try {
     }
 
     // 删除选车 - 新车报价页面直播内容
-    function removeItemsWithKeywords(obj, targetValue) {
-        function hasTargetValue(o, value) {
-          return Object.values(o).includes(value);
-        }
-        
-        function recursiveRemove(o) {
-          if (Array.isArray(o)) {
-            return o.filter(item => !hasTargetValue(item, targetValue))
-                    .map(item => recursiveRemove(item));
-          } else if (typeof o === 'object' && o !== null) {
-            let newObj = {};
-            for (let key in o) {
-              if (hasTargetValue(o[key], targetValue)) {
-                continue;
+    function removeItemsWithKeywords(objc, keyword) {
+        var otherlist = objc["result"]["otherlist"]
+        if (Array.isArray(otherlist)) {
+          otherlist = otherlist.filter(function(ol) {
+            var lists = ol["list"]
+            if (Array.isArray(lists)) {
+              for (let index in lists) {
+                var item = lists[index]
+                if (item["title"] === keyword) {
+                  return false
+                }
               }
-              newObj[key] = recursiveRemove(o[key]);
             }
-            return newObj;
-          }
-          return o;
+            return true
+          });
         }
-        return recursiveRemove(obj);
+        objc["result"]["otherlist"] = otherlist
+        return objc
     }
 
     if (url.includes("/carstreaming/selectcarportal/seriestopwithtagscard")) {
@@ -49,7 +45,8 @@ try {
     }
 
     // 删除二手车 - 竖版轮播图
-    if (/\/apic\/v\d+\/gethomepagefeed\//.test(url)) {
+    if (/\/apic\/v\d+\/gethomepagefeed/.test(url)) {
+        // console.log("删除车抵贷");
         obj = removeItemsWithKeywords(obj, "车抵贷");
     }
 
@@ -65,6 +62,7 @@ try {
         obj = removeItemsWithKeywords(obj, "车主贷");
     }
 
+    console.log(JSON.stringify(obj))
     $done({ body: JSON.stringify(obj) });
 } catch (e) {
     console.error(e);
