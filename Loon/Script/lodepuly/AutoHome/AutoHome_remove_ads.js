@@ -1,4 +1,4 @@
-// 2024-07-17 09:16:53
+// 2024-07-17 10:39:22
 let url = $request.url;
 try {
     let obj = JSON.parse($response.body);
@@ -19,28 +19,38 @@ try {
     }
 
     // 删除选车 - 新车报价页面直播内容
-    function removeItemsWithKeywords(data, keywords) {
-        if (Array.isArray(data)) {
-            data = data.filter(item => {
-                return !item.text || !keywords.some(keyword => item.text.includes(keyword));
-            });
-        } else if (typeof data === 'object') {
-            for (let key in data) {
-                if (data[key] && typeof data[key] === 'object') {
-                    data[key] = removeItemsWithKeywords(data[key], keywords);
-                }
-            }
+    function removeItemsWithKeywords(obj, targetValue) {
+        function hasTargetValue(o, value) {
+          return Object.values(o).includes(value);
         }
-        return data;
+        
+        function recursiveRemove(o) {
+          if (Array.isArray(o)) {
+            return o.filter(item => !hasTargetValue(item, targetValue))
+                    .map(item => recursiveRemove(item));
+          } else if (typeof o === 'object' && o !== null) {
+            let newObj = {};
+            for (let key in o) {
+              if (hasTargetValue(o[key], targetValue)) {
+                continue;
+              }
+              newObj[key] = recursiveRemove(o[key]);
+            }
+            return newObj;
+          }
+          return o;
+        }
+        return recursiveRemove(obj);
     }
 
     if (url.includes("/carstreaming/selectcarportal/seriestopwithtagscard")) {
-        obj = removeItemsWithKeywords(obj, ["直播中", "报价中"]);
+        obj = removeItemsWithKeywords(obj, "直播中");
+        obj = removeItemsWithKeywords(obj, "报价中");
     }
 
     // 删除二手车 - 竖版轮播图
     if (/\/apic\/v\d+\/gethomepagefeed\//.test(url)) {
-        obj = removeItemsWithKeywords(obj, ["车抵贷"]);
+        obj = removeItemsWithKeywords(obj, "车抵贷");
     }
 
     // 删除我的页面 - 移除添加我的爱车领券
@@ -50,7 +60,9 @@ try {
 
     // 遍历关键词删除所属对象
     if (/\/platform\/carserver\/((usercenter\/getservicecards)|(carcard\/(mycardv\d+|allcard)))/.test(url)) {
-        obj = removeItemsWithKeywords(obj, ["低息借钱", "分期购车", "车主贷"]);
+        obj = removeItemsWithKeywords(obj, "低息借钱");
+        obj = removeItemsWithKeywords(obj, "分期购车");
+        obj = removeItemsWithKeywords(obj, "车主贷");
     }
 
     $done({ body: JSON.stringify(obj) });
