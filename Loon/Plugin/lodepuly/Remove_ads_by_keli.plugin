@@ -97,7 +97,7 @@ DOMAIN-SUFFIX, union.baidu.com, REJECT
 DOMAIN, ios.bugly.qq.com, REJECT
 DOMAIN, mazu.m.qq.com, REJECT
 DOMAIN, sdk.e.qq.com, REJECT
-
+DOMAIN, us.l.qq.com, REJECT
 DOMAIN-SUFFIX, ugdtimg.com, REJECT
 # DOMAIN, adsmind.ugdtimg.com, REJECT
 # DOMAIN, pgdt.ugdtimg.com, REJECT
@@ -111,7 +111,6 @@ DOMAIN-SUFFIX, gdt.qq.com, REJECT
 # v.gdt.qq.com, REJECT
 # t.gdt.qq.com, REJECT
 # c2.gdt.qq.com, REJECT
-
 
 # App全渠道统计
 DOMAIN-SUFFIX, openinstall.io, REJECT
