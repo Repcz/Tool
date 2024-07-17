@@ -1,4 +1,4 @@
-// 2024-07-17 11:27:46
+// 2024-07-17 17:31:22
 let url = $request.url;
 try {
     let obj = JSON.parse($response.body);
@@ -17,8 +17,18 @@ try {
     if (url.includes("/carstreaming/selectcarportal/reclist")) {
         delete obj.result.liveinfo;
     }
+    
+    // 删除我的页面 - 移除添加我的爱车领券
+    if (/\/platform\/carserver\/carcard\/mycardv\d+/.test(url)) {
+      delete obj.result.nocartext;
+  }
 
-    // 删除选车 - 新车报价页面直播内容
+    // 删除我的页面 - 热门活动
+    if (/\/platform\/carserver\/carcard\/cards/.test(url)) {
+      delete obj.result.list[0];
+  }
+
+    // 遍历关键词删除
     function removeItemsWithKeywords(objc, keyword) {
         var otherlist = objc["result"]["otherlist"]
         if (Array.isArray(otherlist)) {
@@ -39,6 +49,7 @@ try {
         return objc
     }
 
+    // 选车 - 新车报价页面直播内容
     if (url.includes("/carstreaming/selectcarportal/seriestopwithtagscard")) {
         obj = removeItemsWithKeywords(obj, "直播中");
         obj = removeItemsWithKeywords(obj, "报价中");
@@ -46,24 +57,16 @@ try {
 
     // 删除二手车 - 竖版轮播图
     if (/\/apic\/v\d+\/gethomepagefeed/.test(url)) {
-<<<<<<< Updated upstream
-        // console.log("删除车抵贷");
-=======
-        obj = removeItemsWithKeywords(obj, "车抵贷");
->>>>>>> Stashed changes
         obj = removeItemsWithKeywords(obj, "车抵贷");
     }
 
-    // 删除我的页面 - 移除添加我的爱车领券
-    if (/\/platform\/carserver\/carcard\/mycard\d+/.test(url)) {
-        delete obj.result.nocartext;
-    }
-
-    // 遍历关键词删除所属对象
-    if (/\/platform\/carserver\/((usercenter\/getservicecards)|(carcard\/(mycardv\d+|allcard)))/.test(url)) {
+    // 精简精选服务、全部服务
+    if (/\/platform\/carserver\/((usercenter\/getservicecards)|(carcard\/allcard))/.test(url)) {
         obj = removeItemsWithKeywords(obj, "低息借钱");
         obj = removeItemsWithKeywords(obj, "分期购车");
         obj = removeItemsWithKeywords(obj, "车主贷");
+        obj = removeItemsWithKeywords(obj, "测贷款额度");
+        console.log("精简精选服务、全部服务");
     }
 
     console.log(JSON.stringify(obj))
