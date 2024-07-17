@@ -143,6 +143,7 @@ HOST,adx.yiche.com,REJECT
 HOST,adxlog.vivo.com.cn,REJECT
 HOST,afd.baidu.com,REJECT
 HOST,afdconf.baidu.com,REJECT
+HOST,affcpatrk.com,REJECT
 HOST,al.autohome.com.cn,REJECT
 HOST,als.baidu.com,REJECT
 HOST,amap-aos-info-nogw.amap.com,REJECT
@@ -653,6 +654,7 @@ HOST-SUFFIX,adtdp.com,REJECT
 HOST-SUFFIX,adthor.com,REJECT
 HOST-SUFFIX,adtongji.xyz,REJECT
 HOST-SUFFIX,adtrace.org,REJECT
+HOST-SUFFIX,adukwai.com,REJECT
 HOST-SUFFIX,advertising.com,REJECT
 HOST-SUFFIX,advertising.yahoo.com,REJECT
 HOST-SUFFIX,advp.apple.com,REJECT
