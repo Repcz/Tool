@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/KuGou.png
-#!date = 2024-07-17 20:20:56
+#!date = 2024-07-17 21:22:09
 
 [Rule]
 DOMAIN, ads.service.kugou.com, REJECT
@@ -17,6 +17,16 @@ DOMAIN, adstats.tencentmusic.com, REJECT
 ^https:\/\/gateway\.kugou\.com\/ads\.gateway reject-dict
 ^https:\/\/fx\.service\.kugou\.com\/mfx-kugoulive\/ad\/ reject-dict
 ^https:\/\/gatewayretry\.kugou\.com\/adp\/ad\/ reject-dict
+# 首页 - 右上角红包
+^https:\/\/gateway\.kugou\.com\/adp\/ad\/v1\/home_combine\?ad_type reject-dict
+# 我的 - 顶部横幅
+^https:\/\/gateway\.kugou\.com\/adp\/ad\/v1\/mine_top_banner reject-dict
+# 我的 - 关注 - 发现更多动态
+^https:\/\/gateway\.kugou\.com\/v4\/feeds\/follow_feed_fallback reject-dict
+# 任务广告
+^https:\/\/gateway\.kugou\.com\/mstc\/musicsymbol\/v1\/system\/profile reject-dict
+# 首页 - 签到弹窗
+# ^http:\/\/ads\.service\.kugou\.com\/v2\/mobile_window reject-dict
 
 [Script]
 # 精简顶部标签

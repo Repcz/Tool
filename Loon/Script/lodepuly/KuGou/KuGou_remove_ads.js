@@ -7,7 +7,7 @@ if (!body) $done({});
 let obj = JSON.parse(body);
 
 const pathRegex = /\/ocean\/v\d\/tab\/list_v\d/;
-const namesToRemove = ["AI帮唱", "长相思2", "小说", "游戏"];
+const namesToRemove = ["AI帮唱", "长相思2", "K歌", "小说", "游戏"];
 
 if (pathRegex.test(url)) {
     function removeParentIfNameMatches(obj) {
