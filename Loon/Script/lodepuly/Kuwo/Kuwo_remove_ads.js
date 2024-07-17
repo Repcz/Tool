@@ -1,4 +1,4 @@
-// 2024-07-18 02:27:39
+// 2024-07-18 05:06:52
 const url = $request.url;
 const body = $response.body;
 
@@ -7,24 +7,24 @@ if (!body) $done({});
 let obj = JSON.parse(body);
 
 const pathRegex = /\/openapi\/v\d\/tingshu\/index\/radio/;
-const typesToRemove = ["banner", "stripAdvert"]; // 删除听书页面轮播图和横幅
+const typesToRemoveChild = ["stripAdvert"]; // 删除横幅广告
 
 if (pathRegex.test(url)) {
-    function removeParentIfTypeMatches(obj) {
+    function removeChildIfTypeMatches(obj) {
         if (typeof obj === 'object' && obj !== null) {
             for (let key in obj) {
                 if (obj[key] && typeof obj[key] === 'object') {
-                    if (typesToRemove.includes(obj[key].type)) {
-                        delete obj[key];
+                    if (typesToRemoveChild.includes(obj[key].type)) {
+                        delete obj[key].child;
                     } else {
-                        removeParentIfTypeMatches(obj[key]);
+                        removeChildIfTypeMatches(obj[key]);
                     }
                 }
             }
         }
     }
 
-    removeParentIfTypeMatches(obj);
+    removeChildIfTypeMatches(obj);
 }
 
 $done({ body: JSON.stringify(obj) });
