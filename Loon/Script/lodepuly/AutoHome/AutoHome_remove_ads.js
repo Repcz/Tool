@@ -1,4 +1,4 @@
-// 2024-07-17 17:55:02
+// 2024-07-17 18:20:06
 let url = $request.url;
 try {
     let obj = JSON.parse($response.body);
@@ -66,7 +66,7 @@ try {
         obj = removeItemsWithKeywords(obj, "分期购车");
         obj = removeItemsWithKeywords(obj, "车主贷");
         obj = removeItemsWithKeywords(obj, "测贷款额度");
-        console.log("精简精选服务、全部服务");
+        obj = removeItemsWithKeywords(obj, "测贷款额");
     }
 
     console.log(JSON.stringify(obj))
