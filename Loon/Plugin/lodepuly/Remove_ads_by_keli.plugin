@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/KeLee.png
-#!date = 2024-07-17 01:55:03
+#!date = 2024-07-18 02:40:08
 
 [Rule]
 # 广告联盟放行
@@ -111,6 +111,7 @@ DOMAIN-SUFFIX, gdt.qq.com, REJECT
 # v.gdt.qq.com, REJECT
 # t.gdt.qq.com, REJECT
 # c2.gdt.qq.com, REJECT
+DOMAIN, tmeadcomm.y.qq.com, REJECT
 
 # App全渠道统计
 DOMAIN-SUFFIX, openinstall.io, REJECT
