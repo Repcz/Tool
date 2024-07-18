@@ -1,4 +1,4 @@
-// 2024-07-19 00:42:22
+// 2024-07-19 02:08:05
 const url = $request.url;
 const body = $response.body;
 
@@ -12,7 +12,7 @@ try {
     $done({});
 }
 
-const regexUnifiedFeed = /\/v1\/graph\/unified_feed/; // 社区 - 发现 - 作者说 - 促销条
+const regexUnifiedFeed = /\/v1\/graph\/unified_feed/; // 社区 - 广场轮播图
 const regexTabList = /\/v\d\/ironman\/discovery_v\d\/tab_list_v\d/; // 首页 - 热门 - 顶部标签
 const regexConfigs = /\/v\d\/graph\/homepage\/comicVideo\/v\d\/configs/; // 社区 - 发现 - 顶部标签
 
@@ -36,12 +36,6 @@ function removeObjectsWith(obj, key, targets) {
     return obj;
 }
 
-if (regexUnifiedFeed.test(url)) {
-    if (obj.promotions && Array.isArray(obj.promotions)) {
-        obj.promotions = [];
-    }
-}
-
 if (regexTabList.test(url)) {
     obj = removeObjectsWith(obj, 'title', targetTitles);
 }
@@ -56,6 +50,10 @@ if (url.includes("/ironman/comic/recommend")) {
     delete obj.data.topic_goods;
     delete obj.data.total_coupon;
     delete obj.data.share_comics_page_lottery;
+}
+
+if (obj.loopBanner) {
+    delete obj.loopBanner; // 社区 - 广场轮播图
 }
 
 $done({ body: JSON.stringify(obj) });

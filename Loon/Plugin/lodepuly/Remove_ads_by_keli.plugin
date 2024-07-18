@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/KeLee.png
-#!date = 2024-07-19 01:09:41
+#!date = 2024-07-19 01:36:41
 
 [Rule]
 # 广告联盟放行
@@ -77,6 +77,7 @@ DOMAIN, sdk.push.mob.com, REJECT
 # 极光 - 广告服务商
 DOMAIN-SUFFIX, jiguang.cn, REJECT
 DOMAIN-SUFFIX, jpush.cn, REJECT
+DOMAIN-SUFFIX, jpush.io, REJECT
 # DOMAIN, ce3e75d5.jpush.cn, REJECT
 # DOMAIN, config.jpush.cn, REJECT
 # DOMAIN, status-ipv6.jpush.cn, REJECT
