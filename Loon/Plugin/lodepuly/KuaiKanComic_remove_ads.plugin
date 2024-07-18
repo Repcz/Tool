@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/KuaiKanComic.png
-#!date = 2024-07-19 03:22:32
+#!date = 2024-07-19 04:19:10
 
 [Rule]
 DOMAIN, ad.v3mh.com, REJECT
@@ -121,8 +121,13 @@ DOMAIN-SUFFIX, jpush.io, REJECT
 # 商城周边 - 弹窗
 ^https:\/\/(cdn-)?shop\.kkmh\.com\/mbff\/popup_administration\/page_management_popup_administration$ reject-dict
 
-# 我的页面
+# 我的页面 - 精简
 ^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/business\/mine\/business_config reject-dict
+# 我的页面 - 横幅广告图
+^https:\/\/(cdn-)?cdn-pay\.kkmh\.com\/v1\/vip\/banner_tip_list reject-dict
+# 我的页面 - 横幅广告语
+^https:\/\/(cdn-)?cdn-pay\.kkmh\.com\/v1\/vip\/charge_tip_list reject-dict
+
 
 # 萌新礼
 ^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/checkin\/api\/new_user\/tab_info$ reject-dict
@@ -132,10 +137,11 @@ DOMAIN-SUFFIX, jpush.io, REJECT
 ^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/vip\/platform_base\/popups_display$ reject-dict
 
 # 社区 - 关注推荐
-^https:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/home\/recommend_users reject-dict
+# ^https:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/home\/recommend_users reject-dict
 
 # 福利中心、悬浮部件
 ^https:\/\/cdn-api\.kkmh\.com\/v2\/checkin\/task_center\/get_by_task_type reject-dict
+
 
 [Script]
 # 修改广告参数
