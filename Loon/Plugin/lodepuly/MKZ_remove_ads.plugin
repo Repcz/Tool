@@ -1,11 +1,80 @@
 #!name = 漫客栈去广告
-#!desc = 移除开屏广告、应用内悬浮窗，精简我的页面。
+#!desc = 移除开屏广告、漫画广告、小说章末广告，精简我的页面。
 #!openUrl = https://apps.apple.com/app/id1189885433
 #!author = 可莉🅥
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/MKZ.png
-#!date = 2024-07-18 20:21:29
+#!date = 2024-07-18 21:07:01
+
+[Rule]
+# 字节跳动广告
+AND, ((DOMAIN-KEYWORD, ads), (DOMAIN-KEYWORD, normal), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
+AND, ((DOMAIN-KEYWORD, -ad-), (DOMAIN-SUFFIX, byteimg.com)), REJECT
+AND, ((DOMAIN-KEYWORD, minigame), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
+AND, ((DOMAIN-KEYWORD, tnc), (AND, ((OR, ((DOMAIN-KEYWORD, -bjlgy), (DOMAIN-KEYWORD, -alisc), (DOMAIN-KEYWORD, -aliec))), (OR, ((DOMAIN-SUFFIX, snssdk.com), (DOMAIN-SUFFIX, toutiaoapi.com), (DOMAIN-SUFFIX, bytedance.com), (DOMAIN-SUFFIX, zijieapi.com)))))), REJECT // 拦截HTTPDNS
+DOMAIN, mon.zijieapi.com, REJECT
+DOMAIN, mssdk-bu.bytedance.com, REJECT
+DOMAIN, toblog.ctobsnssdk.com, REJECT
+DOMAIN, lf-cdn-tos.bytescm.com, REJECT
+DOMAIN, mssdk.volces.com, REJECT
+DOMAIN, pangolin.snssdk.com, REJECT
+DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT
+DOMAIN-KEYWORD, -be-pack-sign.pglstatp-toutiao.com, REJECT
+DOMAIN-KEYWORD, -be-pack.pglstatp-toutiao.com, REJECT
+DOMAIN-KEYWORD, -fe-tos.pglstatp-toutiao.com, REJECT
+DOMAIN-KEYWORD, api-access.pangolin-sdk-toutiao, REJECT
+DOMAIN-KEYWORD, log-api.pangolin-sdk-toutiao, REJECT
+DOMAIN-KEYWORD, -analytics.bytescm.com, REJECT
+DOMAIN-KEYWORD, -short.bytetos.com, REJECT
+
+# InMobi - 邑盟信息技术（上海）有限公司
+DOMAIN, config.inmobi.cn, REJECT
+
+# 极光 - 广告服务商
+DOMAIN-SUFFIX, jiguang.cn, REJECT
+DOMAIN-SUFFIX, jpush.cn, REJECT
+# DOMAIN, ce3e75d5.jpush.cn, REJECT
+# DOMAIN, config.jpush.cn, REJECT
+# DOMAIN, status-ipv6.jpush.cn, REJECT
+# DOMAIN, tsis.jpush.cn, REJECT
+# DOMAIN, ali-stats.jpush.cn, REJECT
+# DOMAIN, sis-ipv6.jpush.cn, REJECT
+# DOMAIN, s.jpush.cn, REJECT
+# DOMAIN, gd-stats.jpush.cn, REJECT
+# DOMAIN, smartop-sdkapi.jiguang.cn, REJECT
+# DOMAIN, sdk.verification.jiguang.cn, REJECT
+
+# 腾讯优量汇 - 广告服务商
+DOMAIN, ios.bugly.qq.com, REJECT
+DOMAIN, mazu.m.qq.com, REJECT
+DOMAIN, sdk.e.qq.com, REJECT
+DOMAIN, us.l.qq.com, REJECT
+DOMAIN-SUFFIX, ugdtimg.com, REJECT
+# DOMAIN, adsmind.ugdtimg.com, REJECT
+# DOMAIN, pgdt.ugdtimg.com, REJECT
+# DOMAIN, qzs.gdtimg.com, REJECT
+
+DOMAIN, i.gtimg.cn, REJECT
+DOMAIN-SUFFIX, gdt.qq.com, REJECT
+# DOMAIN, mi.gdt.qq.com, REJECT
+# DOMAIN, win.gdt.qq.com, REJECT
+# DOMAIN, v2.gdt.qq.com, REJECT
+# v.gdt.qq.com, REJECT
+# t.gdt.qq.com, REJECT
+# c2.gdt.qq.com, REJECT
+DOMAIN, tmeadcomm.y.qq.com, REJECT
+
+# 友盟
+DOMAIN, cnlogs.umeng.com, REJECT
+DOMAIN, errlog.umeng.com, REJECT
+DOMAIN, errnewlog.umeng.com, REJECT
+DOMAIN, ucc.umeng.com, REJECT
+DOMAIN, ulogs.umeng.com, REJECT
+DOMAIN, utoken.umeng.com, REJECT
+DOMAIN, deeplink.umeng.com, REJECT
+DOMAIN, aspect-upush.umeng.com, REJECT
+DOMAIN, plbslog.umeng.com, REJECT
 
 [Rewrite]
 # 阅读页面视频广告

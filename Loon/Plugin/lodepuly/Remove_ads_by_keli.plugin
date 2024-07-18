@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/KeLee.png
-#!date = 2024-07-18 02:40:08
+#!date = 2024-07-18 21:07:07
 
 [Rule]
 # 广告联盟放行
@@ -23,16 +23,23 @@ DOMAIN, mssdk-bu.bytedance.com, REJECT
 DOMAIN, toblog.ctobsnssdk.com, REJECT
 DOMAIN, lf-cdn-tos.bytescm.com, REJECT
 DOMAIN, mssdk.volces.com, REJECT
+DOMAIN, pangolin.snssdk.com, REJECT
 DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT
 DOMAIN-KEYWORD, -be-pack-sign.pglstatp-toutiao.com, REJECT
 DOMAIN-KEYWORD, -be-pack.pglstatp-toutiao.com, REJECT
 DOMAIN-KEYWORD, -fe-tos.pglstatp-toutiao.com, REJECT
 DOMAIN-KEYWORD, api-access.pangolin-sdk-toutiao, REJECT
 DOMAIN-KEYWORD, log-api.pangolin-sdk-toutiao, REJECT
+DOMAIN-KEYWORD, -analytics.bytescm.com, REJECT
+DOMAIN-KEYWORD, -short.bytetos.com, REJECT
+
 
 # 讯飞AI营销
 DOMAIN-KEYWORD, iflyad.bj.openstorage.cn, REJECT
 DOMAIN-KEYWORD, bjimp.voiceads.cn, REJECT
+
+# InMobi - 邑盟信息技术（上海）有限公司
+DOMAIN, config.inmobi.cn, REJECT
 
 # 北京锐讯灵通科技有限公司
 DOMAIN, ztoken.uyunad.com, REJECT
@@ -130,6 +137,7 @@ DOMAIN, ulogs.umeng.com, REJECT
 DOMAIN, utoken.umeng.com, REJECT
 DOMAIN, deeplink.umeng.com, REJECT
 DOMAIN, aspect-upush.umeng.com, REJECT
+DOMAIN, plbslog.umeng.com, REJECT
 
 # TANX广告
 DOMAIN, et.tanx.com, REJECT
@@ -199,22 +207,11 @@ DOMAIN, acdn.adnxs.com, REJECT
 DOMAIN, mediation.adnxs.com, REJECT
 DOMAIN, sin3-ib.adnxs.com, REJECT
 
-# 酷我音乐去广告
-DOMAIN, splashimgbssdl.yun.kugou.com, REJECT
-DOMAIN, report.tencentmusic.com, REJECT
-DOMAIN, ad.tencentmusic.com, REJECT
-DOMAIN, adstats.tencentmusic.com, REJECT
-URL-REGEX, ^http:\/\/wapi\.kuwo\.cn\/openapi\/v1\/album\/adBar, REJECT
-URL-REGEX, ^http:\/\/wapi\.kuwo\.cn\/openapi\/v1\/app\/pasterAdvert, REJECT
-URL-REGEX, ^http:\/\/mobilead\.kuwo\.cn\/MobileAdServer, REJECT
-URL-REGEX, ^http:\/\/mobilead\.kuwo\.cn\/EcomResourceServer, REJECT
-URL-REGEX, ^http:\/\/wapi\.kuwo\.cn\/openapi\/v1\/app\/startup, REJECT
-URL-REGEX, ^http:\/\/rich\.kuwo\.cn\/AdService, REJECT
-
 # 小米
 DOMAIN, sdkconfig.ad.xiaomi.com, REJECT-DROP
 DOMAIN, data.mistat.xiaomi.com, REJECT
 DOMAIN, tracking.intl.miui.com, REJECT
+
 # 米家
 DOMAIN, sdkconfig.ad.xiaomi.com, REJECT
 
