@@ -1,11 +1,11 @@
 #!name = 快看漫画去广告
-#!desc = 移除开屏广告、悬浮窗、漫画广告、各类弹窗，精简我的页面。
+#!desc = 移除开屏广告、悬浮窗、漫画广告、社区广告、各类弹窗，精简顶部标签、我的页面。
 #!openUrl = https://apps.apple.com/app/id906936224
 #!author = 可莉🅥
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/KuaiKanComic.png
-#!date = 2024-07-19 04:19:10
+#!date = 2024-07-19 05:26:31
 
 [Rule]
 DOMAIN, ad.v3mh.com, REJECT
@@ -124,10 +124,12 @@ DOMAIN-SUFFIX, jpush.io, REJECT
 # 我的页面 - 精简
 ^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/business\/mine\/business_config reject-dict
 # 我的页面 - 横幅广告图
-^https:\/\/(cdn-)?cdn-pay\.kkmh\.com\/v1\/vip\/banner_tip_list reject-dict
+^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/vip\/banner_tip_list reject-dict
 # 我的页面 - 横幅广告语
-^https:\/\/(cdn-)?cdn-pay\.kkmh\.com\/v1\/vip\/charge_tip_list reject-dict
-
+^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/vip\/charge_tip_list reject-dict
+# # 我的页面 - 钱包广告语
+^https:\/\/h5\.kuaikanmanhua\.com\/v\d\/kb\/recharge_good\/list_h5 reject-dict
+^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/kb\/wallet reject-dict
 
 # 萌新礼
 ^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/checkin\/api\/new_user\/tab_info$ reject-dict
@@ -140,8 +142,7 @@ DOMAIN-SUFFIX, jpush.io, REJECT
 # ^https:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/home\/recommend_users reject-dict
 
 # 福利中心、悬浮部件
-^https:\/\/cdn-api\.kkmh\.com\/v2\/checkin\/task_center\/get_by_task_type reject-dict
-
+^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/checkin\/task_center\/get_by_task_type reject-dict
 
 [Script]
 # 修改广告参数
@@ -157,4 +158,4 @@ http-response ^https:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/homepage\/comicVi
 http-response ^https:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/unified_feed$ script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/KuaiKanComic/KuaiKanComic_remove_ads.js, requires-body = true, tag = 精简社区信息流
 
 [Mitm]
-hostname = api.kkmh.com, cdn-api.kkmh.com, social.kkmh.com, cdn-social.kkmh.com, h5.kuaikanmanhua.com, cdn-h5.kuaikanmanhua.com, pay.kkmh.co, cdn-pay.kkmh.co, shop.kkmh.com, cdn-shop.kkmh.com, topic.kkmh.com, cdn-topic.kkmh.com
+hostname = api.kkmh.com, cdn-api.kkmh.com, social.kkmh.com, cdn-social.kkmh.com, h5.kuaikanmanhua.com, cdn-h5.kuaikanmanhua.com, pay.kkmh.com, cdn-pay.kkmh.com, shop.kkmh.com, cdn-shop.kkmh.com, topic.kkmh.com, cdn-topic.kkmh.com
