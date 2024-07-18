@@ -1,4 +1,4 @@
-// 2024-07-19 02:08:05
+// 2024-07-19 03:22:32
 const url = $request.url;
 const body = $response.body;
 
@@ -8,13 +8,13 @@ let obj;
 try {
     obj = JSON.parse(body);
 } catch (e) {
-    console.error("JSON parse error:", e);
+    console.error("JSON解析错误:", e);
     $done({});
 }
 
-const regexUnifiedFeed = /\/v1\/graph\/unified_feed/; // 社区 - 广场轮播图
 const regexTabList = /\/v\d\/ironman\/discovery_v\d\/tab_list_v\d/; // 首页 - 热门 - 顶部标签
 const regexConfigs = /\/v\d\/graph\/homepage\/comicVideo\/v\d\/configs/; // 社区 - 发现 - 顶部标签
+const regexUnifiedFeed = /\/v\d\/graph\/unified_feed/; // 社区 - 广场轮播图、作者说 - 商品推广
 
 const targetTitles = ["KK评委", "2024新漫报到", "VIP"]; // 首页 - 热门 - 顶部标签
 const targetDescs = ["超级漫画节", "在kk当评委", "屈臣氏·KKCOS大赏", "KK朋友圈", "KK运势"]; // 社区 - 发现 - 顶部标签
@@ -44,16 +44,28 @@ if (regexConfigs.test(url)) {
     obj = removeObjectsWith(obj, 'desc', targetDescs);
 }
 
-// 应用配置修改
+// 修改广告参数
 if (url.includes("/ironman/comic/recommend")) {
-    delete obj.data.operation_float_ball;
-    delete obj.data.topic_goods;
-    delete obj.data.total_coupon;
-    delete obj.data.share_comics_page_lottery;
+    const keysToDelete = [
+        "operation_float_ball",
+        "topic_goods",
+        "total_coupon",
+        "share_comics_page_lottery"
+    ];
+    keysToDelete.forEach(key => delete obj.data[key]);
 }
 
-if (obj.loopBanner) {
-    delete obj.loopBanner; // 社区 - 广场轮播图
+if (regexUnifiedFeed.test(url)) {
+    if (obj.data && obj.data.universalModels) {
+        obj.data.universalModels.forEach(model => {
+            if (model.loopBanner) {
+                delete model.loopBanner; // 社区 - 广场轮播图
+            }
+            if (model.post && model.post.promotions && model.post.promotions[0] && model.post.promotions[0].type === 4) {
+                delete model.post.promotions[0]; // 社区 - 作者说 - 商品推广
+            }
+        });
+    }
 }
 
 $done({ body: JSON.stringify(obj) });
