@@ -1,4 +1,4 @@
-// 2024-07-19 00:29:00
+// 2024-07-19 00:42:22
 const url = $request.url;
 const body = $response.body;
 
@@ -12,44 +12,23 @@ try {
     $done({});
 }
 
-// 首页 - 热门 - 顶部标签
-const targetTitles = [
-    "KK评委",
-    "2024新漫报到",
-    "VIP"
-];
-
-// 社区 - 发现 - 顶部标签
-const targetDescs = [
-    "超级漫画节",
-    "在kk当评委",
-    "屈臣氏·KKCOS大赏",
-    "KK朋友圈",
-    "KK运势"
-];
-
+const regexUnifiedFeed = /\/v1\/graph\/unified_feed/; // 社区 - 发现 - 作者说 - 促销条
 const regexTabList = /\/v\d\/ironman\/discovery_v\d\/tab_list_v\d/; // 首页 - 热门 - 顶部标签
 const regexConfigs = /\/v\d\/graph\/homepage\/comicVideo\/v\d\/configs/; // 社区 - 发现 - 顶部标签
 
-function removeObjectsWithTitle(obj) {
+const targetTitles = ["KK评委", "2024新漫报到", "VIP"]; // 首页 - 热门 - 顶部标签
+const targetDescs = ["超级漫画节", "在kk当评委", "屈臣氏·KKCOS大赏", "KK朋友圈", "KK运势"]; // 社区 - 发现 - 顶部标签
+
+function removeObjectsWith(obj, key, targets) {
     if (Array.isArray(obj)) {
-        return obj.filter(item => {
-            if (item.title && targetTitles.includes(item.title)) {
-                return false;
-            }
-            if (item.title) {
-                return true;
-            }
-            removeObjectsWithTitle(item);
-            return true;
-        });
+        return obj.filter(item => !item[key] || !targets.includes(item[key]));
     } else if (typeof obj === 'object' && obj !== null) {
-        for (let key in obj) {
-            if (obj[key] && typeof obj[key] === 'object') {
-                if (obj[key].title && targetTitles.includes(obj[key].title)) {
-                    delete obj[key];
+        for (let k in obj) {
+            if (obj[k] && typeof obj[k] === 'object') {
+                if (obj[k][key] && targets.includes(obj[k][key])) {
+                    delete obj[k];
                 } else {
-                    obj[key] = removeObjectsWithTitle(obj[key]);
+                    obj[k] = removeObjectsWith(obj[k], key, targets);
                 }
             }
         }
@@ -57,46 +36,26 @@ function removeObjectsWithTitle(obj) {
     return obj;
 }
 
-function removeObjectsWithDesc(obj) {
-    if (Array.isArray(obj)) {
-        return obj.filter(item => {
-            if (item.desc && targetDescs.includes(item.desc)) {
-                return false;
-            }
-            if (item.desc) {
-                return true;
-            }
-            removeObjectsWithDesc(item);
-            return true;
-        });
-    } else if (typeof obj === 'object' && obj !== null) {
-        for (let key in obj) {
-            if (obj[key] && typeof obj[key] === 'object') {
-                if (obj[key].desc && targetDescs.includes(obj[key].desc)) {
-                    delete obj[key];
-                } else {
-                    obj[key] = removeObjectsWithDesc(obj[key]);
-                }
-            }
-        }
+if (regexUnifiedFeed.test(url)) {
+    if (obj.promotions && Array.isArray(obj.promotions)) {
+        obj.promotions = [];
     }
-    return obj;
 }
 
 if (regexTabList.test(url)) {
-    obj = removeObjectsWithTitle(obj);
+    obj = removeObjectsWith(obj, 'title', targetTitles);
 }
 
 if (regexConfigs.test(url)) {
-    obj = removeObjectsWithDesc(obj);
+    obj = removeObjectsWith(obj, 'desc', targetDescs);
 }
 
-// 配置修改
+// 应用配置修改
 if (url.includes("/ironman/comic/recommend")) {
-    delete obj.data.operation_float_ball; // 悬浮窗
-    delete obj.data.topic_goods; // 相关商品
-    delete obj.data.total_coupon; // 优惠券
-    delete obj.data.share_comics_page_lottery; // 分享漫画页面抽奖
+    delete obj.data.operation_float_ball;
+    delete obj.data.topic_goods;
+    delete obj.data.total_coupon;
+    delete obj.data.share_comics_page_lottery;
 }
 
 $done({ body: JSON.stringify(obj) });
