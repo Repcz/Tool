@@ -7,6 +7,7 @@ domain_set:
 - a0.app.xiaomi.com
 - aaid.uyunad.com
 - abema-adx.ameba.jp
+- abyss.cyapi.cn
 - acdn.adnxs.com
 - acs4baichuan.m.taobao.com
 - ad-analysis.pconline.com.cn
@@ -199,15 +200,18 @@ domain_set:
 - data.mistat.xiaomi.com
 - de.as.pptv.com
 - dflow.bz.mgtv.com
+- dig.bdurl.net
 - dispatcher.360in.com
 - dns.alidns.com
 - dns.jd.com
+- dsp-x.jd.com
 - dsp.fcbox.com
 - dsp.toutiao.com
 - duclick.baidu.com
 - emma-414870e223.huodonghezi.com
 - ems.youku.com
 - encounter.bz.mgtv.com
+- et.tanx.com
 - etl.xlmc.sandai.net
 - exp.360in.com
 - fg.knlk2md.cn
@@ -218,6 +222,7 @@ domain_set:
 - g1.163.com
 - g3.letv.com
 - galaxy.bjcathay.com
+- gdfp.gifshow.com
 - geo2.adobe.com
 - ggc.cmvideo.cn
 - ggic03.miguvideo.com
@@ -271,6 +276,7 @@ domain_set:
 - itad.linetv.tw
 - ivy.pchouse.com.cn
 - iyes.youku.com
+- janapi.jd.com
 - js-ad.a.yximgs.com
 - js.users.51.la
 - juggler.services.disqus.com
@@ -300,6 +306,7 @@ domain_set:
 - md-i-s.apptimize.com
 - mdrecv.app.cntvwb.cn
 - mediation.adnxs.com
+- mercury-gateway.ixiaochuan.cn
 - metrics-picture.d.meituan.net
 - miav-cse.avlyun.com
 - minfo.wps.cn
@@ -369,6 +376,7 @@ domain_set:
 - saxs.sina.com.cn
 - sdapprecv.app.cntvwb.cn
 - sdk.51.la
+- sdk.e.qq.com
 - sdkconfig.ad.xiaomi.com
 - sin3-ib.adnxs.com
 - soul-ad.soulapp.cn
@@ -417,6 +425,7 @@ domain_set:
 - www.googleadservices.com
 - wxsnsdy.wxs.qq.com
 - wxsnsdythumb.wxs.qq.com
+- xlog.jd.com
 - yandexmetrica.com
 - yk-ssp.ad.youku.com
 - ykad-data.youku.com
@@ -1279,6 +1288,7 @@ domain_suffix_set:
 - u-ad.info
 - u3.ucweb.com
 - uberads.com
+- ubixioe.com
 - udrig.com
 - uimserv.net
 - ultraadserver.com
@@ -1413,6 +1423,7 @@ domain_suffix_set:
 - zhenxinet.com
 - zhiziyun.com
 - zhzzx.com
+- zijieapi.com
 - zlne800.com
 - zmlled.cn
 - zoomanalytics.co
