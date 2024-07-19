@@ -1,4 +1,4 @@
-# 2024-07-13 22:40
+# 2024-07-19 15:15
 
 # ======= A ======= #
 # 阿里巴巴
@@ -45,6 +45,7 @@ IP-CIDR,180.76.76.200/32,no-resolve
 
 # ======= C ======= #
 # 彩云天气
+DOMAIN,abyss.cyapi.cn
 DOMAIN,ad.cyapi.cn
 # 昌原云充
 DOMAIN,m.adyounger.com
@@ -72,15 +73,24 @@ DOMAIN,pageviewp.icbc.com.cn
 DOMAIN-SUFFIX,mall.icbc.com.cn
 # 广告联盟
 DOMAIN,ad.zijieapi.com
+DOMAIN,adapi.izuiyou.com
 DOMAIN,adtracker.adfunlink.com
+DOMAIN,dig.bdurl.net
+DOMAIN,dsp-x.jd.com
+DOMAIN,et.tanx.com
+DOMAIN,gdfp.gifshow.com
 DOMAIN,init.supersonicads.com
 DOMAIN,is.snssdk.com
+DOMAIN,janapi.jd.com
+DOMAIN,mercury-gateway.ixiaochuan.cn
 DOMAIN,open.e.kuaishou.com
 DOMAIN,open.kuaishou.com
 DOMAIN,pagead2.googlesyndication-cn.com
 DOMAIN,pagead2.googlesyndication.com
+DOMAIN,sdk.e.qq.com
 DOMAIN,ws.tapjoyads.com
 DOMAIN,www.googleadservices.com
+DOMAIN,xlog.jd.com
 DOMAIN-SUFFIX,ads.linkedin.com
 DOMAIN-SUFFIX,ads.vungle.com
 DOMAIN-SUFFIX,adservice.google.com
@@ -91,7 +101,9 @@ DOMAIN-SUFFIX,appsflyer.com
 DOMAIN-SUFFIX,appsflyersdk.com
 DOMAIN-SUFFIX,kuaishouzt.com
 DOMAIN-SUFFIX,miaozhen.com
+DOMAIN-SUFFIX,ubixioe.com
 DOMAIN-SUFFIX,unityads.unity3d.com
+DOMAIN-SUFFIX,zijieapi.com
 DOMAIN-KEYWORD,-ad-sign.byteimg.com
 DOMAIN-KEYWORD,ads.g.doubleclick
 DOMAIN-KEYWORD,asiad.byteactivity
