@@ -420,7 +420,7 @@ adshow.58.com,REJECT
 .event-listener.air.tv,REJECT
 .insights.aiu.sg,REJECT
 .mms.al.com,REJECT
-.geoip.al.com,REJECT
+.GEOIP.al.com,REJECT
 .redakcija.alo.rs,REJECT
 .aly.la,REJECT
 .plausible.ams.to,REJECT
@@ -1047,7 +1047,7 @@ assets.msn.cn,REJECT
 .nik.io,REJECT
 .nim.sh,REJECT
 .mms.nj.com,REJECT
-.geoip.nj.com,REJECT
+.GEOIP.nj.com,REJECT
 .lp.northwestern.nm.org,REJECT
 .web.northwestern.nm.org,REJECT
 .ctr.nmg.de,REJECT
@@ -4927,7 +4927,7 @@ abema-adx.ameba.jp,REJECT
 .adebiscname.auone.jp,REJECT
 .ad-ebis.bookpass.auone.jp,REJECT
 .sstats.auto5.be,REJECT
-.geoip.apps.avada.io,REJECT
+.GEOIP.apps.avada.io,REJECT
 .an.avast.ru,REJECT
 .ans.avast.ru,REJECT
 .referral.avena.io,REJECT
@@ -7029,7 +7029,7 @@ adlaunch.moji.com,REJECT
 .tracking.nokai.jp,REJECT
 .mms.nola.com,REJECT
 .f362.nola.com,REJECT
-.geoip.nola.com,REJECT
+.GEOIP.nola.com,REJECT
 .logcollector.note.com,REJECT
 .qpuseo.notos.gr,REJECT
 .notsy.io,REJECT
@@ -8024,7 +8024,7 @@ g.tbcdn.cn,REJECT
 .vib.mobi,REJECT
 .vic-m.co,REJECT
 .stats.vican.me,REJECT
-.geoip-lookup.vice.com,REJECT
+.GEOIP-lookup.vice.com,REJECT
 .adobeanalytics.vice.com,REJECT
 .s-adobeanalytics.vice.com,REJECT
 .vice-publishers-cdn.vice.com,REJECT
@@ -9313,7 +9313,7 @@ securemetrics.apple.com,REJECT
 .s.asvsm.com,REJECT
 .at885.icu,REJECT
 .athlg.com,REJECT
-.geoip.ativo.com,REJECT
+.GEOIP.ativo.com,REJECT
 .link.atlys.com,REJECT
 .app.enable.atmel.com,REJECT
 .edge.atmtd.com,REJECT
@@ -11397,7 +11397,7 @@ yiliao.hupan.com,REJECT
 .di.ifolor.lu,REJECT
 .di.ifolor.nl,REJECT
 .di.ifolor.se,REJECT
-.geoip.ifunny.co,REJECT
+.GEOIP.ifunny.co,REJECT
 .events.ifunny.co,REJECT
 .prebid-cache.ifunny.co,REJECT
 .pxbnou.ig.com.br,REJECT
@@ -12380,7 +12380,7 @@ adui.tg.meitu.com,REJECT
 .mkt51.net,REJECT
 .ml314.com,REJECT
 .mms.mlive.com,REJECT
-.geoip.mlive.com,REJECT
+.GEOIP.mlive.com,REJECT
 .mlno6.com,REJECT
 .marketing.mlnrp.com,REJECT
 .mlsys.xyz,REJECT
@@ -19098,7 +19098,7 @@ pdl.gionee.com,REJECT
 .hlpidkr.ru,REJECT
 .hltqsbl.cn,REJECT
 .ebank.hlug1k.com,REJECT
-.geoip.hmageo.com,REJECT
+.GEOIP.hmageo.com,REJECT
 .email.everyonesocial.hmausa.com,REJECT
 .hmlkppk.cn,REJECT
 .hmrwkcx.cn,REJECT
@@ -19366,7 +19366,7 @@ acfeedbackws.icloud.com,REJECT
 .imarker.ru,REJECT
 .imatrk.net,REJECT
 .imawwq.xyz,REJECT
-.geoip.imber.live,REJECT
+.GEOIP.imber.live,REJECT
 .imbikh.icu,REJECT
 .imblic.com,REJECT
 .www.smetrics.imedeen.us,REJECT
@@ -21177,7 +21177,7 @@ adres.myaora.net,REJECT
 .negnixa.cn,REJECT
 .negyuk.com,REJECT
 .nehree.com,REJECT
-.geoip.nekudo.com,REJECT
+.GEOIP.nekudo.com,REJECT
 .nelhon.com,REJECT
 .tqkspo.neobyte.es,REJECT
 .trk.neogen.com,REJECT
@@ -21498,7 +21498,7 @@ adres.myaora.net,REJECT
 .sstats.olivia.com,REJECT
 .turtle.olivier.cx,REJECT
 .tracking.olx-st.com,REJECT
-.geoip.olx.com.br,REJECT
+.GEOIP.olx.com.br,REJECT
 .track.olx.com.br,REJECT
 .lurker.olx.com.br,REJECT
 .ninja.data.olxcdn.com,REJECT
@@ -22945,7 +22945,7 @@ newloc.map.n.shifen.com,REJECT
 .ktocpw.silabg.com,REJECT
 .silebu.xyz,REJECT
 .mms.silive.com,REJECT
-.geoip.silive.com,REJECT
+.GEOIP.silive.com,REJECT
 .s.simcoe.com,REJECT
 .simpio.com,REJECT
 d0.sinaimg.cn,REJECT
@@ -40414,7 +40414,7 @@ huawei.facebook.com,REJECT
 .fimserve.com,REJECT
 .a8.final-seo.jp,REJECT
 .finalice.net,REJECT
-.geoip.finanzen.net,REJECT
+.GEOIP.finanzen.net,REJECT
 .tracking.finanzen.net,REJECT
 .data-fdbbf15b66.finanzen.net,REJECT
 .test.findeck.link,REJECT
@@ -40576,7 +40576,7 @@ huawei.facebook.com,REJECT
 .open.fotition.com,REJECT
 regist.fotoable.com,REJECT
 cdn.adapi.fotoable.com,REJECT
-.geoip.fotoable.net,REJECT
+.GEOIP.fotoable.net,REJECT
 .fotoompi.com,REJECT
 .ads.fotosidan.se,REJECT
 .fotsaulr.net,REJECT
@@ -41217,7 +41217,7 @@ cdn.getkoala.com,REJECT
 .webanalytics.gulesider.no,REJECT
 .swebanalytics.gulesider.no,REJECT
 .mms.gulflive.com,REJECT
-.geoip.gulflive.com,REJECT
+.GEOIP.gulflive.com,REJECT
 .keoofp.gulfnews.com,REJECT
 .www.gumanews.com,REJECT
 .gunepszy.xyz,REJECT
@@ -41826,7 +41826,7 @@ cdn.getkoala.com,REJECT
 .inorseph.xyz,REJECT
 .inphonic.com,REJECT
 .p543.inquirer.com,REJECT
-.geoip.inquirer.net,REJECT
+.GEOIP.inquirer.net,REJECT
 .inrdeals.com,REJECT
 .insdrbot.com,REJECT
 .analytics-events.inshorts.com,REJECT
@@ -43136,7 +43136,7 @@ pushapi.lenovomm.com,REJECT
 .crm.masonmac.com,REJECT
 .newt.masonwear.co,REJECT
 .mms.masslive.com,REJECT
-.geoip.masslive.com,REJECT
+.GEOIP.masslive.com,REJECT
 .sailfish.mastercw.com,REJECT
 .masture.mobi,REJECT
 .ctx.matchads.net,REJECT
@@ -44730,7 +44730,7 @@ geolocation.onetrust.com,REJECT
 .connecttv.pelmorex.com,REJECT
 .penguest.xyz,REJECT
 .mms.pennlive.com,REJECT
-.geoip.pennlive.com,REJECT
+.GEOIP.pennlive.com,REJECT
 .smetrics.pennwell.com,REJECT
 .penspade.com,REJECT
 .plaus.pentserv.com,REJECT
@@ -46833,7 +46833,7 @@ inte.sogoucdn.com,REJECT
 .xml-v4.synthads.com,REJECT
 .partner.sypanycaj.eu,REJECT
 .mms.syracuse.com,REJECT
-.geoip.syracuse.com,REJECT
+.GEOIP.syracuse.com,REJECT
 .sysfiles.net,REJECT
 .syxcwxur.com,REJECT
 .data-a4e945dbeb.sz-trauer.de,REJECT
@@ -51174,7 +51174,7 @@ ad.caiyunapp.com,REJECT
 .clefsgast.top,REJECT
 .chicken.clerklabs.com,REJECT
 .mms.cleveland.com,REJECT
-.geoip.cleveland.com,REJECT
+.GEOIP.cleveland.com,REJECT
 .partner.cleverfood.eu,REJECT
 .click-cdn.com,REJECT
 .click-url.com,REJECT
@@ -52769,7 +52769,7 @@ v2.fm.n.duokanbox.com,REJECT
 .freeastuce.ml,REJECT
 .freeevpn.info,REJECT
 .freefrog.site,REJECT
-.freegeoip.app,REJECT
+.freeGEOIP.app,REJECT
 .freehacks.biz,REJECT
 .freehackz.com,REJECT
 .freehackz.org,REJECT
@@ -53524,7 +53524,7 @@ v2.fm.n.duokanbox.com,REJECT
 .mcgtrack.herokuapp.com,REJECT
 .aurora-d3.herokuapp.com,REJECT
 .anti-adblock.herokuapp.com,REJECT
-.ao-freegeoip.herokuapp.com,REJECT
+.ao-freeGEOIP.herokuapp.com,REJECT
 .statt-collect.herokuapp.com,REJECT
 .filament-stats.herokuapp.com,REJECT
 .ilyonanalytics.herokuapp.com,REJECT
@@ -59532,7 +59532,7 @@ push.wandoujia.com,REJECT
 .stats.wienerjobs.at,REJECT
 .a8.wifi-fami.com,REJECT
 .tracker.wigzopush.com,REJECT
-.geoiplookup.wikimedia.org,REJECT
+.GEOIPlookup.wikimedia.org,REJECT
 .intake-logging.wikimedia.org,REJECT
 .intake-analytics.wikimedia.org,REJECT
 .stuff.wikiporno.org,REJECT
@@ -60020,8 +60020,8 @@ ad.winrar.com.cn,REJECT
 .zyuzdmxel.com,REJECT
 .zzaqqwecd.lat,REJECT
 .0008d6ba2e.com,REJECT
-.id-vietconbank1.uuhuqtp.nethost-4011.000nethost.com,REJECT
-.vietconbank-digital.otjwvhdd.nethost-4211.000nethost.com,REJECT
+.id-vietconbank1.uuhuqtp.netHOST-4011.000nethost.com,REJECT
+.vietconbank-digital.otjwvhdd.netHOST-4211.000nethost.com,REJECT
 .0024ad98dd.com,REJECT
 .fc96c51f92.0074854f80.com,REJECT
 .e6adc8baa5.007a15696d.com,REJECT
@@ -62110,7 +62110,7 @@ ad.winrar.com.cn,REJECT
 .boqmjxtkwn.com,REJECT
 .boredcrown.com,REJECT
 .stats.boredkevin.com,REJECT
-.geoip.boredpanda.com,REJECT
+.GEOIP.boredpanda.com,REJECT
 .eltlio.boribori.co.kr,REJECT
 .boringcoat.com,REJECT
 .stats.boringproxy.io,REJECT
@@ -68544,7 +68544,7 @@ httpdns.push.oppomobile.com,REJECT
 .a8clk.cart.ordersupli.com,REJECT
 .ordzimwtaa.com,REJECT
 .mms.oregonlive.com,REJECT
-.geoip.oregonlive.com,REJECT
+.GEOIP.oregonlive.com,REJECT
 .marketing.oremuscorp.com,REJECT
 .oretracker.top,REJECT
 .stats.organizeit.com,REJECT
@@ -75126,7 +75126,7 @@ grs.dbankcloud.asia,REJECT
 .ghgasdb365.shop,REJECT
 .ghgasdt963.shop,REJECT
 .smetrics.ghirardelli.com,REJECT
-.ghost-team.info,REJECT
+.gHOST-team.info,REJECT
 .ghostchisel.com,REJECT
 .ghyjajvriaf.com,REJECT
 .giaingan799.com,REJECT
@@ -75851,7 +75851,7 @@ emma-414870e223.huodonghezi.com,REJECT
 .jifjai.instamotion.com,REJECT
 .instantresp.com,REJECT
 .event.instiengage.com,REJECT
-.geoip.instiengage.com,REJECT
+.GEOIP.instiengage.com,REJECT
 .secure.instinct-52.com,REJECT
 .instopvials.com,REJECT
 .metrics.insuramatch.com,REJECT
@@ -80194,7 +80194,7 @@ ad-analysis.pconline.com.cn,REJECT
 .vheoggjiqaz.com,REJECT
 .viablegiant.com,REJECT
 .viamariller.com,REJECT
-.geoip.viamichelin.com,REJECT
+.GEOIP.viamichelin.com,REJECT
 .viapizza.online,REJECT
 .vib-nangcap.com,REJECT
 .vib-up-the.shop,REJECT
@@ -87979,8 +87979,8 @@ ssl.360antivirus.org,REJECT
 .revive.teknikveckan.com,REJECT
 .telecharger1.com,REJECT
 .telecharger24.fr,REJECT
-.host-95-255-114-11.business.telecomitalia.it,REJECT
-.host-195-103-203-106.business.telecomitalia.it,REJECT
+.HOST-95-255-114-11.business.telecomitalia.it,REJECT
+.HOST-195-103-203-106.business.telecomitalia.it,REJECT
 .telegramspun.com,REJECT
 .televeniesuc.pro,REJECT
 .telferstarsi.top,REJECT
@@ -108928,7 +108928,7 @@ display.360totalsecurity.com,REJECT
 .leforgotteddisg.info,REJECT
 .legitimatepowers.com,REJECT
 .mms.lehighvalleylive.com,REJECT
-.geoip.lehighvalleylive.com,REJECT
+.GEOIP.lehighvalleylive.com,REJECT
 .leo1.leon-de-bruxelles.fr,REJECT
 .letinclusionbone.com,REJECT
 .stat.liaisons-sociales.fr,REJECT
@@ -123856,4 +123856,88 @@ samsungcloudsolution.net,REJECT
 .server.qxej27mv7hud1uk03kj438ggzby0v7a8mgwwnmky2n9vn1tmcn1qpm8kax84ymn.ru,REJECT
 .rei9jc56oyqux0rcpcquqmm7jc5freirpsquqkope3n3axrjacg8ipolxvbm.codes,REJECT
 .zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqp.de,REJECT
+################## EOF ##################
+#########################################
+# Sukka's Ruleset - Reject Domains
+# Last Updated: 2024-07-31T16:04:39.434Z
+# Size: 73
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# The ruleset supports AD blocking,tracking protection,privacy protection,anti-phishing,anti-mining
+#########################################
+HOST,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe,REJECT
+HOST,this_rule_set_is_made_by_sukkaw.skk.moe,REJECT
+HOST,stun.smartgslb.com,REJECT
+HOST,api-js.mixpanel.com,REJECT
+HOST,api.iterable.com,REJECT
+HOST,js.iterable.com,REJECT
+HOST-SUFFIX,openx.net,REJECT
+HOST-SUFFIX,telemetry-coverage.mozilla.org,REJECT
+HOST-SUFFIX,telemetry.mozilla.org,REJECT
+HOST-SUFFIX,incoming-telemetry.thunderbird.net,REJECT
+HOST-SUFFIX,crazyegg.com,REJECT
+HOST-SUFFIX,amplitude.com,REJECT
+HOST-SUFFIX,advertising.com,REJECT
+HOST-SUFFIX,net.mydays.de,REJECT
+HOST-SUFFIX,notifysrv.com,REJECT
+HOST-SUFFIX,notify6.com,REJECT
+HOST-KEYWORD,.estream.,REJECT
+HOST-KEYWORD,jshosting,REJECT
+HOST-KEYWORD,hostingcloud,REJECT
+HOST-KEYWORD,flightsy,REJECT
+HOST-KEYWORD,zymerget,REJECT
+HOST-KEYWORD,gettate,REJECT
+HOST-KEYWORD,mighbest,REJECT
+HOST-KEYWORD,nimiqpool,REJECT
+HOST-KEYWORD,.freecontent.,REJECT
+HOST-KEYWORD,sunnimiq,REJECT
+HOST-KEYWORD,.nimiq.,REJECT
+HOST-KEYWORD,anybest.,REJECT
+HOST-KEYWORD,dubester.,REJECT
+HOST-KEYWORD,pancakeswap,REJECT
+HOST-KEYWORD,fb-restriction-case,REJECT
+HOST-KEYWORD,fb-restriction-appeal,REJECT
+HOST-KEYWORD,fb-community-standards,REJECT
+HOST-KEYWORD,fb-business-appeal,REJECT
+HOST-KEYWORD,cp-home-pl-,REJECT
+HOST-KEYWORD,track.tiara,REJECT
+HOST-KEYWORD,umeng,REJECT
+HOST-KEYWORD,adsby,REJECT
+HOST-KEYWORD,adsdk,REJECT
+HOST-KEYWORD,adserver,REJECT
+HOST-KEYWORD,admaster,REJECT
+HOST-KEYWORD,adserve2,REJECT
+HOST-KEYWORD,admob,REJECT
+HOST-KEYWORD,adserver,REJECT
+HOST-KEYWORD,adspace,REJECT
+HOST-KEYWORD,advertmarket,REJECT
+HOST-KEYWORD,adsyndication,REJECT
+HOST-KEYWORD,doubleclick.,REJECT
+HOST-KEYWORD,adjust.,REJECT
+HOST-KEYWORD,appsflyer,REJECT
+HOST-KEYWORD,dnserror,REJECT
+HOST-KEYWORD,marketing.net,REJECT
+HOST-KEYWORD,adktrack,REJECT
+HOST-KEYWORD,_vmind.qqvideo.tc.qq.com,REJECT
+HOST-KEYWORD,-logging.nextmedia.com,REJECT
+HOST-KEYWORD,-spiky.clevertap-prod.com,REJECT
+HOST-KEYWORD,.engage.3m.,REJECT
+HOST-KEYWORD,telemetry.officeapps.live.com,REJECT
+HOST-KEYWORD,-launches.appsflyersdk.com,REJECT
+HOST-KEYWORD,-s2s.sensic.net,REJECT
+HOST-KEYWORD,.net.daraz.,REJECT
+HOST-KEYWORD,.zooplus.,REJECT
+HOST-KEYWORD,smetrics.marketing.,REJECT
+HOST-KEYWORD,wxsnsdy,REJECT
+HOST-KEYWORD,adwords,REJECT
+HOST-KEYWORD,-tracker.biliapi.net,REJECT
+HOST-WILDCARD,f-log*.grammarly.io,REJECT
+HOST-WILDCARD,*.ad.*.prod.hosts.ooklaserver.net,REJECT
+HOST-WILDCARD,adv0*.msa.cdn.mediaset.net,REJECT
+HOST-WILDCARD,beacons*.gvt?.com,REJECT
+HOST-WILDCARD,*ad.ixigua.com,REJECT
+#AND,((HOST-KEYWORD,genuine),(HOST-KEYWORD,autodesk))
+#AND,((USER-AGENT,bili*),(NOT,((OR,((HOST-SUFFIX,bilibili.com),(HOST-SUFFIX,hdslb.com),(HOST-SUFFIX,wo.cn),(HOST-SUFFIX,biligame.com),(HOST-SUFFIX,bilivideo.com),(HOST-SUFFIX,bilivideo.cn),(HOST-SUFFIX,biliapi.com),(HOST-SUFFIX,biliapi.net),(HOST-SUFFIX,biliintl.com),(HOST-SUFFIX,bstarstatic.com),(HOST-SUFFIX,akamaized.net))))))
 ################## EOF ##################
