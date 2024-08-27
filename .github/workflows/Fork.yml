@@ -24,7 +24,7 @@ jobs:
 
     - name: Copy 
       run: |
-        cd Tool-repo/GeoIP
+        mkdir -p Tool/GeoIP
         curl -L -o Tool-repo/GeoIP/CN_Country.mmdb "https://raw.githubusercontent.com/Masaiki/GeoIP2-CN/release/Country.mmdb"
         curl -L -o Tool-repo/GeoIP/Global_Country.mmdb "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb"
 
@@ -33,7 +33,7 @@ jobs:
 
     - name: Copy Surge/Rules
       run: |
-        cd Tool-repo/Surge/Rules
+        mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
         # 苹果
         curl -L -o Tool-repo/Surge/Rules/APNs.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/Surge/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
@@ -212,7 +212,7 @@ jobs:
 
     - name: Copy Clash/Rules
       run: |
-        cd Tool-repo/Clash/Rules
+        mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
         # 流媒体
         cp -r Tool-repo/Surge/Rules/Emby.list Tool-repo/Clash/Rules/Emby.list
         curl -L -o Tool-repo/Clash/Rules/TikTok.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/TikTok.list"
@@ -368,7 +368,7 @@ jobs:
 
     - name: Copy QuantumultX/Rules
       run: |
-        cd Tool-repo/QuantumultX/Rules
+        mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
         curl -L -o Tool-repo/QuantumultX/Rules/APNs.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/QuantumultX/Rules/Lan.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list"
         curl -L -o Tool-repo/QuantumultX/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
@@ -494,7 +494,7 @@ jobs:
 
     - name: Copy Loon/Rules
       run: |
-        cd Tool-repo/Loon/Rules
+        mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
 
         curl -L -o Tool-repo/Loon/Rules/APNs.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/Loon/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
@@ -639,7 +639,7 @@ jobs:
 
     - name: Copy Shadowrocket/Rules
       run: |
-        cd Tool-repo/Shadowrocket/Rules
+        mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
 
         curl -L -o Tool-repo/Shadowrocket/Rules/APNs.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/Shadowrocket/Rules/Apple.list "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
@@ -759,7 +759,7 @@ jobs:
 
     - name: Copy Stash/Rules 
       run: |
-        cd Tool-repo/Stash/Rules
+        mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
 
         curl -L -o Tool-repo/Stash/Rules/APNs.yaml "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/Stash/Rules/Apple.yaml "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
@@ -968,7 +968,7 @@ jobs:
 
     - name: Copy Egern/Rules
       run: |
-        cd Tool-repo/Egern/Rules
+        mkdir -p Tool/{Clash,Egern,Loon,QuantumultX,Shadowrocket,Stash,Surge}/Rules
 
         curl -L -o Tool-repo/Egern/Rules/APNs.yaml "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/ApplePushNotificationService.list"
         curl -L -o Tool-repo/Egern/Rules/Apple.yaml "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/Apple.list"
