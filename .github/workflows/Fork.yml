@@ -1,4 +1,4 @@
-# 2024-08-27 22:10
+# 2024-08-27 22:18
 name: Fork & Edit
 
 on:
@@ -153,7 +153,7 @@ jobs:
         done
 
         # 转换 domain-set 为 rule-set
-        for file in AdGuardChinese.list Ads_AWAvenue.list Ads_SukkaW.lis CDN.list; do
+        for file in AdGuardChinese.list Ads_AWAvenue.list Ads_SukkaW.list CDN.list; do
           if [ -f "$file" ]; then
             # 将以.开头的行的第一个.替换为 DOMAIN-SUFFIX,
             sed -i '/^\./s/^\./DOMAIN-SUFFIX,/' "$file"
