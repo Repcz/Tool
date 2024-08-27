@@ -1,0 +1,16 @@
+no_resolve: true
+domain_set:
+domain_suffix_set:
+- tktn.be
+- talkatone.com
+- mobilefuse.com
+domain_keyword_set:
+domain_regex_set:
+ip_cidr_set:
+- 205.164.56.0/24
+- 69.46.75.0/24
+- 205.164.56.0/24
+- 50.117.27.0/24
+ip_cidr6_set:
+asn_set:
+url_regex_set:

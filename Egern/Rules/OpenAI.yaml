@@ -1,0 +1,44 @@
+no_resolve: true
+domain_set:
+- chat.openai.com.cdn.cloudflare.net
+- o33249.ingest.sentry.io
+- openaiapi-site.azureedge.net
+- openaicom.imgix.net
+- openaicomproductionae4b.blob.core.windows.net
+- production-openaicom-storage.azureedge.net
+- api.githubcopilot.com
+- copilot-proxy.githubusercontent.com
+- copilot.microsoft.com
+- sydney.bing.com
+- www.bing.com
+- bard.google.com
+- gemini.google.com
+- generativelanguage.googleapis.com
+- ai.google.dev
+- aida.googleapis.com
+- aistudio.google.com
+- alkalimakersuite-pa.clients6.google.com
+- makersuite.google.com
+- imagine.meta.com
+- chat.mistral.ai
+- console.mistral.ai
+domain_suffix_set:
+- chatgpt.com
+- oaistatic.com
+- oaiusercontent.com
+- openai.com
+- anthropic.com
+- claude.ai
+- grazie.ai
+- grazie.aws.intellij.net
+- meta.ai
+- perplexity.ai
+- mistral.ai
+domain_keyword_set:
+domain_regex_set:
+ip_cidr_set:
+- 160.79.104.0/23
+ip_cidr6_set:
+- 2607:6bc0::/48
+asn_set:
+url_regex_set:

@@ -1,0 +1,88 @@
+no_resolve: true
+domain_set:
+domain_suffix_set:
+- aadrm.com
+- acompli.com
+- acompli.net
+- aka.ms
+- akadns.net
+- aspnetcdn.com
+- assets-yammer.com
+- azure.com
+- azure.net
+- azureedge.net
+- azureiotcentral.com
+- azurerms.com
+- bing.com
+- bing.net
+- bingapis.com
+- cloudapp.net
+- cloudappsecurity.com
+- edgesuite.net
+- gfx.ms
+- hotmail.com
+- live.com
+- live.net
+- lync.com
+- msappproxy.net
+- msauth.net
+- msauthimages.net
+- msecnd.net
+- msedge.net
+- msft.net
+- msftauth.net
+- msftauthimages.net
+- msftidentity.com
+- msidentity.com
+- msn.cn
+- msn.com
+- msocdn.com
+- msocsp.com
+- mstea.ms
+- o365weve.com
+- oaspapps.com
+- office.com
+- office.net
+- office365.com
+- officeppe.net
+- omniroot.com
+- onedrive.com
+- onenote.com
+- onenote.net
+- onestore.ms
+- outlook.com
+- outlookmobile.com
+- phonefactor.net
+- public-trust.com
+- sfbassets.com
+- sfx.ms
+- sharepoint.com
+- sharepointonline.com
+- skype.com
+- skypeassets.com
+- skypeforbusiness.com
+- staffhub.ms
+- svc.ms
+- sway-cdn.com
+- sway-extensions.com
+- sway.com
+- trafficmanager.net
+- uservoice.com
+- virtualearth.net
+- visualstudio.com
+- windows-ppe.net
+- windows.com
+- windows.net
+- windowsazure.com
+- windowsupdate.com
+- wunderlist.com
+- yammer.com
+- yammerusercontent.com
+domain_keyword_set:
+- 1drv
+- microsoft
+domain_regex_set:
+ip_cidr_set:
+ip_cidr6_set:
+asn_set:
+url_regex_set:

@@ -1,0 +1,67 @@
+no_resolve: true
+domain_set:
+domain_suffix_set:
+- apple-cloudkit.com
+- apple-icloud.cn
+- apple-livephotoskit.com
+- appleicloud.cn
+- applemx-icloud.com
+- apzones.com
+- cdn-apple.com
+- gc.apple.com
+- icloud-apple.cn
+- icloud-content.com
+- icloud-isupport.com
+- icloud.apple.com
+- icloud.ch
+- icloud.com
+- icloud.com.cn
+- icloud.de
+- icloud.ee
+- icloud.fi
+- icloud.fr
+- icloud.hu
+- icloud.ie
+- icloud.is
+- icloud.jp
+- icloud.lv
+- icloud.net.cn
+- icloud.om
+- icloud.org
+- icloud.pt
+- icloud.ro
+- icloud.se
+- icloud.si
+- icloud.sk
+- icloud.vn
+- icloudads.net
+- icloudapple.cn
+- icloudbox.net
+- icloudbrowser.net
+- icloude.com
+- icloudhome.com
+- icloudmail.net
+- icloudmusic.net
+- icloudnet.net
+- icloudo.com
+- icloudo.de
+- icloudo.net
+- icloudos.de
+- icloudos.net
+- icloudpay.net
+- icloudsecure.net
+- icloudsetup.com
+- ios-icloud.com
+- iwork.apple.com
+- me.com
+- myicloud.net
+- mylcloud.net
+- www-cdn.icloud.com.akadns.net
+- wwwicloud.com
+domain_keyword_set:
+- icloud.com.akadns.net
+domain_regex_set:
+ip_cidr_set:
+ip_cidr6_set:
+asn_set:
+url_regex_set:

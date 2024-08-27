@@ -1,0 +1,25 @@
+# 内容：Bilibili 哔哩哔哩
+# 数量：23条
+USER-AGENT,Bilibili*,DIRECT
+USER-AGENT,bili*,DIRECT
+USER-AGENT,bili-inter*,DIRECT
+HOST,apiintl.biliapi.net,DIRECT
+HOST,upos-hz-mirrorakam.akamaized.net,DIRECT
+HOST-SUFFIX,acg.tv,DIRECT
+HOST-SUFFIX,acgvideo.com,DIRECT
+HOST-SUFFIX,b23.tv,DIRECT
+HOST-SUFFIX,bigfun.cn,DIRECT
+HOST-SUFFIX,bigfunapp.cn,DIRECT
+HOST-SUFFIX,biliapi.com,DIRECT
+HOST-SUFFIX,biliapi.net,DIRECT
+HOST-SUFFIX,bilibili.co,DIRECT
+HOST-SUFFIX,bilibili.com,DIRECT
+HOST-SUFFIX,bilibili.tv,DIRECT
+HOST-SUFFIX,biligame.com,DIRECT
+HOST-SUFFIX,biligame.net,DIRECT
+HOST-SUFFIX,biliintl.co,DIRECT
+HOST-SUFFIX,bilivideo.cn,DIRECT
+HOST-SUFFIX,bilivideo.com,DIRECT
+HOST-SUFFIX,hdslb.com,DIRECT
+HOST-SUFFIX,im9.com,DIRECT
+HOST-SUFFIX,smtcdns.net,DIRECT

@@ -1,0 +1,141 @@
+payload:
+  #!name=分流修正
+  #!desc=修正某些被分流到外区的国内网站
+  #!author=fmz200
+  #!homepage=https://github.com/fmz200/wool_scripts
+  #!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/author/NaiSi_01.png
+  #!raw-url=https://github.com/fmz200/wool_scripts/raw/main/QuantumultX/filter/fenliuxiuzheng.list
+  #!tg-group=https://t.me/lanjieguanggao
+  #!date=2023-11-06 21:30:00
+  #!proxy-select=direct
+  #############################################
+  # > "reject"        策略返回 HTTP 状态码 404,不附带任何额外内容
+  # > "reject-200"    策略返回 HTTP 状态码 200,不附带任何额外内容
+  # > "reject-img"    策略返回 HTTP 状态码 200,同时附带 1px gif
+  # > "reject-dict"   策略返回 HTTP 状态码 200,同时附带一个空的 JSON 对象
+  # > "reject-array"  策略返回 HTTP 状态码 200,同时附带一个空的 JSON 数组
+  #############################################
+
+
+
+  # >>>>>>>>>>>>>>> ✅ 1 ✅ <<<<<<<<<<<<<<
+  - DOMAIN,ad.12306.cn
+
+
+
+
+  # >>>>>>>>>>>>>>> ✅ A ✅ <<<<<<<<<<<<<<
+  # > anti-ad
+  - DOMAIN-KEYWORD,anti-ad.net
+
+  # > Alibaba
+  - DOMAIN,log.mmstat.com
+  - DOMAIN,sycm.mmstat.com
+
+  # > 爱影视
+  - DOMAIN,static.jssp.tv
+  - DOMAIN,lain.bgm.tv
+  - DOMAIN,tiao.cjkypo.com
+  - DOMAIN,ok.zuidapic.com
+  - DOMAIN,ts.thefilehosting.com
+  - DOMAIN,deo.shopeemobile.com
+  - DOMAIN,m3u8.255tv.tk
+  - DOMAIN,m3u8.mstopq.com
+  - DOMAIN,ain.bgm.tv
+  - DOMAIN-KEYWORD,vip.lz-cdn
+  - DOMAIN-KEYWORD,ax1x.com
+  - DOMAIN-KEYWORD,o.lencr.org
+  - DOMAIN-KEYWORD,ttcdn-tos.kkimg.cc
+
+
+
+  # >>>>>>>>>>>>>>> ✅ D ✅ <<<<<<<<<<<<<<
+  # > 大师兄影视
+  - DOMAIN,sdk.alibaba.com.ailbaba.me
+  - DOMAIN,img.ffzypic.com
+  - DOMAIN,img.liangzipic.com
+  - DOMAIN,img.bfzypic.com
+  - DOMAIN,img.kuaikanzy.net
+  - DOMAIN,vip.imgffzy.com
+  - DOMAIN,vip.ffzyread.com
+  - DOMAIN,cdn.jsdelivr.net
+  - DOMAIN,image.maimn.com
+  - DOMAIN-KEYWORD,bfzycdn.com
+  - DOMAIN-KEYWORD,vip.kuaikan-cdn
+  - DOMAIN-KEYWORD,vip.ffzy-play
+  - DOMAIN-KEYWORD,vip.ffzy-online
+
+
+
+  # >>>>>>>>>>>>>>> ✅ P ✅ <<<<<<<<<<<<<<
+  # > 苹果推送服务
+  - DOMAIN-KEYWORD,push.apple.com
+  # > 苹果时间同步
+  - DOMAIN,time.apple.com
+  # > 苹果天气服务
+  - DOMAIN-KEYWORD,weather-edge.apple.com
+  - DOMAIN-KEYWORD,weather-adge.apple.com
+  - DOMAIN-SUFFIX,weather-data.apple.com
+  - DOMAIN-SUFFIX,weather-map.apple.com
+  - DOMAIN-SUFFIX,weather-analytics-events.apple.com
+  # > 苹果内购服务
+  - DOMAIN-KEYWORD,buy.itunes.apple.com
+  # > 苹果icloud
+  - DOMAIN-KEYWORD,icloud.com
+  # > 苹果输入法相关服务
+  - DOMAIN-KEYWORD,api.smoot.apple.com
+  - DOMAIN-KEYWORD,api.smoot.apple.cn
+  # > 苹果iMessage服务
+  - DOMAIN,init.ess.apple.com
+  # > 苹果其他服务
+  - DOMAIN-KEYWORD,ssl.apple.com
+  - DOMAIN-KEYWORD,humb.apple.com
+  - DOMAIN,smp-device-content.apple.com
+  - DOMAIN-KEYWORD,api-adservices.apple.com
+  - DOMAIN-KEYWORD,ls.apple.com
+  - DOMAIN-KEYWORD,gsa.apple.com
+  - DOMAIN-KEYWORD,ess.apple.com
+  # > 苹果app store
+  - DOMAIN,itunes.apple.com
+
+
+
+  # >>>>>>>>>>>>>>> ✅ Q ✅ <<<<<<<<<<<<<<
+  # > QQ空间
+  - DOMAIN-KEYWORD,ctc.qzs.qzone.qq.com
+
+
+  # >>>>>>>>>>>>>>> ✅ S ✅ <<<<<<<<<<<<<<
+  # > Strava
+  - DOMAIN,analytics.strava.com
+
+
+
+  # >>>>>>>>>>>>>>> ✅ T ✅ <<<<<<<<<<<<<<
+  # > Tencent
+  - DOMAIN,fairplay.l.qq.com
+  - DOMAIN,livew.l.qq.com
+  - DOMAIN,vd.l.qq.com
+  - DOMAIN,vi.l.qq.com
+
+
+
+  # >>>>>>>>>>>>>>> ✅ U ✅ <<<<<<<<<<<<<<
+  # > Umeng
+  - DOMAIN,msg.umeng.com
+  - DOMAIN,msg.umengcloud.com
+
+
+
+  # >>>>>>>>>>>>>>> ✅ X ✅ <<<<<<<<<<<<<<
+  # > 携程
+  - DOMAIN-KEYWORD,aw-s.tripcdn.com
+  - DOMAIN-KEYWORD,trip.com
+
+
+
+  # > 其他分流修正
+  # > 路由器后台
+  - IP-CIDR,192.168.0.1/24,no-resolve
+  # > 天翼网关
+  - IP-CIDR,192.168.1.1/24,no-resolve

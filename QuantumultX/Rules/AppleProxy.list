@@ -1,0 +1,51 @@
+# NAME: AppleProxy
+# DOMAIN: 27
+# HOST-SUFFIX: 12
+# PROCESS-NAME: 1
+# USER-AGENT: 5
+# TOTAL: 45
+HOST,api-glb-sea.smoot.apple.com,PROXY
+HOST,apple.comscoreresearch.com,PROXY
+HOST,books.itunes.apple.com,PROXY
+HOST,cdn.apple-cloudkit.com,PROXY
+HOST,cvws.icloud-content.com,PROXY
+HOST,developer.apple.com,PROXY
+HOST,devimages-cdn.apple.com,PROXY
+HOST,devstreaming-cdn.apple.com,PROXY
+HOST,docs-assets.developer.apple.com,PROXY
+HOST,gspe1-ssl.ls.apple.com,PROXY
+HOST,hls-svod.itunes.apple.com,PROXY
+HOST,itunes.apple.com,PROXY
+HOST,js-cdn.music.apple.com,PROXY
+HOST,lookup-api.apple.com,PROXY
+HOST,mask-api.icloud.com,PROXY
+HOST,mask-h2.icloud.com,PROXY
+HOST,mask.icloud.com,PROXY
+HOST,news-assets.apple.com,PROXY
+HOST,news-client.apple.com,PROXY
+HOST,news-edge.apple.com,PROXY
+HOST,news-events.apple.com,PROXY
+HOST,np-edge.itunes.apple.com,PROXY
+HOST,play-edge.itunes.apple.com,PROXY
+HOST,sandbox.itunes.apple.com,PROXY
+HOST,testflight.apple.com,PROXY
+HOST,tv.applemusic.com,PROXY
+HOST,uts-api.itunes.apple.com,PROXY
+HOST-SUFFIX,apple-dns.net,PROXY
+HOST-SUFFIX,apple.news,PROXY
+HOST-SUFFIX,apps.apple.com,PROXY
+HOST-SUFFIX,appsto.re,PROXY
+HOST-SUFFIX,audio-ssl.itunes.apple.com,PROXY
+HOST-SUFFIX,blobstore.apple.com,PROXY
+HOST-SUFFIX,cdn-apple.com,PROXY
+HOST-SUFFIX,digicert.com,PROXY
+HOST-SUFFIX,hls-amt.itunes.apple.com,PROXY
+HOST-SUFFIX,hls.itunes.apple.com,PROXY
+HOST-SUFFIX,ocsp.apple.com,PROXY
+HOST-SUFFIX,tv.apple.com,PROXY
+USER-AGENT,AppleNews*,PROXY
+USER-AGENT,AppleTV*,PROXY
+USER-AGENT,com.apple.news*,PROXY
+USER-AGENT,com.apple.trustd*,PROXY
+USER-AGENT,com.apple.tv*,PROXY
+#PROCESS-NAME,LookupViewService

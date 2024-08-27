@@ -1,0 +1,43 @@
+#!name = 滴滴出行去广告
+#!desc = 过滤滴滴出行广告
+#!openUrl = https://apps.apple.com/app/id554499054
+#!author = ZenmoFeiShi[https://github.com/ZenmoFeiShi]
+#!tag = 去广告
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.1(745)
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/DiDi.png
+#!date = 2024-08-12 17:38:05
+
+[Rule]
+# 拦截HTTPDNS
+DOMAIN, hd.xiaojukeji.com, REJECT
+
+AND, ((DEST-PORT, 25641), (IP-CIDR, 123.207.209.39/32, no-resolve)), REJECT
+AND, ((DEST-PORT, 25641), (IP-CIDR, 123.207.209.60/32, no-resolve)), REJECT
+AND, ((DEST-PORT, 25641), (IP-CIDR, 139.199.240.12/32, no-resolve)), REJECT
+AND, ((DEST-PORT, 25641), (IP-CIDR, 139.199.240.15/32, no-resolve)), REJECT
+# DOMAIN, img-ys011.didistatic.com, REJECT
+
+[Rewrite]
+^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/xpget reject-dict
+^https:\/\/ct\.xiaojukeji\.com\/agent\/v3\/feeds reject-dict
+^https:\/\/daijia\.kuaidadi\.com\/gateway reject-dict
+^https:\/\/freight\.xiaojukeji\.com\/gateway reject-dict
+^https:\/\/daijia\.kuaidadi\.com:443\/gateway reject-dict
+^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget reject-dict
+^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/other\/fast reject-dict
+^https:\/\/conf\.diditaxi\.com\.cn\/dynamic\/conf reject-dict
+
+[Script]
+http-response ^https:\/\/common\.diditaxi\.com\.cn\/common\/v\d\/usercenter\/me script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/DiDi/DiDi_remove_ads.js, requires-body = true, tag = 移除广告
+
+http-response ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/core script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/DiDi/DiDi_remove_ads.js, requires-body = true, tag = 移除广告
+
+http-response ^https:\/\/api\.udache\.com\/gulfstream\/pre-sale\/v1\/other\/pGetSceneLis script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/DiDi/DiDi_remove_ads.js, requires-body = true, tag = 移除广告
+
+http-response ^https:\/\/conf\.diditaxi\.com\.cn\/ota\/na\/yuantu\/infoList script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/DiDi/DiDi_remove_ads.js, requires-body = true, tag = 移除广告
+
+[Mitm]
+hostname = common.diditaxi.com.cn, freight.xiaojukeji.com, daijia.kuaidadi.com, ct.xiaojukeji.com, res.xiaojukeji.com, conf.diditaxi.com.cn, pi.udache.com, 123.207.209.*, 112.53.55.225, 120.241.142.*, 120.241.143.*, 116.85.2.*, 139.199.240.84

@@ -1,0 +1,44 @@
+domain_set:
+- api.goodnotescloud.com
+- app.adjust.com
+- app.appsflyer.com
+- bdtj.tagtic.cn
+- log.mmstat.com
+- sycm.mmstat.com
+- clientservices.googleapis.com
+- update.googleapis.com
+- dl.google.com
+- dl.l.google.com
+- redirector.gvt1.com
+- update.googleapis.com
+- mtalk.google.com
+- alt1-mtalk.google.com
+- alt2-mtalk.google.com
+- alt3-mtalk.google.com
+- alt4-mtalk.google.com
+- alt5-mtalk.google.com
+- alt6-mtalk.google.com
+- alt7-mtalk.google.com
+- alt8-mtalk.google.com
+- fairplay.l.qq.com
+- livew.l.qq.com
+- vd.l.qq.com
+- vi.l.qq.com
+- analytics.strava.com
+- msg.umeng.com
+- msg.umengcloud.com
+- ifconfig.me/ip
+domain_suffix_set:
+- test-ipv6.com
+- goodnotesapp.com.cn
+- subhd.tv
+- pianyuan.org
+- fileball.app
+- blog.google
+- googletraveladservices.com
+domain_keyword_set:
+domain_regex_set:
+ip_cidr_set:
+ip_cidr6_set:
+asn_set:
+url_regex_set:

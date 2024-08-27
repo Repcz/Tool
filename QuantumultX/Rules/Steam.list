@@ -1,0 +1,45 @@
+# NAME: Steam
+# DOMAIN: 1
+# HOST-KEYWORD: 3
+# HOST-SUFFIX: 36
+# TOTAL: 40
+HOST,steammobile.akamaized.net,PROXY
+HOST-SUFFIX,cdn-ali.content.steamchina.com,PROXY
+HOST-SUFFIX,cdn-qc.content.steamchina.com,PROXY
+HOST-SUFFIX,cdn-ws.content.steamchina.com,PROXY
+HOST-SUFFIX,csgo.wmsj.cn,PROXY
+HOST-SUFFIX,dl.steam.clngaa.com,PROXY
+HOST-SUFFIX,dl.steam.ksyna.com,PROXY
+HOST-SUFFIX,dota2.wmsj.cn,PROXY
+HOST-SUFFIX,fanatical.com,PROXY
+HOST-SUFFIX,humblebundle.com,PROXY
+HOST-SUFFIX,playartifact.com,PROXY
+HOST-SUFFIX,s.team,PROXY
+HOST-SUFFIX,st.dl.bscstorage.net,PROXY
+HOST-SUFFIX,st.dl.eccdnx.com,PROXY
+HOST-SUFFIX,st.dl.pinyuncloud.com,PROXY
+HOST-SUFFIX,steam-api.com,PROXY
+HOST-SUFFIX,steam-chat.com,PROXY
+HOST-SUFFIX,steambroadcast.akamaized.net,PROXY
+HOST-SUFFIX,steamcdn-a.akamaihd.net,PROXY
+HOST-SUFFIX,steamcommunity-a.akamaihd.net,PROXY
+HOST-SUFFIX,steamcommunity.com,PROXY
+HOST-SUFFIX,steamcontent.tnkjmec.com,PROXY
+HOST-SUFFIX,steamgames.com,PROXY
+HOST-SUFFIX,steampipe.akamaized.net,PROXY
+HOST-SUFFIX,steampowered.com,PROXY
+HOST-SUFFIX,steampowered.com.8686c.com,PROXY
+HOST-SUFFIX,steamstat.us,PROXY
+HOST-SUFFIX,steamstatic.com,PROXY
+HOST-SUFFIX,steamstatic.com.8686c.com,PROXY
+HOST-SUFFIX,steamstore-a.akamaihd.net,PROXY
+HOST-SUFFIX,steamunlocked.net,PROXY
+HOST-SUFFIX,steamusercontent-a.akamaihd.net,PROXY
+HOST-SUFFIX,steamuserimages-a.akamaihd.net,PROXY
+HOST-SUFFIX,steamvideo-a.akamaihd.net,PROXY
+HOST-SUFFIX,underlords.com,PROXY
+HOST-SUFFIX,valvesoftware.com,PROXY
+HOST-SUFFIX,wmsjsteam.com,PROXY
+HOST-KEYWORD,steambroadcast,PROXY
+HOST-KEYWORD,steamstore,PROXY
+HOST-KEYWORD,steamuserimages,PROXY

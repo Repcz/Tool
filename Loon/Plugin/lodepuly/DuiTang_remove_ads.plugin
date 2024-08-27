@@ -1,0 +1,109 @@
+#!name = 堆糖去广告
+#!desc = 移除开屏广告、信息流广告、热搜排行榜广告、我的页面横幅广告，移除关注推荐。
+#!openUrl = https://apps.apple.com/app/id533415763
+#!author = 可莉🅥[https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md]
+#!tag = 去广告
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.1(745)
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/DuiTang.png
+#!date = 2024-07-17 01:54:45
+
+[Rule]
+DOMAIN, sdk.1rtb.net, REJECT
+
+# 北京锐讯灵通科技有限公司
+DOMAIN, ztoken.uyunad.com, REJECT
+
+# 字节跳动广告
+AND, ((DOMAIN-KEYWORD, ads), (DOMAIN-KEYWORD, normal), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
+AND, ((DOMAIN-KEYWORD, -ad-), (DOMAIN-SUFFIX, byteimg.com)), REJECT
+AND, ((DOMAIN-KEYWORD, minigame), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
+AND, ((DOMAIN-KEYWORD, tnc), (AND, ((OR, ((DOMAIN-KEYWORD, -bjlgy), (DOMAIN-KEYWORD, -alisc), (DOMAIN-KEYWORD, -aliec))), (OR, ((DOMAIN-SUFFIX, snssdk.com), (DOMAIN-SUFFIX, toutiaoapi.com), (DOMAIN-SUFFIX, bytedance.com), (DOMAIN-SUFFIX, zijieapi.com)))))), REJECT // 拦截HTTPDNS
+DOMAIN, mon.zijieapi.com, REJECT
+DOMAIN, mssdk-bu.bytedance.com, REJECT
+DOMAIN, toblog.ctobsnssdk.com, REJECT
+DOMAIN, lf-cdn-tos.bytescm.com, REJECT
+DOMAIN, mssdk.volces.com, REJECT
+DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT
+DOMAIN-KEYWORD, -be-pack-sign.pglstatp-toutiao.com, REJECT
+DOMAIN-KEYWORD, -be-pack.pglstatp-toutiao.com, REJECT
+DOMAIN-KEYWORD, -fe-tos.pglstatp-toutiao.com, REJECT
+DOMAIN-KEYWORD, api-access.pangolin-sdk-toutiao, REJECT
+DOMAIN-KEYWORD, log-api.pangolin-sdk-toutiao, REJECT
+
+# 讯飞AI营销
+DOMAIN-KEYWORD, iflyad.bj.openstorage.cn, REJECT
+DOMAIN-KEYWORD, bjimp.voiceads.cn, REJECT
+
+# 快手联盟 - 广告服务商
+DOMAIN, gdfp.gifshow.com, REJECT
+DOMAIN, open.e.kuaishou.com, REJECT
+DOMAIN-SUFFIX, adukwai.com, REJECT
+
+# 百度联盟 - 广告服务商
+DOMAIN, mobads.baidu.com, REJECT
+DOMAIN, mobads-logs.baidu.com, REJECT
+DOMAIN, wn.pos.baidu.com, REJECT
+DOMAIN, bgg.baidu.com, REJECT
+DOMAIN, als.baidu.com, REJECT
+DOMAIN, mobads-pre-config.cdn.bcebos.com, REJECT
+DOMAIN, cpro.baidustatic.com, REJECT
+DOMAIN, feed-image.baidu.com, REJECT
+DOMAIN-SUFFIX, union.baidu.cn, REJECT
+DOMAIN-SUFFIX, union.baidu.com, REJECT
+
+# 腾讯优量汇 - 广告服务商
+DOMAIN, ios.bugly.qq.com, REJECT
+DOMAIN, sdk.e.qq.com, REJECT
+DOMAIN-SUFFIX, ugdtimg.com, REJECT
+# DOMAIN, adsmind.ugdtimg.com, REJECT
+# DOMAIN, pgdt.ugdtimg.com, REJECT
+# DOMAIN, qzs.gdtimg.com, REJECT
+DOMAIN-SUFFIX, gdt.qq.com, REJECT
+# DOMAIN, mi.gdt.qq.com, REJECT
+# DOMAIN, win.gdt.qq.com, REJECT
+# DOMAIN, v2.gdt.qq.com, REJECT
+# v.gdt.qq.com, REJECT
+# t.gdt.qq.com, REJECT
+# c2.gdt.qq.com, REJECT
+
+# 个推
+DOMAIN-SUFFIX, mobileservice.cn, REJECT
+DOMAIN-SUFFIX, getui.com, REJECT
+DOMAIN-SUFFIX, igexin.com, REJECT
+
+# 友盟
+DOMAIN, cnlogs.umeng.com, REJECT
+DOMAIN, errlog.umeng.com, REJECT
+DOMAIN, errnewlog.umeng.com, REJECT
+DOMAIN, ucc.umeng.com, REJECT
+DOMAIN, ulogs.umeng.com, REJECT
+DOMAIN, utoken.umeng.com, REJECT
+DOMAIN, deeplink.umeng.com, REJECT
+DOMAIN, aspect-upush.umeng.com, REJECT
+
+# 穿山甲SDK
+DOMAIN, toblog.ctobsnssdk.com, REJECT
+
+[Rewrite]
+# 信息流广告
+^https:\/\/(www|api)\.duitang\.com\/napi\/(ad|ads)\/ reject-dict
+# 其他广告
+^https:\/\/api\.duitang\.com\/napi\/infra\/settings\/ reject-dict
+# 达人推荐
+^https:\/\/api\.duitang\.com\/napi\/vienna\/daren\/daren\/recommend\/ reject-dict
+
+# 拼多多广告平台
+^https:\/\/video-dsp\.pddpic\.com\/market-dsp-video\/ reject
+^https:\/\/t-dsp\.pinduoduo\.com\/dspcb\/i\/mrk_union reject
+^https:\/\/images\.pinduoduo\.com\/mrk\/ reject
+^https:\/\/images\.pinduoduo\.com\/marketing_api\/ reject
+
+[Script]
+# 清理配置文件
+http-response ^https:\/\/(www|api)\.duitang\.com\/napi\/settings\/ script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/DuiTang/DuiTang_remove_ads.js, requires-body = true, tag = 清理配置文件
+
+[Mitm]
+hostname = api.duitang.com, www.duitang.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com, images.pinduoduo.com

@@ -1,0 +1,15 @@
+no_resolve: true
+domain_set:
+- tronlink-images.s3.us-east-2.amazonaws.com
+domain_suffix_set:
+- tronlink.org
+- justswap.link
+domain_keyword_set:
+domain_regex_set:
+ip_cidr_set:
+- 3.136.94.196/32
+- 44.205.88.94/32
+- 18.206.50.220/32
+ip_cidr6_set:
+asn_set:
+url_regex_set:

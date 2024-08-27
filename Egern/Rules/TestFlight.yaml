@@ -1,0 +1,12 @@
+no_resolve: true
+domain_set:
+- beta.apple.com
+- testflight.apple.com
+domain_suffix_set:
+domain_keyword_set:
+- testflight
+domain_regex_set:
+ip_cidr_set:
+ip_cidr6_set:
+asn_set:
+url_regex_set:
