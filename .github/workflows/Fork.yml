@@ -25,7 +25,6 @@ jobs:
     - name: Copy 
       run: |
         cd Tool-repo/GeoIP
-        mkdir -p Tool-repo/GeoIP
         curl -L -o Tool-repo/GeoIP/CN_Country.mmdb "https://raw.githubusercontent.com/Masaiki/GeoIP2-CN/release/Country.mmdb"
         curl -L -o Tool-repo/GeoIP/Global_Country.mmdb "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb"
 
