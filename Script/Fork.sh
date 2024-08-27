@@ -1,5 +1,4 @@
-# 2024-08-27 19:12
-
+# 2024-08-27 21:50
 #!/bin/bash
 
 # 创建规则目录
@@ -235,7 +234,7 @@ curl -L -o Tool-repo/QuantumultX/Rules/Ads_EasyListPrivacy.list "https://raw.git
 curl -L -o Tool-repo/QuantumultX/Rules/Ads_Dlerio.list "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Reject.list"
 curl -L -o Tool-repo/QuantumultX/Rules/Ads_limbopro.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Surge/rule/Adblock4limbo_surge.list"
 curl -L -o Tool-repo/QuantumultX/Rules/AdGuardChinese.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/AdGuardChinese.list"
-cp -r Tool-repo/Surge/Rules/Ads_SukkaW.list Tool-repo/QuantumultX/Rules/Ads_SukkaW.list
+curl -L -o Tool-repo/QuantumultX/Rules/Ads_SukkaW.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Ads_SukkaW.list"
 cp -r Tool-repo/Surge/Rules/Reject.list Tool-repo/QuantumultX/Rules/Reject.list
 # Lan
 cp -r Tool-repo/Surge/Rules/Lan.list Tool-repo/QuantumultX/Rules/Lan.list
@@ -310,7 +309,7 @@ curl -L -o Tool-repo/Loon/Rules/Ads_Dlerio.list "https://raw.githubusercontent.c
 curl -L -o Tool-repo/Loon/Rules/Ads_RuCu6.list "https://raw.githubusercontent.com/RuCu6/QuanX/main/Rules/MyBlockAds.list"
 curl -L -o Tool-repo/Loon/Rules/Ads_limbopro.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Surge/rule/Adblock4limbo_surge.list"
 curl -L -o Tool-repo/Loon/Rules/AdGuardChinese.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/AdGuardChinese.list"
-cp -r Tool-repo/Surge/Rules/Ads_SukkaW.list Tool-repo/Loon/Rules/Ads_SukkaW.list
+curl -L -o Tool-repo/Loon/Rules/Ads_SukkaW.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Ads_SukkaW.list"
 cp -r Tool-repo/Surge/Rules/Reject.list Tool-repo/Loon/Rules/Reject.list
 # fmz200
 curl -L -o Tool-repo/Loon/Rules/Direct_fmz200.list "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliuxiuzheng.list"
@@ -389,7 +388,7 @@ curl -L -o Tool-repo/Shadowrocket/Rules/Ads_Dlerio.list "https://raw.githubuserc
 curl -L -o Tool-repo/Shadowrocket/Rules/Ads_RuCu6.list "https://raw.githubusercontent.com/RuCu6/QuanX/main/Rules/MyBlockAds.list"
 curl -L -o Tool-repo/Shadowrocket/Rules/Ads_limbopro.list "https://raw.githubusercontent.com/limbopro/Adblock4limbo/main/Surge/rule/Adblock4limbo_surge.list"
 curl -L -o Tool-repo/Shadowrocket/Rules/AdGuardChinese.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/AdGuardChinese.list"
-cp -r Tool-repo/Surge/Rules/Ads_SukkaW.list Tool-repo/Shadowrocket/Rules/Ads_SukkaW.list
+curl -L -o Tool-repo/Shadowrocket/Rules/Ads_SukkaW.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Ads_SukkaW.list"
 cp -r Tool-repo/Surge/Rules/Reject.list Tool-repo/Shadowrocket/Rules/Reject.list
 # fmz200
 curl -L -o Tool-repo/Shadowrocket/Rules/Direct_fmz200.list "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliuxiuzheng.list"
@@ -469,7 +468,7 @@ curl -L -o Tool-repo/Stash/Rules/Ads_EasyListPrivacy.yaml "https://raw.githubuse
 curl -L -o Tool-repo/Stash/Rules/Ads_Dlerio.yaml "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Reject.list"
 curl -L -o Tool-repo/Stash/Rules/Ads_RuCu6.yaml "https://raw.githubusercontent.com/RuCu6/QuanX/main/Rules/MyBlockAds.list"
 curl -L -o Tool-repo/Stash/Rules/AdGuardChinese.yaml "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/AdGuardChinese.list"
-cp -r Tool-repo/Surge/Rules/Ads_SukkaW.list Tool-repo/Stash/Rules/Ads_SukkaW.yaml
+curl -L -o Tool-repo/Stash/Rules/Ads_SukkaW.yaml "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Ads_SukkaW.list"
 cp -r Tool-repo/Surge/Rules/Reject.list Tool-repo/Stash/Rules/Reject.yaml
 # fmz200
 curl -L -o Tool-repo/Stash/Rules/Direct_fmz200.yaml "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliuxiuzheng.list"
@@ -547,7 +546,7 @@ curl -L -o Tool-repo/Stash/Rules/Ads_EasyListPrivacy.list "https://raw.githubuse
 curl -L -o Tool-repo/Stash/Rules/Ads_Dlerio.list "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Reject.list"
 curl -L -o Tool-repo/Stash/Rules/Ads_RuCu6.list "https://raw.githubusercontent.com/RuCu6/QuanX/main/Rules/MyBlockAds.list"
 curl -L -o Tool-repo/Stash/Rules/AdGuardChinese.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/AdGuardChinese.list"
-cp -r Tool-repo/Surge/Rules/Ads_SukkaW.list Tool-repo/Stash/Rules/Ads_SukkaW.list
+curl -L -o Tool-repo/Stash/Rules/Ads_SukkaW.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Ads_SukkaW.list"
 cp -r Tool-repo/Surge/Rules/Reject.list Tool-repo/Stash/Rules/Reject.list
 # fmz200
 curl -L -o Tool-repo/Stash/Rules/Direct_fmz200.list "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliuxiuzheng.list"
@@ -628,7 +627,7 @@ curl -L -o Tool-repo/Egern/Rules/Ads_Dlerio.yaml "https://raw.githubusercontent.
 curl -L -o Tool-repo/Egern/Rules/Anti-ad.yaml "https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-surge.txt"
 curl -L -o Tool-repo/Egern/Rules/Ads_RuCu6.yaml "https://raw.githubusercontent.com/RuCu6/QuanX/main/Rules/MyBlockAds.list"
 curl -L -o Tool-repo/Egern/Rules/AdGuardChinese.yaml "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/AdGuardChinese.list"
-cp -r Tool-repo/Surge/Rules/Ads_SukkaW.list Tool-repo/Egern/Rules/Ads_SukkaW.yaml
+curl -L -o Tool-repo/Egern/Rules/Ads_SukkaW.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Ads_SukkaW.list"
 cp -r Tool-repo/Surge/Rules/Reject.list Tool-repo/Egern/Rules/Reject.yaml
 # fmz200
 curl -L -o Tool-repo/Egern/Rules/Direct_fmz200.yaml "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliuxiuzheng.list"
