@@ -100,7 +100,7 @@ jobs:
         curl -L -o Tool-repo/Surge/Rules/Ads_AWAvenue.list "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Surge.list"
         curl -L -o Tool-repo/Surge/Rules/AdGuardChinese.list "https://raw.githubusercontent.com/geekdada/surge-list/master/domain-set/chinese-filter.txt"
         # 自定义广告规则
-        cp -r Tool-repo/Surge/Rules/Customrules/Empty.list Tool-repo/Surge/Rules/Reject.list
+        curl -L -o Tool-repo/Surge/Rules/Reject.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Empty.list"
         # fmz200
         curl -L -o Tool-repo/Surge/Rules/Direct_fmz200.list "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliuxiuzheng.list"
         curl -L -o Tool-repo/Surge/Rules/Ads_fmz200.list "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/filter/fenliu.list"
