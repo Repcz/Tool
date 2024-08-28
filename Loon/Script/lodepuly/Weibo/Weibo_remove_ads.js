@@ -1,7 +1,7 @@
 /*
 引用地址：https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/weibo.js
 */
-// 2024-08-23 10:35
+// 2024-08-26 10:20
 
 const url = $request.url;
 if (!$response) $done({});
@@ -284,10 +284,14 @@ if (url.includes("/interface/sdk/sdkad.php")) {
     if (obj?.items?.length > 0) {
       let newItems = [];
       for (let item of obj.items) {
+        if (item?.data?.itemid === "hot-search-push-notice") {
+          // 开启推送通知的提示
+          continue;
+        }
         if (item?.items?.length > 0) {
           let newII = [];
           for (let i of item.items) {
-            if (i?.data.hasOwnProperty("promotion")) {
+            if (i?.data?.hasOwnProperty("promotion")) {
               // 热搜列表中的推广项目
               continue;
             } else if (/_img_search_stick/.test(i?.data?.pic)) {

@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Amap.png
-#!date = 2024-08-27 05:17:57
+#!date = 2024-08-28 08:27:52
 
 [Rule]
 # 移除广告下发请求
@@ -42,6 +42,7 @@ http-response ^https:\/\/m5\.amap\.com\/ws\/bus\/plan\/integrate\? script-path =
 http-response ^https:\/\/m5\.amap\.com\/ws\/c3frontend\/af-(hotel|launch)\/page\/main\? script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Amap/Amap_remove_ads.js, requires-body = true, tag = 移除导航详情页推广
 http-response ^https:\/\/m5\.amap\.com\/ws\/perception\/drive\/(routeInfo|routePlan) script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Amap/Amap_remove_ads.js, requires-body = true, tag = 移除导航详情页推广
 http-response ^https:\/\/m5\.amap\.com\/ws\/shield\/search\/(common\/coupon\/info|poi\/detail) script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Amap/Amap_remove_ads.js, requires-body = true, tag = 移除导航详情页推广
+http-response ^https:\/\/m5\.amap\.com\/ws\/shield\/search_bff\/hotword\? script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Amap/Amap_remove_ads.js, requires-body = true, tag = 移除导航详情页推广
 http-response ^https:\/\/m5\.amap\.com\/ws\/shield\/search_business\/process\/marketingOperationStructured\? script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Amap/Amap_remove_ads.js, requires-body = true, tag = 移除导航详情页推广
 http-response ^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/(homepage|mps|search\/sp|sug|tips_operation_location) script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Amap/Amap_remove_ads.js, requires-body = true, tag = 移除导航详情页推广
 

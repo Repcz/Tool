@@ -1,14 +1,22 @@
 /*
 引用地址https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amap.js
 */
-// 2024-08-14 15:30
+// 2024-08-27 11:45
 
 const url = $request.url;
 if (!$response.body) $done({});
 let obj = JSON.parse($response.body);
 
 if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
-  // 导航选路线页面左上角动图
+  if (obj?.data?.common_data?.bus_plan_bottom_event?.data?.length > 0) {
+    // 公交出行 底部卡路里数值
+    obj.data.common_data.bus_plan_bottom_event.data = [];
+  }
+  if (obj?.data?.common_data?.bus_plan_segment_event?.data?.length > 0) {
+    // 公交出行 中转站 卡路里数值
+    obj.data.common_data.bus_plan_segment_event.data = [];
+  }
+  // 导航选择路线页面 左上角动图
   if (obj?.data?.front_end?.assistant?.length > 0) {
     obj.data.front_end.assistant = [];
   }
@@ -181,8 +189,9 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
   const items = [
     "Naviendpage_Searchwords",
     "SplashScreenControl",
-    "TipsTaxiButton",
+    "TipsTaxiButton", // 选路线页面 打车图标
     "amapCoin",
+    "favorites_info", // 收藏夹顶部横图推广
     "feedback_banner", // 店主专属通道
     "footprint", // 足迹
     "his_input_tip",
@@ -194,15 +203,14 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     "hotel_tipsicon",
     "hotsaleConfig", // 酒店限时抢购
     "landing_page_info", // 发现吃喝玩乐好去处
-    // "map_weather_switch", // 天气
-    // "maplayers", // 赏花地图
+    "map_weather_switch", // 天气
+    "maplayers", // 赏花地图
     "navi_end", // 导航结束 领油滴
-    // "nearby",
     "nearby_business_popup",
     "nearby_map_entry_guide",
     "nearby_map_pull_down_guide",
     "operation_layer", // 首页右上角图层
-    // "poi_rec",
+    "poi_rec",
     "preword",
     "route_banner", // 搜索路线 免费抽机票
     "routeresult_banner",
@@ -213,6 +221,12 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     "search_poi_recommend",
     "search_service_adcode",
     "search_word",
+    "sportsGroupConfig",
+    "sportsHealthConfig",
+    "sportsHomeConfig",
+    "sportsRouteConfig",
+    "sportsTaskConfig",
+    "sports_walk",
     "small_biz_b2b_kb", // 入驻高德
     "small_biz_case", // 推广
     "small_biz_fun",
@@ -353,6 +367,8 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     "packageShelf", // 附近酒景推荐
     "parentBizRec",
     "parentPoiRecEntrance", // 所在商圈
+    "poiDetailWaterFeed", // 附近景点瀑布流 新
+    "poiDetailWaterFeedTitle", // 更多人气好去处 新
     "poster_banner",
     // "poi_intercept",
     "portal_entrance", // 高德旅游版块 引流到旅游频道
@@ -411,12 +427,17 @@ if (url.includes("/aos/perception/publicTravel/beforeNavi")) {
     // "video",
     "waistRecEntrance", // 更多人气好去处
     "waterFallFeed", // 附近景点瀑布流
-    "waterFallFeedTitle" // 更多好去处
+    "waterFallFeedTitle" // 更多人气好去处
   ];
   if (obj?.data?.modules) {
     for (let i of items) {
       delete obj.data.modules[i];
     }
+  }
+} else if (url.includes("/shield/search_bff/hotword")) {
+  // 搜索框 热榜logo
+  if (obj?.data?.headerHotWord?.length > 0) {
+    obj.data.headerHotWord = [];
   }
 } else if (url.includes("/shield/search_business/process/marketingOperationStructured")) {
   // 详情页 顶部优惠横幅

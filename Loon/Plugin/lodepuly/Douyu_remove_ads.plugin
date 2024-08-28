@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Douyu.png
-#!date = 2024-08-23 12:33:56
+#!date = 2024-08-28 08:42:59
 
 [Rule]
 # 拦截HTTPDNS
@@ -30,16 +30,15 @@ DOMAIN, stun1.qvb.qcloud.com, REJECT
 # 开屏广告
 ^https:\/\/rtbapi\.douyucdn\.cn\/japi\/sign\/app\/getinfo reject-dict
 
+# 首页直播间悬浮窗 - 直播间悬浮窗data.pendant_a / 直播间宝箱data.entrance_d
+^https:\/\/apiv2\.douyucdn\.cn\/japi\/entrance\/roomRes\/nc\/m\/list response-body-json-del data.pendant_a data.entrance_d
+
+# 修改应用配置 - 大神游戏陪玩greatGodGameSitterSwitch / 关注更多主播入口followMoreAnchorEntrance / 直播横幅sdklivebanner / 首页活动悬浮窗homeActFloatSwitch / 带货开关bringGoodsSwitch / QQ游戏qqGameSwitch
+^https:\/\/venus\.douyucdn\.cn\/venus\/config\/static\/update.+keyCodeSet=flow_config greatGodGameSitterSwitch 0 followMoreAnchorEntrance 0 sdklivebanner 0 homeActFloatSwitch 0 bringGoodsSwitch 0 qqGameSwitch 0
+
 [Script]
 # 首页轮播图和视频流广告
 http-response ^https:\/\/apiv2\.douyucdn\.cn\/mgapi\/livenc\/home\/getRecV3 script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Douyu/Douyu_remove_ads.js, requires-body = true, tag = 移除首页轮播图和视频流广告
-http-response ^https:\/\/apiv2\.douyucdn\.cn\/mgapi\/livenc\/home\/getRecV3
-
-# 首页直播间悬浮窗
-http-response ^https:\/\/apiv2\.douyucdn\.cn\/japi\/entrance\/roomRes\/nc\/m\/list script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Douyu/Douyu_remove_ads.js, requires-body = true, tag = 移除首页直播间悬浮窗
-
-# 修改应用配置
-http-response ^https:\/\/venus\.douyucdn\.cn\/venus\/config\/static\/update.+keyCodeSet=flow_config script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Douyu/Douyu_remove_ads.js, requires-body = true, tag = 修改应用配置
 
 [Mitm]
 hostname = rtbapi.douyucdn.cn, apiv2.douyucdn.cn, venus.douyucdn.cn

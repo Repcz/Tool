@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/DuiTang.png
-#!date = 2024-07-17 01:54:45
+#!date = 2024-08-28 09:01:12
 
 [Rule]
 DOMAIN, sdk.1rtb.net, REJECT
@@ -101,9 +101,9 @@ DOMAIN, toblog.ctobsnssdk.com, REJECT
 ^https:\/\/images\.pinduoduo\.com\/mrk\/ reject
 ^https:\/\/images\.pinduoduo\.com\/marketing_api\/ reject
 
-[Script]
-# 清理配置文件
-http-response ^https:\/\/(www|api)\.duitang\.com\/napi\/settings\/ script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/DuiTang/DuiTang_remove_ads.js, requires-body = true, tag = 清理配置文件
+[Rewrite]
+# 清理配置文件 - 广告反馈data.AD_MENU_SELECTIONS / 清朗·网络戾气整治”专项行动data.ME_TAB.ANNOUNCEMENT / 我的页面横幅data.ME_TAB.MEMBERSHIP / 我的页面横幅data.ME_TAB.MEMBERSHIP2
+^https:\/\/(www|api)\.duitang\.com\/napi\/settings\/ response-body-json-del data.REWARD_AD_PLACES data.SPLASH_SWING_OPEN data.REWARD_AD_PHOTO_EDITOR data.REWARD_AD_PAG_EDITOR data.AD_PRICE_SHOW data.AD_SCREEN_WAKEUP_TIME data.REWARD_AD_CUTOUT_NUM data.AD_HOME_ENTER_POP_COUNT data.SHARE_BANNER data.AD_MENU_SELECTIONS data.ME_TAB.ANNOUNCEMENT data.ME_TAB.MEMBERSHIP data.ME_TAB.MEMBERSHIP2
 
 [Mitm]
 hostname = api.duitang.com, www.duitang.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com, images.pinduoduo.com
