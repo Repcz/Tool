@@ -1,5 +1,5 @@
 # 来源： https://github.com/MisakaFxxk/MisakaF_Subconverter/blob/main/Sub/Emby.list
-# 最后更新时间： 2024-08-23 18:50
+# 最后更新时间： 2024-08-28 22:28
 
 
 ##### A #####
@@ -218,6 +218,9 @@ HOST-SUFFIX,emby.nyancat.net,PROXY
 # 泥视频
 HOST-SUFFIX,nivod4.tv,PROXY
 HOST-SUFFIX,newpppp.com,PROXY
+
+# Nanflix
+HOST-SUFFIX,nanfkix.net,PROXY
 
 ##### O #####
 
