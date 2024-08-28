@@ -1,7 +1,7 @@
 #Title: AWAvenue Ads Rule
-#Last modified: 2024-07-23T09:36:03.160610+00:00
+#Last modified: 2024-08-28T08:36:08.188043+00:00
 #--------------------------------------
-#Total lines: 611
+#Total lines: 618
 #Version: 1.5.0-release-Patch-2
 
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
@@ -115,6 +115,7 @@ DOMAIN-SUFFIX,adx.ads.oppomobile.com
 DOMAIN-SUFFIX,adxlog-adnet.vivo.com.cn
 DOMAIN-SUFFIX,adxlog-adnet.vivo.com.cn.dsa.dnsv1.com.cn
 DOMAIN-SUFFIX,adxserver.ad.cmvideo.cn
+DOMAIN-SUFFIX,aegis.qq.com
 DOMAIN-SUFFIX,afs.googlesyndication.com
 DOMAIN-SUFFIX,aiseet.aa.atianqi.com
 DOMAIN-SUFFIX,ali-ad.a.yximgs.com
@@ -133,6 +134,7 @@ DOMAIN-SUFFIX,analytics.tiktok.com
 DOMAIN-SUFFIX,analytics.woozooo.com
 DOMAIN-SUFFIX,analyze.lemurbrowser.com
 DOMAIN-SUFFIX,andrqd.play.aiseet.atianqi.com
+DOMAIN-SUFFIX,ap.dongqiudi.com
 DOMAIN-SUFFIX,apd-pcdnwxlogin.teg.tencent-cloud.net
 DOMAIN-SUFFIX,apd-pcdnwxnat.teg.tencent-cloud.net
 DOMAIN-SUFFIX,apd-pcdnwxstat.teg.tencent-cloud.net
@@ -169,12 +171,14 @@ DOMAIN-SUFFIX,bdapi-in-ads.realmemobile.com
 DOMAIN-SUFFIX,bdapi.ads.oppomobile.com
 DOMAIN-SUFFIX,beacon-api.aliyuncs.com
 DOMAIN-SUFFIX,beacon.qq.com
+DOMAIN-SUFFIX,beaconcdn.qq.com
 DOMAIN-SUFFIX,beacons.gvt2.com
 DOMAIN-SUFFIX,beizi.biz
 DOMAIN-SUFFIX,bianxian.com
 DOMAIN-SUFFIX,bingads.microsoft.com
 DOMAIN-SUFFIX,bj.ad.track.66mobi.com
 DOMAIN-SUFFIX,books-analytics-events.apple.com
+DOMAIN-SUFFIX,bsrv.qq.com
 DOMAIN-SUFFIX,bugly.qq.com
 DOMAIN-SUFFIX,business-api.tiktok.com
 DOMAIN-SUFFIX,c.bidtoolads.com
@@ -422,6 +426,7 @@ DOMAIN-SUFFIX,pgdt.ugdtimg.com
 DOMAIN-SUFFIX,pglstatp-toutiao.com
 DOMAIN-SUFFIX,pig.pupuapi.com
 DOMAIN-SUFFIX,pixon.ads-pixiv.net
+DOMAIN-SUFFIX,pms.mb.qq.com
 DOMAIN-SUFFIX,policy.video.ptqy.gitv.tv
 DOMAIN-SUFFIX,proxy.advp.apple.com
 DOMAIN-SUFFIX,public.gdtimg.com
@@ -430,6 +435,7 @@ DOMAIN-SUFFIX,qqdata.ab.qq.com
 DOMAIN-SUFFIX,qwapi.apple.com
 DOMAIN-SUFFIX,qzs.gdtimg.com
 DOMAIN-SUFFIX,recommend-drcn.hms.dbankcloud.cn
+DOMAIN-SUFFIX,report.tv.kohesport.qq.com
 DOMAIN-SUFFIX,res.hubcloud.com.cn
 DOMAIN-SUFFIX,res1.hubcloud.com.cn
 DOMAIN-SUFFIX,res2.hubcloud.com.cn
@@ -485,10 +491,10 @@ DOMAIN-SUFFIX,smartad.10010.com
 DOMAIN-SUFFIX,smetrics.samsung.com
 DOMAIN-SUFFIX,sms.ads.oppomobile.com
 DOMAIN-SUFFIX,sngmta.qq.com
+DOMAIN-SUFFIX,stat.dongqiudi.com
 DOMAIN-SUFFIX,stat.y.qq.com
 DOMAIN-SUFFIX,static.ads-twitter.com
 DOMAIN-SUFFIX,statics.woozooo.com
-DOMAIN-SUFFIX,staticsns.cdn.bcebos.com
 DOMAIN-SUFFIX,stats.qiumibao.com
 DOMAIN-SUFFIX,statsigapi.net
 DOMAIN-SUFFIX,stg-data.ads.heytapmobi.com
@@ -561,6 +567,7 @@ DOMAIN-SUFFIX,v2.gdt.qq.com
 DOMAIN-SUFFIX,v3-ad.video.yximgs.com
 DOMAIN-SUFFIX,video-ad.sm.cn
 DOMAIN-SUFFIX,video-dsp.pddpic.com
+DOMAIN-SUFFIX,video.dispatch.tc.qq.com
 DOMAIN-SUFFIX,virusinfo-cloudscan-cn.heytapmobi.com
 DOMAIN-SUFFIX,vlive.qqvideo.tc.qq.com
 DOMAIN-SUFFIX,vungle.com
