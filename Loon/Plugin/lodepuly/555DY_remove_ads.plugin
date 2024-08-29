@@ -1,10 +1,10 @@
 #!name = 555电影去广告
-#!desc = 移除开屏广告和各类横幅广告。
+#!desc = 移除开屏广告和各类横幅广告，支持iPadOS。
 #!openUrl = https://5wuv.com/
 #!author = 可莉🅥[https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md]
 #!tag = 去广告
 #!system = 
-#!system_version = 
+#!system_version = iOS, iPadOS
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/555DY.png
