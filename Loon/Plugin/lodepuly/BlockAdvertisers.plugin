@@ -1,5 +1,5 @@
 #!name = 广告平台拦截器
-#!desc = 拦截腾讯、字节跳动、快手、百度、邑盟、倍孜、艾狄墨搏、袤博、极光、个推、友盟、阿里、优比客思、秒针、网易、美团、小米、京东、天目、讯飞、泛连、锐讯灵通等广告平台的广告请求，更适合iOS平台的应用。
+#!desc = 拦截腾讯、字节跳动、快手、百度、邑盟、倍孜、艾狄墨搏、袤博、极光、个推、友盟、阿里、优比客思、秒针、网易、美团、小米、京东、天目、讯飞、泛连、锐讯灵通、聚次方等广告平台的广告请求，更适合iOS平台的应用。
 #!openUrl = 
 #!author = 可莉🅥[https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md]
 #!tag = 去广告
@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Website_icon/120px/TencentAd.png
-#!date = 2024-08-10 01:36:33
+#!date = 2024-08-30 09:55:23
 
 [Rule]
 # 字节跳动广告
@@ -176,9 +176,13 @@ IP-CIDR, 47.110.187.87/32, REJECT, no-resolve
 DOMAIN-SUFFIX, openinstall.io, REJECT
 
 # 个推
-DOMAIN, sdk-open-phone.getui.com, REJECT
+DOMAIN, b-gtc.getui.net, REJECT
+DOMAIN, c-gtc.getui.net, REJECT
 DOMAIN, c-hzgt2.getui.com, REJECT
+DOMAIN, dnms.getui.com, REJECT
+DOMAIN, ido.getui.net, REJECT
 DOMAIN, sdk-conf.getui.com, REJECT
+DOMAIN, sdk-open-phone.getui.com, REJECT
 DOMAIN-SUFFIX, mobileservice.cn, REJECT
 DOMAIN-SUFFIX, getui.com, REJECT
 DOMAIN-SUFFIX, igexin.com, REJECT
@@ -230,7 +234,6 @@ DOMAIN, da.anythinktech.com, REJECT
 # 小米
 DOMAIN, sdkconfig.ad.xiaomi.com, REJECT
 
-
 # 美团
 DOMAIN, al-log.d.meituan.net, REJECT
 DOMAIN, babel-statistics-android.d.meituan.net, REJECT
@@ -242,6 +245,10 @@ DOMAIN, route-stats.d.meituan.net, REJECT
 DOMAIN, dsp-x.jd.com, REJECT
 DOMAIN, xlog.jd.com, REJECT
 DOMAIN, janapi.jd.com, REJECT
+
+# 聚次方 - TopOn
+DOMAIN, api.mosspf.com, REJECT
+DOMAIN, da.mosspf.com, REJECT
 
 [Rewrite]
 # 字节跳动广告
