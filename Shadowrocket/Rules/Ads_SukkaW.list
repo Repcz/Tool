@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-08-31T07:54:27.090Z
-# Size: 124065
+# Last Updated: 2024-08-31T12:33:54.234Z
+# Size: 124064
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -12352,6 +12352,7 @@ DOMAIN-SUFFIX,media360ads.midtc.com
 DOMAIN-SUFFIX,cudgoz.mifcom.de
 DOMAIN-SUFFIX,a8.migxl.com
 DOMAIN-SUFFIX,a8clk.miidas.jp
+DOMAIN-SUFFIX,360down7.miiyun.cn
 DOMAIN-SUFFIX,mikka.app
 DOMAIN-SUFFIX,mikop.xyz
 DOMAIN-SUFFIX,ea.millet.fr
@@ -15247,7 +15248,6 @@ DOMAIN-SUFFIX,0j91h.cyou
 DOMAIN-SUFFIX,0stats.com
 DOMAIN-SUFFIX,a8cv.1-class.jp
 DOMAIN-SUFFIX,1000dy.com
-DOMAIN-SUFFIX,1717.1000uc.com
 DOMAIN-SUFFIX,m1.100how.com
 DOMAIN-SUFFIX,1024mzs.pw
 DOMAIN-SUFFIX,105app.com
@@ -16977,6 +16977,7 @@ DOMAIN-SUFFIX,cqpmvc.capital.fr
 DOMAIN-SUFFIX,tk.boutique.capital.fr
 DOMAIN-SUFFIX,marketing.caplin.com
 DOMAIN-SUFFIX,capndr.com
+DOMAIN-SUFFIX,caqreg.xyz
 DOMAIN-SUFFIX,car-cra.sh
 DOMAIN-SUFFIX,sokutei.car2828.jp
 DOMAIN-SUFFIX,pixel.carambo.la
@@ -22865,6 +22866,7 @@ DOMAIN-SUFFIX,metric.serena.com
 DOMAIN-SUFFIX,seret.live
 DOMAIN-SUFFIX,collect.serious.li
 DOMAIN-SUFFIX,quewex.serv00.net
+DOMAIN-SUFFIX,itsthepartything.serv00.net
 DOMAIN-SUFFIX,servg1.net
 DOMAIN-SUFFIX,servote.de
 DOMAIN-SUFFIX,data-b71e59c9ac.servus.com
@@ -43245,6 +43247,7 @@ DOMAIN-SUFFIX,maxetise.net
 DOMAIN-SUFFIX,maxforta.com
 DOMAIN-SUFFIX,maxisurf.net
 DOMAIN-SUFFIX,seyfwl.maxmodels.pl
+DOMAIN-SUFFIX,maxmoney.com
 DOMAIN-SUFFIX,saa.maxpreps.com
 DOMAIN-SUFFIX,maxrilla.com
 DOMAIN-SUFFIX,s.maxrozen.com
@@ -48756,7 +48759,6 @@ DOMAIN-SUFFIX,ypyjyhny.xyz
 DOMAIN-SUFFIX,yqiavtoy.com
 DOMAIN-SUFFIX,yrszy.com.cn
 DOMAIN-SUFFIX,ys3e965d.top
-DOMAIN-SUFFIX,ysbaojia.com
 DOMAIN-SUFFIX,yscntxil.com
 DOMAIN-SUFFIX,ysesials.net
 DOMAIN-SUFFIX,cv.online.ysroad.co.jp
@@ -49767,6 +49769,7 @@ DOMAIN-SUFFIX,pacontainer.s3.amazonaws.com
 DOMAIN-SUFFIX,biowebb-data.s3.amazonaws.com
 DOMAIN-SUFFIX,cloudfront-labs.amazonaws.com
 DOMAIN-SUFFIX,babes-mansion.s3.amazonaws.com
+DOMAIN-SUFFIX,bbuseruploads.s3.amazonaws.com
 DOMAIN-SUFFIX,sprocket-ping.s3.amazonaws.com
 DOMAIN-SUFFIX,syncplusconfig.s3.amazonaws.com
 DOMAIN-SUFFIX,yieldmo-builds.s3.amazonaws.com
@@ -51870,7 +51873,6 @@ DOMAIN-SUFFIX,secure.dial4gwyn.com
 DOMAIN-SUFFIX,affiliate.diatomplus.cz
 DOMAIN-SUFFIX,diccsbhij.com
 DOMAIN-SUFFIX,xiqvza.dickblick.com
-DOMAIN-SUFFIX,diclegrup.org
 DOMAIN-SUFFIX,ec.didnsunns.com
 DOMAIN-SUFFIX,data-d88bd5abf8.die-glocke.de
 DOMAIN-SUFFIX,marketing.dienerlaw.net
@@ -56764,6 +56766,7 @@ DOMAIN-SUFFIX,app.portland5.com
 DOMAIN-SUFFIX,portsspat.com
 DOMAIN-SUFFIX,positional.ai
 DOMAIN-SUFFIX,activate.post-trib.com
+DOMAIN-SUFFIX,postaipay.top
 DOMAIN-SUFFIX,postback.info
 DOMAIN-SUFFIX,a8cv.postcoffee.co
 DOMAIN-SUFFIX,postitial.com
@@ -94266,7 +94269,6 @@ DOMAIN-SUFFIX,dw.organaamnions.com
 DOMAIN-SUFFIX,orientalrazor.com
 DOMAIN-SUFFIX,originalhack.info
 DOMAIN-SUFFIX,ed.originalpress.com
-DOMAIN-SUFFIX,orlandovargas.pro
 DOMAIN-SUFFIX,ormolusapiary.com
 DOMAIN-SUFFIX,oscaranimation.in
 DOMAIN-SUFFIX,walrus.oscaroarevalo.com
@@ -95825,7 +95827,6 @@ DOMAIN-SUFFIX,marketing.techinsurance.com
 DOMAIN-SUFFIX,techiteration.com
 DOMAIN-SUFFIX,a8cv.techkidsschool.jp
 DOMAIN-SUFFIX,ad.technews-iran.com
-DOMAIN-SUFFIX,techniguitare.com
 DOMAIN-SUFFIX,sgtm.technikboerse.com
 DOMAIN-SUFFIX,mail.techniservinc.com
 DOMAIN-SUFFIX,technoshadows.com
@@ -115922,7 +115923,6 @@ DOMAIN-SUFFIX,smetrics.bigkidneybigproblem.com
 DOMAIN-SUFFIX,info.bintheredumpthatusa.com
 DOMAIN-SUFFIX,binweevilsdoshcodes.com
 DOMAIN-SUFFIX,biteneverthelessnan.com
-DOMAIN-SUFFIX,bitkiselurunsiparis.com
 DOMAIN-SUFFIX,bitternessjudicious.com
 DOMAIN-SUFFIX,blastworthwhilewith.com
 DOMAIN-SUFFIX,bloodbrothershacked.com
@@ -120768,7 +120768,6 @@ DOMAIN-SUFFIX,outnumberconnatetomato.com
 DOMAIN-SUFFIX,outwitridiculousresume.com
 DOMAIN-SUFFIX,overallalreadyregistry.com
 DOMAIN-SUFFIX,pacificvernonoutskirts.com
-DOMAIN-SUFFIX,palharesinformatica.com.br
 DOMAIN-SUFFIX,pancakedusteradmirable.com
 DOMAIN-SUFFIX,panicmiserableeligible.com
 DOMAIN-SUFFIX,parachuteeffectedotter.com
