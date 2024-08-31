@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/MeiTu.png
-#!date = 2024-08-30 09:55:10
+#!date = 2024-09-01 00:25:23
 
 [Rule]
 # 字节跳动广告
@@ -122,6 +122,9 @@ DOMAIN-SUFFIX, union.baidu.com, REJECT
 # 聚次方 - TopOn
 DOMAIN, api.mosspf.com, REJECT
 DOMAIN, da.mosspf.com, REJECT
+
+# 美图秀秀
+DOMAIN, adui.tg.meitu.com, REJECT
 
 [Rewrite]
 # 精简应用配置 - 福利严选beauty / 开屏广告data.splashControl
