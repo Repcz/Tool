@@ -634,7 +634,6 @@ DOMAIN,g1.nyt.com
 DOMAIN,genesis-cdn.ff.com
 DOMAIN,gfonts.jifi.co
 DOMAIN,gfx-data.news-engineering.aws.wapo.pub
-DOMAIN,ghavatars.staticblitz.com
 DOMAIN,gitpkg-fork.vercel.sh
 DOMAIN,glyph.medium.com
 DOMAIN,gmedia.playstation.com
@@ -930,7 +929,6 @@ DOMAIN,npm.antfu.dev
 DOMAIN,npm.im
 DOMAIN,npm.jsr.io
 DOMAIN,npmgraph.js.org
-DOMAIN,nr.staticblitz.com
 DOMAIN,o.n1mp.org
 DOMAIN,object.innei.in
 DOMAIN,objects.g0v.social
@@ -1364,6 +1362,7 @@ DOMAIN,staticmap.openstreetmap.de
 DOMAIN,statics-marketingsites-eas-ms-com.akamaized.net
 DOMAIN,statics-xbc-eas.xbox.com
 DOMAIN,statics.goorm.io
+DOMAIN,statics.teams.cdn.office.net
 DOMAIN,staticw2.yotpo.com
 DOMAIN,steamcdn-a.akamaihd.net
 DOMAIN,steamusercontent-a.akamaihd.net
@@ -1392,6 +1391,7 @@ DOMAIN,t4.picb.cc
 DOMAIN,talk.hyvor.com
 DOMAIN,talk.washingtonpost.com
 DOMAIN,telemetry.nextjs.org
+DOMAIN,telemetry.vercel.com
 DOMAIN,th.bing.com
 DOMAIN,themes.fourthwall.com
 DOMAIN,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe
@@ -1411,6 +1411,7 @@ DOMAIN,tracker.cdnbye.com
 DOMAIN,tvdownloaddw-a.akamaihd.net
 DOMAIN,twemoji.maxcdn.com
 DOMAIN,typeface.nyt.com
+DOMAIN,typescript-eslint.io
 DOMAIN,typescript.azureedge.net
 DOMAIN,typescript.visualstudio.com
 DOMAIN,ubistatic-a.ubisoft.com
@@ -1577,7 +1578,6 @@ DOMAIN-SUFFIX,bundle.thimatic-apps.com
 DOMAIN-SUFFIX,bytebucket.org
 DOMAIN-SUFFIX,bytedapm.com
 DOMAIN-SUFFIX,c-dn.net
-DOMAIN-SUFFIX,c.staticblitz.com
 DOMAIN-SUFFIX,cdn-lfs-us-1.huggingface.co
 DOMAIN-SUFFIX,cdn-lfs.huggingface.co
 DOMAIN-SUFFIX,cdn-one.com
@@ -1926,7 +1926,6 @@ DOMAIN-SUFFIX,nordcdn.com
 DOMAIN-SUFFIX,notion-static.com
 DOMAIN-SUFFIX,now.sh
 DOMAIN-SUFFIX,nowestatic.com
-DOMAIN-SUFFIX,npm.staticblitz.com
 DOMAIN-SUFFIX,npmfs.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
@@ -2068,6 +2067,7 @@ DOMAIN-SUFFIX,static.microsoft
 DOMAIN-SUFFIX,static2cdn.hubspot.com
 DOMAIN-SUFFIX,statically.io
 DOMAIN-SUFFIX,staticaly.com
+DOMAIN-SUFFIX,staticblitz.com
 DOMAIN-SUFFIX,staticflickr.com
 DOMAIN-SUFFIX,staticimgly.com
 DOMAIN-SUFFIX,staticworld.net
@@ -2091,7 +2091,6 @@ DOMAIN-SUFFIX,surrit.com
 DOMAIN-SUFFIX,susercontent.com
 DOMAIN-SUFFIX,swiftypecdn.com
 DOMAIN-SUFFIX,sxccdn.com
-DOMAIN-SUFFIX,t.staticblitz.com
 DOMAIN-SUFFIX,tapecontent.net
 DOMAIN-SUFFIX,tedcdn.com
 DOMAIN-SUFFIX,teraboxcdn.com
@@ -2131,7 +2130,6 @@ DOMAIN-SUFFIX,usercontent.one
 DOMAIN-SUFFIX,ut-assets.com
 DOMAIN-SUFFIX,uvcdn.com
 DOMAIN-SUFFIX,v-cdn.net
-DOMAIN-SUFFIX,v-corp.staticblitz.com
 DOMAIN-SUFFIX,v2ex.co
 DOMAIN-SUFFIX,vanillicon.com
 DOMAIN-SUFFIX,vercel.app
@@ -2148,10 +2146,8 @@ DOMAIN-SUFFIX,vscode-unpkg.net
 DOMAIN-SUFFIX,vsmarketplacebadges.dev
 DOMAIN-SUFFIX,vusercontent.net
 DOMAIN-SUFFIX,vx-cdn.com
-DOMAIN-SUFFIX,w-corp.staticblitz.com
+DOMAIN-SUFFIX,w-corp-staticblitz.com
 DOMAIN-SUFFIX,w-credentialless-staticblitz.com
-DOMAIN-SUFFIX,w-credentialless.staticblitz.com
-DOMAIN-SUFFIX,w.staticblitz.com
 DOMAIN-SUFFIX,w3s.link
 DOMAIN-SUFFIX,walmartimages.com
 DOMAIN-SUFFIX,wdfiles.com
