@@ -9,7 +9,7 @@
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/TestFlight.png
 #!input = APP_ID
-#!date = 2024-08-19 00:38:52
+#!date = 2024-09-01 10:52:58
 
 [Argument]
 CaptureAccountToken = switch, true, false, tag = 捕获账号令牌, desc = 此开关控制插件是否捕获账户令牌

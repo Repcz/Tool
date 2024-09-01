@@ -38,6 +38,9 @@ function autoPost(ID) {
           console.log(ID + ' ' + '不存在该 TestFlight，已自动删除该 APP_ID')
           $notification.post(ID, '不存在该 TestFlight', '已自动删除该 APP_ID')
           resolve()
+        } else if (resp.status == 401) {
+          console.log(ID + ' ' + '请求异常，尝试重新加入')
+          resolve()
         } else {
           let jsonData = JSON.parse(data)
           if (jsonData.data == null) {
