@@ -223,7 +223,6 @@ DOMAIN,cdn-assets.porntube.com
 DOMAIN,cdn-bundler.nice-team.net
 DOMAIN,cdn-c.leavemealone.com
 DOMAIN,cdn-client.medium.com
-DOMAIN,cdn-cookieyes.com
 DOMAIN,cdn-edge.karte.io
 DOMAIN,cdn-eu.dynamicyield.com
 DOMAIN,cdn-fck.tnaflix.com
@@ -517,6 +516,7 @@ DOMAIN,code.ionicframework.com
 DOMAIN,code.jquery.com
 DOMAIN,compass-ssl.xbox.com
 DOMAIN,components.clever-cloud.com
+DOMAIN,config.extension.grammarly.com
 DOMAIN,confluence-v1.prod.atl-paas.net
 DOMAIN,connect.facebook.net
 DOMAIN,connectivitycheck.android.com
@@ -1579,6 +1579,7 @@ DOMAIN-SUFFIX,bundle.thimatic-apps.com
 DOMAIN-SUFFIX,bytebucket.org
 DOMAIN-SUFFIX,bytedapm.com
 DOMAIN-SUFFIX,c-dn.net
+DOMAIN-SUFFIX,cdn-cookieyes.com
 DOMAIN-SUFFIX,cdn-lfs-us-1.huggingface.co
 DOMAIN-SUFFIX,cdn-lfs.huggingface.co
 DOMAIN-SUFFIX,cdn-one.com
@@ -2047,6 +2048,7 @@ DOMAIN-SUFFIX,siteintercept.qualtrics.com
 DOMAIN-SUFFIX,sitescdn.net
 DOMAIN-SUFFIX,sixyik.com
 DOMAIN-SUFFIX,skypack.dev
+DOMAIN-SUFFIX,skypeassets.com
 DOMAIN-SUFFIX,slack-edge.com
 DOMAIN-SUFFIX,slack-imgs.com
 DOMAIN-SUFFIX,slidesharecdn.com
