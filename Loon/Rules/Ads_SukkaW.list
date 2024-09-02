@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-02T12:37:53.670Z
-# Size: 123443
+# Last Updated: 2024-09-02T15:03:10.361Z
+# Size: 123445
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -12657,6 +12657,7 @@ DOMAIN-SUFFIX,s.news.naver.com
 DOMAIN-SUFFIX,ma.news.naver.com
 DOMAIN-SUFFIX,webtoons.naver.com
 DOMAIN-SUFFIX,er.search.naver.com
+DOMAIN-SUFFIX,l.premium.naver.com
 DOMAIN-SUFFIX,logapi.tv.naver.com
 DOMAIN-SUFFIX,bnc-papago.naver.com
 DOMAIN-SUFFIX,shopsquare.naver.com
@@ -64001,6 +64002,7 @@ DOMAIN-SUFFIX,cocklacock.com
 DOMAIN-SUFFIX,a8.cocomeister.jp
 DOMAIN-SUFFIX,dtnmyp.cocotorico.com
 DOMAIN-SUFFIX,codbetakeys.us
+DOMAIN-SUFFIX,codeanyapp.com
 DOMAIN-SUFFIX,codeforpsn.com
 DOMAIN-SUFFIX,codeheaven.org
 DOMAIN-SUFFIX,jyuicr.codemonkey.com
