@@ -1,4 +1,4 @@
-// 2024-07-26 23:11:46
+// 2024-09-01 17:00
 const url = $request.url;
 let obj = JSON.parse($response.body);
 if (url.includes("/api.caiyunapp.com/v1/activity")) {
