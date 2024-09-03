@@ -2,7 +2,7 @@
 //
 // Clash Verge Rev (Version ≥ 17.2) & Mihomo-Party (Version ≥ 0.5.8)
 //
-// 最后更新时间: 2024-8-28 22:15
+// 最后更新时间: 2024-09-03 21:45
 
 // 规则集通用配置
 const ruleProviderCommon = {
@@ -47,8 +47,8 @@ function main(config) {
     "enhanced-mode": "fake-ip",
     "fake-ip-range": "198.18.0.1/16",
     "fake-ip-filter": ["*", "+.lan", "+.local", "+.direct", "+.msftconnecttest.com", "+.msftncsi.com"],
-    "default-nameserver": ["223.5.5.5", "119.29.29.29", "system"],
-    "nameserver": ["223.5.5.5", "119.29.29.29"],
+    "default-nameserver": ["system"],
+    "nameserver": ["223.5.5.5", "119.29.29.29", "180.184.1.1"],
     "nameserver-policy": {
       "geosite:cn": "system",
       "geosite:gfw,geolocation-!cn": ["quic://223.5.5.5", "quic://223.6.6.6", "https://1.12.12.12/dns-query", "https://120.53.53.53/dns-query"]
