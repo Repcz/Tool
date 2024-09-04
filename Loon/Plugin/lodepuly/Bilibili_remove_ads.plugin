@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Bilibili.png
-#!date = 2024-07-06 17:09:17
+#!date = 2024-09-04 16:21:40
 
 [Rule]
 # 开屏广告
@@ -43,9 +43,9 @@ URL-REGEX, ^http:\/\/[\d\.]+:8000\/v1\/resource\/\w{32}-1-SPLASH, REJECT-DICT
 ^https:\/\/app\.bilibili\.com\/x\/resource\/ip reject
 ^https:\/\/api\.bilibili\.com\/x\/web-interface\/zone\?jsonp reject-200
 # 移除视频链接跟踪参数
-(^https:\/\/(www|m)\.bilibili\.com\/video\/((BV\w{10})|(av\d{9})))(\/\?.*) 302 $1
+(^https:\/\/(?:www|m)\.bilibili\.com\/video\/(?:BV\w{10}|av\d{9}))(\/?\?.*) 302 $1
 # 移除直播间链接跟踪参数
-(^https:\/\/live\.bilibili\.com\/\d+)((\?.*)) 302 $1
+(^https:\/\/live\.bilibili\.com\/\d+)(\/?\?.*) 302 $1
 
 [Script]
 # 移除播放页面视频列表广告
