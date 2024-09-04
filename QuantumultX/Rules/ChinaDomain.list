@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2024-09-04T14:22:16.733Z
-# Size: 780
+# Last Updated: 2024-09-04T17:34:07.202Z
+# Size: 781
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -746,6 +746,7 @@ HOST-SUFFIX,jomodns.com,DIRECT
 HOST-SUFFIX,bdydns.com,DIRECT
 HOST-SUFFIX,jomoxc.com,DIRECT
 HOST-SUFFIX,duapp.com,DIRECT
+HOST-SUFFIX,antpcdn.com,DIRECT
 HOST-SUFFIX,qhimg.com,DIRECT
 HOST-SUFFIX,qhimgs0.com,DIRECT
 HOST-SUFFIX,qhimgs1.com,DIRECT
