@@ -1,7 +1,7 @@
 /*
 脚本引用https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cainiao.js
 */
-// 2024-08-24 12:35
+// 2024-09-04 22:35
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -52,10 +52,18 @@ if (url.includes(".guoguo.nbnetflow.ads.mshow")) {
         !(
           i?.materialContentMapper?.adItemDetail ||
           (i?.materialContentMapper?.bgImg && i?.materialContentMapper?.advRecGmtModifiedTime) ||
-          ["common_header_banner", "entertainment", "interests", "kuaishou_banner"]?.includes(i?.materialContentMapper?.group_id) ||
+          ["common_header_banner", "entertainment", "interests", "kuaishou_banner"]?.includes(
+            i?.materialContentMapper?.group_id
+          ) ||
           ["29338", "29339", "32103", "33927", "36649"]?.includes(i?.id)
         )
     );
+    for (let i of obj.data.result) {
+      if (i?.materialContentMapper?.show_tips_content) {
+        // 清空红点标记
+        i.materialContentMapper.show_tips_content = "";
+      }
+    }
   }
 } else if (url.includes(".nbfriend.message.conversation.list")) {
   // 消息中心
@@ -101,6 +109,7 @@ if (url.includes(".guoguo.nbnetflow.ads.mshow")) {
               "cngy", // 免费领水果
               "cngreen", // 绿色家园
               "cnhs", // 菜鸟回收
+              "dtxb", // 地图寻宝
               "gjjf", // 裹酱积分
               "jkymd", // 集卡赢免单
               "ljjq", // 领寄件券
