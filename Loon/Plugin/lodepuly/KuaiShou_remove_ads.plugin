@@ -8,13 +8,13 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/KuaiShou.png
-#!date = 2024-09-05 18:00:41
+#!date = 2024-09-05 18:39:23
 
 [Rewrite]
 
 [Script]
 # 视频流广告
-http-response ^https:\/\/az\d-api\.ksapisrv\.com\/rest\/n\/feed\/selectionFast\? script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/KuaiShou/KuaiShou_remove_ads.js, requires-body = true, tag = 移除视频流广告
+http-response ^https:\/\/az\d-api(-idc)?\.ksapisrv\.com\/rest\/n\/feed\/selection\? script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/KuaiShou/KuaiShou_remove_ads.js, requires-body = true, tag = 移除视频流广告
 
 [MitM]
-hostname = az*-api.ksapisrv.com
+hostname = az?-api.ksapisrv.com, az?-api-idc.ksapisrv.com
