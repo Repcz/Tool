@@ -7,14 +7,23 @@
 #
 # Mihomo Version ≥ 1.8.4
 #
-# 最后更新时间: 2024-09-03 21:45
+# 最后更新时间: 2024-09-06 07:30
 #
 # ================
 
 proxy-providers:
-  Subscribe: {url: http://your-service-provider, path: ./proxies/Sub.yaml, type: http, interval: 86400, health-check: {enable: true, url: http://connectivitycheck.gstatic.com/generate_204, interval: 1800}}
-  # 在此将"http://your-service-provider"替换为你的机场订阅，推荐使用 base64 或者 node list
-  # Sub-Store生成的链接,可以直接替换上述 url 引号中的部分,具体见 Sub-Store 教程         
+  Subscribe: 
+    url: http://your-service-provider
+    path: ./proxies/Sub.yaml
+    type: http
+    interval: 86400
+    health-check: {enable: true, url: http://connectivitycheck.gstatic.com/generate_204, interval: 1800, timeout: 5000}
+    #override: #修改节点前后缀，按需添加
+      #additional-prefix: "节点前缀"
+      #additional-suffix: "节点后缀"
+  # 在此将 "http://your-service-provider" 替换为你的机场订阅，推荐使用 base64 或者 node list
+  # Sub-Store 生成的链接,可以直接替换上述 url 引号中的部分,具体见 Sub-Store 教程
+  # 修改节点前后缀时，需移除前方的 "#" 符号    
 
 mixed-port: 7893
 tcp-concurrent: true
