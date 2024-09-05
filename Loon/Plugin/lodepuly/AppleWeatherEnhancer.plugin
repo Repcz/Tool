@@ -24,5 +24,5 @@ DOMAIN, weather-analytics-events.apple.com, REJECT-DROP
 http-response ^https?:\/\/weatherkit\.apple\.com\/api\/v1\/availability\/ script-path = https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/WeatherKit.response.js, requires-body = true, tag = 可用性响应, argument = Switch={Switch}
 http-response ^https?:\/\/weatherkit\.apple\.com\/api\/v2\/weather\/ script-path = https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/WeatherKit.response.js, requires-body = true, binary-body-mode = true, tag = 天气响应, argument = Switch={Switch}&NextHour.Provider={NextHour.Provider}&AQI.Provider={AQI.Provider}&API.WAQI.Token={API.WAQI.Token}&API.ColorfulClouds.Token={API.ColorfulClouds.Token}
 
-[MITM]
+[MitM]
 hostname = weatherkit.apple.com

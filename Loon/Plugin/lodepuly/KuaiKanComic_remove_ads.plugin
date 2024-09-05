@@ -158,5 +158,5 @@ http-response ^https:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/homepage\/comicVi
 # 社区 - 信息流
 http-response ^https:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/unified_feed$ script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/KuaiKanComic/KuaiKanComic_remove_ads.js, requires-body = true, tag = 精简社区信息流
 
-[Mitm]
+[MitM]
 hostname = api.kkmh.com, cdn-api.kkmh.com, social.kkmh.com, cdn-social.kkmh.com, h5.kuaikanmanhua.com, cdn-h5.kuaikanmanhua.com, pay.kkmh.com, cdn-pay.kkmh.com, shop.kkmh.com, cdn-shop.kkmh.com, topic.kkmh.com, cdn-topic.kkmh.com

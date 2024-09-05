@@ -20,5 +20,5 @@
 (^https:\/\/c\.pc\.qq\.com\/ios\.html\?url=)(http.*)(&level=.*) 302 $2
 (^https:\/\/pingtas\.qq\.com\/webview\/pingd\?dm=c\.pc\.qq\.com&pvi=\d+&si=s\d+&url=\/ios\.html\?url%3d)(http.*)(%26level.*%26level.*) 302 $2
 
-[Mitm]
+[MitM]
 hostname = pingtas.qq.com, c.pc.qq.com, cgi.connect.qq.com

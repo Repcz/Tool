@@ -18,5 +18,5 @@ DOMAIN, ad.iot.360.cn, REJECT
 # 删除 - 底栏商城入口、首页视频教程、广告配置、我的页面推广语
 ^https:\/\/jia\.360\.cn\/conf\/v1\.json response-body-json-del tab_conf ad_conf activity
  
-[Mitm]
+[MitM]
 hostname = jia.360.cn

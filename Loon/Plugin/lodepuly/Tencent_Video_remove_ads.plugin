@@ -34,5 +34,5 @@ URL-REGEX, ^http:\/\/apd-\w+\.v\.smtcdns\.com\/(defaultts|omts|vmind\.qqvideo)\.
 [Script]
 http-request ^https?:\/\/vv\.video\.qq\.com\/getvinfo script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/CommonScript/replace-body.js, requires-body = true, argument = "&sppreviewtype=\d(.*)&spsrt=\d->&sppreviewtype=0$1&spsrt=0", tag = 移除广告
 
-[Mitm]
+[MitM]
 hostname = vv.video.qq.com

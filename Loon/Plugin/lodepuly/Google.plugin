@@ -15,5 +15,5 @@
 ^https?:\/\/(www.)?(g|google)\.cn 302 https://www.google.com
 ^https?:\/\/(ditu|maps).google\.cn 302 https://maps.google.com
 
-[Mitm]
+[MitM]
 hostname = www.google.cn

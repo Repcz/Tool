@@ -30,5 +30,5 @@
 # 下发广告
 http-response ^https:\/\/portal-portm\.meituan\.com\/horn_ios\/mergeRequest script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/iMaiCai/iMaiCai_remove_ads.js, requires-body = true, tag = 移除下发广告
 
-[Mitm]
+[MitM]
 hostname = portal-portm.meituan.com, mall.meituan.com, businessapi.ksedt.com

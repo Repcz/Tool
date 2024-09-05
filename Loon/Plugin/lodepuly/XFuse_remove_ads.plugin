@@ -94,5 +94,5 @@ DOMAIN, log.umtrack.com, REJECT
 # ^https:\/\/i\.micecube\.com\/Ayto reject
 # ^https:\/\/img\.mofyi\.com\/Ayto reject
 
-[Mitm]
+[MitM]
 hostname = cili.xfuse.fun, i.micecube.com, img.mofyi.com

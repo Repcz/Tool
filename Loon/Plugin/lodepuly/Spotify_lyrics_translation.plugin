@@ -22,5 +22,5 @@ http-response ^https?:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/\
 http-response ^https?:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/(.+)\?(.*)format=json(.*)subtype=External requires-body = true, script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Spotify/External_Lyrics_response.js, tag = 外部歌词响应·JSON
 http-response ^https?:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/\w+\?(.*)subtype=External requires-body = true, binary-body-mode = true, script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Spotify/External_Lyrics_response.js, tag = 外部歌词响应·Proto
 
-[Mitm]
+[MitM]
 hostname = api.spotify.com, spclient.wg.spotify.com

@@ -36,5 +36,5 @@ IP-CIDR, 115.236.121.195/32, REJECT, no-resolve
 # 底栏游戏入口
 ^https:\/\/app-conf\.ds\.163\.com\/v\d\/app\/base\/conf\/static\/start-config response-body-json-del result.updateConfig[1].itemList[93].itemList[2]
 
-[Mitm]
+[MitM]
 hostname = god.gameyw.netease.com, app-conf.ds.163.com

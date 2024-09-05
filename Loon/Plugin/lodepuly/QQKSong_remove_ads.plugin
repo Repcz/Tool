@@ -26,5 +26,5 @@ URL-REGEX, ^http:\/\/y\.gtimg\.cn\/music\/common\/upload\/t_k_main_page_banner\/
 # 右下角轮播动画
 ^https:\/\/wnsaviator\.kg\.qq\.com\/wnsaviator\/api\/v1\/transMerge\?_webcgikey=get_activity_entry$ reject-dict
 
-[Mitm]
+[MitM]
 hostname = wallpaper-1258344696.file.myqcloud.com, amsweb-cdn-*-1258344696.file.myqcloud.com, wnsaviator.kg.qq.com

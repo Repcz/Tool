@@ -36,5 +36,5 @@ DOMAIN, ut.taobao.com, REJECT
 http-response ^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get) script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Taobao/Taobao_remove_ads.js, requires-body = true, tag = 移除淘宝开屏广告
 http-response ^https:\/\/poplayer\.template\.alibaba\.com\/\w+\.json script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Taobao/Taobao_remove_ads.js, requires-body = true, tag = 移除淘宝开屏广告
 
-[Mitm]
+[MitM]
 hostname = acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com

@@ -25,5 +25,5 @@
 # 首页 - 横向滚动板块
 # ^https:\/\/keapi\.fenbi\.com\/app\/iphone\/\w+\/small_banner reject-dict
 
-[Mitm]
+[MitM]
 hostname = keapi.fenbi.com, market-api.fenbi.com, tiku.fenbi.com

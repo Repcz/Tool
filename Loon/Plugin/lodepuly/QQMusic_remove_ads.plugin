@@ -34,5 +34,5 @@ DOMAIN-SUFFIX, imtmp.net, REJECT
 # [Rewrite]
 # ^https:\/\/shc6\.y\.qq\.com\/tips\/fcgi-bin\/fcg_get_advert\.fcg
 
-# [Mitm]
+# [MitM]
 # hostname = shc6.y.qq.com

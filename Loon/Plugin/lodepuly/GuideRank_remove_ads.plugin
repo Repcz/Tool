@@ -40,5 +40,5 @@
 # 我的 - 横幅推广
 ^https:\/\/zone\.guiderank-app\.com\/guiderank-web\/app\/personal\/getPersonPageInfo\.do reject-dict
 
-[Mitm]
+[MitM]
 hostname = zone.guiderank-app.com

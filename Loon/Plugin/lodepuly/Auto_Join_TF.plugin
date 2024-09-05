@@ -26,5 +26,5 @@ http-request ^https://testflight.apple.com/join/(.*) script-path = https://raw.g
 
 cron {TimingParameters} script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/TestFlight/Auto_join_TF.js, tag = 自动加入TF, timeout = 180
 
-[Mitm]
+[MitM]
 hostname = testflight.apple.com

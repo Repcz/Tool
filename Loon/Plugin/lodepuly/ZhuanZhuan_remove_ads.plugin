@@ -27,5 +27,5 @@ http-response ^https:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzinfoshow\/getfeedflowin
 # 精简我的页面
 http-response ^https:\/\/app\.zhuanzhuan\.com\/zz\/transfer\/getmyprofilev3 script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/ZhuanZhuan/ZhuanZhuan_remove_ads.js, requires-body = true, tag = 精简我的页面
 
-[Mitm]
+[MitM]
 hostname = app.zhuanzhuan.com

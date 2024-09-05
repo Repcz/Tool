@@ -134,5 +134,5 @@ DOMAIN-KEYWORD, asiad.byteactivity, REJECT
 # 搜索填充词
 ^https:\/\/frodo\.douban\.com\/api\/v\d\/search\/found_words reject-dict
 
-[Mitm]
+[MitM]
 hostname = api.douban.com, frodo.douban.com, m.douban.com

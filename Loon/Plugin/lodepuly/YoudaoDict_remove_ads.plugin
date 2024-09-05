@@ -26,5 +26,5 @@
 # 学习 - 弹窗data.popup / 顶部标签data.tab / 搜索填充词data.searchSuggestList / 轮播图data.newBanner / 四六级出分测试data.icon.promotionList / 文字角标data.icon.iconList[1].bubble data.icon.iconList[2].bubble data.icon.iconList[8].bubble
 ^https:\/\/dict\.youdao\.com\/course\/tab\/home\? response-body-json-del data.popup data.tab data.searchSuggestList data.newBanner data.icon.promotionList data.icon.iconList[1].bubble data.icon.iconList[2].bubble data.icon.iconList[8].bubble
 
-[Mitm]
+[MitM]
 hostname = gorgon.youdao.com, dict.youdao.com

@@ -13,5 +13,5 @@
 [Script]
 http-response ^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\? script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Weixin/Weixin_external_links_unlock.js, requires-body = true, tag = 微信外部链接解锁
 
-[Mitm]
+[MitM]
 hostname = weixin110.qq.com, security.wechat.com

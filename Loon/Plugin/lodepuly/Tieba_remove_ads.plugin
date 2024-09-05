@@ -30,5 +30,5 @@ http-response ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/f\/(frs\/(page|
 
 http-response ^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Tieba/tieba-proto.js, requires-body = true, binary-body-mode = true, timeout = 10, tag = Proto处理
 
-[Mitm]
+[MitM]
 hostname = tiebac.baidu.com, tieba.baidu.com

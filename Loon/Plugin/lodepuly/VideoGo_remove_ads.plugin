@@ -86,5 +86,5 @@ DOMAIN-SUFFIX, pos.baidu.com, REJECT
 [Script]
 # http-response ^https:\/\/api\.ys7\.com\/v3\/valueadded\/operation\/config\/master\/station script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/VideoGo/VideoGo_remove_ads.js, requires-body = true, tag = 我的页面去广告
 
-[Mitm]
+[MitM]
 hostname = api.ys7.com, i.ys7.com

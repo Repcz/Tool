@@ -17,5 +17,5 @@ DOMAIN, raw.githubusercontent.com, PROXY
 [Script]
 http-request ^https?:\/\/xn--ck8h\.com script-path = https://raw.githubusercontent.com/Loon0x00/Loon-Gallery/master/backend/gallery.js, requires-body = true, timeout = 120, tag = Loon插件仓库
 
-[Mitm]
+[MitM]
 hostname = xn--ck8h.com

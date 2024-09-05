@@ -21,5 +21,5 @@ http-response ^https:\/\/api\.weibo\.cn\/2\/profile\/statuses\/tab\? script-path
 
 http-response ^https:\/\/api\.weibo\.cn\/2\/cardlist\? script-path = https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/VVebo/VVebo_repair.js, requires-body = true, tag = 修复我的页面
 
-[Mitm]
+[MitM]
 hostname = api.weibo.cn

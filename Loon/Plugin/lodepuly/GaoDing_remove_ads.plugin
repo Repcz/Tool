@@ -29,5 +29,5 @@
 # 移除功能入口角标
 ^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/exhibitions\/(templates|all_editor_tools)\/resources$ response-body-replace-regex "badge_img_url":"https:\/\/(gaoding-market|st\d)\.dancf\.com\/market-operations\/market\/side\/([a-z0-9]+\/)?\d+\.png", "badge_img_url":"",
 
-[Mitm]
+[MitM]
 hostname = www.gaoding.com

@@ -30,5 +30,5 @@ URL-REGEX, ^http:\/\/mps\.95508\.com\/mps\/icppweb\/images\/mps\/migration\/mpsp
 # 招商银行 - 去开屏广告
 ^https:\/\/s3gw\.cmbimg\.com\/mbappinitads\/ reject
 
-[Mitm]
+[MitM]
 hostname = static.95508.com, unionsr.chinalifeonline.com.cn, imcs.citicbank.com, lban.spdb.com.cn, s3gw.cmbimg.com

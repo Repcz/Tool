@@ -16,5 +16,5 @@
 # 移除知识星球水印 - 长文
 ^https:\/\/articles\.zsxq\.com\/inline_form\/id_[a-z0-9]+\.html response-body-replace-regex name="group_enable_watermark"\x20value="true" name="group_enable_watermark"\x20value="false"
 
-[Mitm]
+[MitM]
 hostname = api.zsxq.com

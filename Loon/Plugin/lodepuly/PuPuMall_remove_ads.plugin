@@ -33,5 +33,5 @@ http-response ^https:\/\/j1\.pupuapi\.com\/client\/app_resource\/resource_preloa
 http-response ^https:\/\/j1\.pupuapi\.com\/client\/recommendation\/interests\/products script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/PuPuMall/PuPuMall_remove_ads.js, requires-body = true, tag = 移除朴朴超市广告
 http-response ^https:\/\/j1\.pupuapi\.com\/client\/marketing\/advertisement\/v1 script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/PuPuMall/PuPuMall_remove_ads.js, requires-body = true, tag = 移除朴朴超市广告
 
-[Mitm]
+[MitM]
 hostname = j1.pupuapi.com

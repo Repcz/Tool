@@ -23,5 +23,5 @@ http-response ^https?:\/\/api\.weibo\.cn\/\d\/statuses\/.*timeline script-path =
 
 http-response ^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php script-path = https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/Weibo_intl/Weibo_intl_remove_ads.js, requires-body = true, tag = 微博轻享版去广告
 
-[Mitm]
+[MitM]
 hostname = *api.weibo.cn, sdkapp.uve.weibo.com

@@ -43,5 +43,5 @@
 ^https:\/\/static\.line-scdn\.net\/ad-sdk\/ reject
 ^https:\/\/nelo2-col\.linecorp\.com\/_store$ reject
 
-[Mitm]
+[MitM]
 hostname = a.line.me, ad.line-scdn.net, w.line.me, gw.line.naver.jp, lan.line.me, legy.line-apps.com, buy.line.me, crs-event.line.me, obs.line-scdn.net, cix.line-apps.com, d.line-scdn.net, scdn.line-apps.com, web-mmap-pay.line-apps.com, sch.line.me, uts-front.line-apps.com, static.line-scdn.net, nelo2-col.linecorp.com

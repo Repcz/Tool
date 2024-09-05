@@ -38,5 +38,5 @@ URL-REGEX, ^http:\/\/119\.29\.29\.98\/d\?, REJECT
 # 推荐直播
 ^https:\/\/api\.xueqiu\.com\/livestream\/structure\/live\/hotCard\.json reject-dict
 
-[Mitm]
+[MitM]
 hostname = api.xueqiu.com, open.xueqiu.com, stock.xueqiu.com, 39.103.79.14, 39.106.97.84, 47.95.49.75, 101.201.62.20, 101.201.62.26, 101.201.175.228, 124.250.48.3, 182.92.145.50, 182.92.251.113

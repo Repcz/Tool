@@ -33,5 +33,5 @@
 # 其他广告
 ^https:\/\/monkey\.kakamobi\.cn\/api\/open\/live-room\/get-resource\.htm reject-dict
 
-[Mitm]
+[MitM]
 hostname = jiaxiao-awd.kakamobi.cn, cheyouquan.kakamobi.com, swallow.kakamobi.cn, monkey.kakamobi.cn, mcbd.maiche.com, jiakao-misc.kakamobi.cn, squirrel.kakamobi.cn, scs.kakamobi.cn

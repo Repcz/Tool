@@ -83,6 +83,6 @@ http-response ^https:\/\/new\.vip\.weibo\.cn\/aj\/appicon\/list\? script-path = 
 # http-request ^https:\/\/shop\.sc\.weibo\.com\/h5\/jump\/error\?(.*&)?url= script-path = https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/Weibo/Weibo_remove_redirect.js, tag = 跳过重定向
 # http-response ^https:\/\/(sinaurl|t)\.cn\/ script-path = https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/Weibo/Weibo_remove_redirect.js, tag = 跳过重定向
 
-[Mitm]
+[MitM]
 # hostname = *.weibo.cn, *.weibo.com, sinaurl.cn, t.cn, weibo.cn
 hostname = *.weibo.cn, *.weibo.com, weibo.com

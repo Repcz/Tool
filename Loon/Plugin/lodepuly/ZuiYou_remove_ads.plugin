@@ -66,5 +66,5 @@ URL-REGEX, ^http:\/\/file-share\.izuiyou\.com\/octopus\/media\/templates\/search
 ^https?:\/\/2401:b180:2000:30::1c\/\d+\/d reject
 ^https?:\/\/2401:b180:2000:20::10\/\d+\/d reject
 
-[Mitm]
+[MitM]
 hostname = api.izuiyou.com, gromore.pangolin-sdk-toutiao.com, lf-cdn-tos.bytescm.com, zyfile.izuiyou.com, 203.107.1.1, 203.107.1.33, 203.107.1.66, 203.107.1.67, 203.107.1.97

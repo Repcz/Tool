@@ -24,5 +24,5 @@ http-response ^https:\/\/base\.95516\.com\/app\/inApp\/sys\/appShowGroup\/ scrip
 http-response ^https:\/\/account\.95516\.com\/fortune\/inApp\/common\/ script-path = https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/UnionPay/UnionPay_remove_ads_with_ssl_unpinning.js, requires-body = true, tag = 移除云闪付推广
 http-response ^https:\/\/content\.95516\.com\/koala-pre\/koala\/(recommend\/hotList|right\/queryAllRights) script-path = https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/UnionPay/UnionPay_remove_ads_with_ssl_unpinning.js, requires-body = true, tag = 移除云闪付推广
 
-[Mitm]
+[MitM]
 hostname = account.95516.com, base.95516.com, content.95516.com

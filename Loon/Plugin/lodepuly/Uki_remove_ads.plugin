@@ -141,5 +141,5 @@ http-response ^https:\/\/api\.chenlongtech\.cn\/v\d\/party\/config$ script-path 
 # 广场搜索填充词
 http-response ^https:\/\/api\.chenlongtech\.cn\/v1\/post\/fetchSearchRecommend$ script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Uki/Uki_remove_ads.js, requires-body = true, tag = 移除广场搜索填充词
 
-[Mitm]
+[MitM]
 hostname = api.chenlongtech.cn, 203.107.1.1, 203.107.1.33, 203.107.1.66, 203.107.1.67, 203.107.1.97, 2401:b180:2000:30::1c, 2401:b180:2000:20::10

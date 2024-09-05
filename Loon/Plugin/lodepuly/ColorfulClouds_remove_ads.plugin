@@ -8,7 +8,11 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/ColorfulClouds.png
-#!date = 2024-09-01 11:21:02
+#!date = 2024-09-05 10:51:41
+
+[Rule]
+DOMAIN, abyss.cyapi.cn, REJECT
+DOMAIN, ad.cyapi.cn, REJECT
 
 [Rewrite]
 ^https:\/\/biz\.cyapi\.cn\/(p\/v1\/entries|p\/v1\/trial_card\/info|v2\/product) reject-dict
@@ -17,5 +21,5 @@
 [Script]
 http-response ^https:\/\/(wrapper\.cyapi\.cn|api\.caiyunapp\.com|cdn-w\.caiyunapp\.com)\/v1\/activity\? script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/ColorfulClouds/ColorfulClouds_remove_ads.js, requires-body = true, tag = 彩云天气去广告
 
-[Mitm]
+[MitM]
 hostname = biz.cyapi.cn, starplucker.cyapi.cn, api.caiyunapp.com, cdn-w.caiyunapp.com

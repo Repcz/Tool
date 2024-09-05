@@ -16,5 +16,5 @@
 # 弹窗
 ^https:\/\/api2\.zongheng\.com\/api\/giftBag\/bindingBag$ reject-dict
 
-[Mitm]
+[MitM]
 hostname = api?.zongheng.com

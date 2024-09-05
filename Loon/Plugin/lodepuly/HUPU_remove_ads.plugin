@@ -26,5 +26,5 @@ http-response ^https:\/\/bbs\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bbsallapi\/
 http-response ^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/buffer\/hotList script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/HUPU/HUPU_remove_ads.js, requires-body = true, tag = 移除虎扑广告
 http-response ^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bplapi\/user\/v1\/more script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/HUPU/HUPU_remove_ads.js, requires-body = true, tag = 移除虎扑广告
   
-[Mitm]
+[MitM]
 hostname = games.mobileapi.hupu.com, fairy.mobileapi.hupu.com, bbs.mobileapi.hupu.com, goblin.hupu.com

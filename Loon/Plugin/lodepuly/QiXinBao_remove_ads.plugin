@@ -45,5 +45,5 @@
 # 首页 - 个性化推荐
 # http-response ^https:\/\/appc-v6\.qixin\.com\/v4\/enterprise\/homePageRecommend\/recommendCard\d+ script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/QiXinBao/QiXinBao_remove_ads.js, requires-body = true, tag = 移除个性化推荐信息流
 
-[Mitm]
+[MitM]
 hostname = appc.qixin.com, appc-v6.qixin.com, qxb-minicode-pic-osscache.qixin.com

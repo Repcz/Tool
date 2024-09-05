@@ -28,5 +28,5 @@ http-response ^https:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?version=
 # 签到弹窗广告
 http-response ^https:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?module=plugin&id=k_misign:sign script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/FlyerTea/FlyerTea_remove_ads.js, requires-body = true, tag = 移除签到弹窗广告
 
-[Mitm]
+[MitM]
 hostname = www.flyert.com.cn, ptf.flyertrip.com

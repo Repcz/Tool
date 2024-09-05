@@ -17,5 +17,5 @@ DOMAIN, ad.iot.360.cn, REJECT
 # 商城入口
 ^https:\/\/app\.home\.360\.cn\/v1\/config\/custom_config reject-dict
 
-[Mitm]
+[MitM]
 hostname = app.home.360.cn

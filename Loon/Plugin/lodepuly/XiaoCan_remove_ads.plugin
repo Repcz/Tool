@@ -23,5 +23,5 @@
 # 更新弹窗
 ^https:\/\/gw\.xiaocantech\.com\/g\/pa reject-dict
 
-[Mitm]
+[MitM]
 hostname = gw.xiaocantech.com, web2.realtech-inc.com, sdk.1rtb.net

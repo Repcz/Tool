@@ -22,5 +22,5 @@ IP-CIDR6, 2402:db40:5100:1011::5/128, REJECT, no-resolve
 [Script]
 http-response ^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome) script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/JD/JD_remove_ads.js, requires-body = true, tag = 移除京东广告
 
-[Mitm]
+[MitM]
 hostname = api.m.jd.com

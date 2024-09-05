@@ -88,5 +88,5 @@ DOMAIN, utoken.umeng.com, REJECT
 # 清理应用配置 - 首页广告result.homead / 推广页面result.h5_promotion_page / 广告间隔配置result.advert_interval / 二手车信息流result.abtest_h5url / 懂车帝信息流result.launchApp / 购车页面配置result.goucheConfig / 购车页面result.gouche / 直播页面配置result.mainLiveConfig / 发现result.discover / 广告SDK视频result.adSdkSwitch4testPointVideo / 广告SDK视频result.adSdkSwitch4simulationExam / 考试页面加载广告切换result.examPageLoadADSwitch
 http-response ^https:\/\/api\.ksedt\.com\/api\/config\/ response-body-json-del result.homead result.h5_promotion_page result.advert_interval result.abtest_h5url result.launchApp result.goucheConfig result.gouche result.mainLiveConfig result.discover result.adSdkSwitch4testPointVideo result.adSdkSwitch4simulationExam result.examPageLoadADSwitch
 
-[Mitm]
+[MitM]
 hostname = richmanrules.ksedt.com, gouche.ksedt.com, muses.ksedt.com, op.ksedt.com, api.ksedt.com

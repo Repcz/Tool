@@ -67,5 +67,5 @@ DOMAIN, janapi.jd.com, REJECT
 # 拦截HTTPDNS
 ^https:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/http\/urlConfig\.do$ reject-dict
 
-[Mitm]
+[MitM]
 hostname = appconf.mail.163.com

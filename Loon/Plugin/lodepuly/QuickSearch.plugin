@@ -32,5 +32,5 @@
 ^https:\/\/duckduckgo\.com\/\?q=gh\+([^&]+).+ 302 https://github.com/search?q=$1
 ^https:\/\/duckduckgo\.com\/\?q=([^&]+).+ 302 https://www.google.com/search?q=$1
 
-[Mitm]
+[MitM]
 hostname = duckduckgo.com

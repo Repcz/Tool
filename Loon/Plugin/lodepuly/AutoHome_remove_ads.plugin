@@ -94,5 +94,5 @@ http-response ^https:\/\/(a\.athm\.cn\/)?cars\.app\.autohome\.com\.cn\/carstream
 # 二手车 - 竖版轮播图 - 无效
 http-response ^https:\/\/(a\.athm\.cn\/)?apiautoappusc\.che168\.com\/apic\/v\d+\/gethomepagefeed script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/AutoHome/AutoHome_remove_ads.js, requires-body = true, tag = 移除二手车竖版轮播图
 
-[Mitm]
+[MitM]
 hostname = a.athm.cn, adproxy.autohome.com.cn, apiautoappusc.che168.com, autoapi.autohome.com.cn, cars.app.autohome.com.cn, clientlive.api.autohome.com.cn, club.app.autohome.com.cn, dealer.m.autohome.com.cn, maam.pingan.com.cn, mobile.app.autohome.com.cn, news.app.autohome.com.cn, pcmx.autohome.com.cn

@@ -147,5 +147,5 @@ DOMAIN, adui.tg.meitu.com, REJECT
 # 精简我的页面 - 有奖调研data[0].items[10] / 进入钱包data[1].scheme data[1].wallet_title / 借钱 备用金data[1].items[1] / 茉颜data[2].items[1]
 ^https:\/\/(api|tool)\.xiuxiu\.meitu\.com\/v\d\/tool\/common\/home\.json response-body-json-del data[0].items[10] data[1].scheme data[1].wallet_title data[1].items[1] data[1].items[1] data[2].items[1]
 
-[Mitm]
+[MitM]
 hostname = api.xiuxiu.meitu.com, tool.xiuxiu.meitu.com, api.posters.meitu.com

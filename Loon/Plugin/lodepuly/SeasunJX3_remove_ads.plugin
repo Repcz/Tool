@@ -17,5 +17,5 @@ real-ip = jx3v*-update.xoyocdn.com
 # 热点推送
 ^https:\/\/jx3comm\.xoyocdn\.com\/jx3gc\/zhcn\/login_ad\/WebCareer\/WebCareerTab\.txt reject
 
-[Mitm]
+[MitM]
 hostname = jx3comm.xoyocdn.com

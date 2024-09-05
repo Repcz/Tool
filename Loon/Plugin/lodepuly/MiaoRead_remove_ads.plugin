@@ -57,5 +57,5 @@ DOMAIN, utoken.umeng.com, REJECT
 ^https:\/\/lf\d?-analytics\.bytescm\.com\/obj\/adjssdk\/ reject
 ^https:\/\/sf\d?-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ reject
 
-[Mitm]
+[MitM]
 hostname = api.miaomiaoyd.com, api-access.pangolin-sdk-toutiao*.com, ether-pack.pangolin-sdk-toutiao.com, gromore.pangolin-sdk-toutiao.com, lf*-cdn-tos.bytescm.com, lf*-analytics.bytescm.com, sf*-fe-tos.pglstatp-toutiao.com

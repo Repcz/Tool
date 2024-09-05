@@ -47,5 +47,5 @@ IP-CIDR, 186.76.76.200/32, REJECT, no-resolve
 # 周边 - 盲盒卡Result.cards[1] / 搜索热词Result.cards[4] / 每周优惠券卡Result.cards[5] / 推送Result.cards[9]
 ^https:\/\/newclient\.map\.baidu\.com\/living\/nearby\/api\? response-body-json-del Result.cards[1] Result.cards[4] Result.cards[5] Result.cards[9]
 
-[Mitm]
+[MitM]
 hostname = afd.baidu.com, newclient.map.baidu.com, yongche.baidu.com, ecom.map.baidu.com

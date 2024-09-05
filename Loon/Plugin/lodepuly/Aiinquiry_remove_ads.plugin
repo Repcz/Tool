@@ -48,5 +48,5 @@ URL-REGEX, ^http:\/\/180\.76\.76\.112\/v\d\/, REJECT
 # 未知的视频
 # ^https:\/\/b2baifanfan\.baidu\.com\/crm\/web\/b2b\/im\/common\/getConfigByDeviceNum reject-dict
 
-[Mitm]
+[MitM]
 hostname = aiqicha.baidu.com

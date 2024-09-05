@@ -22,5 +22,5 @@ http-request ^https?:\/\/sub\.store script-path = https://gitlab.com/sub-store/S
 
 cron "0 0 1 ? * ?" script-path = https://gitlab.com/sub-store/Sub-Store/-/releases/permalink/latest/downloads/cron-sync-artifacts.min.js, tag = Sub-Store Sync
 
-[Mitm]
+[MitM]
 hostname = sub.store

@@ -32,5 +32,5 @@
 # 我的页面 - 免广告会员
 ^https:\/\/yun\.feidee\.net\/cab-periodic-activity-ws\/terminal\/v1\/members\/status reject-dict
 
-[Mitm]
+[MitM]
 hostname = tg.feidee.com, yunmk.feidee.net, community.feidee.com, api.feidee.net, yun.feidee.net

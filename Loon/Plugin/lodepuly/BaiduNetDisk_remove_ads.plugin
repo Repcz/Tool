@@ -64,5 +64,5 @@ DOMAIN-SUFFIX, union.baidu.com, REJECT
 # 广告配置
 ^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/pcs\/adv reject-dict
 
-[Mitm]
+[MitM]
 hostname = pan.baidu.com, 180.76.76.200, 180.76.76.112

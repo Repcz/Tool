@@ -105,5 +105,5 @@ DOMAIN, toblog.ctobsnssdk.com, REJECT
 # 清理配置文件 - 广告反馈data.AD_MENU_SELECTIONS / 清朗·网络戾气整治”专项行动data.ME_TAB.ANNOUNCEMENT / 我的页面横幅data.ME_TAB.MEMBERSHIP / 我的页面横幅data.ME_TAB.MEMBERSHIP2
 ^https:\/\/(www|api)\.duitang\.com\/napi\/settings\/ response-body-json-del data.REWARD_AD_PLACES data.SPLASH_SWING_OPEN data.REWARD_AD_PHOTO_EDITOR data.REWARD_AD_PAG_EDITOR data.AD_PRICE_SHOW data.AD_SCREEN_WAKEUP_TIME data.REWARD_AD_CUTOUT_NUM data.AD_HOME_ENTER_POP_COUNT data.SHARE_BANNER data.AD_MENU_SELECTIONS data.ME_TAB.ANNOUNCEMENT data.ME_TAB.MEMBERSHIP data.ME_TAB.MEMBERSHIP2
 
-[Mitm]
+[MitM]
 hostname = api.duitang.com, www.duitang.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com, images.pinduoduo.com
