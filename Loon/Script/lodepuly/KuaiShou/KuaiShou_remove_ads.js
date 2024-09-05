@@ -3,7 +3,7 @@ const url = $request.url;
 let obj = JSON.parse($response.body);
 
 // 检查URL是否包含特定路径
-if (url.includes("/rest/n/feed/selectionFast")) {
+if (url.includes("/rest/n/feed/selection?")) {
     // 遍历feeds.ad路径
     if (obj.feeds && Array.isArray(obj.feeds)) {
         obj.feeds = obj.feeds.filter(feed => {
