@@ -8,13 +8,14 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/DiDi.png
-#!date = 2024-09-05 14:25:54
+#!date = 2024-09-06 00:59:23
 
 [Rule]
 # 拦截HTTPDNS
 DOMAIN, hd.xiaojukeji.com, REJECT
 
 # 拦截广告下发
+DOMAIN, gwp.xiaojukeji.com, REJECT
 AND, ((IP-ASN, 45090, no-resolve), (DEST-PORT, 25641), (PROTOCOL, TCP)), REJECT
 AND, ((IP-ASN, 63646, no-resolve), (DEST-PORT, 25641), (PROTOCOL, TCP)), REJECT
 # DOMAIN, img-ys011.didistatic.com, REJECT
