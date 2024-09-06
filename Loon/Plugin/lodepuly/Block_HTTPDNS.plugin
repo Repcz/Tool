@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/HTTPDNS.png
-#!date = 2024-08-12 17:51:05
+#!date = 2024-09-06 20:47:55
 
 [Rule]
 # YY语音
@@ -191,6 +191,9 @@ IP-CIDR, 59.111.239.61/32, REJECT, no-resolve
 IP-CIDR, 59.111.239.62/32, REJECT, no-resolve
 IP-CIDR, 115.236.121.51/32, REJECT, no-resolve
 IP-CIDR, 115.236.121.195/32, REJECT, no-resolve
+
+# Keep
+DOMAIN, httpdns.calorietech.com, REJECT
 
 # 微博
 DOMAIN, dns.weibo.cn, REJECT
