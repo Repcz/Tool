@@ -1,0 +1,18 @@
+#!name = 123云盘去广告
+#!desc = 移除开屏广告、应用内横幅广告。
+#!openUrl = https://apps.apple.com/app/id1597682672
+#!author = 可莉🅥[https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md]
+#!tag = 去广告
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.1(745)
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/123NetWorkDisk.png
+#!date = 2024-06-30 00:52:59
+
+[Rewrite]
+# 横幅广告
+^https:\/\/www\.123pan\.com\/api\/config\/get reject-dict
+
+[MitM]
+hostname = www.123pan.com

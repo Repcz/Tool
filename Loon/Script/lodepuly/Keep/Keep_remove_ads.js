@@ -1,19 +1,16 @@
-// 2024-09-06 19:48:00
+// 2024-09-06 21:02:25
 const url = $request.url;
+if (!$response.body) $done({});
 let obj = JSON.parse($response.body);
 
-// 检查URL是否包含/config/v3/basic
 if (url.includes("/config/v3/basic")) {
-    // 遍历data.homeTabs
-    if (obj.data && obj.data.homeTabs && Array.isArray(obj.data.homeTabs)) {
-        obj.data.homeTabs = obj.data.homeTabs.filter(tab => {
-            // 检查name是否为"活动"
-            if (tab.name === "活动") {
-                console.log('删除活动标签');
-                return false; // 删除该对象
-            }
-            return true; // 保留该对象
-        });
+    if (obj.data && obj.data.homeTabs) {
+        // 过滤掉name为"活动"的tab
+        obj.data.homeTabs = obj.data.homeTabs.filter(tab => tab.name !== "活动");
+
+        // 修改default值
+        if (obj.data.homeTabs[1]) obj.data.homeTabs[1].default = true;
+        if (obj.data.homeTabs[2]) obj.data.homeTabs[2].default = false;
     }
 }
 
