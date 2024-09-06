@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-06T12:35:55.456Z
-# Size: 124043
+# Last Updated: 2024-09-06T16:17:30.678Z
+# Size: 124044
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -103546,6 +103546,7 @@ DOMAIN-SUFFIX,blackshot-hacks.com
 DOMAIN-SUFFIX,bleachscarecrow.com
 DOMAIN-SUFFIX,blicatedlitytl.info
 DOMAIN-SUFFIX,blindefficiency.pro
+DOMAIN-SUFFIX,log.bloodppressure.info
 DOMAIN-SUFFIX,images.go.bluejacketslink.com
 DOMAIN-SUFFIX,acton.bluetreesystems.com
 DOMAIN-SUFFIX,wobblewham.blunderfuzz.website
