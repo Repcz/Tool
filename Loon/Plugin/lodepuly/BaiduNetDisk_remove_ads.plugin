@@ -8,13 +8,9 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/BaiduNetDisk.png
-#!date = 2024-07-20 10:30:06
+#!date = 2024-09-08 02:01:52
 
 [Rule]
-# 拦截HTTPDNS
-^https?:\/\/180\.76\.76\.200\/v\d\/resolve reject
-^https?:\/\/180\.76\.76\.112\/v\d\/resolve reject
-
 # 字节跳动广告
 AND, ((DOMAIN-KEYWORD, ads), (DOMAIN-KEYWORD, normal), (DOMAIN-SUFFIX, zijieapi.com)), REJECT
 AND, ((DOMAIN-KEYWORD, -ad-), (DOMAIN-SUFFIX, byteimg.com)), REJECT
@@ -48,6 +44,9 @@ DOMAIN-SUFFIX, union.baidu.cn, REJECT
 DOMAIN-SUFFIX, union.baidu.com, REJECT
 
 [Rewrite]
+# 拦截HTTPDNS
+^https?:\/\/180\.76\.76\.200\/v\d\/resolve reject
+^https?:\/\/180\.76\.76\.112\/v\d\/resolve reject
 # 应用配置
 ^https:\/\/pan\.baidu\.com\/api\/getconfig reject-dict
 ^https:\/\/pan\.baidu\.com\/api\/getsyscfg reject-dict
