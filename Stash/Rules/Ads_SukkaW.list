@@ -124102,7 +124102,7 @@ DOMAIN-SUFFIX,zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqp.de
 ################## EOF ##################
 #########################################
 # Sukka's Ruleset - Reject Domains
-# Last Updated: 2024-09-05T15:42:13.321Z
+# Last Updated: 2024-09-07T17:29:26.054Z
 # Size: 72
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
@@ -124111,21 +124111,21 @@ DOMAIN-SUFFIX,zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqp.de
 # The ruleset supports AD blocking,tracking protection,privacy protection,anti-phishing,anti-mining
 #########################################
 DOMAIN,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe
-DOMAIN,this_rule_set_is_made_by_sukkaw.skk.moe
-DOMAIN,stun.smartgslb.com
-DOMAIN,api-js.mixpanel.com
-DOMAIN,api.iterable.com
 DOMAIN,js.iterable.com
-DOMAIN-SUFFIX,openx.net
-DOMAIN-SUFFIX,telemetry-coverage.mozilla.org
-DOMAIN-SUFFIX,telemetry.mozilla.org
-DOMAIN-SUFFIX,incoming-telemetry.thunderbird.net
-DOMAIN-SUFFIX,crazyegg.com
-DOMAIN-SUFFIX,amplitude.com
-DOMAIN-SUFFIX,advertising.com
+DOMAIN,api.iterable.com
+DOMAIN,api-js.mixpanel.com
+DOMAIN,stun.smartgslb.com
+DOMAIN,this_rule_set_is_made_by_sukkaw.skk.moe
 DOMAIN-SUFFIX,net.mydays.de
-DOMAIN-SUFFIX,notifysrv.com
+DOMAIN-SUFFIX,telemetry.mozilla.org
+DOMAIN-SUFFIX,telemetry-coverage.mozilla.org
+DOMAIN-SUFFIX,incoming-telemetry.thunderbird.net
+DOMAIN-SUFFIX,openx.net
 DOMAIN-SUFFIX,notify6.com
+DOMAIN-SUFFIX,notifysrv.com
+DOMAIN-SUFFIX,advertising.com
+DOMAIN-SUFFIX,amplitude.com
+DOMAIN-SUFFIX,crazyegg.com
 DOMAIN-KEYWORD,.estream.
 DOMAIN-KEYWORD,jshosting
 DOMAIN-KEYWORD,hostingcloud
