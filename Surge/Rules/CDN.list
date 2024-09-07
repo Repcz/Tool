@@ -39,6 +39,8 @@ DOMAIN,app.cookieyes.com
 DOMAIN,app.roboflow.com
 DOMAIN,app.viral-loops.com
 DOMAIN,appassets.mvtdev.com
+DOMAIN,apple-relay.cloudflare.com
+DOMAIN,apple-relay.fastly-edge.com
 DOMAIN,apps.profitihub.com
 DOMAIN,archive.mozilla.org
 DOMAIN,artworks.thetvdb.com
@@ -530,6 +532,9 @@ DOMAIN,content.any.run
 DOMAIN,content.jwplatform.com
 DOMAIN,content.wepik.com
 DOMAIN,cookie-cdn.cookiepro.com
+DOMAIN,cp2.cloudflare.com
+DOMAIN,cp3.cloudflare.com
+DOMAIN,cp4.cloudflare.com
 DOMAIN,cpwebassets.codepen.io
 DOMAIN,creativajs.altervista.org
 DOMAIN,crl.usertrust.com
