@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-07T09:02:40.400Z
-# Size: 124069
+# Last Updated: 2024-09-07T12:30:28.598Z
+# Size: 124070
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -12389,6 +12389,7 @@ DOMAIN-SUFFIX,media360ads.midtc.com
 DOMAIN-SUFFIX,cudgoz.mifcom.de
 DOMAIN-SUFFIX,a8.migxl.com
 DOMAIN-SUFFIX,a8clk.miidas.jp
+DOMAIN-SUFFIX,360down7.miiyun.cn
 DOMAIN-SUFFIX,mikka.app
 DOMAIN-SUFFIX,mikop.xyz
 DOMAIN-SUFFIX,ea.millet.fr
@@ -13347,7 +13348,6 @@ DOMAIN-SUFFIX,q27sz.com
 DOMAIN-SUFFIX,qange.com
 DOMAIN-SUFFIX,qbaka.net
 DOMAIN-SUFFIX,139520.aioc.qbgxl.com
-DOMAIN-SUFFIX,912648.aioc.qbgxl.com
 DOMAIN-SUFFIX,cdn.qc24h.com
 DOMAIN-SUFFIX,smetrics.qcnet.com
 DOMAIN-SUFFIX,qdmil.com
@@ -21993,7 +21993,6 @@ DOMAIN-SUFFIX,data-ssl.pnet.co.za
 DOMAIN-SUFFIX,track.pnj.com.vn
 DOMAIN-SUFFIX,flx2.pnl.agency
 DOMAIN-SUFFIX,pnperf.com
-DOMAIN-SUFFIX,pns.org.pk
 DOMAIN-SUFFIX,pnsqsv.com
 DOMAIN-SUFFIX,pntrac.com
 DOMAIN-SUFFIX,pnvtlh.xyz
@@ -22945,8 +22944,6 @@ DOMAIN-SUFFIX,hpplap.shabon.com
 DOMAIN-SUFFIX,shakre.com
 DOMAIN-SUFFIX,shar-m.com
 DOMAIN-SUFFIX,a8clk.shop.shareme.jp
-DOMAIN-SUFFIX,y.shavsl.com
-DOMAIN-SUFFIX,z.shavsl.com
 DOMAIN-SUFFIX,beacon.shazam.com
 DOMAIN-SUFFIX,shbxugs.cn
 DOMAIN-SUFFIX,shbxukj.cn
@@ -29736,6 +29733,7 @@ DOMAIN-SUFFIX,hlstlyy.com
 DOMAIN-SUFFIX,dep.hmgroup.com
 DOMAIN-SUFFIX,hnalzlu.top
 DOMAIN-SUFFIX,www2.hnavi.co.jp
+DOMAIN-SUFFIX,yp.hnggzyjy.cn
 DOMAIN-SUFFIX,swordtail.hnh.digital
 DOMAIN-SUFFIX,n.hnntube.com
 DOMAIN-SUFFIX,online.hnoexpo.com
@@ -30046,7 +30044,6 @@ DOMAIN-SUFFIX,extra.imoxxnx.com
 DOMAIN-SUFFIX,imp2aff.com
 DOMAIN-SUFFIX,yyrenshe.imshike.com
 DOMAIN-SUFFIX,data-6c57a6137f.imsueden.de
-DOMAIN-SUFFIX,imtoken8.cc
 DOMAIN-SUFFIX,imvjcds.com
 DOMAIN-SUFFIX,a8clk.inakakon.jp
 DOMAIN-SUFFIX,inalzlo.top
@@ -36657,6 +36654,7 @@ DOMAIN-SUFFIX,1090pjopm.de
 DOMAIN-SUFFIX,10q6e9ne5.de
 DOMAIN-SUFFIX,10sn95to9.de
 DOMAIN-SUFFIX,a.10tianqi.com
+DOMAIN-SUFFIX,soft.110route.com
 DOMAIN-SUFFIX,1.11130.com.cn
 DOMAIN-SUFFIX,11152646.xyz
 DOMAIN-SUFFIX,sams.11freunde.de
@@ -36980,7 +36978,6 @@ DOMAIN-SUFFIX,abedwest.com
 DOMAIN-SUFFIX,abfishop.com
 DOMAIN-SUFFIX,abfishop.org
 DOMAIN-SUFFIX,impressions.svc.abillion.com
-DOMAIN-SUFFIX,abissnet.net
 DOMAIN-SUFFIX,abluekai.com
 DOMAIN-SUFFIX,abmunnaa.com
 DOMAIN-SUFFIX,aboucaih.com
@@ -39050,7 +39047,6 @@ DOMAIN-SUFFIX,cmoney.money
 DOMAIN-SUFFIX,ab.cnbanbao.com
 DOMAIN-SUFFIX,dm.cnbanbao.com
 DOMAIN-SUFFIX,ms.cnbanbao.com
-DOMAIN-SUFFIX,server.cnc-kovey.ru
 DOMAIN-SUFFIX,cndcfvmc.com
 DOMAIN-SUFFIX,analytics.cnfanart.com
 DOMAIN-SUFFIX,sanalytics.cnfanart.com
@@ -49896,7 +49892,6 @@ DOMAIN-SUFFIX,pacontainer.s3.amazonaws.com
 DOMAIN-SUFFIX,biowebb-data.s3.amazonaws.com
 DOMAIN-SUFFIX,cloudfront-labs.amazonaws.com
 DOMAIN-SUFFIX,babes-mansion.s3.amazonaws.com
-DOMAIN-SUFFIX,bbuseruploads.s3.amazonaws.com
 DOMAIN-SUFFIX,sprocket-ping.s3.amazonaws.com
 DOMAIN-SUFFIX,syncplusconfig.s3.amazonaws.com
 DOMAIN-SUFFIX,yieldmo-builds.s3.amazonaws.com
@@ -52009,6 +52004,7 @@ DOMAIN-SUFFIX,secure.dial4gwyn.com
 DOMAIN-SUFFIX,affiliate.diatomplus.cz
 DOMAIN-SUFFIX,diccsbhij.com
 DOMAIN-SUFFIX,xiqvza.dickblick.com
+DOMAIN-SUFFIX,diclegrup.org
 DOMAIN-SUFFIX,ec.didnsunns.com
 DOMAIN-SUFFIX,data-d88bd5abf8.die-glocke.de
 DOMAIN-SUFFIX,marketing.dienerlaw.net
@@ -52159,6 +52155,7 @@ DOMAIN-SUFFIX,sstats.drugstore.com
 DOMAIN-SUFFIX,drust-gnf.com
 DOMAIN-SUFFIX,drvkypkfm.com
 DOMAIN-SUFFIX,sstats.ds-pharma.com
+DOMAIN-SUFFIX,dsaewew21.fun
 DOMAIN-SUFFIX,marketing.dscdredge.com
 DOMAIN-SUFFIX,dskjbvzvs.com
 DOMAIN-SUFFIX,dsmvkbfzp.com
@@ -53853,6 +53850,7 @@ DOMAIN-SUFFIX,hitcounter.ru
 DOMAIN-SUFFIX,hitgelsin.com
 DOMAIN-SUFFIX,hitman-pro.ru
 DOMAIN-SUFFIX,links.hitrecord.org
+DOMAIN-SUFFIX,hitstation.nl
 DOMAIN-SUFFIX,hitstatus.com
 DOMAIN-SUFFIX,tracking.hivecloud.net
 DOMAIN-SUFFIX,partner.hizeromop.com
@@ -55441,7 +55439,6 @@ DOMAIN-SUFFIX,marketing.medfusion.com
 DOMAIN-SUFFIX,media-412.com
 DOMAIN-SUFFIX,media-rep.com
 DOMAIN-SUFFIX,ana.mediable.info
-DOMAIN-SUFFIX,mediafire.zip
 DOMAIN-SUFFIX,mediafuse.com
 DOMAIN-SUFFIX,mediakash.com
 DOMAIN-SUFFIX,mediakraft.se
@@ -55726,6 +55723,7 @@ DOMAIN-SUFFIX,mytracking.moneyguide.es
 DOMAIN-SUFFIX,ens.moneyhouse.ch
 DOMAIN-SUFFIX,moneysyst.biz
 DOMAIN-SUFFIX,somni.moneytips.com
+DOMAIN-SUFFIX,moninediy.com
 DOMAIN-SUFFIX,tr.newsletter.monmedium.com
 DOMAIN-SUFFIX,web.online.monnalisa.com
 DOMAIN-SUFFIX,mjjvkx.monoprice.com
@@ -76831,6 +76829,7 @@ DOMAIN-SUFFIX,lesenjiaoyu.xyz
 DOMAIN-SUFFIX,leskdywzbfk.com
 DOMAIN-SUFFIX,letraoquavn.com
 DOMAIN-SUFFIX,images.one.leumicard.co.il
+DOMAIN-SUFFIX,lflsoftware.com
 DOMAIN-SUFFIX,lfngqrtheim.com
 DOMAIN-SUFFIX,lgqffscxfqv.com
 DOMAIN-SUFFIX,lhamjcpnpqb.xyz
@@ -85580,6 +85579,7 @@ DOMAIN-SUFFIX,yhn.podcast.lisameyerson.com
 DOMAIN-SUFFIX,fheb.podcast.lisameyerson.com
 DOMAIN-SUFFIX,hvoq.podcast.lisameyerson.com
 DOMAIN-SUFFIX,kvxp.podcast.lisameyerson.com
+DOMAIN-SUFFIX,nrux.podcast.lisameyerson.com
 DOMAIN-SUFFIX,tpbq.podcast.lisameyerson.com
 DOMAIN-SUFFIX,ypqm.podcast.lisameyerson.com
 DOMAIN-SUFFIX,awaco.podcast.lisameyerson.com
@@ -112299,7 +112299,6 @@ DOMAIN-SUFFIX,zlv.patent.international-med.com
 DOMAIN-SUFFIX,ilkj.patent.international-med.com
 DOMAIN-SUFFIX,nzkj.patent.international-med.com
 DOMAIN-SUFFIX,rcyt.patent.international-med.com
-DOMAIN-SUFFIX,wbnr.patent.international-med.com
 DOMAIN-SUFFIX,unmmx.patent.international-med.com
 DOMAIN-SUFFIX,intersectionweigh.com
 DOMAIN-SUFFIX,smetrics.intertek-etlsemko.com
@@ -114729,6 +114728,7 @@ DOMAIN-SUFFIX,kiemtientaigia2018.com
 DOMAIN-SUFFIX,kikmessengerforpcs.com
 DOMAIN-SUFFIX,kindhearted-winter.pro
 DOMAIN-SUFFIX,kindledrummerhitch.com
+DOMAIN-SUFFIX,kineticrockburgers.com
 DOMAIN-SUFFIX,kingrecommendation.com
 DOMAIN-SUFFIX,data-47ee1b0882.kinocenter-cuxhaven.de
 DOMAIN-SUFFIX,knobsomebodycheery.com
@@ -114806,6 +114806,7 @@ DOMAIN-SUFFIX,loyeesihighlyreco.info
 DOMAIN-SUFFIX,luggagebuttonlocum.com
 DOMAIN-SUFFIX,tk.lulli-sur-la-toile.com
 DOMAIN-SUFFIX,mqjpkx.lulli-sur-la-toile.com
+DOMAIN-SUFFIX,luxurypropertiesfl.com
 DOMAIN-SUFFIX,trk.luxurytravelcanada.org
 DOMAIN-SUFFIX,machineryvegetable.com
 DOMAIN-SUFFIX,madden16coinglitch.com
