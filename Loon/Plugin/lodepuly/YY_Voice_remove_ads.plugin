@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/YY_Voice.png
-#!date = 2024-09-08 12:33:42
+#!date = 2024-09-08 13:09:26
 
 [Rule]
 # 拦截HTTPDNS
@@ -18,6 +18,9 @@ DOMAIN, httpdns-v6.gslb.yy.com, REJECT
 
 # 开屏广告
 DOMAIN, splash.yy.com, REJECT
+
+# 广告下发
+DOMAIN, dsp-ad.yy.com, REJECT
 
 # 腾讯
 DOMAIN, adsmind.gdtimg.com, REJECT
@@ -86,10 +89,7 @@ DOMAIN, sdk.beizi.biz, REJECT
 ^https:\/\/yyapp-act-entrance\.yy\.com\/entrance\/list\? reject-dict
 
 # 底栏
-^https:\/\/tab\.yy\.com\/tabs\? response-body-json-del data.tabsForSelect data.tabs[0] data.tabs[1]
-
-# 关注 - 关注推荐
-^https:\/\/yyapp-fastnet\.yy\.com\/dispatch\? response-body-json-del data[1]
+^https:\/\/tab\.yy\.com\/tabs\? response-body-json-del data.tabs[0]
 
 [Script]
 # 我的页面
