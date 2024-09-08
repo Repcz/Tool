@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2024-09-07T18:03:15.052Z
-# Size: 769
+# Last Updated: 2024-09-08T21:37:02.836Z
+# Size: 771
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -308,6 +308,8 @@ HOST-SUFFIX,baidubce.com,DIRECT
 HOST-SUFFIX,baidu.com,DIRECT
 HOST-SUFFIX,hao123.com,DIRECT
 HOST-SUFFIX,91.com,DIRECT
+HOST-SUFFIX,bytednsdoc.com,DIRECT
+HOST-SUFFIX,bytetcc.com,DIRECT
 HOST-SUFFIX,zijieapi.com,DIRECT
 HOST-SUFFIX,zjcdn.com,DIRECT
 HOST-SUFFIX,baike.com,DIRECT

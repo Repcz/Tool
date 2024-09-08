@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-08T20:00:49.237Z
-# Size: 124123
+# Last Updated: 2024-09-08T21:37:07.125Z
+# Size: 124127
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -9944,11 +9944,13 @@ DOMAIN-SUFFIX,1187531871.rsc.cdn77.org
 DOMAIN-SUFFIX,1208344341.rsc.cdn77.org
 DOMAIN-SUFFIX,1363394706.rsc.cdn77.org
 DOMAIN-SUFFIX,1437953666.rsc.cdn77.org
+DOMAIN-SUFFIX,1450691516.rsc.cdn77.org
 DOMAIN-SUFFIX,1480876790.rsc.cdn77.org
 DOMAIN-SUFFIX,1529462937.rsc.cdn77.org
 DOMAIN-SUFFIX,1548164934.rsc.cdn77.org
 DOMAIN-SUFFIX,1558334541.rsc.cdn77.org
 DOMAIN-SUFFIX,1588341617.rsc.cdn77.org
+DOMAIN-SUFFIX,1607162747.rsc.cdn77.org
 DOMAIN-SUFFIX,1675450967.rsc.cdn77.org
 DOMAIN-SUFFIX,1736253261.rsc.cdn77.org
 DOMAIN-SUFFIX,1918837748.rsc.cdn77.org
@@ -43831,6 +43833,7 @@ DOMAIN-SUFFIX,sadbelytics.munichre.com
 DOMAIN-SUFFIX,muoizbtl.xyz
 DOMAIN-SUFFIX,muraubse.com
 DOMAIN-SUFFIX,muriheem.net
+DOMAIN-SUFFIX,murtbgab.com
 DOMAIN-SUFFIX,em6802.musesapp.com
 DOMAIN-SUFFIX,ads.museum.or.jp
 DOMAIN-SUFFIX,lp.musicpix.pro
@@ -74581,6 +74584,7 @@ DOMAIN-SUFFIX,2e718yf5jypb.test.digitalsurge.io
 DOMAIN-SUFFIX,marketing.digitalvega.com
 DOMAIN-SUFFIX,stats-factory.digitregroup.io
 DOMAIN-SUFFIX,dignityprop.com
+DOMAIN-SUFFIX,diixqvrpoqs.com
 DOMAIN-SUFFIX,dikeaxillas.com
 DOMAIN-SUFFIX,ojhwie.dimanoinmano.it
 DOMAIN-SUFFIX,dinerinvite.com
@@ -124154,8 +124158,8 @@ DOMAIN-SUFFIX,zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqp.de
 ################## EOF ##################
 #########################################
 # Sukka's Ruleset - Reject Domains
-# Last Updated: 2024-09-07T17:29:26.054Z
-# Size: 72
+# Last Updated: 2024-09-08T21:37:03.090Z
+# Size: 73
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -124171,6 +124175,7 @@ DOMAIN,this_rule_set_is_made_by_sukkaw.skk.moe
 DOMAIN-SUFFIX,net.mydays.de
 DOMAIN-SUFFIX,telemetry.mozilla.org
 DOMAIN-SUFFIX,telemetry-coverage.mozilla.org
+DOMAIN-SUFFIX,omtrdc.net
 DOMAIN-SUFFIX,incoming-telemetry.thunderbird.net
 DOMAIN-SUFFIX,openx.net
 DOMAIN-SUFFIX,notify6.com
