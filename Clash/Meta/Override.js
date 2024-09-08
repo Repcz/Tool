@@ -2,7 +2,7 @@
 //
 // Clash Verge Rev (Version ≥ 17.2) & Mihomo-Party (Version ≥ 0.5.8)
 //
-// 最后更新时间: 2024-09-03 21:45
+// 最后更新时间: 2024-09-08 15:50
 
 // 规则集通用配置
 const ruleProviderCommon = {
@@ -33,6 +33,7 @@ function main(config) {
   config["allow-lan"] = true;
   config["ipv6"] = false;
   config["log-level"] = "info";
+  config["unified-delay"] = "true";
   config["find-process-mode"] = "strict";
   config["global-client-fingerprint"] = "chrome";
   config["external-controller"] = "127.0.0.1:9090";
