@@ -1,7 +1,7 @@
 /*
 脚本引用https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Smzdm.js
 */
-// 2024-01-19 21:40
+// 2024-09-08 20:59
 const url = $request.url;
 
 if (!$response.body) {
@@ -15,7 +15,7 @@ if (url.includes("/v3/home")) {
     if (Array.isArray(data)) {
       return data.map(item => recursivelyFilterByCellType(item)).filter(Boolean);
     } else if (typeof data === 'object') {
-      if (data['cell_type'] === '23008' || data['cell_type'] === '23005') {
+      if (data['cell_type'] === '23008' || data['cell_type'] === '23005' || data['cell_type'] === '23024') {
         return null;
       } else {
         for (const key in data) {

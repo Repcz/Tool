@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/DiDi.png
-#!date = 2024-09-06 00:59:23
+#!date = 2024-09-08 22:05:03
 
 [Rule]
 # 拦截HTTPDNS
@@ -25,7 +25,6 @@ AND, ((IP-ASN, 63646, no-resolve), (DEST-PORT, 25641), (PROTOCOL, TCP)), REJECT
 ^https:\/\/ct\.xiaojukeji\.com\/agent\/v3\/feeds reject-dict
 ^https:\/\/daijia\.kuaidadi\.com\/gateway reject-dict
 ^https:\/\/freight\.xiaojukeji\.com\/gateway reject-dict
-^https:\/\/daijia\.kuaidadi\.com:443\/gateway reject-dict
 ^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget reject-dict
 ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/other\/fast reject-dict
 ^https:\/\/conf\.diditaxi\.com\.cn\/dynamic\/conf reject-dict
