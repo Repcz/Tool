@@ -1,7 +1,7 @@
 ## [Adblock Plus 1.1]
-## ! Version: 202409051614
+## ! Version: 202409081436
 ## ! Title: EasyPrivacy
-## ! Last modified: 05 Sep 2024 16:14 UTC
+## ! Last modified: 08 Sep 2024 14:36 UTC
 ## ! Expires: 4 days (update frequency)
 ## ! *** easylist:template_header.txt ***
 ## ! 
@@ -1881,6 +1881,7 @@ HOST-SUFFIX,rambunctiousflock.com,REJECT
 HOST-SUFFIX,rambunctiousvoyage.com,REJECT
 HOST-SUFFIX,rangecake.com,REJECT
 HOST-SUFFIX,rangeplayground.com,REJECT
+HOST-SUFFIX,rangergustav.com,REJECT
 HOST-SUFFIX,rapidkittens.com,REJECT
 HOST-SUFFIX,raresummer.com,REJECT
 HOST-SUFFIX,reactjspdf.com,REJECT
@@ -4354,6 +4355,7 @@ HOST-SUFFIX,0.myikas.com,REJECT
 HOST-SUFFIX,analitik.bik.gov.tr,REJECT
 HOST-SUFFIX,analytics.faprika.net,REJECT
 HOST-SUFFIX,analytics.kkb.com.tr,REJECT
+HOST-SUFFIX,analytics.qushad.com,REJECT
 HOST-SUFFIX,c.keltis.com,REJECT
 HOST-SUFFIX,collector.wawlabs.com,REJECT
 HOST-SUFFIX,log.collectaction.com,REJECT
@@ -4373,6 +4375,7 @@ HOST-SUFFIX,tracking.aita.gov.vn,REJECT
 HOST-SUFFIX,tracking3.vnncdn.net,REJECT
 HOST-SUFFIX,za.zalo.me,REJECT
 HOST-SUFFIX,za.zdn.vn,REJECT
+HOST-SUFFIX,a-da.invideo.io,REJECT
 HOST-SUFFIX,a-reporting.nytimes.com,REJECT
 HOST-SUFFIX,a.electerious.com,REJECT
 HOST-SUFFIX,a.tellonym.me,REJECT
@@ -4395,6 +4398,7 @@ HOST-SUFFIX,ampltd.top.gg,REJECT
 HOST-SUFFIX,ampltd2.medal.tv,REJECT
 HOST-SUFFIX,anal.doubledouble.top,REJECT
 HOST-SUFFIX,analytics-batch.blitz.gg,REJECT
+HOST-SUFFIX,analytics-dataplane.invideo.io,REJECT
 HOST-SUFFIX,analytics-proxy.springboard.com,REJECT
 HOST-SUFFIX,analytics-server.arras.cx,REJECT
 HOST-SUFFIX,analytics-tracking.meetup.com,REJECT
@@ -4577,6 +4581,7 @@ HOST-SUFFIX,eventlog.jackpot.de,REJECT
 HOST-SUFFIX,events-prod.autolist.com,REJECT
 HOST-SUFFIX,events-tracker.deliveroo.net,REJECT
 HOST-SUFFIX,events.api.godaddy.com,REJECT
+HOST-SUFFIX,events.baselime.io,REJECT
 HOST-SUFFIX,events.clips4sale.com,REJECT
 HOST-SUFFIX,events.framer.com,REJECT
 HOST-SUFFIX,events.mercadolibre.com,REJECT
@@ -4753,6 +4758,7 @@ HOST-SUFFIX,pingback.issuu.com,REJECT
 HOST-SUFFIX,pingo.staticmoly.me,REJECT
 HOST-SUFFIX,pixel.archivecaslytosk.onion,REJECT
 HOST-SUFFIX,pixel.archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion,REJECT
+HOST-SUFFIX,pixel.clutter.com,REJECT
 HOST-SUFFIX,pixel.convertize.io,REJECT
 HOST-SUFFIX,pixel.facebook.com,REJECT
 HOST-SUFFIX,pixel.honestjohn.co.uk,REJECT
@@ -4851,6 +4857,7 @@ HOST-SUFFIX,stat.vulkanvegas.com,REJECT
 HOST-SUFFIX,statistics.streamdav.com,REJECT
 HOST-SUFFIX,stats.aerotime.aero,REJECT
 HOST-SUFFIX,stats.calcalist.co.il,REJECT
+HOST-SUFFIX,stats.chromatone.center,REJECT
 HOST-SUFFIX,stats.codeur.com,REJECT
 HOST-SUFFIX,stats.davidickedelivery.com,REJECT
 HOST-SUFFIX,stats.gateio.ch,REJECT
