@@ -8,10 +8,10 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/SeasunJX3.png
-#!date = 2024-08-30 22:46:48
+#!date = 2024-09-09 09:28:08
 
 [General]
-real-ip = jx3v*-update.xoyocdn.com
+real-ip = *-update.xoyocdn.com
 
 [Rewrite]
 # 热点推送
