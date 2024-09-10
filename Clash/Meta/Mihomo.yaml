@@ -7,20 +7,19 @@
 #
 # Mihomo Version ≥ 1.8.4
 #
-# 最后更新时间: 2024-09-06 07:30
+# 最后更新时间: 2024-09-10 21:30
 #
 # ================
 
+p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://connectivitycheck.gstatic.com/generate_204, interval: 1800, timeout: 5000}}
 proxy-providers:
   Subscribe: # 在此将 "http://your-service-provider" 替换为你的机场订阅，推荐使用 base64 或者 node list
     url: http://your-service-provider
-    path: ./proxies/Sub.yaml
-    type: http
-    interval: 86400
-    health-check: {enable: true, url: http://connectivitycheck.gstatic.com/generate_204, interval: 1800, timeout: 5000}
+    <<: *p
     #override: # 修改节点前后缀时，需移除前方的 "#" 符号
       #additional-prefix: "节点前缀"
-      #additional-suffix: "节点后缀"    
+      #additional-suffix: "节点后缀"
+  #Subscribe2: {url: http://your-service-provider, <<: *p}
 
 mixed-port: 7893
 tcp-concurrent: true
