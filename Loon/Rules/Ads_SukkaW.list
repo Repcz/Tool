@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-11T12:37:54.662Z
-# Size: 123828
+# Last Updated: 2024-09-11T14:31:36.052Z
+# Size: 123829
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -64062,6 +64062,7 @@ DOMAIN-SUFFIX,cloudjumbo.com
 DOMAIN-SUFFIX,cloudmedia.gdn
 DOMAIN-SUFFIX,marketing.cloudmerge.com
 DOMAIN-SUFFIX,clp-mms.cloudpro.co.uk
+DOMAIN,simple.cloudsmith.com
 DOMAIN-SUFFIX,info.cloudsteer.com
 DOMAIN-SUFFIX,a8cv.cloudthome.com
 DOMAIN-SUFFIX,cloudtraff.com
@@ -65564,7 +65565,6 @@ DOMAIN-SUFFIX,track.fixit-wiki.com
 DOMAIN-SUFFIX,fjdpdcdndc.com
 DOMAIN-SUFFIX,fkbwtoopwg.com
 DOMAIN-SUFFIX,fkecheotlf.com
-DOMAIN-SUFFIX,fkpklrphfw.com
 DOMAIN-SUFFIX,atom-log.3.cn
 DOMAIN-SUFFIX,kzsisc.3.dk
 DOMAIN-SUFFIX,mit3app.3.dk
@@ -123856,6 +123856,7 @@ DOMAIN-SUFFIX,t7cp4fldl.com
 DOMAIN-SUFFIX,t7tli5r8t.com
 DOMAIN-SUFFIX,t8mbwgbjn.com
 DOMAIN-SUFFIX,a8.tabechoku.com
+DOMAIN-SUFFIX,dl.tablelist.com
 ################## EOF ##################
 #########################################
 # Sukka's Ruleset - Reject Domains

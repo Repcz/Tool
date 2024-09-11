@@ -841,7 +841,6 @@ DOMAIN,imgur.dcard.tw
 DOMAIN,info.cloudflare.com
 DOMAIN,info.knak.com
 DOMAIN,interactive.guim.co.uk
-DOMAIN,ipe-plugins.js.org
 DOMAIN,ipfs.d.tube
 DOMAIN,irp-cdn.multiscreensite.com
 DOMAIN,j.udn.com.tw
@@ -867,6 +866,7 @@ DOMAIN,kdata1.com
 DOMAIN,keyframe-cdn.abcnews.com
 DOMAIN,lain.bgm.tv
 DOMAIN,launchercontent.mojang.com
+DOMAIN,lcdn-locator.apple.com
 DOMAIN,ledger-wp-website-s3-prd.ledger.com
 DOMAIN,lib.arvancloud.com
 DOMAIN,libs.quillbot.com
@@ -965,7 +965,6 @@ DOMAIN,nodei.co
 DOMAIN,npm.antfu.dev
 DOMAIN,npm.im
 DOMAIN,npm.jsr.io
-DOMAIN,npmgraph.js.org
 DOMAIN,o.n1mp.org
 DOMAIN,object.innei.in
 DOMAIN,objects.g0v.social
@@ -1435,7 +1434,6 @@ DOMAIN,storageapi2.fleek.one
 DOMAIN,store-images.microsoft.com
 DOMAIN,store-images.s-microsoft.com
 DOMAIN,stories.freepiklabs.com
-DOMAIN,storybook.js.org
 DOMAIN,streaming.split.io
 DOMAIN,sts3.wsj.net
 DOMAIN,stubdownloader.services.mozilla.com
@@ -1539,7 +1537,6 @@ DOMAIN,web-assets.zendesk.com
 DOMAIN,web-toolbar.playstation.com
 DOMAIN,web.onekey-asset.com
 DOMAIN,webfonts.zoho.com
-DOMAIN,webpack.js.org
 DOMAIN,website-cdn.ipinfo.io
 DOMAIN,widget.cluster.groovehq.com
 DOMAIN,widget.freshworks.com
@@ -1926,6 +1923,7 @@ DOMAIN-SUFFIX,jisuimage.com
 DOMAIN-SUFFIX,jitpack.io
 DOMAIN-SUFFIX,js.hubspot.com
 DOMAIN-SUFFIX,js.hubspotfeedback.com
+DOMAIN-SUFFIX,js.org
 DOMAIN-SUFFIX,js.usemessages.com
 DOMAIN-SUFFIX,jscloud.net
 DOMAIN-SUFFIX,jsdelivr.net
