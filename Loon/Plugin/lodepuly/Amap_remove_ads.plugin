@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Amap.png
-#!date = 2024-09-03 22:22:34
+#!date = 2024-09-12 11:16:15
 
 [Rule]
 # 移除广告下发请求
@@ -20,6 +20,7 @@ DOMAIN-SUFFIX, v.smtcdns.com, REJECT
 
 [Rewrite]
 # 导航详情页 - 路线规划、地点详情页、搜索详情页、导航结束页
+^https:\/\/m5\.amap\.com\/ws\/aos\/main\/page\/product\/list\? reject-dict
 ^https:\/\/m5\.amap\.com\/ws\/shield\/search\/new_hotword\? reject-dict
 ^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/card-service-(car-end|route-plan) reject-dict
 ^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/tips_adv\? reject-dict
