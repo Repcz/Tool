@@ -1,8 +1,8 @@
 payload:
   #########################################
   # Sukka's Ruleset - Domestic Domains
-  # Last Updated: 2024-09-08T21:37:02.836Z
-  # Size: 771
+  # Last Updated: 2024-09-12T14:47:34.159Z
+  # Size: 773
   # License: AGPL 3.0
   # Homepage: https://ruleset.skk.moe
   # GitHub: https://github.com/SukkaW/Surge
@@ -38,6 +38,7 @@ payload:
   - DOMAIN-SUFFIX,8866.org
   - DOMAIN-SUFFIX,7766.org
   - DOMAIN-SUFFIX,3322.org
+  - DOMAIN-SUFFIX,juejin.im
   - DOMAIN-SUFFIX,netease.im
   - DOMAIN-SUFFIX,haowu.link
   - DOMAIN-SUFFIX,yqkk.link
@@ -157,8 +158,10 @@ payload:
   - DOMAIN-SUFFIX,linkedin.cn
   - DOMAIN-SUFFIX,leetcode.cn
   - DOMAIN-SUFFIX,kuwo.cn
+  - DOMAIN-SUFFIX,juejin.cn
   - DOMAIN-SUFFIX,jpush.cn
   - DOMAIN-SUFFIX,jiguang.cn
+  - DOMAIN-SUFFIX,infoq.cn
   - DOMAIN-SUFFIX,gaokao.cn
   - DOMAIN-SUFFIX,dxy.cn
   - DOMAIN-SUFFIX,digicert.cn
@@ -533,7 +536,6 @@ payload:
   - DOMAIN-SUFFIX,jiemian.com
   - DOMAIN-SUFFIX,jianshu.com
   - DOMAIN-SUFFIX,ithome.com
-  - DOMAIN-SUFFIX,infinitynewtab.com
   - DOMAIN-SUFFIX,ifengimg.com
   - DOMAIN-SUFFIX,ifeng.com
   - DOMAIN-SUFFIX,id6.com

@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2024-09-08T21:37:02.836Z
-# Size: 771
+# Last Updated: 2024-09-12T14:47:34.159Z
+# Size: 773
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -37,6 +37,7 @@ HOST-SUFFIX,9966.org,DIRECT
 HOST-SUFFIX,8866.org,DIRECT
 HOST-SUFFIX,7766.org,DIRECT
 HOST-SUFFIX,3322.org,DIRECT
+HOST-SUFFIX,juejin.im,DIRECT
 HOST-SUFFIX,netease.im,DIRECT
 HOST-SUFFIX,haowu.link,DIRECT
 HOST-SUFFIX,yqkk.link,DIRECT
@@ -156,8 +157,10 @@ HOST-SUFFIX,m1905.cn,DIRECT
 HOST-SUFFIX,linkedin.cn,DIRECT
 HOST-SUFFIX,leetcode.cn,DIRECT
 HOST-SUFFIX,kuwo.cn,DIRECT
+HOST-SUFFIX,juejin.cn,DIRECT
 HOST-SUFFIX,jpush.cn,DIRECT
 HOST-SUFFIX,jiguang.cn,DIRECT
+HOST-SUFFIX,infoq.cn,DIRECT
 HOST-SUFFIX,gaokao.cn,DIRECT
 HOST-SUFFIX,dxy.cn,DIRECT
 HOST-SUFFIX,digicert.cn,DIRECT
@@ -532,7 +535,6 @@ HOST-SUFFIX,kaiyanapp.com,DIRECT
 HOST-SUFFIX,jiemian.com,DIRECT
 HOST-SUFFIX,jianshu.com,DIRECT
 HOST-SUFFIX,ithome.com,DIRECT
-HOST-SUFFIX,infinitynewtab.com,DIRECT
 HOST-SUFFIX,ifengimg.com,DIRECT
 HOST-SUFFIX,ifeng.com,DIRECT
 HOST-SUFFIX,id6.com,DIRECT

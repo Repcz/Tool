@@ -29,6 +29,7 @@ domain_suffix_set:
 - 8866.org
 - 7766.org
 - 3322.org
+- juejin.im
 - netease.im
 - haowu.link
 - yqkk.link
@@ -148,8 +149,10 @@ domain_suffix_set:
 - linkedin.cn
 - leetcode.cn
 - kuwo.cn
+- juejin.cn
 - jpush.cn
 - jiguang.cn
+- infoq.cn
 - gaokao.cn
 - dxy.cn
 - digicert.cn
@@ -524,7 +527,6 @@ domain_suffix_set:
 - jiemian.com
 - jianshu.com
 - ithome.com
-- infinitynewtab.com
 - ifengimg.com
 - ifeng.com
 - id6.com
