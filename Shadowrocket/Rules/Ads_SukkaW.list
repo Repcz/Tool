@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-13T12:36:06.238Z
-# Size: 123882
+# Last Updated: 2024-09-13T14:21:44.667Z
+# Size: 123884
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -10841,6 +10841,7 @@ DOMAIN-SUFFIX,fq01.shop
 DOMAIN-SUFFIX,fq02.shop
 DOMAIN-SUFFIX,fq03.shop
 DOMAIN-SUFFIX,fq04.shop
+DOMAIN-SUFFIX,fq05.shop
 DOMAIN-SUFFIX,fqkwn.com
 DOMAIN-SUFFIX,fqtag.com
 DOMAIN-SUFFIX,fqwgi.com
@@ -11743,6 +11744,7 @@ DOMAIN-SUFFIX,jy01.shop
 DOMAIN-SUFFIX,jy04.shop
 DOMAIN-SUFFIX,jy05.shop
 DOMAIN-SUFFIX,jy06.shop
+DOMAIN-SUFFIX,jy07.shop
 DOMAIN-SUFFIX,o.jy135.com
 DOMAIN-SUFFIX,jygcv.sbs
 DOMAIN-SUFFIX,jyuskb.cn
@@ -65563,8 +65565,6 @@ DOMAIN-SUFFIX,stockbook-ads.firebaseio.com
 DOMAIN-SUFFIX,links.firecracker.me
 DOMAIN-SUFFIX,firecracks.com
 DOMAIN-SUFFIX,analytics.firespring.com
-DOMAIN-SUFFIX,fireupload.org
-DOMAIN-SUFFIX,first-rate.com
 DOMAIN-SUFFIX,atom-log.3.cn
 DOMAIN-SUFFIX,kzsisc.3.dk
 DOMAIN-SUFFIX,mit3app.3.dk
@@ -76377,6 +76377,7 @@ DOMAIN-SUFFIX,fq01.shop
 DOMAIN-SUFFIX,fq02.shop
 DOMAIN-SUFFIX,fq03.shop
 DOMAIN-SUFFIX,fq04.shop
+DOMAIN-SUFFIX,fq05.shop
 DOMAIN-SUFFIX,fqkwn.com
 DOMAIN-SUFFIX,fqtag.com
 DOMAIN-SUFFIX,fqwgi.com
@@ -77279,6 +77280,7 @@ DOMAIN-SUFFIX,jy01.shop
 DOMAIN-SUFFIX,jy04.shop
 DOMAIN-SUFFIX,jy05.shop
 DOMAIN-SUFFIX,jy06.shop
+DOMAIN-SUFFIX,jy07.shop
 DOMAIN-SUFFIX,o.jy135.com
 DOMAIN-SUFFIX,jygcv.sbs
 DOMAIN-SUFFIX,jyuskb.cn
