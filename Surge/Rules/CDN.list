@@ -1429,6 +1429,7 @@ DOMAIN,statics-xbc-eas.xbox.com
 DOMAIN,statics.goorm.io
 DOMAIN,statics.teams.cdn.office.net
 DOMAIN,staticw2.yotpo.com
+DOMAIN,stats.setapp.com
 DOMAIN,steamcdn-a.akamaihd.net
 DOMAIN,steamusercontent-a.akamaihd.net
 DOMAIN,steamuserimages-a.akamaihd.net
@@ -1478,6 +1479,8 @@ DOMAIN,ton.local.twitter.com
 DOMAIN,topbar-static.piano.io
 DOMAIN,torrindex.net
 DOMAIN,tracker.cdnbye.com
+DOMAIN,tuf-repo-cdn.sigstore.dev
+DOMAIN,tuf-repo.github.com
 DOMAIN,tvdownloaddw-a.akamaihd.net
 DOMAIN,twemoji.maxcdn.com
 DOMAIN,typeface.nyt.com
