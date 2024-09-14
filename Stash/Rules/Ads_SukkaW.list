@@ -1,6 +1,6 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-14T04:09:22.619Z
+# Last Updated: 2024-09-14T12:34:37.908Z
 # Size: 123905
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
@@ -28005,6 +28005,7 @@ DOMAIN-SUFFIX,drjs123.com
 DOMAIN-SUFFIX,drkness.net
 DOMAIN-SUFFIX,beacon.dropbox.com
 DOMAIN-SUFFIX,marketing.dropbox.com
+DOMAIN-SUFFIX,drtrs55.fun
 DOMAIN-SUFFIX,adv.drtuber.com
 DOMAIN-SUFFIX,drummers.cn
 DOMAIN-SUFFIX,trk.drvonda.com
@@ -32167,7 +32168,6 @@ DOMAIN-SUFFIX,partner.palstorm.cz
 DOMAIN-SUFFIX,invite.paltalk.net
 DOMAIN-SUFFIX,px.pandora.com
 DOMAIN-SUFFIX,pxsg.pandora.com
-DOMAIN-SUFFIX,t.ac.pandora.com
 DOMAIN-SUFFIX,stats.pandora.com
 DOMAIN-SUFFIX,metrics.pandora.com
 DOMAIN-SUFFIX,smetrics.pandora.com
@@ -93541,6 +93541,7 @@ DOMAIN-SUFFIX,drjs123.com
 DOMAIN-SUFFIX,drkness.net
 DOMAIN-SUFFIX,beacon.dropbox.com
 DOMAIN-SUFFIX,marketing.dropbox.com
+DOMAIN-SUFFIX,drtrs55.fun
 DOMAIN-SUFFIX,adv.drtuber.com
 DOMAIN-SUFFIX,drummers.cn
 DOMAIN-SUFFIX,trk.drvonda.com
@@ -97703,7 +97704,6 @@ DOMAIN-SUFFIX,partner.palstorm.cz
 DOMAIN-SUFFIX,invite.paltalk.net
 DOMAIN-SUFFIX,px.pandora.com
 DOMAIN-SUFFIX,pxsg.pandora.com
-DOMAIN-SUFFIX,t.ac.pandora.com
 DOMAIN-SUFFIX,stats.pandora.com
 DOMAIN-SUFFIX,metrics.pandora.com
 DOMAIN-SUFFIX,smetrics.pandora.com
