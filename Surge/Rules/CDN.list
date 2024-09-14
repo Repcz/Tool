@@ -572,6 +572,7 @@ DOMAIN,dims.apnews.com
 DOMAIN,disco.headliner.link
 DOMAIN,dl.nwjs.io
 DOMAIN,dl2.nwjs.io
+DOMAIN,docker.cloudsmith.io
 DOMAIN,docs.rs
 DOMAIN,doppler-config.cbsivideo.com
 DOMAIN,doujin-assets.dmm.co.jp
@@ -1719,7 +1720,6 @@ DOMAIN-SUFFIX,cwwcdn.com
 DOMAIN-SUFFIX,daumcdn.net
 DOMAIN-SUFFIX,deno.land
 DOMAIN-SUFFIX,denopkg.com
-DOMAIN-SUFFIX,desktop.docker.com
 DOMAIN-SUFFIX,devrum.uptime.com
 DOMAIN-SUFFIX,dilcdn.com
 DOMAIN-SUFFIX,disconnect.me
@@ -2060,12 +2060,14 @@ DOMAIN-SUFFIX,proxy2.startpage.com
 DOMAIN-SUFFIX,pstatic.net
 DOMAIN-SUFFIX,pstorage.space
 DOMAIN-SUFFIX,public.cdn.office.net
+DOMAIN-SUFFIX,public.ecr.aws
 DOMAIN-SUFFIX,pxgcdn.com
 DOMAIN-SUFFIX,pypi.org
 DOMAIN-SUFFIX,pythonhosted.org
 DOMAIN-SUFFIX,pztv.ca
 DOMAIN-SUFFIX,pzvcdn.com
 DOMAIN-SUFFIX,qooqlevideo.com
+DOMAIN-SUFFIX,quay.io
 DOMAIN-SUFFIX,quip-cdn.com
 DOMAIN-SUFFIX,quip-marketing.com
 DOMAIN-SUFFIX,quoracdn.net
