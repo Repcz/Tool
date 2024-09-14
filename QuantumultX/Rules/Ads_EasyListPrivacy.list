@@ -1,7 +1,7 @@
 ## [Adblock Plus 1.1]
-## ! Version: 202409081436
+## ! Version: 202409132119
 ## ! Title: EasyPrivacy
-## ! Last modified: 08 Sep 2024 14:36 UTC
+## ! Last modified: 13 Sep 2024 21:19 UTC
 ## ! Expires: 4 days (update frequency)
 ## ! *** easylist:template_header.txt ***
 ## ! 
@@ -3640,6 +3640,7 @@ HOST-SUFFIX,try.abtasty.com,REJECT
 HOST-SUFFIX,ts.tradetracker.net,REJECT
 HOST-SUFFIX,ucounter.ucoz.net,REJECT
 HOST-SUFFIX,uid.mediacorp.sg,REJECT
+HOST-SUFFIX,uilogging.tcdevops.com,REJECT
 HOST-SUFFIX,uim.tifbs.net,REJECT
 HOST-SUFFIX,umami.aigenerations.net,REJECT
 HOST-SUFFIX,units.knotch.it,REJECT
@@ -4703,6 +4704,7 @@ HOST-SUFFIX,mcs-va.tiktokv.com,REJECT
 HOST-SUFFIX,mcs.tiktokv.us,REJECT
 HOST-SUFFIX,mcs.tiktokw.us,REJECT
 HOST-SUFFIX,mcs.us.tiktokv.com,REJECT
+HOST-SUFFIX,mdt.crateandbarrel.com,REJECT
 HOST-SUFFIX,megatron.igraal.com,REJECT
 HOST-SUFFIX,metrics.audius.co,REJECT
 HOST-SUFFIX,metrics.bangbros.com,REJECT
@@ -4856,6 +4858,7 @@ HOST-SUFFIX,stat.turb.pw,REJECT
 HOST-SUFFIX,stat.vulkanvegas.com,REJECT
 HOST-SUFFIX,statistics.streamdav.com,REJECT
 HOST-SUFFIX,stats.aerotime.aero,REJECT
+HOST-SUFFIX,stats.allenai.org,REJECT
 HOST-SUFFIX,stats.calcalist.co.il,REJECT
 HOST-SUFFIX,stats.chromatone.center,REJECT
 HOST-SUFFIX,stats.codeur.com,REJECT
@@ -38711,7 +38714,6 @@ HOST-SUFFIX,go.petmire.com,REJECT
 HOST-SUFFIX,go.piccolo.mobi,REJECT
 HOST-SUFFIX,go.picsart.com,REJECT
 HOST-SUFFIX,go.pinoy.innovatedating.com,REJECT
-HOST-SUFFIX,go.playbackbone.com,REJECT
 HOST-SUFFIX,go.player2app.com,REJECT
 HOST-SUFFIX,go.poland.innovatedating.com,REJECT
 HOST-SUFFIX,go.polen-app.com,REJECT
@@ -41334,6 +41336,7 @@ HOST-SUFFIX,track.exame.com,REJECT
 HOST-SUFFIX,track.olx.com.br,REJECT
 HOST-SUFFIX,tracker.bt.uol.com.br,REJECT
 HOST-SUFFIX,tracker.publico.pt,REJECT
+HOST-SUFFIX,unleash.livepix.gg,REJECT
 HOST-SUFFIX,analytics.okazii.ro,REJECT
 HOST-SUFFIX,views.b1tv.ro,REJECT
 HOST-SUFFIX,views.romaniatv.net,REJECT
