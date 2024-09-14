@@ -23,6 +23,7 @@ DOMAIN,alt.idgesg.net
 DOMAIN,amp.azure.net
 DOMAIN,anchor.digitalocean.com
 DOMAIN,api-frameworks.vercel.sh
+DOMAIN,api.allorigins.win
 DOMAIN,api.bintray.com
 DOMAIN,api.iconify.design
 DOMAIN,api.mintlify.com
@@ -544,6 +545,7 @@ DOMAIN,content.any.run
 DOMAIN,content.jwplatform.com
 DOMAIN,content.wepik.com
 DOMAIN,cookie-cdn.cookiepro.com
+DOMAIN,cors-proxy.htmldriven.com
 DOMAIN,cp2.cloudflare.com
 DOMAIN,cp3.cloudflare.com
 DOMAIN,cp4.cloudflare.com
@@ -1073,6 +1075,7 @@ DOMAIN,prodamdnewsencoding.akamaized.net
 DOMAIN,production-cmp.isgprivacy.cbsi.com
 DOMAIN,profile-images.xing.com
 DOMAIN,proxy.beyondwords.io
+DOMAIN,proxy.cors.sh
 DOMAIN,proxy.golang.org
 DOMAIN,proxy.joinmastodon.org
 DOMAIN,ps.w.org
@@ -1136,6 +1139,7 @@ DOMAIN,s.w-x.co
 DOMAIN,s.w.org
 DOMAIN,s.wsj.net
 DOMAIN,s0.wp.com
+DOMAIN,s1.coincarp.com
 DOMAIN,s1.divhunt.com
 DOMAIN,s1.feedly.com
 DOMAIN,s1.qwant.com
@@ -1458,6 +1462,7 @@ DOMAIN,telemetry.nextjs.org
 DOMAIN,telemetry.vercel.com
 DOMAIN,th.bing.com
 DOMAIN,themes.fourthwall.com
+DOMAIN,thingproxy.freeboard.io
 DOMAIN,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe
 DOMAIN,thumbnail.missav.com
 DOMAIN,thumbnailer.mixcloud.com
@@ -1711,6 +1716,7 @@ DOMAIN-SUFFIX,combinatronics.io
 DOMAIN-SUFFIX,content-storage-upload.googleapis.com
 DOMAIN-SUFFIX,content001.bet365.com
 DOMAIN-SUFFIX,coral.coralproject.net
+DOMAIN-SUFFIX,corsproxy.io
 DOMAIN-SUFFIX,crates.io
 DOMAIN-SUFFIX,crossbell.io
 DOMAIN-SUFFIX,csb.app
