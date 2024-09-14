@@ -1,5 +1,5 @@
 # 来源： https://github.com/MisakaFxxk/MisakaF_Subconverter/blob/main/Sub/Emby.list
-# 最后更新时间： 2024-09-07 21:25
+# 最后更新时间：2024-09-14 17:02
 
 
 ##### A #####
@@ -157,7 +157,6 @@ IP-CIDR,212.90.120.164/32,no-resolve
 
 # MisakaF
 DOMAIN-SUFFIX,misakaf.org
-DOMAIN-SUFFIX,cloudfront.net
 
 # MjjEmby
 DOMAIN-SUFFIX,mjjemby.org
