@@ -75,7 +75,6 @@ domain_set:
 - tnc3-alisc1.snssdk.com
 - security-lq.snssdk.com
 - tnc3-aliec2.snssdk.com
-- is.snssdk.com
 - i.snssdk.com
 - v6-novelapp.ixigua.com
 - msync-im1-vip6-std.easemob.com
@@ -640,7 +639,6 @@ domain_suffix_set:
 - default.ixigua.com
 - byteorge.com
 - bytegoofy.com
-- bytedance.com
 - deliver.ifeng.com
 - gozendata.com
 - gzads.com

@@ -5,7 +5,7 @@
 #!icon=https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/gif/naisi-01.gif
 #!raw-url=https://github.com/fmz200/wool_scripts/raw/main/QuantumultX/filter/fenliu.list
 #!tg-group=https://t.me/lanjieguanggao
-#!date=2024-08-17 23:10:00
+#!date=2024-09-15 11:10:00
 #!support=约9392行
 #!proxy-select=reject
 #############################################
@@ -467,7 +467,7 @@ DOMAIN,mcs.snssdk.com
 DOMAIN,tnc3-alisc1.snssdk.com
 DOMAIN,security-lq.snssdk.com
 DOMAIN,tnc3-aliec2.snssdk.com
-DOMAIN,is.snssdk.com
+#DOMAIN,is.snssdk.com
 DOMAIN,i.snssdk.com
 DOMAIN,v6-novelapp.ixigua.com
 DOMAIN-SUFFIX,novelapp.ixigua.com
@@ -477,7 +477,7 @@ DOMAIN,apd-pcdnwxlogin.teg.tencent-cloud.net
 DOMAIN,api.iegadp.qq.com
 DOMAIN-SUFFIX,byteorge.com
 DOMAIN-SUFFIX,bytegoofy.com
-DOMAIN-SUFFIX,bytedance.com
+#DOMAIN-SUFFIX,bytedance.com
 IP-CIDR,49.71.37.101/32,no-resolve
 IP-CIDR,117.71.105.23/32,no-resolve
 IP-CIDR,218.94.207.205/32,no-resolve
