@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-15T09:02:55.763Z
-# Size: 123940
+# Last Updated: 2024-09-15T12:34:59.635Z
+# Size: 123941
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -31734,6 +31734,7 @@ DOMAIN-SUFFIX,liveonline.nhanhoa.com
 DOMAIN-SUFFIX,analytics.nhattao.com
 DOMAIN-SUFFIX,nhjn788.fun
 DOMAIN-SUFFIX,nhjnkis.com
+DOMAIN-SUFFIX,nhjnw78.fun
 DOMAIN-SUFFIX,oms.nhllive.com
 DOMAIN-SUFFIX,nhqqv.space
 DOMAIN-SUFFIX,nhungmiu.me
@@ -65564,7 +65565,6 @@ DOMAIN-SUFFIX,fileyellow.com
 DOMAIN-SUFFIX,filezworld.com
 DOMAIN-SUFFIX,filinggood.com
 DOMAIN-SUFFIX,filingking.com
-DOMAIN-SUFFIX,filletdose.com
 DOMAIN-SUFFIX,atom-log.3.cn
 DOMAIN-SUFFIX,kzsisc.3.dk
 DOMAIN-SUFFIX,mit3app.3.dk
@@ -97270,6 +97270,7 @@ DOMAIN-SUFFIX,liveonline.nhanhoa.com
 DOMAIN-SUFFIX,analytics.nhattao.com
 DOMAIN-SUFFIX,nhjn788.fun
 DOMAIN-SUFFIX,nhjnkis.com
+DOMAIN-SUFFIX,nhjnw78.fun
 DOMAIN-SUFFIX,oms.nhllive.com
 DOMAIN-SUFFIX,nhqqv.space
 DOMAIN-SUFFIX,nhungmiu.me
