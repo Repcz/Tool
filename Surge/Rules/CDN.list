@@ -532,6 +532,7 @@ DOMAIN,code.ionicframework.com
 DOMAIN,code.jquery.com
 DOMAIN,compass-ssl.xbox.com
 DOMAIN,components.clever-cloud.com
+DOMAIN,components.justanswer.com
 DOMAIN,config.extension.grammarly.com
 DOMAIN,confluence-v1.prod.atl-paas.net
 DOMAIN,connect.facebook.net
@@ -609,6 +610,7 @@ DOMAIN,emos.plurk.com
 DOMAIN,emp.bbci.co.uk
 DOMAIN,epic-social-social-modules-prod.ol.epicgames.com
 DOMAIN,error.rakuten.co.jp
+DOMAIN,eu-images.contentstack.com
 DOMAIN,eu.hamreus.com
 DOMAIN,euc-widget.freshworks.com
 DOMAIN,events-delivery.apple.com
@@ -748,6 +750,7 @@ DOMAIN,images.arigatotravel.com
 DOMAIN,images.axios.com
 DOMAIN,images.bfmtv.com
 DOMAIN,images.contentful.com
+DOMAIN,images.contentstack.io
 DOMAIN,images.design-editor.com
 DOMAIN,images.dmca.com
 DOMAIN,images.ecomm.microsoft.com
@@ -1337,6 +1340,7 @@ DOMAIN,static.incapsula.com
 DOMAIN,static.independent.co.uk
 DOMAIN,static.infomaniak.ch
 DOMAIN,static.institution.grammarly.com
+DOMAIN,static.iris.informa.com
 DOMAIN,static.itch.io
 DOMAIN,static.javcdn.info
 DOMAIN,static.killedbygoogle.com
@@ -1498,6 +1502,7 @@ DOMAIN,ubistatic-a.ubisoft.com
 DOMAIN,ubistatic2-a.akamaihd.net
 DOMAIN,ubistatic2-a.ubisoft.com
 DOMAIN,ui-cdn.digitalocean.com
+DOMAIN,ui.contentstack.com
 DOMAIN,ui.trailhead.com
 DOMAIN,unlimited-cdn.waifu2x.net
 DOMAIN,updates.signal.org
@@ -1575,6 +1580,8 @@ DOMAIN,wl-apps.yourwebsite.life
 DOMAIN,wp.salesforce.com
 DOMAIN,wpmedia.tealium.com
 DOMAIN,ws-assets.zoominfo.com
+DOMAIN,ww2-secure.justanswer.com
+DOMAIN,ww2.justanswer.com
 DOMAIN,www-static.ripe.net
 DOMAIN,www.10086.win
 DOMAIN,www.bbthat.com
@@ -1713,7 +1720,6 @@ DOMAIN-SUFFIX,cloud1.influxdata.com
 DOMAIN-SUFFIX,cloud2.influxdata.com
 DOMAIN-SUFFIX,cloudflare-ipfs.com
 DOMAIN-SUFFIX,cloudflare.docker.com
-DOMAIN-SUFFIX,cloudflarestorage.com
 DOMAIN-SUFFIX,cloudflarestream.com
 DOMAIN-SUFFIX,cloudfront.net
 DOMAIN-SUFFIX,cloudimg.io
@@ -1970,6 +1976,7 @@ DOMAIN-SUFFIX,licensebuttons.net
 DOMAIN-SUFFIX,line-cdn.net
 DOMAIN-SUFFIX,line-scdn.net
 DOMAIN-SUFFIX,local.webcontainer.io
+DOMAIN-SUFFIX,localizecdn.com
 DOMAIN-SUFFIX,loli.net
 DOMAIN-SUFFIX,lowendbox.com
 DOMAIN-SUFFIX,lowescdn.com
@@ -2090,7 +2097,6 @@ DOMAIN-SUFFIX,quip-cdn.com
 DOMAIN-SUFFIX,quip-marketing.com
 DOMAIN-SUFFIX,quoracdn.net
 DOMAIN-SUFFIX,qy0.ru
-DOMAIN-SUFFIX,r2.dev
 DOMAIN-SUFFIX,radix-ui.com
 DOMAIN-SUFFIX,randomuser.me
 DOMAIN-SUFFIX,ravencoinipfs-gateway.com
