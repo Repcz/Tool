@@ -290,6 +290,7 @@ DOMAIN,cdn.clever-cloud.com
 DOMAIN,cdn.cliqz.com
 DOMAIN,cdn.cloudcraft.co
 DOMAIN,cdn.cms-twdigitalassets.com
+DOMAIN,cdn.cnn.com
 DOMAIN,cdn.cnx-software.com
 DOMAIN,cdn.cocoapods.org
 DOMAIN,cdn.codeblackbelt.com
@@ -966,6 +967,7 @@ DOMAIN,mwcm.nyt.com
 DOMAIN,mwf-service.akamaized.net
 DOMAIN,mycommerce.akamaized.net
 DOMAIN,na-library.klarnaservices.com
+DOMAIN,nav.files.bbci.co.uk
 DOMAIN,navismithapis-cdn.com
 DOMAIN,nbcnewsdigital-static.nbcuni.com
 DOMAIN,net-fe-static-assets.network-controller.svc.ui.com
@@ -1058,7 +1060,6 @@ DOMAIN,play.publicradio.org
 DOMAIN,play.vidyard.com
 DOMAIN,player-frontend.cnevids.com
 DOMAIN,player.cnevids.com
-DOMAIN,player.h-cdn.com
 DOMAIN,player.louisvuitton.com
 DOMAIN,player.vimeo.com
 DOMAIN,players.brightcove.net
@@ -1279,7 +1280,6 @@ DOMAIN,static-web.grammarly.com
 DOMAIN,static.4shared.com
 DOMAIN,static.ada.support
 DOMAIN,static.addtoany.com
-DOMAIN,static.adguard.com
 DOMAIN,static.adguardvpn.com
 DOMAIN,static.agilebits.com
 DOMAIN,static.apkpure.com
@@ -1799,6 +1799,7 @@ DOMAIN-SUFFIX,fiverrcdn.com
 DOMAIN-SUFFIX,fivetiu.com
 DOMAIN-SUFFIX,flagcdn.com
 DOMAIN-SUFFIX,flagpedia.net
+DOMAIN-SUFFIX,fncstatic.com
 DOMAIN-SUFFIX,fontawesome.com
 DOMAIN-SUFFIX,fonts.com
 DOMAIN-SUFFIX,fonts.net
@@ -1837,6 +1838,7 @@ DOMAIN-SUFFIX,gravatar.com
 DOMAIN-SUFFIX,gravity.jup.io
 DOMAIN-SUFFIX,gw3.io
 DOMAIN-SUFFIX,h-cdn.co
+DOMAIN-SUFFIX,h-cdn.com
 DOMAIN-SUFFIX,hackerone-user-content.com
 DOMAIN-SUFFIX,hardbin.com
 DOMAIN-SUFFIX,hbfile.net
