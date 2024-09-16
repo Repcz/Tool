@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-16T07:32:53.624Z
-# Size: 123242
+# Last Updated: 2024-09-16T08:43:48.640Z
+# Size: 123243
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -56064,6 +56064,7 @@ DOMAIN-SUFFIX,a8cv.open-cage.com
 DOMAIN-SUFFIX,openclick.com
 DOMAIN-SUFFIX,openerkey.com
 DOMAIN-SUFFIX,app.openfolio.com
+DOMAIN,api.openpanel.dev
 DOMAIN-SUFFIX,elq.openshift.com
 DOMAIN-SUFFIX,smetrics.openshift.com
 DOMAIN-SUFFIX,o.opentable.com
