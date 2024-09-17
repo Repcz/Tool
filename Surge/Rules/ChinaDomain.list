@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2024-09-12T14:47:34.159Z
-# Size: 773
+# Last Updated: 2024-09-17T15:35:31.141Z
+# Size: 774
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -542,6 +542,7 @@ DOMAIN-SUFFIX,ibuscloud.com
 DOMAIN-SUFFIX,ibreader.com
 DOMAIN-SUFFIX,huya.com
 DOMAIN-SUFFIX,huxiucdn.com
+DOMAIN-SUFFIX,huxiu.com
 DOMAIN-SUFFIX,hupu.com
 DOMAIN-SUFFIX,hongxiu.com
 DOMAIN-SUFFIX,hc-cdn.com
@@ -782,3 +783,4 @@ USER-AGENT,TeslaMap
 PROCESS-NAME,WeChat
 PROCESS-NAME,WeCom
 ################## EOF ##################
+
