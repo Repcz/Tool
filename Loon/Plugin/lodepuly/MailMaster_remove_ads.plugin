@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/MailMaster.png
-#!date = 2024-09-18 17:34:22
+#!date = 2024-09-18 17:42:05
 
 [Rule]
 # 拦截HTTPDNS
@@ -162,6 +162,10 @@ DOMAIN, guide2.bianxianmao.com, REJECT
 DOMAIN, api.mosspf.com, REJECT
 DOMAIN, da.mosspf.com, REJECT
 DOMAIN, mores.toponad.com, REJECT
+DOMAIN, api.toponadss.com, REJECT
+DOMAIN, da.toponadss.com, REJECT
+DOMAIN, tk.toponadss.com, REJECT
+DOMAIN, adx-os.toponadss.com, REJECT
 
 # 快手联盟 - 广告服务商
 DOMAIN, gdfp.gifshow.com, REJECT
@@ -177,6 +181,12 @@ DOMAIN, api.htp.hubcloud.com.cn, REJECT
 DOMAIN, res1.hubcloud.com.cn, REJECT
 DOMAIN, sdktmp.hubcloud.com.cn, REJECT
 DOMAIN, v.adx.hubcloud.com.cn, REJECT
+
+# 章鱼移动
+DOMAIN, caid.adintl.cn, REJECT
+DOMAIN, sv.adintl.cn, REJECT
+DOMAIN, v.adintl.cn, REJECT
+DOMAIN, oss.cdn.adintl.cn, REJECT
 
 [Rewrite]
 # 拦截HTTPDNS
