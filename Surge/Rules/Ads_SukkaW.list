@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-18T04:42:28.830Z
-# Size: 123269
+# Last Updated: 2024-09-18T12:37:15.364Z
+# Size: 123273
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -733,6 +733,7 @@ DOMAIN-SUFFIX,sstats2.gq.com
 DOMAIN-SUFFIX,waatch.gva.be
 DOMAIN-SUFFIX,metrics.gvb.ch
 DOMAIN-SUFFIX,smetrics.gvb.ch
+DOMAIN-SUFFIX,log-ana.h3z.jp
 DOMAIN-SUFFIX,logging.h3z.jp
 DOMAIN-SUFFIX,h5v.eu
 DOMAIN-SUFFIX,smetrics.ha.com
@@ -32079,6 +32080,7 @@ DOMAIN-SUFFIX,smetrics.optimum.net
 DOMAIN-SUFFIX,marketing.optitex.com
 DOMAIN-SUFFIX,cdn.optmn.cloud
 DOMAIN-SUFFIX,optzsrv.com
+DOMAIN-SUFFIX,oqaejin.icu
 DOMAIN-SUFFIX,oqsttfy.com
 DOMAIN-SUFFIX,branch.oraleye.com
 DOMAIN-SUFFIX,oraporn.com
@@ -38348,6 +38350,7 @@ DOMAIN-SUFFIX,bvubasnf.com
 DOMAIN-SUFFIX,bw95vpjda.ru
 DOMAIN-SUFFIX,bx-cloud.com
 DOMAIN-SUFFIX,bxrqdnkb.com
+DOMAIN-SUFFIX,bxxibvjt.com
 DOMAIN-SUFFIX,byaronan.com
 DOMAIN-SUFFIX,bycxhgrp.xyz
 DOMAIN-SUFFIX,bydzfldt.xyz
@@ -43907,6 +43910,7 @@ DOMAIN-SUFFIX,metric-nonssl.nomura.co.jp
 DOMAIN-SUFFIX,marketing.nona.digital
 DOMAIN-SUFFIX,nonremid.com
 DOMAIN-SUFFIX,noodokod.xyz
+DOMAIN-SUFFIX,nooglaug.net
 DOMAIN-SUFFIX,noojoomo.com
 DOMAIN-SUFFIX,go.noondate.com
 DOMAIN-SUFFIX,noopking.com
