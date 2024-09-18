@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-18T12:37:15.364Z
-# Size: 123273
+# Last Updated: 2024-09-18T15:18:36.481Z
+# Size: 123276
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -47649,6 +47649,7 @@ DOMAIN-SUFFIX,giraffe.viatorci.com
 DOMAIN-SUFFIX,vib-bank.com
 DOMAIN-SUFFIX,vib-care.com
 DOMAIN-SUFFIX,vib8-vay.com
+DOMAIN-SUFFIX,vibanioa.com
 DOMAIN-SUFFIX,vibvayvn.com
 DOMAIN-SUFFIX,vicepiter.ru
 DOMAIN-SUFFIX,p.victoria.dev
@@ -87045,6 +87046,7 @@ DOMAIN-SUFFIX,quidclueless.com
 DOMAIN-SUFFIX,quiethacking.com
 DOMAIN-SUFFIX,lfapbe.quiksilver.co.jp
 DOMAIN-SUFFIX,quokkacheeks.com
+DOMAIN-SUFFIX,quzwteqzaabm.com
 DOMAIN-SUFFIX,qvgkwcarqmhw.com
 DOMAIN-SUFFIX,qwa3ldhn9u0t.com
 DOMAIN-SUFFIX,qwaapgxfahce.com
@@ -113206,6 +113208,7 @@ DOMAIN-SUFFIX,appeaseprovocation.com
 DOMAIN-SUFFIX,tenant-content.apm.appfolio-analytics.com
 DOMAIN-SUFFIX,applianceplatforms.com
 DOMAIN-SUFFIX,marketing.appliedvisionworks.com
+DOMAIN-SUFFIX,appointeeivyspongy.com
 DOMAIN-SUFFIX,aptitudeproprietor.com
 DOMAIN-SUFFIX,aq7ua5ma85rddeinve.com
 DOMAIN-SUFFIX,arbourtalessterile.com
@@ -123305,8 +123308,8 @@ DOMAIN-SUFFIX,zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqp.de
 
 #########################################
 # Sukka's Ruleset - Reject Domains
-# Last Updated: 2024-09-08T21:37:03.090Z
-# Size: 73
+# Last Updated: 2024-09-18T15:10:45.849Z
+# Size: 72
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -123384,6 +123387,5 @@ DOMAIN-WILDCARD,*.ad.*.prod.hosts.ooklaserver.net
 DOMAIN-WILDCARD,adv0*.msa.cdn.mediaset.net
 DOMAIN-WILDCARD,beacons*.gvt?.com
 DOMAIN-WILDCARD,*ad.ixigua.com
-AND,((DOMAIN-KEYWORD,genuine),(DOMAIN-KEYWORD,autodesk))
 AND,((USER-AGENT,bili*),(NOT,((OR,((DOMAIN-SUFFIX,bilibili.com),(DOMAIN-SUFFIX,hdslb.com),(DOMAIN-SUFFIX,wo.cn),(DOMAIN-SUFFIX,biligame.com),(DOMAIN-SUFFIX,bilivideo.com),(DOMAIN-SUFFIX,bilivideo.cn),(DOMAIN-SUFFIX,biliapi.com),(DOMAIN-SUFFIX,biliapi.net),(DOMAIN-SUFFIX,biliintl.com),(DOMAIN-SUFFIX,bstarstatic.com),(DOMAIN-SUFFIX,akamaized.net))))))
 ################## EOF ##################
