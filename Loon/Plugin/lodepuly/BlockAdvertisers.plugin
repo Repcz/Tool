@@ -10,6 +10,7 @@
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Website_icon/120px/TencentAd.png
 #!date = 2024-09-18 17:42:10
 
+
 [Rule]
 # 字节跳动广告
 AND, ((DOMAIN-KEYWORD, -ad-), (DOMAIN-SUFFIX, byteimg.com)), REJECT
@@ -198,6 +199,8 @@ DOMAIN-SUFFIX, openinstall.io, REJECT
 DOMAIN, b-gtc.getui.net, REJECT
 DOMAIN, c-gtc.getui.net, REJECT
 DOMAIN, c-hzgt2.getui.com, REJECT
+DOMAIN, c-ido.getui.net, REJECT
+DOMAIN, c-gtc.getui.net, REJECT
 DOMAIN, dnms.getui.com, REJECT
 DOMAIN, ido.getui.net, REJECT
 DOMAIN, sdk-conf.getui.com, REJECT

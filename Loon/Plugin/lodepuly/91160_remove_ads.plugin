@@ -1,0 +1,126 @@
+#!name = 健康160去广告
+#!desc = 移除开屏广告、应用内悬浮窗、横幅广告，精简我的页面。
+#!openUrl = https://apps.apple.com/app/id593811445
+#!author = 可莉🅥[https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md]
+#!tag = 去广告
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.1(745)
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/91160.png
+#!date = 2024-09-19 15:32:52
+
+[Rule]
+# 放行请求
+URL-REGEX, ^https:\/\/patientgate\.91160\.com\/advert-api\/v1\/advert\/homepage_icon\?, DIRECT
+# 广告下发
+URL-REGEX, ^https:\/\/patientgate\.91160\.com\/advert-api\/, REJECT-DICT
+
+# 拦截HTTPDNS
+DOMAIN, httpdns.music.163.com, REJECT
+DOMAIN, httpdns.n.netease.com, REJECT
+DOMAIN, httpdns-sdk.n.netease.com, REJECT
+DOMAIN, httpdns.yunxindns.com, REJECT
+DOMAIN, lofter.httpdns.c.163.com, REJECT
+DOMAIN, music.httpdns.c.163.com, REJECT
+DOMAIN, httpdns.yunxindns.com, REJECT
+IP-CIDR, 59.111.239.61/32, REJECT, no-resolve
+IP-CIDR, 59.111.239.62/32, REJECT, no-resolve
+IP-CIDR, 115.236.121.51/32, REJECT, no-resolve
+IP-CIDR, 115.236.121.195/32, REJECT, no-resolve
+
+# 腾讯
+DOMAIN, adsmind.gdtimg.com, REJECT
+DOMAIN, adsmind.ugdtimg.com, REJECT
+DOMAIN, c2.gdt.qq.com, REJECT
+DOMAIN, huatuocode.huatuo.qq.com, REJECT
+DOMAIN, info4.video.qq.com, REJECT
+DOMAIN, info6.video.qq.com, REJECT
+DOMAIN, ios.bugly.qq.com, REJECT
+DOMAIN, ios.video.mpush.qq.com, REJECT
+# DOMAIN, mazu.m.qq.com, REJECT // 误杀
+DOMAIN, mi.gdt.qq.com, REJECT
+DOMAIN, otheve.beacon.qq.com, REJECT
+DOMAIN, pgdt.gtimg.cn, REJECT
+DOMAIN, pgdt.ugdtimg.com, REJECT
+# DOMAIN, qzonestyle.gtimg.cn, REJECT // 误杀
+DOMAIN, qzs.gdtimg.com, REJECT
+DOMAIN, qzs.qq.com, REJECT
+DOMAIN, rmonitor.qq.com, REJECT
+DOMAIN, sdk.e.qq.com, REJECT
+DOMAIN, sdkconfig.video.qq.com, REJECT
+DOMAIN, t.gdt.qq.com, REJECT
+DOMAIN, tmead.y.qq.com, REJECT-NO-DROP
+DOMAIN, tmeadbak.y.qq.com, REJECT
+DOMAIN, tmeadcomm.y.qq.com, REJECT
+DOMAIN, tpns.qq.com, REJECT
+DOMAIN, v.gdt.qq.com, REJECT
+DOMAIN, v2.gdt.qq.com, REJECT
+DOMAIN, win.gdt.qq.com, REJECT
+DOMAIN, wup.imtt.qq.com, REJECT
+DOMAIN, tpstelemetry.tencent.com, REJECT
+DOMAIN-KEYWORD, trace.qq.com, REJECT
+DOMAIN-KEYWORD, trace.video.qq.com, REJECT
+DOMAIN-SUFFIX, gdt.qq.com, REJECT
+DOMAIN-SUFFIX, l.qq.com, REJECT
+DOMAIN-SUFFIX, ugdtimg.com, REJECT
+IP-CIDR, 47.110.187.87/32, REJECT, no-resolve
+
+# 百度联盟 - 广告服务商
+DOMAIN, als.baidu.com, REJECT
+DOMAIN, bgg.baidu.com, REJECT
+DOMAIN, cpro.baidustatic.com, REJECT
+DOMAIN, feed-image.baidu.com, REJECT
+DOMAIN, click-bes.baidu.com, REJECT
+DOMAIN, eclick.baidu.com, REJECT
+DOMAIN, mobads-logs.baidu.com, REJECT
+DOMAIN, mobads-pre-config.cdn.bcebos.com, REJECT
+DOMAIN, mobads.baidu.com, REJECT
+DOMAIN, nadvideo2.baidu.com, REJECT
+DOMAIN, wn.pos.baidu.com, REJECT
+DOMAIN, miniapp-ad.cdn.bcebos.com, REJECT
+DOMAIN-SUFFIX, union.baidu.cn, REJECT
+DOMAIN-SUFFIX, union.baidu.com, REJECT
+
+# 友盟
+DOMAIN, cnlogs.umeng.com, REJECT
+DOMAIN, errlog.umeng.com, REJECT
+DOMAIN, errnewlog.umeng.com, REJECT
+DOMAIN, ucc.umeng.com, REJECT
+DOMAIN, ulogs.umeng.com, REJECT
+DOMAIN, utoken.umeng.com, REJECT
+DOMAIN, deeplink.umeng.com, REJECT
+DOMAIN, aspect-upush.umeng.com, REJECT
+DOMAIN, plbslog.umeng.com, REJECT
+DOMAIN, log.umtrack.com, REJECT
+DOMAIN, aaid.umeng.com, REJECT
+
+# App全渠道统计
+DOMAIN-SUFFIX, openinstall.io, REJECT
+
+# 个推
+DOMAIN, b-gtc.getui.net, REJECT
+DOMAIN, c-gtc.getui.net, REJECT
+DOMAIN, c-hzgt2.getui.com, REJECT
+DOMAIN, c-ido.getui.net, REJECT
+DOMAIN, c-gtc.getui.net, REJECT
+DOMAIN, dnms.getui.com, REJECT
+DOMAIN, ido.getui.net, REJECT
+DOMAIN, sdk-conf.getui.com, REJECT
+DOMAIN, sdk-open-phone.getui.com, REJECT
+DOMAIN-SUFFIX, mobileservice.cn, REJECT
+DOMAIN-SUFFIX, getui.com, REJECT
+DOMAIN-SUFFIX, igexin.com, REJECT
+
+[Rewrite]
+# 拦截HTTPDNS
+^https:\/\/msglb\.91160\.com\/msg\/outer\/broker\/get$ reject-dict
+
+# 我的页面 - 为您推荐
+^https:\/\/patientgate\.91160\.com\/rec\/homepage\/open\/getUserGoodsList\? reject-dict
+
+# 首页 - 体检套餐推荐
+^https:\/\/soapi\.91160\.com\/homepage-recommendation\/recommendation\/medical\/complex\? response-body-json-del data.checkupList
+
+[MitM]
+hostname = patientgate.91160.com, soapi.91160.com, msglb.91160.com
