@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/91160.png
-#!date = 2024-09-19 15:32:52
+#!date = 2024-09-19 16:02:41
 
 [Rule]
 # 放行请求
@@ -119,8 +119,11 @@ DOMAIN-SUFFIX, igexin.com, REJECT
 # 我的页面 - 为您推荐
 ^https:\/\/patientgate\.91160\.com\/rec\/homepage\/open\/getUserGoodsList\? reject-dict
 
+# 其他广告
+^https:\/\/patientappapi\.91160\.com\/cus_index\.php\?c=adver reject
+
 # 首页 - 体检套餐推荐
 ^https:\/\/soapi\.91160\.com\/homepage-recommendation\/recommendation\/medical\/complex\? response-body-json-del data.checkupList
 
 [MitM]
-hostname = patientgate.91160.com, soapi.91160.com, msglb.91160.com
+hostname = patientgate.91160.com, soapi.91160.com, msglb.91160.com, patientappapi.91160.com
