@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-20T15:30:13.088Z
-# Size: 123334
+# Last Updated: 2024-09-20T15:45:44.562Z
+# Size: 123335
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -9565,6 +9565,7 @@ DOMAIN-SUFFIX,bzclk.baidu.com
 DOMAIN-SUFFIX,eduad.baidu.com
 DOMAIN-SUFFIX,entry.baidu.com
 DOMAIN-SUFFIX,fclog.baidu.com
+DOMAIN-SUFFIX,msite.baidu.com
 DOMAIN-SUFFIX,shadu.baidu.com
 DOMAIN-SUFFIX,share.baidu.com
 DOMAIN-SUFFIX,union.baidu.com
