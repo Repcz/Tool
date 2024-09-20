@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-19T18:09:40.404Z
-# Size: 123310
+# Last Updated: 2024-09-20T07:25:45.866Z
+# Size: 123327
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -8257,6 +8257,7 @@ DOMAIN-SUFFIX,plausible.vucar.vn
 DOMAIN-SUFFIX,s.vucko.co
 DOMAIN-SUFFIX,os.vudu.com
 DOMAIN-SUFFIX,target.vudu.com
+DOMAIN-SUFFIX,vvadz.cc
 DOMAIN-SUFFIX,vvbox.cz
 DOMAIN-SUFFIX,sponsors.vvng.com
 DOMAIN-SUFFIX,target.vwfs.com
@@ -16653,6 +16654,7 @@ DOMAIN-SUFFIX,yvcjyi.beymen.com
 DOMAIN-SUFFIX,marketing.bfandt.com
 DOMAIN-SUFFIX,bfbchr.xyz
 DOMAIN-SUFFIX,bfhueh.top
+DOMAIN-SUFFIX,bgbg00.fun
 DOMAIN-SUFFIX,bghebf.xyz
 DOMAIN-SUFFIX,1.bh5.com.cn
 DOMAIN-SUFFIX,bhcont.com
@@ -19428,6 +19430,7 @@ DOMAIN-SUFFIX,link.imprint.co
 DOMAIN-SUFFIX,link.stg.imprint.co
 DOMAIN-SUFFIX,data-9090cf2efa.impulse.de
 DOMAIN-SUFFIX,imstks.com
+DOMAIN-SUFFIX,imusye.xyz
 DOMAIN-SUFFIX,imwxsu.xyz
 DOMAIN-SUFFIX,marketing.inaani.com
 DOMAIN-SUFFIX,redirect.indacar.io
@@ -21896,6 +21899,7 @@ DOMAIN-SUFFIX,pmelon.com
 DOMAIN-SUFFIX,pmpubs.com
 DOMAIN-SUFFIX,pmsrvr.com
 DOMAIN-SUFFIX,pmtrkp.icu
+DOMAIN-SUFFIX,pmzlnt.xyz
 DOMAIN-SUFFIX,data.pnet.co.za
 DOMAIN-SUFFIX,wyzqiy.pnet.co.za
 DOMAIN-SUFFIX,data-ssl.pnet.co.za
@@ -22061,7 +22065,6 @@ DOMAIN-SUFFIX,publica.ir
 DOMAIN-SUFFIX,tracker.publico.pt
 DOMAIN-SUFFIX,publir.com
 DOMAIN-SUFFIX,metrix.publix.com
-DOMAIN-SUFFIX,cdn.pubnub.com
 DOMAIN-SUFFIX,pubwise.io
 DOMAIN-SUFFIX,aoulpo.puccini.pl
 DOMAIN-SUFFIX,pueber.com
@@ -24782,6 +24785,7 @@ DOMAIN-SUFFIX,wowlnk.com
 DOMAIN-SUFFIX,wpncdn.com
 DOMAIN-SUFFIX,wpnjrm.com
 DOMAIN-SUFFIX,wpnsrv.com
+DOMAIN-SUFFIX,wpsbaq.xyz
 DOMAIN-SUFFIX,wqvbuj.icu
 DOMAIN-SUFFIX,analytics.wrc.nic.in
 DOMAIN-SUFFIX,wrenko.com
@@ -26859,6 +26863,7 @@ DOMAIN-SUFFIX,blessdi.com
 DOMAIN-SUFFIX,swa.blgwonen.nl
 DOMAIN-SUFFIX,blidbqd.com
 DOMAIN-SUFFIX,join.blimp.homes
+DOMAIN-SUFFIX,blinxmi.icu
 DOMAIN-SUFFIX,bliss91.com
 DOMAIN-SUFFIX,bllom.cloud
 DOMAIN-SUFFIX,blmibao.com
@@ -30847,6 +30852,7 @@ DOMAIN-SUFFIX,ljpbtjq.xyz
 DOMAIN-SUFFIX,lkcoffe.com
 DOMAIN-SUFFIX,lkg6g644.de
 DOMAIN-SUFFIX,lkhfkjp.com
+DOMAIN-SUFFIX,lkiterl.top
 DOMAIN-SUFFIX,lkqpxhw.com
 DOMAIN-SUFFIX,lksbnrs.com
 DOMAIN-SUFFIX,lkxahvf.com
@@ -32421,6 +32427,7 @@ DOMAIN-SUFFIX,pixel.watch
 DOMAIN-SUFFIX,pixelpop.co
 DOMAIN-SUFFIX,pixels.asia
 DOMAIN-SUFFIX,ocelot.pixlwebs.nl
+DOMAIN-SUFFIX,pjaihds.icu
 DOMAIN-SUFFIX,pjcijbv.icu
 DOMAIN-SUFFIX,pjnwmbz.com
 DOMAIN-SUFFIX,pjoibbc.com
@@ -36697,6 +36704,7 @@ DOMAIN-SUFFIX,80juqing.com
 DOMAIN-SUFFIX,80xmedia.com
 DOMAIN-SUFFIX,814272c4.xyz
 DOMAIN-SUFFIX,82o9v830.com
+DOMAIN-SUFFIX,83761158.xyz
 DOMAIN-SUFFIX,83887336.xyz
 DOMAIN-SUFFIX,84631949.xyz
 DOMAIN-SUFFIX,tracker.8473sads.com
@@ -40647,6 +40655,7 @@ DOMAIN-SUFFIX,fusedeck.net
 DOMAIN-SUFFIX,data-fdf649e16e.fussballn.de
 DOMAIN-SUFFIX,futureads.io
 DOMAIN-SUFFIX,futureus.com
+DOMAIN-SUFFIX,fwsfwef2.fun
 DOMAIN-SUFFIX,fx-trend.com
 DOMAIN-SUFFIX,ad.fx168api.com
 DOMAIN-SUFFIX,sw88.fxchannel.pl
@@ -46531,6 +46540,7 @@ DOMAIN-SUFFIX,statsale.com
 DOMAIN-SUFFIX,statserv.net
 DOMAIN-SUFFIX,stattooz.com
 DOMAIN-SUFFIX,stattrax.com
+DOMAIN-SUFFIX,staukaul.com
 DOMAIN-SUFFIX,staureez.net
 DOMAIN-SUFFIX,partner.stavario.com
 DOMAIN-SUFFIX,stawhoph.com
@@ -56875,6 +56885,7 @@ DOMAIN-SUFFIX,psoumoalt.com
 DOMAIN-SUFFIX,pstreetma.com
 DOMAIN-SUFFIX,pt0zhwhc26.ru
 DOMAIN-SUFFIX,ptaicoamt.com
+DOMAIN-SUFFIX,ptatzrucj.com
 DOMAIN-SUFFIX,ptclassic.com
 DOMAIN-SUFFIX,ptekuwiny.pro
 DOMAIN-SUFFIX,pthrecjtu.com
@@ -60617,7 +60628,7 @@ DOMAIN-SUFFIX,6107a15b84.5bdb6e0e40.com
 DOMAIN-SUFFIX,648db44857.5bdc059842.com
 DOMAIN-SUFFIX,0ca528a25b.5bdd71381c.com
 DOMAIN-SUFFIX,5c01ad4cb7.com
-DOMAIN-SUFFIX,bb155692c8.5c4ccd56c9.com
+DOMAIN-SUFFIX,5c4ccd56c9.com
 DOMAIN-SUFFIX,a778de2012.5c530d2179.com
 DOMAIN-SUFFIX,5ca59a669a.com
 DOMAIN-SUFFIX,5caa478343.com
@@ -66799,6 +66810,7 @@ DOMAIN-SUFFIX,ox.ines-papert.de
 DOMAIN-SUFFIX,inet-ebank.com
 DOMAIN-SUFFIX,tracking.inexchange.com
 DOMAIN-SUFFIX,inferclick.com
+DOMAIN-SUFFIX,infisecure.com
 DOMAIN-SUFFIX,cq.hq1.influitive.com
 DOMAIN-SUFFIX,app.email.influitive.com
 DOMAIN-SUFFIX,marketing.influitive.com
@@ -67294,6 +67306,7 @@ DOMAIN-SUFFIX,data-7bd40aa49e.laendleimmo.at
 DOMAIN-SUFFIX,lafastnews.com
 DOMAIN-SUFFIX,lagqmwyvqr.com
 DOMAIN-SUFFIX,laitushous.com
+DOMAIN-SUFFIX,lajjmqeshj.com
 DOMAIN-SUFFIX,lakequincy.com
 DOMAIN-SUFFIX,lakvandula.com
 DOMAIN-SUFFIX,lalokdocwl.com
@@ -68954,6 +68967,7 @@ DOMAIN-SUFFIX,pbox.photobox.co.nz
 DOMAIN-SUFFIX,pbox.photobox.co.uk
 DOMAIN-SUFFIX,a8clk.photorevo.info
 DOMAIN-SUFFIX,phursefter.net
+DOMAIN-SUFFIX,phuthobsee.com
 DOMAIN-SUFFIX,phuzeeksub.com
 DOMAIN-SUFFIX,phytotyper.com
 DOMAIN-SUFFIX,phywifupta.com
@@ -71243,6 +71257,7 @@ DOMAIN-SUFFIX,sitecat.troweprice.com
 DOMAIN-SUFFIX,sitecats.troweprice.com
 DOMAIN-SUFFIX,xgspzv.troyestore.com
 DOMAIN-SUFFIX,true-hacks.com
+DOMAIN-SUFFIX,ads-router-noneu.truecaller.com
 DOMAIN-SUFFIX,truehits.in.th
 DOMAIN-SUFFIX,sstats.truist-prd.com
 DOMAIN-SUFFIX,sstats.truist-tst.com
@@ -83472,6 +83487,7 @@ DOMAIN-SUFFIX,target.emblemhealth.com
 DOMAIN-SUFFIX,smetrics.emblemhealth.com
 DOMAIN-SUFFIX,embogsoarers.com
 DOMAIN-SUFFIX,embolipokies.com
+DOMAIN-SUFFIX,embowerdatto.com
 DOMAIN-SUFFIX,embracetrace.com
 DOMAIN-SUFFIX,eloqua.emdmillipore.com
 DOMAIN-SUFFIX,emeraldfiles.com
@@ -89431,6 +89447,7 @@ DOMAIN-SUFFIX,wukoulnhdlu.info
 DOMAIN-SUFFIX,odc.wunderground.com
 DOMAIN-SUFFIX,wvietcombank.com
 DOMAIN-SUFFIX,wvwxjfjjytaf.com
+DOMAIN-SUFFIX,wwaowwonthco.com
 DOMAIN-SUFFIX,wwarvlorkeww.top
 DOMAIN-SUFFIX,wwarvlorobzw.top
 DOMAIN-SUFFIX,wwclickserv.club
