@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-20T08:10:52.236Z
-# Size: 123327
+# Last Updated: 2024-09-20T12:37:34.648Z
+# Size: 123333
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -7262,6 +7262,7 @@ DOMAIN-SUFFIX,metrics.ovum.com
 DOMAIN-SUFFIX,smetrics.ovum.com
 DOMAIN-SUFFIX,ow5a.net
 DOMAIN-SUFFIX,owlsr.us
+DOMAIN-SUFFIX,google-analytics.bi.owox.com
 DOMAIN-SUFFIX,ozoj.com
 DOMAIN-SUFFIX,web.mapp.ozone.bg
 DOMAIN-SUFFIX,images.bio.ozyme.fr
@@ -15011,6 +15012,7 @@ DOMAIN-SUFFIX,g.yccdn.com
 DOMAIN-SUFFIX,yceml.net
 DOMAIN-SUFFIX,ycgfdf.cn
 DOMAIN-SUFFIX,ycrax.com
+DOMAIN-SUFFIX,ads.yeeyi.com
 DOMAIN-SUFFIX,test-links.yelsa.app
 DOMAIN-SUFFIX,yengo.com
 DOMAIN-SUFFIX,web.info.yeppon.it
@@ -27608,6 +27610,7 @@ DOMAIN-SUFFIX,cs-swap.pro
 DOMAIN-SUFFIX,cscccase.ru
 DOMAIN-SUFFIX,csdata1.com
 DOMAIN-SUFFIX,csdf4dn.pro
+DOMAIN-SUFFIX,csdsa22.fun
 DOMAIN-SUFFIX,csfusion.ru
 DOMAIN-SUFFIX,csgo-up.com
 DOMAIN-SUFFIX,csgocpu.com
@@ -39506,6 +39509,7 @@ DOMAIN-SUFFIX,www2.dk-online.de
 DOMAIN-SUFFIX,data-5ab0f5b45f.dk-online.de
 DOMAIN-SUFFIX,data-a9dcbfdd12.dk-online.de
 DOMAIN-SUFFIX,dkotrack.com
+DOMAIN-SUFFIX,dkstrtss.xyz
 DOMAIN-SUFFIX,dle-news.xyz
 DOMAIN-SUFFIX,ad.dline.com.tr
 DOMAIN-SUFFIX,dljuejfp.com
@@ -107047,6 +107051,7 @@ DOMAIN-SUFFIX,share.worldleaguelive.com
 DOMAIN-SUFFIX,mktredtrack.worldscientific.com
 DOMAIN-SUFFIX,worldwidemailer.com
 DOMAIN-SUFFIX,worshipstubborn.com
+DOMAIN-SUFFIX,worthwhile-wash.com
 DOMAIN-SUFFIX,woukrkskillsom.info
 DOMAIN-SUFFIX,wouldlikukemyf.info
 DOMAIN-SUFFIX,wowcalmnessdumb.com
@@ -121886,6 +121891,7 @@ DOMAIN-SUFFIX,track.cornerstonebuildingbrands.com
 DOMAIN-SUFFIX,images.cornerstonebuildingbrands.com
 DOMAIN-SUFFIX,stream.corporatefinanceinstitute.com
 DOMAIN-SUFFIX,counsellinggrimlyengineer.com
+DOMAIN-SUFFIX,countabledawdlerunaudited.com
 DOMAIN-SUFFIX,countdownwildestmargarine.com
 DOMAIN-SUFFIX,coveredsnortedelectronics.com
 DOMAIN-SUFFIX,crambidnonutilitybayadeer.com
