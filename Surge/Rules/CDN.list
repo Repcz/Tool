@@ -526,6 +526,7 @@ DOMAIN,cloudinary-res.cloudinary.com
 DOMAIN,cms-assets.nodecraft.com
 DOMAIN,cms-assets.webediamovies.pro
 DOMAIN,cms-cdn.now.gg
+DOMAIN,cms.payloadcms.com
 DOMAIN,code.benco.io
 DOMAIN,code.highcharts.com
 DOMAIN,code.iconify.design
@@ -574,8 +575,11 @@ DOMAIN,design-system.yext.com
 DOMAIN,design.mayoclinic.org
 DOMAIN,designsystem.brevo.com
 DOMAIN,detectportal.firefox.com
+DOMAIN,dh-site.b-cdn.net
 DOMAIN,dims.apnews.com
 DOMAIN,disco.headliner.link
+DOMAIN,divhunt-site.b-cdn.net
+DOMAIN,divhunt.b-cdn.net
 DOMAIN,dl.nwjs.io
 DOMAIN,dl2.nwjs.io
 DOMAIN,docker.cloudsmith.io
@@ -673,6 +677,7 @@ DOMAIN,genesis-cdn.ff.com
 DOMAIN,gfonts.jifi.co
 DOMAIN,gfx-data.news-engineering.aws.wapo.pub
 DOMAIN,gitpkg-fork.vercel.sh
+DOMAIN,global.divhunt.com
 DOMAIN,glyph.medium.com
 DOMAIN,gmedia.playstation.com
 DOMAIN,gn-web-assets.api.bbc.com
@@ -881,6 +886,7 @@ DOMAIN,js.short.io
 DOMAIN,js.smile.io
 DOMAIN,js.upload.io
 DOMAIN,js.userflow.com
+DOMAIN,js.verygoodvault.com
 DOMAIN,kdata1.com
 DOMAIN,keyframe-cdn.abcnews.com
 DOMAIN,lain.bgm.tv
@@ -1353,6 +1359,7 @@ DOMAIN,static.javcdn.info
 DOMAIN,static.killedbygoogle.com
 DOMAIN,static.klaviyo.com
 DOMAIN,static.kobo.com
+DOMAIN,static.launchdarkly.com
 DOMAIN,static.licdn.com
 DOMAIN,static.linear.app
 DOMAIN,static.maxmind.com
@@ -1364,6 +1371,7 @@ DOMAIN,static.missav.com
 DOMAIN,static.mocortech.com
 DOMAIN,static.moegoat.com
 DOMAIN,static.monei.net
+DOMAIN,static.moonpay.com
 DOMAIN,static.mysph.sph.com.sg
 DOMAIN,static.mytonwallet.io
 DOMAIN,static.namebeta.com
@@ -2054,6 +2062,7 @@ DOMAIN-SUFFIX,pagecdn.io
 DOMAIN-SUFFIX,pages.dev
 DOMAIN-SUFFIX,parastorage.com
 DOMAIN-SUFFIX,pastebin.com
+DOMAIN-SUFFIX,payloadcms.app
 DOMAIN-SUFFIX,permaweb.eu.org
 DOMAIN-SUFFIX,permaweb.io
 DOMAIN-SUFFIX,pgl.yoyo.org
@@ -2213,6 +2222,7 @@ DOMAIN-SUFFIX,swiftypecdn.com
 DOMAIN-SUFFIX,sxccdn.com
 DOMAIN-SUFFIX,tapecontent.net
 DOMAIN-SUFFIX,tedcdn.com
+DOMAIN-SUFFIX,telemetry.services.yofi.ai
 DOMAIN-SUFFIX,teraboxcdn.com
 DOMAIN-SUFFIX,thirdwebcdn.com
 DOMAIN-SUFFIX,thisiscdn.com
