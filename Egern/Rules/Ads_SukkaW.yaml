@@ -734,11 +734,11 @@ domain_set:
 - samsungcloudsolution.com
 - samsungcloudsolution.net
 - this_ruleset_is_made_by_sukkaw.ruleset.skk.moe
+- this_rule_set_is_made_by_sukkaw.skk.moe
 - js.iterable.com
 - api.iterable.com
 - api-js.mixpanel.com
 - stun.smartgslb.com
-- this_rule_set_is_made_by_sukkaw.skk.moe
 domain_suffix_set:
 - atom-log.3.cn
 - kzsisc.3.dk
@@ -20364,6 +20364,7 @@ domain_suffix_set:
 - chgwwj.klimate.nl
 - xymhzq.klingel.de
 - iorltr.klingel.nl
+- klmmnd.com
 - klsdee.com
 - a8.shop.km-link.jp
 - beacon.kmi-us.com
@@ -27038,6 +27039,7 @@ domain_suffix_set:
 - bjorksta.me
 - analytics.bkav.com.vn
 - bkirfeu.com
+- bkiterv.top
 - bklhnlv.com
 - stats.blacksim.de
 - blamads.com
@@ -45331,6 +45333,7 @@ domain_suffix_set:
 - pvclouds.com
 - pvpti222.com
 - pwaarkac.com
+- pwuzvbhf.com
 - pwwjuyty.com
 - pwxlbsie.icu
 - pwyruccp.com
@@ -50389,6 +50392,7 @@ domain_suffix_set:
 - www.bait4role.com
 - secure.bait4role.com
 - baitikoam.com
+- bajowsxpy.com
 - my.bake-club.com
 - balamall.shop
 - baldo-toj.com
@@ -59690,6 +59694,7 @@ domain_suffix_set:
 - rdt.whitewall.com
 - whoawhoug.com
 - whookrair.xyz
+- whoolrulr.net
 - whoopblew.com
 - partner.whoopdedoo.cz
 - partner.whoopdedoo.me
@@ -60665,6 +60670,7 @@ domain_suffix_set:
 - 7f1aefd20d.5e1d98ec8c.com
 - 23167df8b3.5e6062e991.com
 - 5e6ef8e03b.com
+- 5ed55e7208.com
 - 42a63fe825.5edc9c9218.com
 - 84a0e8beca.5ede78f7a0.com
 - 5eef1ed9ac.com
@@ -83984,6 +83990,7 @@ domain_suffix_set:
 - fumblingform.com
 - fumeuprising.com
 - ebis.funaisoken.co.jp
+- fungidcolder.com
 - funoverbored.com
 - fuphugccgowp.com
 - furiousfiles.com
@@ -86443,6 +86450,7 @@ domain_suffix_set:
 - osqbfakufafv.com
 - ossfloetteor.com
 - ossshucklean.com
+- ostfuwdmiohg.com
 - ostrichesica.com
 - we.care.oswegohealth.org
 - tracking.oswegohealth.org
@@ -92420,6 +92428,7 @@ domain_suffix_set:
 - greatuploader.com
 - d.greece-search.com
 - greecewizards.com
+- greenmortgage.pro
 - analytics.greenmountain.com
 - y900.greenwichtime.com
 - greeterracked.com
@@ -100212,6 +100221,7 @@ domain_suffix_set:
 - muakimcuongx10.com
 - muckilywayback.top
 - mucopussamkhya.com
+- mucvvcbqrwfmir.com
 - mudbankoxfords.top
 - muddiedbubales.com
 - muddyprocedure.com
@@ -100901,6 +100911,7 @@ domain_suffix_set:
 - tr.qualitaveicolo.com
 - tr.qualitevehicule.fr
 - quality-channel.de
+- qualityadverse.com
 - qualityfinance.net
 - quangcao247.com.vn
 - quanlyclmm3s.click
@@ -101083,6 +101094,7 @@ domain_suffix_set:
 - revolutionary2.fun
 - uhngoc.revolveclothing.es
 - revolveoppress.com
+- revolvingshine.pro
 - rewallesthete.shop
 - smetrics.rexultisavings.com
 - rgcxmzrmcvbxem.com
@@ -107114,6 +107126,7 @@ domain_suffix_set:
 - yuanchengxiezuo.com
 - yusiswensaidoh.info
 - ywopyohpihnkppc.xyz
+- ywpdobsvqlchvrl.com
 - ywronwasthetron.com
 - yyjngvuaqrdgghs.com
 - tracking.zaertlicheladies.de
@@ -123343,16 +123356,16 @@ domain_suffix_set:
 - rei9jc56oyqux0rcpcquqmm7jc5freirpsquqkope3n3axrjacg8ipolxvbm.codes
 - zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqp.de
 - net.mydays.de
+- openx.net
+- omtrdc.net
 - telemetry.mozilla.org
 - telemetry-coverage.mozilla.org
-- omtrdc.net
-- incoming-telemetry.thunderbird.net
-- openx.net
 - notify6.com
+- crazyegg.com
+- amplitude.com
 - notifysrv.com
 - advertising.com
-- amplitude.com
-- crazyegg.com
+- incoming-telemetry.thunderbird.net
 domain_keyword_set:
 - .estream.
 - jshosting
@@ -123380,7 +123393,6 @@ domain_keyword_set:
 - admaster
 - adserve2
 - admob
-- adserver
 - adspace
 - advertmarket
 - adsyndication
