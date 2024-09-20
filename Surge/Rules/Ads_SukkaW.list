@@ -1,6 +1,6 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-20T07:25:45.866Z
+# Last Updated: 2024-09-20T08:10:52.236Z
 # Size: 123327
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
@@ -123359,7 +123359,7 @@ DOMAIN-SUFFIX,zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqp.de
 
 #########################################
 # Sukka's Ruleset - Reject Domains
-# Last Updated: 2024-09-18T15:10:45.849Z
+# Last Updated: 2024-09-20T08:19:59.524Z
 # Size: 72
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
@@ -123440,3 +123440,4 @@ DOMAIN-WILDCARD,beacons*.gvt?.com
 DOMAIN-WILDCARD,*ad.ixigua.com
 AND,((USER-AGENT,bili*),(NOT,((OR,((DOMAIN-SUFFIX,bilibili.com),(DOMAIN-SUFFIX,hdslb.com),(DOMAIN-SUFFIX,wo.cn),(DOMAIN-SUFFIX,biligame.com),(DOMAIN-SUFFIX,bilivideo.com),(DOMAIN-SUFFIX,bilivideo.cn),(DOMAIN-SUFFIX,biliapi.com),(DOMAIN-SUFFIX,biliapi.net),(DOMAIN-SUFFIX,biliintl.com),(DOMAIN-SUFFIX,bstarstatic.com),(DOMAIN-SUFFIX,akamaized.net))))))
 ################## EOF ##################
+
