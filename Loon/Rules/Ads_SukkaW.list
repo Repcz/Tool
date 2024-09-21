@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-21T10:24:21.814Z
-# Size: 123732
+# Last Updated: 2024-09-21T11:04:37.665Z
+# Size: 123733
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -34146,6 +34146,7 @@ DOMAIN-SUFFIX,sparteo.com
 DOMAIN-SUFFIX,track.spaxads.com
 DOMAIN-SUFFIX,marketing.spbatpa.org
 DOMAIN-SUFFIX,speakol.com
+DOMAIN-SUFFIX,analytics.spearly.com
 DOMAIN-SUFFIX,tk.speedway.fr
 DOMAIN-SUFFIX,dyzmpx.speedway.fr
 DOMAIN-SUFFIX,speee-ad.jp
