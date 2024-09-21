@@ -762,6 +762,7 @@ DOMAIN,images.axios.com
 DOMAIN,images.bfmtv.com
 DOMAIN,images.contentful.com
 DOMAIN,images.contentstack.io
+DOMAIN,images.crunchbase.com
 DOMAIN,images.design-editor.com
 DOMAIN,images.dmca.com
 DOMAIN,images.ecomm.microsoft.com
@@ -1131,10 +1132,8 @@ DOMAIN,repo.nextdns.io
 DOMAIN,repo1.maven.org
 DOMAIN,repos.danosproject.org
 DOMAIN,repository.jboss.org
-DOMAIN,res-1.cdn.office.net
 DOMAIN,res-geo.cdn.office.net
 DOMAIN,res.abc.net.au
-DOMAIN,res.cdn.office.net
 DOMAIN,res.cloudinary.com
 DOMAIN,res2.weblium.site
 DOMAIN,resize.blogsys.jp
@@ -1452,7 +1451,6 @@ DOMAIN,staticmap.openstreetmap.de
 DOMAIN,statics-marketingsites-eas-ms-com.akamaized.net
 DOMAIN,statics-xbc-eas.xbox.com
 DOMAIN,statics.goorm.io
-DOMAIN,statics.teams.cdn.office.net
 DOMAIN,staticw2.yotpo.com
 DOMAIN,stats.setapp.com
 DOMAIN,steamcdn-a.akamaihd.net
