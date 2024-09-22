@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-22T17:40:43.906Z
-# Size: 122995
+# Last Updated: 2024-09-22T18:40:47.305Z
+# Size: 122994
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -1614,7 +1614,6 @@ DOMAIN-SUFFIX,nhuovb.vpg.no
 DOMAIN-SUFFIX,affiliates.vpn.ht
 DOMAIN-SUFFIX,somni.vrk.de
 DOMAIN-SUFFIX,c.vrt.be
-DOMAIN-SUFFIX,t.vrt.be
 DOMAIN-SUFFIX,lti.cs.vt.edu
 DOMAIN-SUFFIX,ads.vtc.vn
 DOMAIN-SUFFIX,delivery.vtc.vn
