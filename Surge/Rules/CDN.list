@@ -238,6 +238,7 @@ DOMAIN,cdn-client.medium.com
 DOMAIN,cdn-edge.karte.io
 DOMAIN,cdn-eu.dynamicyield.com
 DOMAIN,cdn-fck.tnaflix.com
+DOMAIN,cdn-forum.networklessons.com
 DOMAIN,cdn-images-1.medium.com
 DOMAIN,cdn-images.mailchimp.com
 DOMAIN,cdn-live.foreignaffairs.com
@@ -296,6 +297,7 @@ DOMAIN,cdn.cocoapods.org
 DOMAIN,cdn.codeblackbelt.com
 DOMAIN,cdn.commento.io
 DOMAIN,cdn.concert.io
+DOMAIN,cdn.contentful.com
 DOMAIN,cdn.css.net
 DOMAIN,cdn.cxense.com
 DOMAIN,cdn.dap.dmm.co.jp
@@ -313,6 +315,7 @@ DOMAIN,cdn.ecomm.ui.com
 DOMAIN,cdn.embed.ly
 DOMAIN,cdn.embedly.com
 DOMAIN,cdn.equalweb.com
+DOMAIN,cdn.eu.contentful.com
 DOMAIN,cdn.european-alternatives.eu
 DOMAIN,cdn.faire.com
 DOMAIN,cdn.faveohelpdesk.com
@@ -374,6 +377,7 @@ DOMAIN,cdn.modrinth.com
 DOMAIN,cdn.myfonts.net
 DOMAIN,cdn.myportfolio.com
 DOMAIN,cdn.nerdschalk.com
+DOMAIN,cdn.networklessons.com
 DOMAIN,cdn.neverbounce.com
 DOMAIN,cdn.now.gg
 DOMAIN,cdn.onesignal.com
@@ -549,6 +553,7 @@ DOMAIN,content-prod-live.cert.starbucks.com
 DOMAIN,content.any.run
 DOMAIN,content.jwplatform.com
 DOMAIN,content.wepik.com
+DOMAIN,contents-thumbnail2.fc2.com
 DOMAIN,cookie-cdn.cookiepro.com
 DOMAIN,cors-proxy.htmldriven.com
 DOMAIN,cp2.cloudflare.com
@@ -618,6 +623,9 @@ DOMAIN,encrypted-tbn1.gstatic.com
 DOMAIN,encrypted-tbn2.gstatic.com
 DOMAIN,encrypted-tbn3.gstatic.com
 DOMAIN,encrypted-vtbn0.gstatic.com
+DOMAIN,encrypted-vtbn1.gstatic.com
+DOMAIN,encrypted-vtbn2.gstatic.com
+DOMAIN,encrypted-vtbn3.gstatic.com
 DOMAIN,epic-social-social-modules-prod.ol.epicgames.com
 DOMAIN,error.rakuten.co.jp
 DOMAIN,eu-images.contentstack.com
@@ -796,6 +804,7 @@ DOMAIN,images.web3.storage
 DOMAIN,images.weserv.nl
 DOMAIN,images.wikia.com
 DOMAIN,images.wsj.net
+DOMAIN,images.youracclaim.com
 DOMAIN,images1.vinted.net
 DOMAIN,images7.design-editor.com
 DOMAIN,images8.design-editor.com
@@ -902,6 +911,7 @@ DOMAIN,libs.quillbot.com
 DOMAIN,link.storjshare.io
 DOMAIN,linkstorage.linkfire.com
 DOMAIN,linuxiac.b-cdn.net
+DOMAIN,live-storage.fc2.com
 DOMAIN,live.fanmingming.com
 DOMAIN,livedoor.blogimg.jp
 DOMAIN,load.csell.co
@@ -1087,6 +1097,7 @@ DOMAIN,polyfill.bbhub.io
 DOMAIN,polyfill.mailchimp.com
 DOMAIN,pomf2.lain.la
 DOMAIN,pool.jortage.com
+DOMAIN,pplx-next-static-public.perplexity.ai
 DOMAIN,practicaldev-herokuapp-com.freetls.fastly.net
 DOMAIN,prego-cache.prod.sketch.com
 DOMAIN,previews.123rf.com
@@ -1276,11 +1287,14 @@ DOMAIN,static-cdn.spot.im
 DOMAIN,static-clst.avgle.com
 DOMAIN,static-community.tp-link.com
 DOMAIN,static-dm.ubisoft.com
+DOMAIN,static-e.live.fc2.com
 DOMAIN,static-effect.reg.ru
 DOMAIN,static-exp1.licdn.com
 DOMAIN,static-exp2.licdn.com
 DOMAIN,static-exp3.licdn.com
+DOMAIN,static-forms.klaviyo.com
 DOMAIN,static-gcp.freepikcompany.com
+DOMAIN,static-id.fc2.com
 DOMAIN,static-landing.probit.com
 DOMAIN,static-lccn.leetcode.com
 DOMAIN,static-main.moovit.com
@@ -1290,6 +1304,7 @@ DOMAIN,static-production.npmjs.com
 DOMAIN,static-r.kamihimeproject.net
 DOMAIN,static-redesign.cnbcfm.com
 DOMAIN,static-resource.np.community.playstation.net
+DOMAIN,static-sv.fc2.com
 DOMAIN,static-web-prod.skillshare.com
 DOMAIN,static-web.grammarly.com
 DOMAIN,static.4shared.com
@@ -1332,6 +1347,7 @@ DOMAIN,static.ettoday.net
 DOMAIN,static.euronews.com
 DOMAIN,static.fasthosts.co.uk
 DOMAIN,static.fc2.com
+DOMAIN,static.fc2cn.com
 DOMAIN,static.ffx.io
 DOMAIN,static.figma.com
 DOMAIN,static.files.bbci.co.uk
@@ -1415,6 +1431,7 @@ DOMAIN,static.start.me
 DOMAIN,static.status.io
 DOMAIN,static.t-ru.org
 DOMAIN,static.telegraph.co.uk
+DOMAIN,static.test-beta.com
 DOMAIN,static.theguardian.com
 DOMAIN,static.tokenview.io
 DOMAIN,static.tradingview.com
@@ -1477,8 +1494,12 @@ DOMAIN,stubdownloader.services.mozilla.com
 DOMAIN,sync.getpublica.com
 DOMAIN,t.betterstack.com
 DOMAIN,t.nhentai.net
+DOMAIN,t0.gstatic.com
+DOMAIN,t1.gstatic.com
 DOMAIN,t1.picb.cc
+DOMAIN,t2.gstatic.com
 DOMAIN,t2.picb.cc
+DOMAIN,t3.gstatic.com
 DOMAIN,t3.picb.cc
 DOMAIN,t4.picb.cc
 DOMAIN,tags.bkrtx.com
@@ -1748,6 +1769,7 @@ DOMAIN-SUFFIX,codepenassets.com
 DOMAIN-SUFFIX,combinatronics.io
 DOMAIN-SUFFIX,content-storage-upload.googleapis.com
 DOMAIN-SUFFIX,content001.bet365.com
+DOMAIN-SUFFIX,contents.fc2.com
 DOMAIN-SUFFIX,coral.coralproject.net
 DOMAIN-SUFFIX,corsproxy.io
 DOMAIN-SUFFIX,crates.io
@@ -1987,7 +2009,6 @@ DOMAIN-SUFFIX,kinja-static.com
 DOMAIN-SUFFIX,kinsta.page
 DOMAIN-SUFFIX,kirafile.com
 DOMAIN-SUFFIX,klarnacdn.net
-DOMAIN-SUFFIX,kuaikan-cdn4.com
 DOMAIN-SUFFIX,kwcdn.com
 DOMAIN-SUFFIX,kym-cdn.com
 DOMAIN-SUFFIX,lencr.org
@@ -2349,7 +2370,10 @@ DOMAIN-WILDCARD,s3.*.wasabisys.com
 DOMAIN-WILDCARD,static*.tgstat.ru
 DOMAIN-WILDCARD,static-??-cdn.eporner.com
 DOMAIN-WILDCARD,t?.nhentai.net
+DOMAIN-WILDCARD,video-thumbnail2.fc2.com
+DOMAIN-WILDCARD,video-thumbnail2.liaoningmovie.net
 DOMAIN-WILDCARD,video?-thumbnail?.fc2.com
+DOMAIN-WILDCARD,video?-thumbnail?.liaoningmovie.net
 DOMAIN-WILDCARD,vip-videoprem*-thumbnail?.fc2.com
 URL-REGEX,^http://www\.microsoft\.com/pki/
 URL-REGEX,^http://www\.microsoft\.com/pkiops/

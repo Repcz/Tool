@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-22T12:35:08.176Z
-# Size: 122994
+# Last Updated: 2024-09-22T17:40:43.906Z
+# Size: 122995
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -10904,6 +10904,7 @@ DOMAIN-SUFFIX,fq03.shop
 DOMAIN-SUFFIX,fq04.shop
 DOMAIN-SUFFIX,fq05.shop
 DOMAIN-SUFFIX,fq06.shop
+DOMAIN-SUFFIX,fq07.shop
 DOMAIN-SUFFIX,fqkwn.com
 DOMAIN-SUFFIX,fqtag.com
 DOMAIN-SUFFIX,fqwgi.com
