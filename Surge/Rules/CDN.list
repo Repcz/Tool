@@ -994,7 +994,6 @@ DOMAIN,mwcm.nyt.com
 DOMAIN,mwf-service.akamaized.net
 DOMAIN,mycommerce.akamaized.net
 DOMAIN,na-library.klarnaservices.com
-DOMAIN,nav.files.bbci.co.uk
 DOMAIN,navismithapis-cdn.com
 DOMAIN,nbcnewsdigital-static.nbcuni.com
 DOMAIN,net-fe-static-assets.network-controller.svc.ui.com
@@ -1351,7 +1350,6 @@ DOMAIN,static.fc2.com
 DOMAIN,static.fc2cn.com
 DOMAIN,static.ffx.io
 DOMAIN,static.figma.com
-DOMAIN,static.files.bbci.co.uk
 DOMAIN,static.filestackapi.com
 DOMAIN,static.foxbusiness.com
 DOMAIN,static.foxnews.com
@@ -1830,6 +1828,7 @@ DOMAIN-SUFFIX,fbcdn.net
 DOMAIN-SUFFIX,fbsbx.com
 DOMAIN-SUFFIX,file.core.windows.net
 DOMAIN-SUFFIX,filecunhua.top
+DOMAIN-SUFFIX,files.bbci.co.uk
 DOMAIN-SUFFIX,files.gitbook.io
 DOMAIN-SUFFIX,files.wordpress.com
 DOMAIN-SUFFIX,firebaseapp.com
