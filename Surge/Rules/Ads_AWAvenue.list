@@ -1,7 +1,7 @@
 #Title: AWAvenue Ads Rule
 #--------------------------------------
-#Total lines: 653
-#Version: 1.5.2-release
+#Total lines: 664
+#Version: 1.5.3-release
 
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 #License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
@@ -13,6 +13,7 @@ DOMAIN-SUFFIX,16dd-advertise-1252317822.image.myqcloud.com
 DOMAIN-SUFFIX,8le8le.com
 DOMAIN-SUFFIX,a0.app.xiaomi.com
 DOMAIN-SUFFIX,aaid.umeng.com
+DOMAIN-SUFFIX,abtest-ch.snssdk.com
 DOMAIN-SUFFIX,ad-cache.dopool.com
 DOMAIN-SUFFIX,ad-cdn.qingting.fm
 DOMAIN-SUFFIX,ad-scope.com
@@ -111,9 +112,11 @@ DOMAIN-SUFFIX,advertising.yandex.ru
 DOMAIN-SUFFIX,advice-ads.s3.amazonaws.com
 DOMAIN-SUFFIX,adview.cn
 DOMAIN-SUFFIX,adx-ad.smart-tv.cn
+DOMAIN-SUFFIX,adx-bj.anythinktech.com
 DOMAIN-SUFFIX,adx-cn.anythinktech.com
 DOMAIN-SUFFIX,adx-drcn.op.dbankcloud.cn
 DOMAIN-SUFFIX,adx-open-service.youku.com
+DOMAIN-SUFFIX,adx-os.anythinktech.com
 DOMAIN-SUFFIX,adx.ads.heytapmobi.com
 DOMAIN-SUFFIX,adx.ads.oppomobile.com
 DOMAIN-SUFFIX,adxlog-adnet.vivo.com.cn
@@ -173,6 +176,7 @@ DOMAIN-SUFFIX,audid-api.taobao.com
 DOMAIN-SUFFIX,audid.umeng.com
 DOMAIN-SUFFIX,azr.footprintdns.com
 DOMAIN-SUFFIX,b1-data.ads.heytapmobi.com
+DOMAIN-SUFFIX,bdad.123pan.cn
 DOMAIN-SUFFIX,bdapi-ads.realmemobile.com
 DOMAIN-SUFFIX,bdapi-in-ads.realmemobile.com
 DOMAIN-SUFFIX,bdapi.ads.oppomobile.com
@@ -181,6 +185,7 @@ DOMAIN-SUFFIX,beacon.qq.com
 DOMAIN-SUFFIX,beaconcdn.qq.com
 DOMAIN-SUFFIX,beacons.gvt2.com
 DOMAIN-SUFFIX,beizi.biz
+DOMAIN-SUFFIX,bes-mtj.baidu.com
 DOMAIN-SUFFIX,bgg.baidu.com
 DOMAIN-SUFFIX,bianxian.com
 DOMAIN-SUFFIX,bingads.microsoft.com
@@ -197,6 +202,7 @@ DOMAIN-SUFFIX,c.kuaiduizuoye.com
 DOMAIN-SUFFIX,c.sayhi.360.cn
 DOMAIN-SUFFIX,c2.gdt.qq.com
 DOMAIN-SUFFIX,catalog.fjwhcbsh.com
+DOMAIN-SUFFIX,cbjs.baidu.com
 DOMAIN-SUFFIX,ccs.umeng.com
 DOMAIN-SUFFIX,cctv.adsunion.com
 DOMAIN-SUFFIX,cdn-ad.wtzw.com
@@ -219,6 +225,7 @@ DOMAIN-SUFFIX,conn-service-cn-05.allawntech.com
 DOMAIN-SUFFIX,conn-service-in-03.allawnos.com
 DOMAIN-SUFFIX,conn-service-in-04.allawnos.com
 DOMAIN-SUFFIX,conn-service-in-05.allawnos.com
+DOMAIN-SUFFIX,cpro.baidustatic.com
 DOMAIN-SUFFIX,crashlytics.com
 DOMAIN-SUFFIX,crashlyticsreports-pa.googleapis.com
 DOMAIN-SUFFIX,csjplatform.com
@@ -331,6 +338,7 @@ DOMAIN-SUFFIX,ks.pull.yximgs.com
 DOMAIN-SUFFIX,launcher.smart-tv.cn
 DOMAIN-SUFFIX,launcherimg.smart-tv.cn
 DOMAIN-SUFFIX,lf3-ad-union-sdk.pglstatp-toutiao.com
+DOMAIN-SUFFIX,lf6-ad-union-sdk.pglstatp-toutiao.com
 DOMAIN-SUFFIX,litchiads.com
 DOMAIN-SUFFIX,liveats-vod.video.ptqy.gitv.tv
 DOMAIN-SUFFIX,livemonitor.huan.tv
@@ -450,6 +458,7 @@ DOMAIN-SUFFIX,pixon.ads-pixiv.net
 DOMAIN-SUFFIX,plbslog.umeng.com
 DOMAIN-SUFFIX,pms.mb.qq.com
 DOMAIN-SUFFIX,policy.video.ptqy.gitv.tv
+DOMAIN-SUFFIX,pos.baidu.com
 DOMAIN-SUFFIX,proxy.advp.apple.com
 DOMAIN-SUFFIX,public.gdtimg.com
 DOMAIN-SUFFIX,q.i.gdt.qq.com
@@ -582,6 +591,7 @@ DOMAIN-SUFFIX,ulogs.umeng.com
 DOMAIN-SUFFIX,ulogs.umengcloud.com
 DOMAIN-SUFFIX,umengacs.m.taobao.com
 DOMAIN-SUFFIX,umengjmacs.m.taobao.com
+DOMAIN-SUFFIX,umini.shujupie.com
 DOMAIN-SUFFIX,umsns.com
 DOMAIN-SUFFIX,union.baidu.cn
 DOMAIN-SUFFIX,union.baidu.com
@@ -593,7 +603,9 @@ DOMAIN-SUFFIX,v.adx.hubcloud.com.cn
 DOMAIN-SUFFIX,v1-ad.video.yximgs.com
 DOMAIN-SUFFIX,v2-ad.video.yximgs.com
 DOMAIN-SUFFIX,v2.gdt.qq.com
+DOMAIN-SUFFIX,v2mi.gdt.qq.com
 DOMAIN-SUFFIX,v3-ad.video.yximgs.com
+DOMAIN-SUFFIX,v3.gdt.qq.com
 DOMAIN-SUFFIX,video-ad.sm.cn
 DOMAIN-SUFFIX,video-dsp.pddpic.com
 DOMAIN-SUFFIX,video.dispatch.tc.qq.com
@@ -635,7 +647,6 @@ DOMAIN-SUFFIX,webstat.qiumibao.com
 DOMAIN-SUFFIX,widgets.outbrain.com
 DOMAIN-SUFFIX,widgets.pinterest.com
 DOMAIN-SUFFIX,win.gdt.qq.com
-DOMAIN-SUFFIX,wn.pos.baidu.com
 DOMAIN-SUFFIX,wn.x.jd.com
 DOMAIN-SUFFIX,ws-keyboard.shouji.sogou.com
 DOMAIN-SUFFIX,ws.sj.qq.com
