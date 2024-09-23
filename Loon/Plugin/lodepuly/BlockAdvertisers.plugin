@@ -1,5 +1,5 @@
 #!name = 广告平台拦截器
-#!desc = 此插件是所有去广告插件的基础，只针对广告平台处理。你依然需要安装其他去广告插件来搭配使用，并确保此插件始终排序在顶部。\n支持拦截腾讯、字节跳动、快手、百度、邑盟、倍孜、艾狄墨搏、袤博、极光、个推、友盟、阿里、优比客思、秒针、网易、美团、小米、京东、天目、讯飞、泛连、锐讯灵通、聚次方、美数、嗨量、钧云、变现猫、章鱼等广告平台的广告请求，更适合iOS平台的应用。
+#!desc = 此插件是所有去广告插件的基础，只针对广告平台处理。你依然需要安装其他去广告插件来搭配使用，并确保此插件始终排序在顶部。\n支持拦截腾讯、字节跳动、快手、百度、邑盟、倍孜、艾狄墨搏、袤博、极光、个推、友盟、阿里、优比客思、秒针、网易、美团、小米、京东、天目、讯飞、泛连、锐讯灵通、聚次方、美数、嗨量、钧云、变现猫、章鱼、分秒、泰之菩、翼信、快易、数萤技术、方麟、益起、上量优选、新义互联、腾云天下、SupersonicAds、APPSAD等广告平台的广告请求，更适合iOS平台的应用。
 #!openUrl = 
 #!author = 可莉🅥[https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md]
 #!tag = 去广告
@@ -8,8 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Website_icon/120px/TencentAd.png
-#!date = 2024-09-18 17:42:10
-
+#!date = 2024-09-23 13:01:47
 
 [Rule]
 # 字节跳动广告
@@ -94,6 +93,9 @@ DOMAIN-SUFFIX, adukwai.com, REJECT
 # SupersonicAds
 DOMAIN, init.supersonicads.com, REJECT
 
+# APPSAD
+DOMAIN, st.appsad.cn, REJECT
+
 # 上海倍孜
 DOMAIN, sdk.beizi.biz, REJECT
 DOMAIN, api-htp.beizi.biz, REJECT
@@ -105,6 +107,8 @@ DOMAIN-SUFFIX, miaozhen.com, REJECT
 # 艾狄墨搏 - 广告服务商
 DOMAIN, monitor.ssp.admobile.top, REJECT
 DOMAIN, sdk.ssp.admobile.top, REJECT
+DOMAIN, ax.admobile.top, REJECT
+DOMAIN, jump.admobile.top, REJECT
 DOMAIN-SUFFIX, admobile.top, REJECT
 
 # 袤博 - 广告服务商
@@ -192,7 +196,7 @@ DOMAIN-SUFFIX, l.qq.com, REJECT
 DOMAIN-SUFFIX, ugdtimg.com, REJECT
 IP-CIDR, 47.110.187.87/32, REJECT, no-resolve
 
-# App全渠道统计
+# 分秒网络
 DOMAIN-SUFFIX, openinstall.io, REJECT
 
 # 个推
@@ -221,12 +225,14 @@ DOMAIN, aspect-upush.umeng.com, REJECT
 DOMAIN, plbslog.umeng.com, REJECT
 DOMAIN, log.umtrack.com, REJECT
 DOMAIN, aaid.umeng.com, REJECT
+DOMAIN, log.umsns.com, REJECT
 
 # FUNLINK - 北京泛连科技
 DOMAIN, adtracker.adfunlink.com, REJECT
 
 # 天目 - 广告服务商
 DOMAIN, sdk.tianmu.mobi, REJECT
+DOMAIN, tracker.tianmu.mobi, REJECT
 
 # 上海优比客思科技有限公司 - 广告服务商
 DOMAIN, e-u1.ubixioe.com, REJECT
@@ -287,6 +293,39 @@ DOMAIN, caid.adintl.cn, REJECT
 DOMAIN, sv.adintl.cn, REJECT
 DOMAIN, v.adintl.cn, REJECT
 DOMAIN, oss.cdn.adintl.cn, REJECT
+
+# 上海泰之菩信息科技有限公司
+DOMAIN, adx.adtaipo.com, REJECT
+
+# 浙江翼信科技有限公司
+DOMAIN, adx.yixin.im, REJECT
+
+# 天津快易科技有限公司
+DOMAIN, adx.kuaiyiad.com, REJECT
+
+# 天脉移动广告平台
+DOMAIN, adreport.adtianmai.com, REJECT
+
+# 数萤技术
+DOMAIN, adxapi.readgps.com, REJECT
+
+# 方麟数字营销
+DOMAIN, t.fanglinad.com, REJECT
+
+# 益起广告
+DOMAIN, trk1.17admob.com, REJECT
+
+# 北京上量优选科技有限公司
+DOMAIN, nfy.slyxmobi.com, REJECT
+
+# 新义互联
+DOMAIN, api.mobrtb.com, REJECT
+
+# 枫岚互联
+DOMAIN, ssp.maplehaze.cn, REJECT
+
+# 北京腾云天下科技有限公司
+DOMAIN-SUFFIX, lnk0.com, REJECT
 
 [Rewrite]
 # 字节跳动广告
