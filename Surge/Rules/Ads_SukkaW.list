@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-23T02:15:39.246Z
-# Size: 114113
+# Last Updated: 2024-09-23T08:04:32.925Z
+# Size: 114112
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -12267,7 +12267,6 @@ DOMAIN-SUFFIX,mycdn4.ru
 DOMAIN-SUFFIX,somni.mycme.com
 DOMAIN-SUFFIX,connect.mycwt.com
 DOMAIN-SUFFIX,net.mydays.ch
-DOMAIN-SUFFIX,net.mydays.de
 DOMAIN-SUFFIX,sxeimx.mydays.de
 DOMAIN-SUFFIX,o.myfax.com
 DOMAIN-SUFFIX,affiliates.myfax.com
@@ -12675,7 +12674,6 @@ DOMAIN-SUFFIX,tr.newsletter.opcoep.fr
 DOMAIN-SUFFIX,smetrics.opdivo.dk
 DOMAIN-SUFFIX,swdced.open32.nl
 DOMAIN-SUFFIX,openx.com
-DOMAIN-SUFFIX,openx.net
 DOMAIN-SUFFIX,openx.org
 DOMAIN-SUFFIX,adx.opera.com
 DOMAIN-SUFFIX,try.opera.com
@@ -29301,6 +29299,7 @@ DOMAIN-SUFFIX,justuno.com
 DOMAIN-SUFFIX,dlesjf.jutarnji.hr
 DOMAIN-SUFFIX,widgets.jutarnji.hr
 DOMAIN-SUFFIX,jvcjnmd.com
+DOMAIN-SUFFIX,jwatera.top
 DOMAIN-SUFFIX,jwerioa.top
 DOMAIN-SUFFIX,jwympcc.com
 DOMAIN-SUFFIX,tp4sul.jwzd.com.cn
@@ -30418,7 +30417,6 @@ DOMAIN-SUFFIX,t.mowmore.com
 DOMAIN-SUFFIX,mozgvya.com
 DOMAIN-SUFFIX,geo.mozilla.org
 DOMAIN-SUFFIX,download-stats.mozilla.org
-DOMAIN-SUFFIX,telemetry-coverage.mozilla.org
 DOMAIN-SUFFIX,mp3bars.com
 DOMAIN-SUFFIX,smetrics.mphasis.com
 DOMAIN-SUFFIX,mphhgat.xyz
@@ -30782,7 +30780,6 @@ DOMAIN-SUFFIX,p02.notifa.info
 DOMAIN-SUFFIX,p03.notifa.info
 DOMAIN-SUFFIX,p04.notifa.info
 DOMAIN-SUFFIX,p05.notifa.info
-DOMAIN-SUFFIX,notify6.com
 DOMAIN-SUFFIX,pig.notion.chat
 DOMAIN-SUFFIX,nouusup.icu
 DOMAIN-SUFFIX,novaon.asia
@@ -39818,6 +39815,7 @@ DOMAIN-SUFFIX,log.hitsteps.com
 DOMAIN-SUFFIX,rtsendbox2.hittiger.com
 DOMAIN-SUFFIX,hixapalg.com
 DOMAIN-SUFFIX,hjmnfdab.com
+DOMAIN-SUFFIX,hkjzkrqz.icu
 DOMAIN-SUFFIX,hkpeghqu.icu
 DOMAIN-SUFFIX,applink.hktester.com
 DOMAIN-SUFFIX,ad-splash.hktvmall.com
@@ -44250,6 +44248,7 @@ DOMAIN-SUFFIX,sheenaup.net
 DOMAIN-SUFFIX,sheeptie.xyz
 DOMAIN-SUFFIX,sheeroop.com
 DOMAIN-SUFFIX,sheertep.net
+DOMAIN-SUFFIX,sheesimo.net
 DOMAIN-SUFFIX,shegheet.com
 DOMAIN-SUFFIX,pub.sheknows.com
 DOMAIN-SUFFIX,shelfoka.com
@@ -53114,7 +53113,6 @@ DOMAIN-SUFFIX,notifer.co.in
 DOMAIN-SUFFIX,notiflist.com
 DOMAIN-SUFFIX,notifpush.com
 DOMAIN-SUFFIX,notifyerr.com
-DOMAIN-SUFFIX,notifysrv.com
 DOMAIN-SUFFIX,notifzone.com
 DOMAIN-SUFFIX,notmining.org
 DOMAIN-SUFFIX,net-tracker.notolytix.com
@@ -53906,6 +53904,7 @@ DOMAIN-SUFFIX,covenant.psjhealth.org
 DOMAIN-SUFFIX,images.news.psjhealth.org
 DOMAIN-SUFFIX,psoansumt.net
 DOMAIN-SUFFIX,psomtenga.net
+DOMAIN-SUFFIX,psooglaik.net
 DOMAIN-SUFFIX,psoumoalt.com
 DOMAIN-SUFFIX,pstreetma.com
 DOMAIN-SUFFIX,pt0zhwhc26.ru
@@ -75123,7 +75122,6 @@ DOMAIN-SUFFIX,thuckautiru.com
 DOMAIN-SUFFIX,data-30e0430fbb.thueringen24.de
 DOMAIN-SUFFIX,data-d946a9c4a1.thueringen24.de
 DOMAIN-SUFFIX,thumpssleys.com
-DOMAIN-SUFFIX,incoming-telemetry.thunderbird.net
 DOMAIN-SUFFIX,thunderhead.com
 DOMAIN-SUFFIX,thuphedsaup.com
 DOMAIN-SUFFIX,thurnflfant.com
@@ -92340,6 +92338,7 @@ DOMAIN-SUFFIX,cqemus.gartenhaus-gmbh.de
 DOMAIN-SUFFIX,gavnogeeygaika.com
 DOMAIN-SUFFIX,clnbze.gazetakrakowska.pl
 DOMAIN-SUFFIX,gbddeyjekkixrn.com
+DOMAIN-SUFFIX,gcybnvhleaebkp.com
 DOMAIN-SUFFIX,cmzaly.gebrueder-goetz.de
 DOMAIN-SUFFIX,smetric.gebrueder-goetz.de
 DOMAIN-SUFFIX,generaltracking.de
