@@ -1,6 +1,6 @@
 #Title: AWAvenue Ads Rule
 #--------------------------------------
-#Total lines: 683
+#Total lines: 682
 #Version: 1.5.3-release
 
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
@@ -275,7 +275,6 @@ DOMAIN-SUFFIX,events.reddit.com
 DOMAIN-SUFFIX,events.redditmedia.com
 DOMAIN-SUFFIX,firebaselogging-pa.googleapis.com
 DOMAIN-SUFFIX,flurry.com
-DOMAIN-SUFFIX,freshmarketer.com
 DOMAIN-SUFFIX,g-staic.ganjingworld.com
 DOMAIN-SUFFIX,g2.ganjing.world
 DOMAIN-SUFFIX,game.loveota.com
