@@ -313,6 +313,7 @@ HOST,miui-fxcse.avlyun.com,REJECT
 HOST,mob.bz.mgtv.com,REJECT
 HOST,mobad.ijinshan.com,REJECT
 HOST,mobads-logs.baidu.com,REJECT
+HOST,mobads-pre-config.cdn.bcebos.com,REJECT
 HOST,mobads.baidu.com,REJECT
 HOST,mobilead.kuwo.cn,REJECT
 HOST,mobileads.msn.com,REJECT
@@ -613,6 +614,7 @@ HOST-SUFFIX,adfalcon.com,REJECT
 HOST-SUFFIX,adflow.ru,REJECT
 HOST-SUFFIX,adform.net,REJECT
 HOST-SUFFIX,adinall.com,REJECT
+HOST-SUFFIX,adintl.cn,REJECT
 HOST-SUFFIX,adjust.com,REJECT
 HOST-SUFFIX,adkernel.com,REJECT
 HOST-SUFFIX,adlooxtracking.com,REJECT
@@ -708,6 +710,7 @@ HOST-SUFFIX,bayimob.com,REJECT
 HOST-SUFFIX,beacon.sina.com.cn,REJECT
 HOST-SUFFIX,beerto.cn,REJECT
 HOST-SUFFIX,beilamusi.com,REJECT
+HOST-SUFFIX,beizi.biz,REJECT
 HOST-SUFFIX,benshiw.net,REJECT
 HOST-SUFFIX,bhichong.com,REJECT
 HOST-SUFFIX,bianxianmao.com,REJECT
