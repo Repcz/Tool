@@ -1,6 +1,6 @@
 #Title: AWAvenue Ads Rule
 #--------------------------------------
-#Total lines: 664
+#Total lines: 683
 #Version: 1.5.3-release
 
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
@@ -44,6 +44,7 @@ DOMAIN-SUFFIX,adclick.tencentmusic.com
 DOMAIN-SUFFIX,adcolony.com
 DOMAIN-SUFFIX,adexpo.tencentmusic.com
 DOMAIN-SUFFIX,adfilter.imtt.qq.com
+DOMAIN-SUFFIX,adfstat.yandex.ru
 DOMAIN-SUFFIX,adguanggao.eee114.com
 DOMAIN-SUFFIX,adjust.cn
 DOMAIN-SUFFIX,adjust.com
@@ -65,12 +66,15 @@ DOMAIN-SUFFIX,ads.heytapmobi.com
 DOMAIN-SUFFIX,ads.huan.tv
 DOMAIN-SUFFIX,ads.huantest.com
 DOMAIN-SUFFIX,ads.icloseli.cn
+DOMAIN-SUFFIX,ads.linkedin.com
 DOMAIN-SUFFIX,ads.music.126.net
 DOMAIN-SUFFIX,ads.oppomobile.com
 DOMAIN-SUFFIX,ads.pinterest.com
 DOMAIN-SUFFIX,ads.servebom.com
 DOMAIN-SUFFIX,ads.service.kugou.com
+DOMAIN-SUFFIX,ads.tiktok.com
 DOMAIN-SUFFIX,ads.v3mh.com
+DOMAIN-SUFFIX,ads.youtube.com
 DOMAIN-SUFFIX,ads3-normal-hl.zijieapi.com
 DOMAIN-SUFFIX,ads3-normal-lf.zijieapi.com
 DOMAIN-SUFFIX,ads3-normal-lq.zijieapi.com
@@ -80,6 +84,7 @@ DOMAIN-SUFFIX,ads5-normal-lf.zijieapi.com
 DOMAIN-SUFFIX,ads5-normal-lq.zijieapi.com
 DOMAIN-SUFFIX,ads5-normal.zijieapi.com
 DOMAIN-SUFFIX,adsense.google.cn
+DOMAIN-SUFFIX,adserver.unityads.unity3d.com
 DOMAIN-SUFFIX,adservice.google.cn
 DOMAIN-SUFFIX,adservice.google.com
 DOMAIN-SUFFIX,adserviceretry.kugou.com
@@ -136,10 +141,13 @@ DOMAIN-SUFFIX,analytics.126.net
 DOMAIN-SUFFIX,analytics.95516.com
 DOMAIN-SUFFIX,analytics.google.com
 DOMAIN-SUFFIX,analytics.pinterest.com
+DOMAIN-SUFFIX,analytics.pointdrive.linkedin.com
 DOMAIN-SUFFIX,analytics.query.yahoo.com
 DOMAIN-SUFFIX,analytics.rayjump.com
+DOMAIN-SUFFIX,analytics.s3.amazonaws.com
 DOMAIN-SUFFIX,analytics.tiktok.com
 DOMAIN-SUFFIX,analytics.woozooo.com
+DOMAIN-SUFFIX,analyticsengine.s3.amazonaws.com
 DOMAIN-SUFFIX,analyze.lemurbrowser.com
 DOMAIN-SUFFIX,andrqd.play.aiseet.atianqi.com
 DOMAIN-SUFFIX,ap.dongqiudi.com
@@ -172,6 +180,7 @@ DOMAIN-SUFFIX,applog.lc.quark.cn
 DOMAIN-SUFFIX,applog.uc.cn
 DOMAIN-SUFFIX,applog.zijieapi.com
 DOMAIN-SUFFIX,ata-sdk-uuid-report.dreport.meituan.net
+DOMAIN-SUFFIX,auction.unityads.unity3d.com
 DOMAIN-SUFFIX,audid-api.taobao.com
 DOMAIN-SUFFIX,audid.umeng.com
 DOMAIN-SUFFIX,azr.footprintdns.com
@@ -214,11 +223,14 @@ DOMAIN-SUFFIX,chat1.jd.com
 DOMAIN-SUFFIX,chiq-cloud.com
 DOMAIN-SUFFIX,cj.qidian.com
 DOMAIN-SUFFIX,ck.ads.oppomobile.com
+DOMAIN-SUFFIX,click.googleanalytics.com
+DOMAIN-SUFFIX,click.oneplus.cn
 DOMAIN-SUFFIX,clog.miguvideo.com
 DOMAIN-SUFFIX,cnzz.com
 DOMAIN-SUFFIX,collect.kugou.com
 DOMAIN-SUFFIX,commdata.v.qq.com
 DOMAIN-SUFFIX,config.chsmarttv.com
+DOMAIN-SUFFIX,config.unityads.unity3d.com
 DOMAIN-SUFFIX,conn-service-cn-03.allawntech.com
 DOMAIN-SUFFIX,conn-service-cn-04.allawntech.com
 DOMAIN-SUFFIX,conn-service-cn-05.allawntech.com
@@ -259,8 +271,11 @@ DOMAIN-SUFFIX,errlog.umeng.com
 DOMAIN-SUFFIX,errnewlog.umeng.com
 DOMAIN-SUFFIX,event.tradplusad.com
 DOMAIN-SUFFIX,events-drcn.op.dbankcloud.cn
+DOMAIN-SUFFIX,events.reddit.com
+DOMAIN-SUFFIX,events.redditmedia.com
 DOMAIN-SUFFIX,firebaselogging-pa.googleapis.com
 DOMAIN-SUFFIX,flurry.com
+DOMAIN-SUFFIX,freshmarketer.com
 DOMAIN-SUFFIX,g-staic.ganjingworld.com
 DOMAIN-SUFFIX,g2.ganjing.world
 DOMAIN-SUFFIX,game.loveota.com
@@ -320,6 +335,8 @@ DOMAIN-SUFFIX,img-c.heytapimage.com
 DOMAIN-SUFFIX,img.adnyg.com
 DOMAIN-SUFFIX,img.adnyg.com.w.kunlungr.com
 DOMAIN-SUFFIX,imtmp.net
+DOMAIN-SUFFIX,iot-eu-logser.realme.com
+DOMAIN-SUFFIX,iot-logser.realme.com
 DOMAIN-SUFFIX,ipv4.kkmh.com
 DOMAIN-SUFFIX,irc.qubiankeji.com
 DOMAIN-SUFFIX,itv2-up.openspeech.cn
@@ -531,6 +548,7 @@ DOMAIN-SUFFIX,stat.y.qq.com
 DOMAIN-SUFFIX,static.ads-twitter.com
 DOMAIN-SUFFIX,statics.woozooo.com
 DOMAIN-SUFFIX,stats.qiumibao.com
+DOMAIN-SUFFIX,stats.wp.com
 DOMAIN-SUFFIX,statsigapi.net
 DOMAIN-SUFFIX,stg-data.ads.heytapmobi.com
 DOMAIN-SUFFIX,success.ctobsnssdk.com
@@ -644,6 +662,7 @@ DOMAIN-SUFFIX,watson.telemetry.microsoft.com
 DOMAIN-SUFFIX,weather-analytics-events.apple.com
 DOMAIN-SUFFIX,weather-community-drcn.weather.dbankcloud.cn
 DOMAIN-SUFFIX,webstat.qiumibao.com
+DOMAIN-SUFFIX,webview.unityads.unity3d.com
 DOMAIN-SUFFIX,widgets.outbrain.com
 DOMAIN-SUFFIX,widgets.pinterest.com
 DOMAIN-SUFFIX,win.gdt.qq.com
