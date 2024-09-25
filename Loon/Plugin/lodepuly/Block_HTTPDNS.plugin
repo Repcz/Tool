@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/HTTPDNS.png
-#!date = 2024-09-19 15:34:34
+#!date = 2024-09-25 15:45:58
 
 [Rule]
 # YY语音
@@ -116,6 +116,7 @@ URL-REGEX, ^http:\/\/116\.63\.10\.31\/resolve, REJECT
 
 # 小米
 DOMAIN, httpdns.browser.miui.com, REJECT
+DOMAIN, resolver.msg.xiaomi.net, REJECT
 
 # 阿里巴巴
 DOMAIN, httpdns.alicdn.com, REJECT
