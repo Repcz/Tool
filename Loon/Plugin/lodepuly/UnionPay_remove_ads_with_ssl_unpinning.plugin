@@ -1,5 +1,5 @@
 #!name = 云闪付去广告
-#!desc = 过滤银联云闪付广告，需要IPA签名注入方可使用，仅支持云闪付10.1.2版。App Store用户请勿使用此插件，务必点击下方署名链接查看详细教程。
+#!desc = 过滤银联云闪付广告，需要IPA签名注入方可使用，仅支持云闪付10.1.2版。App Store用户请勿使用此插件，务必点击下方主页链接查看详细教程。
 #!openUrl = https://apps.apple.com/app/id600273928
 #!author = RuCu6[https://github.com/RuCu6]
 #!tag = 去广告
