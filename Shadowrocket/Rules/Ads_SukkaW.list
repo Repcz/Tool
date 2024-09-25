@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-25T12:39:18.154Z
-# Size: 115562
+# Last Updated: 2024-09-25T15:08:13.515Z
+# Size: 115563
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -37631,6 +37631,7 @@ DOMAIN-SUFFIX,cdfhidrk.xyz
 DOMAIN-SUFFIX,cdhfvrug.xyz
 DOMAIN-SUFFIX,cdipsumf.top
 DOMAIN-SUFFIX,cdmnlxtu.xyz
+DOMAIN-SUFFIX,ads.cdn2-img.net
 DOMAIN-SUFFIX,cdn7.network
 DOMAIN-SUFFIX,cdnfimgs.com
 DOMAIN-SUFFIX,cdnmaster.cn
