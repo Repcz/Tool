@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-25T15:08:13.515Z
-# Size: 115563
+# Last Updated: 2024-09-25T17:18:49.592Z
+# Size: 115577
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -12160,7 +12160,7 @@ DOMAIN-SUFFIX,events.medio.com
 DOMAIN-SUFFIX,medrol.ru
 DOMAIN-SUFFIX,meendo.ru
 DOMAIN-SUFFIX,megaad.nz
-DOMAIN,adui.tg.meitu.com
+DOMAIN-SUFFIX,adui.tg.meitu.com
 DOMAIN-SUFFIX,tongji-res.meizu.com
 DOMAIN-SUFFIX,bszxhc.mej.co.jp
 DOMAIN-SUFFIX,mm.melia.com
@@ -35588,6 +35588,7 @@ DOMAIN-SUFFIX,130gelh8q.de
 DOMAIN-SUFFIX,137kfj65k.de
 DOMAIN-SUFFIX,13p76nnir.de
 DOMAIN-SUFFIX,api.140proof.com
+DOMAIN-SUFFIX,14202444.xyz
 DOMAIN-SUFFIX,14cpoff22.de
 DOMAIN-SUFFIX,14fefmsjd.de
 DOMAIN-SUFFIX,1516shop.com
@@ -38209,6 +38210,7 @@ DOMAIN-SUFFIX,dns-log.d-n-s.org.uk
 DOMAIN-SUFFIX,d1tracker.ru
 DOMAIN-SUFFIX,d23d450d.xyz
 DOMAIN-SUFFIX,d29gqcij.com
+DOMAIN-SUFFIX,d43849fz.xyz
 DOMAIN-SUFFIX,d477275c.xyz
 DOMAIN-SUFFIX,da28c69e.xyz
 DOMAIN-SUFFIX,daartads.com
@@ -39644,6 +39646,7 @@ DOMAIN-SUFFIX,geejetag.com
 DOMAIN-SUFFIX,metrics.geekwire.com
 DOMAIN-SUFFIX,lalala.geenstijl.nl
 DOMAIN-SUFFIX,geerairu.net
+DOMAIN-SUFFIX,geetacog.xyz
 DOMAIN-SUFFIX,geethaiw.xyz
 DOMAIN-SUFFIX,geethoap.com
 DOMAIN-SUFFIX,cqbbpf.geewiz.co.za
@@ -48074,6 +48077,7 @@ DOMAIN-SUFFIX,analytics2-3-meride-tv.akamaized.net
 DOMAIN-SUFFIX,pstat.akathists.com
 DOMAIN-SUFFIX,aklamator.com
 DOMAIN-SUFFIX,gkvouu.aktiesport.nl
+DOMAIN-SUFFIX,akvqulocj.com
 DOMAIN-SUFFIX,akzfxmgcq.com
 DOMAIN-SUFFIX,al-adtech.com
 DOMAIN-SUFFIX,alaeshire.com
@@ -52997,6 +53001,7 @@ DOMAIN-SUFFIX,ftaysn.meinekette.de
 DOMAIN-SUFFIX,jdgtgb.meineorte.com
 DOMAIN-SUFFIX,navigation-timing.meinestadt.de
 DOMAIN-SUFFIX,stat.meitudata.com
+DOMAIN-SUFFIX,meitustat.com
 DOMAIN-SUFFIX,melit-zoy.com
 DOMAIN-SUFFIX,app.meliuz.com.br
 DOMAIN-SUFFIX,melnhroru.com
@@ -54316,6 +54321,7 @@ DOMAIN-SUFFIX,plvhsycor.com
 DOMAIN-SUFFIX,pmieprlpq.com
 DOMAIN-SUFFIX,pncloudfl.com
 DOMAIN-SUFFIX,yywbgs.pneumatiky.sk
+DOMAIN-SUFFIX,pnwawbwwx.com
 DOMAIN-SUFFIX,poagugauz.net
 DOMAIN-SUFFIX,stats.poddtoppen.se
 DOMAIN-SUFFIX,link.podercard.com
@@ -58156,7 +58162,7 @@ DOMAIN-SUFFIX,2030e7a4e6.73e5c52d49.com
 DOMAIN-SUFFIX,7411603f57.com
 DOMAIN-SUFFIX,741a18df39.com
 DOMAIN-SUFFIX,58f53b4478.74264bd2c8.com
-DOMAIN-SUFFIX,a9e69f8da2.742ba1f9a9.com
+DOMAIN-SUFFIX,742ba1f9a9.com
 DOMAIN-SUFFIX,743fa12700.com
 DOMAIN-SUFFIX,7d8c044232.74e7e0defc.com
 DOMAIN-SUFFIX,ad686b0a36.74f0283889.com
@@ -72341,6 +72347,7 @@ DOMAIN-SUFFIX,smetrics.ilyouthcare.com
 DOMAIN-SUFFIX,imageshells.com
 DOMAIN-SUFFIX,imagestash.pics
 DOMAIN-SUFFIX,marketing.imagexmedia.com
+DOMAIN-SUFFIX,imbeselbeno.com
 DOMAIN-SUFFIX,imediacrew.club
 DOMAIN-SUFFIX,imemediates.org
 DOMAIN-SUFFIX,ee.impactextend.dk
@@ -84323,6 +84330,7 @@ DOMAIN-SUFFIX,vaikrywlbmca.com
 DOMAIN-SUFFIX,vainfulkmole.com
 DOMAIN-SUFFIX,analytics.valheimgamer.com
 DOMAIN-SUFFIX,valiantjosie.com
+DOMAIN-SUFFIX,validworking.pro
 DOMAIN-SUFFIX,valiumbessel.com
 DOMAIN-SUFFIX,search.valuehunter.site
 DOMAIN-SUFFIX,valuermainly.com
@@ -85231,6 +85239,7 @@ DOMAIN-SUFFIX,smetrics.albankaldawli.org
 DOMAIN-SUFFIX,albeitinflame.com
 DOMAIN-SUFFIX,alchemysocial.com
 DOMAIN-SUFFIX,alchimybegins.com
+DOMAIN-SUFFIX,aldolstelly.click
 DOMAIN-SUFFIX,affiliate.alexandrajohn.com
 DOMAIN-SUFFIX,alexisbeaming.com
 DOMAIN-SUFFIX,alfionecasave.com
@@ -87257,6 +87266,7 @@ DOMAIN-SUFFIX,jdgtgb.fussballfieber.de
 DOMAIN-SUFFIX,data-17c7ec5f16.fussballfieber.de
 DOMAIN-SUFFIX,data-ec98eddf4a.fussballfieber.de
 DOMAIN-SUFFIX,fussy-highway.pro
+DOMAIN-SUFFIX,fussysandwich.pro
 DOMAIN-SUFFIX,futharcconny.shop
 DOMAIN-SUFFIX,futurehybrid.tech
 DOMAIN-SUFFIX,communication.futuresummits.com
@@ -89141,6 +89151,7 @@ DOMAIN-SUFFIX,sstats.optionsxpress.com
 DOMAIN-SUFFIX,opulentsylvan.com
 DOMAIN-SUFFIX,opvanillishan.com
 DOMAIN-SUFFIX,oracleinfinity.io
+DOMAIN-SUFFIX,oregonguttera.com
 DOMAIN-SUFFIX,smetrics.orenciapatient.se
 DOMAIN-SUFFIX,dw.organaamnions.com
 DOMAIN-SUFFIX,orientalrazor.com
@@ -91310,6 +91321,7 @@ DOMAIN-SUFFIX,trk.williamspumps.com
 DOMAIN-SUFFIX,a8.williesenglish.jp
 DOMAIN-SUFFIX,smetrics.wilsonniblett.com
 DOMAIN-SUFFIX,winaffiliates.com
+DOMAIN-SUFFIX,windlebrogues.com
 DOMAIN-SUFFIX,windowsavings.pro
 DOMAIN-SUFFIX,windowsuseful.com
 DOMAIN-SUFFIX,osimg.windsurfercrs.com
@@ -91747,6 +91759,7 @@ DOMAIN-SUFFIX,fvc.alcatel-lucent.com
 DOMAIN-SUFFIX,comtelitalia.alcatel-lucent.com
 DOMAIN-SUFFIX,aldosesmajeure.com
 DOMAIN-SUFFIX,alecmeantimehe.com
+DOMAIN-SUFFIX,alepinezaptieh.com
 DOMAIN-SUFFIX,marketing.alereforensics.com
 DOMAIN-SUFFIX,aletrenhegenmi.com
 DOMAIN-SUFFIX,algjqsuzialktg.com
@@ -94485,6 +94498,7 @@ DOMAIN-SUFFIX,cizgve.mensfashion.com.mx
 DOMAIN-SUFFIX,meokiemtien.online
 DOMAIN-SUFFIX,seniorliving.merionevanston.com
 DOMAIN-SUFFIX,mff.messefrankfurt.com
+DOMAIN-SUFFIX,methodyprovand.com
 DOMAIN-SUFFIX,methoxyunpaled.com
 DOMAIN-SUFFIX,get.metileanoffer.site
 DOMAIN-SUFFIX,metrica-yandex.com
@@ -115591,7 +115605,6 @@ DOMAIN-SUFFIX,rei9jc56oyqux0rcpcquqmm7jc5freirpsquqkope3n3axrjacg8ipolxvbm.codes
 DOMAIN-SUFFIX,zyxwvutsrqponmlkjihgfedcbazyxwvutsrqponmlkjihgfedcbazyxwvutsrqp.de
 DOMAIN,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe
 ################## EOF ##################
-
 #########################################
 # Sukka's Ruleset - Reject Domains
 # Last Updated: 2024-09-20T18:57:43.916Z

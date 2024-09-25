@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2024-09-20T19:37:17.593Z
-# Size: 774
+# Last Updated: 2024-09-25T17:18:49.637Z
+# Size: 773
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -430,9 +430,9 @@ HOST-SUFFIX,bcelive.com,DIRECT
 HOST-SUFFIX,biliapi.com,DIRECT
 HOST-SUFFIX,biliapi.net,DIRECT
 HOST-SUFFIX,bilibili.cn,DIRECT
-HOST-SUFFIX,bilibili.tv,DIRECT
 HOST-SUFFIX,biligame.cn,DIRECT
 HOST-SUFFIX,biliimg.com,DIRECT
+HOST-SUFFIX,byteimg.com,DIRECT
 HOST-SUFFIX,bytetcc.com,DIRECT
 HOST-SUFFIX,c-ctrip.com,DIRECT
 HOST-SUFFIX,cainiao.com,DIRECT
@@ -731,7 +731,6 @@ HOST-SUFFIX,leetcode-cn.com,DIRECT
 HOST-SUFFIX,pconline.com.cn,DIRECT
 HOST-SUFFIX,dl.pinyuncloud.com,DIRECT
 HOST-SUFFIX,taopiaopiao.com,DIRECT
-HOST-SUFFIX,tencent-coud.cn,DIRECT
 HOST-SUFFIX,toutiaopage.com,DIRECT
 HOST-SUFFIX,xiaohongshu.com,DIRECT
 HOST-SUFFIX,aicoinstorge.com,DIRECT
@@ -783,4 +782,3 @@ USER-AGENT,TeslaMap,DIRECT
 #PROCESS-NAME,WeChat
 #PROCESS-NAME,WeCom
 ################## EOF ##################
-
