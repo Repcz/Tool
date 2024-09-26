@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Zhihu.png
-#!date = 2024-09-05 08:36:23
+#!date = 2024-09-26 21:31:15
 
 [Rule]
 # 知乎
@@ -37,7 +37,7 @@ IP-CIDR6, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128, REJECT, no-resolve
 ^https:\/\/api\.zhihu\.com\/unlimited\/go\/my_card reject
 
 # 搜索页 - 关键词、猜你想搜
-^https:\/\/api\.zhihu\.com\/search\/preset_words reject-dict
+^https:\/\/api\.zhihu\.com\/search\/(hot_search|preset_words) reject-dict
 ^https:\/\/www\.zhihu\.com\/api\/v4\/search\/related_queries\/(article|answer)\/\d+ reject-dict
 
 # 回答详情页 - 评论区顶部、下一个回答
