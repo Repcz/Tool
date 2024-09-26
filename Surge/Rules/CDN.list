@@ -22,6 +22,7 @@ DOMAIN,akidoo.top
 DOMAIN,alt-images.codestream.com
 DOMAIN,alt.idgesg.net
 DOMAIN,amp.azure.net
+DOMAIN,analytics.welcomesoftware.com
 DOMAIN,anchor.digitalocean.com
 DOMAIN,android-safebrowsing.google.com
 DOMAIN,api-frameworks.vercel.sh
@@ -560,6 +561,7 @@ DOMAIN,consumersite-assets.trustpilot.net
 DOMAIN,content-prod-live.cert.starbucks.com
 DOMAIN,content.any.run
 DOMAIN,content.jwplatform.com
+DOMAIN,content.product.glitch.com
 DOMAIN,content.wepik.com
 DOMAIN,contents-thumbnail2.fc2.com
 DOMAIN,cookie-cdn.cookiepro.com
@@ -891,6 +893,9 @@ DOMAIN,imgssl.constantcontact.com
 DOMAIN,imgur.dcard.tw
 DOMAIN,info.cloudflare.com
 DOMAIN,info.knak.com
+DOMAIN,int.mwbbiz.com
+DOMAIN,int.qiniuyun15.xyz
+DOMAIN,interactive-examples.mdn.mozilla.net
 DOMAIN,interactive.guim.co.uk
 DOMAIN,ipfs.d.tube
 DOMAIN,irp-cdn.multiscreensite.com
@@ -920,6 +925,7 @@ DOMAIN,keyframe-cdn.abcnews.com
 DOMAIN,lain.bgm.tv
 DOMAIN,launchercontent.mojang.com
 DOMAIN,lcdn-locator.apple.com
+DOMAIN,learn.optimizely.com
 DOMAIN,ledger-wp-website-s3-prd.ledger.com
 DOMAIN,lib.arvancloud.com
 DOMAIN,libs.quillbot.com
@@ -1714,6 +1720,7 @@ DOMAIN-SUFFIX,bootstrapcdn.com
 DOMAIN-SUFFIX,botsrv2.com
 DOMAIN-SUFFIX,boxcdn.net
 DOMAIN-SUFFIX,bp.blogspot.com
+DOMAIN-SUFFIX,bstarstatic.com
 DOMAIN-SUFFIX,bstatic.com
 DOMAIN-SUFFIX,bundle.run
 DOMAIN-SUFFIX,bundle.thimatic-apps.com
@@ -2381,7 +2388,7 @@ DOMAIN-WILDCARD,lz-cdn?.com
 DOMAIN-WILDCARD,lz-cdn??.com
 DOMAIN-WILDCARD,ocsp.*.amazontrust.com
 DOMAIN-WILDCARD,proxy-*.dailymotion.com
-DOMAIN-WILDCARD,rr1---??.ouo.si
+DOMAIN-WILDCARD,rr?---??.ouo.si
 DOMAIN-WILDCARD,s3.*.wasabisys.com
 DOMAIN-WILDCARD,static*.tgstat.ru
 DOMAIN-WILDCARD,static-??-cdn.eporner.com
