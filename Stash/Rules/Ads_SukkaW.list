@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-26T09:50:09.497Z
-# Size: 115605
+# Last Updated: 2024-09-26T12:39:49.616Z
+# Size: 115608
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -26283,6 +26283,7 @@ DOMAIN-SUFFIX,rqjjdi.bershka.com
 DOMAIN-SUFFIX,cdn.bescore.com
 DOMAIN-SUFFIX,tr.info.bessans.com
 DOMAIN-SUFFIX,best-cdn.pl
+DOMAIN-SUFFIX,counter.best-hit.tv
 DOMAIN-SUFFIX,best-top.de
 DOMAIN-SUFFIX,best-top.ro
 DOMAIN-SUFFIX,tmx.bestbuy.com
@@ -45318,6 +45319,8 @@ DOMAIN-SUFFIX,organizations.stratfor.com
 DOMAIN-SUFFIX,stratos.blue
 DOMAIN-SUFFIX,cdn.stray228.com
 DOMAIN-SUFFIX,play.strdef.world
+DOMAIN-SUFFIX,track.streak.ninja
+DOMAIN-SUFFIX,analytics-op.streak.ninja
 DOMAIN-SUFFIX,eq-beacon.stream.co.jp
 DOMAIN-SUFFIX,eq-player-log.cdnext.stream.ne.jp
 DOMAIN-SUFFIX,stats.streamhub.io
