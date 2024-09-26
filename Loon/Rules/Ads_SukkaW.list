@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-26T12:39:49.616Z
-# Size: 115608
+# Last Updated: 2024-09-26T17:23:21.062Z
+# Size: 115611
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -6158,6 +6158,7 @@ DOMAIN-SUFFIX,ipro.com
 DOMAIN-SUFFIX,access.ipro.net
 DOMAIN-SUFFIX,access2.ipro.net
 DOMAIN-SUFFIX,iptuy.cn
+DOMAIN-SUFFIX,ipxx.pro
 DOMAIN-SUFFIX,response.iqpc.com
 DOMAIN-SUFFIX,dg.irco.com
 DOMAIN-SUFFIX,trk.irco.com
@@ -29298,6 +29299,7 @@ DOMAIN-SUFFIX,stats.ipmgroup.be
 DOMAIN-SUFFIX,data-f1e447fbcf.ippen.media
 DOMAIN-SUFFIX,data-f59db3288b.ippen.media
 DOMAIN-SUFFIX,ipsoazr.icu
+DOMAIN-SUFFIX,ipv4dns.com
 DOMAIN-SUFFIX,iqgessh.icu
 DOMAIN-SUFFIX,iqkjrwf.com
 DOMAIN-SUFFIX,iqlpkca.com
@@ -39726,6 +39728,7 @@ DOMAIN-SUFFIX,gfwvrltf.xyz
 DOMAIN-SUFFIX,ggsbjzyo.com
 DOMAIN-SUFFIX,ggxdzrvo.com
 DOMAIN-SUFFIX,ghbdsbfd.com
+DOMAIN-SUFFIX,ghiuge55.fun
 DOMAIN-SUFFIX,cmp-cdn.ghostery.com
 DOMAIN-SUFFIX,collector-hpn.ghostery.net
 DOMAIN-SUFFIX,gibaivoa.com
