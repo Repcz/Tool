@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/WeixinMiniPrograms.png
-#!date = 2024-09-25 12:45:41
+#!date = 2024-09-27 22:18:09
 
 [Rule]
 # 微信小程序通用规则
@@ -21,6 +21,9 @@ DOMAIN, ads-shopping.shouqianba.com, REJECT
 
 # 猫眼电影
 DOMAIN, ad.maoyan.com, REJECT
+
+# 捷停车 @怎么肥事
+DOMAIN, e.jparking.cn, REJECT
 
 [Rewrite]
 # 企迈点单系统
