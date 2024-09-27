@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/AppleWeather.png
-#!date = 2024-09-07 02:12:46
+#!date = 2024-09-27 16:48:17
 
 [Argument]
 NextHour.Provider = select, "ColorfulClouds", "WeatherKit", "QWeather", tag = [未来一小时降水强度]数据源, desc = 选择WeatherKit等同于不做修改
@@ -26,8 +26,8 @@ API.WAQI.Token = input, "", tag = [API]WAQI API令牌, desc = 填写此字段将
 DOMAIN, weather-analytics-events.apple.com, REJECT-DROP
 
 [Script]
-http-response ^https?:\/\/weatherkit\.apple\.com\/api\/v1\/availability\/ script-path = https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/WeatherKit.response.js, requires-body = true, tag = Availability响应处理, argument =
-http-response ^https?:\/\/weatherkit\.apple\.com\/api\/v2\/weather\/ script-path = https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/WeatherKit.response.js, requires-body = true, binary-body-mode = true, tag = Weather响应处理, argument = [{NextHour.Provider},{AQI.Provider},{AQI.ReplaceProviders},{AQI.Local.Scale},{AQI.Local.ReplaceScales},{AQI.Local.ConvertUnits},{API.ColorfulClouds.Token},{API.QWeather.Host},{API.QWeather.Token},{API.WAQI.Token}]
+http-response ^https?:\/\/weatherkit\.apple\.com\/api\/v1\/availability\/ script-path = https://github.com/NSRingo/WeatherKit/releases/latest/download/response.js, requires-body = true, tag = Availability响应处理, argument =
+http-response ^https?:\/\/weatherkit\.apple\.com\/api\/v2\/weather\/ script-path = https://github.com/NSRingo/WeatherKit/releases/latest/download/response.js, requires-body = true, binary-body-mode = true, tag = Weather响应处理, argument = [{NextHour.Provider},{AQI.Provider},{AQI.ReplaceProviders},{AQI.Local.Scale},{AQI.Local.ReplaceScales},{AQI.Local.ConvertUnits},{API.ColorfulClouds.Token},{API.QWeather.Host},{API.QWeather.Token},{API.WAQI.Token}]
 
 [MitM]
 hostname = weatherkit.apple.com
