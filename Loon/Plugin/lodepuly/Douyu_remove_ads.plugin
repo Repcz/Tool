@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Douyu.png
-#!date = 2024-08-28 08:42:59
+#!date = 2024-09-28 01:25:08
 
 [Rule]
 # 拦截HTTPDNS
@@ -34,7 +34,7 @@ DOMAIN, stun1.qvb.qcloud.com, REJECT
 ^https:\/\/apiv2\.douyucdn\.cn\/japi\/entrance\/roomRes\/nc\/m\/list response-body-json-del data.pendant_a data.entrance_d
 
 # 修改应用配置 - 大神游戏陪玩greatGodGameSitterSwitch / 关注更多主播入口followMoreAnchorEntrance / 直播横幅sdklivebanner / 首页活动悬浮窗homeActFloatSwitch / 带货开关bringGoodsSwitch / QQ游戏qqGameSwitch
-^https:\/\/venus\.douyucdn\.cn\/venus\/config\/static\/update.+keyCodeSet=flow_config greatGodGameSitterSwitch 0 followMoreAnchorEntrance 0 sdklivebanner 0 homeActFloatSwitch 0 bringGoodsSwitch 0 qqGameSwitch 0
+^https:\/\/venus\.douyucdn\.cn\/venus\/config\/static\/update.+keyCodeSet=flow_config response-body-json-replace greatGodGameSitterSwitch 0 followMoreAnchorEntrance 0 sdklivebanner 0 homeActFloatSwitch 0 bringGoodsSwitch 0 qqGameSwitch 0
 
 [Script]
 # 首页轮播图和视频流广告
