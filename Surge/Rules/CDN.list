@@ -277,6 +277,7 @@ DOMAIN,cdn.announcekit.app
 DOMAIN,cdn.apkmonk.com
 DOMAIN,cdn.apponic.com
 DOMAIN,cdn.arcade.software
+DOMAIN,cdn.arduino.cc
 DOMAIN,cdn.arstechnica.net
 DOMAIN,cdn.ashbyprd.com
 DOMAIN,cdn.assets.as2.amazonaws.com
@@ -564,6 +565,7 @@ DOMAIN,consentdeliveryfd.azurefd.net
 DOMAIN,consumersite-assets.trustpilot.net
 DOMAIN,content-prod-live.cert.starbucks.com
 DOMAIN,content.any.run
+DOMAIN,content.arduino.cc
 DOMAIN,content.jwplatform.com
 DOMAIN,content.product.glitch.com
 DOMAIN,content.wepik.com
@@ -769,6 +771,7 @@ DOMAIN,image.gyutto.com
 DOMAIN,image.gyutto.jp
 DOMAIN,image.ibb.co
 DOMAIN,image.lichess1.org
+DOMAIN,image.mux.com
 DOMAIN,image.nmb.best
 DOMAIN,image.p-c2-x.abema-tv.com
 DOMAIN,image.send.grammarly.com
@@ -950,6 +953,8 @@ DOMAIN,loutre.blockchair.io
 DOMAIN,lumiere-a.akamaihd.net
 DOMAIN,m-cdn.phonearena.com
 DOMAIN,m.wsj.net
+DOMAIN,mangaz-books.j-comi.jp
+DOMAIN,mangaz-static.j-comi.jp
 DOMAIN,mantisloader.mantis-awx.com
 DOMAIN,maps.geoapify.com
 DOMAIN,marketplace-web-assets.vinted.com
@@ -1684,6 +1689,7 @@ DOMAIN-SUFFIX,99av.tv
 DOMAIN-SUFFIX,9cache.com
 DOMAIN-SUFFIX,a.storyblok.com
 DOMAIN-SUFFIX,aacdn.nagich.com
+DOMAIN-SUFFIX,aayinltcs.arduino.cc
 DOMAIN-SUFFIX,abc-cdn.net
 DOMAIN-SUFFIX,abc-cdn.net.au
 DOMAIN-SUFFIX,abcnewsfe.com

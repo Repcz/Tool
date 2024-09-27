@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-27T12:38:43.029Z
-# Size: 115658
+# Last Updated: 2024-09-27T18:48:43.956Z
+# Size: 115672
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -12724,6 +12724,14 @@ DOMAIN-SUFFIX,metrics.oetker.de
 DOMAIN-SUFFIX,oevll.com
 DOMAIN-SUFFIX,of-bo.com
 DOMAIN-SUFFIX,t.ofsys.com
+DOMAIN-SUFFIX,ogfba.net
+DOMAIN-SUFFIX,ogfbb.net
+DOMAIN-SUFFIX,ogfbc.net
+DOMAIN-SUFFIX,ogfbd.net
+DOMAIN-SUFFIX,ogfbe.net
+DOMAIN-SUFFIX,ogffa.net
+DOMAIN-SUFFIX,ogfga.net
+DOMAIN-SUFFIX,ogfna.net
 DOMAIN-SUFFIX,ognyvo.ru
 DOMAIN-SUFFIX,ogrid.org
 DOMAIN-SUFFIX,a.oh100.com
@@ -13572,6 +13580,7 @@ DOMAIN-SUFFIX,seyfwl.smaker.pl
 DOMAIN-SUFFIX,ebis.smakon.jp
 DOMAIN-SUFFIX,rtpmqv.smakon.jp
 DOMAIN-SUFFIX,smalh.com
+DOMAIN-SUFFIX,smarf.icu
 DOMAIN-SUFFIX,sms.info.smart.com
 DOMAIN-SUFFIX,data.info.smart.com
 DOMAIN-SUFFIX,data.marketing.smart.com
@@ -14675,6 +14684,7 @@ DOMAIN-SUFFIX,xmnkgi.cn
 DOMAIN-SUFFIX,tracking.xmor.info
 DOMAIN-SUFFIX,xoalt.com
 DOMAIN-SUFFIX,xolen.xyz
+DOMAIN-SUFFIX,cdn.xpln.tech
 DOMAIN-SUFFIX,xrrdi.com
 DOMAIN-SUFFIX,m.xrum.info
 DOMAIN-SUFFIX,xs6po.icu
@@ -21421,6 +21431,7 @@ DOMAIN-SUFFIX,smetrics.pfizer.com
 DOMAIN-SUFFIX,smetrics.btondemand.pfizer.com
 DOMAIN-SUFFIX,pfjtgxc.cn
 DOMAIN-SUFFIX,marketing.pfsida.com
+DOMAIN-SUFFIX,pgazaz.icu
 DOMAIN-SUFFIX,pgieqr.top
 DOMAIN-SUFFIX,pgmcdn.com
 DOMAIN-SUFFIX,phause.com
@@ -65124,6 +65135,7 @@ DOMAIN-SUFFIX,multieser.info
 DOMAIN-SUFFIX,multimater.com
 DOMAIN-SUFFIX,stats.multiply.cloud
 DOMAIN-SUFFIX,tracker.multisearch.io
+DOMAIN-SUFFIX,multisetup.pro
 DOMAIN-SUFFIX,api.mumuglobal.com
 DOMAIN-SUFFIX,store-api.mumuglobal.com
 DOMAIN-SUFFIX,a.munters.com.au
@@ -74062,6 +74074,7 @@ DOMAIN-SUFFIX,otnolatrnup.com
 DOMAIN-SUFFIX,hksfkh.otomotoprofi.pl
 DOMAIN-SUFFIX,stats.otsohavanto.net
 DOMAIN-SUFFIX,oubeliketh.info
+DOMAIN-SUFFIX,l.ouest-france.fr
 DOMAIN-SUFFIX,go.labonneadresse.ouest-france.fr
 DOMAIN-SUFFIX,ouldhukelpm.org
 DOMAIN-SUFFIX,ouleegneeje.com
@@ -79021,6 +79034,7 @@ DOMAIN-SUFFIX,desvibravaom.com
 DOMAIN-SUFFIX,detachedknot.com
 DOMAIN-SUFFIX,detailedglue.com
 DOMAIN-SUFFIX,detectdinner.com
+DOMAIN-SUFFIX,determineapp.com
 DOMAIN-SUFFIX,deupfpxwdzxs.com
 DOMAIN-SUFFIX,aa.deutsche-bank.de
 DOMAIN-SUFFIX,at.deutsche-bank.de
