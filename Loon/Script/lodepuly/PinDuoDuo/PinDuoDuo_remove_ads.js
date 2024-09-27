@@ -1,38 +1,28 @@
-// 2024-08-13 17:11:12
+// 脚本引用 https://raw.githubusercontent.com/RuCu6/Loon/refs/heads/main/Scripts/pdd.js
+// 2024-09-28 01:50
+
 const url = $request.url;
+if (!$response.body) $done({});
 let obj = JSON.parse($response.body);
 
-try {
-    if (url.includes('/api/alexa/homepage/hub') && obj.result && Array.isArray(obj.result.bottom_tabs)) {
-        obj.result.bottom_tabs = obj.result.bottom_tabs.filter(tab => tab.title !== '多多视频' && tab.title !== '大促会场' && tab.title !== '搜索' && tab.title !== '直播');
-        delete obj.result.icon_set;
-        delete obj.result.search_bar_hot_query;
-        }
-        
-    if (url.includes("/search")) {
-    delete obj.expansion;
-         }
-        
-    if (url.includes('/api/philo/personal/hub')) {
-        delete obj.monthly_card_entrance;
-        delete obj.personal_center_style_v2_vo;
-        if (obj.icon_set) {
-            delete obj.icon_set.icons;
-            delete obj.icon_set.top_personal_icons;
-        }
+if (url.includes("/api/alexa/homepage/hub")) {
+  // 底部标签栏
+  if (obj?.result) {
+    if (obj?.result?.bottom_tabs?.length > 0) {
+      // 标签栏1
+      obj.result.bottom_tabs = obj.result.bottom_tabs.filter(
+        (i) => /(?:chat_list|index|personal)\.html/.test(i?.link)
+      );
     }
-
-    if (url.includes("/api/oak/integration/render")) {
-        if (obj.ui) {
-            delete obj.ui.bottom_section;  // 限时
-            if (obj.ui.live_section) {
-                delete obj.ui.live_section.float_info;  // 直播
-            }
-        }
-        delete obj.bottom_section_list; // 限时
+    if (obj?.result?.buffer_bottom_tabs?.length > 0) {
+      // 标签栏2
+      obj.result.buffer_bottom_tabs = obj.result.buffer_bottom_tabs.filter(
+        (i) => /(?:chat_list|index|personal)\.html/.test(i?.link)
+      );
     }
-} catch (error) {
-    
+    // delete obj.result.icon_set; // 顶部图标 多多买菜 现金大转盘
+    delete obj.result.search_bar_hot_query; // 搜索框填充词
+  }
 }
 
-$done({body: JSON.stringify(obj)});
+$done({ body: JSON.stringify(obj) });
