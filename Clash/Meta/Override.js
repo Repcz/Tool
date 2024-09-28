@@ -2,7 +2,7 @@
 //
 // Clash Verge Rev (Version ≥ 17.2) & Mihomo-Party (Version ≥ 0.5.8)
 //
-// 最后更新时间: 2024-09-08 15:50
+// 最后更新时间: 2024-09-28 22:50
 
 // 规则集通用配置
 const ruleProviderCommon = {
@@ -36,9 +36,6 @@ function main(config) {
   config["unified-delay"] = "true";
   config["find-process-mode"] = "strict";
   config["global-client-fingerprint"] = "chrome";
-  config["external-controller"] = "127.0.0.1:9090";
-  config["external-ui"] = "ui";
-  config["external-ui-url"] = "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip";
 
   // 覆盖 dns 配置
   config["dns"] = {

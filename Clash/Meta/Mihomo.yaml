@@ -7,7 +7,7 @@
 #
 # Mihomo Version ≥ 1.8.4
 #
-# 最后更新时间: 2024-09-10 21:30
+# 最后更新时间: 2024-09-28 22:50
 #
 # ================
 
@@ -29,9 +29,6 @@ log-level: info
 unified-delay: true
 global-client-fingerprint: chrome
 find-process-mode: strict
-external-controller: 127.0.0.1:9090
-external-ui: ui
-external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
 
 geodata-mode: true
 geox-url:
