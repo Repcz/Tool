@@ -1,7 +1,5 @@
-/*
-引用地址：https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/bilibili/json.js
-*/
-// 2024-01-06 12:10
+// 脚本引用 https://raw.githubusercontent.com/RuCu6/Loon/refs/heads/main/Scripts/bilibili/json.js
+// 2024-09-28 13:15
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -142,14 +140,20 @@ if (url.includes("/x/resource/show/skin")) {
   if (obj?.data?.items?.length > 0) {
     // vertical_live 直播内容
     // vertical_pgc 大会员专享
-    obj.data.items = obj.data.items.filter(
-      (i) =>
-        !(
-          i.hasOwnProperty("ad_info") ||
-          i.hasOwnProperty("story_cart_icon") ||
-          ["ad", "vertical_live", "vertical_pgc"]?.includes(i?.card_goto)
-        )
-    );
+    let newItems = [];
+    for (let item of obj.data.items) {
+      if (item?.hasOwnProperty("ad_info")) {
+        continue;
+      } else if (["vertical_ad_av", "vertical_live", "vertical_pgc"]?.includes(item?.card_goto)) {
+        continue;
+      } else {
+        if (item?.story_cart_icon) {
+          delete item.story_cart_icon;
+        }
+        newItems.push(item);
+      }
+    }
+    obj.data.items = newItems;
   }
 } else if (url.includes("/x/v2/search/square")) {
   // 搜索框

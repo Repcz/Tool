@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Bilibili.png
-#!date = 2024-09-04 16:21:40
+#!date = 2024-09-28 22:00:06
 
 [Rule]
 # 开屏广告
@@ -75,13 +75,10 @@ http-response ^https:\/\/grpc\.biliapi\.net\/bilibili\.app\.interface\.v1\.Teena
 http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/(brand\/list|event\/list2|list|show)\? script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Bilibili/Bilibili_remove_ads.js, requires-body = true, tag = 移除开屏广告
 
 # 移除首页推荐广告
-http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/feed\/index\? script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Bilibili/Bilibili_remove_ads.js, requires-body = true, tag = 移除首页推荐广告
+http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/feed\/index(\/story)?\? script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Bilibili/Bilibili_remove_ads.js, requires-body = true, tag = 移除首页推荐广告
 
 # 移除右上角活动入口
 http-response ^https:\/\/app\.bilibili\.com\/x\/resource\/top\/activity\? script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Bilibili/Bilibili_remove_ads.js, requires-body = true, tag = 移除右上角活动入口
-
-# 移除直播内容和大会员专享
-http-response ^https:\/\/app\.bilibili\.com\/x\/v2\/feed\/index\/story script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Bilibili/Bilibili_remove_ads.js, requires-body = true, tag = 移除直播内容和大会员专享
 
 # 精简首页顶部标签
 http-response ^https:\/\/app\.bilibili\.com\/x\/resource\/show\/tab\/v2\? script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Bilibili/Bilibili_remove_ads.js, requires-body = true, tag = 精简首页顶部标签
