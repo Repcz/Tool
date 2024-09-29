@@ -659,6 +659,7 @@ DOMAIN,o2o-ad-log-gateway.alibaba.com
 # > keep
 DOMAIN,apm.gotokeep.com
 DOMAIN,kad.gotokeep.com
+DOMAIN,hc-ssp.sm.cn
 
 # > 快乐广播
 DOMAIN,ad.hpplay.cn
