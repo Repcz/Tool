@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/SevenCat.png
-#!date = 2024-09-29 12:36:52
+#!date = 2024-09-29 12:44:08
 
 [Rule]
 DOMAIN, cdn-ad.wtzw.com, REJECT
@@ -43,10 +43,10 @@ DOMAIN-SUFFIX, gdt.qq.com, REJECT
 ^https:\/\/api-cfg\.wtzw\.com\/v\d\/adv\/ reject
 ^https:\/\/api-cfg\.wtzw\.com\/v\d\/offline-adv\/index reject-dict
 ^https:\/\/api-cfg\.wtzw\.com\/v\d\/operation\/index\?ad_personal_switch reject-dict
-# ^https:\/\/xiaoshuo\.wtzw\.com\/api\/v\d\/withdraw\/init reject-dict
+^https:\/\/xiaoshuo\.wtzw\.com\/api\/v\d\/withdraw\/init reject-dict
 
 # 精简我的页面
 ^https:\/\/xiaoshuo\.wtzw\.com\/api\/v\d\/user\/my-center\? response-body-json-del data.func_area[1]  data.func_area[2]
 
 [MitM]
-hostname = api-cfg.wtzw.com, -xiaoshuo.wtzw.com, sf3-fe-tos.pglstatp-toutiao.com, api-bc.wtzw.com, api-gw.wtzw.com, cdn.wtzw.com
+hostname = api-cfg.wtzw.com, sf3-fe-tos.pglstatp-toutiao.com, api-bc.wtzw.com, api-gw.wtzw.com, cdn.wtzw.com
