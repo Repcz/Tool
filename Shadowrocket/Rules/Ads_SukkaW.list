@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-29T03:01:41.029Z
-# Size: 115752
+# Last Updated: 2024-09-29T12:35:53.816Z
+# Size: 115755
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -30480,6 +30480,7 @@ DOMAIN-SUFFIX,mediacpm.pl
 DOMAIN-SUFFIX,mediad.asia
 DOMAIN-SUFFIX,mediadar.ru
 DOMAIN-SUFFIX,tr.mediafin.be
+DOMAIN-SUFFIX,trjs2.mediafin.be
 DOMAIN-SUFFIX,report.mediahub.vn
 DOMAIN-SUFFIX,report2.mediahub.vn
 DOMAIN-SUFFIX,smetrics.seguro.mediaset.es
@@ -64606,6 +64607,7 @@ DOMAIN-SUFFIX,lolacorded.top
 DOMAIN-SUFFIX,tracker.lolalytics.com
 DOMAIN-SUFFIX,c.lolamarket.com
 DOMAIN-SUFFIX,partneri.londonstore.cz
+DOMAIN-SUFFIX,lonelybulb.com
 DOMAIN-SUFFIX,lonerdrawn.com
 DOMAIN-SUFFIX,long-thanh.com
 DOMAIN-SUFFIX,longarctic.com
@@ -107537,6 +107539,7 @@ DOMAIN-SUFFIX,www2.mailsmartlogistics.com
 DOMAIN-SUFFIX,maintainedencircle.com
 DOMAIN-SUFFIX,maintenancewinning.com
 DOMAIN-SUFFIX,majesticwaterscape.com
+DOMAIN-SUFFIX,majesticwilderness.com
 DOMAIN-SUFFIX,malletaskewbrittle.com
 DOMAIN-SUFFIX,managesborerecords.com
 DOMAIN-SUFFIX,contact.marathon-sports-ec.com
