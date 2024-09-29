@@ -13,6 +13,7 @@
 [Rule]
 DOMAIN, abyss.cyapi.cn, REJECT
 DOMAIN, ad.cyapi.cn, REJECT
+DOMAIN, gather.colorfulclouds.net, REJECT
 
 [Rewrite]
 ^https:\/\/biz\.cyapi\.cn\/(p\/v1\/entries|p\/v1\/trial_card\/info|v2\/product) reject-dict

@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/SevenCat.png
-#!date = 2024-05-13 15:40:31
+#!date = 2024-09-29 12:36:52
 
 [Rule]
 DOMAIN, cdn-ad.wtzw.com, REJECT
@@ -17,36 +17,36 @@ DOMAIN-SUFFIX, gdt.qq.com, REJECT
 
 [Rewrite]
 # 开屏广告
-^https:\/\/api-cfg\.wtzw\.com\/v1\/splash\/ reject-dict
+^https:\/\/api-cfg\.wtzw\.com\/v\d\/splash\/ reject-dict
 # 福利中心
 # ^https:\/\/xiaoshuo\.wtzw\.com\/app-h5\/freebook\/welfare-center reject
 # 腾格尔打卡喵喵歌
 ^https:\/\/api-bc\.wtzw\.com\/api\/v4\/search\/dispose reject-dict
 # ^https:\/\/xiaoshuo\.wtzw\.com\/api\/v2\/init\/other-data reject-dict
 # 必读榜弹窗
-^https:\/\/api-bc\.wtzw\.com\/api\/v1\/book-store\/config reject-dict
+^https:\/\/api-bc\.wtzw\.com\/api\/v\d\/book-store\/config reject-dict
 # 推荐书籍弹窗
-^https:\/\/api-bc\.wtzw\.com\/api\/v1\/book-store\/push-book reject-dict
+^https:\/\/api-bc\.wtzw\.com\/api\/v\d\/book-store\/push-book reject-dict
 # 有声阅读界面广告横幅
-^https:\/\/api-bc\.wtzw\.com\/api\/v1\/operation reject-dict
+^https:\/\/api-bc\.wtzw\.com\/api\/v\d\/operation reject-dict
 # 头条广告SDK
 ^https:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ reject
 # 听书赚金币
-^https:\/\/api-gw\.wtzw\.com\/welf\/app\/v1\/task\/red-packet reject-dict
+^https:\/\/api-gw\.wtzw\.com\/welf\/app\/v\d\/task\/red-packet reject-dict
 # 正文底部推广
-^https:\/\/cdn\.wtzw\.com\/bookimg\/free\/api\/v1\/reader\/reader-copy-paragraph-all\.json reject-dict
+^https:\/\/cdn\.wtzw\.com\/bookimg\/free\/api\/v\d\/reader\/reader-copy-paragraph-all\.json reject-dict
 # 底栏提现红点
-# ^https:\/\/xiaoshuo\.wtzw\.com\/api\/v1\/user\/red-point reject
+# ^https:\/\/xiaoshuo\.wtzw\.com\/api\/v\d\/user\/red-point reject
 
 # 其他广告
-^https:\/\/api-cfg\.wtzw\.com\/v1\/reward\/ reject
-^https:\/\/api-cfg\.wtzw\.com\/v1\/adv\/ reject
-^https:\/\/api-cfg\.wtzw\.com\/v1\/offline-adv\/index reject-dict
-^https:\/\/api-cfg\.wtzw\.com\/v1\/operation\/index\?ad_personal_switch reject-dict
-# ^https:\/\/xiaoshuo\.wtzw\.com\/api\/v1\/withdraw\/init reject-dict
+^https:\/\/api-cfg\.wtzw\.com\/v\d\/reward\/ reject
+^https:\/\/api-cfg\.wtzw\.com\/v\d\/adv\/ reject
+^https:\/\/api-cfg\.wtzw\.com\/v\d\/offline-adv\/index reject-dict
+^https:\/\/api-cfg\.wtzw\.com\/v\d\/operation\/index\?ad_personal_switch reject-dict
+# ^https:\/\/xiaoshuo\.wtzw\.com\/api\/v\d\/withdraw\/init reject-dict
 
-# [Script]
-# http-response ^https:\/\/xiaoshuo\.wtzw\.com\/api\/v3\/user\/my-center script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/SevenCat/SevenCat_remove_ads.js, requires-body = true, tag = 移除广告
+# 精简我的页面
+^https:\/\/xiaoshuo\.wtzw\.com\/api\/v\d\/user\/my-center\? response-body-json-del data.func_area[1]  data.func_area[2]
 
 [MitM]
 hostname = api-cfg.wtzw.com, -xiaoshuo.wtzw.com, sf3-fe-tos.pglstatp-toutiao.com, api-bc.wtzw.com, api-gw.wtzw.com, cdn.wtzw.com
