@@ -44,7 +44,7 @@ DOMAIN, rmonitor.qq.com, REJECT
 DOMAIN, sdk.e.qq.com, REJECT
 DOMAIN, sdkconfig.video.qq.com, REJECT
 DOMAIN, t.gdt.qq.com, REJECT
-DOMAIN, tmead.y.qq.com, REJECT-NO-DROP
+DOMAIN, tmead.y.qq.com, REJECT
 DOMAIN, tmeadbak.y.qq.com, REJECT
 DOMAIN, tmeadcomm.y.qq.com, REJECT
 DOMAIN, tpns.qq.com, REJECT

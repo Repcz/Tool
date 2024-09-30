@@ -17,7 +17,7 @@ DOMAIN, mediation.adnxs.com, REJECT
 DOMAIN, sin3-ib.adnxs.com, REJECT
 
 # 小米
-DOMAIN, sdkconfig.ad.xiaomi.com, REJECT-DROP
+DOMAIN, sdkconfig.ad.xiaomi.com, REJECT
 DOMAIN, data.mistat.xiaomi.com, REJECT
 DOMAIN, tracking.intl.miui.com, REJECT
 

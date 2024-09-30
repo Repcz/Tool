@@ -20,7 +20,7 @@ DOMAIN, adclick.tencentmusic.com, REJECT
 DOMAIN, otheve.beacon.qq.com, REJECT
 DOMAIN, monitor.music.qq.com, REJECT
 DOMAIN, stat.y.qq.com, REJECT
-DOMAIN, tmead.y.qq.com, REJECT-NO-DROP
+DOMAIN, tmead.y.qq.com, REJECT
 DOMAIN, tmeadquic.y.qq.com, REJECT
 DOMAIN, oth.str.mdt.qq.com, REJECT
 DOMAIN, h.trace.qq.com, REJECT
@@ -28,7 +28,7 @@ DOMAIN, sdk.e.qq.com, REJECT
 DOMAIN, p.l.qq.com, REJECT
 DOMAIN, us.l.qq.com, REJECT
 DOMAIN, tangram.e.qq.com, REJECT
-DOMAIN, tmeadbak.y.qq.com, REJECT-NO-DROP
+DOMAIN, tmeadbak.y.qq.com, REJECT
 DOMAIN-SUFFIX, imtmp.net, REJECT
 
 # [Rewrite]

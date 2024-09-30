@@ -23,7 +23,7 @@ API.QWeather.Token = input, "", tag = [API]和风天气API令牌, desc = 填写�
 API.WAQI.Token = input, "", tag = [API]WAQI API令牌, desc = 填写此字段将自动使用WAQI高级API
 
 [Rule]
-DOMAIN, weather-analytics-events.apple.com, REJECT-DROP
+DOMAIN, weather-analytics-events.apple.com, REJECT
 
 [Script]
 http-response ^https?:\/\/weatherkit\.apple\.com\/api\/v1\/availability\/ script-path = https://github.com/NSRingo/WeatherKit/releases/latest/download/response.js, requires-body = true, tag = Availability响应处理, argument =

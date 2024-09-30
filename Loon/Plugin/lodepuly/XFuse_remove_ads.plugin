@@ -64,7 +64,7 @@ DOMAIN, otheve.beacon.qq.com, REJECT
 DOMAIN, pgdt.gtimg.cn, REJECT
 # DOMAIN, qzonestyle.gtimg.cn, REJECT // 误杀
 DOMAIN, sdk.e.qq.com, REJECT
-DOMAIN, tmead.y.qq.com, REJECT-NO-DROP
+DOMAIN, tmead.y.qq.com, REJECT
 DOMAIN, tmeadbak.y.qq.com, REJECT
 DOMAIN, tmeadcomm.y.qq.com, REJECT
 DOMAIN, tpns.qq.com, REJECT
