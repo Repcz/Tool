@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-29T20:17:37.570Z
-# Size: 115738
+# Last Updated: 2024-09-30T00:06:15.101Z
+# Size: 115696
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -14,7 +14,7 @@
 #  - https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Xiaomi-Extension.txt
 #  - https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Huawei-AdBlock.txt
 #  - https://raw.githubusercontent.com/durablenapkin/block/master/luminati.txt
-#  - https://raw.githubusercontent.com/durablenapkin/block/refs/heads/master/tvstream.txt
+#  - https://raw.githubusercontent.com/durablenapkin/block/master/tvstream.txt
 #  - https://zerodot1.gitlab.io/CoinBlockerLists/list_browser.txt
 #  - https://easylist.to/easylist/easylist.txt
 #  - https://easylist.to/easylist/easyprivacy.txt
@@ -13295,6 +13295,7 @@ DOMAIN-SUFFIX,invite-sandbox.ritual.co
 DOMAIN-SUFFIX,invite-alternate.ritual.co
 DOMAIN-SUFFIX,app.ritual.io
 DOMAIN-SUFFIX,rjno1.com
+DOMAIN-SUFFIX,rk6h3.icu
 DOMAIN-SUFFIX,rkdms.com
 DOMAIN-SUFFIX,rkomf.com
 DOMAIN-SUFFIX,rlcdn.com
@@ -20644,6 +20645,7 @@ DOMAIN-SUFFIX,mvmqos.xyz
 DOMAIN-SUFFIX,mvmzlg.xyz
 DOMAIN-SUFFIX,ma.mw-ind.com
 DOMAIN-SUFFIX,mxapis.com
+DOMAIN-SUFFIX,mxcmwk.xyz
 DOMAIN-SUFFIX,adv.mxmcdn.net
 DOMAIN-SUFFIX,marketing.mxmsig.com
 DOMAIN-SUFFIX,evt.mxplay.com
@@ -21192,6 +21194,7 @@ DOMAIN-SUFFIX,operms.com
 DOMAIN-SUFFIX,operqr.top
 DOMAIN-SUFFIX,opnbwg.com
 DOMAIN-SUFFIX,mdws.oppacu.com
+DOMAIN-SUFFIX,opqnkw.xyz
 DOMAIN-SUFFIX,oprece.xyz
 DOMAIN-SUFFIX,oprill.com
 DOMAIN-SUFFIX,opromo.com
@@ -28438,6 +28441,7 @@ DOMAIN-SUFFIX,ggzkgfe.com
 DOMAIN-SUFFIX,ggzzmm.shop
 DOMAIN-SUFFIX,asgg.ghostbin.me
 DOMAIN-SUFFIX,dog.ghvenue.com
+DOMAIN-SUFFIX,ghwqbii.icu
 DOMAIN-SUFFIX,gianwho.com
 DOMAIN-SUFFIX,gdfp.gifshow.com
 DOMAIN,log-sdk.gifshow.com
@@ -35198,6 +35202,7 @@ DOMAIN-SUFFIX,join.xlgirls.com
 DOMAIN-SUFFIX,xliirdr.com
 DOMAIN-SUFFIX,xlingdi.com
 DOMAIN-SUFFIX,xlisting.jp
+DOMAIN-SUFFIX,xliuits.icu
 DOMAIN-SUFFIX,xlivrdr.com
 DOMAIN-SUFFIX,xlnvvbk.xyz
 DOMAIN-SUFFIX,xlvirdr.com
@@ -37490,8 +37495,6 @@ DOMAIN-SUFFIX,a8clk.buyking.club
 DOMAIN-SUFFIX,buzzador.com
 DOMAIN-SUFFIX,buzzcity.net
 DOMAIN-SUFFIX,buzzdeck.com
-DOMAIN-SUFFIX,pixel.buzzfeed.com
-DOMAIN-SUFFIX,pixiedust.buzzfeed.com
 DOMAIN-SUFFIX,buzzoola.com
 DOMAIN-SUFFIX,buzzoole.com
 DOMAIN-SUFFIX,bvlbcqcg.com
@@ -39286,6 +39289,7 @@ DOMAIN-SUFFIX,fewjuice.com
 DOMAIN-SUFFIX,l.ffsagami.com
 DOMAIN-SUFFIX,fgdxwpht.com
 DOMAIN-SUFFIX,fgigrmle.xyz
+DOMAIN-SUFFIX,fgnfpnae.icu
 DOMAIN-SUFFIX,fhdd8431.com
 DOMAIN-SUFFIX,fhhwsvtl.com
 DOMAIN-SUFFIX,fhjvhupv.com
@@ -41141,6 +41145,7 @@ DOMAIN-SUFFIX,kelreesh.xyz
 DOMAIN-SUFFIX,track.education.kenschool.jp
 DOMAIN-SUFFIX,keraclya.com
 DOMAIN-SUFFIX,kergaukr.com
+DOMAIN-SUFFIX,keryt111.fun
 DOMAIN-SUFFIX,ketchapp.org
 DOMAIN-SUFFIX,global.ketchcdn.com
 DOMAIN-SUFFIX,ketlpsmt.com
@@ -47201,6 +47206,7 @@ DOMAIN-SUFFIX,yektanet.com
 DOMAIN-SUFFIX,yellowjm.com
 DOMAIN-SUFFIX,a.yellowurl.cn
 DOMAIN-SUFFIX,yepgdita.xyz
+DOMAIN-SUFFIX,yeryt111.fun
 DOMAIN-SUFFIX,milk.yesky.com.cn
 DOMAIN-SUFFIX,yespetor.com
 DOMAIN-SUFFIX,mapp.yesstyle.com
@@ -48245,54 +48251,6 @@ DOMAIN-SUFFIX,amalt-sqc.com
 DOMAIN-SUFFIX,smetrics.flex.amazon.com.au
 DOMAIN-SUFFIX,smetrics.flex.amazon.com.mx
 DOMAIN-SUFFIX,smetrics.flex.amazon.com.sg
-DOMAIN-SUFFIX,gtrk.s3.amazonaws.com
-DOMAIN-SUFFIX,adtago.s3.amazonaws.com
-DOMAIN-SUFFIX,adx1js.s3.amazonaws.com
-DOMAIN-SUFFIX,yc-ads.s3.amazonaws.com
-DOMAIN-SUFFIX,admarvel.s3.amazonaws.com
-DOMAIN-SUFFIX,nativead.s3.amazonaws.com
-DOMAIN-SUFFIX,analytics.s3.amazonaws.com
-DOMAIN-SUFFIX,connectio.s3.amazonaws.com
-DOMAIN-SUFFIX,entrecard.s3.amazonaws.com
-DOMAIN-SUFFIX,advice-ads.s3.amazonaws.com
-DOMAIN-SUFFIX,ecommstats.s3.amazonaws.com
-DOMAIN-SUFFIX,vd.emp.prd.s3.amazonaws.com
-DOMAIN-SUFFIX,xp2023-pix.s3.amazonaws.com
-DOMAIN-SUFFIX,adpublisher.s3.amazonaws.com
-DOMAIN-SUFFIX,adtechvideo.s3.amazonaws.com
-DOMAIN-SUFFIX,demandmedia.s3.amazonaws.com
-DOMAIN-SUFFIX,ltassrv.com.s3.amazonaws.com
-DOMAIN-SUFFIX,pacontainer.s3.amazonaws.com
-DOMAIN-SUFFIX,biowebb-data.s3.amazonaws.com
-DOMAIN-SUFFIX,cloudfront-labs.amazonaws.com
-DOMAIN-SUFFIX,babes-mansion.s3.amazonaws.com
-DOMAIN-SUFFIX,sprocket-ping.s3.amazonaws.com
-DOMAIN-SUFFIX,syncplusconfig.s3.amazonaws.com
-DOMAIN-SUFFIX,yieldmo-builds.s3.amazonaws.com
-DOMAIN-SUFFIX,analyticsengine.s3.amazonaws.com
-DOMAIN-SUFFIX,dackpartner-web.s3.amazonaws.com
-DOMAIN-SUFFIX,fkrkkmxsqeb5bj9r.s3.amazonaws.com
-DOMAIN-SUFFIX,seedapp-creative.s3.amazonaws.com
-DOMAIN-SUFFIX,nitrous-analytics.s3.amazonaws.com
-DOMAIN-SUFFIX,ams-pageview-public.s3.amazonaws.com
-DOMAIN-SUFFIX,vd.contents.prod.eu.s3.amazonaws.com
-DOMAIN-SUFFIX,um-public-panel-prod.s3.amazonaws.com
-DOMAIN-SUFFIX,mj-snowplow-static-js.s3.amazonaws.com
-DOMAIN-SUFFIX,cdj-dap.s3-ap-northeast-1.amazonaws.com
-DOMAIN-SUFFIX,master-shopify-tracker.s3.amazonaws.com
-DOMAIN-SUFFIX,mobileanalytics.us-east-1.amazonaws.com
-DOMAIN-SUFFIX,ec2-107-22-193-119.compute-1.amazonaws.com
-DOMAIN-SUFFIX,trafficfuelpixel.s3-us-west-2.amazonaws.com
-DOMAIN-SUFFIX,9w2zed1szg.execute-api.us-east-1.amazonaws.com
-DOMAIN-SUFFIX,d303e3cdddb4ded4b6ff495a7b496ed5.s3.amazonaws.com
-DOMAIN-SUFFIX,ec2-13-58-215-234.us-east-2.compute.amazonaws.com
-DOMAIN-SUFFIX,goshare-fleet-ads.s3.ap-southeast-1.amazonaws.com
-DOMAIN-SUFFIX,ec2-44-233-143-239.us-west-2.compute.amazonaws.com
-DOMAIN-SUFFIX,eventcollectorv2-1131000179.us-east-1.elb.amazonaws.com
-DOMAIN-SUFFIX,analytics-prod-alb-292764149.us-west-2.elb.amazonaws.com
-DOMAIN-SUFFIX,alexa-mobile-analytics-configuration-prod.s3.amazonaws.com
-DOMAIN-SUFFIX,coordinator-production-28516768.us-east-1.elb.amazonaws.com
-DOMAIN,data-mistat-india-xiaomi-com-1248219176.ap-south-1.elb.amazonaws.com
 DOMAIN-SUFFIX,amazon.amazonptj.com
 DOMAIN-SUFFIX,amazonsg.shop
 DOMAIN-SUFFIX,ambercrow.com
