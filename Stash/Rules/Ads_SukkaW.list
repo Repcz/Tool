@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-09-30T12:40:48.185Z
-# Size: 115190
+# Last Updated: 2024-09-30T17:41:21.839Z
+# Size: 115176
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -9,13 +9,13 @@
 # The domainset supports AD blocking,tracking protection,privacy protection,anti-phishing,anti-mining
 #
 # Build from:
-#  - https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt
 #  - https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt
 #  - https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Xiaomi-Extension.txt
 #  - https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Huawei-AdBlock.txt
 #  - https://raw.githubusercontent.com/durablenapkin/block/master/luminati.txt
 #  - https://raw.githubusercontent.com/durablenapkin/block/master/tvstream.txt
 #  - https://zerodot1.gitlab.io/CoinBlockerLists/list_browser.txt
+#  - https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt
 #  - https://easylist.to/easylist/easylist.txt
 #  - https://easylist.to/easylist/easyprivacy.txt
 #  - https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
@@ -25,7 +25,7 @@
 #  - https://filters.adtidy.org/extension/ublock/filters/224_optimized.txt
 #  - https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GameConsoleAdblockList.txt
 #  - https://perflyst.github.io/PiHoleBlocklist/SmartTV-AGH.txt
-#  - https://raw.githubusercontent.com/brave/adblock-lists/master/brave-lists/brave-firstparty.txt
+#  - https://ublockorigin.github.io/uAssetsCDN/filters/unbreak.min.txt
 #########################################
 DOMAIN-SUFFIX,atom-log.3.cn
 DOMAIN-SUFFIX,kzsisc.3.dk
@@ -2216,7 +2216,6 @@ DOMAIN-SUFFIX,link.tv.cbs.com
 DOMAIN-SUFFIX,mdws.cccu.ca
 DOMAIN-SUFFIX,cnstats.cdev.eu
 DOMAIN-SUFFIX,tr.n.info.cdgp.fr
-DOMAIN-SUFFIX,cdn1.su
 DOMAIN-SUFFIX,cdns.ws
 DOMAIN-SUFFIX,azuvwa.ceps.io
 DOMAIN-SUFFIX,analytics.ceu.com
@@ -31966,7 +31965,6 @@ DOMAIN-SUFFIX,qzsgudj.com
 DOMAIN-SUFFIX,qzvzluu.xyz
 DOMAIN-SUFFIX,smetrics.pdt.r-agent.com
 DOMAIN-SUFFIX,smetrics.cast.r-agent.com
-DOMAIN-SUFFIX,r202cop.xyz
 DOMAIN-SUFFIX,r8nu86wg.me
 DOMAIN-SUFFIX,a.raasnet.com
 DOMAIN-SUFFIX,p.raasnet.com
@@ -33373,7 +33371,6 @@ DOMAIN-SUFFIX,marketing.teaminx.com
 DOMAIN-SUFFIX,stat-ssl.teamroom.jp
 DOMAIN-SUFFIX,fowl.teamyap.app
 DOMAIN-SUFFIX,vjqola.teatreat.kr
-DOMAIN-SUFFIX,cmp.tech426.com
 DOMAIN-SUFFIX,as.techbook.de
 DOMAIN-SUFFIX,ast.techbook.de
 DOMAIN-SUFFIX,data-50c00d5d12.techbook.de
@@ -33893,7 +33890,6 @@ DOMAIN-SUFFIX,twinrtb.com
 DOMAIN-SUFFIX,jcaqvl.twinset.com
 DOMAIN-SUFFIX,twinsrv.com
 DOMAIN-SUFFIX,twittad.com
-DOMAIN-SUFFIX,ads-api.twitter.com
 DOMAIN-SUFFIX,ads-bidder-api.twitter.com
 DOMAIN-SUFFIX,twlmq.space
 DOMAIN-SUFFIX,twnrydt.com
@@ -39687,6 +39683,8 @@ DOMAIN-SUFFIX,filter-eu.goclickz.net
 DOMAIN-SUFFIX,xml-eu-v4.goclickz.net
 DOMAIN-SUFFIX,godloveme.cn
 DOMAIN-SUFFIX,partner.goelite.club
+DOMAIN-SUFFIX,data-434ba718f3.gofeminin.de
+DOMAIN-SUFFIX,data-5dd8125a5b.gofeminin.de
 DOMAIN-SUFFIX,gofenews.com
 DOMAIN-SUFFIX,mtzzpw.gogood.co.il
 DOMAIN-SUFFIX,gohillgo.com
@@ -46543,8 +46541,7 @@ DOMAIN-SUFFIX,wfblnkej.com
 DOMAIN-SUFFIX,wfuwlkgm.com
 DOMAIN-SUFFIX,wgidskie.top
 DOMAIN-SUFFIX,axp.wgnradio.com
-DOMAIN-SUFFIX,wpb.wgplayer.com
-DOMAIN-SUFFIX,universal.wgplayer.com
+DOMAIN-SUFFIX,wgplayer.com
 DOMAIN-SUFFIX,whachaun.net
 DOMAIN-SUFFIX,whadupsi.net
 DOMAIN-SUFFIX,whagrolt.com
@@ -47508,7 +47505,6 @@ DOMAIN-SUFFIX,smetrics.campaigns.abbott.com.sg
 DOMAIN-SUFFIX,smetrics.eticketing.abbott.com.sg
 DOMAIN-SUFFIX,smetrics.abbottgps.com
 DOMAIN-SUFFIX,abburmyer.com
-DOMAIN-SUFFIX,cpi.abcapiabc.com
 DOMAIN-SUFFIX,info.abcnorcal.org
 DOMAIN-SUFFIX,stats.abdodaoud.com
 DOMAIN-SUFFIX,abelekidr.com
@@ -49243,7 +49239,6 @@ DOMAIN-SUFFIX,coin-cube.com
 DOMAIN-SUFFIX,coin-have.com
 DOMAIN-SUFFIX,coin-hive.com
 DOMAIN-SUFFIX,coinblind.com
-DOMAIN-SUFFIX,ads.coingecko.com
 DOMAIN-SUFFIX,coinhive.info
 DOMAIN-SUFFIX,coinhiver.com
 DOMAIN-SUFFIX,coinhives.com
@@ -52771,7 +52766,6 @@ DOMAIN-SUFFIX,metalyzer.com
 DOMAIN-SUFFIX,metamask.blog
 DOMAIN-SUFFIX,e.metarouter.io
 DOMAIN-SUFFIX,observe.metarouter.io
-DOMAIN-SUFFIX,metasteal.xyz
 DOMAIN-SUFFIX,lrhyty.meteovista.be
 DOMAIN-SUFFIX,metric.methoddev.com
 DOMAIN-SUFFIX,metrics34.com
@@ -59964,9 +59958,6 @@ DOMAIN-SUFFIX,cloudflane.com
 DOMAIN-SUFFIX,tr.www.cloudflare.com
 DOMAIN-SUFFIX,data.em2.cloudflare.com
 DOMAIN-SUFFIX,csp-reporting.cloudflare.com
-DOMAIN-SUFFIX,www.supportxmr.com.cdn.cloudflare.net
-DOMAIN-SUFFIX,consent.irvinecompany.com.cdn.cloudflare.net
-DOMAIN-SUFFIX,mediaserver.gvcaffiliates.com.cdn.cloudflare.net
 DOMAIN-SUFFIX,stats.cloudflex.team
 DOMAIN-SUFFIX,cloudfrale.com
 DOMAIN-SUFFIX,d6cto2pyf2ks.cloudfront.net
@@ -61575,7 +61566,6 @@ DOMAIN-SUFFIX,bdc92feedb.ddb284b21b.com
 DOMAIN-SUFFIX,1db7ae623d.ddc1aaee63.com
 DOMAIN-SUFFIX,ddctoqpfve.com
 DOMAIN-SUFFIX,43681e8af5.dde2488558.com
-DOMAIN-SUFFIX,ddfskjdfh.site
 DOMAIN-SUFFIX,0929d40cdd.de2da13f46.com
 DOMAIN-SUFFIX,zefpks.dealdonkey.com
 DOMAIN-SUFFIX,dfanalytics.dealerfire.com
@@ -65471,7 +65461,6 @@ DOMAIN-SUFFIX,smetric.panpacific.com
 DOMAIN-SUFFIX,pantafives.com
 DOMAIN-SUFFIX,pantherads.com
 DOMAIN-SUFFIX,panyh123456.cn
-DOMAIN-SUFFIX,papeilist.pics
 DOMAIN-SUFFIX,paphoolred.com
 DOMAIN-SUFFIX,paqcpeotbx.com
 DOMAIN-SUFFIX,events.paramount.tech
@@ -66405,7 +66394,6 @@ DOMAIN-SUFFIX,sarinfalun.com
 DOMAIN-SUFFIX,sartolutus.com
 DOMAIN-SUFFIX,sascentral.com
 DOMAIN-SUFFIX,ovmrti.sassyclassy.de
-DOMAIN-SUFFIX,satanishka.fun
 DOMAIN-SUFFIX,saub27i3os.com
 DOMAIN-SUFFIX,lp.saudeifoco.com
 DOMAIN-SUFFIX,saumeechoa.com
@@ -66907,6 +66895,7 @@ DOMAIN-SUFFIX,click.email.soundhound.com
 DOMAIN-SUFFIX,soupevents.com
 DOMAIN-SUFFIX,soupoleums.com
 DOMAIN-SUFFIX,soupy-user.com
+DOMAIN-SUFFIX,sourcecode.pro
 DOMAIN-SUFFIX,a8net.sourcenext.com
 DOMAIN-SUFFIX,ogcsvq.sourcenext.com
 DOMAIN-SUFFIX,cod.southmoney.com
@@ -73119,7 +73108,6 @@ DOMAIN-SUFFIX,moontuftboy.com
 DOMAIN-SUFFIX,moonvids.online
 DOMAIN-SUFFIX,go.moosehockey.com
 DOMAIN-SUFFIX,mootermedia.com
-DOMAIN-SUFFIX,moralis-api.zip
 DOMAIN-SUFFIX,morbitempus.com
 DOMAIN-SUFFIX,morevisits.info
 DOMAIN-SUFFIX,morganbank.site
@@ -73944,7 +73932,7 @@ DOMAIN-SUFFIX,pervertmine.com
 DOMAIN-SUFFIX,s.perverttube.top
 DOMAIN-SUFFIX,peshkarties.top
 DOMAIN-SUFFIX,info.pestfree.direct
-DOMAIN-SUFFIX,query1.petametrics.com
+DOMAIN-SUFFIX,petametrics.com
 DOMAIN-SUFFIX,sheep.peterfowler.com
 DOMAIN-SUFFIX,tk.petit-bateau.be
 DOMAIN-SUFFIX,tk.petit-bateau.de
@@ -85253,7 +85241,6 @@ DOMAIN-SUFFIX,bandsaislevow.com
 DOMAIN-SUFFIX,bangrighteous.com
 DOMAIN-SUFFIX,bankingpotent.com
 DOMAIN-SUFFIX,bup.bankofamerica.com
-DOMAIN-SUFFIX,sofa.bankofamerica.com
 DOMAIN-SUFFIX,tilt.bankofamerica.com
 DOMAIN-SUFFIX,target.bankofamerica.com
 DOMAIN-SUFFIX,metrics.bankofamerica.com
@@ -85930,7 +85917,6 @@ DOMAIN-SUFFIX,companyparcel.com
 DOMAIN-SUFFIX,comparedsilas.com
 DOMAIN-SUFFIX,chat.compassshield.com
 DOMAIN-SUFFIX,compiledoctor.com
-DOMAIN-SUFFIX,compound-swap.com
 DOMAIN-SUFFIX,go.computacenter.com
 DOMAIN-SUFFIX,landing.computershare.com
 DOMAIN-SUFFIX,info.comsoft-direct.nl

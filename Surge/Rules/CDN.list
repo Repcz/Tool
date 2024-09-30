@@ -250,6 +250,7 @@ DOMAIN,cdn-forum.networklessons.com
 DOMAIN,cdn-images-1.medium.com
 DOMAIN,cdn-images.mailchimp.com
 DOMAIN,cdn-live.foreignaffairs.com
+DOMAIN,cdn-longterm.mee6.xyz
 DOMAIN,cdn-media-1.freecodecamp.org
 DOMAIN,cdn-media-2.freecodecamp.org
 DOMAIN,cdn-mobile.aptoide.com
@@ -306,6 +307,7 @@ DOMAIN,cdn.cocoapods.org
 DOMAIN,cdn.codeblackbelt.com
 DOMAIN,cdn.commento.io
 DOMAIN,cdn.concert.io
+DOMAIN,cdn.consentmanager.net
 DOMAIN,cdn.contentful.com
 DOMAIN,cdn.css.net
 DOMAIN,cdn.cxense.com
@@ -1517,6 +1519,7 @@ DOMAIN,statics-xbc-eas.xbox.com
 DOMAIN,statics.goorm.io
 DOMAIN,staticw2.yotpo.com
 DOMAIN,stats.setapp.com
+DOMAIN,stats.setapp.macpaw.dev
 DOMAIN,steamcdn-a.akamaihd.net
 DOMAIN,steamusercontent-a.akamaihd.net
 DOMAIN,steamuserimages-a.akamaihd.net
@@ -1827,6 +1830,7 @@ DOMAIN-SUFFIX,corsproxy.io
 DOMAIN-SUFFIX,crates.io
 DOMAIN-SUFFIX,crossbell.io
 DOMAIN-SUFFIX,csb.app
+DOMAIN-SUFFIX,csp-reporting.cloudflare.com
 DOMAIN-SUFFIX,csp.withgoogle.com
 DOMAIN-SUFFIX,ctfassets.net
 DOMAIN-SUFFIX,cthd.icu

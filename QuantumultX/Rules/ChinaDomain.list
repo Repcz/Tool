@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2024-09-25T17:18:49.637Z
-# Size: 773
+# Last Updated: 2024-09-30T17:41:21.896Z
+# Size: 774
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -515,6 +515,7 @@ HOST-SUFFIX,tbcache.com,DIRECT
 HOST-SUFFIX,tencent.com,DIRECT
 HOST-SUFFIX,tnkjmec.com,DIRECT
 HOST-SUFFIX,toutiao.com,DIRECT
+HOST-SUFFIX,ubnt.com.cn,DIRECT
 HOST-SUFFIX,vivo.com.cn,DIRECT
 HOST-SUFFIX,volccdn.com,DIRECT
 HOST-SUFFIX,weidian.com,DIRECT

@@ -425,16 +425,13 @@ domain_suffix_set:
 - lpl.com.cn
 - molesports.com
 - playvalorant.com
-- pvp.net
 - pvp.tv
 - rgpub.io
 - riot-games.com
 - riot.com
 - riot.net
-- riotcdn.net
 - riotforgegames.com
 - riotgames.co.kr
-- riotgames.com
 - riotgames.info
 - riotgames.jp
 - riotgames.net
@@ -496,6 +493,9 @@ domain_suffix_set:
 - ubisoft-uplay-savegames.s3.amazonaws.com
 - ubisoft.com
 - uplay.com
+- pvp.net
+- riotcdn.net
+- riotgames.com
 - beth.games
 - bethesda.net
 - bethesdagamestudios.com
@@ -546,6 +546,7 @@ ip_cidr_set:
 - 210.242.235.6/32
 - 54.94.196.47/32
 - 182.162.132.1/32
+- 185.60.112.158/32
 - 182.162.116.1/32
 - 202.9.67.59/32
 - 203.69.111.4/32
@@ -559,7 +560,6 @@ ip_cidr_set:
 - 24.105.62.129/32
 - 54.207.107.12/32
 - 103.4.114.233/32
-- 185.60.112.158/32
 - 202.9.67.254/32
 - 222.231.22.1/32
 - 13.210.25.233/32

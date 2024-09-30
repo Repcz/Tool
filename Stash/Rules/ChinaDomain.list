@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2024-09-25T17:18:49.637Z
-# Size: 773
+# Last Updated: 2024-09-30T17:41:21.896Z
+# Size: 774
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -515,6 +515,7 @@ DOMAIN-SUFFIX,tbcache.com
 DOMAIN-SUFFIX,tencent.com
 DOMAIN-SUFFIX,tnkjmec.com
 DOMAIN-SUFFIX,toutiao.com
+DOMAIN-SUFFIX,ubnt.com.cn
 DOMAIN-SUFFIX,vivo.com.cn
 DOMAIN-SUFFIX,volccdn.com
 DOMAIN-SUFFIX,weidian.com
