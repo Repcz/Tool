@@ -7,7 +7,7 @@
 #
 # Mihomo Version ≥ 1.8.4
 #
-# 最后更新时间: 2024-09-28 22:50
+# 最后更新时间: 2024-10-01 11:21
 #
 # ================
 
@@ -20,6 +20,8 @@ proxy-providers:
       #additional-prefix: "节点前缀"
       #additional-suffix: "节点后缀"
   #Subscribe2: {url: http://your-service-provider, <<: *p}
+  #Subscribe3: {url: http://your-service-provider, <<: *p}
+  #Subscribe4: {url: http://your-service-provider, <<: *p}
 
 mixed-port: 7893
 tcp-concurrent: true
