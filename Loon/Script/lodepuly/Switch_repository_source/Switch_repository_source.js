@@ -1,10 +1,10 @@
 /*
 Loon专用
-2024-04-21 01:29:51
+2024-10-01 23:40:54
 */
 let githubPrefix = "https://raw.githubusercontent.com/luestr/ProxyResource/main"
 let gitlabPrefix = "https://gitlab.com/lodepuly/vpn_tool/-/raw/master"
-let gitbucketPrefix = "https://bitbucket.org/luestr/proxyresource/raw/main"
+let giteaPrefix = "https://gitea.com/latick/ProxyResource/raw/branch/main/"
 
 //1: gitbucket 2.gitlab 3.github
 let changeTo = $persistentStore.read("仓库源")
@@ -14,8 +14,8 @@ var headers = $request.headers
 delete headers.host
 delete headers.Host
 
-if (changeTo == "Bitbucket - 四网直连") {
-    headers["host"] = "bitbucket.org"
+if (changeTo == "Gitea - 四网直连") {
+    headers["host"] = "gitea.com"
 } else if (changeTo == "GitLab - 电信联通直连") {
     headers["host"] = "gitlab.com"
 } else if (changeTo == "GitHub - 访问不畅") {
@@ -23,22 +23,22 @@ if (changeTo == "Bitbucket - 四网直连") {
 }
 
 if (url.startsWith(githubPrefix)) {
-    if (changeTo == "Bitbucket - 四网直连") {
-        url = url.replace(githubPrefix,gitbucketPrefix)
+    if (changeTo == "Gitea - 四网直连") {
+        url = url.replace(githubPrefix,giteaPrefix)
     } else if (changeTo == "GitLab - 电信联通直连") {
         url = url.replace(githubPrefix,gitlabPrefix)
     }
 } else if (url.startsWith(gitlabPrefix)) {
-    if (changeTo == "Bitbucket - 四网直连") {
-        url = url.replace(gitlabPrefix,gitbucketPrefix)
+    if (changeTo == "Gitea - 四网直连") {
+        url = url.replace(gitlabPrefix,giteaPrefix)
     } else if (changeTo == "GitHub - 访问不畅") {
         url = url.replace(gitlabPrefix,githubPrefix)
     }
-} else if (url.startsWith(gitbucketPrefix)) {
+} else if (url.startsWith(giteaPrefix)) {
     if (changeTo == "GitLab - 电信联通直连") {
-        url = url.replace(gitbucketPrefix,gitlabPrefix)
+        url = url.replace(giteaPrefix,gitlabPrefix)
     } else if (changeTo == "GitHub - 访问不畅") {
-        url = url.replace(gitbucketPrefix,githubPrefix)
+        url = url.replace(giteaPrefix,githubPrefix)
     }
 }
 
