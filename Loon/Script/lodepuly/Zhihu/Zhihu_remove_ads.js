@@ -1,7 +1,7 @@
 /*
 引用地址https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/zhihu.js
 */
-// 2024-07-29 16:15
+// 2024-10-02 13:00
 
 if (!$response.body) $done({});
 const url = $request.url;
@@ -12,23 +12,24 @@ if (url.includes("/answers/v2/") || url.includes("/articles/v2/")) {
   if (obj?.third_business?.related_queries?.queries?.length > 0) {
     obj.third_business.related_queries.queries = [];
   }
-} else if (url.includes("/api/cloud/config/all")) {
-  if (obj?.data?.configs) {
-    obj.data.configs.forEach((i) => {
-      if (i.configKey === "feed_gray_theme") {
-        if (i.configValue) {
-          i.configValue.start_time = "3818332800"; // Unix 时间戳 2090-12-31 00:00:00
-          i.configValue.end_time = "3818419199"; // Unix 时间戳 2090-12-31 23:59:59
+} else if (url.includes("/api/cloud/zhihu/config/all")) {
+  // 全局配置
+  if (obj?.data?.configs?.length > 0) {
+    for (let i of obj.data.configs) {
+      if (i?.configKey === "feed_gray_theme") {
+        if (i?.configValue) {
+          i.configValue.start_time = 3818332800; // Unix 时间戳 2090-12-31 00:00:00
+          i.configValue.end_time = 3818419199; // Unix 时间戳 2090-12-31 23:59:59
           i.status = false;
         }
-      } else if (i.configKey === "feed_top_res") {
-        if (i.configValue) {
-          i.configValue.start_time = "3818332800"; // Unix 时间戳 2090-12-31 00:00:00
-          i.configValue.end_time = "3818419199"; // Unix 时间戳 2090-12-31 23:59:59
-          i.status = false;
+      } else if (i?.configKey === "feed_top_res") {
+        // 首页顶部背景图
+        if (i?.configValue) {
+          i.configValue.start_time = 3818332800; // Unix 时间戳 2090-12-31 00:00:00
+          i.configValue.end_time = 3818419199; // Unix 时间戳 2090-12-31 23:59:59
         }
       }
-    });
+    }
   }
 } else if (url.includes("/api/v4/answers")) {
   if (obj?.data) {
@@ -95,9 +96,9 @@ if (url.includes("/answers/v2/") || url.includes("/articles/v2/")) {
     delete obj;
   }
 } else if (url.includes("/feed/render/tab/config")) {
+  // 首页二级标签 白名单 live直播 edu人工智能AI
   if (obj?.selected_sections?.length > 0) {
-    // 首页顶部tab
-    obj.selected_sections = obj.selected_sections.filter((i) => !["activity", "live"]?.includes(i?.tab_type));
+    obj.selected_sections = obj.selected_sections.filter((i) => ["recommend", "section"]?.includes(i?.tab_type));
   }
 } else if (url.includes("/moments_v3")) {
   if (obj?.data?.length > 0) {
@@ -148,9 +149,9 @@ if (url.includes("/answers/v2/") || url.includes("/articles/v2/")) {
     delete obj.query_info;
   }
 } else if (url.includes("/root/tab")) {
-  // 首页顶部标签页
+  // 首页一级标签 白名单
   if (obj?.tab_list?.length > 0) {
-    obj.tab_list = obj.tab_list.filter((i) => !["故事", "活动", "想法"]?.includes(i?.tab_name));
+    obj.tab_list = obj.tab_list.filter((i) => ["follow", "hot", "recommend"]?.includes(i?.tab_type));
   }
 } else if (url.includes("/topstory/hot-lists/everyone-seeing")) {
   // 热榜信息流
