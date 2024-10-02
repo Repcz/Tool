@@ -12,6 +12,7 @@ DOMAIN,account-cdn.svc.ui.com
 DOMAIN,accounts-cdn.9gag.com
 DOMAIN,adkit.9pub.io
 DOMAIN,aff.equalweb.com
+DOMAIN,agi.armorgames.com
 DOMAIN,aimg.fc2.com
 DOMAIN,ajax.cat.net
 DOMAIN,ajax.cdnjs.com
@@ -235,6 +236,8 @@ DOMAIN,c0.wp.com
 DOMAIN,ca.nfs.pub
 DOMAIN,cacerts.digicert.com
 DOMAIN,cache-05.filehippo.net
+DOMAIN,cache.armorgames.com
+DOMAIN,cache.hackedfreegames.com
 DOMAIN,cdn-1.ggjav.com
 DOMAIN,cdn-a.sonyentertainmentnetwork.com
 DOMAIN,cdn-app.pathfactory.com
@@ -293,6 +296,7 @@ DOMAIN,cdn.britannica.com
 DOMAIN,cdn.bsky.social
 DOMAIN,cdn.builder.io
 DOMAIN,cdn.calibermind.com
+DOMAIN,cdn.cameo.com
 DOMAIN,cdn.ceres9350.com
 DOMAIN,cdn.channel.io
 DOMAIN,cdn.chess24.com
@@ -412,6 +416,7 @@ DOMAIN,cdn.pixabay.com
 DOMAIN,cdn.pkg.svc.ui.com
 DOMAIN,cdn.plaid.com
 DOMAIN,cdn.player.fm
+DOMAIN,cdn.playwire.com
 DOMAIN,cdn.plot.ly
 DOMAIN,cdn.plu.mx
 DOMAIN,cdn.plyr.io
@@ -914,6 +919,7 @@ DOMAIN,int.mwbbiz.com
 DOMAIN,int.qiniuyun15.xyz
 DOMAIN,interactive-examples.mdn.mozilla.net
 DOMAIN,interactive.guim.co.uk
+DOMAIN,ip-ranges.amazonaws.com
 DOMAIN,ipfs.d.tube
 DOMAIN,irp-cdn.multiscreensite.com
 DOMAIN,j.udn.com.tw
@@ -1029,6 +1035,8 @@ DOMAIN,mixin-images.zeromesh.net
 DOMAIN,mkt-site-asset.crypto.com
 DOMAIN,mobilecenter.azureedge.net
 DOMAIN,momentjs.com
+DOMAIN,mosaic-blender.fxtwitter.com
+DOMAIN,mosaic.fxtwitter.com
 DOMAIN,mparticle.weather.com
 DOMAIN,mstdn-s3.o3o.studio
 DOMAIN,mui.com
@@ -1160,6 +1168,7 @@ DOMAIN,proxy.golang.org
 DOMAIN,proxy.joinmastodon.org
 DOMAIN,ps.w.org
 DOMAIN,public-assets.typeform.com
+DOMAIN,public-cdn.bblmw.com
 DOMAIN,public-files.gumroad.com
 DOMAIN,public-pages.cbinsights.com
 DOMAIN,public.flourish.studio
@@ -1655,6 +1664,7 @@ DOMAIN,widget.freshworks.com
 DOMAIN,widget.intercom.io
 DOMAIN,widget.trustpilot.com
 DOMAIN,widget.user.com
+DOMAIN,widget.usersnap.com
 DOMAIN,widget.uservoice.com
 DOMAIN,widgets-red.media.weather.com
 DOMAIN,widgets.media.weather.com
