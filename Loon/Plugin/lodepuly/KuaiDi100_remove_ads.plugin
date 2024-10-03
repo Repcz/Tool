@@ -23,9 +23,9 @@ AND, ((DOMAIN-KEYWORD, sf), (DOMAIN-KEYWORD, -be-pack.pglstatp-toutiao.com)), RE
 AND, ((DOMAIN-KEYWORD, s), (DOMAIN-KEYWORD, -fe-scm.pglstatp-toutiao.com)), REJECT
 AND, ((DOMAIN-KEYWORD, sf), (DOMAIN-KEYWORD, -ttcdn-tos.pstatp.com)), REJECT
 # AND, ((DOMAIN-KEYWORD, p), (DOMAIN-KEYWORD, -be-pack-sign.pglstatp-toutiao.com)), REJECT // 被更精细的规则替代
-# AND, ((DOMAIN-KEYWORD, sf), (DOMAIN-KEYWORD, -fe-tos.pglstatp-toutiao.com)), REJECT // 被复写替代
+AND, ((DOMAIN-KEYWORD, sf), (DOMAIN-KEYWORD, -fe-tos.pglstatp-toutiao.com)), REJECT
 AND, ((DOMAIN-KEYWORD, sf), (DOMAIN-KEYWORD, -static.i18n-pglstatp.com)), REJECT
-# AND, ((DOMAIN-KEYWORD, if), (DOMAIN-KEYWORD, -cdn-tos.bytescm.com)), REJECT //误杀
+AND, ((DOMAIN-KEYWORD, if), (DOMAIN-KEYWORD, -cdn-tos.bytescm.com)), REJECT //误杀
 AND, ((DOMAIN-KEYWORD, if), (DOMAIN-KEYWORD, -analytics.bytescm.com)), REJECT
 AND, ((DOMAIN-KEYWORD, lf), (DOMAIN-KEYWORD, -analytics.bytescm.com)), REJECT
 AND, ((DOMAIN-KEYWORD, lf), (DOMAIN-KEYWORD, -analytics.bytescm.com)), REJECT
@@ -55,6 +55,7 @@ DOMAIN, toblog.ctobsnssdk.com, REJECT
 DOMAIN, mssdk.volces.com, REJECT
 DOMAIN, pangolin.snssdk.com, REJECT
 DOMAIN, gromore.pangolin-sdk-toutiao.com, REJECT
+DOMAIN, ether-pack.pangolin-sdk-toutiao.com, REJECT
 DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT
 DOMAIN-KEYWORD, api-access.pangolin-sdk-toutiao, REJECT
 DOMAIN-KEYWORD, log-api.pangolin-sdk-toutiao, REJECT
@@ -193,12 +194,6 @@ DOMAIN-SUFFIX, lnk0.com, REJECT
 ^https?:\/\/p\.kuaidi100\.com\/e-commerce\/act\/actInfo\? reject-dict
 ^https?:\/\/p\.kuaidi100\.com\/apicenter\/card\.dox reject-dict
 
-# 字节跳动广告
-^https:\/\/ether-pack\.pangolin-sdk-toutiao\.com\/union\/endcard\/ reject
-^https:\/\/api-access\.pangolin-sdk-toutiao(\d|-[a-z])?\.com\/api\/ad\/ reject
-^https:\/\/sf\d+-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ reject
-^https:\/\/lf-cdn-tos\.bytescm\.com\/obj\/static\/ad\/ reject
-
 # 拼多多广告平台
 ^https:\/\/video-dsp\.pddpic\.com\/market-dsp-video\/ reject
 ^https:\/\/t-dsp\.pinduoduo\.com\/dspcb\/i\/mrk_union reject
@@ -206,4 +201,4 @@ DOMAIN-SUFFIX, lnk0.com, REJECT
 ^https:\/\/images\.pinduoduo\.com\/marketing_api\/ reject
 
 [MitM]
-hostname = p.kuaidi100.com, ether-pack.pangolin-sdk-toutiao.com, sf*-fe-tos.pglstatp-toutiao.com, lf-cdn-tos.bytescm.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com
+hostname = p.kuaidi100.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com

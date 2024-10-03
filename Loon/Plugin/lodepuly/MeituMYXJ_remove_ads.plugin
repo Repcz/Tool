@@ -26,9 +26,9 @@ AND, ((DOMAIN-KEYWORD, sf), (DOMAIN-KEYWORD, -be-pack.pglstatp-toutiao.com)), RE
 AND, ((DOMAIN-KEYWORD, s), (DOMAIN-KEYWORD, -fe-scm.pglstatp-toutiao.com)), REJECT
 AND, ((DOMAIN-KEYWORD, sf), (DOMAIN-KEYWORD, -ttcdn-tos.pstatp.com)), REJECT
 # AND, ((DOMAIN-KEYWORD, p), (DOMAIN-KEYWORD, -be-pack-sign.pglstatp-toutiao.com)), REJECT // 被更精细的规则替代
-# AND, ((DOMAIN-KEYWORD, sf), (DOMAIN-KEYWORD, -fe-tos.pglstatp-toutiao.com)), REJECT // 被复写替代
+AND, ((DOMAIN-KEYWORD, sf), (DOMAIN-KEYWORD, -fe-tos.pglstatp-toutiao.com)), REJECT
 AND, ((DOMAIN-KEYWORD, sf), (DOMAIN-KEYWORD, -static.i18n-pglstatp.com)), REJECT
-# AND, ((DOMAIN-KEYWORD, if), (DOMAIN-KEYWORD, -cdn-tos.bytescm.com)), REJECT //误杀
+AND, ((DOMAIN-KEYWORD, if), (DOMAIN-KEYWORD, -cdn-tos.bytescm.com)), REJECT //误杀
 AND, ((DOMAIN-KEYWORD, if), (DOMAIN-KEYWORD, -analytics.bytescm.com)), REJECT
 AND, ((DOMAIN-KEYWORD, lf), (DOMAIN-KEYWORD, -analytics.bytescm.com)), REJECT
 AND, ((DOMAIN-KEYWORD, lf), (DOMAIN-KEYWORD, -analytics.bytescm.com)), REJECT
@@ -58,6 +58,7 @@ DOMAIN, toblog.ctobsnssdk.com, REJECT
 DOMAIN, mssdk.volces.com, REJECT
 DOMAIN, pangolin.snssdk.com, REJECT
 DOMAIN, gromore.pangolin-sdk-toutiao.com, REJECT
+DOMAIN, ether-pack.pangolin-sdk-toutiao.com, REJECT
 DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT
 DOMAIN-KEYWORD, api-access.pangolin-sdk-toutiao, REJECT
 DOMAIN-KEYWORD, log-api.pangolin-sdk-toutiao, REJECT
@@ -140,12 +141,6 @@ DOMAIN, da.mosspf.com, REJECT
 ^https:\/\/api\.meiyan\.com\/operation\/get_config\.json\? response-body-json-del response.time_limit response.bubble response.person_center
 ^https:\/\/api\.meiyan\.com\/operation\/get_config\.json\? response-body-json-replace response.function_pop.meiyan_style.is_pop false response.onoff.vip_half_window_exit_remain_popup.open 0 response.onoff.vip_home_exit_remain_popup 0
 
-# 字节跳动广告
-^https:\/\/ether-pack\.pangolin-sdk-toutiao\.com\/union\/endcard\/ reject
-^https:\/\/api-access\.pangolin-sdk-toutiao(\d|-[a-z])?\.com\/api\/ad\/ reject
-^https:\/\/sf\d+-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ reject
-^https:\/\/lf-cdn-tos\.bytescm\.com\/obj\/static\/ad\/ reject
-
 # 拼多多广告平台
 ^https:\/\/video-dsp\.pddpic\.com\/market-dsp-video\/ reject
 ^https:\/\/t-dsp\.pinduoduo\.com\/dspcb\/i\/mrk_union reject
@@ -157,4 +152,4 @@ DOMAIN, da.mosspf.com, REJECT
 http-response ^https:\/\/api\.meiyan\.com\/operation\/home\.json\? script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/MeituMYXJ/MeituMYXJ_remove_ads.js, requires-body = true, tag = 精简首页功能栏目并移除美颜推荐
 
 [MitM]
-hostname = api.meiyan.com, ether-pack.pangolin-sdk-toutiao.com, sf*-fe-tos.pglstatp-toutiao.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com
+hostname = api.meiyan.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com

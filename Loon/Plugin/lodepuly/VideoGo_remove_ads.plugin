@@ -26,9 +26,9 @@ AND, ((DOMAIN-KEYWORD, sf), (DOMAIN-KEYWORD, -be-pack.pglstatp-toutiao.com)), RE
 AND, ((DOMAIN-KEYWORD, s), (DOMAIN-KEYWORD, -fe-scm.pglstatp-toutiao.com)), REJECT
 AND, ((DOMAIN-KEYWORD, sf), (DOMAIN-KEYWORD, -ttcdn-tos.pstatp.com)), REJECT
 # AND, ((DOMAIN-KEYWORD, p), (DOMAIN-KEYWORD, -be-pack-sign.pglstatp-toutiao.com)), REJECT // 被更精细的规则替代
-# AND, ((DOMAIN-KEYWORD, sf), (DOMAIN-KEYWORD, -fe-tos.pglstatp-toutiao.com)), REJECT // 被复写替代
+AND, ((DOMAIN-KEYWORD, sf), (DOMAIN-KEYWORD, -fe-tos.pglstatp-toutiao.com)), REJECT
 AND, ((DOMAIN-KEYWORD, sf), (DOMAIN-KEYWORD, -static.i18n-pglstatp.com)), REJECT
-# AND, ((DOMAIN-KEYWORD, if), (DOMAIN-KEYWORD, -cdn-tos.bytescm.com)), REJECT //误杀
+AND, ((DOMAIN-KEYWORD, if), (DOMAIN-KEYWORD, -cdn-tos.bytescm.com)), REJECT //误杀
 AND, ((DOMAIN-KEYWORD, if), (DOMAIN-KEYWORD, -analytics.bytescm.com)), REJECT
 AND, ((DOMAIN-KEYWORD, lf), (DOMAIN-KEYWORD, -analytics.bytescm.com)), REJECT
 AND, ((DOMAIN-KEYWORD, lf), (DOMAIN-KEYWORD, -analytics.bytescm.com)), REJECT
@@ -58,6 +58,7 @@ DOMAIN, toblog.ctobsnssdk.com, REJECT
 DOMAIN, mssdk.volces.com, REJECT
 DOMAIN, pangolin.snssdk.com, REJECT
 DOMAIN, gromore.pangolin-sdk-toutiao.com, REJECT
+DOMAIN, ether-pack.pangolin-sdk-toutiao.com, REJECT
 DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT
 DOMAIN-KEYWORD, api-access.pangolin-sdk-toutiao, REJECT
 DOMAIN-KEYWORD, log-api.pangolin-sdk-toutiao, REJECT
@@ -110,14 +111,8 @@ DOMAIN-SUFFIX, pos.baidu.com, REJECT
 # 天气视频
 ^https:\/\/api\.ys7\.com\/v3\/videoclips\/square\/video\/query reject-dict
 
-# 字节跳动广告
-^https:\/\/ether-pack\.pangolin-sdk-toutiao\.com\/union\/endcard\/ reject
-^https:\/\/api-access\.pangolin-sdk-toutiao(\d|-[a-z])?\.com\/api\/ad\/ reject
-^https:\/\/sf\d+-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ reject
-^https:\/\/lf-cdn-tos\.bytescm\.com\/obj\/static\/ad\/ reject
-
 [Script]
 # http-response ^https:\/\/api\.ys7\.com\/v3\/valueadded\/operation\/config\/master\/station script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/VideoGo/VideoGo_remove_ads.js, requires-body = true, tag = 我的页面去广告
 
 [MitM]
-hostname = api.ys7.com, i.ys7.com, ether-pack.pangolin-sdk-toutiao.com, sf*-fe-tos.pglstatp-toutiao.com, lf-cdn-tos.bytescm.com
+hostname = api.ys7.com, i.ys7.com
