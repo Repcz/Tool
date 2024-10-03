@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(749)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/MailMaster.png
-#!date = 2024-10-03 23:14:29
+#!date = 2024-10-04 03:32:32
 
 [Rule]
 # 拦截HTTPDNS
@@ -132,12 +132,23 @@ DOMAIN, v2.gdt.qq.com, REJECT
 DOMAIN, win.gdt.qq.com, REJECT
 DOMAIN, wup.imtt.qq.com, REJECT
 DOMAIN, tpstelemetry.tencent.com, REJECT
+DOMAIN, ii.gdt.qq.com, REJECT
 DOMAIN-KEYWORD, trace.qq.com, REJECT
 DOMAIN-KEYWORD, trace.video.qq.com, REJECT
 DOMAIN-SUFFIX, gdt.qq.com, REJECT
 DOMAIN-SUFFIX, l.qq.com, REJECT
 DOMAIN-SUFFIX, ugdtimg.com, REJECT
 IP-CIDR, 47.110.187.87/32, REJECT, no-resolve
+
+# 阿里巴巴
+DOMAIN, ossgw.alicdn.com, REJECT
+DOMAIN, ems.youku.com, REJECT
+DOMAIN, hudong.alicdn.com, REJECT
+DOMAIN, et.tanx.com, REJECT
+DOMAIN, beacon-api.aliyuncs.com, REJECT
+DOMAIN, adash.man.aliyuncs.com, REJECT
+DOMAIN, applog.uc.cn, REJECT
+AND, ((DOMAIN-KEYWORD, adash), (DOMAIN-SUFFIX, ut.taobao.com)), REJECT
 
 # 网易
 DOMAIN, nex.163.com, REJECT
@@ -169,6 +180,10 @@ DOMAIN, da.toponadss.com, REJECT
 DOMAIN, tk.toponadss.com, REJECT
 DOMAIN, adx-os.toponadss.com, REJECT
 
+# 塔酷信息
+DOMAIN, mores.motowoo.com, REJECT
+DOMAIN-SUFFIX, motowoo.com, REJECT
+
 # 快手联盟 - 广告服务商
 DOMAIN, gdfp.gifshow.com, REJECT
 DOMAIN, open.e.kuaishou.com, REJECT
@@ -189,6 +204,14 @@ DOMAIN, caid.adintl.cn, REJECT
 DOMAIN, sv.adintl.cn, REJECT
 DOMAIN, v.adintl.cn, REJECT
 DOMAIN, oss.cdn.adintl.cn, REJECT
+
+# 布里奇信息科技有限公司
+DOMAIN, tk.bridgeoos.com, REJECT
+DOMAIN, da.bridgeoos.com, REJECT
+DOMAIN, api.bridgeoos.com, REJECT
+DOMAIN, adx-os.bridgeoos.com, REJECT
+DOMAIN, adx-sg-req.bridgeoos.com, REJECT
+DOMAIN-SUFFIX, bridgeoos.com, REJECT
 
 [Rewrite]
 # 拦截HTTPDNS
