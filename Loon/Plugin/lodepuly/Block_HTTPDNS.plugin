@@ -19,7 +19,7 @@ DOMAIN, httpdns-v6.gslb.yy.com, REJECT
 # 虎牙
 URL-REGEX, ^http:\/\/cdn\.wup\.huya\.com\/launch\/queryHttpDns, REJECT
 
-# 抖音
+# 字节跳动
 AND, ((DOMAIN-KEYWORD, api100-core-quic-), (DOMAIN-SUFFIX, amemv.com)), REJECT
 AND, ((DOMAIN-KEYWORD, api100-normal-quic-), (DOMAIN-SUFFIX, amemv.com)), REJECT
 AND, ((DOMAIN-KEYWORD, api100-normal-quic-aweme-), (DOMAIN-SUFFIX, amemv.com)), REJECT
