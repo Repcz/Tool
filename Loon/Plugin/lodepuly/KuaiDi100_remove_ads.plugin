@@ -56,7 +56,7 @@ DOMAIN, mssdk.volces.com, REJECT
 DOMAIN, pangolin.snssdk.com, REJECT
 DOMAIN, gromore.pangolin-sdk-toutiao.com, REJECT
 DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT
-# DOMAIN-KEYWORD, api-access.pangolin-sdk-toutiao, REJECT // 被复写替代
+DOMAIN-KEYWORD, api-access.pangolin-sdk-toutiao, REJECT
 DOMAIN-KEYWORD, log-api.pangolin-sdk-toutiao, REJECT
 DOMAIN-KEYWORD, -ad.byteoversea.com, REJECT
 DOMAIN-KEYWORD, video-cn.snssdk.com, REJECT
@@ -206,4 +206,4 @@ DOMAIN-SUFFIX, lnk0.com, REJECT
 ^https:\/\/images\.pinduoduo\.com\/marketing_api\/ reject
 
 [MitM]
-hostname = p.kuaidi100.com, ether-pack.pangolin-sdk-toutiao.com, api-access.pangolin-sdk-toutiao*.com, sf*-fe-tos.pglstatp-toutiao.com, lf-cdn-tos.bytescm.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com
+hostname = p.kuaidi100.com, ether-pack.pangolin-sdk-toutiao.com, sf*-fe-tos.pglstatp-toutiao.com, lf-cdn-tos.bytescm.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com

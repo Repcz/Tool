@@ -56,7 +56,7 @@ DOMAIN, mssdk.volces.com, REJECT
 DOMAIN, pangolin.snssdk.com, REJECT
 DOMAIN, gromore.pangolin-sdk-toutiao.com, REJECT
 DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT
-# DOMAIN-KEYWORD, api-access.pangolin-sdk-toutiao, REJECT // 被复写替代
+DOMAIN-KEYWORD, api-access.pangolin-sdk-toutiao, REJECT
 DOMAIN-KEYWORD, log-api.pangolin-sdk-toutiao, REJECT
 DOMAIN-KEYWORD, -ad.byteoversea.com, REJECT
 DOMAIN-KEYWORD, video-cn.snssdk.com, REJECT
@@ -86,4 +86,4 @@ http-response ^https:\/\/api(5-lq)?\.pipix\.com\/bds\/feed\/stream\/v2\/ script-
 http-response ^https:\/\/api(5-lq)?\.pipix\.com\/bds\/user\/check_in\/ script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/PiPiXia/PiPiXia_remove_ads.js, requires-body = true, tag = 精简我的页面
 
 [MitM]
-hostname = api.pipix.com, api5-lq.pipix.com, ether-pack.pangolin-sdk-toutiao.com, api-access.pangolin-sdk-toutiao*.com, sf*-fe-tos.pglstatp-toutiao.com
+hostname = api.pipix.com, api5-lq.pipix.com, ether-pack.pangolin-sdk-toutiao.com, sf*-fe-tos.pglstatp-toutiao.com

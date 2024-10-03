@@ -56,7 +56,7 @@ DOMAIN, mssdk.volces.com, REJECT
 DOMAIN, pangolin.snssdk.com, REJECT
 DOMAIN, gromore.pangolin-sdk-toutiao.com, REJECT
 DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT
-# DOMAIN-KEYWORD, api-access.pangolin-sdk-toutiao, REJECT // 被复写替代
+DOMAIN-KEYWORD, api-access.pangolin-sdk-toutiao, REJECT
 DOMAIN-KEYWORD, log-api.pangolin-sdk-toutiao, REJECT
 DOMAIN-KEYWORD, -ad.byteoversea.com, REJECT
 DOMAIN-KEYWORD, video-cn.snssdk.com, REJECT
@@ -332,7 +332,6 @@ DOMAIN-SUFFIX, lnk0.com, REJECT
 [Rewrite]
 # 字节跳动广告
 ^https:\/\/ether-pack\.pangolin-sdk-toutiao\.com\/union\/endcard\/ reject
-^https:\/\/api-access\.pangolin-sdk-toutiao(\d|-[a-z])?\.com\/api\/ad\/ reject
 ^https:\/\/sf\d+-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ reject
 ^https:\/\/lf-cdn-tos\.bytescm\.com\/obj\/static\/ad\/ reject
 
@@ -345,4 +344,4 @@ DOMAIN-SUFFIX, lnk0.com, REJECT
 [Script]
 
 [MitM]
-hostname = ether-pack.pangolin-sdk-toutiao.com, api-access.pangolin-sdk-toutiao*.com, sf*-fe-tos.pglstatp-toutiao.com, lf-cdn-tos.bytescm.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com
+hostname = ether-pack.pangolin-sdk-toutiao.com, sf*-fe-tos.pglstatp-toutiao.com, lf-cdn-tos.bytescm.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com
