@@ -1,7 +1,7 @@
 /*
-引用地址：https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/weibo.js
+引用地址：https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/weibo.js
 */
-// 2024-10-02 11:15
+// 2024-10-04 15:10
 
 const url = $request.url;
 if (!$response) $done({});
@@ -154,8 +154,8 @@ if (url.includes("/interface/sdk/sdkad.php")) {
             if (item?.data?.vip_button) {
               delete item.data.vip_button;
             }
-            // 6为你推荐更多精彩内容 15过滤提示
-            if (item?.type === 6 || item?.type === 15) {
+            // 6为你推荐更多精彩内容 15过滤提示 41评论区氛围调查
+            if (item?.type === 6 || item?.type === 15 || item?.type === 41) {
               continue;
             }
             if (item?.adType === "相关内容" || item?.adType === "相关评论" || item?.adType === "推荐") {
@@ -649,18 +649,8 @@ if (url.includes("/interface/sdk/sdkad.php")) {
     }
   } else if (url.includes("/2/push/active")) {
     // 禁用所有的悬浮窗
-    // if (obj?.disable_floating_window) {
-    //   obj.disable_floating_window = "1";
-    // }
-    // 首页右上角红包图标
-    if (obj?.feed_redpacket) {
-      obj.feed_redpacket.starttime = "2208960000";
-      obj.feed_redpacket.interval = "31536000";
-      obj.feed_redpacket.endtime = "2209046399";
-      delete obj.feed_redpacket.finish_icon;
-      delete obj.feed_redpacket.guide;
-      delete obj.feed_redpacket.icon;
-      delete obj.feed_redpacket.pre_icon;
+    if (obj?.disable_floating_window) {
+      obj.disable_floating_window = "1";
     }
     if (obj?.floating_window_for_live_streaming) {
       obj.floating_window_for_live_streaming = false;
@@ -669,9 +659,10 @@ if (url.includes("/interface/sdk/sdkad.php")) {
       obj.floating_window_show_interval = 31536000;
     }
     if (obj?.floating_windows?.length > 0) {
-      obj.floating_windows = obj.floating_windows.filter((i) => !/(?:^ad_?|red_pocket)/.test(i?.subtype));
+      obj.floating_windows = obj.floating_windows.filter((i) => !/(?:^ad_?|red_pocket|ug_high_priority)/.test(i?.subtype));
     }
     delete obj.compose_add_guide; // 过期的情人节红包
+    delete obj.feed_redpacket; // 首页右上角红包图标
     delete obj.floating_windows_force_show; // 强制展示的悬浮窗
     delete obj.loginconfig; // 登录领红包
     delete obj.profile_lotties; // 个人主页头像挂件素材
