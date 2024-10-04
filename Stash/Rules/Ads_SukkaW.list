@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-10-04T19:35:37.165Z
-# Size: 115415
+# Last Updated: 2024-10-04T20:47:04.579Z
+# Size: 115417
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -54637,6 +54637,7 @@ DOMAIN-SUFFIX,data-849004cc69.regenbogen.de
 DOMAIN-SUFFIX,data-d167bd4c4e.regenbogen.de
 DOMAIN-SUFFIX,evkeeza-e.regeneron.com
 DOMAIN-SUFFIX,praluent-e.regeneron.com
+DOMAIN-SUFFIX,regexmail.com
 DOMAIN-SUFFIX,regnicmow.xyz
 DOMAIN-SUFFIX,ad.rejichoice.jp
 DOMAIN-SUFFIX,branch.rejuvenan.com
@@ -81021,6 +81022,7 @@ DOMAIN-SUFFIX,markswebcams.com
 DOMAIN-SUFFIX,rum.marquardmedia.hu
 DOMAIN-SUFFIX,adimages.marriagetrac.com
 DOMAIN-SUFFIX,marriedvalue.com
+DOMAIN-SUFFIX,marrowleaves.com
 DOMAIN-SUFFIX,marrowopener.com
 DOMAIN-SUFFIX,marryclamour.com
 DOMAIN-SUFFIX,marshwhisper.com
