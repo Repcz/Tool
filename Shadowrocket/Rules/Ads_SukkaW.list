@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-10-04T12:38:12.266Z
-# Size: 115398
+# Last Updated: 2024-10-04T19:35:37.165Z
+# Size: 115415
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -9791,7 +9791,9 @@ DOMAIN-SUFFIX,10945-5.s.cdn15.com
 DOMAIN-SUFFIX,v.cdn4.life
 DOMAIN-SUFFIX,1080872514.rsc.cdn77.org
 DOMAIN-SUFFIX,1187531871.rsc.cdn77.org
+DOMAIN-SUFFIX,1192349565.rsc.cdn77.org
 DOMAIN-SUFFIX,1208344341.rsc.cdn77.org
+DOMAIN-SUFFIX,1380804958.rsc.cdn77.org
 DOMAIN-SUFFIX,1437953666.rsc.cdn77.org
 DOMAIN-SUFFIX,1480876790.rsc.cdn77.org
 DOMAIN-SUFFIX,1529462937.rsc.cdn77.org
@@ -10109,6 +10111,7 @@ DOMAIN-SUFFIX,d-064.com
 DOMAIN-SUFFIX,d0main.ru
 DOMAIN-SUFFIX,d10wv.fun
 DOMAIN-SUFFIX,d2c.ne.jp
+DOMAIN-SUFFIX,d2tf0.icu
 DOMAIN-SUFFIX,dafdfd.cn
 DOMAIN-SUFFIX,tern.daffy.org
 DOMAIN-SUFFIX,dajkq.com
@@ -10900,6 +10903,7 @@ DOMAIN-SUFFIX,mdws.gvccu.com
 DOMAIN-SUFFIX,analytics.gvim.mobi
 DOMAIN-SUFFIX,gw-dv.vip
 DOMAIN-SUFFIX,gx101.com
+DOMAIN-SUFFIX,gxnfz.com
 DOMAIN-SUFFIX,ll.gxsky.com
 DOMAIN-SUFFIX,gylor.xyz
 DOMAIN-SUFFIX,gynax.com
@@ -16233,6 +16237,7 @@ DOMAIN-SUFFIX,a8cv.beaming.jp
 DOMAIN-SUFFIX,a8clk.beauteq.jp
 DOMAIN-SUFFIX,connect.becker.com
 DOMAIN-SUFFIX,webtracking.becker.com
+DOMAIN-SUFFIX,bedzbu.xyz
 DOMAIN-SUFFIX,log.beecost.vn
 DOMAIN-SUFFIX,beetraf.ru
 DOMAIN-SUFFIX,tracker.beezup.com
@@ -22436,6 +22441,7 @@ DOMAIN-SUFFIX,sslanalytics.sixt.co.uk
 DOMAIN-SUFFIX,ygsoeu.size.co.uk
 DOMAIN-SUFFIX,sjaaquj.cn
 DOMAIN-SUFFIX,sjalipa.cn
+DOMAIN-SUFFIX,sjezce.xyz
 DOMAIN-SUFFIX,sjgsgy.xyz
 DOMAIN-SUFFIX,smetrics.sjmtech.ma
 DOMAIN-SUFFIX,sjsabb.com
@@ -36163,6 +36169,7 @@ DOMAIN-SUFFIX,agraglie.net
 DOMAIN-SUFFIX,agrib-vn.com
 DOMAIN-SUFFIX,zmzkyj.agrieuro.com
 DOMAIN-SUFFIX,tk.agrizone.net
+DOMAIN-SUFFIX,agrmufot.com
 DOMAIN-SUFFIX,agukalty.net
 DOMAIN-SUFFIX,agurgeed.net
 DOMAIN-SUFFIX,ahadsply.com
@@ -41819,6 +41826,7 @@ DOMAIN-SUFFIX,mazefoam.com
 DOMAIN-SUFFIX,mbbankmn.com
 DOMAIN-SUFFIX,mbdippex.com
 DOMAIN-SUFFIX,mbfn-fic.com
+DOMAIN-SUFFIX,mbhhxqkr.com
 DOMAIN-SUFFIX,mbphiclx.com
 DOMAIN-SUFFIX,link.mbtihell.com
 DOMAIN-SUFFIX,mc-nudes.com
@@ -43944,6 +43952,7 @@ DOMAIN-SUFFIX,qooanabj.com
 DOMAIN-SUFFIX,qowqnnhf.com
 DOMAIN-SUFFIX,qprthjab.com
 DOMAIN-SUFFIX,qqqqbdma.com
+DOMAIN-SUFFIX,qqryt111.fun
 DOMAIN-SUFFIX,qrtrsucg.com
 DOMAIN-SUFFIX,qrzlaatf.xyz
 DOMAIN-SUFFIX,qsiuiwnh.com
@@ -45890,6 +45899,7 @@ DOMAIN-SUFFIX,twinfill.com
 DOMAIN-SUFFIX,twinplan.com
 DOMAIN-SUFFIX,twistads.com
 DOMAIN-SUFFIX,gts-ads.twistbox.com
+DOMAIN-SUFFIX,twurseri.top
 DOMAIN-SUFFIX,twwxjqsk.com
 DOMAIN-SUFFIX,marketing.txsource.net
 DOMAIN-SUFFIX,tybmbbgu.xyz
@@ -57538,6 +57548,7 @@ DOMAIN-SUFFIX,4959987cc4.134af949d5.com
 DOMAIN-SUFFIX,1370065b3a.com
 DOMAIN-SUFFIX,13b3403320.com
 DOMAIN-SUFFIX,13b696a4c1.com
+DOMAIN-SUFFIX,13c4491879.com
 DOMAIN-SUFFIX,b0bee72a02.13e153630d.com
 DOMAIN-SUFFIX,563639804d.13e63e2dea.com
 DOMAIN-SUFFIX,b6d8052764.13e72f87ba.com
@@ -64954,6 +64965,7 @@ DOMAIN-SUFFIX,tracking.musixmatch.com
 DOMAIN-SUFFIX,mustbehand.com
 DOMAIN-SUFFIX,muttergrew.com
 DOMAIN-SUFFIX,kminhi.mutuionline.it
+DOMAIN-SUFFIX,mvfmdfsvoq.com
 DOMAIN-SUFFIX,mwcxljdywq.com
 DOMAIN-SUFFIX,mwikpepfiw.com
 DOMAIN-SUFFIX,mxmezfyjgw.com
@@ -70777,6 +70789,7 @@ DOMAIN-SUFFIX,a8cv.dokugaku-dx.com
 DOMAIN-SUFFIX,images.mail.dolce-gusto.com
 DOMAIN-SUFFIX,dollardelta.com
 DOMAIN-SUFFIX,dompeterapp.com
+DOMAIN-SUFFIX,donarycrips.com
 DOMAIN-SUFFIX,donateyowl.shop
 DOMAIN-SUFFIX,donemagbuy.live
 DOMAIN-SUFFIX,donferiae.click
@@ -71492,6 +71505,7 @@ DOMAIN-SUFFIX,g2921554487.com
 DOMAIN-SUFFIX,track.gaconnector.com
 DOMAIN-SUFFIX,gadssystems.com
 DOMAIN-SUFFIX,nwfkjx.gadventures.com
+DOMAIN-SUFFIX,gaetojnxujn.com
 DOMAIN-SUFFIX,gafmajosxog.com
 DOMAIN-SUFFIX,app.gaincapital.com
 DOMAIN-SUFFIX,galaxiemedia.fr
@@ -73928,7 +73942,6 @@ DOMAIN-SUFFIX,starget.panerabread.com
 DOMAIN-SUFFIX,smetrics.panerabread.com
 DOMAIN-SUFFIX,app.panomoments.com
 DOMAIN-SUFFIX,swebanalytics.panoramafirm.pl
-DOMAIN-SUFFIX,pantheonsite.io
 DOMAIN-SUFFIX,pantsurplus.com
 DOMAIN-SUFFIX,njxnsb.paodeacucar.com
 DOMAIN-SUFFIX,smetrics.paodeacucar.com
@@ -76760,6 +76773,7 @@ DOMAIN-SUFFIX,smetrics.womensecret.com
 DOMAIN-SUFFIX,data-057c6f44b1.womenshealth.de
 DOMAIN-SUFFIX,data-557fc65a33.womenshealth.de
 DOMAIN-SUFFIX,wonconsists.com
+DOMAIN-SUFFIX,woneguess.click
 DOMAIN-SUFFIX,wongahmalta.com
 DOMAIN-SUFFIX,wonoddgiris.com
 DOMAIN-SUFFIX,woodhenmils.com
@@ -88066,6 +88080,7 @@ DOMAIN-SUFFIX,smetrics.knowpneumonia.com
 DOMAIN-SUFFIX,metrics.knowyourtrigs.com
 DOMAIN-SUFFIX,knudsenunmast.top
 DOMAIN-SUFFIX,app.kochamwino.com.pl
+DOMAIN-SUFFIX,koiaripolymny.com
 DOMAIN-SUFFIX,az.koipatolipper.com
 DOMAIN-SUFFIX,komarchlupoid.com
 DOMAIN-SUFFIX,doporuc.konferenceryba.cz
@@ -92353,6 +92368,7 @@ DOMAIN-SUFFIX,marketing.christchurchnz.com
 DOMAIN-SUFFIX,connect.care.christushealth.org
 DOMAIN-SUFFIX,chroniclesugar.com
 DOMAIN-SUFFIX,chubbycreature.com
+DOMAIN-SUFFIX,chullocaviars.shop
 DOMAIN-SUFFIX,eq.chunderrepiner.com
 DOMAIN-SUFFIX,cincherdatable.com
 DOMAIN-SUFFIX,t.cincinnatiarts.org
@@ -94506,6 +94522,7 @@ DOMAIN-SUFFIX,muddyprocedure.com
 DOMAIN-SUFFIX,mufflercypress.com
 DOMAIN-SUFFIX,muffygaslike.click
 DOMAIN-SUFFIX,mukhtarproving.com
+DOMAIN-SUFFIX,mulsouloobsaiz.xyz
 DOMAIN-SUFFIX,go.multi-conveyor.com
 DOMAIN-SUFFIX,stats.multiplelenses.com
 DOMAIN-SUFFIX,analytics.multithread.studio
