@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2024-09-30T17:41:21.896Z
-# Size: 774
+# Last Updated: 2024-10-05T15:54:17.224Z
+# Size: 775
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -58,6 +58,7 @@ DOMAIN-SUFFIX,163.com
 DOMAIN-SUFFIX,166.com
 DOMAIN-SUFFIX,166.net
 DOMAIN-SUFFIX,188.com
+DOMAIN-SUFFIX,2144.cn
 DOMAIN-SUFFIX,263.net
 DOMAIN-SUFFIX,360.com
 DOMAIN-SUFFIX,360.net

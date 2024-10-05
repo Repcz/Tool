@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-10-05T12:36:13.016Z
-# Size: 115439
+# Last Updated: 2024-10-05T15:54:17.170Z
+# Size: 115441
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -9704,6 +9704,7 @@ DOMAIN-SUFFIX,serv.bvsrv.com
 DOMAIN-SUFFIX,bwcdn.xyz
 DOMAIN-SUFFIX,solutions.bwtek.com
 DOMAIN-SUFFIX,bxmns.com
+DOMAIN-SUFFIX,bxqgk.icu
 DOMAIN-SUFFIX,bxsk.site
 DOMAIN-SUFFIX,bydst.com
 DOMAIN-SUFFIX,byeej.com
@@ -43181,6 +43182,7 @@ DOMAIN-SUFFIX,owebmoney.ru
 DOMAIN-SUFFIX,ownlocal.com
 DOMAIN-SUFFIX,owoxauky.com
 DOMAIN-SUFFIX,owrddzml.com
+DOMAIN-SUFFIX,owurserk.top
 DOMAIN-SUFFIX,oxbowfog.com
 DOMAIN-SUFFIX,smetrics.oxfam.org.uk
 DOMAIN-SUFFIX,oxghhbxz.com
