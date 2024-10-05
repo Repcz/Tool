@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-10-04T20:47:04.579Z
-# Size: 115417
+# Last Updated: 2024-10-05T12:36:13.016Z
+# Size: 115439
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -17472,6 +17472,7 @@ DOMAIN-SUFFIX,go.eacpds.com
 DOMAIN-SUFFIX,eadsrv.com
 DOMAIN-SUFFIX,eaezoi.xyz
 DOMAIN-SUFFIX,eapect.icu
+DOMAIN-SUFFIX,eaqgsw.xyz
 DOMAIN-SUFFIX,eaqlos.xyz
 DOMAIN-SUFFIX,earzow.com
 DOMAIN-SUFFIX,track.easeus.com
@@ -20549,6 +20550,7 @@ DOMAIN-SUFFIX,muycpg.xyz
 DOMAIN-SUFFIX,muyihh.top
 DOMAIN-SUFFIX,m.muyuge.com
 DOMAIN-SUFFIX,muyxmmz.cn
+DOMAIN-SUFFIX,mvcngm.xyz
 DOMAIN-SUFFIX,mvevgi.xyz
 DOMAIN-SUFFIX,mvirkw.xyz
 DOMAIN-SUFFIX,mvmqos.xyz
@@ -21562,6 +21564,7 @@ DOMAIN-SUFFIX,prpops.com
 DOMAIN-SUFFIX,prsrjdr.ru
 DOMAIN-SUFFIX,prtadf.xyz
 DOMAIN-SUFFIX,prtawe.com
+DOMAIN-SUFFIX,prtfpl.xyz
 DOMAIN-SUFFIX,prtord.com
 DOMAIN-SUFFIX,metrics.pruina.com
 DOMAIN-SUFFIX,przbzr.xyz
@@ -24599,6 +24602,7 @@ DOMAIN-SUFFIX,track.yetric.app
 DOMAIN-SUFFIX,yeumomo.me
 DOMAIN-SUFFIX,yevudi.uno
 DOMAIN-SUFFIX,yfaqgk.xyz
+DOMAIN-SUFFIX,yfoega.xyz
 DOMAIN-SUFFIX,ygkwjd.xyz
 DOMAIN-SUFFIX,yhbcii.com
 DOMAIN-SUFFIX,yhgfoe.xyz
@@ -26714,6 +26718,7 @@ DOMAIN-SUFFIX,chitika.com
 DOMAIN-SUFFIX,chitika.net
 DOMAIN-SUFFIX,cnebis.chocola.com
 DOMAIN-SUFFIX,a8.choomia.com
+DOMAIN-SUFFIX,chooncv.icu
 DOMAIN-SUFFIX,info.christus.mx
 DOMAIN-SUFFIX,asistente.christus.mx
 DOMAIN-SUFFIX,trk.salud.christus.mx
@@ -31356,6 +31361,7 @@ DOMAIN-SUFFIX,pahtzh.tech
 DOMAIN-SUFFIX,paikoasa.tv
 DOMAIN-SUFFIX,painsko.com
 DOMAIN-SUFFIX,paiwena.xyz
+DOMAIN-SUFFIX,pakaujf.icu
 DOMAIN-SUFFIX,palama2.com
 DOMAIN-SUFFIX,a8.palclair.jp
 DOMAIN-SUFFIX,ebis.palclair.jp
@@ -35700,6 +35706,7 @@ DOMAIN-SUFFIX,555lotte.com
 DOMAIN-SUFFIX,55766925.xyz
 DOMAIN-SUFFIX,56514411.xyz
 DOMAIN-SUFFIX,595image.com
+DOMAIN-SUFFIX,59644010.xyz
 DOMAIN-SUFFIX,5ab2f817.xyz
 DOMAIN-SUFFIX,5afc476a.xyz
 DOMAIN-SUFFIX,5cc3ac02.xyz
@@ -35724,6 +35731,7 @@ DOMAIN-SUFFIX,76236osm1.ru
 DOMAIN-SUFFIX,77886044.xyz
 DOMAIN-SUFFIX,7841ffda.xyz
 DOMAIN-SUFFIX,78b78ff8.xyz
+DOMAIN-SUFFIX,79180284.xyz
 DOMAIN-SUFFIX,7bpeople.com
 DOMAIN-SUFFIX,7ca989e1.xyz
 DOMAIN-SUFFIX,7e60f1f9.xyz
@@ -41205,6 +41213,7 @@ DOMAIN-SUFFIX,kxkqqycs.xyz
 DOMAIN-SUFFIX,kxkqxdgp.com
 DOMAIN-SUFFIX,kxtmstjs.org
 DOMAIN-SUFFIX,kycxhgrp.xyz
+DOMAIN-SUFFIX,kydagoba.com
 DOMAIN-SUFFIX,kydzfldt.xyz
 DOMAIN-SUFFIX,kyefakwa.com
 DOMAIN-SUFFIX,kyjwtxei.xyz
@@ -42681,6 +42690,7 @@ DOMAIN-SUFFIX,nsmpydfe.net
 DOMAIN-SUFFIX,nsstatic.com
 DOMAIN-SUFFIX,nsstatic.net
 DOMAIN-SUFFIX,ntcqmdif.com
+DOMAIN-SUFFIX,ntpnfyga.icu
 DOMAIN-SUFFIX,ad.ntvmsnbc.com
 DOMAIN-SUFFIX,ntvpever.com
 DOMAIN-SUFFIX,marketing.nualight.com
@@ -46113,6 +46123,7 @@ DOMAIN-SUFFIX,uvihslkx.com
 DOMAIN-SUFFIX,uvpqrydt.xyz
 DOMAIN-SUFFIX,uwfcqtdb.xyz
 DOMAIN-SUFFIX,uwoaptee.com
+DOMAIN-SUFFIX,uwursert.top
 DOMAIN-SUFFIX,uxicgxqq.com
 DOMAIN-SUFFIX,uycxhgrp.xyz
 DOMAIN-SUFFIX,uydzfldt.xyz
@@ -58331,6 +58342,7 @@ DOMAIN-SUFFIX,abqmfewisf.com
 DOMAIN-SUFFIX,track.abrdnpit.co.uk
 DOMAIN-SUFFIX,abruptroad.com
 DOMAIN-SUFFIX,abs-static.org
+DOMAIN-SUFFIX,absalomcsa.com
 DOMAIN-SUFFIX,discover.absciex.com.cn
 DOMAIN-SUFFIX,absolosisa.com
 DOMAIN-SUFFIX,stat.absolutist.com
@@ -62584,6 +62596,7 @@ DOMAIN-SUFFIX,data.info.ficohsa.com.pa
 DOMAIN-SUFFIX,pages.info.ficohsa.com.pa
 DOMAIN-SUFFIX,data.comunicaciones.ficohsa.com.pa
 DOMAIN-SUFFIX,clam.figmachina.com
+DOMAIN-SUFFIX,fijiicaria.com
 DOMAIN-SUFFIX,file-subiz.com
 DOMAIN-SUFFIX,filebanner.com
 DOMAIN-SUFFIX,filecontrol.ru
@@ -73456,10 +73469,12 @@ DOMAIN-SUFFIX,analytics.naturequant.com
 DOMAIN-SUFFIX,gemrla.natuurhuisje.be
 DOMAIN-SUFFIX,qouxkn.natuurhuisje.nl
 DOMAIN-SUFFIX,naufistuwha.com
+DOMAIN-SUFFIX,naukegainok.net
 DOMAIN-SUFFIX,navelfletch.com
 DOMAIN-SUFFIX,navgewtxakd.com
 DOMAIN-SUFFIX,routes.navibration.com
 DOMAIN-SUFFIX,prod.ew.srp.navigacloud.com
+DOMAIN-SUFFIX,img2021.navyfederal.org
 DOMAIN-SUFFIX,analytics.navyfederal.org
 DOMAIN-SUFFIX,email.msg.navyfederal.org
 DOMAIN-SUFFIX,nazallhtjfh.com
@@ -74967,6 +74982,7 @@ DOMAIN-SUFFIX,beacon.searchspring.io
 DOMAIN-SUFFIX,searswalers.com
 DOMAIN-SUFFIX,smetrics.seasearcher.com
 DOMAIN-SUFFIX,app.seasonshare.com
+DOMAIN-SUFFIX,secqueduomo.com
 DOMAIN-SUFFIX,fnfhgj.secretsales.com
 DOMAIN-SUFFIX,secthatlead.com
 DOMAIN-SUFFIX,on.securedhops.com
@@ -89073,6 +89089,7 @@ DOMAIN-SUFFIX,ozihechzlcsgs.com
 DOMAIN-SUFFIX,oznhkuilvrsdf.com
 DOMAIN-SUFFIX,prism.pablonouvelle.com
 DOMAIN-SUFFIX,pacijwarnfrtq.com
+DOMAIN-SUFFIX,pacquetmuysca.com
 DOMAIN-SUFFIX,pacquetpusher.com
 DOMAIN-SUFFIX,pagtvmcbfjafj.com
 DOMAIN-SUFFIX,paidlemirkily.com
@@ -89141,6 +89158,7 @@ DOMAIN-SUFFIX,pathosacetals.com
 DOMAIN-SUFFIX,patronknowing.com
 DOMAIN-SUFFIX,pattenplouter.com
 DOMAIN-SUFFIX,pattyheadlong.com
+DOMAIN-SUFFIX,pausingroyale.com
 DOMAIN-SUFFIX,paussidsipage.com
 DOMAIN-SUFFIX,link.pavilhaodaagua.pt
 DOMAIN-SUFFIX,pavisordjerib.com
@@ -89339,6 +89357,7 @@ DOMAIN-SUFFIX,target.powertracagri.com
 DOMAIN-SUFFIX,smetrics.powertracagri.com
 DOMAIN-SUFFIX,jp.ppgamingproxy.lol
 DOMAIN-SUFFIX,pqrtd9hhtu9x.info
+DOMAIN-SUFFIX,prabblealltud.com
 DOMAIN-SUFFIX,practicepeter.com
 DOMAIN-SUFFIX,smetrics.pradaxapatient.se
 DOMAIN-SUFFIX,praterswhally.com
@@ -90810,6 +90829,7 @@ DOMAIN-SUFFIX,path.unitedclasses.com
 DOMAIN-SUFFIX,unitersgrazie.com
 DOMAIN-SUFFIX,xcojhb.unitysquare.co.kr
 DOMAIN-SUFFIX,unjointbobbed.com
+DOMAIN-SUFFIX,unlargecamden.com
 DOMAIN-SUFFIX,unlawedimaret.top
 DOMAIN-SUFFIX,unpackjanuary.com
 DOMAIN-SUFFIX,unpaledbooker.top
@@ -92819,6 +92839,7 @@ DOMAIN-SUFFIX,visit.donateblood.com.au
 DOMAIN-SUFFIX,donecperficiam.net
 DOMAIN-SUFFIX,donhangkiemtra.com
 DOMAIN-SUFFIX,donneesskilder.top
+DOMAIN-SUFFIX,donnishsubgrin.com
 DOMAIN-SUFFIX,doricalbestain.com
 DOMAIN-SUFFIX,dorothydrawing.com
 DOMAIN-SUFFIX,dosconsiderate.com
@@ -101960,6 +101981,7 @@ DOMAIN-SUFFIX,givememmastreams.com
 DOMAIN-SUFFIX,glamorousmixture.com
 DOMAIN-SUFFIX,stats.glassmountains.co.uk
 DOMAIN-SUFFIX,lp.glauciavieira.online
+DOMAIN-SUFFIX,glazieroometer.click
 DOMAIN-SUFFIX,glitteringstress.pro
 DOMAIN-SUFFIX,ssl.o.globalacademycme.com
 DOMAIN-SUFFIX,std.o.globalacademycme.com
