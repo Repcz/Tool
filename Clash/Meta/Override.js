@@ -2,7 +2,7 @@
 //
 // Clash Verge Rev (Version ≥ 17.2) & Mihomo-Party (Version ≥ 0.5.8)
 //
-// 最后更新时间: 2024-09-28 22:50
+// 最后更新时间: 2024-10-06 07:55
 
 // 规则集通用配置
 const ruleProviderCommon = {
@@ -357,12 +357,6 @@ function main(config) {
       "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/ProxyGFW.list",
       "path": "./rules/ProxyGFW.list"
-    },
-    "China": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/Clash/Rules/ChinaDomain.list",
-      "path": "./rules/China.list"
     }
   };
 
@@ -388,7 +382,6 @@ function main(config) {
     "GEOSITE,github,微软服务",
     "GEOSITE,microsoft,微软服务",
     "GEOSITE,gfw,国外网站",
-    "RULE-SET,China,DIRECT",
     "GEOIP,lan,DIRECT",
     "GEOIP,CN,DIRECT",
     "MATCH,兜底分流"

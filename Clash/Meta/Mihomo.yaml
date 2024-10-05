@@ -7,7 +7,7 @@
 #
 # Mihomo Version ≥ 1.8.4
 #
-# 最后更新时间: 2024-10-01 11:21
+# 最后更新时间: 2024-10-06 07:55
 #
 # ================
 
@@ -118,7 +118,6 @@ rule-providers:
   Disney: {<<: *c, path: ./rules/Disney.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/Disney.list}
   PrimeVideo: {<<: *c, path: ./rules/PrimeVideo.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/PrimeVideo.list}
   HBO: {<<: *c, path: ./rules/HBO.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/HBO.list}
-  China: {<<: *c, path: ./rules/China.list,  url: https://github.com/Repcz/Tool/raw/X/Clash/Rules/ChinaDomain.list}
 
 rules:
   - RULE-SET,AD,广告拦截
@@ -141,7 +140,6 @@ rules:
   - GEOSITE,github,微软服务
   - GEOSITE,microsoft,微软服务
   - GEOSITE,gfw,国外网站
-  - RULE-SET,China,DIRECT
   - GEOIP,lan,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底分流
