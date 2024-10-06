@@ -1,6 +1,6 @@
 #Title: AWAvenue Ads Rule
 #--------------------------------------
-#Total lines: 682
+#Total lines: 675
 #Version: 1.5.3-release
 
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
@@ -200,7 +200,6 @@ DOMAIN-SUFFIX,bianxian.com
 DOMAIN-SUFFIX,bingads.microsoft.com
 DOMAIN-SUFFIX,bj.ad.track.66mobi.com
 DOMAIN-SUFFIX,books-analytics-events.apple.com
-DOMAIN-SUFFIX,bossaudioandcomic-1252317822.image.myqcloud.com
 DOMAIN-SUFFIX,bsrv.qq.com
 DOMAIN-SUFFIX,bugly.qq.com
 DOMAIN-SUFFIX,business-api.tiktok.com
@@ -231,12 +230,6 @@ DOMAIN-SUFFIX,collect.kugou.com
 DOMAIN-SUFFIX,commdata.v.qq.com
 DOMAIN-SUFFIX,config.chsmarttv.com
 DOMAIN-SUFFIX,config.unityads.unity3d.com
-DOMAIN-SUFFIX,conn-service-cn-03.allawntech.com
-DOMAIN-SUFFIX,conn-service-cn-04.allawntech.com
-DOMAIN-SUFFIX,conn-service-cn-05.allawntech.com
-DOMAIN-SUFFIX,conn-service-in-03.allawnos.com
-DOMAIN-SUFFIX,conn-service-in-04.allawnos.com
-DOMAIN-SUFFIX,conn-service-in-05.allawnos.com
 DOMAIN-SUFFIX,cpro.baidustatic.com
 DOMAIN-SUFFIX,crashlytics.com
 DOMAIN-SUFFIX,crashlyticsreports-pa.googleapis.com
