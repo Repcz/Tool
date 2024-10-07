@@ -100,8 +100,10 @@ DOMAIN,assets.euractiv.com
 DOMAIN,assets.exercism.org
 DOMAIN,assets.extension.grammarly.com
 DOMAIN,assets.fastly.com
+DOMAIN,assets.fe.itv.com
 DOMAIN,assets.fireside.fm
 DOMAIN,assets.flodesk.com
+DOMAIN,assets.foxdcg.com
 DOMAIN,assets.garr.it
 DOMAIN,assets.gcore.pro
 DOMAIN,assets.genius.com
@@ -1088,6 +1090,7 @@ DOMAIN,osint.digitalside.it
 DOMAIN,oss-binaries.phusionpassenger.com
 DOMAIN,oss.moe.cat
 DOMAIN,ovo.wxw.moe
+DOMAIN,ovp.itv.com
 DOMAIN,p-smith.com
 DOMAIN,p.inari.site
 DOMAIN,p.sda1.dev
@@ -1357,6 +1360,7 @@ DOMAIN,static-id.fc2.com
 DOMAIN,static-landing.probit.com
 DOMAIN,static-lccn.leetcode.com
 DOMAIN,static-main.moovit.com
+DOMAIN,static-media.fox.com
 DOMAIN,static-mh.content.disney.io
 DOMAIN,static-overlay.ubisoft.com
 DOMAIN,static-production.npmjs.com
@@ -1376,6 +1380,7 @@ DOMAIN,static.arxiv.org
 DOMAIN,static.assetlab.io
 DOMAIN,static.axios.com
 DOMAIN,static.bangumi.moe
+DOMAIN,static.bbc.co.uk
 DOMAIN,static.bbci.co.uk
 DOMAIN,static.bit.cloud
 DOMAIN,static.bit.dev
@@ -2077,6 +2082,7 @@ DOMAIN-SUFFIX,ipfscdn.io
 DOMAIN-SUFFIX,ipfsgateway.makersplace.com
 DOMAIN-SUFFIX,ipns.co
 DOMAIN-SUFFIX,itsre-sumo.mozilla.net
+DOMAIN-SUFFIX,itvstatic.com
 DOMAIN-SUFFIX,javplayer.me
 DOMAIN-SUFFIX,javtxt.com
 DOMAIN-SUFFIX,jbkcdn.com
@@ -2312,6 +2318,7 @@ DOMAIN-SUFFIX,sny.monosnap.com
 DOMAIN-SUFFIX,snzypic.com
 DOMAIN-SUFFIX,someonewhocares.org
 DOMAIN-SUFFIX,sourceforge.io
+DOMAIN-SUFFIX,splunkcloud.com
 DOMAIN-SUFFIX,sqspcdn.com
 DOMAIN-SUFFIX,squarespace-cdn.com
 DOMAIN-SUFFIX,ss-cdn.com
@@ -2366,6 +2373,7 @@ DOMAIN-SUFFIX,tile.openstreetmap.org
 DOMAIN-SUFFIX,tile.osm.org
 DOMAIN-SUFFIX,timg135.top
 DOMAIN-SUFFIX,tiqcdn.com
+DOMAIN-SUFFIX,tmsimg.com
 DOMAIN-SUFFIX,tnastatic.com
 DOMAIN-SUFFIX,trackerslist.com
 DOMAIN-SUFFIX,transcend-cdn.com

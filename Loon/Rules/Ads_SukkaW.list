@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-10-07T17:03:26.921Z
-# Size: 114642
+# Last Updated: 2024-10-07T19:20:32.588Z
+# Size: 114643
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -4544,6 +4544,7 @@ DOMAIN-SUFFIX,a.78yx.net
 DOMAIN-SUFFIX,gg.7976.top
 DOMAIN-SUFFIX,7app.top
 DOMAIN-SUFFIX,7d108.cn
+DOMAIN,gif.7mmtv.sx
 DOMAIN-SUFFIX,7porn.ru
 DOMAIN-SUFFIX,7rtv.com
 DOMAIN-SUFFIX,tr.7vid.net
