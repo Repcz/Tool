@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2024-10-05T15:54:17.224Z
-# Size: 775
+# Last Updated: 2024-10-07T03:58:04.972Z
+# Size: 777
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -150,6 +150,8 @@ HOST-SUFFIX,soku.com,DIRECT
 HOST-SUFFIX,soso.com,DIRECT
 HOST-SUFFIX,tanx.com,DIRECT
 HOST-SUFFIX,tmall.hk,DIRECT
+HOST,dl.ubnt.com,DIRECT
+HOST,config.ubnt.com,DIRECT
 HOST-SUFFIX,uczzd.cn,DIRECT
 HOST-SUFFIX,udesk.cn,DIRECT
 HOST-SUFFIX,v-56.com,DIRECT

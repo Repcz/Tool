@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-10-06T12:35:25.458Z
-# Size: 115471
+# Last Updated: 2024-10-07T03:58:04.934Z
+# Size: 115482
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -11216,6 +11216,7 @@ DOMAIN-SUFFIX,t.imgur.com
 DOMAIN-SUFFIX,mp.imgur.com
 DOMAIN-SUFFIX,iob.imgur.com
 DOMAIN-SUFFIX,imith.com
+DOMAIN-SUFFIX,imndl.icu
 DOMAIN-SUFFIX,link.imumz.com
 DOMAIN-SUFFIX,data.inbank.it
 DOMAIN-SUFFIX,inclk.com
@@ -16859,6 +16860,7 @@ DOMAIN-SUFFIX,track.clkfly.com
 DOMAIN-SUFFIX,xml-v4.clkfst.com
 DOMAIN-SUFFIX,clkrev.com
 DOMAIN-SUFFIX,clkwnl.xyz
+DOMAIN-SUFFIX,clmcam.xyz
 DOMAIN-SUFFIX,clmcom.com
 DOMAIN-SUFFIX,clmkwi.xyz
 DOMAIN-SUFFIX,clmm113.me
@@ -17521,6 +17523,7 @@ DOMAIN-SUFFIX,ecrwqu.com
 DOMAIN-SUFFIX,ectyet.top
 DOMAIN-SUFFIX,ed-sys.net
 DOMAIN-SUFFIX,ads.edadeal.ru
+DOMAIN-SUFFIX,edadmy.xyz
 DOMAIN-SUFFIX,info.edb.gov.sg
 DOMAIN-SUFFIX,event.edb.gov.sg
 DOMAIN-SUFFIX,target.edb.gov.sg
@@ -19502,6 +19505,7 @@ DOMAIN-SUFFIX,kggikf.icu
 DOMAIN-SUFFIX,kgipui.xyz
 DOMAIN-SUFFIX,kgqcse.xyz
 DOMAIN-SUFFIX,kgubus.xyz
+DOMAIN-SUFFIX,kgymoc.xyz
 DOMAIN-SUFFIX,ad.khan.co.kr
 DOMAIN-SUFFIX,adv.khan.co.kr
 DOMAIN-SUFFIX,uac.khan.co.kr
@@ -24489,6 +24493,7 @@ DOMAIN-SUFFIX,xkpbcd.com
 DOMAIN-SUFFIX,xkrnud.icu
 DOMAIN-SUFFIX,xl-trk.com
 DOMAIN-SUFFIX,xlirdr.com
+DOMAIN-SUFFIX,xlxehr.xyz
 DOMAIN-SUFFIX,ads.xlxtra.com
 DOMAIN-SUFFIX,xmatch.com
 DOMAIN-SUFFIX,zhihu.xmcimg.com
@@ -26324,6 +26329,7 @@ DOMAIN-SUFFIX,bmgipyr.com
 DOMAIN-SUFFIX,bmlcuby.com
 DOMAIN-SUFFIX,csvtt.bmolife.com
 DOMAIN-SUFFIX,bmptbyb.com
+DOMAIN-SUFFIX,bmqulua.icu
 DOMAIN-SUFFIX,bnagilu.com
 DOMAIN-SUFFIX,bnalzlv.top
 DOMAIN-SUFFIX,bngmadjd.de
@@ -37382,6 +37388,7 @@ DOMAIN-SUFFIX,bvlbcqcg.com
 DOMAIN-SUFFIX,bvpqrydt.xyz
 DOMAIN-SUFFIX,bvubasnf.com
 DOMAIN-SUFFIX,bw95vpjda.ru
+DOMAIN-SUFFIX,bwurserv.top
 DOMAIN-SUFFIX,bx-cloud.com
 DOMAIN-SUFFIX,bxrqdnkb.com
 DOMAIN-SUFFIX,bxxibvjt.com
@@ -38228,6 +38235,7 @@ DOMAIN-SUFFIX,dcommerc.cfd
 DOMAIN-SUFFIX,intranet.dcorp.com.vn
 DOMAIN-SUFFIX,dcsewjll.com
 DOMAIN-SUFFIX,stream-log.dditscdn.com
+DOMAIN-SUFFIX,ddlmsoyo.icu
 DOMAIN-SUFFIX,cdn.ddmanager.ru
 DOMAIN-SUFFIX,track.ddmanager.ru
 DOMAIN-SUFFIX,ddnslive.com
@@ -42316,6 +42324,7 @@ DOMAIN-SUFFIX,learn.mvpindex.com
 DOMAIN-SUFFIX,mvpqrydt.xyz
 DOMAIN-SUFFIX,mvwkysam.com
 DOMAIN-SUFFIX,mwerilxx.top
+DOMAIN-SUFFIX,mwurserx.top
 DOMAIN-SUFFIX,mxipwcyo.xyz
 DOMAIN-SUFFIX,mxp00338.com
 DOMAIN-SUFFIX,mxzluxet.com
@@ -77134,6 +77143,7 @@ DOMAIN-SUFFIX,2520june2024.com
 DOMAIN-SUFFIX,2bps53igop02.com
 DOMAIN-SUFFIX,2c3a97984f45.com
 DOMAIN-SUFFIX,2e8dgn8n0e0l.com
+DOMAIN-SUFFIX,2efgcdcjr000.fun
 DOMAIN-SUFFIX,2mf9kkbhab31.com
 DOMAIN-SUFFIX,2qj7mq3w4uxe.com
 DOMAIN-SUFFIX,300daytravel.com
@@ -77178,6 +77188,7 @@ DOMAIN-SUFFIX,666bbb888www.com
 DOMAIN-SUFFIX,666ppp222ppp.com
 DOMAIN-SUFFIX,666ppp888ppp.com
 DOMAIN-SUFFIX,6bgaput9ullc.com
+DOMAIN-SUFFIX,6efgcdcjr000.fun
 DOMAIN-SUFFIX,6fxtpu64lxyt.com
 DOMAIN-SUFFIX,6qu5dcmyumtw.com
 DOMAIN-SUFFIX,6ujk8x9soxhm.com
@@ -115501,8 +115512,8 @@ DOMAIN,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe
 ################## EOF ##################
 #########################################
 # Sukka's Ruleset - Reject Domains
-# Last Updated: 2024-09-20T18:57:43.916Z
-# Size: 71
+# Last Updated: 2024-10-07T03:58:05.384Z
+# Size: 72
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -115514,6 +115525,7 @@ DOMAIN,this_rule_set_is_made_by_sukkaw.skk.moe
 DOMAIN-SUFFIX,net.mydays.de
 DOMAIN-SUFFIX,openx.net
 DOMAIN-SUFFIX,omtrdc.net
+DOMAIN-SUFFIX,classify-client.services.mozilla.com
 DOMAIN-SUFFIX,telemetry.mozilla.org
 DOMAIN-SUFFIX,telemetry-coverage.mozilla.org
 DOMAIN-SUFFIX,notify6.com
