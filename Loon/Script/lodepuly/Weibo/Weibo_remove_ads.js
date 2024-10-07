@@ -1,7 +1,7 @@
 /*
 引用地址：https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/weibo.js
 */
-// 2024-10-04 15:10
+// 2024-10-05 02:40
 
 const url = $request.url;
 if (!$response) $done({});
@@ -121,7 +121,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
   } else if (url.includes("/2/client/publisher_list")) {
     // 首页右上角按钮
     if (obj?.elements?.length > 0) {
-      obj.elements = obj.elements.filter((i) => i.app_name === "写微博" || i.app_name === "图片" || i.app_name === "视频");
+      obj.elements = obj.elements.filter((i) => ["写微博", "图片", "视频"]?.includes(i?.app_name));
     }
   } else if (url.includes("/2/comments/build_comments")) {
     // 评论区
@@ -134,7 +134,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
             if (item?.data?.user) {
               // 头像挂件,关注按钮
               removeAvatar(item?.data);
-              if (["超话社区", "微博开新年", "微博热搜", "微博视频"]?.includes(item.data?.user?.name)) {
+              if (/(超话社区|微博)/.test(item?.data?.user?.name)) {
                 continue;
               }
             }
@@ -155,10 +155,10 @@ if (url.includes("/interface/sdk/sdkad.php")) {
               delete item.data.vip_button;
             }
             // 6为你推荐更多精彩内容 15过滤提示 41评论区氛围调查
-            if (item?.type === 6 || item?.type === 15 || item?.type === 41) {
+            if ([6, 15, 41]?.includes(item?.type)) {
               continue;
             }
-            if (item?.adType === "相关内容" || item?.adType === "相关评论" || item?.adType === "推荐") {
+            if (["推荐", "相关内容", "相关评论"]?.includes(item?.adType)) {
               continue;
             }
             newItems.push(item);
@@ -174,7 +174,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
           if (item.user) {
             // 头像挂件,关注按钮
             removeAvatar(item);
-            if (item?.user?.name === "超话社区" || item?.user?.name === "微博视频") {
+            if (["超话社区", "微博视频"]?.includes(item?.user?.name)) {
               continue;
             }
           }
@@ -574,7 +574,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
           for (let group of card.card_group) {
             let cardType = group.card_type;
             // 22那年今天
-            if ([22]?.includes(cardType)) {
+            if (cardType === 22) {
               continue;
             }
             if (group?.mblog) {
@@ -664,8 +664,11 @@ if (url.includes("/interface/sdk/sdkad.php")) {
     delete obj.compose_add_guide; // 过期的情人节红包
     delete obj.feed_redpacket; // 首页右上角红包图标
     delete obj.floating_windows_force_show; // 强制展示的悬浮窗
+    delete obj.interceptad; // 可能是首页签到弹窗
+    delete obj.interceptad_cardlist; // 可能是首页签到弹窗
     delete obj.loginconfig; // 登录领红包
     delete obj.profile_lotties; // 个人主页头像挂件素材
+    delete obj.ug_red_paper; // 可能是首页签到弹窗
     delete obj.weibo_pic_banner; // 微博种草晒图
   } else if (url.includes("/2/search/")) {
     // 搜索页信息流

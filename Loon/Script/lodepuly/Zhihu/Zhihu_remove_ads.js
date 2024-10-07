@@ -78,18 +78,9 @@ if (url.includes("/answers/v2/") || url.includes("/articles/v2/")) {
     obj.config.is_show_followguide_alert = false;
   }
 } else if (url.includes("/bazaar/vip_tab/header")) {
-  if (obj?.activity_banner) {
-    // 一元领会员
-    delete obj.activity_banner;
-  }
-  if (obj?.activity_window) {
-    // 会员弹窗
-    delete obj.activity_window;
-  }
-  if (obj?.vip_tip) {
-    // 开通会员提示信息
-    delete obj.vip_tip;
-  }
+  delete obj.activity_banner; // 一元领会员
+  delete obj.activity_window; // 会员弹窗
+  delete obj.vip_tip; // 开通会员提示信息
 } else if (url.includes("/commercial_api/app_float_layer")) {
   // 悬浮图标
   if ("feed_egg" in obj) {
