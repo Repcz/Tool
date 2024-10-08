@@ -623,7 +623,6 @@ domain_set:
 - htracker5.zmzfile.com
 - hot.m.shouji.360tpcdn.com
 - jsadsdisplay.cn-beijing.log.aliyuncs.com
-- in.appcenter.ms
 - log.b612kaji.com
 - ae.bdstatic.com
 - cm.bilibili.com
@@ -5542,6 +5541,7 @@ domain_suffix_set:
 - analytics-batch.blitz.gg
 - blitz-analytics-batch-server.blitz.gg
 - smetrics.bliz.com
+- stat.blogg.se
 - stats.blogg.se
 - lxsway.blogg.se
 - newstats.blogg.se
@@ -13646,6 +13646,7 @@ domain_suffix_set:
 - private.roche.com
 - smetrics.roche.com
 - apacenews.roche.com
+- stat.rodeo.net
 - partneri.roklen.cz
 - rokno.com
 - smetrics.rolex.com
@@ -19909,6 +19910,7 @@ domain_suffix_set:
 - cv.kuvings.jp
 - kvidcq.com
 - pop.kvideo.xyz
+- kvkcei.xyz
 - kvsvug.xyz
 - kvyyyde.cn
 - open.kwaizt.com
@@ -21046,6 +21048,7 @@ domain_suffix_set:
 - elq.nextens.nl
 - secureforms.nextens.nl
 - nexxxt.biz
+- neyoxa.xyz
 - nffkfg.com
 - nfztms.com
 - log.ngaynay.vn
@@ -21426,6 +21429,7 @@ domain_suffix_set:
 - ad.owlair.net
 - ownpage.fr
 - owyame.xyz
+- oxkqeu.xyz
 - oxkyaq.xyz
 - oxmvcg.xyz
 - oxoucm.xyz
@@ -21983,6 +21987,7 @@ domain_suffix_set:
 - qpigoa.xyz
 - qprskl.com
 - qpxohp.com
+- qpyrqg.xyz
 - qpzegye.cn
 - qqhuhu.com
 - qqqwes.com
@@ -22267,6 +22272,7 @@ domain_suffix_set:
 - riscil.com
 - rivdxb.xyz
 - rixaka.com
+- rixibe.xyz
 - rjhbjv.xyz
 - rkgbqn.icu
 - rkwxfi.xyz
@@ -24484,6 +24490,7 @@ domain_suffix_set:
 - wsgayq.xyz
 - smetrics.wsib2b.com
 - wsoqwm.xyz
+- wswxsk.xyz
 - wsyfsg.xyz
 - wtp101.com
 - wtraff.com
@@ -24637,6 +24644,7 @@ domain_suffix_set:
 - xvnitu.com
 - xvorpqz.cn
 - xvpcjl.xyz
+- xvzcfh.xyz
 - trck1.xwager.xyz
 - xwbmjb.xyz
 - xwdjnj.xyz
@@ -29573,10 +29581,6 @@ domain_suffix_set:
 - adg-data.kajicam.com
 - kakdgmn.com
 - kalooga.com
-- stats.kaltura.com
-- kalstats.kaltura.com
-- analytics.kaltura.com
-- livestats.kaltura.com
 - kantiwl.com
 - kaprila.com
 - analytics.karakuri.ai
@@ -31063,6 +31067,7 @@ domain_suffix_set:
 - nptauiw.com
 - npulchj.com
 - nqftyfn.com
+- nqyrywn.icu
 - nr-data.net
 - sheeta.nrj-play.fr
 - metric.nrma.com.au
@@ -32706,6 +32711,7 @@ domain_suffix_set:
 - metrics.sephora.com
 - smetrics.sephora.com
 - serch26.biz
+- serleap.com
 - solutions.sertifi.com
 - statman.sesong.info
 - marketing.setaram.com
@@ -33999,6 +34005,7 @@ domain_suffix_set:
 - ujznabh.com
 - ukdtzkc.com
 - ukitert.top
+- ukkiftx.icu
 - ukrsvit.ukrmir.info
 - ukskxmh.com
 - ukzoweq.com
@@ -35616,6 +35623,7 @@ domain_suffix_set:
 - 33848102.xyz
 - 33across.com
 - 360yield.com
+- 36833185.xyz
 - 369bgrec.top
 - tracker.374nnahs.com
 - ana.3751chat.com
@@ -40562,6 +40570,7 @@ domain_suffix_set:
 - iwouhoft.com
 - iwrkhphl.xyz
 - iwtserve.com
+- iwursero.top
 - iwwdcglj.com
 - iyisayfa.net
 - iymbywma.com
@@ -50139,6 +50148,7 @@ domain_suffix_set:
 - cdn.falkloo.cloud
 - falsefeet.com
 - shjwhv.falsepeti.com
+- stat.familjeliv.se
 - lxsway.familjeliv.se
 - trx3.famousfix.com
 - ab.fanatical.com
@@ -54573,6 +54583,7 @@ domain_suffix_set:
 - fnoqgg.roninwear.com
 - rookinews.com
 - link.roomaters.com
+- roritchou.net
 - aqoeyb.rosemom.co.kr
 - www.rote8mino.com
 - secure.rote8mino.com
@@ -62672,6 +62683,7 @@ domain_suffix_set:
 - goinformer.com
 - metrics.goinggoing.com
 - smetrics.goinggoing.com
+- goingkinch.com
 - goldcaster.xyz
 - acton.goldencomm.com
 - stats.goldsguide.com
@@ -64493,6 +64505,7 @@ domain_suffix_set:
 - moviesring.com
 - mp3dance.today
 - mpqgoircwb.com
+- mpuwrudpeo.com
 - mpzwsvueph.com
 - mqldskirbp.com
 - smetrics.mrappliance.ca
@@ -69582,6 +69595,7 @@ domain_suffix_set:
 - go-dev.callersmart.com
 - track.calljanedoe.com
 - cc.calltracking.ru
+- calm-length.pro
 - calomelsiti.com
 - metrics.calvinklein.com
 - metrics.explore.calvinklein.com
@@ -70979,6 +70993,7 @@ domain_suffix_set:
 - freightopen.com
 - cueohf.frenchboard.com
 - frenchequal.pro
+- freqbedrite.com
 - go.frescofrigo.app
 - fresh-video.com
 - frezahkthnz.com
@@ -77101,6 +77116,7 @@ domain_suffix_set:
 - varys.asongofzandc.xyz
 - creativeassets.asosservices.com
 - asozordoafie.com
+- asperncrepes.com
 - aspireetopee.com
 - p1.assetscdn.stream
 - p2.assetscdn.stream
@@ -77287,6 +77303,7 @@ domain_suffix_set:
 - smetrics.bank-daiwa.co.jp
 - banktopvn.online
 - track.bannedcelebs.com
+- banner-online.nl
 - banneradsday.com
 - bannerbridge.net
 - bannerchange.net
@@ -80335,6 +80352,7 @@ domain_suffix_set:
 - lkoqoxgkntjv.com
 - lmaghokalqji.xyz
 - lnlxhsjjqfjs.com
+- lnuqlyoejdpb.com
 - loadsurprise.com
 - loanmoney-th.com
 - lobberamylom.top
@@ -83510,6 +83528,7 @@ domain_suffix_set:
 - tzrlfzwyicvj.com
 - tzyjotwoocku.com
 - u29qnuav3i6p.com
+- uafkcvpvvelp.com
 - ubadzufyfjcd.com
 - ubiirddtnmja.com
 - go.ubmamg-media.com
@@ -83743,6 +83762,7 @@ domain_suffix_set:
 - banners.videosecrets.com
 - vidientu-247.com
 - vidientu247s.com
+- vidrugnirtop.net
 - vidsbranch.space
 - vidshouse.online
 - vidsocean.online
@@ -85162,6 +85182,7 @@ domain_suffix_set:
 - brocardgillar.com
 - brodownloads.site
 - brokergesture.com
+- stat.brollopstorget.se
 - lxsway.brollopstorget.se
 - bromidsluluai.com
 - metrics.brooksrunning.com
@@ -86599,6 +86620,7 @@ domain_suffix_set:
 - gaming-at-my.best
 - gammaplatform.com
 - ganodusskunks.top
+- gapersinglesa.com
 - lvsats.gardner-white.com
 - gdg.gardnerdenver.com
 - trk.gardnerdenver.com
@@ -88735,6 +88757,7 @@ domain_suffix_set:
 - logconfig.polarisoffice.com
 - promotion.polarisoffice.com
 - media.polariswealth.net
+- polarlybaizas.com
 - policeonline.club
 - policycounsel.org
 - tr.policyexpert.info
@@ -96444,6 +96467,7 @@ domain_suffix_set:
 - allpcsoftwares.info
 - allprofitsurvey.top
 - allsports4free.live
+- stat.alltforforaldrar.se
 - lxsway.alltforforaldrar.se
 - alludedaridboob.com
 - allureencourage.com
@@ -97263,6 +97287,7 @@ domain_suffix_set:
 - dosagebreakfast.com
 - smetrics.doujinshi-print.com
 - downtransmitter.com
+- doyenssudsier.click
 - dpseympatijgpaw.com
 - dqrpajecblodtqd.com
 - drabimprovement.com
@@ -100035,6 +100060,7 @@ domain_suffix_set:
 - vpnsafebrowsing.com
 - vrcjleonnurifjy.xyz
 - vrivslffndepxqd.xyz
+- vroomedbedroll.shop
 - vrquqhnikhcnixn.com
 - vsgfjfsmcewnuhx.com
 - vttbtsamsbbcpgy.com
@@ -102388,6 +102414,7 @@ domain_suffix_set:
 - saltsleaseholder.com
 - ros3d4dbs3px.salud-masculina.info
 - yrjpgjv35y9x.salud-masculina.info
+- b.ranking.apis.sankei-digital.co.jp
 - saulttrailwaysi.info
 - sawanincreasein.info
 - adebis.sbishinseibank.co.jp
@@ -110188,6 +110215,7 @@ domain_suffix_set:
 - arithmeticifrancorous.com
 - arkfreakyinsufficient.com
 - arkunexpectedtrousers.com
+- aromaticunderstanding.pro
 - arrangeaffectedtables.com
 - arrearstreatyexamples.com
 - articlegarlandferment.com

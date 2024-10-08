@@ -354,6 +354,7 @@ DOMAIN,cdn.glitch.global
 DOMAIN,cdn.glitch.me
 DOMAIN,cdn.gofundme.com
 DOMAIN,cdn.graph.office.net
+DOMAIN,cdn.growthbook.io
 DOMAIN,cdn.hackernoon.com
 DOMAIN,cdn.hashnode.com
 DOMAIN,cdn.headwayapp.co
@@ -550,6 +551,7 @@ DOMAIN,checkout.stripe.com
 DOMAIN,ci.testling.com
 DOMAIN,claritystatic.azureedge.net
 DOMAIN,client.px-cloud.net
+DOMAIN,clientmetrics-pa.googleapis.com
 DOMAIN,clips-media-assets2.twitch.tv
 DOMAIN,cloud.redhat.com
 DOMAIN,cloudflare.tv
@@ -693,6 +695,9 @@ DOMAIN,files.slack.com
 DOMAIN,files.writefreely.org
 DOMAIN,files.yande.re
 DOMAIN,filestore.fortinet.com
+DOMAIN,firebase-settings.crashlytics.com
+DOMAIN,firebaselogging-pa.googleapis.com
+DOMAIN,firebaselogging.googleapis.com
 DOMAIN,firefox.settings.services.mozilla.com
 DOMAIN,fiverr-res.cloudinary.com
 DOMAIN,flows.trysavvy.com
