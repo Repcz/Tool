@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-10-09T01:25:48.392Z
-# Size: 114700
+# Last Updated: 2024-10-09T12:38:39.575Z
+# Size: 114704
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -4382,6 +4382,7 @@ DOMAIN-SUFFIX,tracking.banner.g6.zing.vn
 DOMAIN-SUFFIX,tracking.playzing.g6.zing.vn
 DOMAIN-SUFFIX,collector5.zipy.ai
 DOMAIN-SUFFIX,dm.zjut.cc
+DOMAIN-SUFFIX,efg.zle.com
 DOMAIN-SUFFIX,abcd.zle.com
 DOMAIN-SUFFIX,www.zng.com
 DOMAIN-SUFFIX,zoda.ru
@@ -19175,6 +19176,7 @@ DOMAIN-SUFFIX,app.jili178.us
 DOMAIN-SUFFIX,tk.jim-joe.fr
 DOMAIN-SUFFIX,jinair.sc.jinair.com
 DOMAIN-SUFFIX,jinair.nsc.jinair.com
+DOMAIN-SUFFIX,jingjs.top
 DOMAIN-SUFFIX,jinxpn.xyz
 DOMAIN-SUFFIX,jinzige.cn
 DOMAIN-SUFFIX,znlgke.jiobit.com
@@ -24208,6 +24210,7 @@ DOMAIN-SUFFIX,wtp101.com
 DOMAIN-SUFFIX,wtraff.com
 DOMAIN-SUFFIX,wtstats.ro
 DOMAIN-SUFFIX,wttuuyd.cn
+DOMAIN-SUFFIX,wuiqiq.xyz
 DOMAIN-SUFFIX,wuisaq.top
 DOMAIN-SUFFIX,wuluju.uno
 DOMAIN-SUFFIX,wurqaz.com
@@ -29761,6 +29764,7 @@ DOMAIN-SUFFIX,ldvnehc.xyz
 DOMAIN-SUFFIX,leadium.com
 DOMAIN-SUFFIX,tracking.leadlink.de
 DOMAIN-SUFFIX,app.leadsrx.com
+DOMAIN-SUFFIX,leagsmk.icu
 DOMAIN-SUFFIX,webapps.leasing.com
 DOMAIN-SUFFIX,ins.leavitt.com
 DOMAIN-SUFFIX,images.insurance.leavitt.com
