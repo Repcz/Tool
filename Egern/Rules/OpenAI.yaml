@@ -1,6 +1,5 @@
 no_resolve: true
 domain_set:
-- chat.openai.com.cdn.cloudflare.net
 - o33249.ingest.sentry.io
 - openaiapi-site.azureedge.net
 - openaicom.imgix.net
@@ -23,10 +22,12 @@ domain_set:
 - chat.mistral.ai
 - console.mistral.ai
 domain_suffix_set:
+- ai.com
 - chatgpt.com
 - oaistatic.com
 - oaiusercontent.com
 - openai.com
+- openai.com.cdn.cloudflare.net
 - anthropic.com
 - claude.ai
 - grazie.ai
