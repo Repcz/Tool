@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-10-10T10:35:57.811Z
-# Size: 112713
+# Last Updated: 2024-10-10T10:52:00.496Z
+# Size: 112717
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -5537,6 +5537,7 @@ DOMAIN-SUFFIX,adimages.eva.live
 DOMAIN-SUFFIX,marketing.evcp.com
 DOMAIN-SUFFIX,get.even.com
 DOMAIN-SUFFIX,get-staging.even.com
+DOMAIN-SUFFIX,ingress-alpha.ewp.live
 DOMAIN-SUFFIX,ingress-bonde.ewp.live
 DOMAIN-SUFFIX,ingress-earth.ewp.live
 DOMAIN-SUFFIX,ingress-haven.ewp.live
@@ -10683,6 +10684,7 @@ DOMAIN-SUFFIX,analytics.gazeta.pl
 DOMAIN-SUFFIX,report.iheartmedia.gbqofs.io
 DOMAIN-SUFFIX,gbuy.shop
 DOMAIN-SUFFIX,gbuzz.net
+DOMAIN-SUFFIX,ur.gcion.com
 DOMAIN-SUFFIX,gannett.gcion.com
 DOMAIN-SUFFIX,gclick.cn
 DOMAIN-SUFFIX,gdd08.com
@@ -13781,6 +13783,7 @@ DOMAIN-SUFFIX,analytics.tnt-tv.pl
 DOMAIN-SUFFIX,sanalytics.tnt-tv.pl
 DOMAIN-SUFFIX,analytics.tnt-tv.ro
 DOMAIN-SUFFIX,sanalytics.tnt-tv.ro
+DOMAIN-SUFFIX,to-kr.com
 DOMAIN-SUFFIX,clnbze.to.com.pl
 DOMAIN-SUFFIX,toapz.xyz
 DOMAIN-SUFFIX,tagmanager.toast.com
@@ -62394,6 +62397,7 @@ DOMAIN-SUFFIX,ad-creatives-public.commondatastorage.googleapis.com
 DOMAIN-SUFFIX,trakksocial.googlecode.com
 DOMAIN-SUFFIX,myscoop-tracking.googlecode.com
 DOMAIN-SUFFIX,attributiontrackingga.googlecode.com
+DOMAIN-SUFFIX,googleplay.pro
 DOMAIN-SUFFIX,googleseo.life
 DOMAIN-SUFFIX,gooods4you.com
 DOMAIN-SUFFIX,byhqrw.gopeople.co.kr
