@@ -1,5 +1,5 @@
 // 脚本引用 https://raw.githubusercontent.com/RuCu6/Loon/refs/heads/main/Scripts/bilibili/json.js
-// 2024-09-28 13:15
+// 2024-10-09 01:35
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -13,14 +13,14 @@ if (url.includes("/x/resource/show/skin")) {
 } else if (url.includes("/x/resource/show/tab/v2")) {
   // 底部选项卡
   if (obj?.data?.bottom?.length > 0) {
-    const sortLists = ["首页", "动态", "我的"];
+    const sortLists = ["推荐", "热门", "动画", "影视", "直播"];
     obj.data.bottom = obj.data.bottom
       .filter((i) => sortLists?.includes(i?.name))
       .sort((a, b) => sortLists.indexOf(a?.name) - sortLists.indexOf(b?.name));
   }
   // 首页导航栏
   if (obj?.data?.tab?.length > 0) {
-    const sortLists = ["推荐", "热门", "动画", "影视", "直播"];
+    const sortLists = ["推荐", "热门", "影视", "动画"];
     obj.data.tab = obj.data.tab
       .filter((i) => sortLists?.includes(i?.name))
       .sort((a, b) => sortLists.indexOf(a?.name) - sortLists.indexOf(b?.name));
@@ -147,9 +147,8 @@ if (url.includes("/x/resource/show/skin")) {
       } else if (["vertical_ad_av", "vertical_live", "vertical_pgc"]?.includes(item?.card_goto)) {
         continue;
       } else {
-        if (item?.story_cart_icon) {
-          delete item.story_cart_icon;
-        }
+        delete item.creative_entrance; // 推荐话题搜索框
+        delete item.story_cart_icon; // 多余图标
         newItems.push(item);
       }
     }
