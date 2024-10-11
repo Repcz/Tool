@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2024-10-07T19:20:32.639Z
-# Size: 778
+# Last Updated: 2024-10-11T11:15:55.354Z
+# Size: 765
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -77,7 +77,6 @@ HOST-SUFFIX,oppo.cn,DIRECT
 HOST-SUFFIX,qbox.me,DIRECT
 HOST-SUFFIX,qcc.com,DIRECT
 HOST-SUFFIX,qpic.cn,DIRECT
-HOST-SUFFIX,qq.wang,DIRECT
 HOST-SUFFIX,sina.cn,DIRECT
 HOST-SUFFIX,t3go.cn,DIRECT
 HOST-SUFFIX,vip.com,DIRECT
@@ -254,7 +253,6 @@ HOST-SUFFIX,tmall.com,DIRECT
 HOST-SUFFIX,tudou.com,DIRECT
 HOST-SUFFIX,tvmao.com,DIRECT
 HOST-SUFFIX,tvzhe.com,DIRECT
-HOST-SUFFIX,ucweb.com,DIRECT
 HOST-SUFFIX,ui.com.cn,DIRECT
 HOST-SUFFIX,upyun.com,DIRECT
 HOST-SUFFIX,vmall.com,DIRECT
@@ -373,13 +371,8 @@ HOST-SUFFIX,pubyun.net,DIRECT
 HOST-SUFFIX,qcloud.com,DIRECT
 HOST-SUFFIX,qdaily.com,DIRECT
 HOST-SUFFIX,qh-cdn.com,DIRECT
-HOST-SUFFIX,qhres0.com,DIRECT
-HOST-SUFFIX,qhres1.com,DIRECT
+HOST-SUFFIX,qhimgs.com,DIRECT
 HOST-SUFFIX,qhres2.com,DIRECT
-HOST-SUFFIX,qhres3.com,DIRECT
-HOST-SUFFIX,qhres4.com,DIRECT
-HOST-SUFFIX,qhres5.com,DIRECT
-HOST-SUFFIX,qhres6.com,DIRECT
 HOST-SUFFIX,qidian.com,DIRECT
 HOST-SUFFIX,qqmail.com,DIRECT
 HOST-SUFFIX,realme.com,DIRECT
@@ -497,13 +490,7 @@ HOST-SUFFIX,oppopay.com,DIRECT
 HOST-SUFFIX,opposhop.cn,DIRECT
 HOST-SUFFIX,orayimg.com,DIRECT
 HOST-SUFFIX,oschina.net,DIRECT
-HOST-SUFFIX,qhimgs0.com,DIRECT
-HOST-SUFFIX,qhimgs1.com,DIRECT
-HOST-SUFFIX,qhimgs2.com,DIRECT
-HOST-SUFFIX,qhimgs3.com,DIRECT
-HOST-SUFFIX,qhimgs4.com,DIRECT
-HOST-SUFFIX,qhimgs5.com,DIRECT
-HOST-SUFFIX,qhimgs6.com,DIRECT
+HOST-SUFFIX,qhimgs?.com,DIRECT
 HOST-SUFFIX,qihucdn.com,DIRECT
 HOST-SUFFIX,qingcdn.com,DIRECT
 HOST-SUFFIX,qiyipic.com,DIRECT

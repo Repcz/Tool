@@ -76,7 +76,6 @@ domain_suffix_set:
 - qbox.me
 - qcc.com
 - qpic.cn
-- qq.wang
 - sina.cn
 - t3go.cn
 - vip.com
@@ -250,7 +249,6 @@ domain_suffix_set:
 - tudou.com
 - tvmao.com
 - tvzhe.com
-- ucweb.com
 - ui.com.cn
 - upyun.com
 - vmall.com
@@ -368,13 +366,8 @@ domain_suffix_set:
 - qcloud.com
 - qdaily.com
 - qh-cdn.com
-- qhres0.com
-- qhres1.com
+- qhimgs.com
 - qhres2.com
-- qhres3.com
-- qhres4.com
-- qhres5.com
-- qhres6.com
 - qidian.com
 - qqmail.com
 - realme.com
@@ -491,13 +484,7 @@ domain_suffix_set:
 - opposhop.cn
 - orayimg.com
 - oschina.net
-- qhimgs0.com
-- qhimgs1.com
-- qhimgs2.com
-- qhimgs3.com
-- qhimgs4.com
-- qhimgs5.com
-- qhimgs6.com
+- qhimgs?.com
 - qihucdn.com
 - qingcdn.com
 - qiyipic.com
