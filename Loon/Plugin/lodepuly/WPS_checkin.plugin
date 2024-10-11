@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(749)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/Resource/Markdown/WPS/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/WPS.png
-#!date = 2024-10-11 15:17:36
+#!date = 2024-10-11 15:45:26
 
 [Argument]
 CaptureCookie = switch, false, true, tag = 捕获Cookie, desc = 此开关控制插件是否捕获Cookie
@@ -23,7 +23,7 @@ CRONEXP = input, "0 8 * * *", tag = 定时参数, desc = 这里需要输入符�
 http-request ^https:\/\/moapi\.wps\.cn\/app\/ios\/v1\/app$ script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/WPS/WPS_checkin.js, requires-body = true, tag = 捕获Cookie, enable = {CaptureCookie}
 
 # 定时签到
-cron {CRONEXP} script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/WPS/WPS_checkin.js, tag = WPS签到, timeout = 120, argument = [{AK}, {SK}, {MAX_RETRIES}]
+cron {CRONEXP} script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/WPS/WPS_checkin.js, tag = WPS每日签到, timeout = 120, argument=[{AK},{SK},{MAX_RETRIES}]
 
 [MitM]
 hostname = moapi.wps.cn
