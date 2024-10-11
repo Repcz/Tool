@@ -1,16 +1,17 @@
-#!name = WPS签到
-#!desc = 暂时没写描述
+#!name = WPS每日签到
+#!desc = WPS每日签到领会员时间，需要进入此插件主页链接阅读使用说明操作。
 #!openUrl = https://apps.apple.com/app/id599852710
 #!author = 小白脸
 #!tag = 去广告
 #!system = 
 #!system_version = 
 #!loon_version = 3.2.1(749)
-#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Markdown/WPS/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/WPS.png
-#!date = 2024-10-11 11:56:01
+#!date = 2024-10-11 13:34:14
 
 [Argument]
+CaptureCookie = switch, false, true, tag = 捕获Cookie, desc = 此开关控制插件是否捕获Cookie
 AK = input, "null", tag = API Key, desc = 这里需要输入有效的API Key
 SK = input, "null", tag = Secret Key, desc = 这里需要输入有效的Secret Key
 MAX_RETRIES = input, "5", tag = 最大运行次数, desc = 仅允许填写阿拉伯数字
@@ -18,6 +19,10 @@ MAX_RETRIES = input, "5", tag = 最大运行次数, desc = 仅允许填写阿拉
 CRONEXP = input, "0 8 * * *", tag = 定时参数, desc = 这里需要输入符合CRON表达式的参数
 
 [Script]
+# 捕获Cookie
+http-request ^https:\/\/moapi\.wps\.cn\/app\/ios\/v1\/app$ script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/WPS/WPS_checkin.js, requires-body = true, tag = 捕获Cookie, enable = {CaptureCookie}
+
+# 定时签到
 cron {CRONEXP} script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/WPS/WPS_checkin.js, tag = WPS签到, timeout = 120, Argument = [{AK}, {SK}, {MAX_RETRIES}]
 
 [MitM]

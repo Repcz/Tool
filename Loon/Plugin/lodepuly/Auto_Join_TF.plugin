@@ -13,7 +13,7 @@
 
 [Argument]
 CaptureAccountToken = switch, true, false, tag = 捕获账号令牌, desc = 此开关控制插件是否捕获账户令牌
-CaptureAppID = switch, true, false, tag = 捕获应用ID, desc = 此开关控制插件是否捕获应用ID
+CaptureAppID = switch, false, true, tag = 捕获应用ID, desc = 此开关控制插件是否捕获应用ID
 TimingParameters = input, "*/1 * * * * *", tag = 定时参数, desc = 这里需要输入符合CRON表达式的参数
 
 [Rule]

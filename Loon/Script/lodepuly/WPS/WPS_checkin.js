@@ -1,10 +1,12 @@
+// 脚本作者：小白脸
 const $ = new ToolClient();
 $.getScript`https://cdn.jsdelivr.net/npm/fabric@latest/dist/fabric.min.js`;
 
-const AK = $argument.AK;
-const SK = $argument.SK;
-const MAX_RETRIES = $argument.MAX_RETRIES;
-
+const {
+  AK,
+  SK,
+  MAX_RETRIES = 5,
+} = $.parseArgument();
 
 const captureRequest = () => {
   const parse = (delimiter) => (str) =>
@@ -18,7 +20,7 @@ const captureRequest = () => {
 
   isInfo && $.writeJson({ userid, cookie: { wps_sids } }, "WPS_info");
 
-  const message = isInfo ? "抓包成功,请关闭抓包模块" : "抓包失败,请检查请求内容";
+  const message = isInfo ? "成功捕获Cookie，请前往WPS每日签到插件详情页面关闭捕获Cookie" : "捕获Cookie失败，请检查请求内容。";
 
   $.msg(...message.split(","));
 };
@@ -104,7 +106,7 @@ const baidu = async (image, cb) => {
   };
 
   const { error_msg, ...body } = await $.fetch(op).toJson();
-  if (error_msg) throw new Error(`百度api调用失败,错误信息: ${error_msg}`);
+  if (error_msg) throw new Error(`百度API调用失败，错误信息: ${error_msg}`);
   return cb(body);
 };
 
@@ -203,7 +205,7 @@ class Wps {
 //主逻辑
 const main = async () => {
   const WPS_info = $.readJson("WPS_info");
-  if (!WPS_info) throw new Error("未获取CK, 请先抓包");
+  if (!WPS_info) throw new Error("尚未捕获Cookie，请前往WPS每日签到插件详情页面打开捕获Cookie再重新打开WPS应用。");
   const wps = new Wps(WPS_info);
 
   const checkinAttempt = async (retryCount = 0) => {
