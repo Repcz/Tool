@@ -1,0 +1,24 @@
+#!name = WPS签到
+#!desc = 暂时没写描述
+#!openUrl = https://apps.apple.com/app/id599852710
+#!author = 小白脸
+#!tag = 去广告
+#!system = 
+#!system_version = 
+#!loon_version = 3.2.1(749)
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/WPS.png
+#!date = 2024-10-11 11:25:27
+
+[Argument]
+AK = input, "null", tag = API Key, desc = 这里需要输入有效的API Key
+SK = input, "null", tag = Secret Key, desc = 这里需要输入有效的Secret Key
+MAX_RETRIES = input, "5", tag = 最大运行次数, desc = 仅允许填写阿拉伯数字
+# TIMEOUT = input, "120", tag = 脚本超时参数, desc = 仅允许填写阿拉伯数字，单位为秒。 // 此项暂不支持传参
+CRONEXP = input, "0 8 * * *", tag = 定时参数, desc = 这里需要输入符合CRON表达式的参数
+
+[Script]
+cron {CRONEXP} script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/WPS/WPS_checkin.js, tag = WPS签到, timeout = 120, Argument = [[{AK}, {SK}, {MAX_RETRIES}]]
+
+[MitM]
+hostname = moapi.wps.cn
