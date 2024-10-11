@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-10-11T11:46:36.503Z
-# Size: 93975
+# Last Updated: 2024-10-11T12:54:57.699Z
+# Size: 93982
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -34825,6 +34825,7 @@ HOST-SUFFIX,data-f59db3288b.op-online.de,REJECT
 HOST-SUFFIX,opbandit.com,REJECT
 HOST-SUFFIX,smetrics.opdualag.com,REJECT
 HOST-SUFFIX,tagger.opecloud.com,REJECT
+HOST-SUFFIX,openapp.link,REJECT
 HOST-SUFFIX,logs.openbank.com,REJECT
 HOST-SUFFIX,openbook.net,REJECT
 HOST-SUFFIX,teayjx.openfarma.it,REJECT
@@ -49329,6 +49330,7 @@ HOST-SUFFIX,d2vvyk8pqw001z.cloudfront.net,REJECT
 HOST-SUFFIX,d2vwl2vhlatm2f.cloudfront.net,REJECT
 HOST-SUFFIX,d2vwsmst56j4zq.cloudfront.net,REJECT
 HOST-SUFFIX,d2w92zbcg4cwxr.cloudfront.net,REJECT
+HOST-SUFFIX,d2w9cdu84xc4eq.cloudfront.net,REJECT
 HOST-SUFFIX,d2wa5sea6guof0.cloudfront.net,REJECT
 HOST-SUFFIX,d2werg7o2mztut.cloudfront.net,REJECT
 HOST-SUFFIX,d2wexw25ezayh1.cloudfront.net,REJECT
@@ -53379,6 +53381,7 @@ HOST-SUFFIX,psistaugli.com,REJECT
 HOST-SUFFIX,psoofaltoo.com,REJECT
 HOST-SUFFIX,pstnmhftix.xyz,REJECT
 HOST-SUFFIX,psugkfqmys.com,REJECT
+HOST-SUFFIX,psunseewhu.com,REJECT
 HOST-SUFFIX,psurigrabi.com,REJECT
 HOST-SUFFIX,psurouptoa.com,REJECT
 HOST-SUFFIX,ptailadsol.net,REJECT
@@ -63750,6 +63753,7 @@ HOST-SUFFIX,diddylinable.top,REJECT
 HOST-SUFFIX,didongviet.store,REJECT
 HOST-SUFFIX,web.diebayerische.de,REJECT
 HOST-SUFFIX,dienmayxanhh.com,REJECT
+HOST-SUFFIX,diffhobbet.click,REJECT
 HOST-SUFFIX,stats.digiexpert.store,REJECT
 HOST-SUFFIX,redtrack.digitalfalcon.ae,REJECT
 HOST-SUFFIX,digitalkites.com,REJECT
@@ -64608,6 +64612,7 @@ HOST-SUFFIX,ucdvze.gudrunsjoden.com,REJECT
 HOST-SUFFIX,ff.guimpefesses.com,REJECT
 HOST-SUFFIX,gujakqludcuk.com,REJECT
 HOST-SUFFIX,response.gulfbusiness.com,REJECT
+HOST-SUFFIX,gullahbaraca.com,REJECT
 HOST-SUFFIX,gulsyangtao.guru,REJECT
 HOST-SUFFIX,rw.gundogleaker.com,REJECT
 HOST-SUFFIX,gurgehumours.com,REJECT
@@ -67488,6 +67493,7 @@ HOST-SUFFIX,superpcexpert.ru,REJECT
 HOST-SUFFIX,superstriker.net,REJECT
 HOST-SUFFIX,superxxxfree.com,REJECT
 HOST-SUFFIX,suppliersbhx.com,REJECT
+HOST-SUFFIX,supqajfecgjv.com,REJECT
 HOST-SUFFIX,surfcounters.com,REJECT
 HOST-SUFFIX,c4n.surfotresors.com,REJECT
 HOST-SUFFIX,sadbmetrics.surinenglish.com,REJECT
@@ -76342,6 +76348,7 @@ HOST-SUFFIX,maispremium.com.br,REJECT
 HOST-SUFFIX,majorworkertop.com,REJECT
 HOST-SUFFIX,partneri.majstervposteli.sk,REJECT
 HOST-SUFFIX,earthworm.makethemdebate.com,REJECT
+HOST-SUFFIX,malduckcompile.com,REJECT
 HOST-SUFFIX,malleteighteen.com,REJECT
 HOST-SUFFIX,maltcontaining.com,REJECT
 HOST-SUFFIX,partner.malujpodlecisel.cz,REJECT

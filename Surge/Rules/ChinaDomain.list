@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2024-10-11T12:06:44.333Z
-# Size: 763
+# Last Updated: 2024-10-11T13:05:09.217Z
+# Size: 765
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -108,6 +108,7 @@ DOMAIN-SUFFIX,amap.com
 DOMAIN-SUFFIX,baidu.cn
 DOMAIN-SUFFIX,c-t.work
 DOMAIN-SUFFIX,cctv.com
+DOMAIN-SUFFIX,cnnic.cn
 DOMAIN-SUFFIX,csdn.com
 DOMAIN-SUFFIX,csdn.net
 DOMAIN-SUFFIX,dewu.com
@@ -535,6 +536,7 @@ DOMAIN-SUFFIX,changyan.com
 DOMAIN-SUFFIX,chaoxing.com
 DOMAIN-SUFFIX,cmbchina.com
 DOMAIN-SUFFIX,cmfchina.com
+DOMAIN-SUFFIX,cnnic.com.cn
 DOMAIN-SUFFIX,dangdang.com
 DOMAIN-SUFFIX,dbankcdn.com
 DOMAIN-SUFFIX,dianping.com
