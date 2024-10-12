@@ -1,39 +1,66 @@
-// 2024-08-11 13:53:43
+// 2024-10-12 04:00
+
 const url = $request.url;
+if (!$response) $done({});
+if (!$response.body) $done({});
 let obj = JSON.parse($response.body);
 
-// 删除首页信息流广告
-if (url.includes("/gw/mtop.taobao.idlehome.home.nextfresh")) {
-    const namesToRemove = [
-        "fish_home_advertise_card_d4",
-        "fish_home_feeds_pager_banner",
-        "fish_home_content_card",
-        "fish_home_feeds_commodity_card_2"
-    ];
-
-    if (obj.data && obj.data.sections) {
-        obj.data.sections = obj.data.sections.filter(section => {
-            if (section.template && namesToRemove.includes(section.template.name)) {
-                return false;
-            }
-            return true;
-        });
+if (url.includes("/mtop.idle.user.page.my.adapter/")) {
+  // 我的页面
+  if (obj?.data?.container?.sections?.length > 0) {
+    let newSections = [];
+    for (let items of obj.data.container.sections) {
+      if (items?.template?.name === "my_fy25_user_info") {
+        // 专属等级横幅
+        delete items.item.level;
+      } else if (items?.template?.name === "my_fy25_slider") {
+        // 滚动小提示
+        continue;
+      } else if (items?.template?.name === "xianyu_home_fish_my_banner_card_2023") {
+        continue;
+      }
+      if (items?.template?.name === "my_fy25_community") {
+        // 底部乱七八糟无用内容
+        continue;
+      }
+      newSections.push(items);
     }
-
-    if (obj.data && obj.data.widgetReturnDO) {
-        delete obj.data.widgetReturnDO;
+    obj.data.container.sections = newSections;
+  }
+} else if (url.includes("/mtop.taobao.idlehome.home.nextfresh/")) {
+  // 首页信息流
+  if (obj?.data?.sections?.length > 0) {
+    obj.data.sections = obj.data.sections.filter(
+      (i) =>
+        ![
+          "fish_home_advertise_card_d4",
+          "fish_home_content_card",
+          "fish_home_feeds_commodity_card_2",
+          "fish_home_feeds_pager_banner"
+        ]?.includes(i?.template?.name)
+    );
+  }
+  if (obj?.data?.widgetReturnDO?.widgets?.length > 0) {
+    let widget = obj?.data?.widgetReturnDO?.widgets[0];
+    if (widget?.widgetDO?.channelDOList?.length > 0) {
+      widget.widgetDO.channelDOList = widget.widgetDO.channelDOList.filter((i) =>
+        ["手机数码", "分类", "上门回收", "闲鱼鱼市", "闲鱼鉴别", ""]?.includes(i?.title)
+      );
     }
-} else if (url.includes("/gw/mtop.taobao.idlehome.home.circle.list/")) {
-    if (obj.data && obj.data.circleList) {
-        obj.data.circleList.forEach(circle => {
-            if (circle.showType) {
-                circle.showType = "text"; // 将首页顶部标签模式修改为文本
-            }
-            if (circle.showInfo && circle.showInfo.titleImage) {
-                delete circle.showInfo.titleImage; // 删除将首页顶部图片标签的资源
-            }
-        });
+  }
+} else if (url.includes("/mtop.taobao.idlehome.home.circle.list/")) {
+  if (obj?.data?.circleList?.length > 0) {
+    let newLists = [];
+    for (let list of obj.data.circleList) {
+      if (list?.showType) {
+        list.showType = "text"; // 将首页顶部标签模式修改为文本
+      }
+      delete list.showInfo.titleImage; // 删除将首页顶部图片标签的资源
+      newLists.push(list);
     }
+    obj.data.circleList = newLists;
+  }
 }
 
 $done({ body: JSON.stringify(obj) });
+
