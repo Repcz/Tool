@@ -1,4 +1,5 @@
-// 2024-10-12 04:00
+// 脚本引用 https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/xianyu.js
+// 2024-10-12 15:05
 
 const url = $request.url;
 if (!$response) $done({});
@@ -28,6 +29,7 @@ if (url.includes("/mtop.idle.user.page.my.adapter/")) {
     obj.data.container.sections = newSections;
   }
 } else if (url.includes("/mtop.taobao.idlehome.home.nextfresh/")) {
+  delete obj.data.bannerReturnDO; // 首页横幅
   // 首页信息流
   if (obj?.data?.sections?.length > 0) {
     obj.data.sections = obj.data.sections.filter(
@@ -60,7 +62,19 @@ if (url.includes("/mtop.idle.user.page.my.adapter/")) {
     }
     obj.data.circleList = newLists;
   }
+} else if (url.includes("/mtop.taobao.idlemtopsearch.search/")) {
+  // 搜索结果广告
+  if (obj?.data?.resultList?.length > 0) {
+    obj.data.resultList = obj.data.resultList.filter(
+      (i) =>
+        !(
+          i?.data?.template?.name === "idlefish_seafood_vote" || // 搜索结果 投票
+          i?.data?.template?.name === "idlefish_search_card_category_select" || // 大家都在搜
+          i?.data?.item?.main?.exContent?.isAliMaMaAD === "true" || // 广告1
+          i?.data?.item?.main?.exContent?.isAliMaMaAD === true // 广告2
+        )
+    );
+  }
 }
 
 $done({ body: JSON.stringify(obj) });
-
