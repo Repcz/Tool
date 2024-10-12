@@ -554,7 +554,6 @@ DOMAIN,checkout.stripe.com
 DOMAIN,ci.testling.com
 DOMAIN,claritystatic.azureedge.net
 DOMAIN,client.px-cloud.net
-DOMAIN,clientmetrics-pa.googleapis.com
 DOMAIN,clips-media-assets2.twitch.tv
 DOMAIN,cloud.redhat.com
 DOMAIN,cloudflare.tv
@@ -1852,6 +1851,7 @@ DOMAIN-SUFFIX,characterai.io
 DOMAIN-SUFFIX,chasecdn.com
 DOMAIN-SUFFIX,chcdn.xyz
 DOMAIN-SUFFIX,chesscomfiles.com
+DOMAIN-SUFFIX,clientmetrics-pa.googleapis.com
 DOMAIN-SUFFIX,cloud.influxdata.com
 DOMAIN-SUFFIX,cloud1.influxdata.com
 DOMAIN-SUFFIX,cloud2.influxdata.com
@@ -2198,6 +2198,8 @@ DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,oculuscdn.com
 DOMAIN-SUFFIX,odycdn.com
+DOMAIN-SUFFIX,ogads-pa.clients6.google.com
+DOMAIN-SUFFIX,ogads-pa.googleapis.com
 DOMAIN-SUFFIX,oktacdn.com
 DOMAIN-SUFFIX,olemovienews.com
 DOMAIN-SUFFIX,ominisrc.com
