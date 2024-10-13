@@ -1,7 +1,7 @@
 /*
 引用地址：https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/weibo.js
 */
-// 2024-10-05 02:40
+// 2024-10-13 22:10
 
 const url = $request.url;
 if (!$response) $done({});
@@ -72,6 +72,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
 } else {
   let obj = JSON.parse(body);
   if (url.includes("/2/cardlist")) {
+    delete obj.top; // 发现页 趋势 顶部头图
     if (obj?.cards?.length > 0) {
       let newCards = [];
       for (let card of obj.cards) {
