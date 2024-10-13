@@ -1,6 +1,6 @@
 /*
 脚本作者：小白脸
-更新时间：2024-10-12 20:58:29
+更新时间：2024-10-13 17:59:33
 */
 
 const $ = new ToolClient();
@@ -142,7 +142,7 @@ class Wps {
       method: c ? "post" : "get",
       url: `https://personal-act.wps.cn/wps_clock/v2${v}`,
       headers: this.headers,
-      body: `double=0&v=6.11.0.8885&c=${c}&version=6.11.0.8885`,
+      body: c ? `double=0&v=6.11.0.8885&c=${c}&version=6.11.0.8885` : "",
     };
     return $.fetch(op).toJson();
   }
