@@ -6,7 +6,7 @@
 #
 # Egern Version ≥ 1.22.0
 #
-# 最后更新时间: 2024-09-03 21:45
+# 最后更新时间: 2024-10-14 18:30
 #
 # ================
 
@@ -70,13 +70,8 @@ dns:
   - wildcard: # BiliBili upos视频服务器（腾讯云）
       match: 'upos-sz-upcdntx.bilivideo.com'
       value: https://doh.pub/dns-query
-
-  - proxy_rule_set: # 国内域名规则集
-      match: https://raw.githubusercontent.com/Repcz/Tool/X/Egern/Rules/ChinaDomain.yaml
-      value: system # 使用系统 DNS 解析
-      update_interval: 86400
   - wildcard: # 通配符规则
-      match: '*'
+      match: system
       value: Domestic-Encrypted-DNS
 
   hosts: # 域名映射

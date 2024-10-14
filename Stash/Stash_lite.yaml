@@ -4,7 +4,7 @@
 #
 # Stash Version ≥ 2.6.0 
 #
-# 最后更新时间: 2024-09-03 21:45
+# 最后更新时间: 2024-10-14 18:30
 #
 # ================
 
@@ -12,12 +12,10 @@ mode: rule
 log-level: info       
 
 dns:
-  # 解析非 IP 的 dns 用的 dns 服务器,只支持纯 IP
-  default-nameserver: [223.5.5.5, 119.29.29.29, 180.184.1.1]
+  # 默认的域名解析服务器
+  nameserver: [system]
   # fake ip 白名单列表'以下地址不会下发fakeip映射用于连接
   fake-ip-filter: ['+.lan', '*', '+.local', '+.cmpassport.com', 'id6.me', 'open.e.189.cn', 'mdn.open.wo.cn', 'opencloud.wostore.cn', 'auth.wosms.cn', '+.10099.com.cn']
-  # 默认的域名解析服务器
-  nameserver: [quic://223.5.5.5, quic://223.6.6.6, https://1.12.12.12/dns-query, https://120.53.53.53/dns-query]
 
 # > 订阅信息展示
 subscribe-url: 
