@@ -7,7 +7,7 @@
 #
 # Mihomo Version ≥ 1.8.4
 #
-# 最后更新时间: 2024-10-14 18:30
+# 最后更新时间: 2024-10-14 19:00
 #
 # ================
 
@@ -66,7 +66,7 @@ dns:
   listen: :1053
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter: ['*', '+.lan', '+.local', '+.direct', '+.msftconnecttest.com', '+.msftncsi.com']
-  nameserver: [system]
+  nameserver: [223.5.5.5, 119.29.29.29]
 
 # 锚点参数
 pg: &pg {type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, DIRECT]}

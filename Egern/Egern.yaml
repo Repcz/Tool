@@ -6,7 +6,7 @@
 #
 # Egern Version ≥ 1.22.0
 #
-# 最后更新时间: 2024-10-14 18:30
+# 最后更新时间: 2024-10-14 19:00
 #
 # ================
 
@@ -29,16 +29,11 @@ dns:
   # DNS 引导器：用于解析上游DNS(DoT、DoH、DoQ)，默认 system
   bootstrap:
     - system
-    - 180.184.1.1
-    - 223.5.5.5
-    - 119.29.29.29
-
-  # 上游 DNS 服务器
   upstreams:
     # 国内公共加密 DNS
-    Domestic-Encrypted-DNS:
-    - quic://dns.alidns.com
-    - https://doh.pub/dns-query
+    Domestic-DNS:
+    - 223.5.5.5
+    - 119.29.29.29
 
   # DNS 转发规则
   forward:
@@ -71,8 +66,8 @@ dns:
       match: 'upos-sz-upcdntx.bilivideo.com'
       value: https://doh.pub/dns-query
   - wildcard: # 通配符规则
-      match: system
-      value: Domestic-Encrypted-DNS
+      match: "*"
+      value: Domestic-DNS
 
   hosts: # 域名映射
 

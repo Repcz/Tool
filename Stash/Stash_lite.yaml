@@ -4,7 +4,7 @@
 #
 # Stash Version ≥ 2.6.0 
 #
-# 最后更新时间: 2024-10-14 18:30
+# 最后更新时间: 2024-10-14 19:00
 #
 # ================
 
@@ -13,7 +13,7 @@ log-level: info
 
 dns:
   # 默认的域名解析服务器
-  nameserver: [system]
+  nameserver: [223.5.5.5, 119.29.29.29]
   # fake ip 白名单列表'以下地址不会下发fakeip映射用于连接
   fake-ip-filter: ['+.lan', '*', '+.local', '+.cmpassport.com', 'id6.me', 'open.e.189.cn', 'mdn.open.wo.cn', 'opencloud.wostore.cn', 'auth.wosms.cn', '+.10099.com.cn']
 
