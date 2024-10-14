@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(749)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/VVebo.png
-#!date = 2024-01-19 22:25:07
+#!date = 2024-10-14 21:43:19
 
 [Script]
 http-request ^https:\/\/api\.weibo\.cn\/2\/users\/show\? script-path = https://gitlab.com/lodepuly/vpn_tool/raw/master/Resource/Script/VVebo/VVebo_repair.js, tag = 修复时间线
