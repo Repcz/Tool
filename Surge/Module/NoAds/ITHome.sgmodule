@@ -6,9 +6,6 @@
 ^https?:\/\/api\.zuihuimai\.com\/static\/.*\/hongbao - reject
 ^https?:\/\/dat\.ruanmei\.com\/ithome\/money\/acd\.json$ - reject
 
-[Script]
-ItHome = type=http-response, pattern=^https:\/\/napi\.ithome\.com\/api\/(?:news\/index|topmenu\/getfeeds\?|api\/douyin\/GetLiveInfo), script-path=https://raw.githubusercontent.com/Keywos/rule/main/script/ithome/js/index.js, requires-body=true, max-size=0, script-update-interval={{{script-update}}}, argument="{"banner":"{{{banner}}}","bannerAd":"{{{bannerAd}}}","top":"{{{top}}}"}"
-
 [MITM]
 hostname = %APPEND% api.zuihuimai.com, dat.ruanmei.com, napi.ithome.com
 
