@@ -1,12 +1,5 @@
 domain_set:
 - this_ruleset_is_made_by_sukkaw.ruleset.skk.moe
-- www.intel.cn
-- dl.ubnt.com
-- config.ubnt.com
-- cn.download.nvidia.com
-- gstore.val.manlaxy.com
-- lv.queniujq.cn
-- www.layuicdn.com
 domain_suffix_set:
 - 3.cn
 - t.cn
@@ -125,6 +118,7 @@ domain_suffix_set:
 - huya.com
 - hwht.com
 - infoq.cn
+- www.intel.cn
 - ipip.net
 - jb51.net
 - jpush.cn
@@ -148,6 +142,8 @@ domain_suffix_set:
 - soku.com
 - soso.com
 - tanx.com
+- dl.ubnt.com
+- config.ubnt.com
 - uczzd.cn
 - udesk.cn
 - v-56.com
@@ -349,6 +345,7 @@ domain_suffix_set:
 - myoppo.com
 - netease.im
 - ntp.org.cn
+- cn.download.nvidia.com
 - oneplus.cn
 - ourdvs.com
 - outlook.cn
@@ -475,6 +472,7 @@ domain_suffix_set:
 - leiniao.com
 - linkedin.cn
 - ludashi.com
+- gstore.val.manlaxy.com
 - meituan.com
 - meituan.net
 - myzaker.com
@@ -487,6 +485,7 @@ domain_suffix_set:
 - qihucdn.com
 - qingcdn.com
 - qiyipic.com
+- lv.queniujq.cn
 - ronghub.com
 - ruanmei.com
 - sankuai.com
@@ -553,6 +552,7 @@ domain_suffix_set:
 - jstarkan.com
 - ksmobile.com
 - kuaishou.com
+- www.layuicdn.com
 - lenovomm.com
 - livechina.cn
 - luojilab.com
@@ -703,6 +703,7 @@ domain_suffix_set:
 - autohome.com.cn
 - baidustatic.com
 - bilibilipay.com
+- byteacctimg.com
 - chinamobile.com
 - cowtransfer.com
 - didichuxing.com

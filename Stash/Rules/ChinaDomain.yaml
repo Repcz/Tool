@@ -1,8 +1,8 @@
 payload:
   #########################################
   # Sukka's Ruleset - Domestic Domains
-  # Last Updated: 2024-10-11T13:05:09.217Z
-  # Size: 765
+  # Last Updated: 2024-10-15T08:17:36.346Z
+  # Size: 766
   # License: AGPL 3.0
   # Homepage: https://ruleset.skk.moe
   # GitHub: https://github.com/SukkaW/Surge
@@ -127,7 +127,7 @@ payload:
   - DOMAIN-SUFFIX,huya.com
   - DOMAIN-SUFFIX,hwht.com
   - DOMAIN-SUFFIX,infoq.cn
-  - DOMAIN,www.intel.cn
+  - DOMAIN-SUFFIX,www.intel.cn
   - DOMAIN-SUFFIX,ipip.net
   - DOMAIN-SUFFIX,jb51.net
   - DOMAIN-SUFFIX,jpush.cn
@@ -151,8 +151,8 @@ payload:
   - DOMAIN-SUFFIX,soku.com
   - DOMAIN-SUFFIX,soso.com
   - DOMAIN-SUFFIX,tanx.com
-  - DOMAIN,dl.ubnt.com
-  - DOMAIN,config.ubnt.com
+  - DOMAIN-SUFFIX,dl.ubnt.com
+  - DOMAIN-SUFFIX,config.ubnt.com
   - DOMAIN-SUFFIX,uczzd.cn
   - DOMAIN-SUFFIX,udesk.cn
   - DOMAIN-SUFFIX,v-56.com
@@ -354,7 +354,7 @@ payload:
   - DOMAIN-SUFFIX,myoppo.com
   - DOMAIN-SUFFIX,netease.im
   - DOMAIN-SUFFIX,ntp.org.cn
-  - DOMAIN,cn.download.nvidia.com
+  - DOMAIN-SUFFIX,cn.download.nvidia.com
   - DOMAIN-SUFFIX,oneplus.cn
   - DOMAIN-SUFFIX,ourdvs.com
   - DOMAIN-SUFFIX,outlook.cn
@@ -481,7 +481,7 @@ payload:
   - DOMAIN-SUFFIX,leiniao.com
   - DOMAIN-SUFFIX,linkedin.cn
   - DOMAIN-SUFFIX,ludashi.com
-  - DOMAIN,gstore.val.manlaxy.com
+  - DOMAIN-SUFFIX,gstore.val.manlaxy.com
   - DOMAIN-SUFFIX,meituan.com
   - DOMAIN-SUFFIX,meituan.net
   - DOMAIN-SUFFIX,myzaker.com
@@ -494,7 +494,7 @@ payload:
   - DOMAIN-SUFFIX,qihucdn.com
   - DOMAIN-SUFFIX,qingcdn.com
   - DOMAIN-SUFFIX,qiyipic.com
-  - DOMAIN,lv.queniujq.cn
+  - DOMAIN-SUFFIX,lv.queniujq.cn
   - DOMAIN-SUFFIX,ronghub.com
   - DOMAIN-SUFFIX,ruanmei.com
   - DOMAIN-SUFFIX,sankuai.com
@@ -561,7 +561,7 @@ payload:
   - DOMAIN-SUFFIX,jstarkan.com
   - DOMAIN-SUFFIX,ksmobile.com
   - DOMAIN-SUFFIX,kuaishou.com
-  - DOMAIN,www.layuicdn.com
+  - DOMAIN-SUFFIX,www.layuicdn.com
   - DOMAIN-SUFFIX,lenovomm.com
   - DOMAIN-SUFFIX,livechina.cn
   - DOMAIN-SUFFIX,luojilab.com
@@ -712,6 +712,7 @@ payload:
   - DOMAIN-SUFFIX,autohome.com.cn
   - DOMAIN-SUFFIX,baidustatic.com
   - DOMAIN-SUFFIX,bilibilipay.com
+  - DOMAIN-SUFFIX,byteacctimg.com
   - DOMAIN-SUFFIX,chinamobile.com
   - DOMAIN-SUFFIX,cowtransfer.com
   - DOMAIN-SUFFIX,didichuxing.com
