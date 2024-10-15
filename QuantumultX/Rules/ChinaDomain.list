@@ -1,6 +1,6 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2024-10-15T08:17:36.346Z
+# Last Updated: 2024-10-15T08:43:07.330Z
 # Size: 766
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
@@ -126,7 +126,7 @@ HOST-SUFFIX,hupu.com,DIRECT
 HOST-SUFFIX,huya.com,DIRECT
 HOST-SUFFIX,hwht.com,DIRECT
 HOST-SUFFIX,infoq.cn,DIRECT
-HOST-SUFFIX,www.intel.cn,DIRECT
+HOST,www.intel.cn,DIRECT
 HOST-SUFFIX,ipip.net,DIRECT
 HOST-SUFFIX,jb51.net,DIRECT
 HOST-SUFFIX,jpush.cn,DIRECT
@@ -150,8 +150,8 @@ HOST-SUFFIX,sohu.com,DIRECT
 HOST-SUFFIX,soku.com,DIRECT
 HOST-SUFFIX,soso.com,DIRECT
 HOST-SUFFIX,tanx.com,DIRECT
-HOST-SUFFIX,dl.ubnt.com,DIRECT
-HOST-SUFFIX,config.ubnt.com,DIRECT
+HOST,dl.ubnt.com,DIRECT
+HOST,config.ubnt.com,DIRECT
 HOST-SUFFIX,uczzd.cn,DIRECT
 HOST-SUFFIX,udesk.cn,DIRECT
 HOST-SUFFIX,v-56.com,DIRECT
@@ -353,7 +353,7 @@ HOST-SUFFIX,mobike.com,DIRECT
 HOST-SUFFIX,myoppo.com,DIRECT
 HOST-SUFFIX,netease.im,DIRECT
 HOST-SUFFIX,ntp.org.cn,DIRECT
-HOST-SUFFIX,cn.download.nvidia.com,DIRECT
+HOST,cn.download.nvidia.com,DIRECT
 HOST-SUFFIX,oneplus.cn,DIRECT
 HOST-SUFFIX,ourdvs.com,DIRECT
 HOST-SUFFIX,outlook.cn,DIRECT
@@ -480,7 +480,7 @@ HOST-SUFFIX,leetcode.cn,DIRECT
 HOST-SUFFIX,leiniao.com,DIRECT
 HOST-SUFFIX,linkedin.cn,DIRECT
 HOST-SUFFIX,ludashi.com,DIRECT
-HOST-SUFFIX,gstore.val.manlaxy.com,DIRECT
+HOST,gstore.val.manlaxy.com,DIRECT
 HOST-SUFFIX,meituan.com,DIRECT
 HOST-SUFFIX,meituan.net,DIRECT
 HOST-SUFFIX,myzaker.com,DIRECT
@@ -493,7 +493,7 @@ HOST-SUFFIX,qhimgs?.com,DIRECT
 HOST-SUFFIX,qihucdn.com,DIRECT
 HOST-SUFFIX,qingcdn.com,DIRECT
 HOST-SUFFIX,qiyipic.com,DIRECT
-HOST-SUFFIX,lv.queniujq.cn,DIRECT
+HOST,lv.queniujq.cn,DIRECT
 HOST-SUFFIX,ronghub.com,DIRECT
 HOST-SUFFIX,ruanmei.com,DIRECT
 HOST-SUFFIX,sankuai.com,DIRECT
@@ -560,7 +560,7 @@ HOST-SUFFIX,ixgvideo.com,DIRECT
 HOST-SUFFIX,jstarkan.com,DIRECT
 HOST-SUFFIX,ksmobile.com,DIRECT
 HOST-SUFFIX,kuaishou.com,DIRECT
-HOST-SUFFIX,www.layuicdn.com,DIRECT
+HOST,www.layuicdn.com,DIRECT
 HOST-SUFFIX,lenovomm.com,DIRECT
 HOST-SUFFIX,livechina.cn,DIRECT
 HOST-SUFFIX,luojilab.com,DIRECT

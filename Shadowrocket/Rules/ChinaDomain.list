@@ -1,6 +1,6 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2024-10-15T08:17:36.346Z
+# Last Updated: 2024-10-15T08:43:07.330Z
 # Size: 766
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
@@ -126,7 +126,7 @@ DOMAIN-SUFFIX,hupu.com
 DOMAIN-SUFFIX,huya.com
 DOMAIN-SUFFIX,hwht.com
 DOMAIN-SUFFIX,infoq.cn
-DOMAIN-SUFFIX,www.intel.cn
+DOMAIN,www.intel.cn
 DOMAIN-SUFFIX,ipip.net
 DOMAIN-SUFFIX,jb51.net
 DOMAIN-SUFFIX,jpush.cn
@@ -150,8 +150,8 @@ DOMAIN-SUFFIX,sohu.com
 DOMAIN-SUFFIX,soku.com
 DOMAIN-SUFFIX,soso.com
 DOMAIN-SUFFIX,tanx.com
-DOMAIN-SUFFIX,dl.ubnt.com
-DOMAIN-SUFFIX,config.ubnt.com
+DOMAIN,dl.ubnt.com
+DOMAIN,config.ubnt.com
 DOMAIN-SUFFIX,uczzd.cn
 DOMAIN-SUFFIX,udesk.cn
 DOMAIN-SUFFIX,v-56.com
@@ -353,7 +353,7 @@ DOMAIN-SUFFIX,mobike.com
 DOMAIN-SUFFIX,myoppo.com
 DOMAIN-SUFFIX,netease.im
 DOMAIN-SUFFIX,ntp.org.cn
-DOMAIN-SUFFIX,cn.download.nvidia.com
+DOMAIN,cn.download.nvidia.com
 DOMAIN-SUFFIX,oneplus.cn
 DOMAIN-SUFFIX,ourdvs.com
 DOMAIN-SUFFIX,outlook.cn
@@ -480,7 +480,7 @@ DOMAIN-SUFFIX,leetcode.cn
 DOMAIN-SUFFIX,leiniao.com
 DOMAIN-SUFFIX,linkedin.cn
 DOMAIN-SUFFIX,ludashi.com
-DOMAIN-SUFFIX,gstore.val.manlaxy.com
+DOMAIN,gstore.val.manlaxy.com
 DOMAIN-SUFFIX,meituan.com
 DOMAIN-SUFFIX,meituan.net
 DOMAIN-SUFFIX,myzaker.com
@@ -493,7 +493,7 @@ DOMAIN-SUFFIX,qhimgs?.com
 DOMAIN-SUFFIX,qihucdn.com
 DOMAIN-SUFFIX,qingcdn.com
 DOMAIN-SUFFIX,qiyipic.com
-DOMAIN-SUFFIX,lv.queniujq.cn
+DOMAIN,lv.queniujq.cn
 DOMAIN-SUFFIX,ronghub.com
 DOMAIN-SUFFIX,ruanmei.com
 DOMAIN-SUFFIX,sankuai.com
@@ -560,7 +560,7 @@ DOMAIN-SUFFIX,ixgvideo.com
 DOMAIN-SUFFIX,jstarkan.com
 DOMAIN-SUFFIX,ksmobile.com
 DOMAIN-SUFFIX,kuaishou.com
-DOMAIN-SUFFIX,www.layuicdn.com
+DOMAIN,www.layuicdn.com
 DOMAIN-SUFFIX,lenovomm.com
 DOMAIN-SUFFIX,livechina.cn
 DOMAIN-SUFFIX,luojilab.com
