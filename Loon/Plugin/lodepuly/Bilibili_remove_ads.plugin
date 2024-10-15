@@ -11,7 +11,7 @@
 #!date = 2024-10-15 21:07:19
 
 [General]
-force-http-engine-hosts = :8080
+force-http-engine-hosts = :8000
 
 [Rule]
 # 开屏广告
