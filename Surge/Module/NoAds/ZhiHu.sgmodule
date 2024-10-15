@@ -1,7 +1,7 @@
 #!name=去广告｜知乎
 #!desc=知乎去广告 [建议卸载重装]\n作者：@RuCu6 @blackmatrix7
 #!category=⚙️ ▸ NoAds
-#!date=2024-10-02 13:00
+#!date=2024-10-15 10:50
 
 [Rule]
 # 知乎
@@ -74,9 +74,6 @@ IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve
 精简顶部标签 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/root\/tab, script-path=https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/zhihu.js, requires-body=true
 
 移除首页推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/v2\/topstory\/hot-lists\/everyone-seeing\?, script-path=https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/zhihu.js, requires-body=true
-
-# 会员页面 - 弹窗、悬浮动图
-移除会员页面推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/bazaar\/vip_tab\/header\?, script-path=https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/zhihu.js, requires-body=true
 
 # 回答详情页 - 评论区顶部、下一个回答
 移除回答详情页推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/next-(?:bff|data|render), script-path=https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/zhihu.js, requires-body=true

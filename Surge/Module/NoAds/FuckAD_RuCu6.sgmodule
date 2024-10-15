@@ -1,7 +1,7 @@
 #!name=去广告｜RuCu6
 #!desc=去广告合集\n作者：@RuCu6
 #!category=⚙️ ▸ NoAds
-#!date=2024-10-09 11:30
+#!date=2024-10-15 10:05
 
 [Rule]
 # 12306
@@ -238,7 +238,6 @@ URL-REGEX,^http:\/\/\w{32}\.jddebug\.com\/diagnose\?,REJECT
 # 百度云 //pan.baidu.com
 ^https:\/\/pan\.baidu\.com\/(?:act\/|aipic\/|aisearch\/|api\/getsyscfg\?|rest\/) data-type=text data="{}" status-code=200
 
-# 昌原云充 五代十路 //www.washpayer.com
 ^https:\/\/www\.washpayer\.com\/(?:ad\/getBannerAd|ad\/user-adword|user\/getBannerList) data-type=text data="{}" status-code=200
 
 # 豆瓣 //api.douban.com, img3.doubanio.com, qnmob3.doubanio.com
@@ -286,7 +285,6 @@ URL-REGEX,^http:\/\/\w{32}\.jddebug\.com\/diagnose\?,REJECT
 # 微信 //mp.weixin.qq.com
 ^https:\/\/mp\.weixin\.qq\.com\/mp\/(?:cps_product_info|getappmsgad|jsmonitor|masonryfeed|relatedarticle) data-type=text data="{}" status-code=200
 
-# 小米商城 //api.m.mi.com, shop-api.retail.mi.com
 ^https:\/\/api\.m\.mi\.com\/(?:v1\/(?:app\/popup_info|home\/page_feed|misearch\/search_input)|v2\/search\/search_default) data-type=text data="{}" status-code=200
 
 ^https:\/\/shop-api\.retail\.mi\.com\/mtop\/navi\/(?:rec\/merge\/|skywheel\/mishop\/splash) data-type=text data="{}" status-code=200
@@ -314,9 +312,7 @@ taobao_2 = type=http-response, pattern=^https:\/\/poplayer\.template\.alibaba\.c
 caoliu = type=http-response, pattern=^https:\/\/2023\.redircdn\.com\/web\/mob_post\.js\?, script-path=https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/myBlockAds.js, requires-body=true
 
 # 昌原云充 五代十路 //www.washpayer.com
-changyuan_1 = type=http-response, pattern=^http:\/\/ad\.5tao5ai\.com\/common\/getReceipt\?, script-path=https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/changyuan.js, requires-body=true
-
-changyuan_2 = type=http-response, pattern=^https:\/\/www\.washpayer\.com\/(?:common\/getReceipt|user\/message\/equipmentPara), script-path=https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/changyuan.js, requires-body=true
+changyuan = type=http-response, pattern=^https:\/\/www\.washpayer\.com\/user\/message\/equipmentPara\?, script-path=https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/changyuan.js, requires-body=true
 
 # 京东 //api.m.jd.com
 jingdong = type=http-response, pattern=^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(?:deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome), script-path=https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/jingdong.js, requires-body=true
@@ -333,7 +329,7 @@ kg_linkcn = type=http-response, pattern=^https?:\/\/adserviceretry\.kglink\.cn\/
 wechat = type=http-response, pattern=^https\:\/\/(?:weixin110\.qq|security\.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?, script-path=https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/wechat/unlockUrls.js, requires-body=true
 
 # 小米商城 //api.m.mi.com, shop-api.retail.mi.com
-mi_mall = type=http-response, pattern=^https:\/\/api\.m\.mi\.com\/v1\/(?:app\/start|order\/expressView), script-path=https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/myBlockAds.js, requires-body=true
+mi_mall = type=http-response, pattern=^https:\/\/api\.m\.mi\.com\/v1\/app\/start, script-path=https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/myBlockAds.js, requires-body=true
 
 # 中国农业银行 //mobilepaas.abchina.com.cn
 abchina = type=http-request, pattern=^https:\/\/mobilepaas\.abchina\.com\.cn:441\/mgw\.htm$, script-path=https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/header.js

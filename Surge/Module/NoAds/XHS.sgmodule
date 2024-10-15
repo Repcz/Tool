@@ -1,7 +1,7 @@
 #!name=去广告｜小红书
 #!desc=小红书去广告\n作者：@RuCu6 @fmz200
 #!category=⚙️ ▸ NoAds
-#!date=2024-04-13 14:20:28
+#!date=2024-10-15 10:45
 
 [Rule]
 AND, ((PROTOCOL, UDP), (DOMAIN-SUFFIX, xiaohongshu.com)), REJECT
@@ -22,10 +22,6 @@ AND, ((PROTOCOL, UDP), (DOMAIN-SUFFIX, xiaohongshu.com)), REJECT
 移除详情页小部件 = type=http-response, pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/(?:note\/widgets|user\/followings\/followfeed), script-path=https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/xiaohongshu.js, requires-body=true
 
 # 搜索页
-移除搜索页广告 = type=http-response, pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/search\/(?:banner|hot)_list, script-path=https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/xiaohongshu.js, requires-body=true
-
-移除搜索页广告 = type=http-response, pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v4\/search\/(?:hint|trending), script-path=https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/xiaohongshu.js, requires-body=true
-
 移除搜索页广告 = type=http-response, pattern=^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v10\/search\/notes\?, script-path=https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/xiaohongshu.js, requires-body=true
 
 # 开屏广告
