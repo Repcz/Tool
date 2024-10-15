@@ -1,26 +1,21 @@
-// 脚本引用 https://raw.githubusercontent.com/RuCu6/Loon/refs/heads/main/Scripts/bilibili/json.js
-// 2024-10-09 01:35
+// 脚本引用 https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/bilibili/json.js
+// 2024-10-15 11:00
 
 const url = $request.url;
 if (!$response.body) $done({});
 let obj = JSON.parse($response.body);
 
-if (url.includes("/x/resource/show/skin")) {
-  // 皮肤推送
-  if (obj?.data?.common_equip) {
-    delete obj.data.common_equip;
-  }
-} else if (url.includes("/x/resource/show/tab/v2")) {
+if (url.includes("/x/resource/show/tab/v2")) {
   // 底部选项卡
   if (obj?.data?.bottom?.length > 0) {
-    const sortLists = ["推荐", "热门", "动画", "影视", "直播"];
+    const sortLists = ["首页", "动态", "我的"];
     obj.data.bottom = obj.data.bottom
       .filter((i) => sortLists?.includes(i?.name))
       .sort((a, b) => sortLists.indexOf(a?.name) - sortLists.indexOf(b?.name));
   }
   // 首页导航栏
   if (obj?.data?.tab?.length > 0) {
-    const sortLists = ["推荐", "热门", "影视", "动画"];
+    const sortLists = ["推荐", "热门", "动画", "影视", "直播"];
     obj.data.tab = obj.data.tab
       .filter((i) => sortLists?.includes(i?.name))
       .sort((a, b) => sortLists.indexOf(a?.name) - sortLists.indexOf(b?.name));
@@ -32,9 +27,6 @@ if (url.includes("/x/resource/show/skin")) {
       obj.data.top[0].pos = 1;
     }
   }
-} else if (url.includes("/x/resource/top/activity")) {
-  // 首页右上角活动
-  obj = { code: -404, message: "啥都木有", ttl: 1, data: null };
 } else if (url.includes("/x/v2/account/mine?")) {
   // 我的页面
   const del = ["rework_v1", "vip_section", "vip_section_v2"];
@@ -45,9 +37,7 @@ if (url.includes("/x/resource/show/skin")) {
   if (obj?.data?.sections_v2?.length > 0) {
     let newSects = [];
     for (let item of obj.data.sections_v2) {
-      if (item?.button) {
-        delete item.button;
-      }
+      delete item.button;
       if (item?.style) {
         if (item?.style === 1 || item?.style === 2) {
           if (item?.title) {
@@ -105,10 +95,7 @@ if (url.includes("/x/resource/show/skin")) {
   }
 } else if (url.includes("/x/v2/account/mine/ipad")) {
   // ipad我的页面
-  if (obj?.data?.ipad_upper_sections) {
-    // 投稿 创作首页 稿件管理 有奖活动
-    delete obj.data.ipad_upper_sections;
-  }
+  delete obj.data.ipad_upper_sections; // 投稿 创作首页 稿件管理 有奖活动
   if (obj?.data?.ipad_recommend_sections?.length > 0) {
     // 789我的关注 790我的消息 791我的钱包 792直播中心 793大会员 794我的课程 2542我的游戏
     const itemList = [789, 790];
@@ -148,7 +135,7 @@ if (url.includes("/x/resource/show/skin")) {
         continue;
       } else {
         delete item.creative_entrance; // 推荐话题搜索框
-        delete item.story_cart_icon; // 多余图标
+        delete item.story_cart_icon; // 相关话题图标
         newItems.push(item);
       }
     }
@@ -209,9 +196,7 @@ if (url.includes("/x/resource/show/skin")) {
   }
 } else if (url.includes("/xlive/app-room/v1/index/getInfoByRoom")) {
   // 直播
-  if (obj?.data?.activity_banner_info) {
-    delete obj.data.activity_banner_info;
-  }
+  delete obj.data.activity_banner_info;
   if (obj?.data?.shopping_info) {
     obj.data.shopping_info = { is_show: 0 };
   }
