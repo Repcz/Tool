@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(749)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Soul.png
-#!date = 2024-06-16 20:23:01
+#!date = 2024-10-15 10:53:02
 
 [Rule]
 # 地理位置 - 影响注册账号时的属地判断
@@ -36,20 +36,11 @@ IP-CIDR, 121.196.197.147/32, REJECT, no-resolve
 ^https:\/\/ssp\.soulapp\.cn\/api\/q reject-dict
 ^https:\/\/chat-live\.soulapp\.cn\/live\/planet\/recListV2 reject-200
 
+# 页面内容
+^https:\/\/(?:api-\w+|gateway-mobile-gray|post)\.soulapp\.cn\/(?:furion\/position\/content|hot\/soul\/rank|mobile\/app\/version\/queryIos|official\/scene\/module|teenager\/config|v2\/post\/gift\/list|v\d\/post\/homepage\/guide\/card) response-body-json-del data
+
 [Script]
-http-response ^https:\/\/api-a\.soulapp\.cn\/v2\/post\/gift\/list script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/post\.soulapp\.cn\/hot\/soul\/rank script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/gateway-mobile-gray\.soulapp\.cn\/mobile\/app\/version\/queryIos script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/api-chat\.soulapp\.cn\/chat\/limitInfo script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/post\.soulapp\.cn\/v\d\/post\/homepage\/guide\/card script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/api-user\.soulapp\.cn\/furion\/position\/content script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/api-account\.soulapp\.cn\/teenager\/config script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/47\.110\.187\.87\/winterfell\/(?:v2\/)?getIpByDomain script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/chat-live\.soulapp\.cn\/chatroom\/chatClassifyRoomList script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/api-user\.soulapp\.cn\/v6\/planet\/config script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/api-a\.soulapp\.cn\/official\/scene\/module script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/post\.soulapp\.cn\/v2\/post\/recSquare\/subTabs script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
-http-response ^https:\/\/api-user\.soulapp\.cn\/homepage\/diamond\/position\/info script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
+http-response ^https:\/\/(?:api-\w+|chat-live|post)\.soulapp\.cn\/(?:chat\/limitInfo|chatroom\/chatClassifyRoomList|homepage\/diamond\/position\/info|v2\/post\/recSquare\/subTabs|v6\/planet\/config) script-path = https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/lodepuly/Soul/Soul_remove_ads.js, requires-body = true, tag = 移除Soul广告
 
 [MitM]
-hostname = 47.110.187.87, api-a.soulapp.cn, api-account.soulapp.cn, api-chat.soulapp.cn, api-user.soulapp.cn, chat-live.soulapp.cn, gateway-mobile-gray.soulapp.cn, post.soulapp.cn, ssp.soulapp.cn
+hostname = api*.soulapp.cn, gateway-mobile-gray.soulapp.cn, post.soulapp.cn, ssp.soulapp.cn

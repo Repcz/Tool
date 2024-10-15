@@ -1,7 +1,7 @@
 /*
-引用地址https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/xiaohongshu.js
+引用地址 https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/xiaohongshu.js
 */
-// 2023-12-20 19:00
+// 2024-10-15 10:45
 
 const url = $request.url;
 const isQuanX = typeof $task !== "undefined";
@@ -76,15 +76,6 @@ if (url.includes("/v1/note/imagefeed") || url.includes("/v2/note/feed")) {
     // 原始数据有问题 强制返回成功响应
     obj = { code: 0, success: true, msg: "成功", data: { datas: newDatas } };
   }
-} else if (url.includes("/v1/search/banner_list")) {
-  if (obj?.data) {
-    obj.data = {};
-  }
-} else if (url.includes("/v1/search/hot_list")) {
-  // 热搜列表
-  if (obj?.data?.items?.length > 0) {
-    obj.data.items = [];
-  }
 } else if (url.includes("/v1/system_service/config")) {
   // 整体配置
   const item = ["app_theme", "loading_img", "splash", "store"];
@@ -148,19 +139,6 @@ if (url.includes("/v1/note/imagefeed") || url.includes("/v2/note/feed")) {
   if (obj?.data?.items?.length > 0) {
     // recommend_user可能感兴趣的人
     obj.data.items = obj.data.items.filter((i) => !["recommend_user"]?.includes(i.recommend_reason));
-  }
-} else if (url.includes("/v4/search/hint")) {
-  // 搜索栏填充词
-  if (obj?.data?.hint_words?.length > 0) {
-    obj.data.hint_words = [];
-  }
-} else if (url.includes("/v4/search/trending")) {
-  // 搜索栏
-  if (obj?.data?.queries?.length > 0) {
-    obj.data.queries = [];
-  }
-  if (obj?.data?.hint_word) {
-    obj.data.hint_word = {};
   }
 } else if (url.includes("/v5/recommend/user/follow_recommend")) {
   // 用户详情页 你可能感兴趣的人

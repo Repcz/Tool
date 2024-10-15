@@ -1,7 +1,7 @@
 /*
 引用地址https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/zhihu.js
 */
-// 2024-10-02 13:00
+// 2024-10-15 10:50
 
 if (!$response.body) $done({});
 const url = $request.url;
@@ -32,18 +32,15 @@ if (url.includes("/answers/v2/") || url.includes("/articles/v2/")) {
     }
   }
 } else if (url.includes("/api/v4/answers")) {
-  if (obj?.data) {
-    delete obj.data;
-  }
-  if (obj?.paging) {
-    delete obj.paging;
-  }
+  delete obj.data;
+  delete obj.paging;
 } else if (url.includes("/api/v4/articles")) {
   const item = ["ad_info", "paging", "recommend_info"];
   item.forEach((i) => {
     delete obj[i];
   });
 } else if (url.includes("/appcloud2.zhihu.com/v3/config")) {
+  delete obj.config.hp_channel_tab;
   if (obj?.config) {
     if (obj.config?.homepage_feed_tab) {
       obj.config.homepage_feed_tab.tab_infos = obj.config.homepage_feed_tab.tab_infos.filter((i) => {
@@ -55,9 +52,6 @@ if (url.includes("/answers/v2/") || url.includes("/articles/v2/")) {
           return false;
         }
       });
-    }
-    if (obj.config?.hp_channel_tab) {
-      delete obj.config.hp_channel_tab;
     }
     if (obj.config?.zombie_conf) {
       obj.config.zombie_conf.zombieEnable = false;
@@ -77,10 +71,6 @@ if (url.includes("/answers/v2/") || url.includes("/articles/v2/")) {
     obj.config.zvideo_max_number = 1;
     obj.config.is_show_followguide_alert = false;
   }
-} else if (url.includes("/bazaar/vip_tab/header")) {
-  delete obj.activity_banner; // 一元领会员
-  delete obj.activity_window; // 会员弹窗
-  delete obj.vip_tip; // 开通会员提示信息
 } else if (url.includes("/commercial_api/app_float_layer")) {
   // 悬浮图标
   if ("feed_egg" in obj) {
@@ -127,17 +117,11 @@ if (url.includes("/answers/v2/") || url.includes("/articles/v2/")) {
   }
 } else if (url.includes("/questions/")) {
   // 问题回答列表
+  delete obj.ad_info;
+  delete obj.data.ad_info;
+  delete obj.query_info;
   if (obj?.data?.length > 0) {
     obj.data = obj.data.filter((i) => !i?.target?.answer_type?.includes("paid"));
-  }
-  if (obj?.data?.ad_info) {
-    delete obj.data.ad_info;
-  }
-  if (obj?.ad_info) {
-    delete obj.ad_info;
-  }
-  if (obj?.query_info) {
-    delete obj.query_info;
   }
 } else if (url.includes("/root/tab")) {
   // 首页一级标签 白名单
