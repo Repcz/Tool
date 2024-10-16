@@ -1,7 +1,7 @@
 /*
 引用地址：https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/weibo.js
 */
-// 2024-10-16 11:30
+// 2024-10-16 11:55
 
 const url = $request.url;
 if (!$response) $done({});
@@ -560,7 +560,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
     }
   } else if (url.includes("/2/push/active")) {
     delete obj.compose_add_guide; // 过期的情人节红包
-    delete obj.feed_redpacket; // 首页右上角红包图标
+    // delete obj.feed_redpacket; // 首页右上角红包图标
     delete obj.floating_windows_force_show; // 强制展示的悬浮窗
     delete obj.interceptad; // 可能是首页签到弹窗
     delete obj.interceptad_cardlist; // 可能是首页签到弹窗
@@ -571,6 +571,16 @@ if (url.includes("/interface/sdk/sdkad.php")) {
     // 禁用所有的悬浮窗
     if (obj?.disable_floating_window) {
       obj.disable_floating_window = "1";
+    }
+    // 首页右上角红包图标
+    if (obj?.feed_redpacket) {
+      obj.feed_redpacket.starttime = "2208960000";
+      obj.feed_redpacket.interval = "31536000";
+      obj.feed_redpacket.endtime = "2209046399";
+      delete obj.feed_redpacket.finish_icon;
+      delete obj.feed_redpacket.guide;
+      delete obj.feed_redpacket.icon;
+      delete obj.feed_redpacket.pre_icon;
     }
     if (obj?.floating_window_for_live_streaming) {
       obj.floating_window_for_live_streaming = false;
@@ -1000,7 +1010,8 @@ if (url.includes("/interface/sdk/sdkad.php")) {
       "interaction_extra_info", // ai评论
       "page_alerts", // 超话新帖 新用户通知
       "reward_info", // 公益赞赏
-      "source_tag_struct" // 二楼
+      "source_tag_struct", // 二楼
+      "top_cards" // 大家都在搜
     ];
     if (obj) {
       item.forEach((i) => {
