@@ -7,7 +7,7 @@
 #
 # Mihomo Version ≥ 1.8.4
 #
-# 最后更新时间: 2024-10-14 19:00
+# 最后更新时间: 2024-10-16 19:30
 #
 # ================
 
@@ -15,35 +15,18 @@
 # SS2022 = ss, 服务器IP, 23456, encrypt-method=2022-blake3-aes-256-gcm, password=SaAj4IC+cHEyWoCaUXeNBE+A8DcqKRsOELe4FOuuNJE=, udp-relay=true
 
 mixed-port: 65222 # HTTP(S) 和 SOCKS 代理混合端口
-log-level: info
+tcp-concurrent: true # TCP 并发连接所有 IP, 将使用最快握手的 TCP
+allow-lan: false# 允许局域网连接
+ipv6: true # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录
+log-level: info # 日志等级 silent/error/warning/info/debug
+unified-delay: true # 统一延迟
+find-process-mode: strict # 控制是否让 Clash 去匹配进程
+
 
 external-controller: :65223 # RESTful API 监听地址
-secret: Rebortpcz@Mihomo
-
-# 配置 WEB UI 目录，使用 http://{{external-controller}}/ui 访问
 external-ui: ui
 external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
-
-global-client-fingerprint: chrome
-mode: rule
-bind-address: "*" # 绑定IP地址，仅作用于 allow-lan 为 true，'*'表示所有地址
-allow-lan: false # 允许局域网连接
-# lan-allowed-ips:
-#  - 10.144.138.1/8
-#  - 127.0.0.1/8
-#  - 172.17.0.1/8
-#  - 192.168.31.1/8
-skip-auth-prefixes: # 设置跳过验证的IP段
-  - 127.0.0.1/8
-  # - 172.17.0.1/8
-  # - 192.168.31.1/8
-
-keep-alive-idle: 600
-keep-alive-interval: 15
-
-find-process-mode: strict
-
-unified-delay: true
+secret: Repcz@Mihomo
 
 geodata-mode: true
 geo-auto-update: true # 是否自动更新 geodata
@@ -54,66 +37,46 @@ geox-url:
   geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
   mmdb: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
 
-ipv6: true # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录
-tcp-concurrent: true # TCP并发连接所有IP, 将使用最快握手的TCP
-
-
-hosts:
+hosts: #
   "localhost": 127.0.0.1
 
 profile:
-  store-selected: true
+  store-selected: true # 储存 API 对策略组的选择，以供下次启动时使用
+  store-fake-ip: true # 储存 fakeip 映射表，域名再次发生连接时，使用原有映射地址
 
-  store-fake-ip: true
-
-# DNS配置
 dns:
-  respect-rules: false
-  cache-algorithm: arc
-  enable: true # 关闭将使用系统 DNS
-  prefer-h3: false # 开启 DoH 支持 HTTP/3，将并发尝试
+  enable: true
   listen: :60053 # 开启 DNS 服务器监听
   ipv6: true # false 将返回 AAAA 的空结果
   use-hosts: true # 查询 hosts
   enhanced-mode: redir-host
-
-
   nameserver:
     - 8.8.4.4
     - 9.9.9.12
     - 208.67.220.220
     - 94.140.14.141
 
-
 rules:
   - MATCH,DIRECT
 
-listeners:
-  - name: ss-in
+listeners: #搭建代理节点
+
+  - name: SS-2022
     type: shadowsocks
     port: 23456
     listen: "::"
-    cipher: 2022-blake3-aes-256-gcm
+    cipher: 2022-blake3-aes-256-gcm # 2022-blake3-aes-128-gcm/2022-blake3-aes-256-gcm/2022-blake3-chacha20-poly1305
     password: SaAj4IC+cHEyWoCaUXeNBE+A8DcqKRsOELe4FOuuNJE=
     udp: true
     udp-over-tcp: false
-    ip-version: ipv4-prefer # 设置节点使用 IP 版本，可选：dual，ipv4，ipv6，ipv4-prefer，ipv6-prefer。默认使用 dual
+    ip-version: ipv4-prefer
 
     smux:
       enabled: true
       protocol: h2mux
-
       max-connections: 0
       min-streams: 0
       max-streams: 1
-      # 不同配置效果不同
-      # max-connections: 16
-      # min-streams: 4
-
       statistic: true
       only-tcp: false
       padding: true
-      brutal-opts:
-        enabled: true
-        up: 50
-        down: 100
