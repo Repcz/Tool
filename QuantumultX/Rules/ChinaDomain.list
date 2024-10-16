@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2024-10-15T10:37:05.772Z
-# Size: 767
+# Last Updated: 2024-10-16T05:47:48.687Z
+# Size: 765
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -11,6 +11,7 @@
 HOST,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe,DIRECT
 HOST-SUFFIX,chaoxing.cc,DIRECT
 HOST-SUFFIX,3.cn,DIRECT
+HOST-SUFFIX,6.cn,DIRECT
 HOST-SUFFIX,t.cn,DIRECT
 HOST-SUFFIX,22.cn,DIRECT
 HOST-SUFFIX,sm.cn,DIRECT
@@ -27,6 +28,7 @@ HOST-SUFFIX,edu.cn,DIRECT
 HOST-SUFFIX,gov.cn,DIRECT
 HOST-SUFFIX,itc.cn,DIRECT
 HOST-SUFFIX,nmc.cn,DIRECT
+HOST-SUFFIX,org.cn,DIRECT
 HOST-SUFFIX,php.cn,DIRECT
 HOST-SUFFIX,url.cn,DIRECT
 HOST-SUFFIX,wps.cn,DIRECT
@@ -76,6 +78,7 @@ HOST-SUFFIX,juejin.cn,DIRECT
 HOST-SUFFIX,mifile.cn,DIRECT
 HOST-SUFFIX,mybank.cn,DIRECT
 HOST-SUFFIX,neixin.cn,DIRECT
+HOST-SUFFIX,pplive.cn,DIRECT
 HOST-SUFFIX,qqmail.cn,DIRECT
 HOST-SUFFIX,roblox.cn,DIRECT
 HOST-SUFFIX,sinajs.cn,DIRECT
@@ -136,6 +139,7 @@ HOST-SUFFIX,coding.me,DIRECT
 HOST-SUFFIX,oppoer.me,DIRECT
 HOST-SUFFIX,acg.tv,DIRECT
 HOST-SUFFIX,b23.tv,DIRECT
+HOST-SUFFIX,fun.tv,DIRECT
 HOST-SUFFIX,pps.tv,DIRECT
 HOST-SUFFIX,douyu.tv,DIRECT
 HOST-SUFFIX,maoyun.tv,DIRECT
@@ -160,6 +164,7 @@ HOST-SUFFIX,360.com,DIRECT
 HOST-SUFFIX,bh3.com,DIRECT
 HOST-SUFFIX,ccb.com,DIRECT
 HOST-SUFFIX,id6.com,DIRECT
+HOST-SUFFIX,ku6.com,DIRECT
 HOST-SUFFIX,qcc.com,DIRECT
 HOST-SUFFIX,vip.com,DIRECT
 HOST-SUFFIX,ys7.com,DIRECT
@@ -187,7 +192,9 @@ HOST-SUFFIX,miui.com,DIRECT
 HOST-SUFFIX,mubu.com,DIRECT
 HOST-SUFFIX,oppo.com,DIRECT
 HOST-SUFFIX,oray.com,DIRECT
+HOST-SUFFIX,pptv.com,DIRECT
 HOST-SUFFIX,psbc.com,DIRECT
+HOST-SUFFIX,qiku.com,DIRECT
 HOST-SUFFIX,qiyi.com,DIRECT
 HOST-SUFFIX,qyer.com,DIRECT
 HOST-SUFFIX,sina.com,DIRECT
@@ -698,9 +705,6 @@ HOST-SUFFIX,9966.org,DIRECT
 HOST-SUFFIX,aliapp.org,DIRECT
 HOST-SUFFIX,docschina.org,DIRECT
 HOST-SUFFIX,icourse163.org,DIRECT
-HOST-SUFFIX,dns.pub,DIRECT
-HOST-SUFFIX,doh.pub,DIRECT
-HOST-SUFFIX,dot.pub,DIRECT
 HOST-SUFFIX,landian.vip,DIRECT
 HOST-SUFFIX,126.link,DIRECT
 HOST-SUFFIX,yqkk.link,DIRECT
@@ -752,8 +756,6 @@ HOST-SUFFIX,mcdonalds.com.cn,DIRECT
 HOST-SUFFIX,ubionline.com.cn,DIRECT
 HOST-SUFFIX,chinatelecom.com.cn,DIRECT
 HOST-SUFFIX,assets.msn.cn,DIRECT
-HOST-SUFFIX,ntp.org.cn,DIRECT
-HOST-SUFFIX,moegirl.org.cn,DIRECT
 HOST,www.intel.cn,DIRECT
 HOST,lv.queniujq.cn,DIRECT
 HOST-SUFFIX,71.am.com,DIRECT
@@ -770,9 +772,5 @@ HOST,gstore.val.manlaxy.com,DIRECT
 HOST-SUFFIX,dl.delivery.mp.microsoft.com,DIRECT
 USER-AGENT,%E4%BC%98%E9%85%B7*,DIRECT
 USER-AGENT,%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D*,DIRECT
-USER-AGENT,MicroMessenger Client,DIRECT
-USER-AGENT,WeChat*,DIRECT
 USER-AGENT,TeslaMap,DIRECT
-#PROCESS-NAME,WeChat
-#PROCESS-NAME,WeCom
 ################## EOF ##################
