@@ -7,42 +7,22 @@
 #
 # Mihomo Version ≥ 1.8.4
 #
-# 最后更新时间: 2024-10-16 19:50
+# 最后更新时间: 2024-10-16 20:00
 #
 # ================
 
 mixed-port: 65222 # HTTP(S) 和 SOCKS 代理混合端口
 tcp-concurrent: true # TCP 并发连接所有 IP, 将使用最快握手的 TCP
-allow-lan: false# 允许局域网连接
+allow-lan: false # 允许局域网连接
 ipv6: true # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录
 log-level: info # 日志等级 silent/error/warning/info/debug
-unified-delay: true # 统一延迟
-find-process-mode: strict # 控制是否让 Clash 去匹配进程
 
-external-controller: :65223 # RESTful API 监听地址
-external-ui: ui
-external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
-secret: Repcz@Mihomo
-
-geodata-mode: true
-geo-auto-update: true # 是否自动更新 geodata
-geo-update-interval: 24 # 更新间隔，单位：小时
-
-geox-url:
-  geoip: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
-  geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
-  mmdb: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country.mmdb"
-
-hosts: #
+hosts:
   "localhost": 127.0.0.1
-
-profile:
-  store-selected: true # 储存 API 对策略组的选择，以供下次启动时使用
-  store-fake-ip: true # 储存 fakeip 映射表，域名再次发生连接时，使用原有映射地址
 
 dns:
   enable: true
-  listen: :60053 # 开启 DNS 服务器监听
+  listen: :65222 # 开启 DNS 服务器监听
   ipv6: true # false 将返回 AAAA 的空结果
   use-hosts: true # 查询 hosts
   enhanced-mode: redir-host
@@ -53,9 +33,9 @@ rules:
 
 listeners: #搭建代理节点
 
-  - name: SS-2022
+  - name: SS2022
     type: shadowsocks
-    port: 23456
+    port: 65112
     listen: "::"
     cipher: 2022-blake3-aes-256-gcm # 2022-blake3-aes-128-gcm/2022-blake3-aes-256-gcm/2022-blake3-chacha20-poly1305
     password: SaAj4IC+cHEyWoCaUXeNBE+A8DcqKRsOELe4FOuuNJE=
@@ -72,3 +52,16 @@ listeners: #搭建代理节点
       statistic: true
       only-tcp: false
       padding: true
+
+  - name: hy2
+    type: hysteria2
+    port: 65111
+    listen: 0.0.0.0
+    password: 123456
+    up: 200
+    down: 30
+    masquerade: "https://bing.com"
+    alpn:
+    - h3
+    certificate: ./server.crt
+    private-key: ./server.key
