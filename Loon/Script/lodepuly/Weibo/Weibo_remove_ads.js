@@ -1,7 +1,7 @@
 /*
 引用地址：https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/weibo.js
 */
-// 2024-10-15 13:05
+// 2024-10-16 11:30
 
 const url = $request.url;
 if (!$response) $done({});
@@ -795,17 +795,17 @@ if (url.includes("/interface/sdk/sdkad.php")) {
               let newII = [];
               for (let ii of item.items) {
                 if (ii?.cate_id === "638" && ii?.readtimetype === "card") {
-                  // 相关话题推荐
+                  // 大家都在问
                   continue;
                 } else {
                   if (!isAd(ii?.data)) {
                     removeAvatar(ii?.data);
                     removeFeedAd(ii?.data); // 商品橱窗
-                    // 3推广卡片 17相关搜索 22广告图 25智搜总结 30推荐博主 42,236智搜问答 89商品推广视频 206推广视频
-                    if ([3, 17, 22, 30, 42, 89, 206, 236]?.includes(ii?.data?.card_type)) {
+                    // 3推广卡片 17相关搜索 22广告图 25智搜总结 30推荐博主 42,236智搜问答 89商品推广视频 101大家都在问 206推广视频
+                    if ([3, 17, 22, 30, 42, 89, 101, 206]?.includes(ii?.data?.card_type)) {
                       continue;
                     } else if (ii?.data?.card_type === 4 && ii?.data?.cate_id === "640") {
-                      // 相关话题推荐
+                      // 大家都在问
                       continue;
                     } else if (ii?.data?.card_type === 42 && ii?.data?.is_ads === true) {
                       // 商品推广desc
