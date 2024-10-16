@@ -1,5 +1,8 @@
 domain_set:
 - this_ruleset_is_made_by_sukkaw.ruleset.skk.moe
+- url.cn
+- acg.tv
+- b23.tv
 - www.intel.cn
 - lv.queniujq.cn
 - dl.ubnt.com
@@ -29,7 +32,6 @@ domain_suffix_set:
 - nmc.cn
 - org.cn
 - php.cn
-- url.cn
 - wps.cn
 - 2144.cn
 - cctv.cn
@@ -136,8 +138,6 @@ domain_suffix_set:
 - qbox.me
 - coding.me
 - oppoer.me
-- acg.tv
-- b23.tv
 - fun.tv
 - pps.tv
 - douyu.tv
@@ -438,7 +438,6 @@ domain_suffix_set:
 - netease.com
 - oppopay.com
 - orayimg.com
-- qhimgs?.com
 - qihucdn.com
 - qingcdn.com
 - qiyipic.com
@@ -764,6 +763,7 @@ domain_suffix_set:
 - dl.delivery.mp.microsoft.com
 domain_keyword_set:
 domain_regex_set:
+- .*.qhimgs?.com
 ip_cidr_set:
 ip_cidr6_set:
 asn_set:

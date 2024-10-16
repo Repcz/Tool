@@ -1,6 +1,6 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2024-10-16T05:47:48.687Z
+# Last Updated: 2024-10-16T07:23:52.814Z
 # Size: 765
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
@@ -30,7 +30,7 @@ HOST-SUFFIX,itc.cn,DIRECT
 HOST-SUFFIX,nmc.cn,DIRECT
 HOST-SUFFIX,org.cn,DIRECT
 HOST-SUFFIX,php.cn,DIRECT
-HOST-SUFFIX,url.cn,DIRECT
+HOST,url.cn,DIRECT
 HOST-SUFFIX,wps.cn,DIRECT
 HOST-SUFFIX,2144.cn,DIRECT
 HOST-SUFFIX,cctv.cn,DIRECT
@@ -137,8 +137,8 @@ HOST-SUFFIX,id6.me,DIRECT
 HOST-SUFFIX,qbox.me,DIRECT
 HOST-SUFFIX,coding.me,DIRECT
 HOST-SUFFIX,oppoer.me,DIRECT
-HOST-SUFFIX,acg.tv,DIRECT
-HOST-SUFFIX,b23.tv,DIRECT
+HOST,acg.tv,DIRECT
+HOST,b23.tv,DIRECT
 HOST-SUFFIX,fun.tv,DIRECT
 HOST-SUFFIX,pps.tv,DIRECT
 HOST-SUFFIX,douyu.tv,DIRECT
@@ -439,7 +439,6 @@ HOST-SUFFIX,myzaker.com,DIRECT
 HOST-SUFFIX,netease.com,DIRECT
 HOST-SUFFIX,oppopay.com,DIRECT
 HOST-SUFFIX,orayimg.com,DIRECT
-HOST-SUFFIX,qhimgs?.com,DIRECT
 HOST-SUFFIX,qihucdn.com,DIRECT
 HOST-SUFFIX,qingcdn.com,DIRECT
 HOST-SUFFIX,qiyipic.com,DIRECT
@@ -770,6 +769,7 @@ HOST-SUFFIX,dl.bscstorage.net,DIRECT
 HOST,cn.download.nvidia.com,DIRECT
 HOST,gstore.val.manlaxy.com,DIRECT
 HOST-SUFFIX,dl.delivery.mp.microsoft.com,DIRECT
+HOST-WILDCARD,*.qhimgs?.com,DIRECT
 USER-AGENT,%E4%BC%98%E9%85%B7*,DIRECT
 USER-AGENT,%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D*,DIRECT
 USER-AGENT,TeslaMap,DIRECT
