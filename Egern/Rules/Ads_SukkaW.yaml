@@ -708,6 +708,7 @@ domain_set:
 - t3.a.market.xiaomi.com
 - t4.a.market.xiaomi.com
 - t5.a.market.xiaomi.com
+- xadx.file.market.xiaomi.com
 - image.cdn.mvideo.xiaomi.com
 - url8807.global.passport.xiaomi.com
 - mclean.uk.cloud.360safe.com
@@ -22690,6 +22691,7 @@ domain_suffix_set:
 - ckodsxyjdql.com
 - clash-media.com
 - cleveritics.com
+- cleverreach.com
 - clickadilla.com
 - clickalyzer.com
 - clickintext.com
@@ -58869,6 +58871,7 @@ domain_suffix_set:
 - a1.99933.cn
 - a1.99966.cn
 - apilog-web.acfun.cn
+- collector.azure.cn
 - a1.bajiu.cn
 - cpro.bdrmb.cn
 - ad.cdnjm.cn
@@ -76428,6 +76431,7 @@ domain_suffix_set:
 - mads.amazon.com
 - mads-eu.amazon.com
 - mads-fe.amazon.com
+- amazon-adsystem.amazon.com
 - device-metrics-us.amazon.com
 - banners.amigos.com
 - api.ampiri.com
@@ -88200,6 +88204,7 @@ domain_suffix_set:
 - vhpabx.herffjones.com
 - teijgy.herveleger.com
 - bi.heyloyalty.com
+- ads.heytapmobi.com
 - newy.hifiliving.com
 - web.hikari-ocn.com
 - a8clk.hikarinobe.com
@@ -92014,6 +92019,7 @@ domain_suffix_set:
 - resources.hermanmiller.com
 - smetrics.heromotocorp.com
 - jhbami.hervecuisine.com
+- ads.heytapmobile.com
 - omes-sec.heytapmobile.com
 - httpdns-push.heytapmobile.com
 - dragate-in-dc.heytapmobile.com
@@ -113171,7 +113177,6 @@ domain_suffix_set:
 - tr.satisfaction.groupe-pv-cp.com
 - images.info.grupovaughan.com
 - track.hg.healthgrades.com
-- adx-in.ads.heytapmobile.com
 - links.e.historyvault.com
 - ablink.engage.insighttimer.com
 - ablink.notification.insighttimer.com

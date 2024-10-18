@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-10-18T09:10:13.447Z
-# Size: 115333
+# Last Updated: 2024-10-18T13:23:08.528Z
+# Size: 115338
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -21982,6 +21982,7 @@ DOMAIN-SUFFIX,ckfkigayvdb.com
 DOMAIN-SUFFIX,ckodsxyjdql.com
 DOMAIN-SUFFIX,clash-media.com
 DOMAIN-SUFFIX,cleveritics.com
+DOMAIN-SUFFIX,cleverreach.com
 DOMAIN-SUFFIX,clickadilla.com
 DOMAIN-SUFFIX,clickalyzer.com
 DOMAIN-SUFFIX,clickintext.com
@@ -58189,6 +58190,7 @@ DOMAIN-SUFFIX,a1.99933.cn
 DOMAIN-SUFFIX,a1.99966.cn
 DOMAIN-SUFFIX,apilog-web.acfun.cn
 DOMAIN,fota4.adups.cn
+DOMAIN-SUFFIX,collector.azure.cn
 DOMAIN-SUFFIX,a1.bajiu.cn
 DOMAIN-SUFFIX,cpro.bdrmb.cn
 DOMAIN-SUFFIX,ad.cdnjm.cn
@@ -75911,6 +75913,7 @@ DOMAIN-SUFFIX,aan.amazon.com
 DOMAIN-SUFFIX,mads.amazon.com
 DOMAIN-SUFFIX,mads-eu.amazon.com
 DOMAIN-SUFFIX,mads-fe.amazon.com
+DOMAIN-SUFFIX,amazon-adsystem.amazon.com
 DOMAIN-SUFFIX,device-metrics-us.amazon.com
 DOMAIN,device-metrics-us-2.amazon.com
 DOMAIN-SUFFIX,banners.amigos.com
@@ -87819,6 +87822,7 @@ DOMAIN-SUFFIX,bannerwall.herewetest.com
 DOMAIN-SUFFIX,vhpabx.herffjones.com
 DOMAIN-SUFFIX,teijgy.herveleger.com
 DOMAIN-SUFFIX,bi.heyloyalty.com
+DOMAIN-SUFFIX,ads.heytapmobi.com
 DOMAIN-SUFFIX,newy.hifiliving.com
 DOMAIN-SUFFIX,web.hikari-ocn.com
 DOMAIN-SUFFIX,a8clk.hikarinobe.com
@@ -91641,6 +91645,7 @@ DOMAIN-SUFFIX,events.hermanmiller.com
 DOMAIN-SUFFIX,resources.hermanmiller.com
 DOMAIN-SUFFIX,smetrics.heromotocorp.com
 DOMAIN-SUFFIX,jhbami.hervecuisine.com
+DOMAIN-SUFFIX,ads.heytapmobile.com
 DOMAIN-SUFFIX,omes-sec.heytapmobile.com
 DOMAIN-SUFFIX,httpdns-push.heytapmobile.com
 DOMAIN-SUFFIX,dragate-in-dc.heytapmobile.com
@@ -113099,7 +113104,6 @@ DOMAIN-SUFFIX,www.leads.goldenshovel.com
 DOMAIN-SUFFIX,tr.satisfaction.groupe-pv-cp.com
 DOMAIN-SUFFIX,images.info.grupovaughan.com
 DOMAIN-SUFFIX,track.hg.healthgrades.com
-DOMAIN-SUFFIX,adx-in.ads.heytapmobile.com
 DOMAIN-SUFFIX,links.e.historyvault.com
 DOMAIN-SUFFIX,ablink.engage.insighttimer.com
 DOMAIN-SUFFIX,ablink.notification.insighttimer.com
@@ -115115,6 +115119,7 @@ DOMAIN,t2.a.market.xiaomi.com
 DOMAIN,t3.a.market.xiaomi.com
 DOMAIN,t4.a.market.xiaomi.com
 DOMAIN,t5.a.market.xiaomi.com
+DOMAIN,xadx.file.market.xiaomi.com
 DOMAIN,image.cdn.mvideo.xiaomi.com
 DOMAIN,url8807.global.passport.xiaomi.com
 DOMAIN-SUFFIX,api.miui.security.xiaomi.com
