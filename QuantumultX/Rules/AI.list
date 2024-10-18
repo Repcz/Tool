@@ -1,54 +1,43 @@
-# 2024-10-10 14:36:12
-# ChatGPT
-#AND,((HOST-KEYWORD,chatgpt-async-webps-prod-eastus-),(HOST-SUFFIX,webpubsub.azure.com))
-#AND,((HOST-KEYWORD,openaicom-api-),(HOST-SUFFIX,azurefd.net))
-HOST,o33249.ingest.sentry.io,PROXY
-HOST,openaiapi-site.azureedge.net,PROXY
-HOST,openaicom.imgix.net,PROXY
-HOST,openaicomproductionae4b.blob.core.windows.net,PROXY
-HOST,production-openaicom-storage.azureedge.net,PROXY
+#########################################
+# Sukka's Ruleset - AIGC Domains
+# Last Updated: 2024-10-15T10:37:07.448Z
+# Size: 32
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# This file contains domains of OpenAI,Claude.
+#########################################
+HOST,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe,PROXY
+HOST-SUFFIX,x.ai,PROXY
+HOST-SUFFIX,dify.ai,PROXY
+HOST-SUFFIX,meta.ai,PROXY
+HOST-SUFFIX,claude.ai,PROXY
+HOST-SUFFIX,jasper.ai,PROXY
+HOST-SUFFIX,openart.ai,PROXY
+HOST-SUFFIX,perplexity.ai,PROXY
+HOST-SUFFIX,clipdrop.co,PROXY
 HOST-SUFFIX,ai.com,PROXY
+HOST-SUFFIX,poe.com,PROXY
 HOST-SUFFIX,chatgpt.com,PROXY
+HOST-SUFFIX,deepmind.com,PROXY
+HOST-SUFFIX,anthropic.com,PROXY
 HOST-SUFFIX,oaistatic.com,PROXY
 HOST-SUFFIX,oaiusercontent.com,PROXY
-HOST-SUFFIX,openai.com,PROXY
-HOST-SUFFIX,openai.com.cdn.cloudflare.net,PROXY
-
-# Copilot
-HOST,api.githubcopilot.com,PROXY
-HOST,copilot-proxy.githubusercontent.com,PROXY
-HOST,copilot.microsoft.com,PROXY
-HOST,sydney.bing.com,PROXY
-HOST,www.bing.com,PROXY
-
-# Gemini
-HOST,bard.google.com,PROXY
-HOST,gemini.google.com,PROXY
-HOST,generativelanguage.googleapis.com,PROXY
+HOST-SUFFIX,deepmind.google,PROXY
+HOST-SUFFIX,notebooklm.google,PROXY
+HOST-SUFFIX,generativeai.google,PROXY
+HOST-SUFFIX,bard.google.com,PROXY
+HOST-SUFFIX,gemini.google.com,PROXY
+HOST-SUFFIX,aistudio.google.com,PROXY
+HOST-SUFFIX,makersuite.google.com,PROXY
+HOST-SUFFIX,notebooklm.google.com,PROXY
+HOST-SUFFIX,geller-pa.googleapis.com,PROXY
+HOST-SUFFIX,generativelanguage.googleapis.com,PROXY
+HOST-SUFFIX,proactivebackend-pa.googleapis.com,PROXY
 HOST,ai.google.dev,PROXY
-HOST,aida.googleapis.com,PROXY
-HOST,aistudio.google.com,PROXY
+HOST,alkalicore-pa.clients6.google.com,PROXY
 HOST,alkalimakersuite-pa.clients6.google.com,PROXY
-HOST,makersuite.google.com,PROXY
-
-# Claude
-HOST-SUFFIX,anthropic.com,PROXY
-HOST-SUFFIX,claude.ai,PROXY
-IP-CIDR,160.79.104.0/23,PROXY
-IP6-CIDR,2607:6bc0::/48,PROXY
-
-# JetBrains AI
-HOST-SUFFIX,grazie.ai,PROXY
-HOST-SUFFIX,grazie.aws.intellij.net,PROXY
-
-# Meta AI
-HOST,imagine.meta.com,PROXY
-HOST-SUFFIX,meta.ai,PROXY
-
-# Perplexity
-HOST-SUFFIX,perplexity.ai,PROXY
-
-# Mistral AI
-HOST,chat.mistral.ai,PROXY
-HOST,console.mistral.ai,PROXY
-HOST-SUFFIX,mistral.ai,PROXY
+HOST,gateway.ai.cloudflare.com,PROXY
+HOST-KEYWORD,openai,PROXY
+################## EOF ##################
