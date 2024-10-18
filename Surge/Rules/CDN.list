@@ -2492,6 +2492,12 @@ DOMAIN-SUFFIX,zohocdn.com
 DOMAIN-SUFFIX,zohostatic.com
 DOMAIN-SUFFIX,zohostatic.eu
 DOMAIN-SUFFIX,zohowebstatic.com
+DOMAIN-WILDCARD,*.ffzy-online?.com
+DOMAIN-WILDCARD,*.ffzy-play?.com
+DOMAIN-WILDCARD,*.fsvod?.com
+DOMAIN-WILDCARD,*.kuaikan-cdn?.com
+DOMAIN-WILDCARD,*.lz-cdn?.com
+DOMAIN-WILDCARD,*.lz-cdn??.com
 DOMAIN-WILDCARD,appcenter-filemanagement-*.cloudapp.net
 DOMAIN-WILDCARD,blog-imgs-??.2nt.com
 DOMAIN-WILDCARD,blog-imgs-??.fc2.com
@@ -2501,14 +2507,8 @@ DOMAIN-WILDCARD,cdn?-dl.pornhost.com
 DOMAIN-WILDCARD,cdn?-thumbs.pornhost.com
 DOMAIN-WILDCARD,cdn?.mikuclub.fun
 DOMAIN-WILDCARD,cdns.*.gigya.com
-DOMAIN-WILDCARD,ffzy-online?.com
-DOMAIN-WILDCARD,ffzy-play?.com
 DOMAIN-WILDCARD,file?.mikuclub.fun
-DOMAIN-WILDCARD,fsvod?.com
 DOMAIN-WILDCARD,i?.nhentai.net
-DOMAIN-WILDCARD,kuaikan-cdn?.com
-DOMAIN-WILDCARD,lz-cdn?.com
-DOMAIN-WILDCARD,lz-cdn??.com
 DOMAIN-WILDCARD,ocsp.*.amazontrust.com
 DOMAIN-WILDCARD,proxy-*.dailymotion.com
 DOMAIN-WILDCARD,rr?---??.ouo.si
