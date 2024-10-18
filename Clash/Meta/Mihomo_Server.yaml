@@ -7,7 +7,7 @@
 #
 # Mihomo Version ≥ 1.8.4
 #
-# 最后更新时间: 2024-10-16 20:50
+# 最后更新时间: 2024-10-18 18:00
 #
 # ================
 
@@ -57,7 +57,8 @@ listeners: #搭建代理节点
     type: hysteria2
     port: 65111
     listen: 0.0.0.0
-    password: 123456
+    users:
+      user1: password1
     up: 200
     down: 30
     masquerade: "https://bing.com"
