@@ -1,4 +1,4 @@
-# 2024-10-14 21:25
+# 2024-10-18 23:20
 name: Fork & Edit
 
 on:
@@ -48,7 +48,7 @@ jobs:
         # Claude AI
         curl -L -o Tool-repo/Surge/Rules/Claude.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Claude.list"
         # AIGC
-        curl -L -o Tool-repo/Surge/Rules/AI.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/AI.list"
+        curl -L -o Tool-repo/Surge/Rules/AI.list "https://ruleset.skk.moe/List/non_ip/ai.conf"
         # 社交媒体
         curl -L -o Tool-repo/Surge/Rules/Twitter.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list"
         curl -L -o Tool-repo/Surge/Rules/Instagram.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Instagram.list"
@@ -234,7 +234,7 @@ jobs:
         # Claude AI
         curl -L -o Tool-repo/Clash/Rules/Claude.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Claude.list"
         # AIGC
-        curl -L -o Tool-repo/Clash/Rules/AI.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/AI.list"
+        curl -L -o Tool-repo/Clash/Rules/AI.list "https://ruleset.skk.moe/List/non_ip/ai.conf"
         # 社交媒体
         curl -L -o Tool-repo/Clash/Rules/Telegram.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Telegram.list"
         curl -L -o Tool-repo/Clash/Rules/Twitter.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list"
@@ -383,7 +383,7 @@ jobs:
         # Claude AI
         curl -L -o Tool-repo/QuantumultX/Rules/Claude.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Claude.list"
         # AIGC
-        curl -L -o Tool-repo/QuantumultX/Rules/AI.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/AI.list"
+        curl -L -o Tool-repo/QuantumultX/Rules/AI.list "https://ruleset.skk.moe/List/non_ip/ai.conf"
         # 社交媒体
         curl -L -o Tool-repo/QuantumultX/Rules/Telegram.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Telegram.list"
         curl -L -o Tool-repo/QuantumultX/Rules/Twitter.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list"
@@ -509,7 +509,7 @@ jobs:
         # Claude AI
         curl -L -o Tool-repo/Loon/Rules/Claude.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Claude.list"
         # AIGC
-        curl -L -o Tool-repo/Loon/Rules/AI.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/AI.list"
+        curl -L -o Tool-repo/Loon/Rules/AI.list "https://ruleset.skk.moe/List/non_ip/ai.conf"
         # 社交媒体
         curl -L -o Tool-repo/Loon/Rules/Telegram.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Telegram.list"
         curl -L -o Tool-repo/Loon/Rules/Twitter.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list"
@@ -654,7 +654,7 @@ jobs:
         # Claude AI
         curl -L -o Tool-repo/Shadowrocket/Rules/Claude.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Claude.list"
         # AIGC
-        curl -L -o Tool-repo/Shadowrocket/Rules/AI.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/AI.list"
+        curl -L -o Tool-repo/Shadowrocket/Rules/AI.list "https://ruleset.skk.moe/List/non_ip/ai.conf"
         # 社交媒体
         curl -L -o Tool-repo/Shadowrocket/Rules/Telegram.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Telegram.list"
         curl -L -o Tool-repo/Shadowrocket/Rules/Twitter.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list"
@@ -849,7 +849,7 @@ jobs:
         # Claude AI
         curl -L -o Tool-repo/Stash/Rules/Claude.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Claude.list"
         # AIGC
-        curl -L -o Tool-repo/Stash/Rules/AI.list "https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Rule/AI.list"
+        curl -L -o Tool-repo/Stash/Rules/AI.list "https://ruleset.skk.moe/List/non_ip/ai.conf"
         # 社交媒体
         curl -L -o Tool-repo/Stash/Rules/Telegram.list "https://raw.githubusercontent.com/Repcz/Tool/X/Surge/Rules/Telegram.list"
         curl -L -o Tool-repo/Stash/Rules/Twitter.list "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list"
