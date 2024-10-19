@@ -1,8 +1,8 @@
 payload:
   #########################################
   # Sukka's Ruleset - Reject Base
-  # Last Updated: 2024-10-19T07:59:36.757Z
-  # Size: 111357
+  # Last Updated: 2024-10-19T12:36:27.897Z
+  # Size: 111361
   # License: AGPL 3.0
   # Homepage: https://ruleset.skk.moe
   # GitHub: https://github.com/SukkaW/Surge
@@ -10831,6 +10831,7 @@ payload:
   - DOMAIN-SUFFIX,awldcupu.com
   - DOMAIN-SUFFIX,awltovhc.com
   - DOMAIN-SUFFIX,awmserve.com
+  - DOMAIN-SUFFIX,awwnaqax.com
   - DOMAIN-SUFFIX,axotrade.com
   - DOMAIN-SUFFIX,ayrather.com
   - DOMAIN-SUFFIX,azj57rjy.com
@@ -12669,6 +12670,7 @@ payload:
   - DOMAIN-SUFFIX,rukplaza.com
   - DOMAIN-SUFFIX,ruliaoqi.com
   - DOMAIN-SUFFIX,rulrahed.com
+  - DOMAIN-SUFFIX,rumkhprg.com
   - DOMAIN-SUFFIX,runative.com
   - DOMAIN-SUFFIX,runmixed.com
   - DOMAIN-SUFFIX,ruranews.com
@@ -42575,6 +42577,7 @@ payload:
   - DOMAIN-SUFFIX,zireemilsoude.net
   - DOMAIN-SUFFIX,auckodsailtoas.net
   - DOMAIN-SUFFIX,centralnervous.net
+  - DOMAIN-SUFFIX,choafaidoonsoy.net
   - DOMAIN-SUFFIX,convergeselect.net
   - DOMAIN-SUFFIX,dating-service.net
   - DOMAIN-SUFFIX,decibelinsight.net
@@ -48003,6 +48006,7 @@ payload:
   - DOMAIN-SUFFIX,tepysilscpm.xyz
   - DOMAIN-SUFFIX,thoocheegee.xyz
   - DOMAIN-SUFFIX,thoorteeboo.xyz
+  - DOMAIN-SUFFIX,tugraughilr.xyz
   - DOMAIN-SUFFIX,unblock2303.xyz
   - DOMAIN-SUFFIX,unblock2304.xyz
   - DOMAIN-SUFFIX,vdjpqtsxuwc.xyz
@@ -48392,6 +48396,7 @@ payload:
   - DOMAIN-SUFFIX,dtbfpygjdxuxfbs.xyz
   - DOMAIN-SUFFIX,dyhxduicfngnumo.xyz
   - DOMAIN-SUFFIX,ebdokvydrvqvrak.xyz
+  - DOMAIN-SUFFIX,ebqptawxdxrrdsu.xyz
   - DOMAIN-SUFFIX,egmfjmhffbarsxd.xyz
   - DOMAIN-SUFFIX,eoxaxdglxecvguh.xyz
   - DOMAIN-SUFFIX,esbqetmmejjtksa.xyz
@@ -72399,7 +72404,6 @@ payload:
   - DOMAIN-SUFFIX,1.feihua.com
   - DOMAIN-SUFFIX,cash.femjoy.com
   - DOMAIN-SUFFIX,links.fennel.com
-  - DOMAIN-SUFFIX,hub.fghtem.com
   - DOMAIN-SUFFIX,go.fhlbny.com
   - DOMAIN-SUFFIX,join.fhlbny.com
   - DOMAIN-SUFFIX,learn.fhlbny.com
