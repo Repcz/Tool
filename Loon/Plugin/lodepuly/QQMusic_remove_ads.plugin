@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(749)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/QQMusic.png
-#!date = 2024-07-07 15:31:22
+#!date = 2024-10-19 17:18:31
 
 [Rule]
 DOMAIN, adstats.tencentmusic.com, REJECT
@@ -30,9 +30,3 @@ DOMAIN, us.l.qq.com, REJECT
 DOMAIN, tangram.e.qq.com, REJECT
 DOMAIN, tmeadbak.y.qq.com, REJECT
 DOMAIN-SUFFIX, imtmp.net, REJECT
-
-# [Rewrite]
-# ^https:\/\/shc6\.y\.qq\.com\/tips\/fcgi-bin\/fcg_get_advert\.fcg
-
-# [MitM]
-# hostname = shc6.y.qq.com
