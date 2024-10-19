@@ -1,8 +1,8 @@
 payload:
   #########################################
   # Sukka's Ruleset - Reject Base
-  # Last Updated: 2024-10-19T12:36:27.897Z
-  # Size: 111361
+  # Last Updated: 2024-10-19T16:26:46.461Z
+  # Size: 111364
   # License: AGPL 3.0
   # Homepage: https://ruleset.skk.moe
   # GitHub: https://github.com/SukkaW/Surge
@@ -15335,6 +15335,7 @@ payload:
   - DOMAIN-SUFFIX,pilespaua.com
   - DOMAIN-SUFFIX,ping-fast.com
   - DOMAIN-SUFFIX,pingmeter.com
+  - DOMAIN-SUFFIX,pinklabel.com
   - DOMAIN-SUFFIX,piwhbfgyj.com
   - DOMAIN-SUFFIX,pixelhere.com
   - DOMAIN-SUFFIX,pixfuture.com
@@ -21114,6 +21115,7 @@ payload:
   - DOMAIN-SUFFIX,inflictrind.com
   - DOMAIN-SUFFIX,informereng.com
   - DOMAIN-SUFFIX,ingigalitha.com
+  - DOMAIN-SUFFIX,inheritknow.com
   - DOMAIN-SUFFIX,inhonedgean.com
   - DOMAIN-SUFFIX,injectlocum.com
   - DOMAIN-SUFFIX,injuredjazz.com
@@ -23747,6 +23749,7 @@ payload:
   - DOMAIN-SUFFIX,firecatfilms.com
   - DOMAIN-SUFFIX,fireworkcamp.com
   - DOMAIN-SUFFIX,fireworksane.com
+  - DOMAIN-SUFFIX,firrycandour.com
   - DOMAIN-SUFFIX,firsttexture.com
   - DOMAIN-SUFFIX,fittitfucose.com
   - DOMAIN-SUFFIX,fixedlygrown.com
@@ -28526,6 +28529,7 @@ payload:
   - DOMAIN-SUFFIX,avoadsservices.com
   - DOMAIN-SUFFIX,avtbdnwqnwoasm.com
   - DOMAIN-SUFFIX,aweprotostatic.com
+  - DOMAIN-SUFFIX,awkwardpurfles.com
   - DOMAIN-SUFFIX,awokeconscious.com
   - DOMAIN-SUFFIX,awrnkojhomxvqi.com
   - DOMAIN-SUFFIX,axiomaticalley.com
@@ -40332,6 +40336,7 @@ payload:
   - DOMAIN-SUFFIX,m-fmfadcfm.icu
   - DOMAIN-SUFFIX,yxuytpfe-t.icu
   - DOMAIN-SUFFIX,kubicserves.icu
+  - DOMAIN-SUFFIX,kvum-bpelzw.icu
   - DOMAIN-SUFFIX,yourprivacy.icu
   - DOMAIN-SUFFIX,iystrbftlwif.icu
   - DOMAIN-SUFFIX,bional-dested.icu
@@ -51519,6 +51524,7 @@ payload:
   - DOMAIN-SUFFIX,go2.global
   - DOMAIN-SUFFIX,w-gbttkri.global
   - DOMAIN-SUFFIX,pqvzlltzxbs.global
+  - DOMAIN-SUFFIX,elgnnpl-ukgs.global
   - DOMAIN-SUFFIX,adservice.google
   - DOMAIN-SUFFIX,adtrafficquality.google
   - DOMAIN-SUFFIX,nur.gratis
@@ -81442,7 +81448,6 @@ payload:
   - DOMAIN-SUFFIX,api.pingstart.com
   - DOMAIN-SUFFIX,track.pingstart.com
   - DOMAIN-SUFFIX,marketing.pinkerton.com
-  - DOMAIN-SUFFIX,traffic.pinklabel.com
   - DOMAIN-SUFFIX,suxqvc.pinksisly.com
   - DOMAIN-SUFFIX,log.pinterest.com
   - DOMAIN-SUFFIX,trk.pinterest.com
@@ -87456,7 +87461,6 @@ payload:
   - DOMAIN-SUFFIX,mail.finwellgroup.com
   - DOMAIN-SUFFIX,fiwinet.firmenwissen.com
   - DOMAIN-SUFFIX,data-34565915dd.firmenwissen.com
-  - DOMAIN-SUFFIX,wo.firrycandour.com
   - DOMAIN-SUFFIX,kx4.firstsexfilm.com
   - DOMAIN-SUFFIX,goto.firsttechfed.com
   - DOMAIN-SUFFIX,www2.firsttechfed.com
@@ -90198,7 +90202,6 @@ payload:
   - DOMAIN-SUFFIX,marketreports.autovistagroup.com
   - DOMAIN-SUFFIX,eurotaxsrbija-si.autovistagroup.com
   - DOMAIN-SUFFIX,autovistaintelligence.autovistagroup.com
-  - DOMAIN-SUFFIX,sr.awkwardpurfles.com
   - DOMAIN-SUFFIX,news.azcapitoltimes.com
   - DOMAIN-SUFFIX,sdc.azt-automotive.com
   - DOMAIN-SUFFIX,pnq.babcoxmediainc.com

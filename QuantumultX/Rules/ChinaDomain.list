@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2024-10-16T07:23:52.814Z
-# Size: 765
+# Last Updated: 2024-10-19T16:38:53.164Z
+# Size: 768
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -704,6 +704,9 @@ HOST-SUFFIX,9966.org,DIRECT
 HOST-SUFFIX,aliapp.org,DIRECT
 HOST-SUFFIX,docschina.org,DIRECT
 HOST-SUFFIX,icourse163.org,DIRECT
+HOST,dns.pub,DIRECT
+HOST,doh.pub,DIRECT
+HOST,dot.pub,DIRECT
 HOST-SUFFIX,landian.vip,DIRECT
 HOST-SUFFIX,126.link,DIRECT
 HOST-SUFFIX,yqkk.link,DIRECT
