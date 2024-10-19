@@ -80,6 +80,7 @@ DOMAIN,assets.bitstamp.net
 DOMAIN,assets.bnidx.com
 DOMAIN,assets.braintreegateway.com
 DOMAIN,assets.bravenet.com
+DOMAIN,assets.brevo.com
 DOMAIN,assets.buttondown.email
 DOMAIN,assets.bwbx.io
 DOMAIN,assets.byteplus.com
@@ -146,6 +147,7 @@ DOMAIN,assets.positional-bucket.com
 DOMAIN,assets.prowritingaid.com
 DOMAIN,assets.queue-it.net
 DOMAIN,assets.quillbot.com
+DOMAIN,assets.raspberrypi.com
 DOMAIN,assets.repair.org
 DOMAIN,assets.safing.io
 DOMAIN,assets.scaleflex.com
@@ -196,6 +198,7 @@ DOMAIN,assetscdn-wchat.eu.freshchat.com
 DOMAIN,assetscdn.jable.tv
 DOMAIN,at.adtech.redventures.io
 DOMAIN,at.cbsi.com
+DOMAIN,auth.split.io
 DOMAIN,autoupdate.termius.com
 DOMAIN,avatar.freepik.com
 DOMAIN,avatar.stefanjudis.com
@@ -593,6 +596,7 @@ DOMAIN,content.product.glitch.com
 DOMAIN,content.wepik.com
 DOMAIN,contents-thumbnail2.fc2.com
 DOMAIN,cookie-cdn.cookiepro.com
+DOMAIN,corp-backend.brevo.com
 DOMAIN,cors-proxy.htmldriven.com
 DOMAIN,cp2.cloudflare.com
 DOMAIN,cp3.cloudflare.com
@@ -613,7 +617,6 @@ DOMAIN,data.jsdelivr.com
 DOMAIN,david-dm.org
 DOMAIN,db.onlinewebfonts.com
 DOMAIN,ddcdn.comtucdncom.com
-DOMAIN,dearrow-thumb.ajay.app
 DOMAIN,demo.unified-streaming.com
 DOMAIN,denali-static.grammarly.com
 DOMAIN,design-system.yext.com
@@ -673,6 +676,7 @@ DOMAIN,eu.hamreus.com
 DOMAIN,euc-widget.freshworks.com
 DOMAIN,events-delivery.apple.com
 DOMAIN,events-live.apple.com
+DOMAIN,events.split.io
 DOMAIN,events.tableplus.com
 DOMAIN,explorer-api.walletconnect.com
 DOMAIN,external-content.duckduckgo.com
@@ -870,6 +874,7 @@ DOMAIN,img-cos.mandaoo.com
 DOMAIN,img-en.fs.com
 DOMAIN,img-prod-cms-rt-microsoft-com.akamaized.net
 DOMAIN,img-s-msn-com.akamaized.net
+DOMAIN,img.agrd.eu
 DOMAIN,img.announcekit.app
 DOMAIN,img.applealmond.com
 DOMAIN,img.apponic.com
@@ -1343,7 +1348,6 @@ DOMAIN,sourcepoint.theguardian.com
 DOMAIN,sp-spiegel-de.spiegel.de
 DOMAIN,sp.replit.com
 DOMAIN,spcdn.incartupsell.com
-DOMAIN,sponsor.ajay.app
 DOMAIN,spoppe-b.azureedge.net
 DOMAIN,spoprod-a.akamaihd.net
 DOMAIN,st-eu.dynamicyield.com
@@ -1941,7 +1945,6 @@ DOMAIN-SUFFIX,espncdn.com
 DOMAIN-SUFFIX,eu-browse.startpage.com
 DOMAIN-SUFFIX,eu-proxy.startpage.com
 DOMAIN-SUFFIX,events.backtrace.io
-DOMAIN-SUFFIX,events.split.io
 DOMAIN-SUFFIX,exp-tas.com
 DOMAIN-SUFFIX,ezocdn.com
 DOMAIN-SUFFIX,ezocdn.net
@@ -2046,6 +2049,7 @@ DOMAIN-SUFFIX,img-dpreview.com
 DOMAIN-SUFFIX,img1.acsta.net
 DOMAIN-SUFFIX,img2.acsta.net
 DOMAIN-SUFFIX,img3.acsta.net
+DOMAIN-SUFFIX,imgair.net
 DOMAIN-SUFFIX,imgbox.com
 DOMAIN-SUFFIX,imgix.net
 DOMAIN-SUFFIX,imglink.win
@@ -2181,6 +2185,7 @@ DOMAIN-SUFFIX,mm.bing.net
 DOMAIN-SUFFIX,motherlessmedia.com
 DOMAIN-SUFFIX,muscache.com
 DOMAIN-SUFFIX,mvnrepository.com
+DOMAIN-SUFFIX,myanalytics.cdn.office.net
 DOMAIN-SUFFIX,myavlive.com
 DOMAIN-SUFFIX,mycdn.me
 DOMAIN-SUFFIX,myfilebase.com
