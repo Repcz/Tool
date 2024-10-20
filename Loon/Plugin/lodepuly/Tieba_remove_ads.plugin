@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(749)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Tieba.png
-#!date = 2024-08-17 19:49:33
+#!date = 2024-10-20 18:25:56
 
 [Rule]
 DOMAIN, afd.baidu.com, REJECT
