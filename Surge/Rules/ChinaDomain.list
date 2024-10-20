@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2024-10-19T16:38:53.164Z
-# Size: 768
+# Last Updated: 2024-10-20T17:02:38.848Z
+# Size: 775
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -96,6 +96,7 @@ DOMAIN-SUFFIX,oneplus.cn
 DOMAIN-SUFFIX,outlook.cn
 DOMAIN-SUFFIX,rsproxy.cn
 DOMAIN-SUFFIX,sinaimg.cn
+DOMAIN-SUFFIX,soulapp.cn
 DOMAIN-SUFFIX,tripcdn.cn
 DOMAIN-SUFFIX,51ctocdn.cn
 DOMAIN-SUFFIX,bilibili.cn
@@ -273,6 +274,7 @@ DOMAIN-SUFFIX,tvzhe.com
 DOMAIN-SUFFIX,upyun.com
 DOMAIN-SUFFIX,vmall.com
 DOMAIN-SUFFIX,weibo.com
+DOMAIN-SUFFIX,wifi8.com
 DOMAIN-SUFFIX,xiami.com
 DOMAIN-SUFFIX,xiniu.com
 DOMAIN-SUFFIX,xmcdn.com
@@ -451,8 +453,10 @@ DOMAIN-SUFFIX,tbcache.com
 DOMAIN-SUFFIX,tencent.com
 DOMAIN-SUFFIX,tnkjmec.com
 DOMAIN-SUFFIX,toutiao.com
+DOMAIN-SUFFIX,udqqimg.com
 DOMAIN-SUFFIX,volccdn.com
 DOMAIN-SUFFIX,weidian.com
+DOMAIN-SUFFIX,xoyocdn.com
 DOMAIN-SUFFIX,xycloud.com
 DOMAIN-SUFFIX,zhangzs.com
 DOMAIN-SUFFIX,163jiasu.com
@@ -691,6 +695,7 @@ DOMAIN-SUFFIX,bilivideo.net
 DOMAIN-SUFFIX,netstatic.net
 DOMAIN-SUFFIX,pinduoduo.net
 DOMAIN-SUFFIX,aliyundrive.net
+DOMAIN-SUFFIX,steamserver.net
 DOMAIN-SUFFIX,yunjiasu-cdn.net
 DOMAIN-SUFFIX,coolapkmarket.net
 DOMAIN-SUFFIX,tencent-cloud.net
@@ -760,6 +765,8 @@ DOMAIN-SUFFIX,chinatelecom.com.cn
 DOMAIN-SUFFIX,assets.msn.cn
 DOMAIN,www.intel.cn
 DOMAIN,lv.queniujq.cn
+DOMAIN,assets1.xboxlive.cn
+DOMAIN,assets2.xboxlive.cn
 DOMAIN-SUFFIX,71.am.com
 DOMAIN,dl.ubnt.com
 DOMAIN,config.ubnt.com

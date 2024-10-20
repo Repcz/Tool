@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2024-10-19T16:38:53.164Z
-# Size: 768
+# Last Updated: 2024-10-20T17:02:38.848Z
+# Size: 775
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -96,6 +96,7 @@ HOST-SUFFIX,oneplus.cn,DIRECT
 HOST-SUFFIX,outlook.cn,DIRECT
 HOST-SUFFIX,rsproxy.cn,DIRECT
 HOST-SUFFIX,sinaimg.cn,DIRECT
+HOST-SUFFIX,soulapp.cn,DIRECT
 HOST-SUFFIX,tripcdn.cn,DIRECT
 HOST-SUFFIX,51ctocdn.cn,DIRECT
 HOST-SUFFIX,bilibili.cn,DIRECT
@@ -273,6 +274,7 @@ HOST-SUFFIX,tvzhe.com,DIRECT
 HOST-SUFFIX,upyun.com,DIRECT
 HOST-SUFFIX,vmall.com,DIRECT
 HOST-SUFFIX,weibo.com,DIRECT
+HOST-SUFFIX,wifi8.com,DIRECT
 HOST-SUFFIX,xiami.com,DIRECT
 HOST-SUFFIX,xiniu.com,DIRECT
 HOST-SUFFIX,xmcdn.com,DIRECT
@@ -451,8 +453,10 @@ HOST-SUFFIX,tbcache.com,DIRECT
 HOST-SUFFIX,tencent.com,DIRECT
 HOST-SUFFIX,tnkjmec.com,DIRECT
 HOST-SUFFIX,toutiao.com,DIRECT
+HOST-SUFFIX,udqqimg.com,DIRECT
 HOST-SUFFIX,volccdn.com,DIRECT
 HOST-SUFFIX,weidian.com,DIRECT
+HOST-SUFFIX,xoyocdn.com,DIRECT
 HOST-SUFFIX,xycloud.com,DIRECT
 HOST-SUFFIX,zhangzs.com,DIRECT
 HOST-SUFFIX,163jiasu.com,DIRECT
@@ -691,6 +695,7 @@ HOST-SUFFIX,bilivideo.net,DIRECT
 HOST-SUFFIX,netstatic.net,DIRECT
 HOST-SUFFIX,pinduoduo.net,DIRECT
 HOST-SUFFIX,aliyundrive.net,DIRECT
+HOST-SUFFIX,steamserver.net,DIRECT
 HOST-SUFFIX,yunjiasu-cdn.net,DIRECT
 HOST-SUFFIX,coolapkmarket.net,DIRECT
 HOST-SUFFIX,tencent-cloud.net,DIRECT
@@ -760,6 +765,8 @@ HOST-SUFFIX,chinatelecom.com.cn,DIRECT
 HOST-SUFFIX,assets.msn.cn,DIRECT
 HOST,www.intel.cn,DIRECT
 HOST,lv.queniujq.cn,DIRECT
+HOST,assets1.xboxlive.cn,DIRECT
+HOST,assets2.xboxlive.cn,DIRECT
 HOST-SUFFIX,71.am.com,DIRECT
 HOST,dl.ubnt.com,DIRECT
 HOST,config.ubnt.com,DIRECT

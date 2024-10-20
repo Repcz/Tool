@@ -6,11 +6,14 @@ domain_set:
 - samsungcloudsolution.com
 - samsungcloudsolution.net
 - nmbr.info
+- hc-ssp.sm.cn
+- huichuan.sm.cn
 - applogios.uc.cn
 - leak.360.cn
 - ntp.msn.cn
 - assets.msn.cn
 - minfo.wps.cn
+- mostat.wps.cn
 - union.dbba.cn
 - dd.iask.cn
 - rich.kuwo.cn
@@ -29,14 +32,18 @@ domain_set:
 - qgnu18wo.sina.cn
 - collector.wasu.cn
 - delivery-pc.wasu.cn
+- render-web.11222.cn
 - ad.12306.cn
 - fota4.adups.cn
+- ad.cyapi.cn
 - g.tbcdn.cn
+- iflow.uczzd.cn
 - game.weibo.cn
 - zhwnlapi.etouch.cn
 - trackapp.guahao.cn
 - ad.hpplay.cn
 - adeng.hpplay.cn
+- adserviceretry.kglink.cn
 - cdn.pocoiq.cn
 - oct.pocoiq.cn
 - asimgs.pplive.cn
@@ -49,12 +56,18 @@ domain_set:
 - d6.sinaimg.cn
 - d7.sinaimg.cn
 - d8.sinaimg.cn
+- ad-r.soulapp.cn
+- soul-ad.soulapp.cn
+- ad-h5-cdn.soulapp.cn
+- ad-h5-station-cdn.soulapp.cn
+- e.jparking.cn
 - test.surepush.cn
 - grs.dbankcloud.cn
 - p.cloudcraft.co
 - grs.dbankcloud.eu
 - ad.qingting.fm
 - ad.yixin.im
+- adx.yixin.im
 - umami.rss3.io
 - sa.holopin.io
 - events.jianshu.io
@@ -71,29 +84,39 @@ domain_set:
 - track.58.com
 - adshow.58.com
 - jzt.jd.com
+- im-x.jd.com
 - jrad.jd.com
+- xlog.jd.com
 - c-nfa.jd.com
+- dsp-x.jd.com
 - img-x.jd.com
+- janapi.jd.com
 - ta.qq.com
 - tajs.qq.com
 - tcss.qq.com
+- tpns.qq.com
 - adver.qq.com
 - adping.qq.com
 - adsfile.qq.com
 - adsview.qq.com
 - adsclick.qq.com
+- adsgroup.qq.com
 - adshmmsg.qq.com
 - adsview2.qq.com
 - pingtcss.qq.com
+- rmonitor.qq.com
 - adslvfile.qq.com
 - adslvseed.qq.com
 - qring-tms.qq.com
 - adsqqclick.qq.com
 - adstestview.qq.com
 - spro.so.com
+- dsp-ad.yy.com
+- splash.yy.com
 - g.163.com
 - crash.163.com
 - crashlytics.163.com
+- adv.ccb.com
 - h.msn.com
 - api.msn.com
 - ntp.msn.com
@@ -106,7 +129,12 @@ domain_set:
 - mobileads.msn.com
 - tongji.tom.com
 - log.ys7.com
+- cdn.1rtb.com
+- ad.21cn.com
+- admarket.21cn.com
 - optimus-ads.amap.com
+- amap-aos-info-nogw.amap.com
+- free-aos-cdn-image.amap.com
 - hd.hupu.com
 - adx.hupu.com
 - ccdace.hupu.com
@@ -118,17 +146,24 @@ domain_set:
 - stat.letv.com
 - minisite.letv.com
 - adlaunch.moji.com
+- ads.sina.com
 - adnet.sohu.com
+- cdn-new-ad.wtzw.com
 - ad.360in.com
+- ads.95516.com
 - data.alexa.com
 - securemetrics.apple.com
 - rj.baidu.com
 - adscdn.baidu.com
 - fclick.baidu.com
+- click-bes.baidu.com
+- nadvideo2.baidu.com
 - videopush.baidu.com
+- feed-image.baidu.com
 - mobads-logs.baidu.com
 - ecmc.bdimg.com
 - metrics.brevo.com
+- web-track.go2yd.com
 - beacon.gtimg.com
 - splashqqlive.gtimg.com
 - mlog.hiido.com
@@ -142,10 +177,12 @@ domain_set:
 - cloudpush.iqiyi.com
 - gamecenter.iqiyi.com
 - hotchat-im.iqiyi.com
+- adservice.kugou.com
 - mobilelog.kugou.com
 - kgmobilestat.kugou.com
 - adserviceretry.kugou.com
 - kgmobilestatbak.kugou.com
+- tongji.meizu.com
 - s.osano.com
 - userimg.qunar.com
 - adsence.sogou.com
@@ -154,7 +191,7 @@ domain_set:
 - adplay.tudou.com
 - iwstat.tudou.com
 - adtrack.ucweb.com
-- stats.umsns.com
+- iflow.uczzd.com
 - game.weibo.com
 - adnew.wifi8.com
 - adfile.wifi8.com
@@ -175,6 +212,7 @@ domain_set:
 - ykrec.youku.com
 - actives.youku.com
 - mobilemsg.youku.com
+- apiv4-iyes.youku.com
 - guanggaoad.youku.com
 - passport-log.youku.com
 - uuidapi.yunos.com
@@ -186,6 +224,7 @@ domain_set:
 - afp.alicdn.com
 - gma.alicdn.com
 - amos.alicdn.com
+- ossgw.alicdn.com
 - atanx2.alicdn.com
 - gtms01.alicdn.com
 - gtms02.alicdn.com
@@ -201,6 +240,7 @@ domain_set:
 - miav-cse.avlyun.com
 - miui-fxcse.avlyun.com
 - sapi.edgedb.com
+- qzs.gdtimg.com
 - union.gdtimg.com
 - ads.gionee.com
 - pdl.gionee.com
@@ -214,9 +254,11 @@ domain_set:
 - v3-dc-ad.ixigua.com
 - v6-dc-ad.ixigua.com
 - v9-dc-ad.ixigua.com
+- ad.maoyan.com
 - adm.meiguo.com
 - applog.mobike.com
 - access-sngapm.qcloud.com
+- frontier-aweme-hl.snssdk.com
 - shouji.sougou.com
 - re.taobao.com
 - err.taobao.com
@@ -261,14 +303,18 @@ domain_set:
 - ad.huajiao.com
 - res.hunantv.com
 - click.hunantv.com
+- adapi.izuiyou.com
 - ad.jiemian.com
 - ad-stat.ksosoft.com
+- adx-static.ksosoft.com
+- dw-collect.ksosoft.com
 - delivery.maihehd.com
 - wmlog.meituan.com
 - traffic.mogujie.com
 - ads.mojicdn.com
 - init.phpwind.com
 - zzy1.quyaoya.com
+- adxapi.readgps.com
 - inside.rtbasia.com
 - trace2.rtbasia.com
 - insights.samsung.com
@@ -294,7 +340,9 @@ domain_set:
 - vs.funshion.com
 - adm.funshion.com
 - conf.funshion.com
+- stat.funshion.com
 - cdn.getkoala.com
+- adx.halomobi.com
 - ad-cn.jovcloud.com
 - adcore.lenovomm.com
 - susapi.lenovomm.com
@@ -321,7 +369,6 @@ domain_set:
 - adpublish.ydstatic.com
 - advertise.baicizhan.com
 - ad.caiyunapp.com
-- www.kuguopush.com
 - choice.microsoft.com
 - js.shshuoshu.com
 - m.sjzhushou.com
@@ -332,13 +379,16 @@ domain_set:
 - tracker.didiglobal.com
 - analytics.infomaniak.com
 - adapi.lenovogame.com
+- ads-shopping.shouqianba.com
 - analytics3.starschina.com
 - app-ad.variflight.com
 - emma-414870e223.huodonghezi.com
 - jxlog.istreamsche.com
 - tanxlog.istreamsche.com
 - material.istreamsche.com
+- oppo.yidianzixun.com
 - adcdn.tencentmusic.com
+- adcdn6.tencentmusic.com
 - adexpo.tencentmusic.com
 - adclick.tencentmusic.com
 - ad.zuimeitianqi.com
@@ -349,8 +399,10 @@ domain_set:
 - display.360totalsecurity.com
 - sashimi.royli.dev
 - api.openpanel.dev
+- sdk.1rtb.net
 - stat.loli.net
 - www-analytics.ripe.net
+- iflow.uczzd.net
 - adres.myaora.net
 - tw13b093.sandai.net
 - thirdparty.biliapi.net
@@ -370,6 +422,8 @@ domain_set:
 - tag.safary.club
 - comments.gazo.space
 - ad.dev.360.cn
+- ad.iot.360.cn
+- ad.jia.360.cn
 - show.look.360.cn
 - msg.shouji.360.cn
 - adapi.shouji.360.cn
@@ -377,6 +431,7 @@ domain_set:
 - commercial.shouji.360.cn
 - api.shuaji.360.cn
 - ad.gamebox.360.cn
+- switch.cup.com.cn
 - c.msn.com.cn
 - apppv.zol.com.cn
 - pvnapp.zol.com.cn
@@ -391,7 +446,10 @@ domain_set:
 - d8.sina.com.cn
 - d9.sina.com.cn
 - rm.sina.com.cn
+- ad2.sina.com.cn
+- ad3.sina.com.cn
 - ad4.sina.com.cn
+- ad5.sina.com.cn
 - d00.sina.com.cn
 - pfp.sina.com.cn
 - sax1.sina.com.cn
@@ -421,11 +479,11 @@ domain_set:
 - stat.10jqka.com.cn
 - imgad0.pcauto.com.cn
 - iad0ssl.pcauto.com.cn
-- ad.winrar.com.cn
 - ivy.pchouse.com.cn
 - rd.autohome.com.cn
 - adproxy.autohome.com.cn
 - applogapi.autohome.com.cn
+- adx.hubcloud.com.cn
 - imgad0.pconline.com.cn
 - iad0ssl.pconline.com.cn
 - ad-analysis.pconline.com.cn
@@ -465,8 +523,11 @@ domain_set:
 - a.hl.mi.com
 - c.id.mi.com
 - api.jr.mi.com
-- a.union.mi.com
 - tmfsdk.m.qq.com
+- tmead.y.qq.com
+- tmeadbak.y.qq.com
+- tmeadcomm.y.qq.com
+- tmeadquic.y.qq.com
 - mazu.3g.qq.com
 - pmir.3g.qq.com
 - masdk.3g.qq.com
@@ -475,16 +536,34 @@ domain_set:
 - adv.app.qq.com
 - adpm.app.qq.com
 - ad.qun.qq.com
+- wup.imtt.qq.com
 - adfilter.imtt.qq.com
 - report.qqweb.qq.com
+- trace.video.qq.com
+- wxsmsdy.video.qq.com
+- sdkconfig.video.qq.com
+- huatuocode.huatuo.qq.com
+- iad.g.163.com
 - n.3g.163.com
 - ads.eu.msn.com
 - rmads.eu.msn.com
 - catalog.video.msn.com
 - match.p4p.1688.com
+- ad.k.21cn.com
 - msg.m.letv.com
 - pro.hoye.letv.com
 - n.mark.letv.com
+- mob.bz.mgtv.com
+- vip.bz.mgtv.com
+- dflow.bz.mgtv.com
+- floor.bz.mgtv.com
+- layer.bz.mgtv.com
+- rprain.bz.mgtv.com
+- credits.bz.mgtv.com
+- credits2.bz.mgtv.com
+- credits3.bz.mgtv.com
+- encounter.bz.mgtv.com
+- rc-topic-api.bz.mgtv.com
 - rom.pt.miui.com
 - info.sec.miui.com
 - flash.sec.miui.com
@@ -524,6 +603,7 @@ domain_set:
 - log.web.kugou.com
 - log.stat.kugou.com
 - ads.bssdl.kugou.com
+- splashimgretrybssdl.cloud.kugou.com
 - ads.service.kugou.com
 - adsfile.bssdlbig.kugou.com
 - top.h.qhimg.com
@@ -534,6 +614,7 @@ domain_set:
 - ad.yun.wifi8.com
 - dl.g.youku.com
 - sdk.m.youku.com
+- amdc.m.youku.com
 - push.m.youku.com
 - dev-push.m.youku.com
 - hudong.pl.youku.com
@@ -551,7 +632,10 @@ domain_set:
 - vv84.bj.bcebos.com
 - tob-cms.bj.bcebos.com
 - fc-feed.cdn.bcebos.com
+- miniapp-ad.cdn.bcebos.com
+- mobads-pre-config.cdn.bcebos.com
 - links.services.disqus.com
+- mi-stat.gslb.mi-idc.com
 - ads.data.pplive.com
 - gas.data.pplive.com
 - plt.data.pplive.com
@@ -573,6 +657,7 @@ domain_set:
 - dsp.simba.taobao.com
 - fav.simba.taobao.com
 - srd.simba.taobao.com
+- stat.simba.taobao.com
 - redirect.simba.taobao.com
 - pindao.huoban.taobao.com
 - api.waptest.taobao.com
@@ -621,6 +706,8 @@ domain_set:
 - scene.vip.xunlei.com
 - biz.live.xunlei.com
 - log.yex.youdao.com
+- clkservice2.dict.youdao.com
+- clkservice.mail.youdao.com
 - impservice.dictapp.youdao.com
 - mclean.cloud.360safe.com
 - kuaikan.netmon.360safe.com
@@ -629,6 +716,7 @@ domain_set:
 - log.v2.hunantv.com
 - ad.bn.netease.com
 - bigdata.ssp.samsung.com
+- cdn-ads.oss-cn-shanghai.aliyuncs.com
 - cdn.adapi.fotoable.com
 - adse.wsa.ximalaya.com
 - misc.in.duokanbox.com
@@ -643,6 +731,8 @@ domain_set:
 - iadmusicmat.music.126.net
 - iadmusicmatvideo.music.126.net
 - iadmat.nosdn.127.net
+- haitaoad.nosdn.127.net
+- iadmatapk.nosdn.127.net
 - live.tvpot.daum.net
 - s3.pfp.sina.net
 - hz.tbusergw.taobao.net
@@ -657,6 +747,7 @@ domain_set:
 - contactapi.micloud.xiaomi.net
 - phonecallapi.micloud.xiaomi.net
 - sec.resource.xiaomi.net
+- al-log.d.meituan.net
 - huodong.ios.shouji.360.cn
 - act.commercial.shouji.360.cn
 - soft.data.weather.360.cn
@@ -1258,8 +1349,8 @@ domain_suffix_set:
 - 8xtm6i.cn
 - adasdz.cn
 - adcome.cn
+- adintl.cn
 - adpush.cn
-- adsage.cn
 - adview.cn
 - advmob.cn
 - aknusp.cn
@@ -1736,6 +1827,7 @@ domain_suffix_set:
 - iconworkshop.cn
 - acgshenshicha.cn
 - chinagcdxyjng.cn
+- mobileservice.cn
 - shangwenchao4.cn
 - chushoushijian.cn
 - haohuisheng555.cn
@@ -3158,6 +3250,7 @@ domain_suffix_set:
 - kissmetrics.io
 - mynextphone.io
 - n-analytics.io
+- openinstall.io
 - sf-insights.io
 - sparechange.io
 - tracdelight.io
@@ -6598,6 +6691,7 @@ domain_suffix_set:
 - uektb.com
 - ulaen.com
 - umbel.com
+- umsns.com
 - unzpc.com
 - upcpi.com
 - usurv.com
@@ -7295,6 +7389,7 @@ domain_suffix_set:
 - dtssrv.com
 - duomai.com
 - durith.com
+- dutils.com
 - dvypar.com
 - dynpaa.com
 - dynspt.com
@@ -7818,6 +7913,7 @@ domain_suffix_set:
 - moradu.com
 - morict.com
 - mors22.com
+- mosspf.com
 - movcpm.com
 - mpay69.com
 - mrelko.com
@@ -8675,6 +8771,7 @@ domain_suffix_set:
 - 33lotte.com
 - 3dstats.com
 - 3lucosy.com
+- 51taifu.com
 - 55lotte.com
 - 6669667.com
 - 66lotte.com
@@ -8833,6 +8930,7 @@ domain_suffix_set:
 - adsvert.com
 - adsvids.com
 - adtaily.com
+- adtaipo.com
 - adtival.com
 - adtoadd.com
 - adtonus.com
@@ -8840,6 +8938,7 @@ domain_suffix_set:
 - adtriba.com
 - adtrk18.com
 - adtrk21.com
+- adukwai.com
 - adunity.com
 - advhits.com
 - advrush.com
@@ -9448,6 +9547,7 @@ domain_suffix_set:
 - fuel451.com
 - fujigar.com
 - funneld.com
+- funnull.com
 - furykms.com
 - fuxcmbo.com
 - fvckeip.com
@@ -10036,6 +10136,7 @@ domain_suffix_set:
 - monetag.com
 - monitis.com
 - mookie1.com
+- motowoo.com
 - motrixi.com
 - mountrs.com
 - mouse3k.com
@@ -10860,6 +10961,7 @@ domain_suffix_set:
 - ubembed.com
 - uberads.com
 - ubercpm.com
+- ubixioe.com
 - udetqwj.com
 - uegsjnk.com
 - ufinkln.com
@@ -11325,6 +11427,7 @@ domain_suffix_set:
 - adbinead.com
 - adbuddiz.com
 - adbutler.com
+- adcanvas.com
 - adchemix.com
 - adchoice.com
 - adclerks.com
@@ -12265,6 +12368,7 @@ domain_suffix_set:
 - grurawho.com
 - grvmedia.com
 - guandads.com
+- guizhhaa.com
 - gupqacqf.com
 - gurynyce.com
 - guysfair.com
@@ -12547,6 +12651,7 @@ domain_suffix_set:
 - kougloar.com
 - kpebuazc.com
 - krqjfirm.com
+- kuaiyiad.com
 - kuaizhan.com
 - kueezrtb.com
 - kukrosti.com
@@ -12792,6 +12897,7 @@ domain_suffix_set:
 - mybmrtrg.com
 - myiphost.com
 - mypopads.com
+- mytanwan.com
 - mythings.com
 - mytictac.com
 - mzol7lbm.com
@@ -13108,6 +13214,7 @@ domain_suffix_set:
 - pokreess.com
 - polpepsn.com
 - polredsy.com
+- polyfill.com
 - pomptame.com
 - poolgmsd.com
 - poosoahe.com
@@ -13260,6 +13367,7 @@ domain_suffix_set:
 - qichexin.com
 - qinvaris.com
 - qjllvrcp.com
+- qjparxwc.com
 - qnlsbtrk.com
 - qnqzbfgg.com
 - qooanabj.com
@@ -14334,6 +14442,7 @@ domain_suffix_set:
 - addynamix.com
 - adelement.com
 - adforcast.com
+- adfunlink.com
 - adhealers.com
 - adhitzads.com
 - adinsight.com
@@ -14374,6 +14483,7 @@ domain_suffix_set:
 - adsvolume.com
 - adtechium.com
 - adthletic.com
+- adtianmai.com
 - adtrieval.com
 - adultsadv.com
 - adup-tech.com
@@ -14678,11 +14788,13 @@ domain_suffix_set:
 - bravebone.com
 - brdecolar.com
 - brealtime.com
+- brecaqogx.com
 - bred4tula.com
 - brenn-wck.com
 - brewsuper.com
 - bricks-co.com
 - bridedeed.com
+- bridgeoos.com
 - briefstem.com
 - brighttoe.com
 - broaddoor.com
@@ -14869,6 +14981,7 @@ domain_suffix_set:
 - cyan92010.com
 - cyeqeewyr.com
 - cykcxgsvg.com
+- czrsmswlt.com
 - d08l9a634.com
 - d5chnap6b.com
 - dacounter.com
@@ -15072,6 +15185,7 @@ domain_suffix_set:
 - fancydune.com
 - fancywhim.com
 - fandelcot.com
+- fanglinad.com
 - fapstered.com
 - farethief.com
 - farsnails.com
@@ -15550,6 +15664,7 @@ domain_suffix_set:
 - ktmayxvea.com
 - ktpcsqnij.com
 - ku42hjr2e.com
+- kuguopush.com
 - kurlipush.com
 - kuvoansub.com
 - kvtgl4who.com
@@ -17437,6 +17552,7 @@ domain_suffix_set:
 - a6dc99d1a8.com
 - a700fb9c8d.com
 - a717b6d31e.com
+- a85d43cd02.com
 - a899228ebf.com
 - a8d48a7d6e.com
 - a9ae7df45f.com
@@ -18728,6 +18844,7 @@ domain_suffix_set:
 - hesudsuzoa.com
 - hethongbhx.com
 - hewawkward.com
+- heycryptic.com
 - hfhppxseee.com
 - hgub2polye.com
 - hhbypdoecp.com
@@ -19447,6 +19564,7 @@ domain_suffix_set:
 - opsozouphy.com
 - optraising.com
 - oqnabsatfn.com
+- oqqwrjanxy.com
 - orbsdiacle.com
 - ordzimwtaa.com
 - origintube.com
@@ -23240,6 +23358,7 @@ domain_suffix_set:
 - uviajpcewsv.com
 - uvoovoachee.com
 - uwaxoyfklhm.com
+- uynhupsmini.com
 - uztiljvaewg.com
 - v2mlemerald.com
 - vadokfkulzr.com
@@ -25458,6 +25577,7 @@ domain_suffix_set:
 - phvhnxebmrzf.com
 - picarasgalax.com
 - pickedincome.com
+- pidcowwnwwwx.com
 - pierisrapgae.com
 - pilaryhurrah.com
 - pilpulbagmen.com
@@ -29322,6 +29442,7 @@ domain_suffix_set:
 - blockchain-ads.com
 - blogmeetsbrand.com
 - blubberspoiled.com
+- bmjfsozmscdlgt.com
 - bo2ffe45ss4gie.com
 - bondagecoexist.com
 - bookbannershop.com
@@ -29634,6 +29755,7 @@ domain_suffix_set:
 - dronediscussed.com
 - druggedforearm.com
 - dtedpypskgbdap.com
+- dtkgorqjwflvhl.com
 - dtkmflxaqwobno.com
 - dtnacqswcieufy.com
 - dtylhedgelnham.com
@@ -30039,6 +30161,7 @@ domain_suffix_set:
 - jygotubvpyguak.com
 - jyhxhsdgxbvcnj.com
 - kaiu-marketing.com
+- kariqjoxppwhcz.com
 - kaurieseluxate.com
 - kavajwwdeultfm.com
 - kednglalimchmh.com
@@ -30879,6 +31002,7 @@ domain_suffix_set:
 - tindung-online.com
 - tintersloggish.com
 - tinthuongtrian.com
+- tipjamdavwygxm.com
 - tipsembankment.com
 - tkqjiukbtjboub.com
 - toenailtrishaw.com
@@ -33008,6 +33132,7 @@ domain_suffix_set:
 - entirelyhonorary.com
 - erofherlittleboy.com
 - errorpalpatesake.com
+- ervantasrelaterc.com
 - essentialblunder.com
 - establishambient.com
 - etherealpinnacle.com
@@ -35455,6 +35580,7 @@ domain_suffix_set:
 - openslowlypoignant.com
 - opticalwornshampoo.com
 - ordinalexclusively.com
+- orhavingartisticta.com
 - outbalanceleverage.com
 - outdilateinterrupt.com
 - outsetnormalwaited.com
@@ -36839,6 +36965,7 @@ domain_suffix_set:
 - godmotherelectricity.com
 - goodluckblockingthis.com
 - goodnightbarterleech.com
+- googlesyndication-cn.com
 - gorilladescendbounds.com
 - grantinsanemerriment.com
 - greececountryfurious.com
@@ -37262,6 +37389,7 @@ domain_suffix_set:
 - acknowledgecalculated.com
 - activelysmileintimate.com
 - adaptationbodilypairs.com
+- addictionmulegoodness.com
 - addressanythingbridge.com
 - adjectivedollaralmost.com
 - admin-vayvonvietthanh.com
@@ -40378,6 +40506,7 @@ domain_suffix_set:
 - avroad3431.fun
 - avsink3431.fun
 - avview3431.fun
+- betray1266.fun
 - cinema1266.fun
 - cvdfvdfv90.fun
 - egesdashb8.fun
@@ -40510,6 +40639,7 @@ domain_suffix_set:
 - vipmmomo2456.fun
 - allloveydovey.fun
 - timefeathered.fun
+- borrowjavgg124.fun
 - concentration2.fun
 - confrontation2.fun
 - consciousness2.fun
@@ -40517,6 +40647,7 @@ domain_suffix_set:
 - demonstration2.fun
 - embarrassment2.fun
 - fundatingquest.fun
+- guitarjavgg124.fun
 - inappropriate2.fun
 - qualification2.fun
 - revolutionary2.fun
@@ -41215,6 +41346,7 @@ domain_suffix_set:
 - gbuzz.net
 - gefun.net
 - getgx.net
+- getui.net
 - glssp.net
 - gmads.net
 - go2oh.net
@@ -41226,6 +41358,7 @@ domain_suffix_set:
 - ilius.net
 - imcht.net
 - imcod.net
+- imtmp.net
 - intgr.net
 - iocnt.net
 - iprom.net
@@ -45291,6 +45424,7 @@ domain_suffix_set:
 - jyozavoyyyjbj.top
 - jyozavoyyymly.top
 - jyozavoyyyqll.top
+- jyvkwqjoombkz.top
 - jzqbyykbrrbkq.top
 - kabakamarbles.top
 - kelownajapers.top
@@ -45898,6 +46032,7 @@ domain_suffix_set:
 - 3haiaz.xyz
 - 485728.xyz
 - 4e04f7.xyz
+- 4iazoa.xyz
 - 55cc9d.xyz
 - 591520.xyz
 - 5ceea3.xyz
@@ -50524,6 +50659,7 @@ domain_suffix_set:
 - jkls.life
 - srch.life
 - viyo.life
+- hrwbr.life
 - synkd.life
 - vn-cn.life
 - vn-cr.life
@@ -50895,6 +51031,7 @@ domain_suffix_set:
 - momo247.shop
 - my-easy.shop
 - mylotte.shop
+- octoads.shop
 - pmnct63.shop
 - sendotv.shop
 - sendovn.shop
@@ -51266,6 +51403,7 @@ domain_suffix_set:
 - gumon.site
 - humro.site
 - imgot.site
+- indor.site
 - it8vh.site
 - jetti.site
 - jjcwq.site
@@ -51304,6 +51442,7 @@ domain_suffix_set:
 - ssooss.site
 - takidd.site
 - 22pornz.site
+- 56ovido.site
 - adsfarm.site
 - adshost.site
 - alitems.site
@@ -51621,6 +51760,7 @@ domain_suffix_set:
 - hymnramoon.click
 - jhsnshueyt.click
 - kegtopless.click
+- mildsewery.click
 - odintsures.click
 - ornatomial.click
 - panger-top.click
@@ -52015,6 +52155,7 @@ domain_suffix_set:
 - bmzgcv-eo.rocks
 - g-xtqrgag.rocks
 - monerominer.rocks
+- oz-yypkhuwo.rocks
 - cgbupajpzo-t.rocks
 - bettercollective.rocks
 - cdn7.space
@@ -54789,6 +54930,7 @@ domain_suffix_set:
 - feih.com.cn
 - yoyi.com.cn
 - yrszy.com.cn
+- allyes.com.cn
 - cctvgb.com.cn
 - wooboo.com.cn
 - ipinyou.com.cn
@@ -54854,6 +54996,7 @@ domain_suffix_set:
 - a1.99966.cn
 - apilog-web.acfun.cn
 - collector.azure.cn
+- union.baidu.cn
 - a1.bajiu.cn
 - cpro.bdrmb.cn
 - ad.cdnjm.cn
@@ -69060,6 +69203,7 @@ domain_suffix_set:
 - smetrics.lm.com
 - tmsgi.lv.com
 - ad.mi.com
+- union.mi.com
 - stats.mt.com
 - sstats.mt.com
 - r.my.com
@@ -69083,6 +69227,7 @@ domain_suffix_set:
 - gdt.qq.com
 - qzs.qq.com
 - rqd.qq.com
+- wxs.qq.com
 - push.qq.com
 - adnet.qq.com
 - aegis.qq.com
@@ -69499,6 +69644,7 @@ domain_suffix_set:
 - sam.msn.com
 - udc.msn.com
 - ads1.msn.com
+- data.msn.com
 - flex.msn.com
 - srtb.msn.com
 - preview.msn.com
@@ -72063,7 +72209,6 @@ domain_suffix_set:
 - click.udimg.com
 - hgxktt.ugaoo.com
 - fjuccm.uktsc.com
-- log.umsns.com
 - tk.undiz.com
 - hvuihu.undiz.com
 - igjytl.unice.com
@@ -72443,7 +72588,6 @@ domain_suffix_set:
 - rtb.appbid.com
 - link.appewa.com
 - mktgpage.appier.com
-- api.appsee.com
 - marketing.apptus.com
 - promo.aprima.com
 - istatistik.arabam.com
@@ -74689,7 +74833,6 @@ domain_suffix_set:
 - smallbusiness.adpinfo.com
 - communications.adpinfo.com
 - play.adtonos.com
-- p1-lm.adukwai.com
 - images.aepinfo.com
 - adobeanalytic.aerotek.com
 - adobeanalytics.aerotek.com
@@ -102773,7 +102916,9 @@ domain_suffix_set:
 - eap.enorth.com.cn
 - t.hypers.com.cn
 - smetrics.kioxia.com.cn
+- stat.nearme.com.cn
 - z1.pclady.com.cn
+- ad.winrar.com.cn
 - t1.xuefen.com.cn
 - discover.absciex.com.cn
 - stat.caijing.com.cn
@@ -106931,7 +107076,6 @@ domain_suffix_set:
 - api.share.mob.com
 - c-5uwzmx78pmca09x24aiux2euavx2ekwu.g00.msn.com
 - a.ads2.msn.com
-- vortex.data.msn.com
 - live.rads.msn.com
 - analytics.msnbc.msn.com
 - app.link.nba.com
@@ -107589,6 +107733,8 @@ domain_suffix_set:
 - adash.m.taobao.com
 - apoll.m.taobao.com
 - accscdn.m.taobao.com
+- c-adash.m.taobao.com
+- m-adash.m.taobao.com
 - amdcopen.m.taobao.com
 - adashx4yt.m.taobao.com
 - tunion-api.m.taobao.com
@@ -107597,6 +107743,7 @@ domain_suffix_set:
 - adash-c.ut.taobao.com
 - adashbc.ut.taobao.com
 - adashxgc.ut.taobao.com
+- h-adashx.ut.taobao.com
 - adashx4ae.ut.taobao.com
 - tns.simba.taobao.com
 - click.e.tdbank.com
@@ -111030,7 +111177,6 @@ domain_suffix_set:
 - email-am.stage.ca.jll.com
 - events.prd.api.max.com
 - telegraph.prd.api.max.com
-- browser.events.data.msn.com
 - smetrics.productcentral-stg.products.pwc.com
 - mail.go.fr.scc.com
 - smtps.go.fr.scc.com

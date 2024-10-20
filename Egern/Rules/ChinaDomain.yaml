@@ -8,6 +8,8 @@ domain_set:
 - dot.pub
 - www.intel.cn
 - lv.queniujq.cn
+- assets1.xboxlive.cn
+- assets2.xboxlive.cn
 - dl.ubnt.com
 - config.ubnt.com
 - www.layuicdn.com
@@ -100,6 +102,7 @@ domain_suffix_set:
 - outlook.cn
 - rsproxy.cn
 - sinaimg.cn
+- soulapp.cn
 - tripcdn.cn
 - 51ctocdn.cn
 - bilibili.cn
@@ -275,6 +278,7 @@ domain_suffix_set:
 - upyun.com
 - vmall.com
 - weibo.com
+- wifi8.com
 - xiami.com
 - xiniu.com
 - xmcdn.com
@@ -453,8 +457,10 @@ domain_suffix_set:
 - tencent.com
 - tnkjmec.com
 - toutiao.com
+- udqqimg.com
 - volccdn.com
 - weidian.com
+- xoyocdn.com
 - xycloud.com
 - zhangzs.com
 - 163jiasu.com
@@ -693,6 +699,7 @@ domain_suffix_set:
 - netstatic.net
 - pinduoduo.net
 - aliyundrive.net
+- steamserver.net
 - yunjiasu-cdn.net
 - coolapkmarket.net
 - tencent-cloud.net
