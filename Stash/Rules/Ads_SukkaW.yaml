@@ -1,8 +1,8 @@
 payload:
   #########################################
   # Sukka's Ruleset - Reject Base
-  # Last Updated: 2024-10-19T16:26:46.461Z
-  # Size: 111364
+  # Last Updated: 2024-10-20T12:37:09.576Z
+  # Size: 111379
   # License: AGPL 3.0
   # Homepage: https://ruleset.skk.moe
   # GitHub: https://github.com/SukkaW/Surge
@@ -10574,6 +10574,7 @@ payload:
   - DOMAIN-SUFFIX,996js123.com
   - DOMAIN-SUFFIX,99886aaa.com
   - DOMAIN-SUFFIX,999lotte.com
+  - DOMAIN-SUFFIX,99jinpin.com
   - DOMAIN-SUFFIX,9content.com
   - DOMAIN-SUFFIX,9japride.com
   - DOMAIN-SUFFIX,a-static.com
@@ -18742,6 +18743,7 @@ payload:
   - DOMAIN-SUFFIX,orionember.com
   - DOMAIN-SUFFIX,orlotalers.com
   - DOMAIN-SUFFIX,ositracker.com
+  - DOMAIN-SUFFIX,osrxzucira.com
   - DOMAIN-SUFFIX,osskugvirs.com
   - DOMAIN-SUFFIX,osspinsira.com
   - DOMAIN-SUFFIX,osspwamuhn.com
@@ -39901,6 +39903,7 @@ payload:
   - DOMAIN-SUFFIX,mm1qj.icu
   - DOMAIN-SUFFIX,mymap.icu
   - DOMAIN-SUFFIX,n5n5s.icu
+  - DOMAIN-SUFFIX,ouplc.icu
   - DOMAIN-SUFFIX,p45m0.icu
   - DOMAIN-SUFFIX,q1gel.icu
   - DOMAIN-SUFFIX,rk6h3.icu
@@ -39909,6 +39912,7 @@ payload:
   - DOMAIN-SUFFIX,smarf.icu
   - DOMAIN-SUFFIX,sslir.icu
   - DOMAIN-SUFFIX,stq89.icu
+  - DOMAIN-SUFFIX,sv2fo.icu
   - DOMAIN-SUFFIX,tgb1l.icu
   - DOMAIN-SUFFIX,tjfbh.icu
   - DOMAIN-SUFFIX,twj6s.icu
@@ -40184,6 +40188,7 @@ payload:
   - DOMAIN-SUFFIX,mtwuxss.icu
   - DOMAIN-SUFFIX,muwqiga.icu
   - DOMAIN-SUFFIX,mwqetvn.icu
+  - DOMAIN-SUFFIX,ndysxhs.icu
   - DOMAIN-SUFFIX,nmmemzi.icu
   - DOMAIN-SUFFIX,nouusup.icu
   - DOMAIN-SUFFIX,nqyrywn.icu
@@ -44028,6 +44033,7 @@ payload:
   - DOMAIN-SUFFIX,onalzlk.top
   - DOMAIN-SUFFIX,ortlisk.top
   - DOMAIN-SUFFIX,osyliek.top
+  - DOMAIN-SUFFIX,ouresdk.top
   - DOMAIN-SUFFIX,oweriok.top
   - DOMAIN-SUFFIX,oyretuk.top
   - DOMAIN-SUFFIX,oyuwkbk.top
@@ -44085,6 +44091,7 @@ payload:
   - DOMAIN-SUFFIX,unalzlt.top
   - DOMAIN-SUFFIX,urtlist.top
   - DOMAIN-SUFFIX,usyliet.top
+  - DOMAIN-SUFFIX,uuresdt.top
   - DOMAIN-SUFFIX,uweriot.top
   - DOMAIN-SUFFIX,uyislot.top
   - DOMAIN-SUFFIX,uyretut.top
@@ -44453,6 +44460,7 @@ payload:
   - DOMAIN-SUFFIX,justestmurph.top
   - DOMAIN-SUFFIX,kaulaijeepul.top
   - DOMAIN-SUFFIX,kenkenlimted.top
+  - DOMAIN-SUFFIX,lalabaos1020.top
   - DOMAIN-SUFFIX,loppersixtes.top
   - DOMAIN-SUFFIX,lordandogger.top
   - DOMAIN-SUFFIX,methodslacca.top
@@ -45235,6 +45243,7 @@ payload:
   - DOMAIN-SUFFIX,arojgi.xyz
   - DOMAIN-SUFFIX,aryici.xyz
   - DOMAIN-SUFFIX,atmdew.xyz
+  - DOMAIN-SUFFIX,atorks.xyz
   - DOMAIN-SUFFIX,ausfyk.xyz
   - DOMAIN-SUFFIX,awuvcq.xyz
   - DOMAIN-SUFFIX,awyuge.xyz
@@ -45528,6 +45537,7 @@ payload:
   - DOMAIN-SUFFIX,hvlitr.xyz
   - DOMAIN-SUFFIX,hwnojj.xyz
   - DOMAIN-SUFFIX,hzrnbl.xyz
+  - DOMAIN-SUFFIX,iairuo.xyz
   - DOMAIN-SUFFIX,ibkoiw.xyz
   - DOMAIN-SUFFIX,ibqmey.xyz
   - DOMAIN-SUFFIX,icqeou.xyz
@@ -45593,6 +45603,7 @@ payload:
   - DOMAIN-SUFFIX,jyfdbj.xyz
   - DOMAIN-SUFFIX,jyjrbz.xyz
   - DOMAIN-SUFFIX,jypvzd.xyz
+  - DOMAIN-SUFFIX,jyxzrb.xyz
   - DOMAIN-SUFFIX,kaizzz.xyz
   - DOMAIN-SUFFIX,kak17p.xyz
   - DOMAIN-SUFFIX,karoon.xyz
@@ -45695,6 +45706,7 @@ payload:
   - DOMAIN-SUFFIX,mdezco.xyz
   - DOMAIN-SUFFIX,mdiygc.xyz
   - DOMAIN-SUFFIX,mdmuky.xyz
+  - DOMAIN-SUFFIX,mdqikg.xyz
   - DOMAIN-SUFFIX,medriz.xyz
   - DOMAIN-SUFFIX,mepuyu.xyz
   - DOMAIN-SUFFIX,merywf.xyz
@@ -45963,6 +45975,7 @@ payload:
   - DOMAIN-SUFFIX,swsegi.xyz
   - DOMAIN-SUFFIX,swwdke.xyz
   - DOMAIN-SUFFIX,sykzow.xyz
+  - DOMAIN-SUFFIX,syshwc.xyz
   - DOMAIN-SUFFIX,tagmai.xyz
   - DOMAIN-SUFFIX,tagrua.xyz
   - DOMAIN-SUFFIX,tahznx.xyz
@@ -46670,6 +46683,7 @@ payload:
   - DOMAIN-SUFFIX,6471e7f7.xyz
   - DOMAIN-SUFFIX,65035033.xyz
   - DOMAIN-SUFFIX,656f1ba3.xyz
+  - DOMAIN-SUFFIX,65894140.xyz
   - DOMAIN-SUFFIX,65wenv5f.xyz
   - DOMAIN-SUFFIX,691f42ad.xyz
   - DOMAIN-SUFFIX,6gi0edui.xyz
@@ -72410,6 +72424,7 @@ payload:
   - DOMAIN-SUFFIX,1.feihua.com
   - DOMAIN-SUFFIX,cash.femjoy.com
   - DOMAIN-SUFFIX,links.fennel.com
+  - DOMAIN-SUFFIX,hub.fghtem.com
   - DOMAIN-SUFFIX,go.fhlbny.com
   - DOMAIN-SUFFIX,join.fhlbny.com
   - DOMAIN-SUFFIX,learn.fhlbny.com
@@ -98026,8 +98041,8 @@ payload:
   - DOMAIN-SUFFIX,metrics.goalfinancial.net
   - DOMAIN-SUFFIX,data-7f59e1721b.huettentouren.net
   - DOMAIN-SUFFIX,ads.idiscountmall.net
-  - DOMAIN-SUFFIX,no88kks.infinityscans.net
   - DOMAIN-SUFFIX,ok88okg.infinityscans.net
+  - DOMAIN-SUFFIX,yes88kks.infinityscans.net
   - DOMAIN-SUFFIX,traccoon.intellectsoft.net
   - DOMAIN-SUFFIX,bfypuy.istanbulhomes.net
   - DOMAIN-SUFFIX,js.kabutocho-dsp.net
