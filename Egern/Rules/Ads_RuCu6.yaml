@@ -1,89 +1,9 @@
 no_resolve: true
 domain_set:
--  api-adservices.apple.com
-- lookup.api.bsb.baidu.com
-- proxy.safebrowsing.apple
-- safebrowsing.g.applimg.com
-- safebrowsing.googleapis.com
-- safebrowsing.urlsec.qq.com
-- token.safebrowsing.apple
-- vs6.bj2ct.u3.ucweb.com
--  o33249.ingest.sentry.io
-- api.helloclue.com
-- brahe.apptimize.com
-- collector.clue.run
-- mapi.apptimize.com
-- md-i-s.apptimize.com
-- images.ctfassets.net
-- data.flurry.com
-- adservice.google.com
-- googleads.g.doubleclick-cn.net
-- googleads.g.doubleclick.net
-- pubads.g.doubleclick.net
-- pagead2.googlesyndication.com
-- www.googleadservices.com
-- pageviewp.icbc.com.cn
-- mi.gdt.qq.com
-- open.e.kuaishou.com
-- ad.tencentmusic.com
-- g.koowo.com
-- mobilead.kuwo.cn
-- rich.kuwo.cn
-- tmead.y.qq.com
-- tmeadcomm.y.qq.com
-- statics.woozooo.com
-- aaid.uyunad.com
-- adui.tg.meitu.com
-- acdn.adnxs.com
-- mediation.adnxs.com
-- sin3-ib.adnxs.com
-- bravetense.com
-- furiousfar.com
-- swallowcrockerybless.com
-- api.zuihuimai.com
-- tpns.qq.com
-- gdt.qq.com
-- httpdns.n.netease.com
-- iadmat.nosdn.127.net
-- iadmusicmat.music.126.net
-- iadmusicmatvideo.music.126.net
-- adstrategy.biz.weibo.com
-- kadmimage.biz.weibo.com
-- sdkaction.biz.weibo.com
-- sdkclick.biz.weibo.com
-- sdkmonitor.biz.weibo.com
-- sdkconfig.ad.xiaomi.com
-- ads.95516.com
-- cm-10-138.getui.com
-- sdk.open.talk.getui.net
-- sdk-conf.getui.com
-- switch.cup.com.cn
-- tysdk.95516.com
-- appcloud.zhihu.com
-- appcloud2.in.zhihu.com
-- crash2.zhihu.com
-- mqtt.zhihu.com
-- sugar.zhihu.com
-- ad.zijieapi.com
 domain_suffix_set:
--  iadsdk.apple.com
-- safebrowsing.apple
-- u3.ucweb.com
--  pos.baidu.com
-- pangolin-sdk-toutiao.com
-- pangolin-sdk-toutiao-b.com
-- shuzilm.cn
-- 163jiasu.com
 domain_keyword_set:
-- adservice.google.com.
-- -ad-sign.byteimg.com
 domain_regex_set:
 ip_cidr_set:
-- 203.107.1.1/24
--  180.76.76.200/32
-- 118.89.204.198/32
-- 103.41.167.237/32
 ip_cidr6_set:
-- 2402:4e00:1200:ed00:0:9089:6dac:96b6/128
 asn_set:
 url_regex_set:
