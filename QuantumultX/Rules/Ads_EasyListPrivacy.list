@@ -1,7 +1,7 @@
 ## [Adblock Plus 1.1]
-## ! Version: 202410211300
+## ! Version: 202410211537
 ## ! Title: EasyPrivacy
-## ! Last modified: 21 Oct 2024 13:00 UTC
+## ! Last modified: 21 Oct 2024 15:37 UTC
 ## ! Expires: 4 days (update frequency)
 ## ! *** easylist:template_header.txt ***
 ## ! 
@@ -2453,6 +2453,7 @@ HOST-SUFFIX,uncoveredexpert.com,REJECT
 HOST-SUFFIX,understoodocean.com,REJECT
 HOST-SUFFIX,unequalbrake.com,REJECT
 HOST-SUFFIX,unequaltrail.com,REJECT
+HOST-SUFFIX,unicontainers.com,REJECT
 HOST-SUFFIX,unifyaddition.com,REJECT
 HOST-SUFFIX,uninterestedquarter.com,REJECT
 HOST-SUFFIX,unknowncontrol.com,REJECT

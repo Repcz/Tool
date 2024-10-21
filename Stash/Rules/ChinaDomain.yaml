@@ -1,8 +1,8 @@
 payload:
   #########################################
   # Sukka's Ruleset - Domestic Domains
-  # Last Updated: 2024-10-21T14:26:17.565Z
-  # Size: 778
+  # Last Updated: 2024-10-21T16:28:53.839Z
+  # Size: 735
   # License: AGPL 3.0
   # Homepage: https://ruleset.skk.moe
   # GitHub: https://github.com/SukkaW/Surge
@@ -24,6 +24,7 @@ payload:
   - DOMAIN-SUFFIX,88y.cn
   - DOMAIN-SUFFIX,boc.cn
   - DOMAIN-SUFFIX,cls.cn
+  - DOMAIN-SUFFIX,com.cn
   - DOMAIN-SUFFIX,dxy.cn
   - DOMAIN-SUFFIX,edu.cn
   - DOMAIN-SUFFIX,gov.cn
@@ -80,7 +81,6 @@ payload:
   - DOMAIN-SUFFIX,mybank.cn
   - DOMAIN-SUFFIX,neixin.cn
   - DOMAIN-SUFFIX,pplive.cn
-  - DOMAIN-SUFFIX,qqmail.cn
   - DOMAIN-SUFFIX,roblox.cn
   - DOMAIN-SUFFIX,sinajs.cn
   - DOMAIN-SUFFIX,suning.cn
@@ -101,7 +101,6 @@ payload:
   - DOMAIN-SUFFIX,tripcdn.cn
   - DOMAIN-SUFFIX,51ctocdn.cn
   - DOMAIN-SUFFIX,bilibili.cn
-  - DOMAIN-SUFFIX,biligame.cn
   - DOMAIN-SUFFIX,cmbchina.cn
   - DOMAIN-SUFFIX,dbankcdn.cn
   - DOMAIN-SUFFIX,digicert.cn
@@ -122,7 +121,6 @@ payload:
   - DOMAIN-SUFFIX,sharepoint.cn
   - DOMAIN-SUFFIX,toutiaoimg.cn
   - DOMAIN-SUFFIX,baishancdnx.cn
-  - DOMAIN-SUFFIX,bilibilipay.cn
   - DOMAIN-SUFFIX,chinaunicom.cn
   - DOMAIN-SUFFIX,mobileservice.cn
   - DOMAIN-SUFFIX,officewebapps.cn
@@ -176,6 +174,7 @@ payload:
   - DOMAIN-SUFFIX,21cn.com
   - DOMAIN-SUFFIX,36kr.com
   - DOMAIN-SUFFIX,4399.com
+  - DOMAIN-SUFFIX,9xiu.com
   - DOMAIN-SUFFIX,amap.com
   - DOMAIN-SUFFIX,cctv.com
   - DOMAIN-SUFFIX,csdn.com
@@ -232,6 +231,7 @@ payload:
   - DOMAIN-SUFFIX,douyu.com
   - DOMAIN-SUFFIX,duapp.com
   - DOMAIN-SUFFIX,eatuo.com
+  - DOMAIN-SUFFIX,flyme.com
   - DOMAIN-SUFFIX,frdic.com
   - DOMAIN-SUFFIX,futu5.com
   - DOMAIN-SUFFIX,gaode.com
@@ -607,7 +607,6 @@ payload:
   - DOMAIN-SUFFIX,alicloudccp.com
   - DOMAIN-SUFFIX,aliyundrive.com
   - DOMAIN-SUFFIX,baidustatic.com
-  - DOMAIN-SUFFIX,bilibilipay.com
   - DOMAIN-SUFFIX,byteacctimg.com
   - DOMAIN-SUFFIX,chinamobile.com
   - DOMAIN-SUFFIX,cowtransfer.com
@@ -722,50 +721,8 @@ payload:
   - DOMAIN-SUFFIX,haowu.link
   - DOMAIN-SUFFIX,chunyu.mobi
   - DOMAIN-SUFFIX,xunyou.mobi
+  - DOMAIN-SUFFIX,mijia.tech
   - DOMAIN-SUFFIX,c-t.work
-  - DOMAIN-SUFFIX,jd.com.cn
-  - DOMAIN-SUFFIX,qq.com.cn
-  - DOMAIN-SUFFIX,ui.com.cn
-  - DOMAIN-SUFFIX,kfc.com.cn
-  - DOMAIN-SUFFIX,zol.com.cn
-  - DOMAIN-SUFFIX,asus.com.cn
-  - DOMAIN-SUFFIX,chsi.com.cn
-  - DOMAIN-SUFFIX,cntv.com.cn
-  - DOMAIN-SUFFIX,icbc.com.cn
-  - DOMAIN-SUFFIX,sina.com.cn
-  - DOMAIN-SUFFIX,sohu.com.cn
-  - DOMAIN-SUFFIX,ubnt.com.cn
-  - DOMAIN-SUFFIX,vivo.com.cn
-  - DOMAIN-SUFFIX,58cdn.com.cn
-  - DOMAIN-SUFFIX,95588.com.cn
-  - DOMAIN-SUFFIX,cnnic.com.cn
-  - DOMAIN-SUFFIX,gtimg.com.cn
-  - DOMAIN-SUFFIX,right.com.cn
-  - DOMAIN-SUFFIX,weibo.com.cn
-  - DOMAIN-SUFFIX,alipay.com.cn
-  - DOMAIN-SUFFIX,dccnet.com.cn
-  - DOMAIN-SUFFIX,huawei.com.cn
-  - DOMAIN-SUFFIX,ipanda.com.cn
-  - DOMAIN-SUFFIX,lenovo.com.cn
-  - DOMAIN-SUFFIX,nearme.com.cn
-  - DOMAIN-SUFFIX,pcauto.com.cn
-  - DOMAIN-SUFFIX,wegame.com.cn
-  - DOMAIN-SUFFIX,yunpan.com.cn
-  - DOMAIN-SUFFIX,abchina.com.cn
-  - DOMAIN-SUFFIX,cainiao.com.cn
-  - DOMAIN-SUFFIX,firefox.com.cn
-  - DOMAIN-SUFFIX,tencent.com.cn
-  - DOMAIN-SUFFIX,weather.com.cn
-  - DOMAIN-SUFFIX,zol-img.com.cn
-  - DOMAIN-SUFFIX,autohome.com.cn
-  - DOMAIN-SUFFIX,pconline.com.cn
-  - DOMAIN-SUFFIX,amazonaws.com.cn
-  - DOMAIN-SUFFIX,battlenet.com.cn
-  - DOMAIN-SUFFIX,hoopchina.com.cn
-  - DOMAIN-SUFFIX,jetbrains.com.cn
-  - DOMAIN-SUFFIX,mcdonalds.com.cn
-  - DOMAIN-SUFFIX,ubionline.com.cn
-  - DOMAIN-SUFFIX,chinatelecom.com.cn
   - DOMAIN-SUFFIX,assets.msn.cn
   - DOMAIN,www.intel.cn
   - DOMAIN,lv.queniujq.cn
