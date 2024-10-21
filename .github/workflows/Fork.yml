@@ -1,4 +1,4 @@
-# 最后更新时间: 2024-10-21 14:15
+# 最后更新时间: 2024-10-21 21:01
 name: Fork & Edit
 
 on:
@@ -603,19 +603,6 @@ jobs:
             # 如果为IP规则且不包含no-resolve 则添加no-resolve
             awk '/^IP-/ && !/,no-resolve/ {print $0",no-resolve"; next} {print}' "$file" > tmpfile
             mv tmpfile "$file"
-          else
-            echo "$file not found."
-          fi
-        done
-
-      # 修改脚本链接
-    - name: Edit Loon/Plugin
-      run: |
-        cd Tool-repo/Loon/Plugin/lodepuly
-        for file in *.plugin; do
-          if [ "$file" ] ; then
-            # 修改脚本链接
-            sed -i 's/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/Resource\/Script/raw.githubusercontent\.com\/Repcz\/Tool\/X\/Loon\/Script\/lodepuly/g' "$file"
           else
             echo "$file not found."
           fi
