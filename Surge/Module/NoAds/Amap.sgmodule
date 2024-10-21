@@ -2,7 +2,6 @@
 #!desc=高德地图去广告 [需卸载重装]\n作者：@RuCu6 @kokoryh
 #!author=RuCu6 kokoryh
 #!category=⚙️ ▸ NoAds
-#!date=2024-10-19 22:45
 
 [Rule]
 AND, ((URL-REGEX, ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch), (USER-AGENT, AMapiPhone*)), REJECT
