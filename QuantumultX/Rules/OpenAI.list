@@ -1,54 +1,18 @@
-# 2024-10-10 14:36:12
-# ChatGPT
-#AND,((HOST-KEYWORD,chatgpt-async-webps-prod-eastus-),(HOST-SUFFIX,webpubsub.azure.com))
-#AND,((HOST-KEYWORD,openaicom-api-),(HOST-SUFFIX,azurefd.net))
-HOST,o33249.ingest.sentry.io,PROXY
-HOST,openaiapi-site.azureedge.net,PROXY
-HOST,openaicom.imgix.net,PROXY
-HOST,openaicomproductionae4b.blob.core.windows.net,PROXY
-HOST,production-openaicom-storage.azureedge.net,PROXY
-HOST-SUFFIX,ai.com,PROXY
+# 内容：OpenAi
+# 数量：16条
+HOST-KEYWORD,openai,PROXY
+HOST-SUFFIX,auth0.com,PROXY
+HOST-SUFFIX,challenges.cloudflare.com,PROXY
 HOST-SUFFIX,chatgpt.com,PROXY
+HOST-SUFFIX,client-api.arkoselabs.com,PROXY
+HOST-SUFFIX,events.statsigapi.net,PROXY
+HOST-SUFFIX,featuregates.org,PROXY
+HOST-SUFFIX,identrust.com,PROXY
+HOST-SUFFIX,intercom.io,PROXY
+HOST-SUFFIX,intercomcdn.com,PROXY
 HOST-SUFFIX,oaistatic.com,PROXY
 HOST-SUFFIX,oaiusercontent.com,PROXY
 HOST-SUFFIX,openai.com,PROXY
-HOST-SUFFIX,openai.com.cdn.cloudflare.net,PROXY
-
-# Copilot
-HOST,api.githubcopilot.com,PROXY
-HOST,copilot-proxy.githubusercontent.com,PROXY
-HOST,copilot.microsoft.com,PROXY
-HOST,sydney.bing.com,PROXY
-HOST,www.bing.com,PROXY
-
-# Gemini
-HOST,bard.google.com,PROXY
-HOST,gemini.google.com,PROXY
-HOST,generativelanguage.googleapis.com,PROXY
-HOST,ai.google.dev,PROXY
-HOST,aida.googleapis.com,PROXY
-HOST,aistudio.google.com,PROXY
-HOST,alkalimakersuite-pa.clients6.google.com,PROXY
-HOST,makersuite.google.com,PROXY
-
-# Claude
-HOST-SUFFIX,anthropic.com,PROXY
-HOST-SUFFIX,claude.ai,PROXY
-IP-CIDR,160.79.104.0/23,PROXY
-IP6-CIDR,2607:6bc0::/48,PROXY
-
-# JetBrains AI
-HOST-SUFFIX,grazie.ai,PROXY
-HOST-SUFFIX,grazie.aws.intellij.net,PROXY
-
-# Meta AI
-HOST,imagine.meta.com,PROXY
-HOST-SUFFIX,meta.ai,PROXY
-
-# Perplexity
-HOST-SUFFIX,perplexity.ai,PROXY
-
-# Mistral AI
-HOST,chat.mistral.ai,PROXY
-HOST,console.mistral.ai,PROXY
-HOST-SUFFIX,mistral.ai,PROXY
+HOST-SUFFIX,openaiapi-site.azureedge.net,PROXY
+HOST-SUFFIX,sentry.io,PROXY
+HOST-SUFFIX,stripe.com,PROXY
