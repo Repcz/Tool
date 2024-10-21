@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2024-10-20T17:02:38.848Z
-# Size: 775
+# Last Updated: 2024-10-21T14:26:17.565Z
+# Size: 778
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -619,6 +619,7 @@ DOMAIN-SUFFIX,landiannews.com
 DOMAIN-SUFFIX,leetcode-cn.com
 DOMAIN-SUFFIX,taopiaopiao.com
 DOMAIN-SUFFIX,toutiaopage.com
+DOMAIN-SUFFIX,xiaoaisound.com
 DOMAIN-SUFFIX,xiaohongshu.com
 DOMAIN-SUFFIX,aicoinstorge.com
 DOMAIN-SUFFIX,baiducontent.com
@@ -634,6 +635,7 @@ DOMAIN-SUFFIX,segmentfault.com
 DOMAIN-SUFFIX,tencentmusic.com
 DOMAIN-SUFFIX,toutiaocloud.com
 DOMAIN-SUFFIX,weixinbridge.com
+DOMAIN-SUFFIX,xiaomixiaoai.com
 DOMAIN-SUFFIX,xiaomiyoupin.com
 DOMAIN-SUFFIX,zuimeitianqi.com
 DOMAIN-SUFFIX,alipayobjects.com
@@ -642,6 +644,7 @@ DOMAIN-SUFFIX,coolapkmarket.com
 DOMAIN-SUFFIX,fengkongcloud.com
 DOMAIN-SUFFIX,huoshanstatic.com
 DOMAIN-SUFFIX,pphimalayanrt.com
+DOMAIN-SUFFIX,tencent-cloud.com
 DOMAIN-SUFFIX,toutiaostatic.com
 DOMAIN-SUFFIX,chinanetcenter.com
 DOMAIN-SUFFIX,heytapdownload.com

@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Domestic Domains
-# Last Updated: 2024-10-20T17:02:38.848Z
-# Size: 775
+# Last Updated: 2024-10-21T14:26:17.565Z
+# Size: 778
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -619,6 +619,7 @@ HOST-SUFFIX,landiannews.com,DIRECT
 HOST-SUFFIX,leetcode-cn.com,DIRECT
 HOST-SUFFIX,taopiaopiao.com,DIRECT
 HOST-SUFFIX,toutiaopage.com,DIRECT
+HOST-SUFFIX,xiaoaisound.com,DIRECT
 HOST-SUFFIX,xiaohongshu.com,DIRECT
 HOST-SUFFIX,aicoinstorge.com,DIRECT
 HOST-SUFFIX,baiducontent.com,DIRECT
@@ -634,6 +635,7 @@ HOST-SUFFIX,segmentfault.com,DIRECT
 HOST-SUFFIX,tencentmusic.com,DIRECT
 HOST-SUFFIX,toutiaocloud.com,DIRECT
 HOST-SUFFIX,weixinbridge.com,DIRECT
+HOST-SUFFIX,xiaomixiaoai.com,DIRECT
 HOST-SUFFIX,xiaomiyoupin.com,DIRECT
 HOST-SUFFIX,zuimeitianqi.com,DIRECT
 HOST-SUFFIX,alipayobjects.com,DIRECT
@@ -642,6 +644,7 @@ HOST-SUFFIX,coolapkmarket.com,DIRECT
 HOST-SUFFIX,fengkongcloud.com,DIRECT
 HOST-SUFFIX,huoshanstatic.com,DIRECT
 HOST-SUFFIX,pphimalayanrt.com,DIRECT
+HOST-SUFFIX,tencent-cloud.com,DIRECT
 HOST-SUFFIX,toutiaostatic.com,DIRECT
 HOST-SUFFIX,chinanetcenter.com,DIRECT
 HOST-SUFFIX,heytapdownload.com,DIRECT
