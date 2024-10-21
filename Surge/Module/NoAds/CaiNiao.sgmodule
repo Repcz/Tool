@@ -49,18 +49,18 @@ DOMAIN,ykad-data.youku.com,REJECT,pre-matching
 
 [Script]
 # 我的页面推广
-移除我的页面推广 = type=http-response, pattern=^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.app\.mine\.main\.cn, script-path=https://loon.126996.xyz/Resource/Script/Cainiao/Cainiao_remove_ads.js, requires-body=true
+移除我的页面推广 = type=http-response, pattern=^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.app\.mine\.main\.cn, script-path=https://kelee.one/ Resource/Script/Cainiao/Cainiao_remove_ads.js, requires-body=true
 
 # 首页 - 好物推荐、商品推广、底部标签页、快递详情页、问卷调查、主页图标
-移除首页推广 = type=http-response, pattern=^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.m?show\.cn, script-path=https://loon.126996.xyz/Resource/Script/Cainiao/Cainiao_remove_ads.js, requires-body=true
+移除首页推广 = type=http-response, pattern=^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.m?show\.cn, script-path=https://kelee.one/ Resource/Script/Cainiao/Cainiao_remove_ads.js, requires-body=true
 
-移除首页推广 = type=http-response, pattern=^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.(pickup\.empty\.page|protocol\.homepage)\.get\.cn, script-path=https://loon.126996.xyz/Resource/Script/Cainiao/Cainiao_remove_ads.js, requires-body=true
+移除首页推广 = type=http-response, pattern=^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.(pickup\.empty\.page|protocol\.homepage)\.get\.cn, script-path=https://kelee.one/ Resource/Script/Cainiao/Cainiao_remove_ads.js, requires-body=true
 
 # 消息中心
-移除消息中心推广 = type=http-response, pattern=^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.nbfriend\.message\.conversation\.list\.cn, script-path=https://loon.126996.xyz/Resource/Script/Cainiao/Cainiao_remove_ads.js, requires-body=true
+移除消息中心推广 = type=http-response, pattern=^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.nbfriend\.message\.conversation\.list\.cn, script-path=https://kelee.one/ Resource/Script/Cainiao/Cainiao_remove_ads.js, requires-body=true
 
 # 支付宝 - 菜鸟小程序
-移除菜鸟小程序推广 = type=http-response, pattern=^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow, script-path=https://loon.126996.xyz/Resource/Script/Cainiao/Cainiao_remove_ads.js, requires-body=true
+移除菜鸟小程序推广 = type=http-response, pattern=^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow, script-path=https://kelee.one/ Resource/Script/Cainiao/Cainiao_remove_ads.js, requires-body=true
 
 [MITM]
 hostname = %APPEND% cn-acs.m.cainiao.com, guide-acs.m.taobao.com
