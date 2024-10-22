@@ -1,13 +1,13 @@
 #!name=去广告｜高德地图
 #!desc=高德地图去广告 [需卸载重装]\n作者：@RuCu6 @kokoryh
 #!author=RuCu6 kokoryh
-#!category=⚙️ ▸ NoAds
+#!date=2024-10-15 10:15:26
 
 [Rule]
-AND, ((URL-REGEX, ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch), (USER-AGENT, AMapiPhone*)), REJECT
-DOMAIN,amap-aos-info-nogw.amap.com,REJECT,pre-matching
-DOMAIN,free-aos-cdn-image.amap.com,REJECT,pre-matching
-DOMAIN-SUFFIX,v.smtcdns.com,REJECT,pre-matching
+AND, ((URL-REGEX, ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch,extended-matching), (USER-AGENT, AMapiPhone*)), REJECT
+DOMAIN,amap-aos-info-nogw.amap.com,REJECT,extended-matching,pre-matching
+DOMAIN,free-aos-cdn-image.amap.com,REJECT,extended-matching,pre-matching
+DOMAIN-SUFFIX,v.smtcdns.com,REJECT,extended-matching,pre-matching
 
 [Map Local]
 # 导航详情页 - 路线规划、地点详情页、搜索详情页、导航结束页
@@ -78,3 +78,4 @@ body_rewrite_34 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/s
 
 [MITM]
 hostname = %APPEND% m5.amap.com, m5-zb.amap.com, oss.amap.com, sns.amap.com
+

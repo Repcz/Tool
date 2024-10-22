@@ -4,7 +4,7 @@
 #!date=2024-10-15 10:55:06
 
 [Rule]
-AND, ((PROTOCOL, QUIC), (DOMAIN-SUFFIX, xiaohongshu.com)), REJECT
+AND, ((PROTOCOL, QUIC), (DOMAIN-SUFFIX, xiaohongshu.com,extended-matching)), REJECT
 
 [Map Local]
 # 惊喜弹窗
