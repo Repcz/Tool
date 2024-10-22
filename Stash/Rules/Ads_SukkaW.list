@@ -1,7 +1,7 @@
 #########################################
 # Sukka's Ruleset - Reject Base
-# Last Updated: 2024-10-22T12:39:11.774Z
-# Size: 109413
+# Last Updated: 2024-10-22T13:23:49.766Z
+# Size: 109415
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -717,6 +717,7 @@ DOMAIN-SUFFIX,dqhxmbx.cn
 DOMAIN-SUFFIX,dsceopm.cn
 DOMAIN-SUFFIX,dssdfsf.cn
 DOMAIN-SUFFIX,dswcrlf.cn
+DOMAIN-SUFFIX,duomeng.cn
 DOMAIN-SUFFIX,dvclhmt.cn
 DOMAIN-SUFFIX,dwbfqmz.cn
 DOMAIN-SUFFIX,dwtkuzo.cn
@@ -4920,6 +4921,7 @@ DOMAIN-SUFFIX,w4.com
 DOMAIN-SUFFIX,a4g.com
 DOMAIN-SUFFIX,ad7.com
 DOMAIN-SUFFIX,b2c.com
+DOMAIN-SUFFIX,mob.com
 DOMAIN-SUFFIX,oix.com
 DOMAIN-SUFFIX,pp8.com
 DOMAIN-SUFFIX,ru4.com
@@ -26655,6 +26657,7 @@ DOMAIN-SUFFIX,terhousouokop.com
 DOMAIN-SUFFIX,text-link-ads.com
 DOMAIN-SUFFIX,tgboghbslgrkg.com
 DOMAIN-SUFFIX,theactualnewz.com
+DOMAIN-SUFFIX,thebitmeister.com
 DOMAIN-SUFFIX,thecatmachine.com
 DOMAIN-SUFFIX,thefreshposts.com
 DOMAIN-SUFFIX,thegoodcaster.com
@@ -28774,6 +28777,7 @@ DOMAIN-SUFFIX,welcomevaliant.com
 DOMAIN-SUFFIX,wemakebestnews.com
 DOMAIN-SUFFIX,wendelstein-1b.com
 DOMAIN-SUFFIX,westreflection.com
+DOMAIN-SUFFIX,whatisaweekend.com
 DOMAIN-SUFFIX,whencewaxworks.com
 DOMAIN-SUFFIX,whiprayoutkill.com
 DOMAIN-SUFFIX,whisperinflate.com
@@ -66856,8 +66860,6 @@ DOMAIN-SUFFIX,bpe.mlb.com
 DOMAIN-SUFFIX,bpeml.mlb.com
 DOMAIN-SUFFIX,fmvwlk.mms.com
 DOMAIN-SUFFIX,yiiwaq.mms.com
-DOMAIN-SUFFIX,data.mob.com
-DOMAIN-SUFFIX,log-verify.mob.com
 DOMAIN-SUFFIX,x822.mrt.com
 DOMAIN-SUFFIX,smetrics.msg.com
 DOMAIN-SUFFIX,c.msn.com
@@ -92316,6 +92318,7 @@ DOMAIN-SUFFIX,repdata.poughkeepsiejournal.com
 DOMAIN-SUFFIX,srepdata.poughkeepsiejournal.com
 DOMAIN-SUFFIX,trk.powderandbulksolids.com
 DOMAIN-SUFFIX,install.pranavconstructions.com
+DOMAIN-SUFFIX,sponsor.printondemandagency.com
 DOMAIN-SUFFIX,mdws.provincialemployees.com
 DOMAIN-SUFFIX,sp.publicopiniononline.com
 DOMAIN-SUFFIX,sxjfhh.publicopiniononline.com
@@ -104660,8 +104663,6 @@ DOMAIN-SUFFIX,ablink.alerts.max.com
 DOMAIN-SUFFIX,ablink.stream.max.com
 DOMAIN-SUFFIX,ablink.service.max.com
 DOMAIN-SUFFIX,ablink.marketing.max.com
-DOMAIN-SUFFIX,api.exc.mob.com
-DOMAIN-SUFFIX,api.share.mob.com
 DOMAIN,ads.eu.msn.com
 DOMAIN,rmads.eu.msn.com
 DOMAIN-SUFFIX,c-5uwzmx78pmca09x24aiux2euavx2ekwu.g00.msn.com
@@ -105743,6 +105744,7 @@ DOMAIN-SUFFIX,metrics.droidsc.natwest.com
 DOMAIN-SUFFIX,app.response.neopost.com
 DOMAIN,ad.bn.netease.com
 DOMAIN-SUFFIX,pr.nss.netease.com
+DOMAIN-SUFFIX,internal.dradis.netflix.com
 DOMAIN-SUFFIX,saadata.career.netjets.com
 DOMAIN-SUFFIX,images.info.newhope.com
 DOMAIN-SUFFIX,us.tags.newscgp.com
