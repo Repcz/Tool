@@ -38,6 +38,7 @@ domain_set:
 - ad.cyapi.cn
 - g.tbcdn.cn
 - iflow.uczzd.cn
+- dns.weibo.cn
 - game.weibo.cn
 - zhwnlapi.etouch.cn
 - trackapp.guahao.cn
@@ -83,6 +84,7 @@ domain_set:
 - ga.utilapi.bid
 - track.58.com
 - adshow.58.com
+- dns.jd.com
 - jzt.jd.com
 - im-x.jd.com
 - jrad.jd.com
@@ -104,7 +106,6 @@ domain_set:
 - adshmmsg.qq.com
 - adsview2.qq.com
 - pingtcss.qq.com
-- rmonitor.qq.com
 - adslvfile.qq.com
 - adslvseed.qq.com
 - qring-tms.qq.com
@@ -156,6 +157,8 @@ domain_set:
 - rj.baidu.com
 - adscdn.baidu.com
 - fclick.baidu.com
+- httpdns.baidu.com
+- httpsdns.baidu.com
 - click-bes.baidu.com
 - nadvideo2.baidu.com
 - videopush.baidu.com
@@ -230,6 +233,7 @@ domain_set:
 - gtms02.alicdn.com
 - gtms03.alicdn.com
 - gtms04.alicdn.com
+- httpdns.alicdn.com
 - acjs.aliyun.com
 - click.aliyun.com
 - osupdate.aliyun.com
@@ -310,6 +314,8 @@ domain_set:
 - dw-collect.ksosoft.com
 - delivery.maihehd.com
 - wmlog.meituan.com
+- httpdns.meituan.com
+- httpdnsvip.meituan.com
 - traffic.mogujie.com
 - ads.mojicdn.com
 - init.phpwind.com
@@ -330,7 +336,10 @@ domain_set:
 - htracker3.zmzfile.com
 - htracker4.zmzfile.com
 - htracker5.zmzfile.com
+- httpdns-sc.aliyuncs.com
+- httpdns-api.aliyuncs.com
 - log.b612kaji.com
+- httpdns.baidubce.com
 - ae.bdstatic.com
 - cm.bilibili.com
 - galaxy.bjcathay.com
@@ -368,12 +377,15 @@ domain_set:
 - xiaomiir.yaokantv.com
 - adpublish.ydstatic.com
 - advertise.baicizhan.com
+- httpdns.bilivideo.com
 - ad.caiyunapp.com
 - choice.microsoft.com
 - js.shshuoshu.com
 - m.sjzhushou.com
+- stun.smartgslb.com
 - strip.taobaocdn.com
 - push.wandoujia.com
+- httpdns.yunxindns.com
 - simple.cloudsmith.com
 - grs.dbankcloud.com
 - tracker.didiglobal.com
@@ -382,11 +394,14 @@ domain_set:
 - ads-shopping.shouqianba.com
 - analytics3.starschina.com
 - app-ad.variflight.com
+- hd.xiaojukeji.com
 - emma-414870e223.huodonghezi.com
 - jxlog.istreamsche.com
 - tanxlog.istreamsche.com
 - material.istreamsche.com
 - oppo.yidianzixun.com
+- httpdns-ocloud.heytapmobile.com
+- httpdns-euex-push.heytapmobile.com
 - adcdn.tencentmusic.com
 - adcdn6.tencentmusic.com
 - adexpo.tencentmusic.com
@@ -396,6 +411,7 @@ domain_set:
 - bd2.zuimeitianqi.com
 - hwad.zuimeitianqi.com
 - stat.zuimeitianqi.com
+- httpdns.volcengineapi.com
 - display.360totalsecurity.com
 - sashimi.royli.dev
 - api.openpanel.dev
@@ -543,8 +559,13 @@ domain_set:
 - wxsmsdy.video.qq.com
 - sdkconfig.video.qq.com
 - huatuocode.huatuo.qq.com
+- dns.weixin.qq.com
+- httpdns-v6.gslb.yy.com
+- union-httpdns.gslb.yy.com
+- yyapp-httpdns.gslb.yy.com
 - iad.g.163.com
 - n.3g.163.com
+- httpdns.music.163.com
 - ads.eu.msn.com
 - rmads.eu.msn.com
 - catalog.video.msn.com
@@ -711,8 +732,10 @@ domain_set:
 - mclean.cloud.360safe.com
 - kuaikan.netmon.360safe.com
 - gvod.aiseejapp.atianqi.com
+- httpdns.c.cdnhwc2.com
 - adx-dra.op.hicloud.com
 - log.v2.hunantv.com
+- httpdns-sdk.n.netease.com
 - ad.bn.netease.com
 - bigdata.ssp.samsung.com
 - cdn-ads.oss-cn-shanghai.aliyuncs.com
@@ -726,6 +749,7 @@ domain_set:
 - adx-dra.op.dbankcloud.com
 - adx-dre.op.dbankcloud.com
 - adx-drru.op.dbankcloud.com
+- httpdns.push.heytapmobi.com
 - httpdns.push.oppomobile.com
 - iadmusicmat.music.126.net
 - iadmusicmatvideo.music.126.net
@@ -750,6 +774,7 @@ domain_set:
 - huodong.ios.shouji.360.cn
 - act.commercial.shouji.360.cn
 - soft.data.weather.360.cn
+- dns.weixin.qq.com.cn
 - r.dmp.sina.com.cn
 - cre.mix.sina.com.cn
 - interest.mix.sina.com.cn
@@ -10669,6 +10694,7 @@ domain_suffix_set:
 - sgfsdvc.com
 - sgftrrs.com
 - sgihava.com
+- sgmntfy.com
 - sgrawwa.com
 - sgstats.com
 - sh2tiki.com
@@ -15483,6 +15509,7 @@ domain_suffix_set:
 - kavaycash.com
 - kaxjtkvgo.com
 - kbadkxocv.com
+- kcggmyeag.com
 - kdczhmain.com
 - kdmunzpmw.com
 - keen-slip.com
@@ -41537,6 +41564,7 @@ domain_suffix_set:
 - hubaffiliations.net
 - joomisomushisuw.net
 - kiemtiendinhcao.net
+- koomowailiwuzou.net
 - lifeimpressions.net
 - mediaonenetwork.net
 - new-vietcombank.net
@@ -43050,6 +43078,7 @@ domain_suffix_set:
 - hgidskiu.top
 - hnifdlau.top
 - hook2up6.top
+- houvxliu.top
 - hrutvncu.top
 - hwerilxu.top
 - hwurseru.top
@@ -44793,6 +44822,7 @@ domain_suffix_set:
 - qhodog.xyz
 - qhscsu.xyz
 - qiaoxz.xyz
+- qjoges.xyz
 - qjwvwu.xyz
 - qkikkg.xyz
 - qkscga.xyz
@@ -49549,6 +49579,7 @@ domain_suffix_set:
 - f6176563.site
 - freefrog.site
 - hilerant.site
+- news-cdn.site
 - rkgnmwre.site
 - scl6gc5l.site
 - screenov.site
@@ -67186,6 +67217,7 @@ domain_suffix_set:
 - pingma.qq.com
 - sngmta.qq.com
 - pingtas.qq.com
+- rmonitor.qq.com
 - beaconcdn.qq.com
 - adv.r7.com
 - log-ads.r7.com
@@ -68203,6 +68235,7 @@ domain_suffix_set:
 - l.imax.com
 - ads.imbc.com
 - adsmrapi.imbc.com
+- metrics.imdb.com
 - smetrics.imvu.com
 - branch.indi.com
 - marketing.inex.com
@@ -71577,6 +71610,7 @@ domain_suffix_set:
 - zozwyc.moscot.com
 - click.moselo.com
 - click-testing.moselo.com
+- adx.mossru.com
 - app.motiwy.com
 - m1tm.motor1.com
 - data-88ba07a559.motor1.com
@@ -74633,7 +74667,6 @@ domain_suffix_set:
 - marketing.setaram.com
 - cloud.setupad.com
 - tracking.sexcash.com
-- cdn.sgmntfy.com
 - analytics.sgnapps.com
 - target.sgproof.com
 - metrics.sgproof.com
@@ -84110,6 +84143,7 @@ domain_suffix_set:
 - go.faithfollow.com
 - bee.farmaciavdg.com
 - dyghye.fashionesta.com
+- ldpsh.fashionnova.com
 - jldtlh.fashionnova.com
 - dl.fatimacapos.com
 - metrics.fcbarcelona.com
@@ -89002,6 +89036,7 @@ domain_suffix_set:
 - somni.hardrockhotels.com
 - marketing.hardysolutions.com
 - offers.hddistributors.com
+- mob2.healthapplines.com
 - marketing.healthcarousel.com
 - img.healthecareers.com
 - go.healthgroupnow.com
