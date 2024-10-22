@@ -47,9 +47,9 @@ body_rewrite_34 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/s
 
 移除导航详情页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/bus\/plan\/integrate\?, script-path=https://kelee.one/Resource/Script/Amap/Amap_remove_ads.js, requires-body=true
 
-移除导航详情页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/c3frontend\/af-(hotel|launch)\/page\/main\?, script-path=https://kelee.one/ Resource/Script/Amap/Amap_remove_ads.js, requires-body=true
+移除导航详情页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/c3frontend\/af-(hotel|launch)\/page\/main\?, script-path=https://kelee.one/Resource/Script/Amap/Amap_remove_ads.js, requires-body=true
 
-移除导航详情页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/perception\/drive\/(routeInfo|routePlan), script-path=https://kelee.one/ Resource/Script/Amap/Amap_remove_ads.js, requires-body=true
+移除导航详情页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/perception\/drive\/(routeInfo|routePlan), script-path=https://kelee.one/Resource/Script/Amap/Amap_remove_ads.js, requires-body=true
 
 移除导航详情页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search\/(common\/coupon\/info|poi\/detail), script-path=https://kelee.one/Resource/Script/Amap/Amap_remove_ads.js, requires-body=true
 
