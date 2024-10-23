@@ -232,9 +232,19 @@ HOST-SUFFIX,https-filtering-check.adtidy.org,REJECT
 HOST-SUFFIX,51tongji.trafficmanager.net,REJECT
 HOST-SUFFIX,cnzz.trafficmanager.net,REJECT
 HOST-SUFFIX,cupfox.app,REJECT
+HOST-SUFFIX,rdxqbp.xyz,REJECT
+HOST-SUFFIX,sksbgm.xyz,REJECT
+HOST-SUFFIX,enkvum.xyz,REJECT
 HOST-SUFFIX,gyunce.xyz,REJECT
 HOST-SUFFIX,mlgowell.com,REJECT
 HOST-SUFFIX,rqroytj33.fun,REJECT
+HOST-SUFFIX,couvxlif.top,REJECT
+HOST-SUFFIX,tarvrf.xyz,REJECT
+HOST-SUFFIX,sbmhqe.xyz,REJECT
+HOST-SUFFIX,dayujs.top,REJECT
+HOST-SUFFIX,fanjs.top,REJECT
+HOST-SUFFIX,qjoges.xyz,REJECT
+HOST-SUFFIX,houvxliu.top,REJECT
 HOST-SUFFIX,gpowow.xyz,REJECT
 HOST-SUFFIX,jizxnr.xyz,REJECT
 HOST-SUFFIX,msmcoa.xyz,REJECT
@@ -4819,6 +4829,7 @@ HOST-SUFFIX,z.nowscore.com,REJECT
 HOST-SUFFIX,zt2088.com,REJECT
 HOST-SUFFIX,ztyumn.ifeng.com,REJECT
 HOST-SUFFIX,27gh.cc,REJECT
+HOST-SUFFIX,cnbd1.appmobile.cn,REJECT
 HOST-SUFFIX,003store.com,REJECT
 HOST-SUFFIX,0512s.com,REJECT
 HOST-SUFFIX,0755rc.com,REJECT
