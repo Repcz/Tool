@@ -1,7 +1,7 @@
 ## [Adblock Plus 1.1]
-## ! Version: 202410231619
+## ! Version: 202410241138
 ## ! Title: EasyPrivacy
-## ! Last modified: 23 Oct 2024 16:19 UTC
+## ! Last modified: 24 Oct 2024 11:38 UTC
 ## ! Expires: 4 days (update frequency)
 ## ! *** easylist:template_header.txt ***
 ## ! 
@@ -3057,6 +3057,7 @@ HOST-SUFFIX,highway.cablecar.sph.com.sg,REJECT
 HOST-SUFFIX,hit.mybestpro.com,REJECT
 HOST-SUFFIX,hits.dealer.com,REJECT
 HOST-SUFFIX,hits.getelevar.com,REJECT
+HOST-SUFFIX,hits.gokwik.co,REJECT
 HOST-SUFFIX,hits.informer.com,REJECT
 HOST-SUFFIX,hktracker.hankookilbo.com,REJECT
 HOST-SUFFIX,hydro-ma-proxy.akamaized.net,REJECT
@@ -3277,6 +3278,7 @@ HOST-SUFFIX,pt.crossmediaservices.com,REJECT
 HOST-SUFFIX,pt.ispot.tv,REJECT
 HOST-SUFFIX,ptsc.shoplocal.com,REJECT
 HOST-SUFFIX,pub.sheknows.com,REJECT
+HOST-SUFFIX,pulse.shopflo.com,REJECT
 HOST-SUFFIX,px.marchex.io,REJECT
 HOST-SUFFIX,px.mountain.com,REJECT
 HOST-SUFFIX,px.owneriq.net,REJECT
@@ -3346,6 +3348,7 @@ HOST-SUFFIX,sp-wukong-tracker.b-cdn.net,REJECT
 HOST-SUFFIX,sp.tinymce.com,REJECT
 HOST-SUFFIX,spa-tracker.spapi.io,REJECT
 HOST-SUFFIX,speedtrap.shopdirect.com,REJECT
+HOST-SUFFIX,src.freshmarketer.in,REJECT
 HOST-SUFFIX,ssa.stepstone.com,REJECT
 HOST-SUFFIX,ssr.streamrail.net,REJECT
 HOST-SUFFIX,st.cdnco.us,REJECT
@@ -4476,6 +4479,7 @@ HOST-SUFFIX,analytics.synchrony.com,REJECT
 HOST-SUFFIX,analytics.tomato.gg,REJECT
 HOST-SUFFIX,analytics.tradedoubler.com,REJECT
 HOST-SUFFIX,analytics.vedantu.com,REJECT
+HOST-SUFFIX,analytics.vortexscans.com,REJECT
 HOST-SUFFIX,analytics.wavebox.io,REJECT
 HOST-SUFFIX,analytics.yugen.to,REJECT
 HOST-SUFFIX,analyticsapi.qogita.com,REJECT
