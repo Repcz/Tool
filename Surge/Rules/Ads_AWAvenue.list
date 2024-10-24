@@ -1,6 +1,6 @@
 #Title: AWAvenue Ads Rule
 #--------------------------------------
-#Total lines: 673
+#Total lines: 674
 #Version: 1.5.3-release
 
 #Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
@@ -209,6 +209,7 @@ DOMAIN-SUFFIX,c.gj.qq.com
 DOMAIN-SUFFIX,c.kuaiduizuoye.com
 DOMAIN-SUFFIX,c.sayhi.360.cn
 DOMAIN-SUFFIX,c2.gdt.qq.com
+DOMAIN-SUFFIX,canvas-cdn.gdt.qq.com
 DOMAIN-SUFFIX,catalog.fjwhcbsh.com
 DOMAIN-SUFFIX,cbjs.baidu.com
 DOMAIN-SUFFIX,ccs.umeng.com
