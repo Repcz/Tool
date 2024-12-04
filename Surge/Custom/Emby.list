@@ -1,0 +1,416 @@
+# 来源： https://github.com/MisakaFxxk/MisakaF_Subconverter/blob/main/Sub/Emby.list
+# 最后更新时间：2024-12-1 22:45
+
+
+##### A #####
+
+# ACA & MisakaF
+DOMAIN,aca.misakaf.org
+
+
+# 阿甘
+DOMAIN-SUFFIX,agan2.vip
+
+# Aiyowei
+DOMAIN-SUFFIX,emby.aiyowei.ml
+
+# AlphaTV
+DOMAIN,oversea.alphatvapp.top
+
+##### B #####
+
+# BGK
+DOMAIN-SUFFIX,emby.pro
+
+# 白丝(Porn)
+DOMAIN-SUFFIX,baisi.pro
+
+# EmbyX(拨浪鼓)
+DOMAIN-SUFFIX,speedx.one
+
+##### C #####
+
+# CC_Emby
+DOMAIN,cc.coemn.com
+DOMAIN-SUFFIX,cc.ccemby.tk
+DOMAIN-SUFFIX,carryz.net
+
+# CherryEmby
+DOMAIN-SUFFIX,cherrytv.one
+
+# 尘烬(未燃)
+DOMAIN-SUFFIX,emby.eu.org
+
+# CaptainZ
+DOMAIN-SUFFIX,wiri.tk
+
+##### D #####
+
+# Dolphin(海豚)
+DOMAIN-SUFFIX,xiaoyi.one
+
+##### E #####
+
+# Exflux
+DOMAIN-SUFFIX,line.emby.men
+
+# Emby Hub & EdNovascloud
+DOMAIN-SUFFIX,ednovas.org
+
+##### F #####
+
+# Facmata
+DOMAIN-SUFFIX,cinema.facmata.net
+
+# 飞跃彩虹
+DOMAIN-SUFFIX,7777777.buzz
+DOMAIN-SUFFIX,581658.best
+
+# 佛系(Free Emby 酷群)
+DOMAIN-SUFFIX,4545.cf
+
+##### G #####
+
+# GuGu Emby
+DOMAIN-SUFFIX,gugumedia.link
+
+# Godetia(猫熊)
+DOMAIN-SUFFIX,emby.ssltd.xyz
+
+# GFW_Emby
+DOMAIN-SUFFIX,gfwemby.org
+
+# 瓜田李下
+DOMAIN-SUFFIX,gtlx.org
+
+##### H #####
+
+# HXD(Porn)
+DOMAIN-SUFFIX,hxd.as174.com
+DOMAIN-SUFFIX,emby.as174.com
+DOMAIN-SUFFIX,bili.rip
+DOMAIN-SUFFIX,nvidia.rip
+
+# 红尘(Porn)
+DOMAIN-SUFFIX,cc.semby.ink
+DOMAIN-SUFFIX,happyav.eu.org
+
+# 黑丝(Porn)
+DOMAIN-SUFFIX,i109.com
+
+# 花云
+DOMAIN-SUFFIX,emby.flowercloud
+
+# 黑猫影视EMBY
+DOMAIN-SUFFIX,uuuoo.cc
+DOMAIN-SUFFIX,emby.bid
+DOMAIN-SUFFIX,emby.date
+DOMAIN-SUFFIX,emby.loan
+DOMAIN-SUFFIX,emby.trade
+
+# HKA(私服自建)
+DOMAIN-SUFFIX,252798.xyz
+
+##### I #####
+
+# Immtel
+DOMAIN-SUFFIX,emby.immtel.com
+
+# Infinityfly
+DOMAIN-SUFFIX,infinityfly.top
+
+##### J #####
+
+# 剧狗
+DOMAIN-SUFFIX,ju.dog
+IP-CIDR,202.61.255.248/32,no-resolve
+
+# 江湖(Porn)
+DOMAIN-SUFFIX,reddust.link
+
+##### K #####
+
+# 卡戎
+DOMAIN-SUFFIX,charontv.com
+
+##### L #####
+
+# Lyrebird(琴鸟)
+DOMAIN-SUFFIX,lyrebirdemby.com
+
+# 垃圾影音(1111,Loser)
+DOMAIN-SUFFIX,xmsl.org
+DOMAIN-SUFFIX,emby.ml
+DOMAIN-SUFFIX,loseremby.org
+
+# 牢大(Emby餐厅)
+DOMAIN-SUFFIX,mius.uk
+DOMAIN-SUFFIX,16bit.cfd
+
+# Land Emby
+DOMAIN-SUFFIX,emby.lcloud.wiki
+
+# 蓝海
+DOMAIN-SUFFIX,blueseacdn.com
+IP-CIDR,212.90.120.164/32,no-resolve
+
+##### M #####
+
+# MisakaF
+DOMAIN-SUFFIX,misakaf.org
+
+# MjjEmby
+DOMAIN-SUFFIX,mjjemby.org
+
+# Maying
+DOMAIN-SUFFIX,emby.maying.club
+
+# Marmot(土拨鼠)
+DOMAIN-SUFFIX,20120714.xyz
+
+# Magpie(喜鹊)
+DOMAIN-SUFFIX,magpie.cyou
+DOMAIN-SUFFIX,magpiecdn.tech
+
+# Misty Emby
+DOMAIN-SUFFIX,misty.ltd
+DOMAIN-SUFFIX,em.ssky.me
+
+# MagicCloud(魔法Emby)
+DOMAIN-SUFFIX,freetz.top
+
+# Mulgore(莫高雷)
+DOMAIN-SUFFIX,mulgore.net
+
+# MdssCloud
+DOMAIN-SUFFIX,emby.mdss.cloud
+
+##### N #####
+
+# ntRRR
+DOMAIN-SUFFIX,ntrrr.am.sb
+DOMAIN-SUFFIX,stream.ntrrr.top
+DOMAIN-SUFFIX,stream.synn.cc
+
+# Nexitally
+DOMAIN-SUFFIX,emby.nexitally.com
+
+# NMEmby
+DOMAIN-SUFFIX,ohhhh.org
+DOMAIN-SUFFIX,goodisp.org
+DOMAIN-SUFFIX,hovervan.org
+
+# Nya Media
+DOMAIN-SUFFIX,bangumi.ca
+
+# nijigem(二次元)
+DOMAIN-SUFFIX,nijigem.by
+
+# Nebula
+DOMAIN,emby.nebula-media.org
+DOMAIN,web.nebula-media.org
+
+# Netcup
+DOMAIN-SUFFIX,404.sb
+
+# NyanCATcloud
+DOMAIN-SUFFIX,emby.nyancat.net
+
+# 泥视频
+DOMAIN-SUFFIX,nivod4.tv
+DOMAIN-SUFFIX,newpppp.com
+
+# Nanflix
+DOMAIN-SUFFIX,nanflix.net
+
+##### O #####
+
+# Odyssey+
+DOMAIN-SUFFIX,cf.odysseyplus.site
+DOMAIN-SUFFIX,agahk.odysseyplus.site
+DOMAIN-SUFFIX,agasg.odysseyplus.site
+DOMAIN-SUFFIX,ru.odysseyplus.site
+
+# Otaku
+DOMAIN-SUFFIX,emby.ok.edu.hk
+DOMAIN-SUFFIX,emby.neko.edu.rs
+DOMAIN-SUFFIX,emby.otakudrive.life
+DOMAIN-SUFFIX,emby2.otakudrive.life
+
+# OUO
+DOMAIN-SUFFIX,ouonet.org
+
+##### P #####
+
+# PiliPili
+DOMAIN-SUFFIX,emby77.cf
+DOMAIN-SUFFIX,emby77.org
+DOMAIN-SUFFIX,pilipiliultra.top
+DOMAIN-SUFFIX,pilipiliultra.com
+DOMAIN-SUFFIX,pilipili.club
+
+# PornEmby
+DOMAIN-SUFFIX,pornemby.club
+DOMAIN-SUFFIX,ii00.cc
+
+# PornEmby(网抑云)
+DOMAIN,195.201.86.86
+
+# polo(儿童)
+DOMAIN-SUFFIX,poloemby.xyz
+DOMAIN-SUFFIX,pololine.ml
+
+# 品云
+DOMAIN-SUFFIX,embyplus.club
+
+# paoche
+DOMAIN-SUFFIX,emby.cjpc.cc
+
+# prprcloud
+DOMAIN-SUFFIX,emby.prprcloud.com
+
+# Paul(保罗)
+DOMAIN-SUFFIX,imetyou.top
+
+# 普拉斯影业
+DOMAIN-SUFFIX,embyserver.ga
+DOMAIN-SUFFIX,emby.plusmedia.site
+DOMAIN-SUFFIX,emby-cf.plusmedia.site
+DOMAIN-SUFFIX,emby-sg.plusmedia.site
+DOMAIN-SUFFIX,jellyfin.xeton.dev
+DOMAIN-SUFFIX,movie.xeton.dev
+DOMAIN-SUFFIX,servers.xeton.dev
+
+##### Q #####
+
+##### R #####
+
+# 忍者云Emby
+DOMAIN-SUFFIX,emby1.medi4.org
+DOMAIN-SUFFIX,emby2.medi4.org
+
+# Robo
+DOMAIN-SUFFIX,91ai.de
+
+##### S #####
+
+# SYN
+DOMAIN-SUFFIX,stream.synn.cc
+DOMAIN-SUFFIX,stream.ntrrr.top
+
+# 私房菜Emby
+DOMAIN,notnetflix.cos.cat
+DOMAIN,cminf.sfcat.link
+DOMAIN,cuinf.sfcat.link
+
+# 守候网络Emby
+DOMAIN-SUFFIX,emby.cn2gias.uk
+DOMAIN-SUFFIX,post.cn2gias.uk
+
+# SarCat
+DOMAIN-SUFFIX,starcat.eu.org
+DOMAIN-SUFFIX,catlinks.co.uk
+
+# 叔服(Porn)
+DOMAIN-SUFFIX,mcjoker.xyz
+
+# Singularity(Porn)
+DOMAIN-SUFFIX,deja-vu.beauty
+
+# 水泊梁山
+DOMAIN-SUFFIX,shuipo.lol
+
+# Studyfun
+DOMAIN-SUFFIX,studyfun.live
+
+# SoCloud
+DOMAIN-SUFFIX,emby.run
+
+##### T #####
+
+# 探花TV(Jellyfin Porn)
+DOMAIN-SUFFIX,tanhuatv.site
+IP-CIDR,152.53.67.239/32,no-resolve
+
+# TreeDiagram(树状图)
+DOMAIN-SUFFIX,123456.al
+
+# 特卡
+DOMAIN-SUFFIX,carlos.trade
+
+# Temby
+DOMAIN-SUFFIX,285286.xyz
+
+# 太空人
+DOMAIN-SUFFIX,tkremby.xyz
+
+# Texon
+DOMAIN-SUFFIX,texon.fans
+
+##### U #####
+
+##### V #####
+
+##### W #####
+
+##### X #####
+
+# 熊猫
+DOMAIN-SUFFIX,embyclub.com
+DOMAIN-SUFFIX,az-hk.embyclub.com
+DOMAIN-SUFFIX,azsgp.embyclub.com
+
+# xeton
+DOMAIN-SUFFIX,emby.xeton.dev
+DOMAIN-SUFFIX,jellyfin.xeton.dev
+DOMAIN-SUFFIX,movie.xeton.dev
+DOMAIN-SUFFIX,servers.xeton.dev
+
+##### Y #####
+
+# YTOO
+DOMAIN-SUFFIX,emby.ytoo.li
+
+##### Z #####
+
+# ZDZ(Terminus)
+DOMAIN-SUFFIX,emby.wtf
+DOMAIN-SUFFIX,pub1.emby.wtf
+DOMAIN-SUFFIX,pub2.emby.wtf
+DOMAIN-SUFFIX,pub3.emby.wtf
+DOMAIN-SUFFIX,pub1cf.emby.wtf
+DOMAIN-SUFFIX,pub2cf.emby.wtf
+DOMAIN-SUFFIX,pub3cf.emby.wtf
+DOMAIN-SUFFIX,pub1back.emby.wtf
+DOMAIN-SUFFIX,pub2back.emby.wtf
+DOMAIN-SUFFIX,pub3back.emby.wtf
+
+# 纸片人
+DOMAIN-SUFFIX,9521732.xyz
+DOMAIN-SUFFIX,embyplus.org
+
+# Zox/AcEmby
+DOMAIN-SUFFIX,zox.show
+DOMAIN-SUFFIX,acemby.org
+
+# 梓澪の妙妙屋
+DOMAIN-SUFFIX,zi0.icu
+
+##### 0-9 #####
+
+##### 未分类 #####
+
+DOMAIN-SUFFIX,emby.ws
+DOMAIN-SUFFIX,emby.cl
+DOMAIN-SUFFIX,emby.kim
+DOMAIN-SUFFIX,embymv.me
+DOMAIN-SUFFIX,embymv.tk
+DOMAIN-SUFFIX,embytv.cf
+DOMAIN-SUFFIX,agon.cf
+DOMAIN-SUFFIX,ggtt.cf
+DOMAIN-SUFFIX,bddup.com
+DOMAIN-SUFFIX,newwan.top
+DOMAIN-SUFFIX,dicarerhome.com
+DOMAIN-SUFFIX,lucasmedia.top
+DOMAIN-SUFFIX,9191001.xyz
+IP-CIDR,188.172.228.49/32,no-resolve
