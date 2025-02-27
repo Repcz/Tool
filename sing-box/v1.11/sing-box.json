@@ -1,18 +1,18 @@
 {
     "dns": {
         "servers": [
-            {"tag": "cloudflare","address": "https://1.1.1.1/dns-query","detour": "Proxy"},
-            {"tag": "ali","address": "223.5.5.5","detour": "direct"},
+            {"tag": "proxy_NovaDns","address": "https://hk1.beta.xns.one/AwQQNKar6Ew/dns-query","detour": "Proxy"},
+            {"tag": "direct_NovaDns","address": "https://hk1.beta.xns.one/AwQQNKar6Ew/dns-query","detour": "direct"},
             {"tag": "remote_fakeip","address": "fakeip"}
         ],
         "rules": [
-            {"outbound": "any","server": "ali"},
-            {"clash_mode": "全局直连","action": "route","server": "ali"},
+            {"outbound": "any","server": "direct_NovaDns"},
+            {"clash_mode": "全局直连","action": "route","server": "direct_NovaDns"},
             {"clash_mode": "全局代理","action": "route","server": "remote_fakeip"},
             {"query_type": ["A","AAAA"],"action": "route","server": "remote_fakeip","rewrite_ttl": 1},
-            {"rule_set": ["ChinaDomain","Apple"],"action": "route","server": "ali"}
+            {"rule_set": ["ChinaDomain","Apple"],"action": "route","server": "direct_NovaDns"}
         ],
-        "final": "cloudflare",
+        "final": "proxy_NovaDns",
         "fakeip": {"enabled": true,"inet4_range": "198.18.0.0/15","inet6_range": "fc00::/18"},
         "independent_cache": true,
         "strategy": "ipv4_only"
