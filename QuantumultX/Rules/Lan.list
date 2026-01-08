@@ -1,0 +1,11 @@
+# 规则名称: Lan
+# 规则统计: 8
+
+HOST-SUFFIX,local,Lan
+IP-CIDR,10.0.0.0/8,Lan
+IP-CIDR,100.64.0.0/10,Lan
+IP-CIDR,127.0.0.0/8,Lan
+IP-CIDR,172.16.0.0/12,Lan
+IP-CIDR,192.168.0.0/16,Lan
+IP-CIDR,224.0.0.0/4,Lan
+IP6-CIDR,fe80::/10,Lan

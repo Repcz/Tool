@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "ip-scan.adspower.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "addr.tools",
+        "browserleaks.com",
+        "browserleaks.net",
+        "browserleaks.org",
+        "browserscan.net",
+        "dnscheck.tools",
+        "dnsleak.com",
+        "dnsleaktest.com",
+        "edns.ip-api.com",
+        "expressvpn.com",
+        "immersivetranslate.com",
+        "ipleak.net",
+        "ipv4.surfsharkdns.com",
+        "nordvpn.com",
+        "perfect-privacy.com",
+        "surfshark.com",
+        "vpnunlimited.com",
+        "whoer.net",
+        "whrq.net"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "leak"
+      ]
+    }
+  ]
+}

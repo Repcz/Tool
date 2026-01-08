@@ -1,0 +1,46 @@
+name: Youtube (Music) Enhance
+description: |-
+  适用于 Youtube & Youtube Music
+  作者: @Maasea @Egern
+  最后更新时间: 2025-04-22 19:45
+compat_arguments:
+  屏蔽上传按钮: 'true'
+  屏蔽选段按钮: 'true'
+  字幕翻译语言: zh-Hans
+  歌词翻译语言: zh-Hans
+  脚本执行引擎: auto
+  启用调试模式: 'false'
+compat_arguments_desc: "屏蔽参数：[true, false] \n翻译参数：[语言代码, off]\n开启调试模式用于输出更多日志"
+rules:
+- and:
+    match:
+    - domain_suffix:
+        match: googlevideo.com
+    - protocol:
+        match: UDP
+    policy: REJECT
+- and:
+    match:
+    - domain:
+        match: youtubei.googleapis.com
+    - protocol:
+        match: UDP
+    policy: REJECT
+map_locals:
+- match: ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad
+  status_code: 502
+  body: ''
+scriptings:
+- http_response:
+    name: youtube.response
+    match: ^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$
+    script_url: https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
+    arguments:
+      _compat.$argument: '{"lyricLang":"{{{歌词翻译语言}}}","captionLang":"{{{字幕翻译语言}}}","blockUpload":{{{屏蔽上传按钮}}},"blockImmersive":{{{屏蔽选段按钮}}},"debug":{{{启用调试模式}}}}'
+    body_required: true
+    binary_body: true
+mitm:
+  hostnames:
+    includes:
+    - '*.googlevideo.com'
+    - youtubei.googleapis.com

@@ -1,0 +1,16 @@
+#!name=功能｜Fix vvebo
+#!desc=修复vvebo主页\n作者：@suiyuran @keywos
+#!category=⚙️ ▸ Function
+
+# 🔗 模块链接
+#SUBSCRIBED http://script.hub/file/_start_/https://github.com/Keywos/rule/raw/main/module/vvebo.module/_end_/%E5%8A%9F%E8%83%BD%EF%BD%9Cvvebo.sgmodule?n=%E5%8A%9F%E8%83%BD%EF%BD%9CFix%20vvebo+%E4%BF%AE%E5%A4%8Dvvebo%E4%B8%BB%E9%A1%B5%5Cn%E4%BD%9C%E8%80%85%EF%BC%9A%40suiyuran%20%40keywos&type=surge-module&target=surge-module&del=true&category=%E2%9A%99%EF%B8%8F%20%E2%96%B8%20Function
+
+
+[Script]
+Vvebo-request = type=http-request, pattern=^https:\/\/api\.weibo\.cn\/2\/(users\/show\?|statuses\/user_timeline\?), script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/vv.js, requires-body=true
+
+Vvebo_response = type=http-response, pattern=^https:\/\/api\.weibo\.cn\/2\/profile\/statuses\/tab\?, script-path=https://raw.githubusercontent.com/Keywos/rule/main/JS/vv.js, requires-body=true
+
+[MITM]
+hostname = %INSERT% api.weibo.cn
+

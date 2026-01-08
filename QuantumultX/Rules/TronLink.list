@@ -1,0 +1,9 @@
+# 规则名称: TronLink
+# 规则统计: 6
+
+HOST,tronlink-images.s3.us-east-2.amazonaws.com,TronLink
+HOST-SUFFIX,justswap.link,TronLink
+HOST-SUFFIX,tronlink.org,TronLink
+IP-CIDR,18.206.50.220/32,TronLink
+IP-CIDR,3.136.94.196/32,TronLink
+IP-CIDR,44.205.88.94/32,TronLink

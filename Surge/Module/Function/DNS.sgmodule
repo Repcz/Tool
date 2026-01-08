@@ -1,0 +1,59 @@
+#!name=系统｜DNS
+#!desc=自用 DNS 设置
+#!category=⚙️ ▸ Function
+
+[Host]
+
+# --- CUSTOM HOSTS ---
+# > IPv6
+ip6-localhost = ::1 // IPv6 Localhost
+ip6-loopback = ::1 // IPv6 Loopback
+ip6-localnet = fe00::0 // IPv6 Link-Local
+ip6-mcastprefix = ff00::0 // IPv6 Multicast
+ip6-allnodes = ff02::1 // IPv6 All Nodes
+ip6-allrouters = ff02::2 // IPv6 All Routers
+ip6-allhosts = ff02::3 // IPv6 All Hosts
+
+# > Encrypted DNS
+dns.google = 8.8.8.8, 8.8.4.4, 2001:4860:4860::8888, 2001:4860:4860::8844 // https://dns.google/dns-query
+dns64.dns.google = 2001:4860:4860::6464, 2001:4860:4860::64 // https://dns64.dns.google/dns-query
+cloudflare-dns.com = 104.16.249.249, 104.16.248.249, 2606:4700::6810:f8f9, 2606:4700::6810:f9f9 // https://cloudflare-dns.com/dns-query
+1dot1dot1dot1.cloudflare-dns.com = 1.1.1.1, 1.0.0.1, 2606:4700:4700::1001, 2606:4700:4700::1111 // 1dot1dot1dot1.cloudflare-dns.com:853
+one.one.one.one = 1.1.1.1, 1.0.0.1, 2606:4700:4700::1001, 2606:4700:4700::1111  // one.one.one.one:853
+dns.alidns.com = 223.5.5.5, 223.6.6.6, 2400:3200:baba::1, 2400:3200::1 // https://dns.alidns.com/dns-query
+doh.pub = 1.12.12.12, 120.53.53.53 // https://doh.pub/dns-query
+
+
+# > Router Admin Panel
+*.id.ui.direct = server:syslib // Ubiquiti Unifi Network App
+# unifi.ui.com = server:syslib // Ubiquiti Unifi Portal
+unifi.local = server:syslib // Ubiquiti Unifi OS
+# network.unifi.ui.com = server:syslib // Ubiquiti Unifi Controller
+amplifi.lan = server:syslib // Ubiquiti Amplifi Router
+router.synology.com = server:syslib // Synology Router
+sila.razer.com = server:syslib // Razer Sila Router
+router.asus.com = server:syslib // Asus Router
+routerlogin.net = server:syslib // Netgear Router
+orbilogin.com = server:syslib // Netgear Obri Router
+www.LinksysSmartWiFi.com = server:syslib // Linksys Router
+LinksysSmartWiFi.com = server:syslib // Linksys Router
+myrouter.local = server:syslib // Linksys Router
+instant.arubanetworks.com = server:syslib // Aurba Router
+setmeup.arubanetworks.com = server:syslib // Aurba Router
+www.miwifi.com = server:syslib // 小米 Mi WiFi Router
+miwifi.com = server:syslib // 小米 Mi WiFi Router
+mediarouter.home = server:syslib // 华为 Huawei Router
+tplogin.cn = server:syslib // TP-Link Router
+tplinklogin.net = server:syslib // TP-Link Router
+tplinkwifi.net = server:syslib // TP-Link Router
+melogin.cn = server:syslib // 水星 MERCURY Router
+falogin.cn = server:syslib // 迅捷 FAST Router
+tendawifi.com = server:syslib // 腾达 Tenda Router
+leike.cc = server:syslib // 磊科 Netcore Router
+zte.home = server:syslib // 中兴 ZTE Router
+p.to = server:syslib // 斐讯 PHICOMM Router
+phicomm.me = server:syslib // 斐讯 PHICOMM Router
+hiwifi.com = server:syslib // 极路由 HiWiFi Router
+peiluyou.com = server:syslib // 迅雷路由
+_hotspot_.m2m = server:syslib // M2M routers at MiFi Hotspot
+hotspot.cslwifi.com = server:syslib // csl Wi-Fi

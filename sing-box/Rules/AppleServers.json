@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "aaplimg.com",
+        "apple-cloudkit.com",
+        "apple-dns.net",
+        "apple-mapkit.com",
+        "apple.co",
+        "apple.com",
+        "apple.news",
+        "appsto.re",
+        "appstore.com",
+        "cdn-apple.com",
+        "icloud-content.com",
+        "icloud.com",
+        "itunes.com",
+        "me.com",
+        "organicfruitapps.com",
+        "push-apple.com.akadns.net"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "beta.apple.com",
+        "testflight.apple.com"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "testflight"
+      ]
+    }
+  ]
+}

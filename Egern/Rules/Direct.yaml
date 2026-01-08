@@ -1,0 +1,43 @@
+# 规则名称: Direct
+# 规则统计: 37
+
+domain_set:
+  - alt1-mtalk.google.com
+  - alt2-mtalk.google.com
+  - alt3-mtalk.google.com
+  - alt4-mtalk.google.com
+  - alt5-mtalk.google.com
+  - alt6-mtalk.google.com
+  - alt7-mtalk.google.com
+  - alt8-mtalk.google.com
+  - analytics.strava.com
+  - api.goodnotescloud.com
+  - app.adjust.com
+  - app.appsflyer.com
+  - bdtj.tagtic.cn
+  - clientservices.googleapis.com
+  - dl.google.com
+  - dl.l.google.com
+  - fairplay.l.qq.com
+  - ifconfig.me
+  - livew.l.qq.com
+  - log.mmstat.com
+  - msg.umeng.com
+  - msg.umengcloud.com
+  - mtalk.google.com
+  - redirector.gvt1.com
+  - sycm.mmstat.com
+  - update.googleapis.com
+  - vd.l.qq.com
+  - vi.l.qq.com
+domain_suffix_set:
+  - blog.google
+  - cnspeedtest.cn
+  - fileball.app
+  - goodnotesapp.com.cn
+  - googletraveladservices.com
+  - pianyuan.org
+  - subhd.tv
+  - test-ipv6.com
+dest_port_set:
+  - 22

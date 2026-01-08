@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "tronlink-images.s3.us-east-2.amazonaws.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "justswap.link",
+        "tronlink.org"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "18.206.50.220/32",
+        "3.136.94.196/32",
+        "44.205.88.94/32"
+      ]
+    }
+  ]
+}

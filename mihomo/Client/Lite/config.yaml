@@ -1,0 +1,81 @@
+# Author:https://github.com/Repcz
+# TG:https://t.me/QVQ_Channel
+#
+# 官方文档：https://wiki.metacubex.one/
+#
+# 以 '#' 或 '//' 开头的配置文件行为注释行
+#
+# Mihomo Version ≥ 1.8.4
+#
+# 最后更新时间: 2025-12-14 10:15
+#
+# ================
+
+p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://1.1.1.1/generate_204, interval: 1800, timeout: 5000}}
+proxy-providers:
+  Subscribe: [url: http://your-service-provider, <<: *p]
+  # 在此将 "http://your-service-provider" 替换为你的机场订阅，推荐使用 base64 或者 node list
+
+mixed-port: 7893
+tcp-concurrent: true
+allow-lan: true
+ipv6: false
+log-level: info
+unified-delay: true
+global-client-fingerprint: chrome
+find-process-mode: strict
+
+geodata-mode: true
+geox-url:
+  geoip: "https://git.repcz.link/raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat"
+  geosite: "https://git.repcz.link/github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://git.repcz.link/raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb"
+  asn: "https://git.repcz.link/raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-ASN.mmdb"
+
+profile: { store-selected: true, store-fake-ip: false }
+sniffer: { enable: true, sniff: { HTTP: { ports: [80], override-destination: true }, TLS: { ports: [443, 8443] }, QUIC: { ports: [443, 8443] } } }
+
+tun:
+  enable: true
+  stack: mixed
+  dns-hijack: [any:53]
+        
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  listen: :1053
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter: ['+.lan', '*', '+.local', '+.cmpassport.com', 'id6.me', 'open.e.189.cn', 'mdn.open.wo.cn', 'opencloud.wostore.cn', 'auth.wosms.cn', '+.10099.com.cn', '+.msftconnecttest.com', '+.msftncsi.com', 'lancache.steamcontent.com']
+  nameserver: [223.5.5.5, 119.29.29.29]
+
+pg: &pg {type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, DIRECT]}
+url-test: &url-test {type: url-test, url: http://1.1.1.1/generate_204, interval: 300, tolerance: 0, include-all: true}
+select: &select {type: select, include-all: true}
+fallback: &fallback {type: fallback, url: http://1.1.1.1/generate_204, interval: 300, include-all: true}
+load-balance: &load-balance {type: load-balance, strategy: consistent-hashing, url: http://1.1.1.1/generate_204, interval: 300, include-all: true}
+c: &c {type: http, behavior: classical, format: text, interval: 86400}
+
+proxy-groups:
+  - {name: Proxy, <<: *select, include-all: true, icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/applesafari.png}
+
+rules:
+
+  - GEOSITE,openai,Proxy
+  - GEOSITE,category-games,Proxy
+  - GEOSITE,github,Proxy
+  - GEOSITE,telegram,Proxy
+  - GEOSITE,twitter,Proxy
+  - GEOSITE,microsoft,Proxy
+  - GEOSITE,youtube,Proxy
+  - GEOSITE,google,Proxy
+  - GEOSITE,geolocation-!cn,Proxy
+  - GEOSITE,private,DIRECT
+
+  - GEOIP,telegram,Proxy
+  - GEOIP,twitter,Proxy
+  - GEOIP,google,Proxy
+  - GEOIP,private,DIRECT
+  - GEOIP,cn,DIRECT
+
+  - MATCH,Proxy

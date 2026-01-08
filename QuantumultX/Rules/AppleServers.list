@@ -1,0 +1,19 @@
+# 规则名称: AppleServers
+# 规则统计: 16
+
+HOST-SUFFIX,aaplimg.com,AppleServers
+HOST-SUFFIX,apple-cloudkit.com,AppleServers
+HOST-SUFFIX,apple-dns.net,AppleServers
+HOST-SUFFIX,apple-mapkit.com,AppleServers
+HOST-SUFFIX,apple.co,AppleServers
+HOST-SUFFIX,apple.com,AppleServers
+HOST-SUFFIX,apple.news,AppleServers
+HOST-SUFFIX,appsto.re,AppleServers
+HOST-SUFFIX,appstore.com,AppleServers
+HOST-SUFFIX,cdn-apple.com,AppleServers
+HOST-SUFFIX,icloud-content.com,AppleServers
+HOST-SUFFIX,icloud.com,AppleServers
+HOST-SUFFIX,itunes.com,AppleServers
+HOST-SUFFIX,me.com,AppleServers
+HOST-SUFFIX,organicfruitapps.com,AppleServers
+HOST-SUFFIX,push-apple.com.akadns.net,AppleServers

@@ -1,0 +1,51 @@
+#基于 https://github.com/ddgksf2013/Rewrite/raw/master/Html/Q-Search.conf 修改
+# Safari 内输入以下格式命令快速指定搜索引擎
+#
+# 设置更改 Safari 默认搜索为 DuckDuckGO  【命令+空格+关键词】
+# 
+# 最后更新时间: 2023/11/25
+##############################################
+
+hostname = duckduckgo.com
+
+#>>>>>>>>>>>>>>>>>>>>>>>翻译
+# yd  xxx (有道词典)
+^https:\/\/duckduckgo.com\/\?q=yd\+([^&]+).+ url 302 http://dict.youdao.com/search?q=$1
+# trc xxx (Google 译至中)
+^https:\/\/duckduckgo.com\/\?q=trc\+([^&]+).+ url 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=zh-CN&text=$1
+# tre xxx (Google 译至英)
+^https:\/\/duckduckgo.com\/\?q=tre\+([^&]+).+ url 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$1
+# trj xxx (Google 译至日)
+^https:\/\/duckduckgo.com\/\?q=trj\+([^&]+).+ url 302 https://translate.google.com/#view=home&op=translate&sl=auto&tl=ja&text=$1
+
+#>>>>>>>>>>>>>>>>>>>>>>>社区
+# db    xxx (豆瓣)
+^https:\/\/duckduckgo.com\/\?q=db\+([^&]+).+ url 302 https://m.douban.com/search?query=$1
+# zh    xxx (知乎)
+^https:\/\/duckduckgo.com\/\?q=zh\+([^&]+).+ url 302 http://www.zhihu.com/search?q=$1
+# gh    xxx (GitHub)
+^https:\/\/duckduckgo.com\/\?q=gh\+([^&]+).+ url 302 https://github.com/search?q=$1
+
+#>>>>>>>>>>>>>>>>>>>>>>>视频
+# yt  xxx (YouTube)
+^https:\/\/duckduckgo.com\/\?q=yt\+([^&]+).+ url 302 https://www.youtube.com/results?search_query=$1
+# bli xxx (哔哩哔哩)
+^https:\/\/duckduckgo.com\/\?q=bli\+([^&]+).+ url 302 https://m.bilibili.com/search?keyword=$1
+
+#>>>>>>>>>>>>>>>>>>>>>>>搜索
+# bd  xxx (百度搜索)
+^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ url 302 https://www.baidu.com/s?wd=$1
+# wk  xxx (维基搜索)
+^https:\/\/duckduckgo.com\/\?q=wk\+([^&]+).+ url 302 https://zh.wikipedia.org/wiki/$1
+# wz  xxx (无追搜索)
+^https:\/\/duckduckgo.com\/\?q=wz\+([^&]+).+ url 302 https://www.wuzhuiso.com/s?q=$1
+# yh  xxx (油猴搜索)
+^https:\/\/duckduckgo.com\/\?q=yh\+([^&]+).+ url 302 https://greasyfork.org/zh-CN/scripts?q=$1
+# gi  xxx (Google 图片)
+^https:\/\/duckduckgo.com\/\?q=gi\+([^&]+).+ url 302 https://www.google.com/search?&tbm=isch&q=$1
+# by  xxx (必应)
+^https:\/\/duckduckgo.com\/\?q=by\+([^&]+).+ url 302 https://www.bing.com/search?q=$1
+# ios  xxx (苹果应用搜索)
+^https:\/\/duckduckgo.com\/\?q=ios\+([^&]+).+ url 302 https://www.qimai.cn/search/index/search/$1
+#     xxx （无指令默认为 Google）
+^https:\/\/duckduckgo.com\/\?q=([^&]+).+ url 302 https://www.google.com/search?q=$1

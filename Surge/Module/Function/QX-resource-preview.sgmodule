@@ -1,0 +1,11 @@
+#!name=功能｜预览 QX 资源
+#!desc=复制QX URL Scheme 链接到浏览器打开\n作者：@chengkongyiban
+#!category=⚙️ ▸ Function
+#!update=2024-03-09 00:35
+
+[Script]
+QX资源预览 = type=http-request, pattern=^https:\/\/quantumult\.app\/x\/open-app\/add-resource\?remote-resource=, script-path=https://github.com/chengkongyiban/shadowrocket/raw/main/scripts/qx-resource-preview.js, requires-body=true, max-size=-1, timeout=60
+
+[MITM]
+hostname = %APPEND% quantumult.app
+

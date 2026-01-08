@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "access.pushsdk.com",
+        "app-measurement.com",
+        "bybit-exchange.github.io",
+        "bybit.ada.support",
+        "gcaptcha4.geetest.com",
+        "pushstat.api.engagelab.cc"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "88maru.com",
+        "appsflyer.com",
+        "apru88.com",
+        "binance.com",
+        "byabcde.com",
+        "byapis.com",
+        "byapps.net",
+        "bybdc6.com",
+        "bybit-global.com",
+        "bybit.biz",
+        "bybit.cloud",
+        "bybit.com",
+        "bybitglobal.com",
+        "bycbe.com",
+        "bycsi.com",
+        "byd3c3.com",
+        "byffbb.com",
+        "bymj.io",
+        "bytick.com",
+        "ffbbbdc6d3c353211fe2ba39c9f744cd.com",
+        "ffe390afd658c19dcbf707e0597b846d.de",
+        "hbfile.net",
+        "htx.co.nz",
+        "mokexapp.com",
+        "myqcloud.com ",
+        "octu88.com",
+        "okx-dns1.com",
+        "okx-dns2.com",
+        "qcloud.com"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "htx.com"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+# 规则名称: Crypto
+# 规则统计: 36
+
+HOST,access.pushsdk.com,Crypto
+HOST,app-measurement.com,Crypto
+HOST,bybit-exchange.github.io,Crypto
+HOST,bybit.ada.support,Crypto
+HOST,gcaptcha4.geetest.com,Crypto
+HOST,pushstat.api.engagelab.cc,Crypto
+HOST-SUFFIX,88maru.com,Crypto
+HOST-SUFFIX,appsflyer.com,Crypto
+HOST-SUFFIX,apru88.com,Crypto
+HOST-SUFFIX,binance.com,Crypto
+HOST-SUFFIX,byabcde.com,Crypto
+HOST-SUFFIX,byapis.com,Crypto
+HOST-SUFFIX,byapps.net,Crypto
+HOST-SUFFIX,bybdc6.com,Crypto
+HOST-SUFFIX,bybit-global.com,Crypto
+HOST-SUFFIX,bybit.biz,Crypto
+HOST-SUFFIX,bybit.cloud,Crypto
+HOST-SUFFIX,bybit.com,Crypto
+HOST-SUFFIX,bybitglobal.com,Crypto
+HOST-SUFFIX,bycbe.com,Crypto
+HOST-SUFFIX,bycsi.com,Crypto
+HOST-SUFFIX,byd3c3.com,Crypto
+HOST-SUFFIX,byffbb.com,Crypto
+HOST-SUFFIX,bymj.io,Crypto
+HOST-SUFFIX,bytick.com,Crypto
+HOST-SUFFIX,ffbbbdc6d3c353211fe2ba39c9f744cd.com,Crypto
+HOST-SUFFIX,ffe390afd658c19dcbf707e0597b846d.de,Crypto
+HOST-SUFFIX,hbfile.net,Crypto
+HOST-SUFFIX,htx.co.nz,Crypto
+HOST-SUFFIX,mokexapp.com,Crypto
+HOST-SUFFIX,myqcloud.com ,Crypto
+HOST-SUFFIX,octu88.com,Crypto
+HOST-SUFFIX,okx-dns1.com,Crypto
+HOST-SUFFIX,okx-dns2.com,Crypto
+HOST-SUFFIX,qcloud.com,Crypto
+HOST-KEYWORD,htx.com,Crypto

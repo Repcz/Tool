@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain": [
+        "api.avax.network"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ankr.com",
+        "coinpedia.org",
+        "crypto.news",
+        "cryptonews.com",
+        "kodif.io",
+        "nariox.org",
+        "ninerealms.com",
+        "thebittimes.com",
+        "trongrid.io",
+        "trustwallet.com",
+        "twnodes.com",
+        "walletconnect.com"
+      ]
+    }
+  ]
+}

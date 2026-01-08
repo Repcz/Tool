@@ -1,0 +1,60 @@
+# 规则名称: Telegram
+# 规则统计: 50
+
+no_resolve: true
+domain_set:
+  - api.mixpanel.com
+  - events-gateway.ncdev.site
+domain_suffix_set:
+  - cdn-telegram.org
+  - comments.app
+  - contest.com
+  - graph.org
+  - imem.app
+  - iturrit.com
+  - legra.ph
+  - mbrx.app
+  - quiz.directory
+  - stel.com
+  - swiftgram.app
+  - t.me
+  - tdesktop.com
+  - telega.one
+  - telegra.ph
+  - telegram-cdn.org
+  - telegram.dog
+  - telegram.me
+  - telegram.org
+  - telegram.space
+  - telegramdownload.com
+  - telesco.pe
+  - tg.dev
+  - tx.me
+  - usercontent.dev
+  - walletbot.me
+domain_keyword_set:
+  - nicegram
+  - telegram
+ip_cidr_set:
+  - 149.154.160.0/20
+  - 185.76.151.0/24
+  - 5.28.192.0/18
+  - 91.105.192.0/23
+  - 91.108.12.0/22
+  - 91.108.16.0/22
+  - 91.108.20.0/22
+  - 91.108.4.0/22
+  - 91.108.56.0/22
+  - 91.108.8.0/22
+ip_cidr6_set:
+  - 2001:67c:4e8::/48
+  - 2001:b28:f23c::/48
+  - 2001:b28:f23d::/48
+  - 2001:b28:f23f::/48
+  - 2a0a:f280::/32
+asn_set:
+  - 211157
+  - 44907
+  - 59930
+  - 62014
+  - 62041
