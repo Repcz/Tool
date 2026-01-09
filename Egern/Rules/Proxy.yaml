@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1537
+# 规则统计: 1539
 
 no_resolve: true
 domain_set:
@@ -853,6 +853,7 @@ domain_suffix_set:
   - minecraft.wiki
   - minecraftforum.net
   - minecraftservices.com
+  - mingpao.com
   - miniclip.com
   - missav.com
   - missav123.com
@@ -968,6 +969,7 @@ domain_suffix_set:
   - olevod.com
   - olympics.com
   - omny.fm
+  - on.cc
   - one
   - one.com
   - one.one.one

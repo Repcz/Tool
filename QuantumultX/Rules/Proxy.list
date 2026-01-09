@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1539
+# 规则统计: 1541
 
 HOST,api.avax.network,Proxy
 HOST,api.revenuecat.com,Proxy
@@ -850,6 +850,7 @@ HOST-SUFFIX,minecraft.tools,Proxy
 HOST-SUFFIX,minecraft.wiki,Proxy
 HOST-SUFFIX,minecraftforum.net,Proxy
 HOST-SUFFIX,minecraftservices.com,Proxy
+HOST-SUFFIX,mingpao.com,Proxy
 HOST-SUFFIX,miniclip.com,Proxy
 HOST-SUFFIX,missav.com,Proxy
 HOST-SUFFIX,missav123.com,Proxy
@@ -965,6 +966,7 @@ HOST-SUFFIX,olelive.com,Proxy
 HOST-SUFFIX,olevod.com,Proxy
 HOST-SUFFIX,olympics.com,Proxy
 HOST-SUFFIX,omny.fm,Proxy
+HOST-SUFFIX,on.cc,Proxy
 HOST-SUFFIX,one,Proxy
 HOST-SUFFIX,one.com,Proxy
 HOST-SUFFIX,one.one.one,Proxy

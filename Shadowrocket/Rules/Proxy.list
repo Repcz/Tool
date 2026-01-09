@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1539
+# 规则统计: 1541
 
 DOMAIN,api.avax.network
 DOMAIN,api.revenuecat.com
@@ -850,6 +850,7 @@ DOMAIN-SUFFIX,minecraft.tools
 DOMAIN-SUFFIX,minecraft.wiki
 DOMAIN-SUFFIX,minecraftforum.net
 DOMAIN-SUFFIX,minecraftservices.com
+DOMAIN-SUFFIX,mingpao.com
 DOMAIN-SUFFIX,miniclip.com
 DOMAIN-SUFFIX,missav.com
 DOMAIN-SUFFIX,missav123.com
@@ -965,6 +966,7 @@ DOMAIN-SUFFIX,olelive.com
 DOMAIN-SUFFIX,olevod.com
 DOMAIN-SUFFIX,olympics.com
 DOMAIN-SUFFIX,omny.fm
+DOMAIN-SUFFIX,on.cc
 DOMAIN-SUFFIX,one
 DOMAIN-SUFFIX,one.com
 DOMAIN-SUFFIX,one.one.one
