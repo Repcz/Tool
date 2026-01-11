@@ -1,5 +1,5 @@
 # 规则名称: AdGuardChinese
-# 规则统计: 6404
+# 规则统计: 6422
 
 domain_suffix_set:
   - 002777.xyz
@@ -198,6 +198,7 @@ domain_suffix_set:
   - 2agmk5mh07.com
   - 2bqlkznz.xyz
   - 2cnjuh34jbman.com
+  - 2e4xnyfeae.com
   - 2euqnxt25.com
   - 2hiu.com
   - 2hl.fun
@@ -416,6 +417,7 @@ domain_suffix_set:
   - 75b9dfiyb.com
   - 75ossyemu.com
   - 75rakcovr.com
+  - 7649s7szsu.com
   - 766lnwfo7h.com
   - 76e.org
   - 76qrln0bb.com
@@ -438,6 +440,7 @@ domain_suffix_set:
   - 7lavkpncj.com
   - 7mk.fun
   - 7mxn77h4vr.com
+  - 7nb71ub2xi.com
   - 7o2l520r0a.com
   - 7p5ruxflv0.com
   - 7qxv9s5q16.com
@@ -1414,6 +1417,8 @@ domain_suffix_set:
   - bugs01080ko.com
   - bugs01090ko.com
   - bugs01091ko.com
+  - bugs01100ko.com
+  - bugs01101ko.com
   - buhvjv.icu
   - bun1.dayi.org.cn
   - bupsbp.icu
@@ -1648,6 +1653,7 @@ domain_suffix_set:
   - colkarneh.com
   - collect.kugou.com
   - com052bin.com
+  - comedy34.com
   - commdata.v.qq.com
   - comparisonn4.top
   - compose99.com
@@ -2015,6 +2021,7 @@ domain_suffix_set:
   - e0qmla61cb.com
   - e1s.fun
   - e26fr9qb4m.com
+  - e2icbtrs1g.com
   - e2jda3h01.com
   - e4jdb7k8j.com
   - e5yx.com
@@ -2162,6 +2169,7 @@ domain_suffix_set:
   - eyiyoxz.xyz
   - eyzerannl.com
   - ezzwechiiewt.com
+  - f0zvx9koy3.com
   - f1.06ps.com
   - f1.ichong123.com
   - f1.pig66.com
@@ -2492,6 +2500,7 @@ domain_suffix_set:
   - gkvrdf.com
   - glacier32.com
   - glancetree.top
+  - glevvoqy.com
   - glmeilgroi.com
   - globalapi.ad.xiaomi.com
   - gmendanln.com
@@ -2672,6 +2681,7 @@ domain_suffix_set:
   - hhr3ybjsoy.com
   - hi.xiunm.cn
   - hi.xiunm.com
+  - hi2pv3e9pr.com
   - hi407ezyz.com
   - hi4c61mi8d.com
   - hiad.myweb.hinet.net
@@ -3205,8 +3215,10 @@ domain_suffix_set:
   - kefeng56.com
   - kegll5mwl2.com
   - kepler.jd.com
+  - keyboard88.top
   - kf2038zvxt.com
   - kfvq.cn
+  - kgdp030vm1.com
   - kgoj4nrhe.com
   - khegritww.com
   - khehliets.com
@@ -4337,6 +4349,7 @@ domain_suffix_set:
   - pxvbnt.top
   - pxwu.cn
   - pxx.tnklrs.cn
+  - pyntbz.icu
   - pyonbrj41b.com
   - pyrfpb.icu
   - pyxytj.icu
@@ -4639,6 +4652,7 @@ domain_suffix_set:
   - ruvowe4xeo.com
   - rvgtaai.top
   - rvkhazel.com
+  - rvr3psha.xyz
   - rvrl1srlq.com
   - rvxo.cn
   - rvxsvwqf.icu
@@ -4670,6 +4684,7 @@ domain_suffix_set:
   - s1.tuzhaozhao.com
   - s1.wesiedu.com
   - s11.cn
+  - s1918.cc
   - s3-nl-01.mangabuddy.in
   - s31u.com
   - s4y6lhotaw.com
@@ -4992,6 +5007,7 @@ domain_suffix_set:
   - tangram.e.qq.com
   - target.ads.jihuoniao.com
   - tasgxk4ia6.com
+  - taunphoik.com
   - tb4gv2cp5z.com
   - tbbfdr.icu
   - tbunkrolo.com
@@ -6077,6 +6093,7 @@ domain_suffix_set:
   - yarcokme.com
   - yasorlbeu.com
   - yatemy.cn
+  - yb2es1rd82.com
   - ybbreqrake.com
   - ybcnvqf.cn
   - ybrvrws2p9.com
@@ -6168,6 +6185,7 @@ domain_suffix_set:
   - yqhorcill.com
   - yqqv.cn
   - yqrsdfh.top
+  - yqsu.cn
   - yr2spd4ucy.com
   - yrgsqi0zc.com
   - yrnv.cn
