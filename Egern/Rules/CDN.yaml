@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4296
+# 规则统计: 4308
 
 domain_set:
   - 0x0.st
@@ -88,6 +88,7 @@ domain_set:
   - appassets.mvtdev.com
   - apps-static.route4me.com
   - apps.bazaarvoice.com
+  - apps.paidy.com
   - apps.profitihub.com
   - apps.sophi.io
   - apps.voxmedia.com
@@ -485,9 +486,11 @@ domain_set:
   - cdn.18jav.tv
   - cdn.24.co.za
   - cdn.7tv.app
+  - cdn.accessibly.app
   - cdn.accounts.autodesk.com
   - cdn.accounts.firefox.com
   - cdn.accounts.nintendo.com
+  - cdn.activity.smart-bdash.com
   - cdn.adguard.com
   - cdn.adguard.info
   - cdn.adsninja.ca
@@ -551,6 +554,7 @@ domain_set:
   - cdn.consentmanager.net
   - cdn.contentful.com
   - cdn.conveythis.com
+  - cdn.corso.com
   - cdn.cracked.sh
   - cdn.craft.cloud
   - cdn.create.microsoft.com
@@ -1320,6 +1324,7 @@ domain_set:
   - firebaseremoteconfig.googleapis.com
   - firefox.settings.services.mozilla.com
   - fiverr-res.cloudinary.com
+  - flagsapi.com
   - flo.uri.sh
   - flows.trysavvy.com
   - font-public.canva.com
@@ -1468,6 +1473,7 @@ domain_set:
   - ih2.redbubble.net
   - ih3.redbubble.net
   - ik.imgkit.net
+  - im.np-payment-gateway.com
   - imag.malavida.com
   - image-cdn.porndig.com
   - image-forwarder.notaku.so
@@ -1783,6 +1789,7 @@ domain_set:
   - j.udn.com.tw
   - jac.yahoosandbox.com
   - jaws.pbs.org
+  - jetpack.wordpress.com
   - jfe-cdn.qualtrics.com
   - jnmedia.ero-video.net
   - js-1-cdn.airdroid.com
@@ -1809,6 +1816,7 @@ domain_set:
   - js.puter.com
   - js.qualified.com
   - js.recurly.com
+  - js.rtoaster.jp
   - js.short.io
   - js.smile.io
   - js.stripe.com
@@ -1986,6 +1994,7 @@ domain_set:
   - medias.meow.social
   - medium-media.vgm.io
   - megapx-assets.dcard.tw
+  - melonbooks.akamaized.net
   - meteorclient.com
   - metrics.kapa.ai
   - micro.rubiconproject.com
@@ -2249,6 +2258,7 @@ domain_set:
   - rs-cdn.splashtop.com
   - rsi.grafana.com
   - rsms.me
+  - rt.rtoaster.jp
   - rtcg-access.bytevcloud.com
   - rts-static-prod.freshworksapi.com
   - rules.ac
@@ -2355,6 +2365,7 @@ domain_set:
   - sdata.ndtv.com
   - sdk.customfit.ai
   - sdk.gleap.io
+  - sdk.helloextend.com
   - sdk.listenlive.co
   - sdk.loyaltylion.net
   - sdk.privacy-center.org
@@ -2911,6 +2922,7 @@ domain_set:
   - ui.powerreviews.com
   - ui.trailhead.com
   - uim.9uu22.com
+  - unavatar.io
   - unlimited-cdn.waifu2x.net
   - unsubscribe-imgs.leavemealone.com
   - uos-support-files.svc.ui.com

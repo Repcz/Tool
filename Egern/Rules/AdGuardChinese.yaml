@@ -1,5 +1,5 @@
 # 规则名称: AdGuardChinese
-# 规则统计: 6422
+# 规则统计: 6447
 
 domain_suffix_set:
   - 002777.xyz
@@ -27,6 +27,7 @@ domain_suffix_set:
   - 0b6rvr210q.com
   - 0bb8jytek.com
   - 0e1y8x7ft.com
+  - 0e9knynfb.com
   - 0h9yewgei.com
   - 0hagal2csg.com
   - 0hagz9mdc.com
@@ -155,6 +156,7 @@ domain_suffix_set:
   - 1k8j786ks5.com
   - 1kb4atu6x.com
   - 1kiaxb3kl.com
+  - 1ko8eg0c4.com
   - 1l1.cc
   - 1l27pkxp5w.com
   - 1lqw75ogo.com
@@ -418,6 +420,7 @@ domain_suffix_set:
   - 75ossyemu.com
   - 75rakcovr.com
   - 7649s7szsu.com
+  - 765f76kcx.com
   - 766lnwfo7h.com
   - 76e.org
   - 76qrln0bb.com
@@ -439,6 +442,7 @@ domain_suffix_set:
   - 7jqi6um1g.com
   - 7lavkpncj.com
   - 7mk.fun
+  - 7mx63ygcti.com
   - 7mxn77h4vr.com
   - 7nb71ub2xi.com
   - 7o2l520r0a.com
@@ -539,6 +543,7 @@ domain_suffix_set:
   - 9h3s1ew2qn.com
   - 9hyf6wsiv5.com
   - 9j9gc694o4.com
+  - 9jk7puqza.com
   - 9kh5b.cn
   - 9l4i9edu.top
   - 9l9ck7mdd2.com
@@ -1419,6 +1424,9 @@ domain_suffix_set:
   - bugs01091ko.com
   - bugs01100ko.com
   - bugs01101ko.com
+  - bugs01110ko.com
+  - bugs01111ko.com
+  - bugs01120ko.com
   - buhvjv.icu
   - bun1.dayi.org.cn
   - bupsbp.icu
@@ -2005,6 +2013,7 @@ domain_suffix_set:
   - dxp.baidu.com
   - dxuxtb.com
   - dxvfdv.icu
+  - dxzgwti.com
   - dydab.com
   - dygeitaze.com
   - dykyvy.cn
@@ -2497,6 +2506,7 @@ domain_suffix_set:
   - gk1.582582.com
   - gk1.zjbiz.net
   - gkgktibd.com
+  - gkuresx.com
   - gkvrdf.com
   - glacier32.com
   - glancetree.top
@@ -2618,6 +2628,7 @@ domain_suffix_set:
   - hapic1.zhuangxiu22.com
   - harmful26.top
   - harmony573.top
+  - harpsichord34.com
   - hash.trafficmanager.net
   - hauqoa.com
   - hawfeniku.com
@@ -2779,6 +2790,7 @@ domain_suffix_set:
   - huo07161hy.com
   - huo07170hy.com
   - huohuo.huamuwo.com
+  - huqraedu.com
   - hur05071kns.com
   - hur05101kns.com
   - hur05110kns.com
@@ -3269,6 +3281,7 @@ domain_suffix_set:
   - kqzyfj.com
   - kr1cbkoow.com
   - krbulhb.com
+  - kreirkaer.com
   - krevn0cq4.com
   - krirkroins.com
   - krmxearc1.com
@@ -3285,6 +3298,7 @@ domain_suffix_set:
   - kuheju.com
   - kuiv.cn
   - kuk8.com
+  - kukanmanhua.cyou
   - kuku99.com
   - kvbh.cn
   - kvdxvqw.xyz
@@ -4551,6 +4565,7 @@ domain_suffix_set:
   - reflection67.top
   - register04.top
   - registration09.top
+  - rehearsal55.top
   - reke.at.sohu.com
   - remedyy46.com
   - remehealth.net
@@ -5312,6 +5327,7 @@ domain_suffix_set:
   - u7wnylbb28.top
   - u7y.pw
   - u833ij.com
+  - u8rnuky6e.com
   - uahivaqettl.com
   - ual23t6yz.com
   - uapi.ads.heytapmobi.com
@@ -5470,6 +5486,7 @@ domain_suffix_set:
   - uwtewvalgil.com
   - uwxez.com
   - uxfa.cn
+  - uxtlrah.com
   - uxx1sawfwm.com
   - uy8f8z9uy.com
   - uyag.cn
@@ -5542,9 +5559,11 @@ domain_suffix_set:
   - veuf2obzc8.com
   - vezeqzyb.com
   - vfjxvt.icu
+  - vfnq.cn
   - vfsb.cn
   - vftq.cn
   - vftrfmia.icu
+  - vfymgla.com
   - vgfj.cn
   - vglkx9lick.com
   - vgnhigankih.com
@@ -5622,6 +5641,7 @@ domain_suffix_set:
   - vnyqemhir.com
   - vocabulary83.com
   - vogue99.top
+  - vojolj.icu
   - volc.bj.ad.track.66mobi.com
   - volcano98.com
   - volume68.top
@@ -5766,6 +5786,7 @@ domain_suffix_set:
   - wftihvn.xyz
   - wfvs.cn
   - wgceetonr.com
+  - wh2mu9uj5f.com
   - whazrm9wa.com
   - whfpbc.99.com.cn
   - whistle35.com
@@ -5998,6 +6019,7 @@ domain_suffix_set:
   - xnqxocz.icu
   - xo60kab7yv.com
   - xoiz.cn
+  - xommzrn.com
   - xoqsxdpx.xyz
   - xpdgvlxwn.icu
   - xpj08.oss-cn-beijing.aliyuncs.com
@@ -6143,6 +6165,7 @@ domain_suffix_set:
   - yiukig.icu
   - yiybmi.icu
   - yizj5fcwaj.com
+  - yjigiv1ic.com
   - yjnlk.com
   - yjoyse.icu
   - yjprlwskt.com
@@ -6318,6 +6341,7 @@ domain_suffix_set:
   - zgisp.net
   - zgm1.com
   - zgo8rgvuaf.com
+  - zgqsc3shr.com
   - zgzxm.weathercn.com
   - zhangyuyidong.cn
   - zhbhivvoid.com
@@ -6356,6 +6380,7 @@ domain_suffix_set:
   - zlongad.com
   - zlzgfj.icu
   - zmdttx.icu
+  - zmk852tp7.com
   - zmkp6jvq4.com
   - zmpgln.icu
   - zmrkxz.icu
