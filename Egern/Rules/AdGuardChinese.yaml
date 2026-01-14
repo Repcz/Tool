@@ -1,5 +1,5 @@
 # 规则名称: AdGuardChinese
-# 规则统计: 6465
+# 规则统计: 6486
 
 domain_suffix_set:
   - 002777.xyz
@@ -11,6 +11,7 @@ domain_suffix_set:
   - 01231sop.xyz
   - 01240sop.xyz
   - 01anf08rf.com
+  - 02exl1ql2l.com
   - 03t441b8w.com
   - 04o.fun
   - 0512s.com
@@ -162,6 +163,7 @@ domain_suffix_set:
   - 1lqw75ogo.com
   - 1mb71rr5oo.com
   - 1nrlydgrr.com
+  - 1o0g85u7k1.com
   - 1paujqtq9.com
   - 1pt7wq8di.com
   - 1qa5x1k5v.com
@@ -205,6 +207,7 @@ domain_suffix_set:
   - 2hiu.com
   - 2hl.fun
   - 2i0lliongn.com
+  - 2juyabihe.com
   - 2kbmdtlgme.com
   - 2ld8mx979a.com
   - 2lj9n8sz0w.com
@@ -285,6 +288,7 @@ domain_suffix_set:
   - 4d9f09z8c.com
   - 4e9ynqm47d.com
   - 4f3tsea1m.com
+  - 4fd0jlybx.com
   - 4fptsi5zxo.com
   - 4fzfc1irq.com
   - 4gu.fun
@@ -365,6 +369,7 @@ domain_suffix_set:
   - 5uazcu2o1.com
   - 5x17591y3b.com
   - 5y9nfpes.52pk.com
+  - 5yqi3kg1g.com
   - 600g3yf2p.com
   - 609999.xyz
   - 6109.org
@@ -444,6 +449,7 @@ domain_suffix_set:
   - 7mk.fun
   - 7mx63ygcti.com
   - 7mxn77h4vr.com
+  - 7na721c64.com
   - 7nb71ub2xi.com
   - 7o2l520r0a.com
   - 7p5ruxflv0.com
@@ -1429,6 +1435,8 @@ domain_suffix_set:
   - bugs01111ko.com
   - bugs01120ko.com
   - bugs01121ko.com
+  - bugs01130ko.com
+  - bugs01131ko.com
   - buhvjv.icu
   - bun1.dayi.org.cn
   - bupsbp.icu
@@ -1704,6 +1712,7 @@ domain_suffix_set:
   - crolerl.com
   - croqoltdp.com
   - cruhliip.com
+  - cruietoge.com
   - cruzietv.com
   - cs.37see.com
   - csaimall.com
@@ -1724,6 +1733,7 @@ domain_suffix_set:
   - cuqpi.cn
   - cwcnmtf.top
   - cwmlm.com
+  - cxafybp.com
   - cxdcn9c.fjshxjs.cn
   - cxgfq.pinlue.com
   - cxsh.cn.com
@@ -2376,6 +2386,7 @@ domain_suffix_set:
   - g2wg5308q.com
   - g3m92egwo.com
   - g4yk4cyyw.com
+  - g66ryy88z.com
   - g8hi6r3odr.com
   - g8ygkqhm9p.com
   - g9cvic3khh.com
@@ -2638,6 +2649,7 @@ domain_suffix_set:
   - hauqoa.com
   - hawfeniku.com
   - hawthorng66.top
+  - hbcjdwm.com
   - hbdruktekf.com
   - hbeafcac.top
   - hbfpml.cn
@@ -2778,6 +2790,7 @@ domain_suffix_set:
   - hugelog.fcbox.com
   - huichuan-mc.sm.cn
   - huichuan.sm.cn
+  - humiliatedaboveboardwho.com
   - hunzlj.icu
   - huo07091hy.com
   - huo07100hy.com
@@ -3312,6 +3325,7 @@ domain_suffix_set:
   - kvqp.cn
   - kvzscvzk0t.com
   - kw17vswzu.com
+  - kw7addjwr.com
   - kwcnmtd.top
   - kwhcgsqn2f.com
   - kwn91x0jke.top
@@ -3487,6 +3501,7 @@ domain_suffix_set:
   - logwebs.kugou.com
   - lorzelofd.com
   - love.furenkeji.com
+  - lpalartra.com
   - lppfnf.icu
   - lpuqhego.com
   - lqdcvj.top
@@ -4998,6 +5013,7 @@ domain_suffix_set:
   - symposium44.com
   - synacast.com
   - syncope12.top
+  - synopsis95.com
   - sz2xlvu6jq.com
   - sz88.oss-cn-shenzhen.aliyuncs.com
   - szbdyd.com
@@ -5560,6 +5576,7 @@ domain_suffix_set:
   - vd6.l.qq.com
   - vdhatq0co.com
   - vdpwuxmo.icu
+  - vdxu.cn
   - vedhalmin.com
   - vehohx.icu
   - veilengh.com
@@ -5749,6 +5766,7 @@ domain_suffix_set:
   - w4sn20zpvz.com
   - w505cb.cc
   - w537a7.cc
+  - w56ff7.cc
   - w58547.cc
   - w58ce6.cc
   - w5ba5b.cc
@@ -6156,6 +6174,7 @@ domain_suffix_set:
   - yfanads.com
   - yflieu.cn
   - yfminw.cn
+  - yfmwnkd1ti.com
   - ygg1e0gmc.com
   - yghalathio.com
   - yghonola.com
@@ -6379,6 +6398,7 @@ domain_suffix_set:
   - zipnzz.icu
   - ziqi462ni.com
   - zisu.cn.com
+  - zither89.com
   - ziweuu.com
   - zj7coeb5i.com
   - zj9puq8ycu.com
@@ -6467,3 +6487,4 @@ domain_suffix_set:
   - zybkrv.icu
   - zymakzaeddla.com
   - zzad.com
+  - zzfxfz.com
