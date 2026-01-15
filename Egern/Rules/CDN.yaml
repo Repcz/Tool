@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4308
+# 规则统计: 4309
 
 domain_set:
   - 0x0.st
@@ -2214,6 +2214,7 @@ domain_set:
   - r2.dejavu.moe
   - r2.gear4music.com
   - r2.leadsy.ai
+  - r2cdn.c7d.dev
   - r2cdn.corespeed.io
   - r2cdn.myshopline.com
   - r2cdn.perplexity.ai
