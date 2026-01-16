@@ -1,5 +1,5 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 896
+# 规则统计: 895
 
 domain_suffix_set:
   - 1500020991.vodplayer.wxamedia.com
@@ -265,7 +265,6 @@ domain_suffix_set:
   - browser.events.data.msn.com
   - browsercfg-drcn.cloud.dbankcloud.cn
   - bsrv.qq.com
-  - bugly.qq.com
   - business-api.tiktok.com
   - c.bidtoolads.com
   - c.etoolads.cn
