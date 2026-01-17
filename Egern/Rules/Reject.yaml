@@ -1,5 +1,5 @@
 # 规则名称: Reject
-# 规则统计: 6203
+# 规则统计: 6204
 
 no_resolve: true
 domain_set:
@@ -116,6 +116,7 @@ domain_set:
   - adstats.tencentmusic.com
   - adstore-index-1252524079.file.myqcloud.com
   - adstrategy.biz.weibo.com
+  - adttrackingprd.hwwt8.com
   - adui.tg.meitu.com
   - adv-adlog.variflight.com
   - adv-ads.variflight.com

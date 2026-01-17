@@ -1,5 +1,5 @@
 # 规则名称: Reject
-# 规则统计: 6204
+# 规则统计: 6205
 
 HOST,118.89.204.198,Reject
 HOST,a.wkanx.com,Reject
@@ -114,6 +114,7 @@ HOST,adsstatic.vivo.com.cn,Reject
 HOST,adstats.tencentmusic.com,Reject
 HOST,adstore-index-1252524079.file.myqcloud.com,Reject
 HOST,adstrategy.biz.weibo.com,Reject
+HOST,adttrackingprd.hwwt8.com,Reject
 HOST,adui.tg.meitu.com,Reject
 HOST,adv-adlog.variflight.com,Reject
 HOST,adv-ads.variflight.com,Reject
