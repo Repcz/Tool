@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4305
+# 规则统计: 4310
 
 domain_set:
   - 0x0.st
@@ -110,6 +110,7 @@ domain_set:
   - assets-cdn.watchdisneyfe.com
   - assets-cms.kraken.com
   - assets-docs.circleci.com
+  - assets-docs.dify.ai
   - assets-fe.change.org
   - assets-growth-common.circleci.com
   - assets-next.matters.news
@@ -906,6 +907,7 @@ domain_set:
   - cdn03.jotfor.ms
   - cdn1.affirm.com
   - cdn1.airdroid.com
+  - cdn1.bambulab.com
   - cdn1.bigcommerce.com
   - cdn1.dan.com
   - cdn1.edgedatg.com
@@ -1991,6 +1993,7 @@ domain_set:
   - melonbooks.akamaized.net
   - meteorclient.com
   - metrics.kapa.ai
+  - mgx-backend-cdn.metadl.com
   - micro.rubiconproject.com
   - mintlify.b-cdn.net
   - mir-s3-cdn-cf.behance.net
@@ -2187,6 +2190,7 @@ domain_set:
   - public-assets.typeform.com
   - public-cdn.bblmw.com
   - public-files.gumroad.com
+  - public-frontend-cos.metadl.com
   - public-img.mewe.com
   - public-pages.cbinsights.com
   - public.flourish.studio
@@ -3596,6 +3600,7 @@ domain_suffix_set:
   - imostatic.com
   - in.appcenter.ms
   - infura-ipfs.io
+  - ingest.atoms.dev
   - ingest.de.sentry.io
   - ingest.sentry.io
   - ingest.us.sentry.io

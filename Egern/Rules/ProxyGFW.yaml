@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 7583
+# 规则统计: 7584
 
 no_resolve: true
 domain_set:
@@ -3373,6 +3373,7 @@ domain_suffix_set:
   - institut-tibetain.org
   - intel.com
   - interactivebrokers.com
+  - intercom.io
   - international-news.newsmagazine.asia
   - internet.org
   - internetdefenseleague.org

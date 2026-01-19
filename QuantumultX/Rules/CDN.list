@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4305
+# 规则统计: 4310
 
 HOST,0x0.st,CDN
 HOST,3dna.nationbuilder.com,CDN
@@ -109,6 +109,7 @@ HOST,assets-cdn.porn.com,CDN
 HOST,assets-cdn.watchdisneyfe.com,CDN
 HOST,assets-cms.kraken.com,CDN
 HOST,assets-docs.circleci.com,CDN
+HOST,assets-docs.dify.ai,CDN
 HOST,assets-fe.change.org,CDN
 HOST,assets-growth-common.circleci.com,CDN
 HOST,assets-next.matters.news,CDN
@@ -905,6 +906,7 @@ HOST,cdn02.jotfor.ms,CDN
 HOST,cdn03.jotfor.ms,CDN
 HOST,cdn1.affirm.com,CDN
 HOST,cdn1.airdroid.com,CDN
+HOST,cdn1.bambulab.com,CDN
 HOST,cdn1.bigcommerce.com,CDN
 HOST,cdn1.dan.com,CDN
 HOST,cdn1.edgedatg.com,CDN
@@ -1990,6 +1992,7 @@ HOST,megapx-assets.dcard.tw,CDN
 HOST,melonbooks.akamaized.net,CDN
 HOST,meteorclient.com,CDN
 HOST,metrics.kapa.ai,CDN
+HOST,mgx-backend-cdn.metadl.com,CDN
 HOST,micro.rubiconproject.com,CDN
 HOST,mintlify.b-cdn.net,CDN
 HOST,mir-s3-cdn-cf.behance.net,CDN
@@ -2186,6 +2189,7 @@ HOST,public-assets.postmarkapp.com,CDN
 HOST,public-assets.typeform.com,CDN
 HOST,public-cdn.bblmw.com,CDN
 HOST,public-files.gumroad.com,CDN
+HOST,public-frontend-cos.metadl.com,CDN
 HOST,public-img.mewe.com,CDN
 HOST,public-pages.cbinsights.com,CDN
 HOST,public.flourish.studio,CDN
@@ -3594,6 +3598,7 @@ HOST-SUFFIX,imhentai.xxx,CDN
 HOST-SUFFIX,imostatic.com,CDN
 HOST-SUFFIX,in.appcenter.ms,CDN
 HOST-SUFFIX,infura-ipfs.io,CDN
+HOST-SUFFIX,ingest.atoms.dev,CDN
 HOST-SUFFIX,ingest.de.sentry.io,CDN
 HOST-SUFFIX,ingest.sentry.io,CDN
 HOST-SUFFIX,ingest.us.sentry.io,CDN

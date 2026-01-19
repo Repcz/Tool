@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1539
+# 规则统计: 1540
 
 no_resolve: true
 domain_set:
@@ -691,6 +691,7 @@ domain_suffix_set:
   - instagram.com
   - instatus.com
   - intel.com
+  - intercom.io
   - internet.org
   - intodns.com
   - ip-api.com

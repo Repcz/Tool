@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1541
+# 规则统计: 1542
 
 HOST,api.avax.network,Proxy
 HOST,api.revenuecat.com,Proxy
@@ -688,6 +688,7 @@ HOST-SUFFIX,instagr.am,Proxy
 HOST-SUFFIX,instagram.com,Proxy
 HOST-SUFFIX,instatus.com,Proxy
 HOST-SUFFIX,intel.com,Proxy
+HOST-SUFFIX,intercom.io,Proxy
 HOST-SUFFIX,internet.org,Proxy
 HOST-SUFFIX,intodns.com,Proxy
 HOST-SUFFIX,ip-api.com,Proxy

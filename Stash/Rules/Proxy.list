@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1539
+# 规则统计: 1540
 
 DOMAIN,api.avax.network
 DOMAIN,api.revenuecat.com
@@ -688,6 +688,7 @@ DOMAIN-SUFFIX,instagr.am
 DOMAIN-SUFFIX,instagram.com
 DOMAIN-SUFFIX,instatus.com
 DOMAIN-SUFFIX,intel.com
+DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,internet.org
 DOMAIN-SUFFIX,intodns.com
 DOMAIN-SUFFIX,ip-api.com
