@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4310
+# 规则统计: 4314
 
 domain_set:
   - 0x0.st
@@ -1774,6 +1774,7 @@ domain_set:
   - info.knak.com
   - instafeed.nfcube.com
   - int.mwbbiz.com
+  - intake-logging.wikimedia.org
   - integrations.gitbook.com
   - interactive-examples.mdn.mozilla.net
   - interactive.guim.co.uk
@@ -2021,6 +2022,7 @@ domain_set:
   - nav.yumenosora.co.jp
   - navismithapis-cdn.com
   - nbcnewsdigital-static.nbcuni.com
+  - nel.bgptools-agent-cf.com
   - nel.heroku.com
   - net-fe-static-assets.network-controller.svc.ui.com
   - netlify.apollo.io
@@ -2999,6 +3001,7 @@ domain_set:
   - w.chatlio.com
   - w.soundcloud.com
   - w2.influxdata.com
+  - w3-reporting.reddit.com
   - wa.arounddeal.com
   - wa1.aninoapps.com
   - wac-cdn.atlassian.com
@@ -3540,6 +3543,7 @@ domain_suffix_set:
   - hs-scripts.com
   - hs-scripts.net
   - hsappstatic.net
+  - hsbrowserreports.com
   - hscollectedforms.net
   - hsstatic.net
   - hsto.org
