@@ -1,5 +1,5 @@
 # 规则名称: AdGuardChinese
-# 规则统计: 6608
+# 规则统计: 6627
 
 domain_suffix_set:
   - 002777.xyz
@@ -509,6 +509,7 @@ domain_suffix_set:
   - 8fdmj67f5e.com
   - 8feichai.com
   - 8ff0.cn
+  - 8g2a7mifv.com
   - 8jkx.com
   - 8k9ynfczfd.com
   - 8le8le.com
@@ -542,6 +543,7 @@ domain_suffix_set:
   - 94lm.com
   - 95k62nnvnh.com
   - 96382zubo66756.com
+  - 96zddjwn2.com
   - 98158.com
   - 9831tb.com
   - 9867.org
@@ -1471,6 +1473,8 @@ domain_suffix_set:
   - bugs01191ko.com
   - bugs01200ko.com
   - bugs01201ko.com
+  - bugs01210ko.com
+  - bugs01211ko.com
   - buhvjv.icu
   - bun1.dayi.org.cn
   - bupsbp.icu
@@ -2135,6 +2139,7 @@ domain_suffix_set:
   - eh6xjr8p0.com
   - ehczaa.icu
   - ehox67pahs.com
+  - ehvkaakviw.com
   - ei7buknu82.com
   - eildralfl.com
   - eilgrairyi.com
@@ -2158,6 +2163,7 @@ domain_suffix_set:
   - electronic23.com
   - eletys.icu
   - eliezerpmsa.com
+  - elmerpmsd.com
   - elqfsq.icu
   - elsbfby.com
   - emdcadvertise.eastmoney.com
@@ -2633,6 +2639,7 @@ domain_suffix_set:
   - gsjdzx.com
   - gsk801200hh.com
   - gsk801201hh.com
+  - gsk801211hh.com
   - gslb.hpplay.cn
   - gsweum.icu
   - gt.duowan.com
@@ -2661,6 +2668,7 @@ domain_suffix_set:
   - gvideo.qpic.cn
   - gvje.cn
   - gw7jpuouik.com
+  - gwbb1p2t9s.com
   - gwwquc.icu
   - gwyorodtr.com
   - gxam.cn
@@ -3285,6 +3293,7 @@ domain_suffix_set:
   - k90ey77nx.com
   - k99.cc
   - kacq.cn
+  - kagxyvk.com
   - kai5741.xyz
   - kanxiao.net
   - kapkh.cn
@@ -3326,6 +3335,7 @@ domain_suffix_set:
   - kitchenfu47.top
   - kiuee8.com
   - kiwihk.net
+  - kj4gddo30.com
   - kje9v2ic57.com
   - kk3fefl2b3.com
   - kkbnzz.cn
@@ -3490,6 +3500,7 @@ domain_suffix_set:
   - lk0v8teerw.com
   - lkdqrtsj6g.com
   - lkmgjfkhfh.top
+  - lkthfpii.xyz
   - ll.gxsky.com
   - llbquucai.com
   - lls11050ko.com
@@ -3626,6 +3637,7 @@ domain_suffix_set:
   - lxwp426ao.com
   - lyfdrh.icu
   - lyjq9gwob.com
+  - lyk35otqfm.com
   - lyo1dkdbp.com
   - lywaelm.online
   - lyz.radio366.com
@@ -3864,6 +3876,7 @@ domain_suffix_set:
   - musthroom9.top
   - mvcnmtx.top
   - mvdrecrull.com
+  - mvt0e2s72.com
   - mvxh.cn
   - mwbncf22w.com
   - mwcnmtx.top
@@ -4558,6 +4571,7 @@ domain_suffix_set:
   - qmavyy.icu
   - qmj89db55u.com
   - qmlog.baertt.com
+  - qmoqruden.com
   - qn-cdnfile1pcdn.msstatic.com
   - qnhi.cn
   - qnhoqullbea.com
@@ -5091,6 +5105,7 @@ domain_suffix_set:
   - sv-video.play.aiseet.atianqi.com
   - svcnmtb.top
   - svhk4bt874.com
+  - svhw.cn
   - svjj.cn
   - svnf.cn
   - svrj.cn
@@ -5426,6 +5441,7 @@ domain_suffix_set:
   - u1099.com
   - u10nte4ba.com
   - u1102.com
+  - u16d4beu5.com
   - u22011.com
   - u22066.com
   - u22088.com
@@ -5752,6 +5768,7 @@ domain_suffix_set:
   - vjpdxx.icu
   - vjvj.vj24co.com
   - vjzqfh.icu
+  - vkoq4kyzmj.com
   - vksy.cn
   - vkur.cn
   - vkxn.cn
@@ -5875,6 +5892,7 @@ domain_suffix_set:
   - w56ff7.cc
   - w58547.cc
   - w58ce6.cc
+  - w592be.cc
   - w5ba5b.cc
   - w5bi16f3co.com
   - w5c6d9.cc
@@ -6201,6 +6219,7 @@ domain_suffix_set:
   - xupd.cn
   - xutvbt.icu
   - xuwmylm697.com
+  - xvbwjd.icu
   - xve4ww01l.com
   - xvhttu3c9.com
   - xvkz.cn
