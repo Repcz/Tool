@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4314
+# 规则统计: 4322
 
 DOMAIN,0x0.st
 DOMAIN,3dna.nationbuilder.com
@@ -131,6 +131,7 @@ DOMAIN,assets.auth.magic.link
 DOMAIN,assets.awwwards.com
 DOMAIN,assets.basehub.com
 DOMAIN,assets.bbhub.io
+DOMAIN,assets.bbystatic.com
 DOMAIN,assets.bitstamp.net
 DOMAIN,assets.bitwarden.com
 DOMAIN,assets.bnidx.com
@@ -442,6 +443,8 @@ DOMAIN,cdn-fck.tnaflix.com
 DOMAIN,cdn-forum.networklessons.com
 DOMAIN,cdn-front.freepik.com
 DOMAIN,cdn-icons-png.flaticon.com
+DOMAIN,cdn-image01.casetify.com
+DOMAIN,cdn-image02.casetify.com
 DOMAIN,cdn-images-1.medium.com
 DOMAIN,cdn-images.mailchimp.com
 DOMAIN,cdn-img2.iporntv.net
@@ -466,6 +469,7 @@ DOMAIN,cdn-rdstaticassets.readdle.com
 DOMAIN,cdn-seo.airdroid.com
 DOMAIN,cdn-service.jp.sumologic.com
 DOMAIN,cdn-share-sprites.flaticon.com
+DOMAIN,cdn-stamplib.casetify.com
 DOMAIN,cdn-static-1.medium.com
 DOMAIN,cdn-static-push.porndig.com
 DOMAIN,cdn-static.paw.cloud
@@ -532,6 +536,7 @@ DOMAIN,cdn.calibermind.com
 DOMAIN,cdn.cameo.com
 DOMAIN,cdn.camweara.com
 DOMAIN,cdn.candy.ai
+DOMAIN,cdn.casetify.com
 DOMAIN,cdn.cbd.int
 DOMAIN,cdn.cfr.org
 DOMAIN,cdn.changelog.com
@@ -2803,6 +2808,7 @@ DOMAIN,steamusercontent-a.akamaihd.net
 DOMAIN,steamuserimages-a.akamaihd.net
 DOMAIN,steamvideo-a.akamaihd.net
 DOMAIN,storage-b.picacomic.com
+DOMAIN,storage.courtlistener.com
 DOMAIN,storage.crisp.chat
 DOMAIN,storage.deepin.org
 DOMAIN,storage.gra.cloud.ovh.net
@@ -2818,6 +2824,7 @@ DOMAIN,storageapi2.fleek.co
 DOMAIN,store-images.microsoft.com
 DOMAIN,store-images.s-microsoft.com
 DOMAIN,stories.freepiklabs.com
+DOMAIN,storybooks.fluentui.dev
 DOMAIN,stream.mux.com
 DOMAIN,streaming.split.io
 DOMAIN,sts.online.visualstudio.com
@@ -2951,6 +2958,7 @@ DOMAIN,us3.hamreus.com
 DOMAIN,use.fortawesome.com
 DOMAIN,use.typekit.com
 DOMAIN,use.typekit.net
+DOMAIN,usehooks-ts.com
 DOMAIN,user-images.trustpilot.com
 DOMAIN,user-uploads.perchance.org
 DOMAIN,usercontent.flodesk.com

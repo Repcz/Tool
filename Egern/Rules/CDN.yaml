@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4314
+# 规则统计: 4322
 
 domain_set:
   - 0x0.st
@@ -132,6 +132,7 @@ domain_set:
   - assets.awwwards.com
   - assets.basehub.com
   - assets.bbhub.io
+  - assets.bbystatic.com
   - assets.bitstamp.net
   - assets.bitwarden.com
   - assets.bnidx.com
@@ -443,6 +444,8 @@ domain_set:
   - cdn-forum.networklessons.com
   - cdn-front.freepik.com
   - cdn-icons-png.flaticon.com
+  - cdn-image01.casetify.com
+  - cdn-image02.casetify.com
   - cdn-images-1.medium.com
   - cdn-images.mailchimp.com
   - cdn-img2.iporntv.net
@@ -467,6 +470,7 @@ domain_set:
   - cdn-seo.airdroid.com
   - cdn-service.jp.sumologic.com
   - cdn-share-sprites.flaticon.com
+  - cdn-stamplib.casetify.com
   - cdn-static-1.medium.com
   - cdn-static-push.porndig.com
   - cdn-static.paw.cloud
@@ -533,6 +537,7 @@ domain_set:
   - cdn.cameo.com
   - cdn.camweara.com
   - cdn.candy.ai
+  - cdn.casetify.com
   - cdn.cbd.int
   - cdn.cfr.org
   - cdn.changelog.com
@@ -2804,6 +2809,7 @@ domain_set:
   - steamuserimages-a.akamaihd.net
   - steamvideo-a.akamaihd.net
   - storage-b.picacomic.com
+  - storage.courtlistener.com
   - storage.crisp.chat
   - storage.deepin.org
   - storage.gra.cloud.ovh.net
@@ -2819,6 +2825,7 @@ domain_set:
   - store-images.microsoft.com
   - store-images.s-microsoft.com
   - stories.freepiklabs.com
+  - storybooks.fluentui.dev
   - stream.mux.com
   - streaming.split.io
   - sts.online.visualstudio.com
@@ -2952,6 +2959,7 @@ domain_set:
   - use.fortawesome.com
   - use.typekit.com
   - use.typekit.net
+  - usehooks-ts.com
   - user-images.trustpilot.com
   - user-uploads.perchance.org
   - usercontent.flodesk.com
