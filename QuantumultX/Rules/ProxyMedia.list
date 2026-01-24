@@ -1,5 +1,5 @@
 # 规则名称: ProxyMedia
-# 规则统计: 396
+# 规则统计: 354
 
 HOST,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,ProxyMedia
 HOST,ai.google.dev,ProxyMedia
@@ -355,45 +355,3 @@ IP-CIDR,66.197.128.0/17,ProxyMedia
 IP-CIDR,69.53.224.0/19,ProxyMedia
 IP-CIDR,8.41.4.0/24,ProxyMedia
 URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/,ProxyMedia
-USER-AGENT,*YouTubeMusic*,ProxyMedia
-USER-AGENT,*com.google.ios.youtubemusic*,ProxyMedia
-USER-AGENT,*youtube*,ProxyMedia
-USER-AGENT,AbemaTV*,ProxyMedia
-USER-AGENT,All4*,ProxyMedia
-USER-AGENT,Anime*,ProxyMedia
-USER-AGENT,AppleNews*,ProxyMedia
-USER-AGENT,Argo*,ProxyMedia
-USER-AGENT,BBCiPlayer*,ProxyMedia
-USER-AGENT,DAZN*,ProxyMedia
-USER-AGENT,Deezer*,ProxyMedia
-USER-AGENT,Disney*,ProxyMedia
-USER-AGENT,Disney+*,ProxyMedia
-USER-AGENT,FOX%20NOW*,ProxyMedia
-USER-AGENT,HBO%20GO%20PROD*,ProxyMedia
-USER-AGENT,HBO%20NOW*,ProxyMedia
-USER-AGENT,HBOMAX*,ProxyMedia
-USER-AGENT,HWTVMobile*,ProxyMedia
-USER-AGENT,ITV_Player*,ProxyMedia
-USER-AGENT,JOOX*,ProxyMedia
-USER-AGENT,KKTV*,ProxyMedia
-USER-AGENT,LINE%20TV*,ProxyMedia
-USER-AGENT,LINE*,ProxyMedia
-USER-AGENT,My5*,ProxyMedia
-USER-AGENT,Niconico*,ProxyMedia
-USER-AGENT,PBS*,ProxyMedia
-USER-AGENT,Pandora*,ProxyMedia
-USER-AGENT,SoundCloud*,ProxyMedia
-USER-AGENT,Spotify*,ProxyMedia
-USER-AGENT,TIDAL*,ProxyMedia
-USER-AGENT,TaiwanGood*,ProxyMedia
-USER-AGENT,TikTok*,ProxyMedia
-USER-AGENT,Viu*,ProxyMedia
-USER-AGENT,WeMusic*,ProxyMedia
-USER-AGENT,YouTube*,ProxyMedia
-USER-AGENT,YouTubeMusic*,ProxyMedia
-USER-AGENT,com.apple.news*,ProxyMedia
-USER-AGENT,com.google.ios.youtube*,ProxyMedia
-USER-AGENT,com.google.ios.youtubemusic*,ProxyMedia
-USER-AGENT,com.kktv.ios.kktv*,ProxyMedia
-USER-AGENT,encoreTVB*,ProxyMedia
-USER-AGENT,mytv*,ProxyMedia

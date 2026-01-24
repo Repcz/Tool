@@ -1,5 +1,5 @@
 # 规则名称: OneDrive
-# 规则统计: 17
+# 规则统计: 15
 
 DOMAIN-SUFFIX,livefilestore.com
 DOMAIN-SUFFIX,microsoftpersonalcontent.com
@@ -16,5 +16,3 @@ DOMAIN-SUFFIX,storage.msn.com
 DOMAIN-KEYWORD,1drv
 DOMAIN-KEYWORD,onedrive
 DOMAIN-KEYWORD,skydrive
-USER-AGENT,OneDrive*
-USER-AGENT,OneDriveiOSApp*

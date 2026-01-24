@@ -1,9 +1,8 @@
 # 规则名称: Bahamut
-# 规则统计: 6
+# 规则统计: 5
 
 HOST,bahamut.akamaized.net,Bahamut
 HOST,gamer-cds.cdn.hinet.net,Bahamut
 HOST,gamer2-cds.cdn.hinet.net,Bahamut
 HOST-SUFFIX,bahamut.com.tw,Bahamut
 HOST-SUFFIX,gamer.com.tw,Bahamut
-USER-AGENT,Anime*,Bahamut
