@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4325
+# 规则统计: 4328
 
 domain_set:
   - 0x0.st
@@ -2492,6 +2492,7 @@ domain_set:
   - static-clst.avgle.com
   - static-community.tp-link.com
   - static-dm.ubisoft.com
+  - static-documents.wizards.com
   - static-e.live.fc2.com
   - static-effect.reg.ru
   - static-exp1.licdn.com
@@ -2522,6 +2523,7 @@ domain_set:
   - static-web.grammarly.com
   - static-webfonts.myfonts.com
   - static-www.onlyoffice.com
+  - static-www.sendsafely.com
   - static.3dporndude.com
   - static.4shared.com
   - static.ada.support
@@ -4027,6 +4029,7 @@ domain_suffix_set:
   - squarespace-cdn.com
   - srcdn.com
   - ss-cdn.com
+  - ss-domain.com
   - ssl-images-amazon.com
   - sstatic.net
   - stack.imgur.com
