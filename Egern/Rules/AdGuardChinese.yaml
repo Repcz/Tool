@@ -1,5 +1,5 @@
 # 规则名称: AdGuardChinese
-# 规则统计: 6672
+# 规则统计: 6688
 
 domain_suffix_set:
   - 002777.xyz
@@ -144,6 +144,7 @@ domain_suffix_set:
   - 192168.luyouwang.com
   - 1990tu.com
   - 1999019.com
+  - 19dkfu1wg.com
   - 19o8hzj117.com
   - 1buu1.penyouw.com
   - 1dgfd.cc
@@ -474,6 +475,7 @@ domain_suffix_set:
   - 7p5ruxflv0.com
   - 7qxv9s5q16.com
   - 7rag9q1on.com
+  - 7ryx7ph5y.com
   - 7strqfn56s.com
   - 7tc.fun
   - 7u4b8l1zt.com
@@ -727,6 +729,7 @@ domain_suffix_set:
   - achievement44.top
   - achophranb.com
   - acodes.b2b.cn
+  - acqephvfx.com
   - ad-1258444056.cos.accelerate.myqcloud.com
   - ad-api.cnblogs.com
   - ad-cdn.qingting.fm
@@ -1743,9 +1746,11 @@ domain_suffix_set:
   - cp.jfcdns.com
   - cp.qbaobei.com
   - cp2.eastmoney.com
+  - cp7iys8fp.com
   - cpc-service-square.aiclk.com
   - cpcxke.icu
   - cpglqg.icu
+  - cpgve9dnj.com
   - cpm.cm.kankan.com
   - cpro.baidu.com
   - cpro.baidustatic.com
@@ -2316,6 +2321,7 @@ domain_suffix_set:
   - ff.qichetansuo.com
   - ffjevt.icu
   - fflbpi.top
+  - ffuakv5nl.com
   - ffvmgevrid.com
   - ffxe.cn
   - fghelmorotvn.com
@@ -2665,6 +2671,8 @@ domain_suffix_set:
   - gsk801231hh.com
   - gsk801240hh.com
   - gsk801241hh.com
+  - gsk801250hh.com
+  - gsk801251hh.com
   - gslb.hpplay.cn
   - gsweum.icu
   - gt.duowan.com
@@ -3699,6 +3707,7 @@ domain_suffix_set:
   - m4fxreb5s.com
   - m4r.fun
   - m5.66077.cn
+  - m5uiy5gd1.com
   - m69tvg6wqd.com
   - m6d3h9vc3z.com
   - m78vxjm35d.com
@@ -4177,6 +4186,7 @@ domain_suffix_set:
   - ogdoad7.top
   - ogfvadunon.com
   - ohaereatw.com
+  - ohlanaizn.com
   - ohqp.cn
   - ohvk.cn
   - ohvtrokyq.com
@@ -4449,6 +4459,7 @@ domain_suffix_set:
   - pkvjrb.icu
   - pl.cp31.ott.cibntv.net
   - pl520.com
+  - plateau77.com
   - plbslog.umeng.com
   - plectrum53.top
   - plsec7wll8.com
@@ -4638,6 +4649,7 @@ domain_suffix_set:
   - qsko05060mas.com
   - qsko05061mas.com
   - qslhdidxkazlzuuelsz.top
+  - qsne.cn
   - qsoc.cn
   - qtbo.cn
   - qtevriko.com
@@ -4828,6 +4840,7 @@ domain_suffix_set:
   - ruqneakyp.com
   - ruvgbv.icu
   - ruvowe4xeo.com
+  - ruziecoraz.com
   - rvgtaai.top
   - rvkhazel.com
   - rvr3psha.xyz
@@ -5245,6 +5258,7 @@ domain_suffix_set:
   - thetestpage.39.net
   - theweeklydonut.org
   - thimhudlop.com
+  - thj36m3dm.com
   - thljnv.top
   - thragmoth.com
   - thraittidz.com
@@ -5342,6 +5356,7 @@ domain_suffix_set:
   - toothpick75.com
   - top2099.com
   - torkeauwu.com
+  - torrent25.com
   - tovbus.cn
   - tp.sgcn.com
   - tp.suppercacheimages.top
@@ -5929,6 +5944,7 @@ domain_suffix_set:
   - w505cb.cc
   - w537a7.cc
   - w54551.cc
+  - w55b76.cc
   - w56953.cc
   - w56ff7.cc
   - w58547.cc

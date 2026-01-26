@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4329
+# 规则统计: 4336
 
 DOMAIN,0x0.st
 DOMAIN,3dna.nationbuilder.com
@@ -157,6 +157,7 @@ DOMAIN,assets.coingecko.com
 DOMAIN,assets.context.ly
 DOMAIN,assets.controld.com
 DOMAIN,assets.convertkit.com
+DOMAIN,assets.customer.io
 DOMAIN,assets.cyberghostvpn.com
 DOMAIN,assets.dev.to
 DOMAIN,assets.dictionary.com
@@ -818,6 +819,7 @@ DOMAIN,cdn.sitesearch360.com
 DOMAIN,cdn.sketch.com
 DOMAIN,cdn.skymavis.com
 DOMAIN,cdn.smooch.io
+DOMAIN,cdn.snaptravel.com
 DOMAIN,cdn.softswiss.net
 DOMAIN,cdn.sphlabs.com
 DOMAIN,cdn.split.io
@@ -834,6 +836,7 @@ DOMAIN,cdn.stonly.com
 DOMAIN,cdn.streamlabs.com
 DOMAIN,cdn.substack.com
 DOMAIN,cdn.sunofbeaches.com
+DOMAIN,cdn.super.com
 DOMAIN,cdn.svgator.com
 DOMAIN,cdn.syftdata.com
 DOMAIN,cdn.tailwindcss.com
@@ -2151,6 +2154,7 @@ DOMAIN,player.vimeo.com
 DOMAIN,players.brightcove.net
 DOMAIN,playgroundcdn.typescriptlang.org
 DOMAIN,plugins.dprint.dev
+DOMAIN,plugins.pubtailer.com
 DOMAIN,plus.unsplash.com
 DOMAIN,pm1.aninoapps.com
 DOMAIN,pmecdn.protonweb.com
@@ -2367,6 +2371,7 @@ DOMAIN,scripts.dailymail.co.uk
 DOMAIN,scripts.scriptwrapper.com
 DOMAIN,scripts.webeo.com
 DOMAIN,sdata.ndtv.com
+DOMAIN,sdk-cdn.fun.xyz
 DOMAIN,sdk-static.loyaltylion.net
 DOMAIN,sdk.customfit.ai
 DOMAIN,sdk.gleap.io
@@ -3499,6 +3504,7 @@ DOMAIN-SUFFIX,gayzyimage.com
 DOMAIN-SUFFIX,gcr.si
 DOMAIN-SUFFIX,gdvid.info
 DOMAIN-SUFFIX,gentcdn.com
+DOMAIN-SUFFIX,getaroom-cdn.com
 DOMAIN-SUFFIX,ggpht.com
 DOMAIN-SUFFIX,girlsgogamescdn.com
 DOMAIN-SUFFIX,giscus.app
@@ -4091,6 +4097,7 @@ DOMAIN-SUFFIX,swiftypecdn.com
 DOMAIN-SUFFIX,sxccdn.com
 DOMAIN-SUFFIX,szjal.cn
 DOMAIN-SUFFIX,t8cdn.com
+DOMAIN-SUFFIX,tacdn.com
 DOMAIN-SUFFIX,tapecontent.net
 DOMAIN-SUFFIX,targetimg1.com
 DOMAIN-SUFFIX,tauri.app
