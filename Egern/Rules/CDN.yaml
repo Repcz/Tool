@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4336
+# 规则统计: 4338
 
 domain_set:
   - 0x0.st
@@ -226,6 +226,7 @@ domain_set:
   - assets.newrepublic.com
   - assets.nflxext.com
   - assets.nintendo.com
+  - assets.northflank.com
   - assets.nxtrace.org
   - assets.nypost.com
   - assets.onestore.ms
@@ -291,6 +292,7 @@ domain_set:
   - assets.xmind.net
   - assets.yande.re
   - assets.zendesk.com
+  - assets.zephr.com
   - assets.zerohedge.com
   - assets.zilliz.com
   - assets0.headwayapp.co
