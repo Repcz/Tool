@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4344
+# 规则统计: 4345
 
 domain_set:
   - 0x0.st
@@ -1322,6 +1322,7 @@ domain_set:
   - files.smashing.media
   - files.stripe.com
   - files.svc.ui.com
+  - files.thehackernews.com
   - files.writefreely.org
   - files.yande.re
   - filestore.fortinet.com
