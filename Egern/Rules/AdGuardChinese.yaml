@@ -1,5 +1,5 @@
 # 规则名称: AdGuardChinese
-# 规则统计: 6709
+# 规则统计: 6736
 
 domain_suffix_set:
   - 002777.xyz
@@ -12,6 +12,7 @@ domain_suffix_set:
   - 01240sop.xyz
   - 01anf08rf.com
   - 02exl1ql2l.com
+  - 03in08p3r1.com
   - 03t441b8w.com
   - 04o.fun
   - 0512s.com
@@ -230,6 +231,7 @@ domain_suffix_set:
   - 2u1h56851n.top
   - 2ueb.cn
   - 2wq9u06jq.com
+  - 2xx63f0bfy.com
   - 2za.fun
   - 2zjftxgl5s.com
   - 3.5646.cn
@@ -267,6 +269,7 @@ domain_suffix_set:
   - 3j1fiw14n9.com
   - 3k2frl8r79.com
   - 3kfvgobkw.com
+  - 3lxk4afsb.com
   - 3ml8v.cn
   - 3nopvvhju5.com
   - 3p8801.co
@@ -384,6 +387,7 @@ domain_suffix_set:
   - 5uazcu2o1.com
   - 5x17591y3b.com
   - 5y9nfpes.52pk.com
+  - 5yahh8v3.xyz
   - 5yqi3kg1g.com
   - 5zxkdat6t8.com
   - 600g3yf2p.com
@@ -455,6 +459,7 @@ domain_suffix_set:
   - 7791.com.cn
   - 7794.com
   - 77v6jk9itk.com
+  - 77zdmt8yq.com
   - 79181531227.com
   - 7awf4fi9k7.com
   - 7bfst8xxtc.com
@@ -776,6 +781,7 @@ domain_suffix_set:
   - ad.u-car.com.tw
   - ad.v3mh.com
   - ad.walkgame.com
+  - ad.weibo.com
   - ad.winrar.com.cn
   - ad.wurangxian.top
   - ad.ximalaya.com
@@ -813,6 +819,7 @@ domain_suffix_set:
   - adfsda005.xyz
   - adguanggao.eee114.com
   - adimg.liba.com
+  - adimg.uve.weibo.com
   - adintl.cn
   - adjb.5nd.com
   - adjust.cn
@@ -904,6 +911,7 @@ domain_suffix_set:
   - adstats.tencentmusic.com
   - adstore-1252524079.file.myqcloud.com
   - adstore-index-1252524079.file.myqcloud.com
+  - adstrategy.biz.weibo.com
   - adstudio-assets.scdn.co
   - adstudio.spotify.com
   - adt.xdrig.com
@@ -911,6 +919,7 @@ domain_suffix_set:
   - adtech.yahooinc.com
   - adtrack.quark.cn
   - adtracker.medproad.com
+  - adui.tg.meitu.com
   - adunite.com
   - adutp.com
   - adv-api.shenshiads.com
@@ -934,6 +943,7 @@ domain_suffix_set:
   - adx-open-service.youku.com
   - adx-os.anythinktech.com
   - adx-saas.advlion.com
+  - adx-strategy-api-cn.statisticslinks.com
   - adx.36kr.com
   - adx.ads.heytapmobi.com
   - adx.ads.oppomobile.com
@@ -955,6 +965,7 @@ domain_suffix_set:
   - aewgwu.icu
   - afce.cn
   - afcgcq.icu
+  - affxc.com
   - afgodscarpe.com
   - afno.cn
   - afp.chinanews.com
@@ -2151,6 +2162,7 @@ domain_suffix_set:
   - ef-dongfeng.tanx.com
   - efg.zle.com
   - efgh.5lu.com
+  - efmh.cn
   - eftd.cn
   - efxh.cn
   - egvhd2ggc1.com
@@ -2679,6 +2691,8 @@ domain_suffix_set:
   - gsk801260hh.com
   - gsk801261hh.com
   - gsk801270hh.com
+  - gsk801271hh.com
+  - gsk801280hh.com
   - gslb.hpplay.cn
   - gsweum.icu
   - gt.duowan.com
@@ -2686,6 +2700,7 @@ domain_suffix_set:
   - gtaqnnk.com
   - gtcbai.icu
   - gtfccewpo.com
+  - gtj1myjla.com
   - gtokii.icu
   - gtrphahmu.com
   - gtuy6el1hd.com
@@ -3622,6 +3637,7 @@ domain_suffix_set:
   - logupdate.avlyun.sec.miui.com
   - logwebs.kugou.com
   - loleteal.com
+  - lonarzelq.com
   - lorzelofd.com
   - love.furenkeji.com
   - lp340p7czf.com
@@ -3713,6 +3729,7 @@ domain_suffix_set:
   - m1vvvv1k2.com
   - m2.lelemh.com
   - m3cqjc3og6.com
+  - m3ks1o8jz.com
   - m43ocq1uoj.com
   - m4fxreb5s.com
   - m4r.fun
@@ -3873,6 +3890,7 @@ domain_suffix_set:
   - monopoly36.top
   - monsetting.toutiao.com
   - moon.ibytecdn.cn
+  - mores.toponad.com
   - mos05110o9i.com
   - mos05111o9i.com
   - mos05120o9i.com
@@ -4126,6 +4144,7 @@ domain_suffix_set:
   - nxu3l4c8u.com
   - nxwm44neo.com
   - nyokruzoir.com
+  - nyv388w6lc.com
   - nyzrbx.icu
   - nzeikrar.com
   - nzl09250oa.com
@@ -4210,6 +4229,7 @@ domain_suffix_set:
   - oiscuy.icu
   - oiu132jhz.com
   - oizs.cn
+  - oj2c0dkk4.com
   - ojizau.icu
   - ojmv.cn
   - ojrgbc6kfz.com
@@ -4505,6 +4525,7 @@ domain_suffix_set:
   - pqnonh.top
   - praairfo.com
   - prbibo.top
+  - precipice55.com
   - prelude69.com
   - preserved32.top
   - pretension48.top
@@ -4965,6 +4986,7 @@ domain_suffix_set:
   - sdk.markmedia.com.cn
   - sdk.mobads.adwangmai.com
   - sdkapi.cloooud.com
+  - sdkapp.uve.weibo.com
   - sdkauth.hpplay.cn
   - sdkconf.avlyun.com
   - sdkconfig.ad.intl.xiaomi.com
@@ -4978,6 +5000,7 @@ domain_suffix_set:
   - sdownload.stargame.com
   - sduaiy.icu
   - sdwrghcv.top
+  - seaquake54.com
   - search.ixigua.com
   - search3-search.ixigua.com
   - search5-search-hl.ixigua.com
@@ -5223,6 +5246,7 @@ domain_suffix_set:
   - t8t8jyxsr.com
   - tableland06.top
   - tad.suning.com
+  - tagtic.cn
   - tagtoo.co
   - taiverturena.com
   - tamedia.com.tw
@@ -5445,6 +5469,7 @@ domain_suffix_set:
   - tucnmti.top
   - tucnwti.top
   - tuhmkjce.icu
+  - tuiguang.meitu.com
   - turcailnt.com
   - tuvrutsnf.com
   - tux76afo5.com
@@ -5965,6 +5990,7 @@ domain_suffix_set:
   - w537a7.cc
   - w54551.cc
   - w55b76.cc
+  - w562f5.cc
   - w56953.cc
   - w56ff7.cc
   - w58547.cc
@@ -6101,6 +6127,7 @@ domain_suffix_set:
   - wsnxw6ihs.com
   - wthizudgdg.com
   - wthrarner.com
+  - wtreqnine.com
   - wtrevvit.com
   - wtrotilloye.com
   - wu2088-603.shop
