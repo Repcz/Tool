@@ -1,5 +1,5 @@
 # 规则名称: AdGuardChinese
-# 规则统计: 6736
+# 规则统计: 6753
 
 domain_suffix_set:
   - 002777.xyz
@@ -137,6 +137,7 @@ domain_suffix_set:
   - 15tianqi.com
   - 165tchuang.com
   - 16m.cc
+  - 16xxq8lb4g.com
   - 17.huanqiu.com
   - 177o.com
   - 17ryi4j3qb.com
@@ -198,6 +199,7 @@ domain_suffix_set:
   - 21cfhm0s1.top
   - 21ojgpuwg6.com
   - 222aa333bb.com
+  - 224oztn8dq.com
   - 22588888.com
   - 2481e.com
   - 24y0c8hek.com
@@ -412,6 +414,8 @@ domain_suffix_set:
   - 68td4yete.com
   - 68tkaiaji.com
   - 693836.com
+  - 6acupxubky.com
+  - 6b8emvi3ya.com
   - 6c641lgikp.top
   - 6cjdya3djn.com
   - 6cmxoje5k.com
@@ -461,6 +465,7 @@ domain_suffix_set:
   - 77v6jk9itk.com
   - 77zdmt8yq.com
   - 79181531227.com
+  - 7asx1bxaw.com
   - 7awf4fi9k7.com
   - 7bfst8xxtc.com
   - 7c96k2gysn.com
@@ -594,6 +599,7 @@ domain_suffix_set:
   - 9soefyenw.com
   - 9swovqnp52.com
   - 9txnu9rlmd.com
+  - 9vmbje748.com
   - 9vviyje1s.top
   - 9z6p1shhsh.top
   - a.10tianqi.com
@@ -854,6 +860,7 @@ domain_suffix_set:
   - ads-video-al.xhscdn.com
   - ads-video-qc.xhscdn.com
   - ads.95516.com
+  - ads.auctions.yahoo.com
   - ads.cup.com.cn
   - ads.google.cn
   - ads.huan.tv
@@ -1140,7 +1147,6 @@ domain_suffix_set:
   - applog.zijieapi.com
   - applovin.com
   - appoint38.com
-  - appversion.115.com
   - aqc.gucheng.com
   - aqftgalqig.com
   - aqgjqy.icu
@@ -2693,6 +2699,7 @@ domain_suffix_set:
   - gsk801270hh.com
   - gsk801271hh.com
   - gsk801280hh.com
+  - gsk801281hh.com
   - gslb.hpplay.cn
   - gsweum.icu
   - gt.duowan.com
@@ -3342,6 +3349,7 @@ domain_suffix_set:
   - jyzmtl.icu
   - k06kldksi3.com
   - k0jw6qzyh.com
+  - k0winsnua2.com
   - k1.dancihu.com
   - k1.wanwenwan.cn
   - k1.wendahu.com
@@ -3650,6 +3658,7 @@ domain_suffix_set:
   - lqfctb.icu
   - lqftuugziloa.com
   - lqfvredung.com
+  - lqvz7e4xa.com
   - lqxzx.com
   - lrphk.cn
   - lrta.cn
@@ -3731,6 +3740,7 @@ domain_suffix_set:
   - m3cqjc3og6.com
   - m3ks1o8jz.com
   - m43ocq1uoj.com
+  - m485oq2gym.top
   - m4fxreb5s.com
   - m4r.fun
   - m5.66077.cn
@@ -3840,6 +3850,7 @@ domain_suffix_set:
   - mjufus.icu
   - mjvr.cn
   - mk10ow7zoi.com
+  - mkff.cn
   - mkue.cn
   - ml4xbwg73.top
   - mlog.bigda.com
@@ -4310,6 +4321,7 @@ domain_suffix_set:
   - oth.eve.mdt.qq.com
   - oth.str.mdt.qq.com
   - otheve.play.aiseet.atianqi.com
+  - otiladgyo.com
   - otkwcg.icu
   - otlj.cn
   - otme.cn
@@ -5276,6 +5288,7 @@ domain_suffix_set:
   - tejr.cn
   - telecome.cn
   - telemetry.sdk.inmobi.com
+  - tempest33.com
   - tencent-dtv.m.cn.miaozhen.com
   - tenmax.io
   - teslaamg.obs.cn-east-3.myhuaweicloud.com
@@ -5446,6 +5459,7 @@ domain_suffix_set:
   - truell55.top
   - trundrak.com
   - truuhmoen.com
+  - truunnoi.com
   - trvsdlckg.icu
   - ts166.net
   - tshmhp.icu
@@ -5895,6 +5909,7 @@ domain_suffix_set:
   - vogue99.top
   - vojolj.icu
   - volc.bj.ad.track.66mobi.com
+  - volcano93.top
   - volcano98.com
   - volume68.top
   - vophiptv.com
@@ -6153,6 +6168,7 @@ domain_suffix_set:
   - wv.inner-active.mobi
   - wvcnmte.top
   - wvepppysvo.com
+  - wvrp.cn
   - wvzd.cn
   - wwads.cn
   - wwcnmte.top
@@ -6734,6 +6750,7 @@ domain_suffix_set:
   - zxpaa.xyz
   - zxvklz.icu
   - zxw51.com
+  - zxwfcwm.icu
   - zybkrv.icu
   - zymakzaeddla.com
   - zzad.com
