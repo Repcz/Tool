@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 834
+# 规则统计: 855
 
 domain_set:
   - acg.tv
@@ -243,6 +243,7 @@ domain_suffix_set:
   - cmfunds.cn
   - cmpassport.com
   - cmvideo.cn
+  - cnb.cool
   - cnblogs.com
   - cnnic.cn
   - cnspeedtest.cn
@@ -258,12 +259,14 @@ domain_suffix_set:
   - cowcs.com
   - cowtransfer.com
   - coze.cn
+  - cqcbank.com
   - csdn.com
   - csdn.net
   - csdnimg.cn
   - ctfile.com
   - ctrip.com
   - cz88.net
+  - d-ctrip.com
   - dancf.com
   - dangdang.com
   - daocloud.io
@@ -276,6 +279,7 @@ domain_suffix_set:
   - dcarlive.com
   - dcarstatic.com
   - dcarvod.com
+  - dcloud.io
   - dewu.com
   - dfcfw.com
   - dianping.com
@@ -292,6 +296,7 @@ domain_suffix_set:
   - dl.delivery.mp.microsoft.com
   - dl.eccdnx.com
   - dl.pinyuncloud.com
+  - dns.la
   - dnspod.cn
   - dnspod.com
   - dnsv1.com
@@ -307,6 +312,7 @@ domain_suffix_set:
   - douyin.com
   - douyincdn.com
   - douyinliving.com
+  - douyinpay.com
   - douyinpic.com
   - douyinstatic.com
   - douyinvod.com
@@ -320,6 +326,7 @@ domain_suffix_set:
   - duapp.com
   - duba.net
   - duokan.com
+  - duokanbox.com
   - dwz.cn
   - dxy.cn
   - dxycdn.com
@@ -394,10 +401,13 @@ domain_suffix_set:
   - hihonor.com
   - hihonorcdn.com
   - hihonorcloud.com
+  - hisense.com
   - hitv.com
   - hongxiu.com
   - honor.cn
   - honor.com
+  - huanqiu.com
+  - huanqiucdn.cn
   - huawei.cn
   - huawei.com
   - huaweistatic.com
@@ -498,7 +508,9 @@ domain_suffix_set:
   - livechina.cn
   - livechina.com
   - ljcdn.com
+  - lkcoffee.com
   - lofter.com
+  - luckincoffeecdn.com
   - ludashi.com
   - luojilab.com
   - m1905.cn
@@ -528,7 +540,9 @@ domain_suffix_set:
   - mihoyo.com
   - mijia.tech
   - miot-spec.org
+  - mipay.com
   - miui.com
+  - miwifi.com
   - miyoushe.com
   - mmstat.com
   - mobike.com
@@ -544,6 +558,7 @@ domain_suffix_set:
   - mybank.cn
   - myoppo.com
   - myqcloud.com
+  - myssl.com
   - myzaker.com
   - mzres.com
   - neea.cn
@@ -555,6 +570,7 @@ domain_suffix_set:
   - news.cn
   - nga.cn
   - ngabbs.com
+  - niu.com
   - nlark.com
   - nmc.cn
   - npmmirror.com
@@ -564,6 +580,7 @@ domain_suffix_set:
   - officewebapps.cn
   - okr.com
   - oneplus.cn
+  - oneplus.net
   - oneplusbbs.com
   - onlinedown.com
   - openinstall.io
@@ -633,6 +650,7 @@ domain_suffix_set:
   - qpic.cn
   - qq.com
   - qqmail.com
+  - quark.cn
   - qy.net
   - qyer.com
   - qyerstatic.com
@@ -717,6 +735,7 @@ domain_suffix_set:
   - tieba.com
   - tmall.com
   - tnkjmec.com
+  - tool.lu
   - toutiao.com
   - toutiaocloud.com
   - toutiaoimg.cn
@@ -751,6 +770,7 @@ domain_suffix_set:
   - wandoujia.com
   - wangsu.com
   - weathercn.com
+  - webank.com
   - webok.net
   - wegame.com
   - wegameplus.com
@@ -832,6 +852,7 @@ domain_suffix_set:
   - zijieapi.com
   - zjcdn.com
   - zjurl.cn
+  - zol.com
   - zui.com
   - zuimeitianqi.com
   - zuoyebang.com

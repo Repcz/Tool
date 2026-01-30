@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1542
+# 规则统计: 1543
 
 HOST,api.avax.network,Proxy
 HOST,api.revenuecat.com,Proxy
@@ -629,6 +629,7 @@ HOST-SUFFIX,heroku.com,Proxy
 HOST-SUFFIX,herokuapp.com,Proxy
 HOST-SUFFIX,hetzner.com,Proxy
 HOST-SUFFIX,hinet.net,Proxy
+HOST-SUFFIX,hitomi.la,Proxy
 HOST-SUFFIX,hk,Proxy
 HOST-SUFFIX,hk01.com,Proxy
 HOST-SUFFIX,hkepc.com,Proxy
@@ -767,7 +768,6 @@ HOST-SUFFIX,kr,Proxy
 HOST-SUFFIX,kraken.com,Proxy
 HOST-SUFFIX,kucoin.com,Proxy
 HOST-SUFFIX,kwai.com,Proxy
-HOST-SUFFIX,la,Proxy
 HOST-SUFFIX,laby.net,Proxy
 HOST-SUFFIX,launchdarkly.com,Proxy
 HOST-SUFFIX,ledger.com,Proxy
@@ -984,6 +984,7 @@ HOST-SUFFIX,openvpn.net,Proxy
 HOST-SUFFIX,openwrt.org,Proxy
 HOST-SUFFIX,oracle.com,Proxy
 HOST-SUFFIX,orbstack.dev,Proxy
+HOST-SUFFIX,orionbrowser.com,Proxy
 HOST-SUFFIX,osmand.net,Proxy
 HOST-SUFFIX,overdrive.com,Proxy
 HOST-SUFFIX,ovpnleaktest.com,Proxy

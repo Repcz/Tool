@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1540
+# 规则统计: 1541
 
 no_resolve: true
 domain_set:
@@ -632,6 +632,7 @@ domain_suffix_set:
   - herokuapp.com
   - hetzner.com
   - hinet.net
+  - hitomi.la
   - hk
   - hk01.com
   - hkepc.com
@@ -770,7 +771,6 @@ domain_suffix_set:
   - kraken.com
   - kucoin.com
   - kwai.com
-  - la
   - laby.net
   - launchdarkly.com
   - ledger.com
@@ -987,6 +987,7 @@ domain_suffix_set:
   - openwrt.org
   - oracle.com
   - orbstack.dev
+  - orionbrowser.com
   - osmand.net
   - overdrive.com
   - ovpnleaktest.com

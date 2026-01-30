@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4345
+# 规则统计: 4350
 
 domain_set:
   - 0x0.st
@@ -1284,6 +1284,7 @@ domain_set:
   - f003.backblazeb2.com
   - f004.backblazeb2.com
   - fast.appcues.com
+  - fast.chameleon.io
   - fast.wistia.com
   - fast.wistia.net
   - fastly-cloud.typenetwork.com
@@ -1883,6 +1884,7 @@ domain_set:
   - logos.kiwibrowser.com
   - logos.speedtestcustom.com
   - loutre.blockchair.io
+  - lucide.dev
   - lumiere-a.akamaihd.net
   - lzd-img-global.slatic.net
   - m-cdn.phonearena.com
@@ -2054,6 +2056,7 @@ domain_set:
   - no-cache.hubspot.com
   - node.green
   - nodeassets.nbcnews.com
+  - nodebox-runtime.codesandbox.io
   - nodei.co
   - npm.antfu.dev
   - ns-cdn.neustar.biz
@@ -2248,6 +2251,7 @@ domain_set:
   - reload.getsentry.net
   - renderer-assets.typeform.com
   - report-uri.cloudflare.com
+  - res-3.cdn.office.net
   - res-etl-ssl.mypikpak.com
   - res-geo.cdn.office.net
   - res.abc.net.au
@@ -2447,6 +2451,7 @@ domain_set:
   - source.unsplash.com
   - sourcemaps.squarespace.net
   - sourcepoint.theguardian.com
+  - sourcepointcmp.bloomberg.com
   - sp-spiegel-de.spiegel.de
   - sp.nba.com
   - sp.replit.com
