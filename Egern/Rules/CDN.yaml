@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4350
+# 规则统计: 4363
 
 domain_set:
   - 0x0.st
@@ -505,6 +505,8 @@ domain_set:
   - cdn.affine.pro
   - cdn.aimerce.ai
   - cdn.amcharts.com
+  - cdn.amgreatness.com
+  - cdn.animenewsnetwork.com
   - cdn.announcekit.app
   - cdn.answeroverflow.com
   - cdn.app.fossa.com
@@ -526,6 +528,7 @@ domain_set:
   - cdn.bigcloud.click
   - cdn.birdie.so
   - cdn.blogarama.com
+  - cdn.bogos.io
   - cdn.boldmethod.com
   - cdn.botframework.com
   - cdn.branch.io
@@ -795,6 +798,7 @@ domain_set:
   - cdn.robinpro.gallery
   - cdn.roboflow.com
   - cdn.roof.ai
+  - cdn.roseperl.com
   - cdn.royaleapi.com
   - cdn.safecharge.com
   - cdn.sanity.io
@@ -875,6 +879,7 @@ domain_set:
   - cdn.us-east-1.prod.moon.dubai.aws.dev
   - cdn.usd.fan
   - cdn.userreport.com
+  - cdn.userway.org
   - cdn.v2ex.com
   - cdn.vector.co
   - cdn.verifypass.com
@@ -1092,6 +1097,7 @@ domain_set:
   - components.justanswer.com
   - components.trynow.net
   - components.unrealengine.com
+  - conf.config-security.com
   - config.extension.grammarly.com
   - connect-js.stripe.com
   - connect.facebook.net
@@ -1804,6 +1810,7 @@ domain_set:
   - jetpack.wordpress.com
   - jfe-cdn.qualtrics.com
   - jnmedia.ero-video.net
+  - jotai.org
   - js-1-cdn.airdroid.com
   - js-cdn.blockchair.io
   - js-eu1.hsforms.net
@@ -1813,6 +1820,7 @@ domain_set:
   - js.chargebee.com
   - js.chargify.com
   - js.chilipiper.com
+  - js.convertflow.co
   - js.createsend1.com
   - js.hsforms.net
   - js.jotform.com
@@ -1844,6 +1852,7 @@ domain_set:
   - jsmodule.svc.litv.tv
   - jsonplaceholder.typicode.com
   - jssdk.opin.media
+  - jssdkcdns.mparticle.com
   - jssocdn.indiatimes.com
   - kdata1.com
   - keyframe-cdn.abcnews.com
@@ -1883,6 +1892,7 @@ domain_set:
   - logos.composio.dev
   - logos.kiwibrowser.com
   - logos.speedtestcustom.com
+  - logs.blip.net
   - loutre.blockchair.io
   - lucide.dev
   - lumiere-a.akamaihd.net
@@ -2569,6 +2579,7 @@ domain_set:
   - static.bit.cloud
   - static.bit.dev
   - static.bitfinex.com
+  - static.blip.net
   - static.bodor.com
   - static.bravoporn.com
   - static.buffer.com
@@ -2694,6 +2705,7 @@ domain_set:
   - static.netify.ai
   - static.newmobilelife.com
   - static.news.bitcoin.com
+  - static.newsbreak.com
   - static.nhentai.net
   - static.nicehash.com
   - static.npmjs.com
@@ -2731,6 +2743,7 @@ domain_set:
   - static.replay.io
   - static.returngo.ai
   - static.roboflow.com
+  - static.rumble.com
   - static.salidzini.lv
   - static.scarf.sh
   - static.sdkassets.chime.aws
@@ -3709,7 +3722,6 @@ domain_suffix_set:
   - jdbstatic.com
   - jinyingimage.com
   - jisuimage.com
-  - jotai.org
   - jpg5.su
   - jpgjingpinx.com
   - js-eu1.hubspot.com
@@ -3967,6 +3979,7 @@ domain_suffix_set:
   - reactjs.org
   - readthedocs.io
   - reasoningtheory.net
+  - rechargecdn.com
   - recharts.org
   - redcdn.net
   - redd.it

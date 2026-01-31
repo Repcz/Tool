@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4350
+# 规则统计: 4363
 
 DOMAIN,0x0.st
 DOMAIN,3dna.nationbuilder.com
@@ -504,6 +504,8 @@ DOMAIN,cdn.adsninja.ca
 DOMAIN,cdn.affine.pro
 DOMAIN,cdn.aimerce.ai
 DOMAIN,cdn.amcharts.com
+DOMAIN,cdn.amgreatness.com
+DOMAIN,cdn.animenewsnetwork.com
 DOMAIN,cdn.announcekit.app
 DOMAIN,cdn.answeroverflow.com
 DOMAIN,cdn.app.fossa.com
@@ -525,6 +527,7 @@ DOMAIN,cdn.bfldr.com
 DOMAIN,cdn.bigcloud.click
 DOMAIN,cdn.birdie.so
 DOMAIN,cdn.blogarama.com
+DOMAIN,cdn.bogos.io
 DOMAIN,cdn.boldmethod.com
 DOMAIN,cdn.botframework.com
 DOMAIN,cdn.branch.io
@@ -794,6 +797,7 @@ DOMAIN,cdn.road.cc
 DOMAIN,cdn.robinpro.gallery
 DOMAIN,cdn.roboflow.com
 DOMAIN,cdn.roof.ai
+DOMAIN,cdn.roseperl.com
 DOMAIN,cdn.royaleapi.com
 DOMAIN,cdn.safecharge.com
 DOMAIN,cdn.sanity.io
@@ -874,6 +878,7 @@ DOMAIN,cdn.uptimia.com
 DOMAIN,cdn.us-east-1.prod.moon.dubai.aws.dev
 DOMAIN,cdn.usd.fan
 DOMAIN,cdn.userreport.com
+DOMAIN,cdn.userway.org
 DOMAIN,cdn.v2ex.com
 DOMAIN,cdn.vector.co
 DOMAIN,cdn.verifypass.com
@@ -1091,6 +1096,7 @@ DOMAIN,components.cyclingfactory.be
 DOMAIN,components.justanswer.com
 DOMAIN,components.trynow.net
 DOMAIN,components.unrealengine.com
+DOMAIN,conf.config-security.com
 DOMAIN,config.extension.grammarly.com
 DOMAIN,connect-js.stripe.com
 DOMAIN,connect.facebook.net
@@ -1803,6 +1809,7 @@ DOMAIN,jaws.pbs.org
 DOMAIN,jetpack.wordpress.com
 DOMAIN,jfe-cdn.qualtrics.com
 DOMAIN,jnmedia.ero-video.net
+DOMAIN,jotai.org
 DOMAIN,js-1-cdn.airdroid.com
 DOMAIN,js-cdn.blockchair.io
 DOMAIN,js-eu1.hsforms.net
@@ -1812,6 +1819,7 @@ DOMAIN,js.braintreegateway.com
 DOMAIN,js.chargebee.com
 DOMAIN,js.chargify.com
 DOMAIN,js.chilipiper.com
+DOMAIN,js.convertflow.co
 DOMAIN,js.createsend1.com
 DOMAIN,js.hsforms.net
 DOMAIN,js.jotform.com
@@ -1843,6 +1851,7 @@ DOMAIN,jslibs.blackmagicdesign.com
 DOMAIN,jsmodule.svc.litv.tv
 DOMAIN,jsonplaceholder.typicode.com
 DOMAIN,jssdk.opin.media
+DOMAIN,jssdkcdns.mparticle.com
 DOMAIN,jssocdn.indiatimes.com
 DOMAIN,kdata1.com
 DOMAIN,keyframe-cdn.abcnews.com
@@ -1882,6 +1891,7 @@ DOMAIN,log-collector.17app.co
 DOMAIN,logos.composio.dev
 DOMAIN,logos.kiwibrowser.com
 DOMAIN,logos.speedtestcustom.com
+DOMAIN,logs.blip.net
 DOMAIN,loutre.blockchair.io
 DOMAIN,lucide.dev
 DOMAIN,lumiere-a.akamaihd.net
@@ -2568,6 +2578,7 @@ DOMAIN,static.beebom.com
 DOMAIN,static.bit.cloud
 DOMAIN,static.bit.dev
 DOMAIN,static.bitfinex.com
+DOMAIN,static.blip.net
 DOMAIN,static.bodor.com
 DOMAIN,static.bravoporn.com
 DOMAIN,static.buffer.com
@@ -2693,6 +2704,7 @@ DOMAIN,static.narrativ.com
 DOMAIN,static.netify.ai
 DOMAIN,static.newmobilelife.com
 DOMAIN,static.news.bitcoin.com
+DOMAIN,static.newsbreak.com
 DOMAIN,static.nhentai.net
 DOMAIN,static.nicehash.com
 DOMAIN,static.npmjs.com
@@ -2730,6 +2742,7 @@ DOMAIN,static.reo.dev
 DOMAIN,static.replay.io
 DOMAIN,static.returngo.ai
 DOMAIN,static.roboflow.com
+DOMAIN,static.rumble.com
 DOMAIN,static.salidzini.lv
 DOMAIN,static.scarf.sh
 DOMAIN,static.sdkassets.chime.aws
@@ -3707,7 +3720,6 @@ DOMAIN-SUFFIX,jbkcdn.io
 DOMAIN-SUFFIX,jdbstatic.com
 DOMAIN-SUFFIX,jinyingimage.com
 DOMAIN-SUFFIX,jisuimage.com
-DOMAIN-SUFFIX,jotai.org
 DOMAIN-SUFFIX,jpg5.su
 DOMAIN-SUFFIX,jpgjingpinx.com
 DOMAIN-SUFFIX,js-eu1.hubspot.com
@@ -3965,6 +3977,7 @@ DOMAIN-SUFFIX,react.dev
 DOMAIN-SUFFIX,reactjs.org
 DOMAIN-SUFFIX,readthedocs.io
 DOMAIN-SUFFIX,reasoningtheory.net
+DOMAIN-SUFFIX,rechargecdn.com
 DOMAIN-SUFFIX,recharts.org
 DOMAIN-SUFFIX,redcdn.net
 DOMAIN-SUFFIX,redd.it
