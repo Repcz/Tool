@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4363
+# 规则统计: 4364
 
 domain_set:
   - 0x0.st
@@ -2867,6 +2867,7 @@ domain_set:
   - sts3.wsj.net
   - stubdownloader.services.mozilla.com
   - styleguide-assets.shannons.com.au
+  - sub.creamycake.org
   - subscriptions.news.com.au
   - support.content.office.net
   - swan.prod.merch.vpsvc.com
