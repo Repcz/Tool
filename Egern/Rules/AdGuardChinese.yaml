@@ -1,10 +1,11 @@
 # 规则名称: AdGuardChinese
-# 规则统计: 5886
+# 规则统计: 5904
 
 domain_suffix_set:
   - 002777.xyz
   - 003store.com
   - 00p034d0dw.com
+  - 011qt7cln.com
   - 01210sop.xyz
   - 01211sop.xyz
   - 01221sop.xyz
@@ -530,6 +531,7 @@ domain_suffix_set:
   - 8k69vb6421.com
   - 8k9ynfczfd.com
   - 8lz3swf01q.com
+  - 8proe3xx6.com
   - 8radc6a0m2.com
   - 8rnmj0roe1.com
   - 8sh.fun
@@ -921,6 +923,7 @@ domain_suffix_set:
   - aqxh9x1o7m.com
   - archetype32.top
   - arlavilqyt.com
+  - arullelb.com
   - as01271kkp.xyz
   - as01280kkp.xyz
   - as01281kkp.xyz
@@ -1594,6 +1597,7 @@ domain_suffix_set:
   - deliver.ifeng.com
   - delivery.playallvideos.com
   - delivery.wasu.cn
+  - dependence39.com
   - dephriezm.com
   - depzdhamot.com
   - derivative10.top
@@ -2326,6 +2330,8 @@ domain_suffix_set:
   - gsk801291hh.com
   - gsk801300hh.com
   - gsk801301hh.com
+  - gsk801310hh.com
+  - gsk801311hh.com
   - gsweum.icu
   - gt.duowan.com
   - gt.yy.com
@@ -2560,6 +2566,7 @@ domain_suffix_set:
   - hydrocarbon77.top
   - hyhnas.com
   - hylplj.icu
+  - hythroqu.com
   - hz.shouyoutv.com
   - hzhyhm.com
   - hziridqp.com
@@ -2780,6 +2787,7 @@ domain_suffix_set:
   - jg1668.com
   - jgapcsi.icu
   - jgid.cn
+  - jgo1pcbx9.com
   - jgpo1zqhj.com
   - jgstny.com
   - jguhqbe.top
@@ -3017,6 +3025,7 @@ domain_suffix_set:
   - kuk8.com
   - kukanmanhua.cyou
   - kuku99.com
+  - kumphurwyr.com
   - kvbh.cn
   - kvdxvqw.xyz
   - kvhee.com
@@ -3675,6 +3684,7 @@ domain_suffix_set:
   - ogbt4k.site
   - ogdoad7.top
   - ogfvadunon.com
+  - ogpdgve4v.com
   - ohaereatw.com
   - ohlanaizn.com
   - ohqp.cn
@@ -3984,6 +3994,7 @@ domain_suffix_set:
   - q5sn40kmp2.com
   - q7qhlnyfx.com
   - q83v5haaz.com
+  - q9ss0yqwa.com
   - qa6z7kz5r.com
   - qaemphaels.com
   - qaqvec.icu
@@ -4056,6 +4067,7 @@ domain_suffix_set:
   - qmavyy.icu
   - qmj89db55u.com
   - qmoqruden.com
+  - qneb.cn
   - qnhi.cn
   - qnhoqullbea.com
   - qnki.cn
@@ -4318,6 +4330,7 @@ domain_suffix_set:
   - salsifyua22.com
   - same.chinadaily.com.cn
   - same.eastmoney.com
+  - sandbank68.com
   - sanme2.taisantech.com
   - saptuqse29.com
   - sausage34.com
@@ -4643,6 +4656,7 @@ domain_suffix_set:
   - tnwuami.top
   - tnwucni.top
   - tnze.cn
+  - toaadwh.icu
   - toazdkl.top
   - tocr.cn
   - todayapp.tv
@@ -4807,6 +4821,7 @@ domain_suffix_set:
   - uaqe.cn
   - uavk.cn
   - ub1.job592.com
+  - ub6weu52p.com
   - ubeeludrt.com
   - ubmcvideo.baidustatic.com
   - ubudhal.com
@@ -5173,6 +5188,7 @@ domain_suffix_set:
   - w3ytzqm3d.com
   - w4sn20zpvz.com
   - w505cb.cc
+  - w510e2.com
   - w537a7.cc
   - w54551.cc
   - w55b76.cc
@@ -5339,6 +5355,7 @@ domain_suffix_set:
   - wxynyij.icu
   - wy12cewh4.com
   - wy213.com
+  - wy7btl038.com
   - wyfjagda.top
   - wyjqa6pbuc.com
   - wyvw.cn
@@ -5577,6 +5594,7 @@ domain_suffix_set:
   - yflieu.cn
   - yfminw.cn
   - yfmwnkd1ti.com
+  - yg0051thk.com
   - ygg1e0gmc.com
   - yghalathio.com
   - yghonola.com
