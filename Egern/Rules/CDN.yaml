@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4368
+# 规则统计: 4369
 
 domain_set:
   - 0x0.st
@@ -2387,6 +2387,7 @@ domain_set:
   - scache2.vzw.com
   - scdn.clerk.com
   - scdn.line-apps.com
+  - schema-cf.bc0a.com
   - scontent.whatsapp.net
   - screenshot.domains
   - screenshots.codesandbox.io
