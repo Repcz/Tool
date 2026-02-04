@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4364
+# 规则统计: 4368
 
 domain_set:
   - 0x0.st
@@ -494,6 +494,7 @@ domain_set:
   - cdn.18jav.tv
   - cdn.24.co.za
   - cdn.7tv.app
+  - cdn.academy.svc.ui.com
   - cdn.accessibly.app
   - cdn.accounts.autodesk.com
   - cdn.accounts.firefox.com
@@ -748,6 +749,7 @@ domain_set:
   - cdn.osxdaily.com
   - cdn.paddle.com
   - cdn.pagefly.io
+  - cdn.pagerduty.com
   - cdn.pagic.org
   - cdn.paidy.com
   - cdn.paritydeals.com
@@ -2028,6 +2030,8 @@ domain_set:
   - miro.medium.com
   - mixin-images.zeromesh.net
   - mkt-site-asset.crypto.com
+  - mma.prnewswire.com
+  - mms.businesswire.com
   - mobilecenter.azureedge.net
   - moderate.cleantalk.org
   - modules.kernelsu.org
