@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4369
+# 规则统计: 4423
 
 domain_set:
   - 0x0.st
@@ -417,6 +417,7 @@ domain_set:
   - cached.rebuyengine.com
   - canny-assets.io
   - canvas-lb.tubitv.com
+  - cartodb-basemaps-a.global.ssl.fastly.net
   - cassette.sphdigital.com.sg
   - categoriespages-cdn.trustpilot.net
   - cc-embed.adobe.com
@@ -658,6 +659,7 @@ domain_set:
   - cdn.hinative.com
   - cdn.hk01.com
   - cdn.hongkongcard.com
+  - cdn.hubble.team
   - cdn.hypershort.com
   - cdn.i-scmp.com
   - cdn.icomoon.io
@@ -768,6 +770,7 @@ domain_set:
   - cdn.pkg.svc.ui.com
   - cdn.plaid.com
   - cdn.player.fm
+  - cdn.playersupport.riotgames.com
   - cdn.playwire.com
   - cdn.plot.ly
   - cdn.plu.mx
@@ -795,6 +798,7 @@ domain_set:
   - cdn.registerdisney.go.com
   - cdn.reimu.net
   - cdn.rex.contents.rakuten.co.jp
+  - cdn.rgpub.io
   - cdn.rive.app
   - cdn.road.cc
   - cdn.robinpro.gallery
@@ -1382,6 +1386,7 @@ domain_set:
   - genesis-cdn.ff.com
   - geoip-js.com
   - geojson.io
+  - geoserveis.icgc.cat
   - gfx-data.news-engineering.aws.wapo.pub
   - gitpkg-fork.vercel.sh
   - global-assets.fitch.group
@@ -1895,6 +1900,7 @@ domain_set:
   - logos.kiwibrowser.com
   - logos.speedtestcustom.com
   - logs.blip.net
+  - lolstatic-a.akamaihd.net
   - loutre.blockchair.io
   - lucide.dev
   - lumiere-a.akamaihd.net
@@ -2404,6 +2410,7 @@ domain_set:
   - sdk.customfit.ai
   - sdk.gleap.io
   - sdk.helloextend.com
+  - sdk.hubble.team
   - sdk.listenlive.co
   - sdk.loyaltylion.net
   - sdk.privacy-center.org
@@ -2920,12 +2927,52 @@ domain_set:
   - thumbs.onlyfans.com
   - thumbs2.sendvid.com
   - thumbsnap.com
+  - tile.loc.gov
+  - tile.mapzen.com
+  - tile.mtbmap.cz
+  - tile.nextzen.org
+  - tile.opentopomap.org
+  - tile.openweathermap.org
+  - tile.osm.be
+  - tile.osmand.net
+  - tile.ourmap.us
+  - tile.poloha.net
+  - tile.skybrush.io
+  - tile.thunderforest.com
+  - tile.waymarkedtrails.org
   - tile2.intervals.icu
+  - tile2.opencyclemap.org
+  - tilecache.rainviewer.com
+  - tiledbasemaps.arcgis.com
+  - tilemaps.icgc.cat
+  - tiles-a.koordinates.com
+  - tiles.arcgis.com
+  - tiles.arcticconnect.ca
+  - tiles.gsj.jp
+  - tiles.immich.cloud
+  - tiles.mapilion.com
+  - tiles.mapillary.com
+  - tiles.maps.eox.at
+  - tiles.maps.opensearch.org
+  - tiles.mapterhorn.com
   - tiles.meteoguard.dtn.com
   - tiles.openfreemap.org
+  - tiles.openrailwaymap.org
+  - tiles.openseamap.org
+  - tiles.openskimap.org
+  - tiles.planet.com
   - tiles.stadiamaps.com
+  - tiles.terria.io
   - tiles.versatiles.org
   - tiles.windy.com
+  - tiles.wmflabs.org
+  - tiles0.planet.com
+  - tiles1.planet.com
+  - tiles2.mapiful.com
+  - tiles2.planet.com
+  - tiles3.planet.com
+  - tileserver.gnome.org
+  - tileserver.memomaps.de
   - time-a.nist.gov
   - time.akamai.com
   - time.apple.com
@@ -3884,6 +3931,7 @@ domain_suffix_set:
   - onekey-asset.com
   - onelink-edge.com
   - onrender.com
+  - openinframap.org
   - opentelemetry.io
   - operacdn.com
   - oreillystatic.com
@@ -4150,9 +4198,15 @@ domain_suffix_set:
   - tiktokcdn.com
   - tildacdn.com
   - tildacdn.net
+  - tile-cyclosm.openstreetmap.fr
+  - tile.openstreetmap.bzh
   - tile.openstreetmap.de
+  - tile.openstreetmap.fr
   - tile.openstreetmap.org
+  - tile.osm.ch
   - tile.osm.org
+  - tile.osmz.ru
+  - tile.stamen.com
   - tiles-api.maps.komoot.net
   - tiles.mapbox.com
   - tiles.virtualearth.net

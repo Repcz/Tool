@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 855
+# 规则统计: 857
 
 domain_set:
   - acg.tv
@@ -369,6 +369,7 @@ domain_suffix_set:
   - gdtimg.com
   - geetest.com
   - geilicdn.com
+  - geovisearth.com
   - gifshow.com
   - gitcode.com
   - gitee.com
@@ -596,6 +597,7 @@ domain_suffix_set:
   - orayimg.com
   - org.cn
   - oschina.net
+  - osgeo.cn
   - ourdvs.com
   - outlook.cn
   - pchome.net
