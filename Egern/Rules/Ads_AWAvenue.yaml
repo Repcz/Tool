@@ -1,5 +1,5 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 904
+# 规则统计: 903
 
 domain_suffix_set:
   - 1500020991.vodplayer.wxamedia.com
@@ -526,7 +526,6 @@ domain_suffix_set:
   - m.ad.zhangyue.com
   - m.atm.youku.com
   - m.shenshiads.com
-  - m1.ad.10010.com
   - mapi.m.jd.com
   - masdkv6.3g.qq.com
   - mazu.m.qq.com
