@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4423
+# 规则统计: 4429
 
 domain_set:
   - 0x0.st
@@ -670,6 +670,7 @@ domain_set:
   - cdn.img.ly
   - cdn.infoq.com
   - cdn.insightmediagroup.io
+  - cdn.inviter.co
   - cdn.ionos.de
   - cdn.ip2location.com
   - cdn.ip2location.io
@@ -1082,6 +1083,7 @@ domain_set:
   - cms-cdn.goat.com
   - cms-cdn.now.gg
   - cms.blavity.com
+  - cms.mistral.ai
   - cms.myfonts.com
   - cms.recordedfuture.com
   - cms.therecord.media
@@ -1466,11 +1468,14 @@ domain_set:
   - i.xgroovy.com
   - i.xozilla.xxx
   - i.xxxshake.com
+  - i1.xiaoyakankan.com
   - i2.anysex.com
   - i2.bahamut.com.tw
   - i2.hentaifox.com
   - i2.nhentai.net
+  - i2.xiaoyakankan.com
   - i3.anysex.com
+  - i3.xiaoyakankan.com
   - i4.anysex.com
   - ias.r10s.jp
   - icdn.javxx.com
@@ -2174,6 +2179,7 @@ domain_set:
   - platform.vox.com
   - platforms.makemytrip.com
   - play.gotolstoy.com
+  - play.modujx11.com
   - play.publicradio.org
   - play.vidyard.com
   - play.xfvod.pro
