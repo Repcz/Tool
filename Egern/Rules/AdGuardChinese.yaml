@@ -1,5 +1,5 @@
 # 规则名称: AdGuardChinese
-# 规则统计: 5758
+# 规则统计: 5767
 
 domain_suffix_set:
   - 002777.xyz
@@ -150,6 +150,7 @@ domain_suffix_set:
   - 1gj8lhfa1.com
   - 1gp3p6fkio.com
   - 1gqd0o687z.com
+  - 1hhwyb4vl.com
   - 1hmklj60i.com
   - 1iuh5l.com
   - 1jlp1qbgu.com
@@ -411,10 +412,12 @@ domain_suffix_set:
   - 6fm4dcpj31.com
   - 6ggstcmglf.com
   - 6gvg5saail.com
+  - 6h6pdph56.com
   - 6jei0t6xp.com
   - 6jyi7mzae.com
   - 6kpudsordv.com
   - 6m8tk53pw.com
+  - 6mdf9teiz.com
   - 6n528aywi9.com
   - 6o719vq4x.com
   - 6p2g1kk03.com
@@ -1663,7 +1666,7 @@ domain_suffix_set:
   - dms.fx678.com
   - dms.vancss.com
   - dms.xuexxing.com
-  - dmym.aixyy.com
+  - dmym.fwol.cn
   - dn6ik9809m.com
   - dnjxds.top
   - dnokacraldho.com
@@ -2217,6 +2220,7 @@ domain_suffix_set:
   - go22zd6lwm.com
   - gocye.com
   - godloveme.cn
+  - gohgn02111la.com
   - goi08130kh.com
   - goi08131kh.com
   - goi08141kh.com
@@ -3331,6 +3335,7 @@ domain_suffix_set:
   - musthroom9.top
   - mvcnmtx.top
   - mvdrecrull.com
+  - mvquiema.xyz
   - mvt0e2s72.com
   - mvxh.cn
   - mwbncf22w.com
@@ -4297,6 +4302,7 @@ domain_suffix_set:
   - sjbaiduadv1.redou.com
   - sjhgfrvbxrbbr.com
   - skfgnsvkjfgvv.com
+  - skirmish33.top
   - sknkggfnm.com
   - sksi91y8rs.com
   - sky.dunsuan.com
@@ -5232,6 +5238,7 @@ domain_suffix_set:
   - wzvaknomh.com
   - x.yaohuo.me
   - x05occvjw.com
+  - x0b5edl6u.com
   - x0lkimaixh.com
   - x1.52aoteman.com
   - x1c9gze9i.com
@@ -5578,6 +5585,7 @@ domain_suffix_set:
   - yylady.cn
   - yyqozaldwa.com
   - yyutfzv.com
+  - yzhcp6cw1.com
   - z.grfyw.com
   - z.nowscore.com
   - z.tudouxy01.com
@@ -5680,6 +5688,7 @@ domain_suffix_set:
   - zjkt6ew4cp.com
   - zjliloveyou.ixiunv.com
   - zk.91post.com
+  - zkcizao.com
   - zkraktak.com
   - zktats.top
   - zlclgzs.cn
