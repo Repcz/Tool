@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4429
+# 规则统计: 4430
 
 domain_set:
   - 0x0.st
@@ -467,6 +467,7 @@ domain_set:
   - cdn-msp.jmcomic-zzz.one
   - cdn-msp.jmcomic.me
   - cdn-node.diskpart.com
+  - cdn-nsbus.ui.com
   - cdn-public-apis.moonlock.com
   - cdn-public.sociabble.com
   - cdn-raw.modrinth.com
