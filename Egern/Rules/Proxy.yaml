@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1541
+# 规则统计: 1549
 
 no_resolve: true
 domain_set:
@@ -194,6 +194,7 @@ domain_suffix_set:
   - bet
   - bet365.com
   - bg
+  - bgm.tv
   - bgp.tools
   - bibox.com
   - bikaa.xyz
@@ -244,6 +245,7 @@ domain_suffix_set:
   - c-span.org
   - c.mi.com
   - ca
+  - cableav.tv
   - cachefly.net
   - cafe
   - cal.com
@@ -613,6 +615,7 @@ domain_suffix_set:
   - gvt9.com
   - gwtproject.org
   - hackmd.io
+  - hanime.tv
   - hanime1.com
   - hanime1.me
   - hanimeone.me
@@ -713,8 +716,10 @@ domain_suffix_set:
   - it
   - itasoftware.com
   - itch.io
+  - iwara.tv
   - ixxx.com
   - j.mp
+  - jable.tv
   - jav.pw
   - jav321.com
   - java.com
@@ -878,6 +883,7 @@ domain_suffix_set:
   - mozilla.org
   - ms
   - mubi.com
+  - muku.tv
   - mullvad.net
   - mx
   - my
@@ -922,6 +928,7 @@ domain_suffix_set:
   - nitter.net
   - nj.com
   - njav.com
+  - njav.tv
   - nl
   - nmnm.fun
   - no
@@ -1010,6 +1017,7 @@ domain_suffix_set:
   - peeringdb.com
   - peing.net
   - perfect-privacy.com
+  - periscope.tv
   - ph
   - phncdn.com
   - photoshop.adobe.com
@@ -1071,6 +1079,7 @@ domain_suffix_set:
   - proxifier.com
   - proxmox.com
   - ps
+  - pscp.tv
   - ptt.cc
   - pttweb.cc
   - pusher.com
@@ -1329,7 +1338,6 @@ domain_suffix_set:
   - tunein.com
   - turbobit.net
   - tutanota.com
-  - tv
   - tw
   - twimg.co
   - twimg.com

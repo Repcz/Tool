@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1541
+# 规则统计: 1549
 
 DOMAIN,api.avax.network
 DOMAIN,api.revenuecat.com
@@ -191,6 +191,7 @@ DOMAIN-SUFFIX,bestbuy.com
 DOMAIN-SUFFIX,bet
 DOMAIN-SUFFIX,bet365.com
 DOMAIN-SUFFIX,bg
+DOMAIN-SUFFIX,bgm.tv
 DOMAIN-SUFFIX,bgp.tools
 DOMAIN-SUFFIX,bibox.com
 DOMAIN-SUFFIX,bikaa.xyz
@@ -241,6 +242,7 @@ DOMAIN-SUFFIX,bytevirt.com
 DOMAIN-SUFFIX,c-span.org
 DOMAIN-SUFFIX,c.mi.com
 DOMAIN-SUFFIX,ca
+DOMAIN-SUFFIX,cableav.tv
 DOMAIN-SUFFIX,cachefly.net
 DOMAIN-SUFFIX,cafe
 DOMAIN-SUFFIX,cal.com
@@ -610,6 +612,7 @@ DOMAIN-SUFFIX,gvt7.com
 DOMAIN-SUFFIX,gvt9.com
 DOMAIN-SUFFIX,gwtproject.org
 DOMAIN-SUFFIX,hackmd.io
+DOMAIN-SUFFIX,hanime.tv
 DOMAIN-SUFFIX,hanime1.com
 DOMAIN-SUFFIX,hanime1.me
 DOMAIN-SUFFIX,hanimeone.me
@@ -710,8 +713,10 @@ DOMAIN-SUFFIX,istockphoto.com
 DOMAIN-SUFFIX,it
 DOMAIN-SUFFIX,itasoftware.com
 DOMAIN-SUFFIX,itch.io
+DOMAIN-SUFFIX,iwara.tv
 DOMAIN-SUFFIX,ixxx.com
 DOMAIN-SUFFIX,j.mp
+DOMAIN-SUFFIX,jable.tv
 DOMAIN-SUFFIX,jav.pw
 DOMAIN-SUFFIX,jav321.com
 DOMAIN-SUFFIX,java.com
@@ -875,6 +880,7 @@ DOMAIN-SUFFIX,mozilla.com
 DOMAIN-SUFFIX,mozilla.org
 DOMAIN-SUFFIX,ms
 DOMAIN-SUFFIX,mubi.com
+DOMAIN-SUFFIX,muku.tv
 DOMAIN-SUFFIX,mullvad.net
 DOMAIN-SUFFIX,mx
 DOMAIN-SUFFIX,my
@@ -919,6 +925,7 @@ DOMAIN-SUFFIX,ninerealms.com
 DOMAIN-SUFFIX,nitter.net
 DOMAIN-SUFFIX,nj.com
 DOMAIN-SUFFIX,njav.com
+DOMAIN-SUFFIX,njav.tv
 DOMAIN-SUFFIX,nl
 DOMAIN-SUFFIX,nmnm.fun
 DOMAIN-SUFFIX,no
@@ -1007,6 +1014,7 @@ DOMAIN-SUFFIX,pe
 DOMAIN-SUFFIX,peeringdb.com
 DOMAIN-SUFFIX,peing.net
 DOMAIN-SUFFIX,perfect-privacy.com
+DOMAIN-SUFFIX,periscope.tv
 DOMAIN-SUFFIX,ph
 DOMAIN-SUFFIX,phncdn.com
 DOMAIN-SUFFIX,photoshop.adobe.com
@@ -1068,6 +1076,7 @@ DOMAIN-SUFFIX,prowritingaid.com
 DOMAIN-SUFFIX,proxifier.com
 DOMAIN-SUFFIX,proxmox.com
 DOMAIN-SUFFIX,ps
+DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,ptt.cc
 DOMAIN-SUFFIX,pttweb.cc
 DOMAIN-SUFFIX,pusher.com
@@ -1326,7 +1335,6 @@ DOMAIN-SUFFIX,tumblr.com
 DOMAIN-SUFFIX,tunein.com
 DOMAIN-SUFFIX,turbobit.net
 DOMAIN-SUFFIX,tutanota.com
-DOMAIN-SUFFIX,tv
 DOMAIN-SUFFIX,tw
 DOMAIN-SUFFIX,twimg.co
 DOMAIN-SUFFIX,twimg.com

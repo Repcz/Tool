@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1543
+# 规则统计: 1551
 
 HOST,api.avax.network,Proxy
 HOST,api.revenuecat.com,Proxy
@@ -191,6 +191,7 @@ HOST-SUFFIX,bestbuy.com,Proxy
 HOST-SUFFIX,bet,Proxy
 HOST-SUFFIX,bet365.com,Proxy
 HOST-SUFFIX,bg,Proxy
+HOST-SUFFIX,bgm.tv,Proxy
 HOST-SUFFIX,bgp.tools,Proxy
 HOST-SUFFIX,bibox.com,Proxy
 HOST-SUFFIX,bikaa.xyz,Proxy
@@ -241,6 +242,7 @@ HOST-SUFFIX,bytevirt.com,Proxy
 HOST-SUFFIX,c-span.org,Proxy
 HOST-SUFFIX,c.mi.com,Proxy
 HOST-SUFFIX,ca,Proxy
+HOST-SUFFIX,cableav.tv,Proxy
 HOST-SUFFIX,cachefly.net,Proxy
 HOST-SUFFIX,cafe,Proxy
 HOST-SUFFIX,cal.com,Proxy
@@ -610,6 +612,7 @@ HOST-SUFFIX,gvt7.com,Proxy
 HOST-SUFFIX,gvt9.com,Proxy
 HOST-SUFFIX,gwtproject.org,Proxy
 HOST-SUFFIX,hackmd.io,Proxy
+HOST-SUFFIX,hanime.tv,Proxy
 HOST-SUFFIX,hanime1.com,Proxy
 HOST-SUFFIX,hanime1.me,Proxy
 HOST-SUFFIX,hanimeone.me,Proxy
@@ -710,8 +713,10 @@ HOST-SUFFIX,istockphoto.com,Proxy
 HOST-SUFFIX,it,Proxy
 HOST-SUFFIX,itasoftware.com,Proxy
 HOST-SUFFIX,itch.io,Proxy
+HOST-SUFFIX,iwara.tv,Proxy
 HOST-SUFFIX,ixxx.com,Proxy
 HOST-SUFFIX,j.mp,Proxy
+HOST-SUFFIX,jable.tv,Proxy
 HOST-SUFFIX,jav.pw,Proxy
 HOST-SUFFIX,jav321.com,Proxy
 HOST-SUFFIX,java.com,Proxy
@@ -875,6 +880,7 @@ HOST-SUFFIX,mozilla.com,Proxy
 HOST-SUFFIX,mozilla.org,Proxy
 HOST-SUFFIX,ms,Proxy
 HOST-SUFFIX,mubi.com,Proxy
+HOST-SUFFIX,muku.tv,Proxy
 HOST-SUFFIX,mullvad.net,Proxy
 HOST-SUFFIX,mx,Proxy
 HOST-SUFFIX,my,Proxy
@@ -919,6 +925,7 @@ HOST-SUFFIX,ninerealms.com,Proxy
 HOST-SUFFIX,nitter.net,Proxy
 HOST-SUFFIX,nj.com,Proxy
 HOST-SUFFIX,njav.com,Proxy
+HOST-SUFFIX,njav.tv,Proxy
 HOST-SUFFIX,nl,Proxy
 HOST-SUFFIX,nmnm.fun,Proxy
 HOST-SUFFIX,no,Proxy
@@ -1007,6 +1014,7 @@ HOST-SUFFIX,pe,Proxy
 HOST-SUFFIX,peeringdb.com,Proxy
 HOST-SUFFIX,peing.net,Proxy
 HOST-SUFFIX,perfect-privacy.com,Proxy
+HOST-SUFFIX,periscope.tv,Proxy
 HOST-SUFFIX,ph,Proxy
 HOST-SUFFIX,phncdn.com,Proxy
 HOST-SUFFIX,photoshop.adobe.com,Proxy
@@ -1068,6 +1076,7 @@ HOST-SUFFIX,prowritingaid.com,Proxy
 HOST-SUFFIX,proxifier.com,Proxy
 HOST-SUFFIX,proxmox.com,Proxy
 HOST-SUFFIX,ps,Proxy
+HOST-SUFFIX,pscp.tv,Proxy
 HOST-SUFFIX,ptt.cc,Proxy
 HOST-SUFFIX,pttweb.cc,Proxy
 HOST-SUFFIX,pusher.com,Proxy
@@ -1326,7 +1335,6 @@ HOST-SUFFIX,tumblr.com,Proxy
 HOST-SUFFIX,tunein.com,Proxy
 HOST-SUFFIX,turbobit.net,Proxy
 HOST-SUFFIX,tutanota.com,Proxy
-HOST-SUFFIX,tv,Proxy
 HOST-SUFFIX,tw,Proxy
 HOST-SUFFIX,twimg.co,Proxy
 HOST-SUFFIX,twimg.com,Proxy

@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 7585
+# 规则统计: 7588
 
 HOST,ccmdl.adobe.com,ProxyGFW
 HOST,cloud.oracle.com,ProxyGFW
@@ -679,6 +679,7 @@ HOST-SUFFIX,beyondfirewall.com,ProxyGFW
 HOST-SUFFIX,bfnn.org,ProxyGFW
 HOST-SUFFIX,bfsh.hk,ProxyGFW
 HOST-SUFFIX,bg,ProxyGFW
+HOST-SUFFIX,bgm.tv,ProxyGFW
 HOST-SUFFIX,bgme.me,ProxyGFW
 HOST-SUFFIX,bgp.tools,ProxyGFW
 HOST-SUFFIX,bgvpn.com,ProxyGFW
@@ -1238,6 +1239,7 @@ HOST-SUFFIX,cloudflare-dns.com,ProxyGFW
 HOST-SUFFIX,cloudflare-ipfs.com,ProxyGFW
 HOST-SUFFIX,cloudflare.com,ProxyGFW
 HOST-SUFFIX,cloudflare.dev,ProxyGFW
+HOST-SUFFIX,cloudflare.tv,ProxyGFW
 HOST-SUFFIX,cloudflareaccess.com,ProxyGFW
 HOST-SUFFIX,cloudflareapps.com,ProxyGFW
 HOST-SUFFIX,cloudflarepreview.com,ProxyGFW
@@ -4264,6 +4266,7 @@ HOST-SUFFIX,mthruf.com,ProxyGFW
 HOST-SUFFIX,mtw.tl,ProxyGFW
 HOST-SUFFIX,mubi.com,ProxyGFW
 HOST-SUFFIX,muchosucko.com,ProxyGFW
+HOST-SUFFIX,muku.tv,ProxyGFW
 HOST-SUFFIX,mullvad.net,ProxyGFW
 HOST-SUFFIX,multiply.com,ProxyGFW
 HOST-SUFFIX,multiproxy.org,ProxyGFW
@@ -4512,6 +4515,7 @@ HOST-SUFFIX,niusnews.com,ProxyGFW
 HOST-SUFFIX,nj.com,ProxyGFW
 HOST-SUFFIX,njactb.org,ProxyGFW
 HOST-SUFFIX,njav.com,ProxyGFW
+HOST-SUFFIX,njav.tv,ProxyGFW
 HOST-SUFFIX,njuice.com,ProxyGFW
 HOST-SUFFIX,nl,ProxyGFW
 HOST-SUFFIX,nlfreevpn.com,ProxyGFW
@@ -6453,7 +6457,6 @@ HOST-SUFFIX,turntable.fm,ProxyGFW
 HOST-SUFFIX,tushycash.com,ProxyGFW
 HOST-SUFFIX,tuvpn.com,ProxyGFW
 HOST-SUFFIX,tuzaijidi.com,ProxyGFW
-HOST-SUFFIX,tv,ProxyGFW
 HOST-SUFFIX,tv.com,ProxyGFW
 HOST-SUFFIX,tvants.com,ProxyGFW
 HOST-SUFFIX,tvb.com,ProxyGFW
