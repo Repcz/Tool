@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4431
+# 规则统计: 4433
 
 domain_set:
   - 0x0.st
@@ -1018,6 +1018,7 @@ domain_set:
   - cdnc.imagefap.com
   - cdne-pics.youjizz.com
   - cdnfonts.devolutions.net
+  - cdni.iconscout.com
   - cdni.pornpics.com
   - cdnjs.betterstack.com
   - cdnjs.buymeacoffee.com
@@ -2144,6 +2145,7 @@ domain_set:
   - perf.hsforms.com
   - pg2dhpc3p5ec22g3.jkforum.net
   - pgw.udn.com.tw
+  - ph.northflank.com
   - phishing.army
   - photos5.appleinsider.com
   - pic-bstarstatic.akamaized.net

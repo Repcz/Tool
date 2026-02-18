@@ -1,10 +1,6 @@
 # 规则名称: AI
-# 规则统计: 53
+# 规则统计: 49
 
-DOMAIN-KEYWORD,copilot
-DOMAIN-SUFFIX,diabrowser.com
-DOMAIN-SUFFIX,grokipedia.com
-DOMAIN-SUFFIX,genspark.ai
 DOMAIN,ai.google.dev
 DOMAIN,aida.googleapis.com
 DOMAIN,aisandbox-pa.googleapis.com
