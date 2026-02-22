@@ -1,11 +1,12 @@
 # 规则名称: AdGuardChinese
-# 规则统计: 5842
+# 规则统计: 5861
 
 domain_suffix_set:
   - 002777.xyz
   - 003store.com
   - 00p034d0dw.com
   - 011qt7cln.com
+  - 0171pjx5q.com
   - 01anf08rf.com
   - 02exl1ql2l.com
   - 03in08p3r1.com
@@ -363,6 +364,7 @@ domain_suffix_set:
   - 5fyme6x6uy.com
   - 5gg466kzv.com
   - 5h3wnuhr8.com
+  - 5hdz1gnue.com
   - 5hffr1p22j.com
   - 5hu7hee0pt.com
   - 5j45n3f6r.com
@@ -1017,6 +1019,7 @@ domain_suffix_set:
   - basically97.top
   - bastion1.top
   - batteryod.com
+  - bauddoih.com
   - bbbtttjjj.com
   - bbcz4tta.top
   - bbjzly.top
@@ -1485,6 +1488,7 @@ domain_suffix_set:
   - cupfox.app
   - cuqpi.cn
   - curthkivew.com
+  - cuutiethm.com
   - cwcnmtf.top
   - cwmlm.com
   - cxafybp.com
@@ -1950,6 +1954,7 @@ domain_suffix_set:
   - fdfghgfdd.yunqishi.net
   - fdi1rg6ihs.com
   - fe4c0422j.com
+  - feeceeyf.com
   - feernhuhe.com
   - fengnimabia.com
   - fenxi.com
@@ -1986,6 +1991,7 @@ domain_suffix_set:
   - fircokqe.com
   - firqacv.com
   - first-hufu.oss-cn-shanghai.aliyuncs.com
+  - fitchpmsa.com
   - fittomniku.com
   - fiu07031kl.com
   - fiu07041kl.com
@@ -2252,6 +2258,7 @@ domain_suffix_set:
   - godloveme.cn
   - gohgn02111la.com
   - gohgn02161la.com
+  - gohgn02211la.com
   - goi08130kh.com
   - goi08131kh.com
   - goi08141kh.com
@@ -2367,6 +2374,7 @@ domain_suffix_set:
   - h4htfgrei0.com
   - h5vem1jjft.com
   - h6295.com
+  - h8cjr6nhm.com
   - h8ne.com
   - hades.qyer.com
   - hanlinzhijia.net
@@ -2503,6 +2511,7 @@ domain_suffix_set:
   - hrwbeqv.icu
   - hrxphjcj.icu
   - hs.178yc.com
+  - hsjnnr.icu
   - hsvtdj.top
   - ht9s1j1bf.com
   - https-filtering-check.adtidy.org
@@ -2562,6 +2571,7 @@ domain_suffix_set:
   - i97wqa881u.com
   - i9i3ko2o70.com
   - iads.xinmin.cn
+  - iadsvbox2.com
   - iafg.cn
   - iaumyc.icu
   - iauw.cn
@@ -2725,6 +2735,7 @@ domain_suffix_set:
   - j.diangon.com
   - j.sdqoi2d.com
   - j1.piaobing.com
+  - j2fu64j4e.com
   - j2jtq0hpb.com
   - j33xvvanl.com
   - j3fvhzit0.com
@@ -2732,6 +2743,7 @@ domain_suffix_set:
   - j4s12kfavg.com
   - j694fx3bp.com
   - j7kv55pr70.com
+  - j85izots6.com
   - j8tzoy3xwn.com
   - jab88.com
   - jaimbai2b1.com
@@ -3446,6 +3458,7 @@ domain_suffix_set:
   - ndd3wvq0cw.com
   - ndja.cn
   - nebzrn.icu
+  - necessitate22.com
   - needle058.top
   - neldipbtg.com
   - nenlnl.icu
@@ -3914,6 +3927,7 @@ domain_suffix_set:
   - progress12.com
   - prologue23.com
   - promontory32.com
+  - ptga.cn
   - pthrumeath.com
   - ptju.cn
   - pttzjo.top
@@ -3934,6 +3948,7 @@ domain_suffix_set:
   - pwk73hidf2.com
   - pwvt.cn
   - px02mouzas.com
+  - pxdb08b82.com
   - pxhuiben.com
   - pxrbnf.icu
   - pxvbnt.top
@@ -4106,6 +4121,7 @@ domain_suffix_set:
   - r5twojylmzsym.top
   - r6q4mtfno.com
   - r6yigjfvp.com
+  - r7pnnukr.xyz
   - r7tqkqrvuz.com
   - r8ln4v4nef.com
   - ra0mpyy93.com
@@ -4518,6 +4534,7 @@ domain_suffix_set:
   - teeniaole.com
   - tejr.cn
   - telecome.cn
+  - telphiruq.com
   - tempest33.com
   - tenmax.io
   - teslaamg.obs.cn-east-3.myhuaweicloud.com
@@ -5134,6 +5151,7 @@ domain_suffix_set:
   - w58ce6.cc
   - w58ce6.com
   - w592be.cc
+  - w592be.com
   - w5ba5b.cc
   - w5ba5b.com
   - w5bi16f3co.com
@@ -5208,6 +5226,7 @@ domain_suffix_set:
   - wl.uqwjdhgv.top
   - wlberlaiw.com
   - wliksa.icu
+  - wlnaukfq.com
   - wlwgloo.icu
   - wlwgloo.top
   - wm.mipcdn.com
