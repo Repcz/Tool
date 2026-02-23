@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4434
+# 规则统计: 4436
 
 domain_set:
   - 0x0.st
@@ -569,6 +569,7 @@ domain_set:
   - cdn.configcat.com
   - cdn.consentmanager.net
   - cdn.contentful.com
+  - cdn.convertbox.com
   - cdn.conveythis.com
   - cdn.corso.com
   - cdn.cracked.sh
@@ -2252,6 +2253,7 @@ domain_set:
   - public.zoorix.com
   - publicsuffix.org
   - puku-dist.4gamers.com.tw
+  - purehalo.logto.io
   - pytorch.org
   - qmod.quotemedia.com
   - quests.armorgames.com
