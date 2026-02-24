@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4436
+# 规则统计: 4437
 
 domain_set:
   - 0x0.st
@@ -216,6 +216,7 @@ domain_set:
   - assets.map.brightcove.com
   - assets.mastercard.com
   - assets.matters.news
+  - assets.maxon.net
   - assets.mayoclinic.org
   - assets.mcp.corespeed.io
   - assets.media-platform.com
