@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4437
+# 规则统计: 4444
 
 HOST,0x0.st,CDN
 HOST,3dna.nationbuilder.com,CDN
@@ -184,6 +184,7 @@ HOST,assets.fxnetworks.com,CDN
 HOST,assets.garr.it,CDN
 HOST,assets.gcore.pro,CDN
 HOST,assets.geeksforgeeks.org,CDN
+HOST,assets.gemcommerce.com,CDN
 HOST,assets.genius.com,CDN
 HOST,assets.getkirby.com,CDN
 HOST,assets.getpostman.com,CDN
@@ -1089,6 +1090,7 @@ HOST,cms.blavity.com,CDN
 HOST,cms.mistral.ai,CDN
 HOST,cms.myfonts.com,CDN
 HOST,cms.recordedfuture.com,CDN
+HOST,cms.socialinsider.io,CDN
 HOST,cms.therecord.media,CDN
 HOST,cms.typenetwork.com,CDN
 HOST,cms.worldpokerdeals.com,CDN
@@ -1326,6 +1328,7 @@ HOST,file.zoom.us,CDN
 HOST,file1.hkepc.net,CDN
 HOST,files.armorgames.com,CDN
 HOST,files.buildwithfern.com,CDN
+HOST,files.gempages.net,CDN
 HOST,files.iwara.tv,CDN
 HOST,files.jotform.com,CDN
 HOST,files.kick.com,CDN
@@ -1594,6 +1597,7 @@ HOST,images.idgesg.net,CDN
 HOST,images.indianexpress.com,CDN
 HOST,images.justwatch.com,CDN
 HOST,images.kick.com,CDN
+HOST,images.klipfolio.com,CDN
 HOST,images.loox.io,CDN
 HOST,images.macrumors.com,CDN
 HOST,images.mathworks.com,CDN
@@ -1616,6 +1620,7 @@ HOST,images.purevpn-tools.com,CDN
 HOST,images.samsung.com,CDN
 HOST,images.scalero.io,CDN
 HOST,images.scrolller.com,CDN
+HOST,images.socialblade.com,CDN
 HOST,images.softwaresuggest.com,CDN
 HOST,images.spectrumnews1.com,CDN
 HOST,images.spot.im,CDN
@@ -1799,6 +1804,7 @@ HOST,imgproxy.fourthwall.com,CDN
 HOST,imgrs.apkcombo.com,CDN
 HOST,imgs.plurk.com,CDN
 HOST,imgs.search.brave.com,CDN
+HOST,imgs.socialinsider.io,CDN
 HOST,imgs.xkcd.com,CDN
 HOST,imgs02.aventertainments.com,CDN
 HOST,imgs3.hcaptcha.com,CDN
@@ -3161,6 +3167,7 @@ HOST,widgets-red.media.weather.com,CDN
 HOST,widgets.automizely.com,CDN
 HOST,widgets.coaches.gnc.com,CDN
 HOST,widgets.flickr.com,CDN
+HOST,widgets.goaffpro.app,CDN
 HOST,widgets.listenlive.co,CDN
 HOST,widgets.media.weather.com,CDN
 HOST,widgets.outbrain.com,CDN

@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4437
+# 规则统计: 4444
 
 domain_set:
   - 0x0.st
@@ -185,6 +185,7 @@ domain_set:
   - assets.garr.it
   - assets.gcore.pro
   - assets.geeksforgeeks.org
+  - assets.gemcommerce.com
   - assets.genius.com
   - assets.getkirby.com
   - assets.getpostman.com
@@ -1090,6 +1091,7 @@ domain_set:
   - cms.mistral.ai
   - cms.myfonts.com
   - cms.recordedfuture.com
+  - cms.socialinsider.io
   - cms.therecord.media
   - cms.typenetwork.com
   - cms.worldpokerdeals.com
@@ -1327,6 +1329,7 @@ domain_set:
   - file1.hkepc.net
   - files.armorgames.com
   - files.buildwithfern.com
+  - files.gempages.net
   - files.iwara.tv
   - files.jotform.com
   - files.kick.com
@@ -1595,6 +1598,7 @@ domain_set:
   - images.indianexpress.com
   - images.justwatch.com
   - images.kick.com
+  - images.klipfolio.com
   - images.loox.io
   - images.macrumors.com
   - images.mathworks.com
@@ -1617,6 +1621,7 @@ domain_set:
   - images.samsung.com
   - images.scalero.io
   - images.scrolller.com
+  - images.socialblade.com
   - images.softwaresuggest.com
   - images.spectrumnews1.com
   - images.spot.im
@@ -1800,6 +1805,7 @@ domain_set:
   - imgrs.apkcombo.com
   - imgs.plurk.com
   - imgs.search.brave.com
+  - imgs.socialinsider.io
   - imgs.xkcd.com
   - imgs02.aventertainments.com
   - imgs3.hcaptcha.com
@@ -3162,6 +3168,7 @@ domain_set:
   - widgets.automizely.com
   - widgets.coaches.gnc.com
   - widgets.flickr.com
+  - widgets.goaffpro.app
   - widgets.listenlive.co
   - widgets.media.weather.com
   - widgets.outbrain.com
