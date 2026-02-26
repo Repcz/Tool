@@ -1,5 +1,5 @@
 # 规则名称: AdGuardChinese
-# 规则统计: 5900
+# 规则统计: 5910
 
 domain_suffix_set:
   - 002777.xyz
@@ -734,6 +734,7 @@ domain_suffix_set:
   - abody.39.net
   - ac.86huoche.com
   - ac.art456.com
+  - ac00qmnjz.com
   - ac1.pingpingw.com
   - academic96.top
   - acc.3gbizhi.com
@@ -1434,6 +1435,7 @@ domain_suffix_set:
   - cocojen.cdn.bcebos.com
   - cod.southmoney.com
   - code.ditiezu.net
+  - code.geonamebase.com
   - code.wenbanzhu.com
   - coisj3nil.com
   - cokudsvit.com
@@ -1704,7 +1706,6 @@ domain_suffix_set:
   - dnpz123.com
   - dns.chuzushijian.cn
   - dogwoode09.top
-  - domain1.chahaoba.cn
   - dongtukj.oss-cn-hongkong.aliyuncs.com
   - doubleclick.ctfile.com
   - downmn.com
@@ -1848,6 +1849,7 @@ domain_suffix_set:
   - elmerpmsd.com
   - elqfsq.icu
   - elsbfby.com
+  - elviraawa.com
   - em7ky342lo.com
   - embofjpks.com
   - emdcadvertise.eastmoney.com
@@ -1928,6 +1930,7 @@ domain_suffix_set:
   - f20r1b13iw.com
   - f3k194f9i7.com
   - f4h123m89w.com
+  - f5nn75ozf.com
   - f6jd4k4xgo.com
   - f7eiavl95.com
   - f7tkpjw6v.com
@@ -2276,6 +2279,7 @@ domain_suffix_set:
   - gohgn02231la.com
   - gohgn02240la.com
   - gohgn02241la.com
+  - gohgn02251la.com
   - goi08130kh.com
   - goi08131kh.com
   - goi08141kh.com
@@ -4179,6 +4183,7 @@ domain_suffix_set:
   - rdoq.cn
   - rdut.cn
   - re.taotaosou.com
+  - re0rlupcz.com
   - re41qiitb1.com
   - receiptgg.top
   - recognize04.top
@@ -4445,6 +4450,7 @@ domain_suffix_set:
   - spoh.cn
   - spongeds.com
   - sportuay.com
+  - sq5f10q3d.com
   - sqif.cn
   - sqiorli2w.com
   - sqmn4wncty.com
@@ -4877,6 +4883,7 @@ domain_suffix_set:
   - undergoon.com
   - undertow52.top
   - undm.qibulo.com
+  - unenviable89.com
   - uniicreative.com
   - union-wifi.com
   - union.china.com.cn
@@ -4903,6 +4910,7 @@ domain_suffix_set:
   - uroz44gxhx.com
   - urwh.cn
   - usbpalsmfz.com
+  - usc8nll40.com
   - usejj.makepolo.cn
   - usejj.wangkl.com
   - ussxvwu.online
@@ -5046,6 +5054,7 @@ domain_suffix_set:
   - vid12101hl.com
   - vid12110hl.com
   - video231.oss-cn-beijing.aliyuncs.com
+  - vidsgs4x4.com
   - vinoinqih.com
   - vinsgcs.com
   - violetop33.top
@@ -5722,6 +5731,7 @@ domain_suffix_set:
   - z1.pclady.com.cn
   - z198vxfuy3.com
   - z1e2vp1gw.com
+  - z1el6lgol.com
   - z1hihu.xmcimg.com
   - z2ke56999.com
   - z2ubj8bpk.com
