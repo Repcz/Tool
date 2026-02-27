@@ -1,5 +1,5 @@
 # 规则名称: TikTok
-# 规则统计: 96
+# 规则统计: 81
 
 DOMAIN,api.snapkit.com
 DOMAIN,cocacola.co.jp
@@ -19,22 +19,6 @@ DOMAIN,p1-tt.byteimg.com
 DOMAIN,p26-tt.byteimg.com
 DOMAIN,p3-tt-ipv6.byteimg.com
 DOMAIN,p9-tt.byteimg.com
-DOMAIN,pull-f3-hs.pstatp.com
-DOMAIN,pull-f5-hs.flive.pstatp.com
-DOMAIN,pull-f5-hs.pstatp.com
-DOMAIN,pull-f5-mus.pstatp.com
-DOMAIN,pull-flv-f1-hs.pstatp.com
-DOMAIN,pull-flv-f6-hs.pstatp.com
-DOMAIN,pull-flv-l1-hs.pstatp.com
-DOMAIN,pull-flv-l1-mus.pstatp.com
-DOMAIN,pull-flv-l6-hs.pstatp.com
-DOMAIN,pull-hls-l1-mus.pstatp.com
-DOMAIN,pull-l3-hs.pstatp.com
-DOMAIN,pull-rtmp-f1-hs.pstatp.com
-DOMAIN,pull-rtmp-f6-hs.pstatp.com
-DOMAIN,pull-rtmp-l1-hs.pstatp.com
-DOMAIN,pull-rtmp-l1-mus.pstatp.com
-DOMAIN,pull-rtmp-l6-hs.pstatp.com
 DOMAIN,roovza-launches.appsflyersdk.com
 DOMAIN-SUFFIX,bytedance.com
 DOMAIN-SUFFIX,bytedance.net
@@ -58,6 +42,7 @@ DOMAIN-SUFFIX,isnssdk.com
 DOMAIN-SUFFIX,muscdn.com
 DOMAIN-SUFFIX,musemuse.cn
 DOMAIN-SUFFIX,musical.ly
+DOMAIN-SUFFIX,pstatp.com
 DOMAIN-SUFFIX,sgpstatp.com
 DOMAIN-SUFFIX,sgsnssdk.com
 DOMAIN-SUFFIX,tik-tokapi.com

@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4460
+# 规则统计: 4466
 
 domain_set:
   - 0x0.st
@@ -545,6 +545,7 @@ domain_set:
   - cdn.builder.io
   - cdn.builderprofile.aws.dev
   - cdn.bullwhip.cloud
+  - cdn.buttercms.com
   - cdn.buymeacoffee.com
   - cdn.c1.amplience.net
   - cdn.calibermind.com
@@ -1606,6 +1607,7 @@ domain_set:
   - images.mathworks.com
   - images.mattel.net
   - images.microcms-assets.io
+  - images.mobilism.org
   - images.moegoat.com
   - images.moovitapp.com
   - images.newrepublic.com
@@ -2830,6 +2832,7 @@ domain_set:
   - static.vinted.com
   - static.vocadb.net
   - static.webclicks24.com
+  - static.websites.data-crypt.com
   - static.whatsapp.net
   - static.workday.com
   - static.wwto.net
@@ -3095,6 +3098,7 @@ domain_set:
   - vectorified.com
   - versionbadg.es
   - vetted.ai
+  - vg-bunny-cdn.b-cdn.net
   - vice-prod.sdiapi.com
   - vice-web-statics-cdn.vice.com
   - video-images.vice.com
@@ -3529,6 +3533,7 @@ domain_suffix_set:
   - easylist.to
   - ebayimg.com
   - ebaystatic.com
+  - eclipsecontent.org
   - edge.storage-yahoo.jp
   - edgeone.app
   - edgestorewebcdn.azureedge.net
@@ -3677,6 +3682,7 @@ domain_suffix_set:
   - hscollectedforms.net
   - hsstatic.net
   - hsto.org
+  - htv-hydaelyn.com
   - hubspotlinks.com
   - hubspotusercontent-eu1.net
   - hubspotusercontent-na1.net

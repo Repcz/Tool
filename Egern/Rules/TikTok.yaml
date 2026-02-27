@@ -1,5 +1,5 @@
 # 规则名称: TikTok
-# 规则统计: 96
+# 规则统计: 81
 
 domain_set:
   - api.snapkit.com
@@ -20,22 +20,6 @@ domain_set:
   - p26-tt.byteimg.com
   - p3-tt-ipv6.byteimg.com
   - p9-tt.byteimg.com
-  - pull-f3-hs.pstatp.com
-  - pull-f5-hs.flive.pstatp.com
-  - pull-f5-hs.pstatp.com
-  - pull-f5-mus.pstatp.com
-  - pull-flv-f1-hs.pstatp.com
-  - pull-flv-f6-hs.pstatp.com
-  - pull-flv-l1-hs.pstatp.com
-  - pull-flv-l1-mus.pstatp.com
-  - pull-flv-l6-hs.pstatp.com
-  - pull-hls-l1-mus.pstatp.com
-  - pull-l3-hs.pstatp.com
-  - pull-rtmp-f1-hs.pstatp.com
-  - pull-rtmp-f6-hs.pstatp.com
-  - pull-rtmp-l1-hs.pstatp.com
-  - pull-rtmp-l1-mus.pstatp.com
-  - pull-rtmp-l6-hs.pstatp.com
   - roovza-launches.appsflyersdk.com
 domain_suffix_set:
   - bytedance.com
@@ -60,6 +44,7 @@ domain_suffix_set:
   - muscdn.com
   - musemuse.cn
   - musical.ly
+  - pstatp.com
   - sgpstatp.com
   - sgsnssdk.com
   - tik-tokapi.com

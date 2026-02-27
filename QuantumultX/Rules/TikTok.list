@@ -1,5 +1,5 @@
 # 规则名称: TikTok
-# 规则统计: 96
+# 规则统计: 81
 
 HOST,api.snapkit.com,TikTok
 HOST,cocacola.co.jp,TikTok
@@ -19,22 +19,6 @@ HOST,p1-tt.byteimg.com,TikTok
 HOST,p26-tt.byteimg.com,TikTok
 HOST,p3-tt-ipv6.byteimg.com,TikTok
 HOST,p9-tt.byteimg.com,TikTok
-HOST,pull-f3-hs.pstatp.com,TikTok
-HOST,pull-f5-hs.flive.pstatp.com,TikTok
-HOST,pull-f5-hs.pstatp.com,TikTok
-HOST,pull-f5-mus.pstatp.com,TikTok
-HOST,pull-flv-f1-hs.pstatp.com,TikTok
-HOST,pull-flv-f6-hs.pstatp.com,TikTok
-HOST,pull-flv-l1-hs.pstatp.com,TikTok
-HOST,pull-flv-l1-mus.pstatp.com,TikTok
-HOST,pull-flv-l6-hs.pstatp.com,TikTok
-HOST,pull-hls-l1-mus.pstatp.com,TikTok
-HOST,pull-l3-hs.pstatp.com,TikTok
-HOST,pull-rtmp-f1-hs.pstatp.com,TikTok
-HOST,pull-rtmp-f6-hs.pstatp.com,TikTok
-HOST,pull-rtmp-l1-hs.pstatp.com,TikTok
-HOST,pull-rtmp-l1-mus.pstatp.com,TikTok
-HOST,pull-rtmp-l6-hs.pstatp.com,TikTok
 HOST,roovza-launches.appsflyersdk.com,TikTok
 HOST-SUFFIX,bytedance.com,TikTok
 HOST-SUFFIX,bytedance.net,TikTok
@@ -58,6 +42,7 @@ HOST-SUFFIX,isnssdk.com,TikTok
 HOST-SUFFIX,muscdn.com,TikTok
 HOST-SUFFIX,musemuse.cn,TikTok
 HOST-SUFFIX,musical.ly,TikTok
+HOST-SUFFIX,pstatp.com,TikTok
 HOST-SUFFIX,sgpstatp.com,TikTok
 HOST-SUFFIX,sgsnssdk.com,TikTok
 HOST-SUFFIX,tik-tokapi.com,TikTok
