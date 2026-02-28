@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4466
+# 规则统计: 4467
 
 domain_set:
   - 0x0.st
@@ -862,6 +862,7 @@ domain_set:
   - cdn.sunofbeaches.com
   - cdn.super.com
   - cdn.svgator.com
+  - cdn.svgporn.com
   - cdn.syftdata.com
   - cdn.tailwindcss.com
   - cdn.tatlerasia.com
