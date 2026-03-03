@@ -1,5 +1,5 @@
 # 规则名称: AdGuardChinese
-# 规则统计: 5952
+# 规则统计: 5968
 
 domain_suffix_set:
   - 002777.xyz
@@ -198,6 +198,7 @@ domain_suffix_set:
   - 224oztn8dq.com
   - 22588888.com
   - 22eo9qlbpt.com
+  - 2345.com
   - 2481e.com
   - 24y0c8hek.com
   - 2529.com
@@ -303,6 +304,7 @@ domain_suffix_set:
   - 4aqoxkesav.com
   - 4bo5t8fzd.com
   - 4br824ktty.com
+  - 4cxup4kp3c.com
   - 4d45i6p0g.com
   - 4d9f09z8c.com
   - 4e9ynqm47d.com
@@ -881,6 +883,7 @@ domain_suffix_set:
   - aiwen.cc
   - aixuntupian.oss-cn-hongkong.aliyuncs.com
   - aizhantj.com
+  - ajjo5hsvlp.com
   - ajoxxit.top
   - ajua.cn
   - ak03150hou.com
@@ -920,6 +923,7 @@ domain_suffix_set:
   - aoydwg.icu
   - apajku.icu
   - apeacc.icu
+  - api.shanghailingye.cn
   - apiiksn.top
   - apis301.com
   - apk02061oo.xyz
@@ -1109,6 +1113,7 @@ domain_suffix_set:
   - behavior65.top
   - bei5029.xyz
   - beijing.buzhi5.com
+  - beizi.biz
   - bekd.cn
   - benchmark84.top
   - bendrunb.com
@@ -1288,6 +1293,7 @@ domain_suffix_set:
   - c.28rv.com
   - c.91wan.com
   - c.admaster.com.cn
+  - c.etoolads.cn
   - c.mnjkw.cn
   - c.nuhcpf.com
   - c.tvsou.com
@@ -1302,6 +1308,7 @@ domain_suffix_set:
   - c1qm3mg41.com
   - c21x8nmdak.com
   - c3q6l5oeq.com
+  - c3vzqvifsn.com
   - c4ru5li2sa.com
   - c6.friok.com
   - c64ihqx0gj.com
@@ -1594,6 +1601,7 @@ domain_suffix_set:
   - ddgjjj.com
   - ddjs5wde2.com
   - ddow.cn
+  - ddpoupmu.icu
   - ddrqd9eox.com
   - de.as.pptv.com
   - decision567.com
@@ -1960,6 +1968,8 @@ domain_suffix_set:
   - fakxqq.cn
   - fam-8.net
   - familly56.top
+  - fancyapi.com
+  - fancydsp.com
   - fantasylow.com
   - fanyi100.com.cn
   - fanzhuang.net.cn
@@ -1971,6 +1981,7 @@ domain_suffix_set:
   - fc.3dmgame.com
   - fc09u3zfm.com
   - fcbdpock.icu
+  - fco896oi39.com
   - fd2k1fa6oe.com
   - fdbv.cn
   - fdetolgput.com
@@ -2558,6 +2569,7 @@ domain_suffix_set:
   - ht9s1j1bf.com
   - https-filtering-check.adtidy.org
   - hua4207.xyz
+  - hubcloud.com.cn
   - humiliatedaboveboardwho.com
   - hunzlj.icu
   - huo07091hy.com
@@ -3761,6 +3773,7 @@ domain_suffix_set:
   - oljqmw.icu
   - olpv.cn
   - omelette12.top
+  - omes-sec.heytapmobi.com
   - onchilurg.com
   - ondrotnw.com
   - one.fsylr.com
@@ -3995,6 +4008,7 @@ domain_suffix_set:
   - ptju.cn
   - pttzjo.top
   - ptxcfn.icu
+  - puata.info
   - pub.funshion.com
   - pudtyek.com
   - pugzutzi.com
@@ -5428,12 +5442,14 @@ domain_suffix_set:
   - xc.macd.cn
   - xc.mydrivers.com
   - xcf-bd-js.chuimg.com
+  - xcultur.com
   - xdea.cn
   - xdh0808.com
   - xdoriq.cn
   - xdyjt.com
   - xdyn03010jy.com
   - xdyn03011jy.com
+  - xdyn03021jy.com
   - xebetp.icu
   - xeccotftw.com
   - xegnfwkju.com
