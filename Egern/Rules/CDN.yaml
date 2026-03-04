@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4468
+# 规则统计: 4469
 
 domain_set:
   - 0x0.st
@@ -595,6 +595,7 @@ domain_set:
   - cdn.decrypt.co
   - cdn.decrypt.day
   - cdn.delight-vr.com
+  - cdn.delve.co
   - cdn.designerapp.osi.office.net
   - cdn.designsystem.arm.com
   - cdn.deta.space
