@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 857
+# 规则统计: 858
 
 domain_set:
   - acg.tv
@@ -234,6 +234,7 @@ domain_suffix_set:
   - cibntv.net
   - cloudglab.com
   - cls.cn
+  - cm.steampowered.com
   - cmbchina.cn
   - cmbchina.com
   - cmbimg.cn

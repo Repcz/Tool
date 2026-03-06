@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4469
+# 规则统计: 4474
 
 domain_set:
   - 0x0.st
@@ -166,6 +166,7 @@ domain_set:
   - assets.dify.ai
   - assets.dnsfilter.com
   - assets.documentcloud.org
+  - assets.driffle.com
   - assets.dub.co
   - assets.ecomm.ui.com
   - assets.embeddables.com
@@ -252,6 +253,7 @@ domain_set:
   - assets.raspberrypi.com
   - assets.redbullshop.com
   - assets.repair.org
+  - assets.reviews.io
   - assets.safing.io
   - assets.salesmartly.com
   - assets.scaleflex.com
@@ -510,6 +512,7 @@ domain_set:
   - cdn.adsninja.ca
   - cdn.affine.pro
   - cdn.aimerce.ai
+  - cdn.allkeyshop.com
   - cdn.amcharts.com
   - cdn.amgreatness.com
   - cdn.animenewsnetwork.com
@@ -1892,7 +1895,6 @@ domain_set:
   - launcher.spot.im
   - launchercontent.mojang.com
   - lc.nssurge.com
-  - lcdn-locator.apple.com
   - learn-attachment.microsoft.com
   - learn.optimizely.com
   - lecontent.sololearn.com
@@ -2657,6 +2659,7 @@ domain_set:
   - static.crypto.com
   - static.deepl.com
   - static.doujins.com
+  - static.driffle.com
   - static.drtuber.com
   - static.dw.com
   - static.dzeninfra.ru
@@ -3167,6 +3170,7 @@ domain_set:
   - website-media.deel.com
   - website-prod.cache.wpscdn.com
   - webstatic.chargebee.com
+  - widget.allkeyshop.com
   - widget.automizely.com
   - widget.datablocks.se
   - widget.docsbot.ai
@@ -3175,6 +3179,7 @@ domain_set:
   - widget.gotolstoy.com
   - widget.intercom.io
   - widget.kapa.ai
+  - widget.reviews.io
   - widget.trustpilot.com
   - widget.usepylon.com
   - widget.user.com
