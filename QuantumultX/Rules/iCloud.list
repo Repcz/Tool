@@ -1,5 +1,5 @@
 # 规则名称: iCloud
-# 规则统计: 59
+# 规则统计: 60
 
 HOST-SUFFIX,apple-cloudkit.com,iCloud
 HOST-SUFFIX,apple-icloud.cn,iCloud
@@ -15,6 +15,7 @@ HOST-SUFFIX,icloud-isupport.com,iCloud
 HOST-SUFFIX,icloud-sandbox.com,iCloud
 HOST-SUFFIX,icloud.apple.com,iCloud
 HOST-SUFFIX,icloud.ch,iCloud
+HOST-SUFFIX,icloud.cn,iCloud
 HOST-SUFFIX,icloud.com,iCloud
 HOST-SUFFIX,icloud.com.cn,iCloud
 HOST-SUFFIX,icloud.de,iCloud
