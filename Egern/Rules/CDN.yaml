@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4474
+# 规则统计: 4479
 
 domain_set:
   - 0x0.st
@@ -540,6 +540,7 @@ domain_set:
   - cdn.blogarama.com
   - cdn.bogos.io
   - cdn.boldmethod.com
+  - cdn.boostcommerce.io
   - cdn.botframework.com
   - cdn.branch.io
   - cdn.brandfetch.io
@@ -639,6 +640,7 @@ domain_set:
   - cdn.forms.office.net
   - cdn.fosstodon.org
   - cdn.fourthwall.com
+  - cdn.foxycart.com
   - cdn.freebiesupply.com
   - cdn.freecodecamp.org
   - cdn.freesound.org
@@ -667,6 +669,7 @@ domain_set:
   - cdn.hextom.com
   - cdn.highporn.net
   - cdn.hiive.space
+  - cdn.himetrica.com
   - cdn.hinative.com
   - cdn.hk01.com
   - cdn.hongkongcard.com
@@ -1190,6 +1193,7 @@ domain_set:
   - data.pendo.io
   - data.schemaapp.com
   - data.web.clickup.com
+  - data3.answerbase.com
   - david-dm.org
   - db.onlinewebfonts.com
   - dc-cdn.cdw.com
@@ -4172,6 +4176,7 @@ domain_suffix_set:
   - ssl-images-amazon.com
   - sstatic.net
   - stack.imgur.com
+  - stackassets.com
   - stackblitz.io
   - stapecdn.com
   - static-assets.photoshop.adobe.com
