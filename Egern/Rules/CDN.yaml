@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4479
+# 规则统计: 4480
 
 domain_set:
   - 0x0.st
@@ -115,6 +115,7 @@ domain_set:
   - assets-growth-common.circleci.com
   - assets-next.matters.news
   - assets-next.mattersprotocol.io
+  - assets-proxy.anthropic.com
   - assets-s3-us-east-1.ceros.com
   - assets-themes.chess.com
   - assets-v2.i-scmp.com
