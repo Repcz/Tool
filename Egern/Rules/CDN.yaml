@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4480
+# 规则统计: 4483
 
 domain_set:
   - 0x0.st
@@ -1298,6 +1298,7 @@ domain_set:
   - eu2.hamreus.com
   - eu3.hamreus.com
   - euc-widget.freshworks.com
+  - event-assets.gsma.com
   - event.ithome.com.tw
   - events-delivery.apple.com
   - events-live.apple.com
@@ -1316,6 +1317,7 @@ domain_set:
   - f002.backblazeb2.com
   - f003.backblazeb2.com
   - f004.backblazeb2.com
+  - fa.gsma.com
   - fast.appcues.com
   - fast.chameleon.io
   - fast.wistia.com
@@ -3609,6 +3611,7 @@ domain_suffix_set:
   - fncstatic.com
   - fontawesome.com
   - fonts.com
+  - fonts.gsma.com
   - fonts.net
   - forbesimg.com
   - forgecdn.net
