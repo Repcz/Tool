@@ -1,5 +1,5 @@
 # 规则名称: AdGuardChinese
-# 规则统计: 5913
+# 规则统计: 5933
 
 domain_suffix_set:
   - 002777.xyz
@@ -236,6 +236,7 @@ domain_suffix_set:
   - 2wq9u06jq.com
   - 2xx63f0bfy.com
   - 2zjftxgl5s.com
+  - 2ztav5r7r.com
   - 3.5646.cn
   - 3.cjcp.cn
   - 3.ssqzj.com
@@ -440,6 +441,7 @@ domain_suffix_set:
   - 6jei0t6xp.com
   - 6jyi7mzae.com
   - 6k2fehacp.com
+  - 6knlhnjfv.com
   - 6kpudsordv.com
   - 6m8tk53pw.com
   - 6mdf9teiz.com
@@ -1507,6 +1509,7 @@ domain_suffix_set:
   - css.zmjm.com
   - ctc.weather.com.cn
   - ctdv3faci.com
+  - ctirhpp.com
   - ctsp4jao1.com
   - cubaobei.com
   - cucnmtf.top
@@ -1956,6 +1959,7 @@ domain_suffix_set:
   - faamhel.com
   - facai383.oss-cn-guangzhou.aliyuncs.com
   - fadjqqe.top
+  - fagmiethe.com
   - fagp.cn
   - fahwlqf37l.com
   - fajdhuhdh.com
@@ -1971,6 +1975,7 @@ domain_suffix_set:
   - fawb62hh9.com
   - fb2newr2nm.com
   - fbhorutgy.com
+  - fbraaphra.com
   - fbtacriikh.com
   - fc.3dmgame.com
   - fc09u3zfm.com
@@ -2090,6 +2095,7 @@ domain_suffix_set:
   - fsmnmorgb.com
   - fsnazsmk.icu
   - fsu1cg19c.com
+  - fsuooh.cc
   - ftrfnx.icu
   - fttzfw.top
   - fufemnirr.com
@@ -2375,6 +2381,7 @@ domain_suffix_set:
   - gtcbai.icu
   - gtfccewpo.com
   - gtj1myjla.com
+  - gtmajs.click
   - gtokii.icu
   - gtrphahmu.com
   - gtuy6el1hd.com
@@ -2556,6 +2563,7 @@ domain_suffix_set:
   - hrxphjcj.icu
   - hrxwfp.icu
   - hs.178yc.com
+  - hsehk.cn
   - hsjnnr.icu
   - hsvtdj.top
   - ht9s1j1bf.com
@@ -2614,6 +2622,7 @@ domain_suffix_set:
   - i5q1t8vj9.com
   - i5qquywfz.com
   - i5rp73ne9h.com
+  - i6nnwepgm.com
   - i73u6dnnh.com
   - i7bqmgn87.com
   - i7mfm1hl44.com
@@ -2883,6 +2892,7 @@ domain_suffix_set:
   - jollyspring.com
   - jpg1.oss-cn-beijing.aliyuncs.com
   - jphyjv.icu
+  - jpzbjh.icu
   - jqbhtv.icu
   - jqmr7zssmd.com
   - jqs77n9x.xyz
@@ -3295,6 +3305,7 @@ domain_suffix_set:
   - mall0.qiyipic.com
   - manage.wdfans.cn
   - manifest97.com
+  - mapbbqy.com
   - market.178.com
   - market.21cn.com
   - market.duowan.com
@@ -3612,6 +3623,7 @@ domain_suffix_set:
   - nneephon.com
   - nnglgliginnglgligi.top
   - nnntxx.icu
+  - nnuc.cn
   - nnvx.cn
   - norse.mingxiaow.com
   - novikanidf.com
@@ -3737,6 +3749,7 @@ domain_suffix_set:
   - oiu132jhz.com
   - oizs.cn
   - oj2c0dkk4.com
+  - ojg8sflgl.com
   - ojh9bc9puh.com
   - ojizau.icu
   - ojn1zxz0ni.com
@@ -3879,6 +3892,7 @@ domain_suffix_set:
   - pbwlwdzje.com
   - pcmxcdjbgo.com
   - pcxnrr.icu
+  - pdhwzl.icu
   - pdrerzug.com
   - pdrv.cn
   - pealefe.com
@@ -4500,6 +4514,7 @@ domain_suffix_set:
   - stmnfilur.com
   - strakvad.com
   - strawberryy14.top
+  - stringent19.com
   - stsgus.icu
   - stubborn80.top
   - su0k43kcy.com
@@ -5261,6 +5276,7 @@ domain_suffix_set:
   - wl.uqwjdhgv.top
   - wlberlaiw.com
   - wlemdl1yx.com
+  - wlgjz02mo.com
   - wliksa.icu
   - wlnaukfq.com
   - wlwgloo.icu
@@ -5397,6 +5413,8 @@ domain_suffix_set:
   - xdyn03091jy.com
   - xdyn03100jy.com
   - xdyn03101jy.com
+  - xdyn03110jy.com
+  - xdyn03111jy.com
   - xebetp.icu
   - xeccotftw.com
   - xegnfwkju.com
@@ -5495,6 +5513,8 @@ domain_suffix_set:
   - xscp03091xq.com
   - xscp03100xq.com
   - xscp03101xq.com
+  - xscp03110xq.com
+  - xscp03111xq.com
   - xsrezl.icu
   - xsti.cn
   - xsvyvr.top
