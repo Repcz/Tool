@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4483
+# 规则统计: 4484
 
 domain_set:
   - 0x0.st
@@ -4402,6 +4402,7 @@ domain_suffix_set:
   - ziffstatic.com
   - ziglang.org
   - zippyshare.com
+  - zkcdn.net
   - zohocdn.com
   - zohostatic.com
   - zohostatic.eu
