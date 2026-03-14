@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4484
+# 规则统计: 4486
 
 domain_set:
   - 0x0.st
@@ -262,6 +262,7 @@ domain_set:
   - assets.science.nasa.gov
   - assets.sendinblue.com
   - assets.shazam.com
+  - assets.shots.so
   - assets.slater.app
   - assets.sololearn.com
   - assets.speedvitals.com
@@ -3847,6 +3848,7 @@ domain_suffix_set:
   - jsdelivr.net
   - jspm.dev
   - jspm.io
+  - jspm.org
   - jstatic.xyz
   - jw-cdn.org
   - jwpcdn.com
