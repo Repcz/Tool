@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4486
+# 规则统计: 4488
 
 HOST,0x0.st,CDN
 HOST,3dna.nationbuilder.com,CDN
@@ -1412,6 +1412,7 @@ HOST,geoip-js.com,CDN
 HOST,geojson.io,CDN
 HOST,geoserveis.icgc.cat,CDN
 HOST,gfx-data.news-engineering.aws.wapo.pub,CDN
+HOST,gibs-c.earthdata.nasa.gov,CDN
 HOST,gitpkg-fork.vercel.sh,CDN
 HOST,global-assets.fitch.group,CDN
 HOST,global.divhunt.com,CDN
@@ -1946,6 +1947,7 @@ HOST,makerworld.bblmw.com,CDN
 HOST,mangaz-books.j-comi.jp,CDN
 HOST,mangaz-static.j-comi.jp,CDN
 HOST,mantisloader.mantis-awx.com,CDN
+HOST,map.adsbexchange.com,CDN
 HOST,map.vesselfinder.net,CDN
 HOST,maps.geoapify.com,CDN
 HOST,maps.gstatic.com,CDN

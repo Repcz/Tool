@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4486
+# 规则统计: 4488
 
 domain_set:
   - 0x0.st
@@ -1413,6 +1413,7 @@ domain_set:
   - geojson.io
   - geoserveis.icgc.cat
   - gfx-data.news-engineering.aws.wapo.pub
+  - gibs-c.earthdata.nasa.gov
   - gitpkg-fork.vercel.sh
   - global-assets.fitch.group
   - global.divhunt.com
@@ -1947,6 +1948,7 @@ domain_set:
   - mangaz-books.j-comi.jp
   - mangaz-static.j-comi.jp
   - mantisloader.mantis-awx.com
+  - map.adsbexchange.com
   - map.vesselfinder.net
   - maps.geoapify.com
   - maps.gstatic.com
