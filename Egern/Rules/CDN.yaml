@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4493
+# 规则统计: 4494
 
 domain_set:
   - 0x0.st
@@ -2447,6 +2447,7 @@ domain_set:
   - script.custobar.com
   - scripts.dailymail.co.uk
   - scripts.scriptwrapper.com
+  - scripts.tabler.io
   - scripts.webeo.com
   - sdata.ndtv.com
   - sdk-cdn.fun.xyz
