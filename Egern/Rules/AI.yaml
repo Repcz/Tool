@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 49
+# 规则统计: 50
 
 domain_set:
   - ai.google.dev
@@ -53,3 +53,5 @@ domain_suffix_set:
 domain_keyword_set:
   - alkalimakersuite-pa.clients6.google.com
   - openai
+url_regex_set:
+  - "https://www\.google\.com/.*continue=https://gemini\.google\.com.+"

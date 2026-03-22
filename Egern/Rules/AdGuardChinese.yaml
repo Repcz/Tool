@@ -1,5 +1,5 @@
 # 规则名称: AdGuardChinese
-# 规则统计: 6044
+# 规则统计: 6055
 
 domain_suffix_set:
   - 002777.xyz
@@ -511,6 +511,7 @@ domain_suffix_set:
   - 7qxv9s5q16.com
   - 7rag9q1on.com
   - 7ryx7ph5y.com
+  - 7s8z7w24u.com
   - 7strqfn56s.com
   - 7tshsz6k1.com
   - 7u4b8l1zt.com
@@ -1450,6 +1451,7 @@ domain_suffix_set:
   - cinemaup.top
   - cj81gcvm2.com
   - cj99fbulb4.com
+  - cja0m4iew.com
   - cjphjf4zm.com
   - ck4g3p2x92.com
   - ckg.vipyl.com
@@ -1571,6 +1573,7 @@ domain_suffix_set:
   - d1pmhihatyvp1k.cloudfront.net
   - d1zoi2q7y0e4d.cloudfront.net
   - d24fx92qb.com
+  - d2c1htpgj.com
   - d2kadvyeq051an.cloudfront.net
   - d2un76zvb5mgzx.cloudfront.net
   - d37d9zbli5ytch.cloudfront.net
@@ -1878,6 +1881,7 @@ domain_suffix_set:
   - eitorawrdo.com
   - eiv.baidu.com
   - eiyu7532.xyz
+  - ejiwvof.icu
   - ejunshi.com
   - ekdtywtkc.com
   - eknz.cn
@@ -2533,6 +2537,8 @@ domain_suffix_set:
   - hh04041aoik.com
   - hh04050aoik.com
   - hhba03201kdh.com
+  - hhba03210kdh.com
+  - hhba03211kdh.com
   - hhdus.com
   - hhppzkhurf.com
   - hhr3ybjsoy.com
@@ -3618,6 +3624,7 @@ domain_suffix_set:
   - nghv.cn
   - ngjcvn.top
   - ngjfjf.icu
+  - ngvrtj.icu
   - ngygalitlv.com
   - nh3ymjjdkx.com
   - nhlrzf.icu
@@ -4423,6 +4430,7 @@ domain_suffix_set:
   - s1.wesiedu.com
   - s11.cn
   - s1918.cc
+  - s1gr2198h.com
   - s2dln6sdu.com
   - s3-nl-01.mangabuddy.in
   - s3t75j8o7.com
@@ -4444,6 +4452,7 @@ domain_suffix_set:
   - salsifyua22.com
   - same.chinadaily.com.cn
   - same.eastmoney.com
+  - sandbank56.com
   - sandbank68.com
   - sanme2.taisantech.com
   - saptuqse29.com
@@ -5182,6 +5191,7 @@ domain_suffix_set:
   - vmyv.cn
   - vncq.cn
   - vnig0.cn
+  - vnlozunyvl.com
   - vnurqroibt.com
   - vnwu.cn
   - vnyqemhir.com
@@ -5442,6 +5452,7 @@ domain_suffix_set:
   - wvcnmte.top
   - wvepppysvo.com
   - wvrp.cn
+  - wvxi9jbnt.com
   - wvzd.cn
   - wwcnmte.top
   - wwmnga.icu

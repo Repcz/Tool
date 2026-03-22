@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 49
+# 规则统计: 50
 
 DOMAIN,ai.google.dev
 DOMAIN,aida.googleapis.com
@@ -50,3 +50,4 @@ DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,x.ai
 DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
 DOMAIN-KEYWORD,openai
+URL-REGEX,https://www\.google\.com/.*continue=https://gemini\.google\.com.+
