@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4493
+# 规则统计: 4494
 
 DOMAIN,0x0.st
 DOMAIN,3dna.nationbuilder.com
@@ -3231,6 +3231,7 @@ DOMAIN,www.10086.win
 DOMAIN,www.acgpix.de
 DOMAIN,www.bbthat.com
 DOMAIN,www.envoyproxy.io
+DOMAIN,www.fumadocs.dev
 DOMAIN,www.gstatic.com
 DOMAIN,www.pngmart.com
 DOMAIN,www.tbstat.com
@@ -4436,6 +4437,7 @@ DOMAIN-KEYWORD,static.trustpilot.com
 DOMAIN-KEYWORD,vdownload.hanime1
 DOMAIN-KEYWORD,vod-adaptive.akamaized.net
 DOMAIN-KEYWORD,web-assets.zendesk
+DOMAIN-REGEX,*-intake-*-datadoghq.com
 DOMAIN-REGEX,*.fsvod?.com
 DOMAIN-REGEX,*.img.*.sendibm?.com
 DOMAIN-REGEX,*.kuaikan-cdn?.com
@@ -4445,7 +4447,6 @@ DOMAIN-REGEX,assets*.freshdesk.com
 DOMAIN-REGEX,assets.*.imaga.co
 DOMAIN-REGEX,blog-imgs-??.2nt.com
 DOMAIN-REGEX,blog-imgs-??.fc2.com
-DOMAIN-REGEX,browser-intake-*-datadoghq.com
 DOMAIN-REGEX,cdn*.boysfood.com
 DOMAIN-REGEX,cdn*.pigav.com
 DOMAIN-REGEX,cdn*.porn87.com

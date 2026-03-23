@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4493
+# 规则统计: 4494
 
 domain_set:
   - 0x0.st
@@ -3232,6 +3232,7 @@ domain_set:
   - www.acgpix.de
   - www.bbthat.com
   - www.envoyproxy.io
+  - www.fumadocs.dev
   - www.gstatic.com
   - www.pngmart.com
   - www.tbstat.com
@@ -4440,6 +4441,7 @@ domain_keyword_set:
   - vod-adaptive.akamaized.net
   - web-assets.zendesk
 domain_wildcard_set:
+  - "*-intake-*-datadoghq.com"
   - "*.fsvod?.com"
   - "*.img.*.sendibm?.com"
   - "*.kuaikan-cdn?.com"
@@ -4449,7 +4451,6 @@ domain_wildcard_set:
   - "assets.*.imaga.co"
   - "blog-imgs-??.2nt.com"
   - "blog-imgs-??.fc2.com"
-  - "browser-intake-*-datadoghq.com"
   - "cdn*.boysfood.com"
   - "cdn*.pigav.com"
   - "cdn*.porn87.com"
