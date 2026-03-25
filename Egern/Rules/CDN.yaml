@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4494
+# 规则统计: 4499
 
 domain_set:
   - 0x0.st
@@ -307,6 +307,7 @@ domain_set:
   - assets0.headwayapp.co
   - assets1.lottiefiles.com
   - assets10.lottiefiles.com
+  - assets2.blubrry.com
   - assets2.canny.io
   - assets2.lottiefiles.com
   - assets3.lottiefiles.com
@@ -940,6 +941,7 @@ domain_set:
   - cdn.zeabur.com
   - cdn.zhujiwiki.com
   - cdn.zigpoll.com
+  - cdn.zolplay.com
   - cdn0-i.techbang.com
   - cdn0.dan.com
   - cdn0.iconfinder.com
@@ -1638,6 +1640,7 @@ domain_set:
   - images.profile.autodesk.com
   - images.ptt.cc
   - images.purevpn-tools.com
+  - images.rss.app
   - images.samsung.com
   - images.scalero.io
   - images.scrolller.com
@@ -1844,6 +1847,7 @@ domain_set:
   - interwiki.scpwiki.com
   - interwiki.scpwikicn.com
   - ip-ranges.amazonaws.com
+  - ipxy.io
   - irp-cdn.multiscreensite.com
   - isitmaintained.com
   - j.udn.com.tw
@@ -2631,6 +2635,7 @@ domain_set:
   - static.apkpure.com
   - static.arxiv.org
   - static.assetlab.io
+  - static.assets-stash.eet-china.com
   - static.axios.com
   - static.bad.news
   - static.bangumi.moe
