@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4499
+# 规则统计: 4500
 
 domain_set:
   - 0x0.st
@@ -3550,6 +3550,7 @@ domain_suffix_set:
   - drtst.com
   - dsc.cloud
   - dtci-pe-vp-image-resizer.platform.edgedatg.com
+  - dubassets.com
   - dubcdn.com
   - dummyimage.com
   - dummyjson.com
