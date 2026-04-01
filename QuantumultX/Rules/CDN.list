@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4506
+# 规则统计: 4511
 
 HOST,0x0.st,CDN
 HOST,3dna.nationbuilder.com,CDN
@@ -1384,6 +1384,7 @@ HOST,font-public.canva.com,CDN
 HOST,fonts.bunny.net,CDN
 HOST,fonts.cat.net,CDN
 HOST,fonts.codeberg.org,CDN
+HOST,fonts.garmin.com,CDN
 HOST,fonts.gishan.cc,CDN
 HOST,fonts.googleapis.com,CDN
 HOST,fonts.gstatic.com,CDN
@@ -2325,6 +2326,7 @@ HOST,res-geo.cdn.office.net,CDN
 HOST,res.abc.net.au,CDN
 HOST,res.cloudinary.com,CDN
 HOST,res.craft.do,CDN
+HOST,res.garmin.com,CDN
 HOST,res2.weblium.site,CDN
 HOST,resize-image.vocus.cc,CDN
 HOST,resize.blogsys.jp,CDN
@@ -2495,6 +2497,7 @@ HOST,sf-ibf-va.larksuitecdn.com,CDN
 HOST,sf19-scmcdn.larksuitecdn.com,CDN
 HOST,sfiles.cnyes.cool,CDN
 HOST,sg-thumbnail-drive.mypikpak.com,CDN
+HOST,share-assets.fe.garmin.com,CDN
 HOST,share.chessbase.com,CDN
 HOST,shell.cdn.office.net,CDN
 HOST,shopify.cleverecommerce.com,CDN
@@ -2707,6 +2710,7 @@ HOST,static.foxnews.com,CDN
 HOST,static.frame.work,CDN
 HOST,static.freedownloadmanager.org,CDN
 HOST,static.freeimages.com,CDN
+HOST,static.garmin.com,CDN
 HOST,static.generated.photos,CDN
 HOST,static.getbutton.io,CDN
 HOST,static.getpostman.com,CDN
@@ -3646,6 +3650,7 @@ HOST-SUFFIX,gadgets360cdn.com,CDN
 HOST-SUFFIX,gamccdn.com,CDN
 HOST-SUFFIX,gamesgamescdn.com,CDN
 HOST-SUFFIX,gammacdn.com,CDN
+HOST-SUFFIX,garmincdn.com,CDN
 HOST-SUFFIX,gateway.originprotocol.com,CDN
 HOST-SUFFIX,gateway.pinata.cloud,CDN
 HOST-SUFFIX,gateway.serph.network,CDN

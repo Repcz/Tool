@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4506
+# 规则统计: 4511
 
 domain_set:
   - 0x0.st
@@ -1385,6 +1385,7 @@ domain_set:
   - fonts.bunny.net
   - fonts.cat.net
   - fonts.codeberg.org
+  - fonts.garmin.com
   - fonts.gishan.cc
   - fonts.googleapis.com
   - fonts.gstatic.com
@@ -2326,6 +2327,7 @@ domain_set:
   - res.abc.net.au
   - res.cloudinary.com
   - res.craft.do
+  - res.garmin.com
   - res2.weblium.site
   - resize-image.vocus.cc
   - resize.blogsys.jp
@@ -2496,6 +2498,7 @@ domain_set:
   - sf19-scmcdn.larksuitecdn.com
   - sfiles.cnyes.cool
   - sg-thumbnail-drive.mypikpak.com
+  - share-assets.fe.garmin.com
   - share.chessbase.com
   - shell.cdn.office.net
   - shopify.cleverecommerce.com
@@ -2708,6 +2711,7 @@ domain_set:
   - static.frame.work
   - static.freedownloadmanager.org
   - static.freeimages.com
+  - static.garmin.com
   - static.generated.photos
   - static.getbutton.io
   - static.getpostman.com
@@ -3648,6 +3652,7 @@ domain_suffix_set:
   - gamccdn.com
   - gamesgamescdn.com
   - gammacdn.com
+  - garmincdn.com
   - gateway.originprotocol.com
   - gateway.pinata.cloud
   - gateway.serph.network
