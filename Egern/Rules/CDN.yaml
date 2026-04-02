@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4513
+# 规则统计: 4516
 
 domain_set:
   - 0x0.st
@@ -278,6 +278,7 @@ domain_set:
   - assets.stigg.io
   - assets.streamlinehq.com
   - assets.swoogo.com
+  - assets.tangled.network
   - assets.tatlerasia.com
   - assets.the-independent.com
   - assets.tigerdata.com
@@ -333,6 +334,7 @@ domain_set:
   - auth.split.io
   - avatar.freepik.com
   - avatar.stefanjudis.com
+  - avatar.tangled.sh
   - avatar2.bahamut.com.tw
   - avatars.dicebear.com
   - avatars.dzeninfra.ru
@@ -3657,6 +3659,7 @@ domain_suffix_set:
   - garmincdn.com
   - gateway.originprotocol.com
   - gateway.pinata.cloud
+  - gateway.scarf.sh
   - gateway.serph.network
   - gauthstatic.com
   - gayzyimage.com
