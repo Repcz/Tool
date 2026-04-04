@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4516
+# 规则统计: 4517
 
 domain_set:
   - 0x0.st
@@ -1297,6 +1297,7 @@ domain_set:
   - eomd1.fembeqq.xyz
   - epic-social-social-modules-prod.ol.epicgames.com
   - error.rakuten.co.jp
+  - errors.figma.com
   - eslint-react.xyz
   - eslint.org
   - eslint.style
