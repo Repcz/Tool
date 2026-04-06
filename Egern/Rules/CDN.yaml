@@ -244,6 +244,7 @@ domain_set:
   - assets.openshift.net
   - assets.orz.uno
   - assets.peatio.com
+  - assets.pingie.com
   - assets.pixlee.com
   - assets.play.xbox.com
   - assets.plurk.com
@@ -2173,7 +2174,6 @@ domain_set:
   - p2.bahamut.com.tw
   - pa1.aninoapps.com
   - pacdn.500px.org
-  - package-assets.oomol.com
   - packages.jetbrains.team
   - panel-production-libs.b-cdn.net
   - participants.evolv.ai
@@ -2800,7 +2800,6 @@ domain_set:
   - static.olelive.com
   - static.onlinewebfonts.com
   - static.onlyfans.com
-  - static.oomol.com
   - static.openreplay.com
   - static.opensea.io
   - static.opensuse.org
@@ -3239,6 +3238,7 @@ domain_set:
   - wl-apps.yourwebsite.life
   - wp.salesforce.com
   - wpmedia.tealium.com
+  - wre-assets.prod.mapping.strava.com
   - ws-assets.zoominfo.com
   - ws-cdn.nperf.com
   - ws2-cache.aptoide.com
