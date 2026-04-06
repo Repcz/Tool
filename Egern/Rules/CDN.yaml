@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4517
+# 规则统计: 4519
 
 domain_set:
   - 0x0.st
@@ -1037,6 +1037,7 @@ domain_set:
   - cdn8.bigcommerce.com
   - cdn9.bigcommerce.com
   - cdna.artstation.com
+  - cdna.pcpartpicker.com
   - cdnapi.kaltura.com
   - cdnassets.roboflow.com
   - cdnb.artstation.com
@@ -2154,6 +2155,7 @@ domain_set:
   - optimizationguide-pa.googleapis.com
   - optimizely.com
   - organizer.bizzabo.com
+  - origin.picgo.net
   - osint.digitalside.it
   - oss.1p3a.com
   - oss.moe.cat
