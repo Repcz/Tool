@@ -1,5 +1,5 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 903
+# 规则统计: 905
 
 DOMAIN-SUFFIX,1500020991.vodplayer.wxamedia.com
 DOMAIN-SUFFIX,1500022744.vodplayer.wxamedia.com
@@ -201,6 +201,7 @@ DOMAIN-SUFFIX,ap.dongqiudi.com
 DOMAIN-SUFFIX,apd-pcdnwxlogin.teg.tencent-cloud.net
 DOMAIN-SUFFIX,apd-pcdnwxnat.teg.tencent-cloud.net
 DOMAIN-SUFFIX,apd-pcdnwxstat.teg.tencent-cloud.net
+DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao-b.com
 DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao.com
 DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao1.com
 DOMAIN-SUFFIX,api-access.pangolin-sdk-toutiao2.com
@@ -550,6 +551,7 @@ DOMAIN-SUFFIX,mobads-pre-config.cdn.bcebos.com
 DOMAIN-SUFFIX,mobads.baidu.com
 DOMAIN-SUFFIX,mobaliyun.res.mgtv.com
 DOMAIN-SUFFIX,mobile.da.mgtv.com
+DOMAIN-SUFFIX,mobile.events.data.microsoft.com
 DOMAIN-SUFFIX,mobilead.kuwo.cn
 DOMAIN-SUFFIX,mobilelog.kugou.com
 DOMAIN-SUFFIX,mobilelog.upqzfile.com

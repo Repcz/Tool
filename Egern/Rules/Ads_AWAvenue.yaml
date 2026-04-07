@@ -1,5 +1,5 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 903
+# 规则统计: 905
 
 domain_suffix_set:
   - 1500020991.vodplayer.wxamedia.com
@@ -202,6 +202,7 @@ domain_suffix_set:
   - apd-pcdnwxlogin.teg.tencent-cloud.net
   - apd-pcdnwxnat.teg.tencent-cloud.net
   - apd-pcdnwxstat.teg.tencent-cloud.net
+  - api-access.pangolin-sdk-toutiao-b.com
   - api-access.pangolin-sdk-toutiao.com
   - api-access.pangolin-sdk-toutiao1.com
   - api-access.pangolin-sdk-toutiao2.com
@@ -551,6 +552,7 @@ domain_suffix_set:
   - mobads.baidu.com
   - mobaliyun.res.mgtv.com
   - mobile.da.mgtv.com
+  - mobile.events.data.microsoft.com
   - mobilead.kuwo.cn
   - mobilelog.kugou.com
   - mobilelog.upqzfile.com
