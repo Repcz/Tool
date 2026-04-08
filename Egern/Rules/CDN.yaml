@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4519
+# 规则统计: 4524
 
 domain_set:
   - 0x0.st
@@ -863,6 +863,7 @@ domain_set:
   - cdn.skymavis.com
   - cdn.smooch.io
   - cdn.snaptravel.com
+  - cdn.socket.io
   - cdn.softswiss.net
   - cdn.sphlabs.com
   - cdn.split.io
@@ -1275,6 +1276,7 @@ domain_set:
   - embed-ssl.wistia.com
   - embed-v2.testimonial.to
   - embed.culturalspot.org
+  - embed.getwally.net
   - embed.reddit.com
   - embed.runkit.com
   - embed.savvycal.com
@@ -2000,6 +2002,7 @@ domain_set:
   - media.contentapi.ea.com
   - media.convertkit.com
   - media.crazyshit.com
+  - media.currys.biz
   - media.d.tube
   - media.daily.dev
   - media.datacenterdynamics.com
@@ -2751,6 +2754,7 @@ domain_set:
   - static.ipgeolocation.io
   - static.iplocate.io
   - static.iris.informa.com
+  - static.isitetv.com
   - static.itch.io
   - static.iyf.tv
   - static.izanmei.icu
@@ -4467,6 +4471,7 @@ domain_keyword_set:
   - web-assets.zendesk
 domain_wildcard_set:
   - "*-intake-*-datadoghq.com"
+  - "*-intake.*.datadoghq.com"
   - "*.fsvod?.com"
   - "*.img.*.sendibm?.com"
   - "*.kuaikan-cdn?.com"
