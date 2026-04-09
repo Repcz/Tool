@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1551
+# 规则统计: 1553
 
 DOMAIN,api.avax.network
 DOMAIN,api.revenuecat.com
@@ -517,6 +517,7 @@ DOMAIN-SUFFIX,g.co
 DOMAIN-SUFFIX,g2.com
 DOMAIN-SUFFIX,gameflare.com
 DOMAIN-SUFFIX,gameloft.com
+DOMAIN-SUFFIX,garmin.com
 DOMAIN-SUFFIX,gartner.com
 DOMAIN-SUFFIX,gate.io
 DOMAIN-SUFFIX,gcld-line.com
@@ -694,6 +695,7 @@ DOMAIN-SUFFIX,instatus.com
 DOMAIN-SUFFIX,intel.com
 DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,internet.org
+DOMAIN-SUFFIX,intervals.icu
 DOMAIN-SUFFIX,intodns.com
 DOMAIN-SUFFIX,ip-api.com
 DOMAIN-SUFFIX,ip-scan.adspower.net

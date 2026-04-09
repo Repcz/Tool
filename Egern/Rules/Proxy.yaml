@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1549
+# 规则统计: 1551
 
 no_resolve: true
 domain_set:
@@ -520,6 +520,7 @@ domain_suffix_set:
   - g2.com
   - gameflare.com
   - gameloft.com
+  - garmin.com
   - gartner.com
   - gate.io
   - gcld-line.com
@@ -697,6 +698,7 @@ domain_suffix_set:
   - intel.com
   - intercom.io
   - internet.org
+  - intervals.icu
   - intodns.com
   - ip-api.com
   - ip-scan.adspower.net

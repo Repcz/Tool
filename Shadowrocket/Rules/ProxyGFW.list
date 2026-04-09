@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 7588
+# 规则统计: 7590
 
 DOMAIN,ccmdl.adobe.com
 DOMAIN,cloud.oracle.com
@@ -2339,6 +2339,7 @@ DOMAIN-SUFFIX,gaozhisheng.org
 DOMAIN-SUFFIX,gardennetworks.com
 DOMAIN-SUFFIX,gardennetworks.org
 DOMAIN-SUFFIX,garena.com
+DOMAIN-SUFFIX,garmin.com
 DOMAIN-SUFFIX,gartlive.com
 DOMAIN-SUFFIX,gartner.com
 DOMAIN-SUFFIX,garudalinux.org
@@ -3379,6 +3380,7 @@ DOMAIN-SUFFIX,internetdefenseleague.org
 DOMAIN-SUFFIX,internetfreedom.org
 DOMAIN-SUFFIX,internetpopculture.com
 DOMAIN-SUFFIX,interseclab.org
+DOMAIN-SUFFIX,intervals.icu
 DOMAIN-SUFFIX,inthenameofconfuciusmovie.com
 DOMAIN-SUFFIX,intodns.com
 DOMAIN-SUFFIX,invidio.us

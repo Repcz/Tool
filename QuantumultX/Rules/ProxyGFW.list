@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 7588
+# 规则统计: 7590
 
 HOST,ccmdl.adobe.com,ProxyGFW
 HOST,cloud.oracle.com,ProxyGFW
@@ -2339,6 +2339,7 @@ HOST-SUFFIX,gaozhisheng.org,ProxyGFW
 HOST-SUFFIX,gardennetworks.com,ProxyGFW
 HOST-SUFFIX,gardennetworks.org,ProxyGFW
 HOST-SUFFIX,garena.com,ProxyGFW
+HOST-SUFFIX,garmin.com,ProxyGFW
 HOST-SUFFIX,gartlive.com,ProxyGFW
 HOST-SUFFIX,gartner.com,ProxyGFW
 HOST-SUFFIX,garudalinux.org,ProxyGFW
@@ -3379,6 +3380,7 @@ HOST-SUFFIX,internetdefenseleague.org,ProxyGFW
 HOST-SUFFIX,internetfreedom.org,ProxyGFW
 HOST-SUFFIX,internetpopculture.com,ProxyGFW
 HOST-SUFFIX,interseclab.org,ProxyGFW
+HOST-SUFFIX,intervals.icu,ProxyGFW
 HOST-SUFFIX,inthenameofconfuciusmovie.com,ProxyGFW
 HOST-SUFFIX,intodns.com,ProxyGFW
 HOST-SUFFIX,invidio.us,ProxyGFW
