@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1553
+# 规则统计: 1554
 
 DOMAIN,api.avax.network
 DOMAIN,api.revenuecat.com
@@ -818,6 +818,7 @@ DOMAIN-SUFFIX,macaddress.io
 DOMAIN-SUFFIX,macpaw.com
 DOMAIN-SUFFIX,macupdate.com
 DOMAIN-SUFFIX,madewithcode.com
+DOMAIN-SUFFIX,magic.link
 DOMAIN-SUFFIX,mailchimp.com
 DOMAIN-SUFFIX,majsoul.union-game.com
 DOMAIN-SUFFIX,makerworld.com

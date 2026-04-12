@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 7590
+# 规则统计: 7591
 
 HOST,ccmdl.adobe.com,ProxyGFW
 HOST,cloud.oracle.com,ProxyGFW
@@ -3957,6 +3957,7 @@ HOST-SUFFIX,madou.club,ProxyGFW
 HOST-SUFFIX,madrau.com,ProxyGFW
 HOST-SUFFIX,madthumbs.com,ProxyGFW
 HOST-SUFFIX,magic-net.info,ProxyGFW
+HOST-SUFFIX,magic.link,ProxyGFW
 HOST-SUFFIX,mahabodhi.org,ProxyGFW
 HOST-SUFFIX,mahjongsoul.com,ProxyGFW
 HOST-SUFFIX,maiio.net,ProxyGFW

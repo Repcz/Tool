@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1551
+# 规则统计: 1552
 
 no_resolve: true
 domain_set:
@@ -821,6 +821,7 @@ domain_suffix_set:
   - macpaw.com
   - macupdate.com
   - madewithcode.com
+  - magic.link
   - mailchimp.com
   - majsoul.union-game.com
   - makerworld.com

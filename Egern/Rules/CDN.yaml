@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4524
+# 规则统计: 4526
 
 domain_set:
   - 0x0.st
@@ -153,6 +153,7 @@ domain_set:
   - assets.change.org
   - assets.chaos.social
   - assets.clever-cloud.com
+  - assets.clibo.tw
   - assets.clickfunnels.com
   - assets.cloudpilot.ai
   - assets.cmcmarkets.com
@@ -2036,6 +2037,7 @@ domain_set:
   - media.licdn.com
   - media.loom-app.com
   - media.maptiler.com
+  - media.marshmallow-qa.com
   - media.mas.to
   - media.masto.nu
   - media.minecraftforum.net

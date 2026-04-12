@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 7590
+# 规则统计: 7591
 
 DOMAIN,ccmdl.adobe.com
 DOMAIN,cloud.oracle.com
@@ -3957,6 +3957,7 @@ DOMAIN-SUFFIX,madou.club
 DOMAIN-SUFFIX,madrau.com
 DOMAIN-SUFFIX,madthumbs.com
 DOMAIN-SUFFIX,magic-net.info
+DOMAIN-SUFFIX,magic.link
 DOMAIN-SUFFIX,mahabodhi.org
 DOMAIN-SUFFIX,mahjongsoul.com
 DOMAIN-SUFFIX,maiio.net
