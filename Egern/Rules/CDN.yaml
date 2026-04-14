@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4526
+# 规则统计: 4534
 
 domain_set:
   - 0x0.st
@@ -24,6 +24,7 @@ domain_set:
   - affportal.bhphoto.com
   - agi.armorgames.com
   - ah-cdn.merge.dev
+  - ahrefscomscreenshot-3b70.kxcdn.com
   - aimg.fc2.com
   - ajax.cat.net
   - ajax.cdnjs.com
@@ -566,6 +567,7 @@ domain_set:
   - cdn.calibermind.com
   - cdn.cameo.com
   - cdn.camweara.com
+  - cdn.candu.ai
   - cdn.candy.ai
   - cdn.casestudies.svc.ui.com
   - cdn.casetify.com
@@ -2198,6 +2200,7 @@ domain_set:
   - pg2dhpc3p5ec22g3.jkforum.net
   - pgw.udn.com.tw
   - ph.northflank.com
+  - ph.tryprofound.com
   - phishing.army
   - photos5.appleinsider.com
   - pic-bstarstatic.akamaized.net
@@ -2220,6 +2223,7 @@ domain_set:
   - pics2.serviporno.com
   - pictures-cdn.porn.com
   - pim-media.intel.com
+  - pixel-cdn.default.com
   - pixoraa.cc
   - pkg-cdn.jetbrains.team
   - pkg-size.dev
@@ -2577,6 +2581,7 @@ domain_set:
   - static-3.bitchute.com
   - static-4.bitchute.com
   - static-act.imoim.net
+  - static-app.ahrefs.com
   - static-app.klaviyo.com
   - static-assets-1.truthsocial.com
   - static-assets-prod.epicgames.com
@@ -2836,6 +2841,7 @@ domain_set:
   - static.scarf.sh
   - static.sdkassets.chime.aws
   - static.seel.com
+  - static.semrush.com
   - static.serverhunter.com
   - static.skyassets.com
   - static.smartframe.io
@@ -2864,6 +2870,7 @@ domain_set:
   - static.tp-link.com
   - static.tradingview.com
   - static.tronscan.org
+  - static.tryprofound.com
   - static.tumblr.com
   - static.tvtropes.org
   - static.twitchcdn.net
@@ -2988,6 +2995,7 @@ domain_set:
   - telemetry.nextjs.org
   - telemetry.split.io
   - telemetry.stepsecurity.io
+  - telemetry.timescale.com
   - telemetry.vercel.com
   - telemetry2.devolutions.net
   - test.manyse.com
