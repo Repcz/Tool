@@ -28,20 +28,18 @@ dns:
   enhanced-mode: redir-host
   default-nameserver: [1.1.1.1]
   nameserver: [8.8.4.4, 1.1.1.1]
+  
+rules:
+  - MATCH,DIRECT
 
 listeners: #搭建代理节点
 
-  - name: hy2
-    type: hysteria2
-    port: 65111
+  - name: anytls
+    type: anytls
+    port: 60112
     listen: 0.0.0.0
     users:
-      user1: password1
-    up: 200
-    down: 30
-    masquerade: "https://bing.com"
-    alpn:
-    - h3
+      username1: +53N4IrJVaULrc7h4xGN6g==
     # openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout /root/mihomo/server.key -out /root/mihomo/server.crt -subj "/CN=bing.com" -days 36500 && sudo chown mihomo /root/mihomo/server.key && sudo chown mihomo /root/mihomo/server.crt
-    certificate: ./server.crt
+    certificate: ./server.crt # 证书 PEM 格式，或者 证书的路径
     private-key: ./server.key

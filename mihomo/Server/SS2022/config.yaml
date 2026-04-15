@@ -5,16 +5,16 @@
 #
 # 以 '#' 或 '//' 开头的配置文件行为注释行
 #
-# Mihomo Version ≥ 1.8.4
+# Mihomo Version ≥ 1.19.23
 #
-# 最后更新时间: 2025-02-27 23:00
+# 最后更新时间: 2026-04-15 22:00
 #
 # ================
 
 mixed-port: 65222 # HTTP(S) 和 SOCKS 代理混合端口
 tcp-concurrent: true # TCP 并发连接所有 IP, 将使用最快握手的 TCP
 allow-lan: false # 允许局域网连接
-ipv6: true # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录
+ipv6: false # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录
 log-level: info # 日志等级 silent/error/warning/info/debug
 
 hosts:
@@ -23,11 +23,12 @@ hosts:
 dns:
   enable: true
   listen: :65223 # 开启 DNS 服务器监听
-  ipv6: true # false 将返回 AAAA 的空结果
+  ipv6: false # false 将返回 AAAA 的空结果
   use-hosts: true # 查询 hosts
   enhanced-mode: redir-host
+  default-nameserver: [1.1.1.1]
   nameserver: [8.8.4.4, 1.1.1.1]
-
+  
 rules:
   - MATCH,DIRECT
 
@@ -35,20 +36,16 @@ listeners: #搭建代理节点
 
   - name: SS2022
     type: shadowsocks
-    port: 65112
-    listen: "::"
-    cipher: 2022-blake3-aes-256-gcm # 2022-blake3-aes-128-gcm/2022-blake3-aes-256-gcm/2022-blake3-chacha20-poly1305
-    password: SaAj4IC+cHEyWoCaUXeNBE+A8DcqKRsOELe4FOuuNJE= # openssl rand --base64 32
+    port: 60111
+    listen: 0.0.0.0
+    cipher: 2022-blake3-aes-128-gcm
+    password: +53N4IrJVaULrc7h4xGN6g==
     udp: true
-    udp-over-tcp: false
-    ip-version: ipv4-prefer
-
-    smux:
-      enabled: true
-      protocol: h2mux
-      max-connections: 0
-      min-streams: 0
-      max-streams: 1
-      statistic: true
-      only-tcp: false
-      padding: true
+    shadow-tls:
+       enable: true 
+       version: 3
+       users:
+         - name: 1
+           password: +53N4IrJVaULrc7h4xGN6g==
+       handshake:
+         dest: www.icloud.com:443
