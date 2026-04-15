@@ -1,5 +1,5 @@
 # 规则名称: Ads_Dlerio
-# 规则统计: 8280
+# 规则统计: 8239
 
 HOST,118.89.204.198,Ads_Dlerio
 HOST,ad.bn.netease.com,Ads_Dlerio
@@ -8239,45 +8239,4 @@ IP-CIDR,61.160.200.242/32,Ads_Dlerio
 IP-CIDR,61.160.200.252/32,Ads_Dlerio
 IP-CIDR,61.174.50.214/32,Ads_Dlerio
 IP6-CIDR,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,Ads_Dlerio
-URL-REGEX,http:\/\/[\s\S]*baidu\.com\/\.*ad[xs]\.php,Ads_Dlerio
-URL-REGEX,http:\/\/app\.bilibili\.com\/x\/v2\/dataflow\/report-TINYGIF,Ads_Dlerio
-URL-REGEX,http:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule,Ads_Dlerio
-URL-REGEX,http:\/\/iad\.*mat\.[a-z]*\.12[67]\.net\/\w+\.(jpg|mp4),Ads_Dlerio
-URL-REGEX,http:\/\/p\d\.music\.126\.net\/\w+==\/\d+\.jpg,Ads_Dlerio
-URL-REGEX,https:\/\/api\.bilibili\.com\/pgc\/season\/rank\/cn,Ads_Dlerio
-URL-REGEX,https:\/\/api\.zhihu\.com\.*(launch|recommendations),Ads_Dlerio
-URL-REGEX,https:\/\/api\.zhihu\.com\/(fringe|zst|real_time|ad-style-service|banners|topstory/hot-lists|market/popover|mqtt|me|.*launch|.*featured-comment-ad|search/(top|tabs|preset)),Ads_Dlerio
-URL-REGEX,https:\/\/api\.zhihu\.com\/answers\/\.*\/comments\/featured-comment-ad,Ads_Dlerio
-URL-REGEX,https:\/\/api\.zhihu\.com\/search\/(top|tabs|preset),Ads_Dlerio
-URL-REGEX,https:\/\/app\.bilibili\.com\/x\/resource\/abtest,Ads_Dlerio
-URL-REGEX,https:\/\/app\.bilibili\.com\/x\/v2\/param,Ads_Dlerio
-URL-REGEX,https:\/\/app\.bilibili\.com\/x\/v2\/rank\.*rid=(168|5),Ads_Dlerio
-URL-REGEX,https:\/\/app\.bilibili\.com\/x\/v2\/search\/(defaultword|hot|recommend|resource),Ads_Dlerio
-URL-REGEX,https:\/\/img-ys011\.didistatic\.com\/static\/ad_oss\/image-\d{4}-\d{4}\/,Ads_Dlerio
-URL-REGEX,https?:\/\/(a?d|sax)\d\.sina\.com,Ads_Dlerio
-URL-REGEX,https?:\/\/(e|m).+\/((uu|oo).php.+|\d+.x?html\?$),Ads_Dlerio
-URL-REGEX,https?:\/\/.+\/videos\/other\/.+,Ads_Dlerio
-URL-REGEX,https?:\/\/9377\w{2}\.com,Ads_Dlerio
-URL-REGEX,https?:\/\/[^(apple|10010)]+.(com|cn)\/(a|A)d(s|v)?(/|.js),Ads_Dlerio
-URL-REGEX,https?:\/\/[^bbs]\.tianya\.cn,Ads_Dlerio
-URL-REGEX,https?:\/\/\.+\.atm\.youku\.com,Ads_Dlerio
-URL-REGEX,https?:\/\/\w+\.cloudfront\.net\/banner,Ads_Dlerio
-URL-REGEX,https?:\/\/\w+\.gdt\.qq\.com,Ads_Dlerio
-URL-REGEX,https?:\/\/\w+\.kingsoft-office-service\.com,Ads_Dlerio
-URL-REGEX,https?:\/\/\w.?up\.qingdaonews\.com,Ads_Dlerio
-URL-REGEX,https?:\/\/\w{6}\.com1\.z0\.glb\.clouddn\.com,Ads_Dlerio
-URL-REGEX,https?:\/\/\w{8}\.logic\.cpm\.cm\.kankan\.com,Ads_Dlerio
-URL-REGEX,https?:\/\/a0b\w{2}\.com,Ads_Dlerio
-URL-REGEX,https?:\/\/d\d\.sinaimg\.cn,Ads_Dlerio
-URL-REGEX,https?:\/\/dl\.app\.gtja\.com\/\.+\d+\.jpg,Ads_Dlerio
-URL-REGEX,https?:\/\/h\w{2}\.hxsame\.hexun\.com,Ads_Dlerio
-URL-REGEX,https?:\/\/img\w\.g\.pptv\.com,Ads_Dlerio
-URL-REGEX,https?:\/\/impservice\.+?youdao\.com,Ads_Dlerio
-URL-REGEX,https?:\/\/mi\.gdt\.qq\.com\/gdt_mview\.fcg,Ads_Dlerio
-URL-REGEX,https?:\/\/notice\.send-anywhere\.com\/banner,Ads_Dlerio
-URL-REGEX,https?:\/\/paopao\w?\.qiyipic\.com,Ads_Dlerio
-URL-REGEX,https?:\/\/sax\w?\.sina\.cn,Ads_Dlerio
-URL-REGEX,https?:\/\/sax\w?\.sina\.com\.cn,Ads_Dlerio
-URL-REGEX,https?:\/\/server-\w+\.imrworldwide\.com,Ads_Dlerio
-URL-REGEX,https?:\/\/www\.bldimg\.com\/(background|splash)\/\.+\.png,Ads_Dlerio
 USER-AGENT,AVOS*,Ads_Dlerio
