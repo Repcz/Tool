@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4534
+# 规则统计: 4535
 
 domain_set:
   - 0x0.st
@@ -1717,6 +1717,7 @@ domain_set:
   - img.adspower.net
   - img.agrd.eu
   - img.announcekit.app
+  - img.api.tryprofound.com
   - img.api.video
   - img.apk.cafe
   - img.applealmond.com
