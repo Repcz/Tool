@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1554
+# 规则统计: 1558
 
 HOST,api.avax.network,Proxy
 HOST,api.revenuecat.com,Proxy
@@ -105,6 +105,7 @@ HOST-SUFFIX,ajay.app,Proxy
 HOST-SUFFIX,akamai.net,Proxy
 HOST-SUFFIX,akamaihd.net,Proxy
 HOST-SUFFIX,akile.io,Proxy
+HOST-SUFFIX,alotporn.com,Proxy
 HOST-SUFFIX,amazon.co.jp,Proxy
 HOST-SUFFIX,amazon.com,Proxy
 HOST-SUFFIX,amazon.jobs,Proxy
@@ -664,6 +665,7 @@ HOST-SUFFIX,icann.org,Proxy
 HOST-SUFFIX,icon.yukonga.top,Proxy
 HOST-SUFFIX,iconfinder.com,Proxy
 HOST-SUFFIX,id,Proxy
+HOST-SUFFIX,idcflare.com,Proxy
 HOST-SUFFIX,idrive.com,Proxy
 HOST-SUFFIX,ie,Proxy
 HOST-SUFFIX,ietf.org,Proxy
@@ -1400,6 +1402,7 @@ HOST-SUFFIX,voachinese.com,Proxy
 HOST-SUFFIX,voanews.com,Proxy
 HOST-SUFFIX,voxer.com,Proxy
 HOST-SUFFIX,vpnunlimited.com,Proxy
+HOST-SUFFIX,vrchat.com,Proxy
 HOST-SUFFIX,vrporn.com,Proxy
 HOST-SUFFIX,vxtwitter.com,Proxy
 HOST-SUFFIX,vzw.com,Proxy
@@ -1457,6 +1460,7 @@ HOST-SUFFIX,wikipedia.com,Proxy
 HOST-SUFFIX,wikipedia.org,Proxy
 HOST-SUFFIX,wikiquote.org,Proxy
 HOST-SUFFIX,wikisource.org,Proxy
+HOST-SUFFIX,wikissl.com,Proxy
 HOST-SUFFIX,wikiversity.org,Proxy
 HOST-SUFFIX,wikivoyage.org,Proxy
 HOST-SUFFIX,wikiwand.com,Proxy

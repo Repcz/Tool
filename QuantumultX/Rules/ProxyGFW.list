@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 7591
+# 规则统计: 7594
 
 HOST,ccmdl.adobe.com,ProxyGFW
 HOST,cloud.oracle.com,ProxyGFW
@@ -321,6 +321,7 @@ HOST-SUFFIX,allmovie.com,ProxyGFW
 HOST-SUFFIX,allowed.org,ProxyGFW
 HOST-SUFFIX,almasdarnews.com,ProxyGFW
 HOST-SUFFIX,almostmy.com,ProxyGFW
+HOST-SUFFIX,alotporn.com,ProxyGFW
 HOST-SUFFIX,alphaporno.com,ProxyGFW
 HOST-SUFFIX,alternate-tools.com,ProxyGFW
 HOST-SUFFIX,alternativeto.net,ProxyGFW
@@ -3256,6 +3257,7 @@ HOST-SUFFIX,iconpaper.org,ProxyGFW
 HOST-SUFFIX,icu-project.org,ProxyGFW
 HOST-SUFFIX,id,ProxyGFW
 HOST-SUFFIX,idaiwan.com,ProxyGFW
+HOST-SUFFIX,idcflare.com,ProxyGFW
 HOST-SUFFIX,iddddg.com,ProxyGFW
 HOST-SUFFIX,idemocracy.asia,ProxyGFW
 HOST-SUFFIX,identi.ca,ProxyGFW
@@ -7050,6 +7052,7 @@ HOST-SUFFIX,wikipedia.com,ProxyGFW
 HOST-SUFFIX,wikipedia.org,ProxyGFW
 HOST-SUFFIX,wikiquote.org,ProxyGFW
 HOST-SUFFIX,wikisource.org,ProxyGFW
+HOST-SUFFIX,wikissl.com,ProxyGFW
 HOST-SUFFIX,wikiunblocked.org,ProxyGFW
 HOST-SUFFIX,wikiversity.org,ProxyGFW
 HOST-SUFFIX,wikivoyage.org,ProxyGFW

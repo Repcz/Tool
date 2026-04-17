@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 7590
+# 规则统计: 7593
 
 no_resolve: true
 domain_set:
@@ -324,6 +324,7 @@ domain_suffix_set:
   - allowed.org
   - almasdarnews.com
   - almostmy.com
+  - alotporn.com
   - alphaporno.com
   - alternate-tools.com
   - alternativeto.net
@@ -3259,6 +3260,7 @@ domain_suffix_set:
   - icu-project.org
   - id
   - idaiwan.com
+  - idcflare.com
   - iddddg.com
   - idemocracy.asia
   - identi.ca
@@ -7053,6 +7055,7 @@ domain_suffix_set:
   - wikipedia.org
   - wikiquote.org
   - wikisource.org
+  - wikissl.com
   - wikiunblocked.org
   - wikiversity.org
   - wikivoyage.org

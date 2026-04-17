@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1552
+# 规则统计: 1556
 
 no_resolve: true
 domain_set:
@@ -108,6 +108,7 @@ domain_suffix_set:
   - akamai.net
   - akamaihd.net
   - akile.io
+  - alotporn.com
   - amazon.co.jp
   - amazon.com
   - amazon.jobs
@@ -667,6 +668,7 @@ domain_suffix_set:
   - icon.yukonga.top
   - iconfinder.com
   - id
+  - idcflare.com
   - idrive.com
   - ie
   - ietf.org
@@ -1403,6 +1405,7 @@ domain_suffix_set:
   - voanews.com
   - voxer.com
   - vpnunlimited.com
+  - vrchat.com
   - vrporn.com
   - vxtwitter.com
   - vzw.com
@@ -1460,6 +1463,7 @@ domain_suffix_set:
   - wikipedia.org
   - wikiquote.org
   - wikisource.org
+  - wikissl.com
   - wikiversity.org
   - wikivoyage.org
   - wikiwand.com

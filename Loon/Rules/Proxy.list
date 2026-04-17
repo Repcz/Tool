@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1554
+# 规则统计: 1558
 
 DOMAIN,api.avax.network
 DOMAIN,api.revenuecat.com
@@ -105,6 +105,7 @@ DOMAIN-SUFFIX,ajay.app
 DOMAIN-SUFFIX,akamai.net
 DOMAIN-SUFFIX,akamaihd.net
 DOMAIN-SUFFIX,akile.io
+DOMAIN-SUFFIX,alotporn.com
 DOMAIN-SUFFIX,amazon.co.jp
 DOMAIN-SUFFIX,amazon.com
 DOMAIN-SUFFIX,amazon.jobs
@@ -664,6 +665,7 @@ DOMAIN-SUFFIX,icann.org
 DOMAIN-SUFFIX,icon.yukonga.top
 DOMAIN-SUFFIX,iconfinder.com
 DOMAIN-SUFFIX,id
+DOMAIN-SUFFIX,idcflare.com
 DOMAIN-SUFFIX,idrive.com
 DOMAIN-SUFFIX,ie
 DOMAIN-SUFFIX,ietf.org
@@ -1400,6 +1402,7 @@ DOMAIN-SUFFIX,voachinese.com
 DOMAIN-SUFFIX,voanews.com
 DOMAIN-SUFFIX,voxer.com
 DOMAIN-SUFFIX,vpnunlimited.com
+DOMAIN-SUFFIX,vrchat.com
 DOMAIN-SUFFIX,vrporn.com
 DOMAIN-SUFFIX,vxtwitter.com
 DOMAIN-SUFFIX,vzw.com
@@ -1457,6 +1460,7 @@ DOMAIN-SUFFIX,wikipedia.com
 DOMAIN-SUFFIX,wikipedia.org
 DOMAIN-SUFFIX,wikiquote.org
 DOMAIN-SUFFIX,wikisource.org
+DOMAIN-SUFFIX,wikissl.com
 DOMAIN-SUFFIX,wikiversity.org
 DOMAIN-SUFFIX,wikivoyage.org
 DOMAIN-SUFFIX,wikiwand.com

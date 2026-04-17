@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4524
+# 规则统计: 4532
 
 DOMAIN,0x0.st
 DOMAIN,3dna.nationbuilder.com
@@ -299,6 +299,7 @@ DOMAIN,assets.visioncritical.net
 DOMAIN,assets.vodafone.co.uk
 DOMAIN,assets.vogue.com
 DOMAIN,assets.volvo.com
+DOMAIN,assets.vrchat.com
 DOMAIN,assets.xboxservices.com
 DOMAIN,assets.xmind.net
 DOMAIN,assets.yande.re
@@ -360,6 +361,7 @@ DOMAIN,badges.greenkeeper.io
 DOMAIN,banners.chessbase.com
 DOMAIN,barracuda-assets.zoovu.com
 DOMAIN,barracuda-cdn.zoovu.com
+DOMAIN,bcdn.alotporn.com
 DOMAIN,bcdn.starapps.studio
 DOMAIN,bcmedia.bitchute.com
 DOMAIN,before.good-apps.co
@@ -1939,6 +1941,7 @@ DOMAIN,live-storage.fc2.com
 DOMAIN,live.fanmingming.com
 DOMAIN,live.visually-io.com
 DOMAIN,livedoor.blogimg.jp
+DOMAIN,liveimg.sooplive.com
 DOMAIN,livemap-tiles1.waze.com
 DOMAIN,lm.visualon.info
 DOMAIN,load.csell.co
@@ -2334,6 +2337,7 @@ DOMAIN,res.abc.net.au
 DOMAIN,res.cloudinary.com
 DOMAIN,res.craft.do
 DOMAIN,res.garmin.com
+DOMAIN,res.sooplive.com
 DOMAIN,res2.weblium.site
 DOMAIN,resize-image.vocus.cc
 DOMAIN,resize.blogsys.jp
@@ -2839,6 +2843,7 @@ DOMAIN,static.snaptube.in
 DOMAIN,static.snyk.io
 DOMAIN,static.socialshopwave.com
 DOMAIN,static.solarwinds.com
+DOMAIN,static.sooplive.com
 DOMAIN,static.spankbang.com
 DOMAIN,static.spigotmc.org
 DOMAIN,static.srcspot.com
@@ -2928,6 +2933,7 @@ DOMAIN,steamcdn-a.akamaihd.net
 DOMAIN,steamusercontent-a.akamaihd.net
 DOMAIN,steamuserimages-a.akamaihd.net
 DOMAIN,steamvideo-a.akamaihd.net
+DOMAIN,stimg.sooplive.com
 DOMAIN,storage-b.picacomic.com
 DOMAIN,storage.courtlistener.com
 DOMAIN,storage.crisp.chat
@@ -3624,6 +3630,7 @@ DOMAIN-SUFFIX,ffzy888.com
 DOMAIN-SUFFIX,filecunhua.top
 DOMAIN-SUFFIX,files.bbci.co.uk
 DOMAIN-SUFFIX,files.gitbook.io
+DOMAIN-SUFFIX,files.sooplive.co.kr
 DOMAIN-SUFFIX,files.wordpress.com
 DOMAIN-SUFFIX,fimfiction-static.net
 DOMAIN-SUFFIX,firebaseapp.com
@@ -3776,6 +3783,7 @@ DOMAIN-SUFFIX,imageshack.us
 DOMAIN-SUFFIX,imagetwist.com
 DOMAIN-SUFFIX,img-dpreview.com
 DOMAIN-SUFFIX,img.haiwaikan.com
+DOMAIN-SUFFIX,img.sooplive.com
 DOMAIN-SUFFIX,img1.acsta.net
 DOMAIN-SUFFIX,img2.acsta.net
 DOMAIN-SUFFIX,img3.acsta.net

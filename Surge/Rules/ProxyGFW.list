@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 7591
+# 规则统计: 7594
 
 DOMAIN,ccmdl.adobe.com
 DOMAIN,cloud.oracle.com
@@ -321,6 +321,7 @@ DOMAIN-SUFFIX,allmovie.com
 DOMAIN-SUFFIX,allowed.org
 DOMAIN-SUFFIX,almasdarnews.com
 DOMAIN-SUFFIX,almostmy.com
+DOMAIN-SUFFIX,alotporn.com
 DOMAIN-SUFFIX,alphaporno.com
 DOMAIN-SUFFIX,alternate-tools.com
 DOMAIN-SUFFIX,alternativeto.net
@@ -3256,6 +3257,7 @@ DOMAIN-SUFFIX,iconpaper.org
 DOMAIN-SUFFIX,icu-project.org
 DOMAIN-SUFFIX,id
 DOMAIN-SUFFIX,idaiwan.com
+DOMAIN-SUFFIX,idcflare.com
 DOMAIN-SUFFIX,iddddg.com
 DOMAIN-SUFFIX,idemocracy.asia
 DOMAIN-SUFFIX,identi.ca
@@ -7050,6 +7052,7 @@ DOMAIN-SUFFIX,wikipedia.com
 DOMAIN-SUFFIX,wikipedia.org
 DOMAIN-SUFFIX,wikiquote.org
 DOMAIN-SUFFIX,wikisource.org
+DOMAIN-SUFFIX,wikissl.com
 DOMAIN-SUFFIX,wikiunblocked.org
 DOMAIN-SUFFIX,wikiversity.org
 DOMAIN-SUFFIX,wikivoyage.org
