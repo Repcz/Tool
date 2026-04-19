@@ -360,4 +360,4 @@ ip_cidr_set:
   - 69.53.224.0/19
   - 8.41.4.0/24
 url_regex_set:
-  - "^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/"
+  - ^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/
