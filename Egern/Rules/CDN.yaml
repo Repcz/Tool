@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4532
+# 规则统计: 4533
 
 domain_set:
   - 0x0.st
@@ -2471,6 +2471,7 @@ domain_set:
   - sdata.ndtv.com
   - sdk-cdn.fun.xyz
   - sdk-static.loyaltylion.net
+  - sdk.amazonaws.com
   - sdk.customfit.ai
   - sdk.gleap.io
   - sdk.helloextend.com

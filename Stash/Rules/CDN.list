@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4532
+# 规则统计: 4533
 
 DOMAIN,0x0.st
 DOMAIN,3dna.nationbuilder.com
@@ -2470,6 +2470,7 @@ DOMAIN,scripts.webeo.com
 DOMAIN,sdata.ndtv.com
 DOMAIN,sdk-cdn.fun.xyz
 DOMAIN,sdk-static.loyaltylion.net
+DOMAIN,sdk.amazonaws.com
 DOMAIN,sdk.customfit.ai
 DOMAIN,sdk.gleap.io
 DOMAIN,sdk.helloextend.com
