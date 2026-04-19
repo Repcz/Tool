@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4533
+# 规则统计: 4534
 
 domain_set:
   - 0x0.st
@@ -1660,6 +1660,7 @@ domain_set:
   - images.spectrumnews1.com
   - images.spot.im
   - images.spr.so
+  - images.status.page
   - images.store.crowdstrike.com
   - images.svc.ui.com
   - images.tg.cc
