@@ -537,6 +537,8 @@ jobs:
       
 
     - name: Push Update
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         cd Tool-repo
           if [[ -n $(git status -s) ]]; then
