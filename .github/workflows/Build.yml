@@ -6,11 +6,25 @@ on:
     - cron: "5 0,12 * * *"
 
 jobs:
-  Build:
+  build:
     runs-on: ubuntu-latest
-    env:
-      TZ: "Asia/Shanghai"
-      SING_BOX_VERSION: 1.10.5
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run build
+        run: npm run build
+
+      # Add permissions for contents write
+      permissions:
+        contents: write
+
+      env:
+        NODE_ENV: production
+
 
     steps:
     - name: Checkout Repository
