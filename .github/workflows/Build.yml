@@ -38,7 +38,7 @@ jobs:
                 "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Malicious.list"
                 "https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/Reject/Tracking.list"
                 "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list"
-                "https://raw.githubusercontent.com/mayojoy/Tool/X/Surge/Custom/Reject.list"
+                "https://raw.githubusercontent.com/mayojoy/Tool/master/Surge/Custom/Reject.list"
             )
             > Tool-repo/Ruleset/Reject.list
             for url in "${urls[@]}"; do
@@ -70,7 +70,7 @@ jobs:
             done
             # 合并 Download 规则
             urls=(
-                "https://raw.githubusercontent.com/mayojoy/Tool/X/Surge/Custom/Direct.list"
+                "https://raw.githubusercontent.com/mayojoy/Tool/master/Surge/Custom/Direct.list"
             )
             > Tool-repo/Ruleset/Direct.list
             for url in "${urls[@]}"; do
@@ -92,8 +92,8 @@ jobs:
             # 合并 AI 规则
             urls=(
                 "https://ruleset.skk.moe/List/non_ip/ai.conf"
-                "https://raw.githubusercontent.com/mayojoy/Tool/X/Surge/Custom/xAI.list"
-                "https://raw.githubusercontent.com/mayojoy/Tool/X/Surge/Custom/AI.list"
+                "https://raw.githubusercontent.com/mayojoy/Tool/master/Surge/Custom/xAI.list"
+                "https://raw.githubusercontent.com/mayojoy/Tool/master/Surge/Custom/AI.list"
             )
             > Tool-repo/Ruleset/AI.list
             for url in "${urls[@]}"; do
@@ -147,7 +147,7 @@ jobs:
                 # AI
                 "OpenAI.list https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list"
                 "Claude.list https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Claude.list"
-                "xAI.list https://raw.githubusercontent.com/mayojoy/Tool/X/Surge/Custom/xAI.list"
+                "xAI.list https://raw.githubusercontent.com/mayojoy/Tool/master/Surge/Custom/xAI.list"
                 # 社交媒体
                 "Twitter.list https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list"
                 "Instagram.list https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Instagram.list"
@@ -198,18 +198,18 @@ jobs:
                 "Ads_AWAvenue.list https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Surge.list"
                 "AdGuardChinese.list https://raw.githubusercontent.com/geekdada/surge-list/master/domain-set/chinese-filter.txt"
                 # 自定义规则
-                "Crypto.list https://raw.githubusercontent.com/mayojoy/Tool/X/Surge/Custom/Crypto.list"
-                "Emby.list https://raw.githubusercontent.com/mayojoy/Tool/X/Surge/Custom/Emby.list"
-                "Lan.list https://raw.githubusercontent.com/mayojoy/Tool/X/Surge/Custom/Lan.list"
-                "Porn.list https://raw.githubusercontent.com/mayojoy/Tool/X/Surge/Custom/Porn.list"
-                "Prevent_DNS_Leaks.list https://raw.githubusercontent.com/mayojoy/Tool/X/Surge/Custom/Prevent_DNS_Leaks.list"
-                "Talkatone.list https://raw.githubusercontent.com/mayojoy/Tool/X/Surge/Custom/Talkatone.list"
-                "Telegram_NoIP.list https://raw.githubusercontent.com/mayojoy/Tool/X/Surge/Custom/Telegram_NoIP.list"
-                "Telegram.list https://raw.githubusercontent.com/mayojoy/Tool/X/Surge/Custom/Telegram.list"
-                "TronLink.list https://raw.githubusercontent.com/mayojoy/Tool/X/Surge/Custom/TronLink.list"
-                "Trust.list https://raw.githubusercontent.com/mayojoy/Tool/X/Surge/Custom/Trust.list"
-                "Ads_DiDiChuXing.list https://raw.githubusercontent.com/mayojoy/Tool/X/Surge/Custom/Ads_DiDiChuXing.list"
-                "FILTER_REGION.list https://raw.githubusercontent.com/mayojoy/Tool/X/Surge/Custom/FILTER_REGION.list"
+                "Crypto.list https://raw.githubusercontent.com/mayojoy/Tool/master/Surge/Custom/Crypto.list"
+                "Emby.list https://raw.githubusercontent.com/mayojoy/Tool/master/Surge/Custom/Emby.list"
+                "Lan.list https://raw.githubusercontent.com/mayojoy/Tool/master/Surge/Custom/Lan.list"
+                "Porn.list https://raw.githubusercontent.com/mayojoy/Tool/master/Surge/Custom/Porn.list"
+                "Prevent_DNS_Leaks.list https://raw.githubusercontent.com/mayojoy/Tool/master/Surge/Custom/Prevent_DNS_Leaks.list"
+                "Talkatone.list https://raw.githubusercontent.com/mayojoy/Tool/master/Surge/Custom/Talkatone.list"
+                "Telegram_NoIP.list https://raw.githubusercontent.com/mayojoy/Tool/master/Surge/Custom/Telegram_NoIP.list"
+                "Telegram.list https://raw.githubusercontent.com/mayojoy/Tool/master/Surge/Custom/Telegram.list"
+                "TronLink.list https://raw.githubusercontent.com/mayojoy/Tool/master/Surge/Custom/TronLink.list"
+                "Trust.list https://raw.githubusercontent.com/mayojoy/Tool/master/Surge/Custom/Trust.list"
+                "Ads_DiDiChuXing.list https://raw.githubusercontent.com/mayojoy/Tool/master/Surge/Custom/Ads_DiDiChuXing.list"
+                "FILTER_REGION.list https://raw.githubusercontent.com/mayojoy/Tool/master/Surge/Custom/FILTER_REGION.list"
             )
             for file in "${files[@]}"; do
                 set -- $file
@@ -544,7 +544,7 @@ jobs:
             git config --local user.name "${{ github.actor }}"
             git add -A
             git commit -m "Update(Rules): $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')"
-            git push origin X
+            git push origin master
           else
             echo "No changes to commit."
           fi
