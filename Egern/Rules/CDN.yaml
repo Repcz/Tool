@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4534
+# 规则统计: 4535
 
 domain_set:
   - 0x0.st
@@ -3021,7 +3021,6 @@ domain_set:
   - tile.ourmap.us
   - tile.poloha.net
   - tile.skybrush.io
-  - tile.thunderforest.com
   - tile.waymarkedtrails.org
   - tile2.intervals.icu
   - tile2.opencyclemap.org
@@ -3029,6 +3028,7 @@ domain_set:
   - tiledbasemaps.arcgis.com
   - tilemaps.icgc.cat
   - tiles-a.koordinates.com
+  - tiles-eu.stadiamaps.com
   - tiles.arcgis.com
   - tiles.arcticconnect.ca
   - tiles.gsj.jp
@@ -4313,6 +4313,7 @@ domain_suffix_set:
   - tile.osm.org
   - tile.osmz.ru
   - tile.stamen.com
+  - tile.thunderforest.com
   - tiles-api.maps.komoot.net
   - tiles.mapbox.com
   - tiles.virtualearth.net
