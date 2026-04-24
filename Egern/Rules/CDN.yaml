@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4535
+# 规则统计: 4536
 
 domain_set:
   - 0x0.st
@@ -377,6 +377,7 @@ domain_set:
   - boards.greenhouse.io
   - bookface-static.ycombinator.com
   - bot.ivy.ai
+  - brand-assets.cne.ngc.nvidia.com
   - brand-sdk.kmsmep.com
   - brandwidgets.outtra.com
   - brew.sh
