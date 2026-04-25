@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4536
+# 规则统计: 4540
 
 domain_set:
   - 0x0.st
@@ -1302,9 +1302,11 @@ domain_set:
   - encrypted-vtbn2.gstatic.com
   - encrypted-vtbn3.gstatic.com
   - eomd1.fembeqq.xyz
+  - ep1.pinkbike.org
   - epic-social-social-modules-prod.ol.epicgames.com
   - error.rakuten.co.jp
   - errors.figma.com
+  - es.pinkbike.org
   - eslint-react.xyz
   - eslint.org
   - eslint.style
@@ -1432,6 +1434,7 @@ domain_set:
   - geoserveis.icgc.cat
   - gfx-data.news-engineering.aws.wapo.pub
   - gibs-c.earthdata.nasa.gov
+  - gis.pinkbike.org
   - gitpkg-fork.vercel.sh
   - global-assets.fitch.group
   - global.divhunt.com
@@ -4408,6 +4411,7 @@ domain_suffix_set:
   - wixmp.com
   - wixstatic.com
   - wixstudio.io
+  - wklcdn.com
   - wmfusercontent.org
   - wolongcdnm3u8.com
   - wolongzywcdn3.com

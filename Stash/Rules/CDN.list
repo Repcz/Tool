@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4536
+# 规则统计: 4540
 
 DOMAIN,0x0.st
 DOMAIN,3dna.nationbuilder.com
@@ -1301,9 +1301,11 @@ DOMAIN,encrypted-vtbn1.gstatic.com
 DOMAIN,encrypted-vtbn2.gstatic.com
 DOMAIN,encrypted-vtbn3.gstatic.com
 DOMAIN,eomd1.fembeqq.xyz
+DOMAIN,ep1.pinkbike.org
 DOMAIN,epic-social-social-modules-prod.ol.epicgames.com
 DOMAIN,error.rakuten.co.jp
 DOMAIN,errors.figma.com
+DOMAIN,es.pinkbike.org
 DOMAIN,eslint-react.xyz
 DOMAIN,eslint.org
 DOMAIN,eslint.style
@@ -1431,6 +1433,7 @@ DOMAIN,geojson.io
 DOMAIN,geoserveis.icgc.cat
 DOMAIN,gfx-data.news-engineering.aws.wapo.pub
 DOMAIN,gibs-c.earthdata.nasa.gov
+DOMAIN,gis.pinkbike.org
 DOMAIN,gitpkg-fork.vercel.sh
 DOMAIN,global-assets.fitch.group
 DOMAIN,global.divhunt.com
@@ -4406,6 +4409,7 @@ DOMAIN-SUFFIX,winudf.com
 DOMAIN-SUFFIX,wixmp.com
 DOMAIN-SUFFIX,wixstatic.com
 DOMAIN-SUFFIX,wixstudio.io
+DOMAIN-SUFFIX,wklcdn.com
 DOMAIN-SUFFIX,wmfusercontent.org
 DOMAIN-SUFFIX,wolongcdnm3u8.com
 DOMAIN-SUFFIX,wolongzywcdn3.com
