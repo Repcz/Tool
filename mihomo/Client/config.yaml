@@ -1,6 +1,6 @@
 # Author:https://github.com/Repcz
 # TG:https://t.me/@LUCYChannel_1024
-# 最后更新时间: 2026-4-17 12:00
+# 最后更新时间: 2026-4-27 17:40
 #
 # Mihomo Version ≥ 1.19.23
 # 官方文档: https://github.com/MetaCubeX/mihomo/blob/Meta/docs/config.yaml
@@ -27,8 +27,6 @@ allow-lan: true
 ipv6: false
 log-level: info
 unified-delay: true
-global-client-fingerprint: chrome
-find-process-mode: strict
 
 geodata-mode: true
 geox-url:
