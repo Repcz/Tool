@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4540
+# 规则统计: 4541
 
 DOMAIN,0x0.st
 DOMAIN,3dna.nationbuilder.com
@@ -1974,6 +1974,7 @@ DOMAIN,map.adsbexchange.com
 DOMAIN,map.vesselfinder.net
 DOMAIN,maps.geoapify.com
 DOMAIN,maps.gstatic.com
+DOMAIN,maps.wikimedia.org
 DOMAIN,maps.wplace.live
 DOMAIN,maptile.osmand.net
 DOMAIN,marber-cdn.economist.com

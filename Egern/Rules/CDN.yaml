@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4540
+# 规则统计: 4541
 
 domain_set:
   - 0x0.st
@@ -1975,6 +1975,7 @@ domain_set:
   - map.vesselfinder.net
   - maps.geoapify.com
   - maps.gstatic.com
+  - maps.wikimedia.org
   - maps.wplace.live
   - maptile.osmand.net
   - marber-cdn.economist.com
