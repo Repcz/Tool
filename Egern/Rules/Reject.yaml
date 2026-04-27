@@ -1,5 +1,5 @@
 # 规则名称: Reject
-# 规则统计: 6204
+# 规则统计: 6207
 
 no_resolve: true
 domain_set:
@@ -2136,6 +2136,7 @@ domain_suffix_set:
   - etbh.cn
   - etdggwj.top
   - etlz1mt67.com
+  - etoolads.cn
   - etwzue.icu
   - euazwot.top
   - eucnwtw.top
@@ -5429,6 +5430,7 @@ domain_suffix_set:
   - vkxn.cn
   - vl3rw9roj.com
   - vldp.cn
+  - vlion.cn
   - vljkjx.top
   - vlpq.cn
   - vm5apis.com
@@ -6085,6 +6087,7 @@ domain_suffix_set:
   - zgm1.com
   - zgo8rgvuaf.com
   - zgzxm.weathercn.com
+  - zhangyuyidong.cn
   - zhaozecheng.cn
   - zhbhivvoid.com
   - zhenxinet.com
