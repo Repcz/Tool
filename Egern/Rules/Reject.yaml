@@ -1,5 +1,5 @@
 # 规则名称: Reject
-# 规则统计: 6207
+# 规则统计: 6210
 
 no_resolve: true
 domain_set:
@@ -1090,6 +1090,7 @@ domain_suffix_set:
   - adv-sv-show.focus.cn
   - advertising.com
   - advertising.yahoo.com
+  - advlion.com
   - adwhirl.com
   - adwo.com
   - adx.mala.cn
@@ -5175,6 +5176,7 @@ domain_suffix_set:
   - ub1.job592.com
   - ubeeludrt.com
   - uberads.com
+  - ubixioe.com
   - ubmcvideo.baidustatic.com
   - ubudhal.com
   - uc9.suinidai.com.cn
@@ -5985,6 +5987,7 @@ domain_suffix_set:
   - yulx.cn
   - yumimobi.com
   - yunqingugm.com
+  - yunxish.com
   - yuqnyudug.com
   - yur09111og.com
   - yur09121og.com
