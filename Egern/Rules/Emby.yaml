@@ -3,6 +3,7 @@
 
 no_resolve: true
 domain_set:
+  - DOMIN-SUFFIX,mobaiemby.site
   - cc.coemn.com
   - cdn1.nebula-media.org
   - cf-cdn1.nebula-media.org
@@ -10,11 +11,9 @@ domain_set:
   - cuinf.sfcat.link
   - emby-cdn1.nebula-media.org
   - emby.nebula-media.org
-  - global.uhdnow.com
   - notnetflix.cos.cat
   - starharn-cf.nebula-media.org
   - starharn.nebula-media.org
-  - v1.uhdnow.com
   - web-starharn.nebula-media.org
   - web.nebula-media.org
 domain_suffix_set:
@@ -181,6 +180,7 @@ domain_suffix_set:
   - theluyuan.com
   - tkremby.xyz
   - tv.worldline.space
+  - uhdnow.com
   - uuuoo.cc
   - wiri.tk
   - xiaoyi.one
