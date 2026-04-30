@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4541
+# 规则统计: 4542
 
 domain_set:
   - 0x0.st
@@ -745,6 +745,7 @@ domain_set:
   - cdn.matterhorn.app
   - cdn.mcauto-images-production.sendgrid.net
   - cdn.mcr.ea.com
+  - cdn.mer.run
   - cdn.mercury.com
   - cdn.metadata.io
   - cdn.mewe.com
