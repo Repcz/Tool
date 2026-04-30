@@ -193,9 +193,7 @@ DOMAIN-SUFFIX,mulgore.net
 DOMAIN-SUFFIX,emby.mdss.cloud
 
 # 墨云阁
-
-
-
+DOMIN-SUFFIX,mobaiemby.site
 
 ##### N #####
 
@@ -384,8 +382,7 @@ DOMAIN-SUFFIX,theluyuan.com
 ##### U #####
 
 # UHD
-DOMAIN,v1.uhdnow.com
-DOMAIN,global.uhdnow.com
+DOMAIN-SUFFIX,uhdnow.com
 
 ##### V #####
 
