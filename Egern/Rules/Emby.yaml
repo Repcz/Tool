@@ -3,7 +3,6 @@
 
 no_resolve: true
 domain_set:
-  - DOMIN-SUFFIX,mobaiemby.site
   - cc.coemn.com
   - cdn1.nebula-media.org
   - cf-cdn1.nebula-media.org
@@ -133,6 +132,7 @@ domain_suffix_set:
   - misty.ltd
   - mius.uk
   - mjjemby.org
+  - mobaiemby.site
   - movie.xeton.dev
   - mulgore.net
   - nanflix.net

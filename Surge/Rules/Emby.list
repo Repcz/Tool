@@ -1,7 +1,6 @@
 # 规则名称: Emby
 # 规则统计: 196
 
-DOMAIN,DOMIN-SUFFIX,mobaiemby.site
 DOMAIN,cc.coemn.com
 DOMAIN,cdn1.nebula-media.org
 DOMAIN,cf-cdn1.nebula-media.org
@@ -130,6 +129,7 @@ DOMAIN-SUFFIX,mcjoker.xyz
 DOMAIN-SUFFIX,misty.ltd
 DOMAIN-SUFFIX,mius.uk
 DOMAIN-SUFFIX,mjjemby.org
+DOMAIN-SUFFIX,mobaiemby.site
 DOMAIN-SUFFIX,movie.xeton.dev
 DOMAIN-SUFFIX,mulgore.net
 DOMAIN-SUFFIX,nanflix.net
