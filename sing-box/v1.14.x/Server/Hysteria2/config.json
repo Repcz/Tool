@@ -18,19 +18,20 @@
 
     "inbounds": [
         {
-            "type": "Hysteria",
-            "tag": "Hysteria-in",
+            "type": "hysteria2",
+            "tag": "Hy2-in",
             "listen": "::",
             "listen_port": 443,
+            "up_mbps": 100,
+            "down_mbps": 100,
+            "obfs": {},
             "users": [
                 {
-                    "name": "singbox",
-                    "password": ""
+                "name": "sing-box",
+                "password": ""
                 }
             ],
-            "up": "100 Mbps",
-            "down": "300 Mbps",
-            "obfs": "fuck me till the daylight",
+            "ignore_client_bandwidth": false,
             "tls": {
                 "enabled": true,
                 "server_name": "bing.com",
@@ -44,7 +45,7 @@
     "route": {
         "rules": [
             {
-                "inbound": ["Hysteria-in"],
+                "inbound": ["Hy2-in"],
                 "action": "sniff"
             }
         ],
