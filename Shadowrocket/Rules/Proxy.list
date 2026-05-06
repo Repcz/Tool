@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1558
+# 规则统计: 1559
 
 DOMAIN,api.avax.network
 DOMAIN,api.revenuecat.com
@@ -314,6 +314,7 @@ DOMAIN-SUFFIX,cnet.com
 DOMAIN-SUFFIX,cnn.com
 DOMAIN-SUFFIX,cnn.io
 DOMAIN-SUFFIX,cnyes.com
+DOMAIN-SUFFIX,codeberg.org
 DOMAIN-SUFFIX,codecov.io
 DOMAIN-SUFFIX,codeforces.com
 DOMAIN-SUFFIX,codeforces.org

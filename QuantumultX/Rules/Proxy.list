@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1558
+# 规则统计: 1559
 
 HOST,api.avax.network,Proxy
 HOST,api.revenuecat.com,Proxy
@@ -314,6 +314,7 @@ HOST-SUFFIX,cnet.com,Proxy
 HOST-SUFFIX,cnn.com,Proxy
 HOST-SUFFIX,cnn.io,Proxy
 HOST-SUFFIX,cnyes.com,Proxy
+HOST-SUFFIX,codeberg.org,Proxy
 HOST-SUFFIX,codecov.io,Proxy
 HOST-SUFFIX,codeforces.com,Proxy
 HOST-SUFFIX,codeforces.org,Proxy

@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4542
+# 规则统计: 4545
 
 domain_set:
   - 0x0.st
@@ -1419,6 +1419,7 @@ domain_set:
   - front-resource.fs.com
   - frontend-apps.workos.com
   - frontend-assets.supabase.com
+  - frontend-cdn.perplexity.ai
   - frontend.floatplane.com
   - fs.mingpao.com
   - fscdn.eppo.cloud
@@ -1433,6 +1434,7 @@ domain_set:
   - geoip-js.com
   - geojson.io
   - geoserveis.icgc.cat
+  - get-it-on.codeberg.org
   - gfx-data.news-engineering.aws.wapo.pub
   - gibs-c.earthdata.nasa.gov
   - gis.pinkbike.org
@@ -2520,6 +2522,7 @@ domain_set:
   - share-assets.fe.garmin.com
   - share.chessbase.com
   - shell.cdn.office.net
+  - shields.rbtlog.dev
   - shots.codepen.io
   - showcase.abovemarket.com
   - sig.grumpybumpers.com

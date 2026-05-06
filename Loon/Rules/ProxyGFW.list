@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 7594
+# 规则统计: 7595
 
 DOMAIN,ccmdl.adobe.com
 DOMAIN,cloud.oracle.com
@@ -1284,6 +1284,7 @@ DOMAIN-SUFFIX,cobinhood.com
 DOMAIN-SUFFIX,cochina.co
 DOMAIN-SUFFIX,cochina.org
 DOMAIN-SUFFIX,code1984.com
+DOMAIN-SUFFIX,codeberg.org
 DOMAIN-SUFFIX,codecov.io
 DOMAIN-SUFFIX,codeforces.com
 DOMAIN-SUFFIX,codeforces.org

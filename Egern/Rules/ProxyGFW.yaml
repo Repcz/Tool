@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 7593
+# 规则统计: 7594
 
 no_resolve: true
 domain_set:
@@ -1287,6 +1287,7 @@ domain_suffix_set:
   - cochina.co
   - cochina.org
   - code1984.com
+  - codeberg.org
   - codecov.io
   - codeforces.com
   - codeforces.org

@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1556
+# 规则统计: 1557
 
 no_resolve: true
 domain_set:
@@ -317,6 +317,7 @@ domain_suffix_set:
   - cnn.com
   - cnn.io
   - cnyes.com
+  - codeberg.org
   - codecov.io
   - codeforces.com
   - codeforces.org
