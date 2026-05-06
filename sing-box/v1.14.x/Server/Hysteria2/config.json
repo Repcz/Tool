@@ -44,7 +44,7 @@
     "route": {
         "rules": [
             {
-                "inbound": ["anytls-in"],
+                "inbound": ["Hysteria-in"],
                 "action": "sniff"
             }
         ],
