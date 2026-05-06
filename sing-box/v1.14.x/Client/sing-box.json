@@ -1,0 +1,156 @@
+{
+    "dns": {
+        "servers": [
+            {"tag": "hosts_fix","type": "hosts","predefined": {
+                "dns.alidns.com": ["223.5.5.5","223.6.6.6"],
+                "doh.pub": ["1.12.12.21","120.53.53.53"],
+                "dns.google": ["8.8.8.8","8.8.4.4"],
+                "cloudflare-dns.com": ["104.16.248.249","104.16.249.249"]}
+            },
+            {"tag": "cf-doh","type": "https","server": "cloudflare-dns.com","detour": "Proxy","domain_resolver": "hosts_fix"},
+            {"tag": "gg-doh","type": "https","server": "dns.google","detour": "Proxy","domain_resolver": "hosts_fix"},
+            {"tag": "ali-doh","type": "https","server": "dns.alidns.com","detour": "DIRECT","domain_resolver": "hosts_fix"},
+            {"tag": "ali-udp","type": "udp","server": "223.5.5.5","detour": "DIRECT"},
+            {"tag": "tx-doh","type": "https","server": "doh.pub","detour": "DIRECT","domain_resolver": "hosts_fix"},
+            {"tag": "tx-udp","type": "udp","server": "119.29.29.29","detour": "DIRECT"},
+            {"tag": "fakeip","type": "fakeip","inet4_range": "198.18.0.0/15","inet6_range": "fc00::/18"},
+            {"tag": "local","type": "local","neighbor_domain": [".local",".lan"]}
+        ],
+        "rules": [
+            {"rule_set": ["Ads"],"action": "reject"},
+            {"rule_set": ["ChinaDomain"],"action": "route","server": "ali-doh"},
+            {"query_type": "HTTPS","action": "reject"},
+            {"domain_suffix": ["lancache.steamcontent.com","10099.com.cn","msftconnecttest.com","msftncsi.com","local","lan","home","internal","corp","example.com"],"server": "local"},
+            {"query_type": ["A","AAAA"],"action": "route","server": "fakeip","rewrite_ttl": 1},
+            {"clash_mode": "全局直连","action": "route","server": "ali-doh"},
+            {"clash_mode": "全局代理","action": "route","server": "fakeip"}
+        ],
+        "reverse_mapping": true,
+        "strategy": "ipv4_only",
+        "optimistic": true,
+        "final": "cf-doh"
+    },
+    "outbounds": [
+        {"tag": "direct","type": "direct"},
+        {"tag": "Proxy","type": "selector","outbounds": ["🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan","direct"],"default": "direct","interrupt_exist_connections": true},
+        {"tag": "AI","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan"],"default": "Proxy","interrupt_exist_connections": true},
+        {"tag": "Google","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan"],"default": "Proxy","interrupt_exist_connections": true},
+        {"tag": "Microsoft","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan","direct"],"default": "Proxy","interrupt_exist_connections": true},
+        {"tag": "Twitter","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan"],"default": "Proxy","interrupt_exist_connections": true},
+        {"tag": "Telegram","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan"],"default": "Proxy","interrupt_exist_connections": true},
+        {"tag": "Emby","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan","direct"],"default": "Proxy","interrupt_exist_connections": true},
+        {"tag": "Game","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan","direct"],"default": "Proxy","interrupt_exist_connections": true},
+        {"tag": "Spotify","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan","direct"],"default": "Proxy","interrupt_exist_connections": true},
+        {"tag": "ProxyMedia","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan"],"default": "Proxy","interrupt_exist_connections": true},
+        {"tag": "Final","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan","direct"],"default": "Proxy","interrupt_exist_connections": true},
+        {"tag": "🇭🇰 HongKong","type": "urltest","outbounds": [],"url": "http://1.1.1.1/generate_204","interrupt_exist_connections": true},
+        {"tag": "🇺🇸 United States","type": "urltest","outbounds": [],"url": "http://1.1.1.1/generate_204","interrupt_exist_connections": true},
+        {"tag": "🇸🇬 Singapore","type": "urltest","outbounds": [],"url": "http://1.1.1.1/generate_204","interrupt_exist_connections": true},
+        {"tag": "🇯🇵 Japan","type": "urltest","outbounds": [],"url": "http://1.1.1.1/generate_204","interrupt_exist_connections": true},
+        {"tag": "🇨🇳 Taiwan","type": "urltest","outbounds": [],"url": "http://1.1.1.1/generate_204","interrupt_exist_connections": true}
+    ],
+    "route": {
+        "rule_set": [
+            {"tag": "Ads","type": "remote","format": "binary","url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Ads_SukkaW.srs","http_client": "default"},
+            {"tag": "AI", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/AI.srs", "http_client": "default"},
+            {"tag": "Microsoft", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Microsoft.srs", "http_client": "default"},
+            {"tag": "OneDrive", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/OneDrive.srs", "http_client": "default"},
+            {"tag": "Github", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Github.srs", "http_client": "default"},
+            {"tag": "YouTube", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/YouTube.srs", "http_client": "default"},
+            {"tag": "Google", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Google.srs", "http_client": "default"},            
+            {"tag": "Twitter", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Twitter.srs", "http_client": "default"},
+            {"tag": "Telegram", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Telegram.srs", "http_client": "default"},
+            {"tag": "Steam", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Steam.srs", "http_client": "default"},
+            {"tag": "Epic", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Epic.srs", "http_client": "default"},
+            {"tag": "Emby", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Emby.srs", "http_client": "default"},
+            {"tag": "Spotify", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Spotify.srs", "http_client": "default"},
+            {"tag": "Bahamut", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Bahamut.srs", "http_client": "default"},
+            {"tag": "Netflix", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Netflix.srs", "http_client": "default"},
+            {"tag": "Disney", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Disney.srs", "http_client": "default"},
+            {"tag": "PrimeVideo", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/PrimeVideo.srs", "http_client": "default"},
+            {"tag": "HBO", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/HBO.srs", "http_client": "default"},
+            {"tag": "TikTok", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/TikTok.srs", "http_client": "default"},
+            {"tag": "Proxy", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Proxy.srs", "http_client": "default"},
+            {"tag": "AppleCN", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/AppleCN.srs", "http_client": "default"},
+            {"tag": "AppleProxy", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/AppleServers.srs", "http_client": "default"},
+            {"tag": "ChinaDomain", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/ChinaDomain.srs", "http_client": "default"},
+            {"tag": "ChinaIP", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Loyalsoldier/geoip/raw/release/srs/cn.srs", "http_client": "default"}
+        ],
+        "rules": [
+            {"action": "sniff","sniffer": ["http","tls","quic","dns"]},
+            {"type": "logical","mode": "or","rules": [{"port": 53},{"protocol": "dns"}],"action": "hijack-dns"},
+            {"ip_is_private": true,"action": "route","outbound": "direct"},
+            {"clash_mode": "全局直连","action": "route","outbound": "direct"},
+            {"clash_mode": "全局代理","action": "route","outbound": "Proxy"},
+            {"rule_set": ["Ads"],"action": "reject"},
+            {"rule_set": ["AI"],"action": "route","outbound": "AI"},
+            {"rule_set": ["YouTube","Google"],"action": "route","outbound": "Google"},
+            {"rule_set": ["Microsoft","OneDrive","Github"],"action": "route","outbound": "Microsoft"},
+            {"rule_set": ["Twitter"],"action": "route","outbound": "Twitter"},
+            {"rule_set": ["Telegram"],"action": "route","outbound": "Telegram"},
+            {"rule_set": ["Emby"],"action": "route","outbound": "Emby"},
+            {"rule_set": ["Spotify"],"action": "route","outbound": "Spotify"},
+            {"rule_set": ["Steam","Epic"],"action": "route","outbound": "Game"},
+            {"rule_set": ["Bahamut","Netflix","Disney","PrimeVideo","HBO","TikTok"],"action": "route","outbound": "ProxyMedia"},
+            {"rule_set": ["Proxy"],"action": "route","outbound": "Proxy"},
+            {"rule_set": ["AppleProxy"],"action": "route","outbound": "🇭🇰 HongKong"},        
+            {"action": "resolve"},
+            {"rule_set": ["ChinaDomain","ChinaIP","AppleCN"],"action": "route","outbound": "direct"}  
+        ],
+        "auto_detect_interface": true,
+        "default_domain_resolver": "ali-udp",
+        "final": "Final"
+    },
+    "log": {
+        "disabled": false,
+        "level": "info",
+        "output": "sing-box.log",
+        "timestamp": true
+    },
+    "http_clients": [
+        {
+        "tag": "default",
+        "version": 2,
+        "detour": "Proxy",
+        "stream_receive_window": 0,
+        "connection_receive_window": 0
+        }
+    ],
+    "experimental": {
+        "cache_file": {
+            "enabled": true,
+            "store_fakeip": true
+        },
+        "clash_api": {
+            "default_mode": "规则模式",
+            "external_controller": "127.0.0.1:9090",
+            "external_ui": "ui",
+            "external_ui_download_url": "https://git.repcz.link/github.com/Zephyruso/zashboard/releases/latest/download/dist.zip",
+            "external_ui_download_detour": "DIRECT"
+        }
+    },
+    "inbounds": [
+        {
+            "type": "mixed",
+            "listen": "127.0.0.1",
+            "listen_port": 7080,
+            "set_system_proxy": false
+        },
+        {
+            "type": "tun",
+            "address": [
+                "172.18.0.1/30",
+                "fdfe:dcba:9876::1/126"
+            ],
+            "platform": {
+                "http_proxy": {
+                    "enabled": true,
+                    "server": "127.0.0.1",
+                    "server_port": 7080
+                }
+            },
+            "stack": "mixed",
+            "auto_route": true
+        }
+    ]
+}

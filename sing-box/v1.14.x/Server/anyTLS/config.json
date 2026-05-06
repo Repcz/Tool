@@ -1,0 +1,64 @@
+{
+    "log": {
+        "disabled": false,
+        "level": "info",
+        "timestamp": true
+    },
+    
+    "dns": {
+        "servers": [
+            {"tag": "cloudflare","type": "udp","server": "1.1.1.1"}
+        ],
+        "rules": [
+            {"query_type": ["A","AAAA"],"action": "route","server": "cloudflare"}
+        ],
+        "strategy": "prefer_ipv4",
+        "final": "cloudflare"
+    },
+
+    "inbounds": [
+        {
+            "type": "anytls",
+            "tag": "anytls-in",
+            "listen": "::",
+            "listen_port": 443,
+            "users": [
+                {
+                    "name": "singbox",
+                    "password": ""
+                }
+            ],
+            "padding_scheme": [],
+            "tls": {
+                "enabled": true,
+                "server_name": "bing.com",
+                // openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout /etc/sing-box/bing.key -out /etc/sing-box/bing.crt -subj "/C=US/CN=www.bing.com" > /dev/null 2>&1
+                "certificate_path": "/etc/sing-box/bing.crt",
+                "key_path": "/etc/sing-box/bing.key"
+            }
+        }
+    ],
+    
+    "route": {
+        "rules": [
+            {
+                "inbound": ["anytls-in"],
+                "action": "sniff"
+            }
+        ],
+        "default_domain_resolver": "cloudflare"
+    },
+
+    "outbounds": [
+        {
+            "type": "direct"
+        }
+    ],
+    
+    "ntp": {
+        "enabled": true,
+        "server": "time.apple.com",
+        "server_port": 123,
+        "interval": "30m"
+    }
+}

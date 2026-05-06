@@ -1,0 +1,74 @@
+{
+    "log": {
+        "disabled": false,
+        "level": "info",
+        "timestamp": true
+    },
+    
+    "dns": {
+        "servers": [
+            {"tag": "cloudflare","type": "udp","server": "1.1.1.1"}
+        ],
+        "rules": [
+            {"query_type": ["A","AAAA"],"action": "route","server": "cloudflare"}
+        ],
+        "strategy": "prefer_ipv4",
+        "final": "cloudflare"
+    },
+
+    "inbounds": [
+        {
+            "type": "shadowtls",
+            "tag": "Shadowsocks+ShadowTLS+Padding",
+            "listen": "::",
+            "listen_port": 65110,
+            "version": 3,
+            "users": [
+                {
+                    "name": "singbox",
+                    "password": "" //sing-box generate rand 16 --base64
+                }
+            ],
+            "handshake": {
+                "server": "icloud.com",
+                "server_port": 443
+            },
+            "strict_mode": true,
+            "detour": "shadowsocks-shadowtls-in"
+        },
+        {
+            "type": "shadowsocks",
+            "tag": "shadowsocks-shadowtls-in",
+            "listen": "127.0.0.1",
+            "method": "2022-blake3-aes-128-gcm",
+            "password": "", //sing-box generate rand 16 --base64
+            "multiplex": {
+                "enabled": true,
+                "padding": true
+            }
+        }
+    ],
+
+    "route": {
+        "rules": [
+            {
+                "inbound": ["shadowsocks-shadowtls-in"],
+                "action": "sniff"
+            }
+        ],
+        "default_domain_resolver": "cloudflare"
+    },
+
+    "outbounds": [
+        {
+            "type": "direct"
+        }
+    ],
+    
+    "ntp": {
+        "enabled": true,
+        "server": "time.apple.com",
+        "server_port": 123,
+        "interval": "30m"
+    }
+}
