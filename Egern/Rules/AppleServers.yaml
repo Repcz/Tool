@@ -1,6 +1,7 @@
 # 规则名称: AppleServers
-# 规则统计: 16
+# 规则统计: 17
 
+no_resolve: true
 domain_suffix_set:
   - aaplimg.com
   - apple-cloudkit.com
@@ -18,3 +19,5 @@ domain_suffix_set:
   - me.com
   - organicfruitapps.com
   - push-apple.com.akadns.net
+ip_cidr_set:
+  - 17.0.0.0/8

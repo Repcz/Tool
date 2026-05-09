@@ -1,5 +1,5 @@
 # 规则名称: AppleServers
-# 规则统计: 16
+# 规则统计: 17
 
 DOMAIN-SUFFIX,aaplimg.com
 DOMAIN-SUFFIX,apple-cloudkit.com
@@ -17,3 +17,4 @@ DOMAIN-SUFFIX,itunes.com
 DOMAIN-SUFFIX,me.com
 DOMAIN-SUFFIX,organicfruitapps.com
 DOMAIN-SUFFIX,push-apple.com.akadns.net
+IP-CIDR,17.0.0.0/8,no-resolve

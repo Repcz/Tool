@@ -1,5 +1,5 @@
 # 规则名称: AppleServers
-# 规则统计: 16
+# 规则统计: 17
 
 HOST-SUFFIX,aaplimg.com,AppleServers
 HOST-SUFFIX,apple-cloudkit.com,AppleServers
@@ -17,3 +17,4 @@ HOST-SUFFIX,itunes.com,AppleServers
 HOST-SUFFIX,me.com,AppleServers
 HOST-SUFFIX,organicfruitapps.com,AppleServers
 HOST-SUFFIX,push-apple.com.akadns.net,AppleServers
+IP-CIDR,17.0.0.0/8,AppleServers

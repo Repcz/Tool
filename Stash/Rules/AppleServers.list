@@ -17,6 +17,7 @@ DOMAIN-SUFFIX,itunes.com
 DOMAIN-SUFFIX,me.com
 DOMAIN-SUFFIX,organicfruitapps.com
 DOMAIN-SUFFIX,push-apple.com.akadns.net
+IP-CIDR,17.0.0.0/8,no-resolve
 PROCESS-NAME,CoreLocationAgent
 PROCESS-NAME,WeatherWidget
 PROCESS-NAME,apsd
@@ -25,4 +26,3 @@ PROCESS-NAME,com.apple.geod
 PROCESS-NAME,findmydevice-user-agent
 PROCESS-NAME,fmfd
 PROCESS-NAME,mapspushd
-PROCESS-NAME,netbiosd
