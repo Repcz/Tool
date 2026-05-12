@@ -1,5 +1,5 @@
 # 规则名称: TikTok
-# 规则统计: 81
+# 规则统计: 83
 
 domain_set:
   - api.snapkit.com
@@ -85,3 +85,6 @@ domain_keyword_set:
   - tiktokv.com.
   - ttcdn-tos.
   - ttlivecdn.com.
+asn_set:
+  - 11983
+  - 138699

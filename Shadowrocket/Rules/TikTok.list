@@ -1,5 +1,5 @@
 # 规则名称: TikTok
-# 规则统计: 81
+# 规则统计: 83
 
 DOMAIN,api.snapkit.com
 DOMAIN,cocacola.co.jp
@@ -82,3 +82,5 @@ DOMAIN-KEYWORD,tiktokcdn.com.
 DOMAIN-KEYWORD,tiktokv.com.
 DOMAIN-KEYWORD,ttcdn-tos.
 DOMAIN-KEYWORD,ttlivecdn.com.
+IP-ASN,11983
+IP-ASN,138699

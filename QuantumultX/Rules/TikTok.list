@@ -1,5 +1,5 @@
 # 规则名称: TikTok
-# 规则统计: 81
+# 规则统计: 83
 
 HOST,api.snapkit.com,TikTok
 HOST,cocacola.co.jp,TikTok
@@ -82,3 +82,5 @@ HOST-KEYWORD,tiktokcdn.com.,TikTok
 HOST-KEYWORD,tiktokv.com.,TikTok
 HOST-KEYWORD,ttcdn-tos.,TikTok
 HOST-KEYWORD,ttlivecdn.com.,TikTok
+IP-ASN,11983,TikTok
+IP-ASN,138699,TikTok
