@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4545
+# 规则统计: 4549
 
 domain_set:
   - 0x0.st
@@ -924,6 +924,7 @@ domain_set:
   - cdn.vector.co
   - cdn.verifypass.com
   - cdn.viafoura.net
+  - cdn.videy.co
   - cdn.vidyard.com
   - cdn.viglink.com
   - cdn.violet.vin
@@ -1980,6 +1981,7 @@ domain_set:
   - maps.gstatic.com
   - maps.wikimedia.org
   - maps.wplace.live
+  - mapserver.mapy.cz
   - maptile.osmand.net
   - marber-cdn.economist.com
   - marfeelexperimentsexperienceengine.mrf.io
@@ -3023,7 +3025,6 @@ domain_set:
   - tile.loc.gov
   - tile.mtbmap.cz
   - tile.nextzen.org
-  - tile.opentopomap.org
   - tile.openweathermap.org
   - tile.osm.be
   - tile.osmand.net
@@ -3054,6 +3055,7 @@ domain_set:
   - tiles.openskimap.org
   - tiles.planet.com
   - tiles.stadiamaps.com
+  - tiles.strava.com
   - tiles.terria.io
   - tiles.versatiles.org
   - tiles.windy.com
@@ -4318,12 +4320,14 @@ domain_suffix_set:
   - tile.openstreetmap.de
   - tile.openstreetmap.fr
   - tile.openstreetmap.org
+  - tile.opentopomap.org
   - tile.osm.ch
   - tile.osm.org
   - tile.osmz.ru
   - tile.stamen.com
   - tile.thunderforest.com
   - tiles-api.maps.komoot.net
+  - tiles.freemap.sk
   - tiles.mapbox.com
   - tiles.virtualearth.net
   - tindiemedia.com
