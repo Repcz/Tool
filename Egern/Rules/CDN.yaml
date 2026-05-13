@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4549
+# 规则统计: 4553
 
 domain_set:
   - 0x0.st
@@ -497,6 +497,7 @@ domain_set:
   - cdn-stamplib.casetify.com
   - cdn-static-1.medium.com
   - cdn-static-push.porndig.com
+  - cdn-static.okendo.io
   - cdn-static.paw.cloud
   - cdn-static.talent.com
   - cdn-swell-assets.yotpo.com
@@ -533,6 +534,7 @@ domain_set:
   - cdn.announcekit.app
   - cdn.answeroverflow.com
   - cdn.app.fossa.com
+  - cdn.app.metorik.com
   - cdn.app.neononepay.com
   - cdn.apponic.com
   - cdn.aptoide.com
@@ -888,6 +890,7 @@ domain_set:
   - cdn.svgator.com
   - cdn.svgporn.com
   - cdn.syftdata.com
+  - cdn.tabarn.ap
   - cdn.tailwindcss.com
   - cdn.tatlerasia.com
   - cdn.techcommunity.microsoft.com
@@ -3123,6 +3126,7 @@ domain_set:
   - upload.teftera.com
   - upload.wikimedia.org
   - uploads-cdn.omnicalculator.com
+  - uploads.bikeindex.org
   - uploads.codesandbox.io
   - uploads.guim.co.uk
   - uploads.linear.app
