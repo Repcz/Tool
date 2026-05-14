@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4553
+# 规则统计: 4554
 
 domain_set:
   - 0x0.st
@@ -1728,6 +1728,7 @@ domain_set:
   - img.api.video
   - img.apk.cafe
   - img.applealmond.com
+  - img.appledb.dev
   - img.apponic.com
   - img.atlasobscura.com
   - img.atom.com
