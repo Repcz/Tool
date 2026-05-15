@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4554
+# 规则统计: 4559
 
 domain_set:
   - 0x0.st
@@ -74,6 +74,7 @@ domain_set:
   - app-spm.com
   - app-static-prod.posthog.com
   - app-static.eu.posthog.com
+  - app-static.sendsafely.com
   - app-static.turtl.co
   - app.1password.com
   - app.backinstock.org
@@ -646,6 +647,7 @@ domain_set:
   - cdn.eu.contentful.com
   - cdn.european-alternatives.eu
   - cdn.evbstatic.com
+  - cdn.f5.com
   - cdn.faire.com
   - cdn.fastcomments.com
   - cdn.fasterthanli.me
@@ -884,6 +886,7 @@ domain_set:
   - cdn.stellarhosted.com
   - cdn.stonly.com
   - cdn.streamlabs.com
+  - cdn.studio.f5.com
   - cdn.substack.com
   - cdn.sunofbeaches.com
   - cdn.super.com
@@ -3447,6 +3450,7 @@ domain_suffix_set:
   - cdn.cookielaw.org
   - cdn.cwinfo.net
   - cdn.discordapp.com
+  - cdn.easyling.com
   - cdn.getfeedback.com
   - cdn.greenhouse.io
   - cdn.icann.org
@@ -4303,6 +4307,7 @@ domain_suffix_set:
   - szjal.cn
   - t8cdn.com
   - tacdn.com
+  - tags.f5.com
   - tapecontent.net
   - targetimg1.com
   - tauri.app

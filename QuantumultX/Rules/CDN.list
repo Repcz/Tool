@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4554
+# 规则统计: 4559
 
 HOST,0x0.st,CDN
 HOST,3dna.nationbuilder.com,CDN
@@ -73,6 +73,7 @@ HOST,app-cdn.logo.com,CDN
 HOST,app-spm.com,CDN
 HOST,app-static-prod.posthog.com,CDN
 HOST,app-static.eu.posthog.com,CDN
+HOST,app-static.sendsafely.com,CDN
 HOST,app-static.turtl.co,CDN
 HOST,app.1password.com,CDN
 HOST,app.backinstock.org,CDN
@@ -645,6 +646,7 @@ HOST,cdn.equinix.com,CDN
 HOST,cdn.eu.contentful.com,CDN
 HOST,cdn.european-alternatives.eu,CDN
 HOST,cdn.evbstatic.com,CDN
+HOST,cdn.f5.com,CDN
 HOST,cdn.faire.com,CDN
 HOST,cdn.fastcomments.com,CDN
 HOST,cdn.fasterthanli.me,CDN
@@ -883,6 +885,7 @@ HOST,cdn.staticswin.com,CDN
 HOST,cdn.stellarhosted.com,CDN
 HOST,cdn.stonly.com,CDN
 HOST,cdn.streamlabs.com,CDN
+HOST,cdn.studio.f5.com,CDN
 HOST,cdn.substack.com,CDN
 HOST,cdn.sunofbeaches.com,CDN
 HOST,cdn.super.com,CDN
@@ -3445,6 +3448,7 @@ HOST-SUFFIX,cdn.chrome.marketplace.aws.dev,CDN
 HOST-SUFFIX,cdn.cookielaw.org,CDN
 HOST-SUFFIX,cdn.cwinfo.net,CDN
 HOST-SUFFIX,cdn.discordapp.com,CDN
+HOST-SUFFIX,cdn.easyling.com,CDN
 HOST-SUFFIX,cdn.getfeedback.com,CDN
 HOST-SUFFIX,cdn.greenhouse.io,CDN
 HOST-SUFFIX,cdn.icann.org,CDN
@@ -4301,6 +4305,7 @@ HOST-SUFFIX,sxccdn.com,CDN
 HOST-SUFFIX,szjal.cn,CDN
 HOST-SUFFIX,t8cdn.com,CDN
 HOST-SUFFIX,tacdn.com,CDN
+HOST-SUFFIX,tags.f5.com,CDN
 HOST-SUFFIX,tapecontent.net,CDN
 HOST-SUFFIX,targetimg1.com,CDN
 HOST-SUFFIX,tauri.app,CDN
