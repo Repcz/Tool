@@ -1,5 +1,5 @@
 # 规则名称: Reject
-# 规则统计: 6210
+# 规则统计: 6209
 
 no_resolve: true
 domain_set:
@@ -12,7 +12,6 @@ domain_set:
   - ad-cn.jovcloud.com
   - ad-mediation.tuanguwen.com
   - ad-stat.ksosoft.com
-  - ad.12306.cn
   - ad.21cn.com
   - ad.360in.com
   - ad.51wnl-cq.com

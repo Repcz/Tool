@@ -1,5 +1,5 @@
 # 规则名称: Reject
-# 规则统计: 6211
+# 规则统计: 6210
 
 HOST,118.89.204.198,Reject
 HOST,a.wkanx.com,Reject
@@ -10,7 +10,6 @@ HOST,ad-cdn.qingting.fm,Reject
 HOST,ad-cn.jovcloud.com,Reject
 HOST,ad-mediation.tuanguwen.com,Reject
 HOST,ad-stat.ksosoft.com,Reject
-HOST,ad.12306.cn,Reject
 HOST,ad.21cn.com,Reject
 HOST,ad.360in.com,Reject
 HOST,ad.51wnl-cq.com,Reject
