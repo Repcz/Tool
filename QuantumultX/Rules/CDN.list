@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4559
+# 规则统计: 4560
 
 HOST,0x0.st,CDN
 HOST,3dna.nationbuilder.com,CDN
@@ -1508,6 +1508,7 @@ HOST,i.kickstarter.com,CDN
 HOST,i.loli.best,CDN
 HOST,i.magecdn.com,CDN
 HOST,i.mediatek.com,CDN
+HOST,i.meee.com.tw,CDN
 HOST,i.mij.rip,CDN
 HOST,i.mt.lv,CDN
 HOST,i.mydramalist.com,CDN
