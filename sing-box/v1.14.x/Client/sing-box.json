@@ -31,18 +31,18 @@
         "final": "cf-doh"
     },
     "outbounds": [
-        {"tag": "direct","type": "direct"},
-        {"tag": "Proxy","type": "selector","outbounds": ["🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan","direct"],"default": "direct","interrupt_exist_connections": true},
+        {"tag": "Direct","type": "direct"},
+        {"tag": "Proxy","type": "selector","outbounds": ["🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan","Direct"],"default": "Direct","interrupt_exist_connections": true},
         {"tag": "AI","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan"],"default": "Proxy","interrupt_exist_connections": true},
         {"tag": "Google","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan"],"default": "Proxy","interrupt_exist_connections": true},
-        {"tag": "Microsoft","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan","direct"],"default": "Proxy","interrupt_exist_connections": true},
+        {"tag": "Microsoft","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan","Direct"],"default": "Proxy","interrupt_exist_connections": true},
         {"tag": "Twitter","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan"],"default": "Proxy","interrupt_exist_connections": true},
         {"tag": "Telegram","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan"],"default": "Proxy","interrupt_exist_connections": true},
-        {"tag": "Emby","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan","direct"],"default": "Proxy","interrupt_exist_connections": true},
-        {"tag": "Game","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan","direct"],"default": "Proxy","interrupt_exist_connections": true},
-        {"tag": "Spotify","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan","direct"],"default": "Proxy","interrupt_exist_connections": true},
+        {"tag": "Emby","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan","Direct"],"default": "Proxy","interrupt_exist_connections": true},
+        {"tag": "Game","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan","Direct"],"default": "Proxy","interrupt_exist_connections": true},
+        {"tag": "Spotify","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan","Direct"],"default": "Proxy","interrupt_exist_connections": true},
         {"tag": "ProxyMedia","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan"],"default": "Proxy","interrupt_exist_connections": true},
-        {"tag": "Final","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan","direct"],"default": "Proxy","interrupt_exist_connections": true},
+        {"tag": "Final","type": "selector","outbounds": ["Proxy","🇭🇰 HongKong","🇺🇸 United States","🇸🇬 Singapore","🇯🇵 Japan","🇨🇳 Taiwan","Direct"],"default": "Proxy","interrupt_exist_connections": true},
         {"tag": "🇭🇰 HongKong","type": "urltest","outbounds": [],"url": "http://1.1.1.1/generate_204","interrupt_exist_connections": true},
         {"tag": "🇺🇸 United States","type": "urltest","outbounds": [],"url": "http://1.1.1.1/generate_204","interrupt_exist_connections": true},
         {"tag": "🇸🇬 Singapore","type": "urltest","outbounds": [],"url": "http://1.1.1.1/generate_204","interrupt_exist_connections": true},
@@ -79,8 +79,8 @@
         "rules": [
             {"action": "sniff","sniffer": ["http","tls","quic","dns"]},
             {"type": "logical","mode": "or","rules": [{"port": 53},{"protocol": "dns"}],"action": "hijack-dns"},
-            {"ip_is_private": true,"action": "route","outbound": "direct"},
-            {"clash_mode": "全局直连","action": "route","outbound": "direct"},
+            {"ip_is_private": true,"action": "route","outbound": "Direct"},
+            {"clash_mode": "全局直连","action": "route","outbound": "Direct"},
             {"clash_mode": "全局代理","action": "route","outbound": "Proxy"},
             {"rule_set": ["Ads"],"action": "reject"},
             {"rule_set": ["AI"],"action": "route","outbound": "AI"},
@@ -95,7 +95,7 @@
             {"rule_set": ["Proxy"],"action": "route","outbound": "Proxy"},
             {"rule_set": ["AppleProxy"],"action": "route","outbound": "🇭🇰 HongKong"},        
             {"action": "resolve"},
-            {"rule_set": ["ChinaDomain","ChinaIP","AppleCN"],"action": "route","outbound": "direct"}  
+            {"rule_set": ["ChinaDomain","ChinaIP","AppleCN"],"action": "route","outbound": "Direct"}  
         ],
         "auto_detect_interface": true,
         "default_domain_resolver": "ali-udp",
@@ -126,7 +126,7 @@
             "external_controller": "127.0.0.1:9090",
             "external_ui": "ui",
             "external_ui_download_url": "https://git.repcz.link/github.com/Zephyruso/zashboard/releases/latest/download/dist.zip",
-            "external_ui_download_detour": "direct"
+            "external_ui_download_detour": "Direct"
         }
     },
     "inbounds": [
