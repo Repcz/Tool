@@ -9,10 +9,10 @@
             },
             {"tag": "cf-doh","type": "https","server": "cloudflare-dns.com","detour": "Proxy","domain_resolver": "hosts_fix"},
             {"tag": "gg-doh","type": "https","server": "dns.google","detour": "Proxy","domain_resolver": "hosts_fix"},
-            {"tag": "ali-doh","type": "https","server": "dns.alidns.com","detour": "DIRECT","domain_resolver": "hosts_fix"},
-            {"tag": "ali-udp","type": "udp","server": "223.5.5.5","detour": "DIRECT"},
-            {"tag": "tx-doh","type": "https","server": "doh.pub","detour": "DIRECT","domain_resolver": "hosts_fix"},
-            {"tag": "tx-udp","type": "udp","server": "119.29.29.29","detour": "DIRECT"},
+            {"tag": "ali-doh","type": "https","server": "dns.alidns.com","domain_resolver": "hosts_fix"},
+            {"tag": "tx-doh","type": "https","server": "doh.pub","domain_resolver": "hosts_fix"},
+            {"tag": "ali-udp","type": "udp","server": "223.5.5.5"},
+            {"tag": "tx-udp","type": "udp","server": "119.29.29.29"},
             {"tag": "fakeip","type": "fakeip","inet4_range": "198.18.0.0/15","inet6_range": "fc00::/18"},
             {"tag": "local","type": "local","neighbor_domain": [".local",".lan"]}
         ],
@@ -126,7 +126,7 @@
             "external_controller": "127.0.0.1:9090",
             "external_ui": "ui",
             "external_ui_download_url": "https://git.repcz.link/github.com/Zephyruso/zashboard/releases/latest/download/dist.zip",
-            "external_ui_download_detour": "DIRECT"
+            "external_ui_download_detour": "direct"
         }
     },
     "inbounds": [
