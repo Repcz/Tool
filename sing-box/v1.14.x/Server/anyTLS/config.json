@@ -8,9 +8,9 @@
     "certificate_providers": [
         {
             "type": "acme",
-            "tag": "my-cert",
+            "tag": "ip_cert",
             "domain": [
-                "example.com"
+                "your_server_ip"
             ],
             "email": "admin@example.com"
         }
@@ -53,8 +53,8 @@
             "padding_scheme": [],
             "tls": {
                 "enabled": true,
-                "server_name": "example.com",
-                "certificate_provider": "my-cert"
+                "server_name": "your_server_ip",
+                "certificate_provider": "ip_cert"
             }
         }
     ],
