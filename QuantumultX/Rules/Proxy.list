@@ -1,7 +1,6 @@
 # 规则名称: Proxy
-# 规则统计: 1560
+# 规则统计: 1558
 
-HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,Proxy
 HOST,api.avax.network,Proxy
 HOST,api.revenuecat.com,Proxy
 HOST,api.sprig.com,Proxy
@@ -30,7 +29,6 @@ HOST,help.ubnt.com,Proxy
 HOST,http-inputs-notion.splunkcloud.com,Proxy
 HOST,ip-scan.adspower.net,Proxy
 HOST,ktpx.amazon.com,Proxy
-HOST,lab.skk.moe,Proxy
 HOST,news.ycombinator.com,Proxy
 HOST,ocsp.int-x3.letsencrypt.org,Proxy
 HOST,payments-jp.amazon.com,Proxy
