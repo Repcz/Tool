@@ -5,10 +5,10 @@ export PATH
 #=================================================
 #   System Required: CentOS/Debian/Ubuntu/Alpine
 #   Description: sing-box anyTLS 管理脚本
-#   Version: 1.1.0
+#   Version: 1.1.1
 #=================================================
 
-sh_ver="1.1.0"
+sh_ver="1.1.1"
 singbox_bin="/usr/local/bin/sing-box"
 singbox_conf="/usr/local/etc/sing-box/config.json"
 singbox_service=""  # 由 detectInit() 动态设置
@@ -161,6 +161,13 @@ versionGE(){
 # 生成随机密码
 randomPwd(){
     tr -dc 'A-Za-z0-9' </dev/urandom | head -c 16
+}
+
+# 生成随机邮箱
+randomEmail(){
+    local name
+    name=$(tr -dc 'a-z0-9' </dev/urandom | head -c 10)
+    echo "${name}@gmail.com"
 }
 
 # 生成随机端口(排除22/80/520)
@@ -328,14 +335,25 @@ installSingbox(){
 
     # --- ACME 邮箱 ---
     echo ""
+    echo -e "请设置 ACME 邮箱(Let's Encrypt 需要):"
+    echo -e " ${Green_font_prefix}1.${Font_color_suffix} 随机生成"
+    echo -e " ${Green_font_prefix}2.${Font_color_suffix} 自定义"
+    echo ""
+    read -e -p "请输入数字 [1-2] (默认:1):" email_choice
+    [[ -z "$email_choice" ]] && email_choice="1"
+
     local acme_email
-    while true; do
-        read -e -p "请输入 ACME 邮箱(Let's Encrypt 需要):" acme_email
-        if [[ "$acme_email" =~ ^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$ ]]; then
-            break
-        fi
-        echo -e "${Error} 邮箱格式无效"
-    done
+    if [[ "$email_choice" == "2" ]]; then
+        while true; do
+            read -e -p "请输入邮箱:" acme_email
+            if [[ "$acme_email" =~ ^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$ ]]; then
+                break
+            fi
+            echo -e "${Error} 邮箱格式无效"
+        done
+    else
+        acme_email=$(randomEmail)
+    fi
     echo -e "${Info} 邮箱: ${acme_email}"
 
     # --- 节点名称 ---
