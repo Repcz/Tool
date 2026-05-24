@@ -473,7 +473,7 @@ jobs:
             echo '{' > "$temp_file"
             echo '  "version": 2,' >> "$temp_file"
             echo '  "rules": [' >> "$temp_file"
-            domains=$(grep -E '^DOMAIN,' "$file" | cut -d, -f2)
+            domains=$(grep -E '^DOMAIN,' "$file" | cut -d, -f2 || true)
             if [ -n "$domains" ]; then
               domain_array=$(echo "$domains" | jq -R . | jq -s .)
               echo '    {' >> "$temp_file"
@@ -483,7 +483,7 @@ jobs:
               echo '      ]' >> "$temp_file"
               echo '    },' >> "$temp_file"
             fi
-            domain_suffixes=$(grep -E '^DOMAIN-SUFFIX,' "$file" | cut -d, -f2)
+            domain_suffixes=$(grep -E '^DOMAIN-SUFFIX,' "$file" | cut -d, -f2 || true)
             if [ -n "$domain_suffixes" ]; then
               domain_suffix_array=$(echo "$domain_suffixes" | jq -R . | jq -s .)
               echo '    {' >> "$temp_file"
@@ -493,7 +493,7 @@ jobs:
               echo '      ]' >> "$temp_file"
               echo '    },' >> "$temp_file"
             fi
-            domain_keywords=$(grep -E '^DOMAIN-KEYWORD,' "$file" | cut -d, -f2)
+            domain_keywords=$(grep -E '^DOMAIN-KEYWORD,' "$file" | cut -d, -f2 || true)
             if [ -n "$domain_keywords" ]; then
               domain_keyword_array=$(echo "$domain_keywords" | jq -R . | jq -s .)
               echo '    {' >> "$temp_file"
@@ -503,7 +503,7 @@ jobs:
               echo '      ]' >> "$temp_file"
               echo '    },' >> "$temp_file"
             fi
-            ip_cidrs=$(grep -E '^IP-CIDR,|^IP-CIDR6,' "$file" | cut -d, -f2)
+            ip_cidrs=$(grep -E '^IP-CIDR,|^IP-CIDR6,' "$file" | cut -d, -f2 || true)
             if [ -n "$ip_cidrs" ]; then
               ip_cidr_array=$(echo "$ip_cidrs" | jq -R . | jq -s .)
               echo '    {' >> "$temp_file"
