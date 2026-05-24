@@ -5,10 +5,10 @@ export PATH
 #=================================================
 #   System Required: CentOS/Debian/Ubuntu
 #   Description: sing-box anyTLS 管理脚本
-#   Version: 1.0.0
+#   Version: 1.0.1
 #=================================================
 
-sh_ver="1.0.0"
+sh_ver="1.0.1"
 singbox_bin="/usr/local/bin/sing-box"
 singbox_conf="/usr/local/etc/sing-box/config.json"
 singbox_service="/etc/systemd/system/sing-box.service"
@@ -172,6 +172,17 @@ checkStatus(){
 
 # ==================== 安装 ====================
 installSingbox(){
+    # 检查是否已安装
+    if [[ -e ${singbox_bin} ]]; then
+        echo -e "${Tip} sing-box 已经安装，重新安装将覆盖现有配置"
+        read -e -p "是否继续重新安装? [y/N]:" confirm
+        [[ "$confirm" != "y" ]] && [[ "$confirm" != "Y" ]] && echo -e "${Info} 已取消" && return 0
+        # 立即停止旧服务，释放端口
+        echo -e "${Info} 正在停止旧服务..."
+        systemctl stop sing-box 2>/dev/null || true
+        sleep 1
+    fi
+
     echo -e "${Info} 开始安装 sing-box anyTLS"
 
     # --- 版本选择 ---
@@ -183,7 +194,7 @@ installSingbox(){
     read -e -p "请输入数字 [1-2] (默认:1):" ver_choice
     [[ -z "$ver_choice" ]] && ver_choice="1"
 
-    local release_type="beta"
+    local release_type="pre-release"
     if [[ "$ver_choice" == "2" ]]; then
         release_type="stable"
     fi
@@ -217,13 +228,19 @@ installSingbox(){
     [[ -z "$port_choice" ]] && port_choice="1"
 
     local listen_port
+    local first_pass=true
     while true; do
-        case "$port_choice" in
-            1) listen_port=443 ;;
-            2) listen_port=$(randomPort) ;;
-            3) read -e -p "请输入端口号:" listen_port ;;
-            *) listen_port=443 ;;
-        esac
+        if $first_pass; then
+            case "$port_choice" in
+                1) listen_port=443 ;;
+                2) listen_port=$(randomPort) ;;
+                3) read -e -p "请输入端口号:" listen_port ;;
+                *) listen_port=443 ;;
+            esac
+            first_pass=false
+        else
+            read -e -p "请重新输入端口号:" listen_port
+        fi
         checkPort "$listen_port"
         case $? in
             0) echo -e "${Info} 端口: ${listen_port}" && break ;;
@@ -231,7 +248,6 @@ installSingbox(){
             2) echo -e "${Error} 端口 ${listen_port} 是保留端口(22/80/520)" ;;
             3) echo -e "${Tip} 端口 ${listen_port} 已被占用" ;;
         esac
-        read -e -p "请重新输入端口号:" listen_port
     done
 
     # --- 密码 ---
@@ -290,9 +306,9 @@ installSingbox(){
     echo -e "${Info} 邮箱: ${acme_email}"
 
     # --- 节点名称 ---
-    echo ""
-    read -e -p "请输入 Surge 节点名称(如 🇭🇰HK-NYD):" server_name
-    [[ -z "$server_name" ]] && server_name="${cert_domain}"
+    local server_name
+    server_name=$(hostname 2>/dev/null | head -1)
+    [[ -z "$server_name" ]] && server_name="sing-box"
     echo -e "${Info} 节点名称: ${server_name}"
 
     # --- 确认 ---
@@ -458,11 +474,11 @@ EOF
         echo ""
         echo -e "=============================="
         echo -e " ${Info} Surge 节点:"
-        echo -e " ${Green_font_prefix}${server_name} = anytls, ${cert_domain}, ${listen_port}, password=${password}${Font_color_suffix}"
+        echo -e " ${Green_font_prefix}${server_name} = anytls, ${cert_domain}, ${listen_port}, password=${password}, sni=${cert_domain}${Font_color_suffix}"
         echo -e "=============================="
 
         # 写入节点文件
-        echo "${server_name} = anytls, ${cert_domain}, ${listen_port}, password=${password}" > "$(dirname "$singbox_conf")/surge-node.txt"
+        echo "${server_name} = anytls, ${cert_domain}, ${listen_port}, password=${password}, sni=${cert_domain}" > "$(dirname "$singbox_conf")/surge-node.txt"
         echo -e "${Info} 节点已保存到: $(dirname "$singbox_conf")/surge-node.txt"
     else
         echo -e "${Error} sing-box 启动失败，请查看日志: journalctl -u sing-box -f"
@@ -536,11 +552,13 @@ viewSurgeNode(){
     if [[ -f "$(dirname "$singbox_conf")/surge-node.txt" ]]; then
         surge_line=$(cat "$(dirname "$singbox_conf")/surge-node.txt")
     elif [[ -f "$singbox_conf" ]]; then
-        local domain password port
+        local domain password port node_name
         domain=$(grep -oP '"server_name":\s*"\K[^"]+' "$singbox_conf" 2>/dev/null || echo "???")
         port=$(grep -oP '"listen_port":\s*\K\d+' "$singbox_conf" 2>/dev/null || echo "???")
         password=$(grep -oP '"password":\s*"\K[^"]+' "$singbox_conf" 2>/dev/null || echo "???")
-        surge_line="${domain} = anytls, ${domain}, ${port}, password=${password}"
+        node_name=$(hostname 2>/dev/null | head -1)
+        [[ -z "$node_name" ]] && node_name="sing-box"
+        surge_line="${node_name} = anytls, ${domain}, ${port}, password=${password}, sni=${domain}"
         # 回写文件以便下次使用
         echo "$surge_line" > "$(dirname "$singbox_conf")/surge-node.txt"
     fi
