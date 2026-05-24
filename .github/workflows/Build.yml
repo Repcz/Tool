@@ -202,10 +202,7 @@ jobs:
             # 删除文件中所有 [以 # 或 ; 开头的注释行] + [空行] + [每行中 // 及其后面的内容]
             sed -i -e '/^\s*[#;]/d' -e '/^$/d' -e 's| //.*||'  "$file"
             # 删除指定域名
-            sed -i -e '/DOMAIN,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe/d' "$file"
-            sed -i -e '/DOMAIN,th1s_rule5et_1s_m4d3_by_5ukk4w_ruleset.skk.moe/d' "$file"
-            sed -i -e '/DOMAIN,this_rule_set_is_made_by_sukkaw.skk.moe/d' "$file"
-            sed -i -e '/DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe/d' "$file"
+            sed -i -E '/DOMAIN,.*sukkaw.*skk\.moe/d' "$file"
             sed -i -e 's/,reject$//' "$file"
             sed -i -e '/DOMAIN,ad.12306.cn/d' "$file"
             # 修正格式
