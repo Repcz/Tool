@@ -24,7 +24,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TZ: "Asia/Shanghai"
-      SING_BOX_VERSION: 1.10.5
+      SING_BOX_VERSION: 1.11.7
 
     steps:
     # =========================================================================
@@ -533,7 +533,6 @@ jobs:
         for file in Tool-repo/sing-box/Rules/*.json; do
           if [ -f "$file" ]; then
             # 删除 sing-box 不支持的规则类型及注释、空行
-            sed -i -e '/^PROCESS-NAME/d' "$file"
             sed -i -e '/^AND/d' "$file"
             sed -i -e '/^OR/d' "$file"
             sed -i -e '/^NOT/d' "$file"
@@ -596,7 +595,19 @@ jobs:
               echo "$ip_cidr_array" | jq -r '.[]' | sed 's/^/        "/;s/$/",/' >> "$temp_file"
               sed -i '$ s/,$//' "$temp_file"
               echo '      ]' >> "$temp_file"
-              echo '    }' >> "$temp_file"
+              echo '    },' >> "$temp_file"
+            fi
+
+            # 提取 PROCESS-NAME 规则
+            process_names=$(grep -E '^PROCESS-NAME,' "$file" | cut -d, -f2 || true)
+            if [ -n "$process_names" ]; then
+              process_name_array=$(echo "$process_names" | jq -R . | jq -s .)
+              echo '    {' >> "$temp_file"
+              echo '      "process_name": [' >> "$temp_file"
+              echo "$process_name_array" | jq -r '.[]' | sed 's/^/        "/;s/$/",/' >> "$temp_file"
+              sed -i '$ s/,$//' "$temp_file"
+              echo '      ]' >> "$temp_file"
+              echo '    },' >> "$temp_file"
             fi
 
             # 清理末尾逗号
@@ -605,7 +616,8 @@ jobs:
             echo '}' >> "$temp_file"
 
             mv "$temp_file" "$file"
-            # 编译 JSON 规则为 .srs 二进制格式
+            # 升级 rule-set JSON 版本到当前最新，再编译为 .srs 二进制格式
+            sing-box rule-set upgrade -w "$file"
             sing-box rule-set compile "$file" -o "${file%.json}.srs"
           else
             echo "$file not found."
