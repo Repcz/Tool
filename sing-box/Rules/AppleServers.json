@@ -25,6 +25,18 @@
       "ip_cidr": [
         "17.0.0.0/8"
       ]
+    },
+    {
+      "process_name": [
+        "CoreLocationAgent",
+        "WeatherWidget",
+        "apsd",
+        "com.apple.Maps",
+        "com.apple.geod",
+        "findmydevice-user-agent",
+        "fmfd",
+        "mapspushd"
+      ]
     }
   ]
 }

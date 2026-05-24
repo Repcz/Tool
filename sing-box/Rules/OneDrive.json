@@ -23,6 +23,12 @@
         "onedrive",
         "skydrive"
       ]
+    },
+    {
+      "process_name": [
+        "OneDrive",
+        "OneDriveUpdater"
+      ]
     }
   ]
 }

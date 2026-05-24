@@ -284,6 +284,24 @@
         "uk-live",
         "voddazn"
       ]
+    },
+    {
+      "process_name": [
+        "com.amazon.avod.thirdpartyclient",
+        "com.bstar.intl",
+        "com.hktve.viutv",
+        "com.hulu.plus",
+        "com.linecorp.linetv",
+        "com.netflix.mediaclient",
+        "com.tencent.ibg.joox",
+        "com.twgood.android",
+        "com.viu.pad",
+        "com.viu.phone",
+        "com.vuclip.viu",
+        "music",
+        "tv",
+        "tv.twitch.android.app"
+      ]
     }
   ]
 }
