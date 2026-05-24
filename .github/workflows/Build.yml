@@ -628,7 +628,7 @@ jobs:
             git config --local user.name "${{ github.actor }}"
             git add -A
             TIMESTAMP="$(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')"
-            git commit -m "update(rules): ${TIMESTAMP} [by ${{ github.actor }}]"
+            git commit -m "update(rules): ${TIMESTAMP}"
             git push origin "${{ github.ref_name }}"
           else
             echo "No changes to commit."
