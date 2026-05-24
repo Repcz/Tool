@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1558
+# 规则统计: 1559
 
 DOMAIN,api.avax.network
 DOMAIN,api.revenuecat.com
@@ -29,6 +29,7 @@ DOMAIN,help.ubnt.com
 DOMAIN,http-inputs-notion.splunkcloud.com
 DOMAIN,ip-scan.adspower.net
 DOMAIN,ktpx.amazon.com
+DOMAIN,lab.skk.moe
 DOMAIN,news.ycombinator.com
 DOMAIN,ocsp.int-x3.letsencrypt.org
 DOMAIN,payments-jp.amazon.com
