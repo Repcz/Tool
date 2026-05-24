@@ -536,7 +536,8 @@ jobs:
             git config --local user.email "${{ github.actor }}@users.noreply.github.com"
             git config --local user.name "${{ github.actor }}"
             git add -A
-            git commit -m "Update(Rules): $(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')"
+            TIMESTAMP="$(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')"
+            git commit -m "chore(rules): auto-sync rulesets at ${TIMESTAMP} [by ${{ github.actor }}]"
             git push origin "${{ github.ref_name }}"
           else
             echo "No changes to commit."
