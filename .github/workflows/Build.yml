@@ -221,8 +221,8 @@ jobs:
             sed -i -E '/^\s*$/b; /^\s*[#;]/b; /^DOMAIN,|^DOMAIN-SUFFIX,|^DOMAIN-KEYWORD,|^DOMAIN-WILDCARD,|^IP-CIDR,|^IP-CIDR6,|^IP-ASN,|^GEOIP,|^AND,|^OR,|^NOT,|^URL-REGEX,|^USER-AGENT,|^PROCESS-NAME,|^DEST-PORT,/b; s/^([^#])/DOMAIN,\1/' "$file"
             # 删除注释行（#或;开头）、空行、行内注释（// 及之后内容）
             sed -i -e '/^\s*[#;]/d' -e '/^$/d' -e 's| //.*||'  "$file"
-            # 删除 SukkaW 规则的标记域名
-            sed -i -E '/DOMAIN,.*sukkaw.*skk\.moe/d' "$file"
+            # 删除 SukkaW 规则的标记域名（匹配含 leet speak 在内的所有变体）
+            sed -i -E '/DOMAIN,.*skk\.moe/d' "$file"
             # 移除行尾的 reject 标记
             sed -i -e 's/,reject$//' "$file"
             # 删除误拦截的 12306 域名
@@ -628,7 +628,7 @@ jobs:
             git config --local user.name "${{ github.actor }}"
             git add -A
             TIMESTAMP="$(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')"
-            git commit -m "chore(rules): auto-sync rulesets at ${TIMESTAMP} [by ${{ github.actor }}]"
+            git commit -m "update(rules): ${TIMESTAMP} [by ${{ github.actor }}]"
             git push origin "${{ github.ref_name }}"
           else
             echo "No changes to commit."
