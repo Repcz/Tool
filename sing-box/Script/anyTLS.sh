@@ -5,10 +5,10 @@ export PATH
 #=================================================
 #   System Required: CentOS/Debian/Ubuntu/Alpine
 #   Description: sing-box anyTLS 管理脚本
-#   Version: 1.1.1
+#   bash <(curl -Ls https://github.com/Repcz/Tool/raw/X/sing-box/Script/anyTLS.sh)
 #=================================================
 
-sh_ver="1.1.1"
+sh_ver="1.1.2"
 singbox_bin="/usr/local/bin/sing-box"
 singbox_conf="/usr/local/etc/sing-box/config.json"
 singbox_service=""  # 由 detectInit() 动态设置
