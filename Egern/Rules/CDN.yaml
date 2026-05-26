@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4563
+# 规则统计: 4565
 
 domain_set:
   - 0x0.st
@@ -1313,6 +1313,7 @@ domain_set:
   - eomd1.fembeqq.xyz
   - ep1.pinkbike.org
   - epic-social-social-modules-prod.ol.epicgames.com
+  - error.c.cdn77.org
   - error.rakuten.co.jp
   - errors.figma.com
   - es.pinkbike.org
@@ -3676,6 +3677,7 @@ domain_suffix_set:
   - fncstatic.com
   - fontawesome.com
   - fonts.com
+  - fonts.coollabs.io
   - fonts.gsma.com
   - fonts.net
   - forbesimg.com
