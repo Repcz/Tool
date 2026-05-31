@@ -1,14 +1,11 @@
 # 规则名称: Emby
-# 规则统计: 196
+# 规则统计: 194
 
 HOST,cc.coemn.com,Emby
 HOST,cdn1.nebula-media.org,Emby
 HOST,cf-cdn1.nebula-media.org,Emby
-HOST,cminf.sfcat.link,Emby
-HOST,cuinf.sfcat.link,Emby
 HOST,emby-cdn1.nebula-media.org,Emby
 HOST,emby.nebula-media.org,Emby
-HOST,notnetflix.cos.cat,Emby
 HOST,starharn-cf.nebula-media.org,Emby
 HOST,starharn.nebula-media.org,Emby
 HOST,web-starharn.nebula-media.org,Emby
@@ -120,6 +117,7 @@ HOST-SUFFIX,infinityfly.top,Emby
 HOST-SUFFIX,jellyfin.xeton.dev,Emby
 HOST-SUFFIX,ju.dog,Emby
 HOST-SUFFIX,line.emby.men,Emby
+HOST-SUFFIX,lite.cn2gias.uk,Emby
 HOST-SUFFIX,loseremby.org,Emby
 HOST-SUFFIX,lucasmedia.top,Emby
 HOST-SUFFIX,lyrebirdemby.com,Emby
