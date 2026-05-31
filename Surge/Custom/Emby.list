@@ -1,4 +1,4 @@
-# 最后更新时间：2026-01-08 08:19:49
+# 最后更新时间：2026-06-01 07:35:49
 
 ##### A #####
 
@@ -317,14 +317,10 @@ DOMAIN-SUFFIX,91ai.de
 DOMAIN-SUFFIX,stream.synn.cc
 DOMAIN-SUFFIX,stream.ntrrr.top
 
-# 私房菜Emby
-DOMAIN,notnetflix.cos.cat
-DOMAIN,cminf.sfcat.link
-DOMAIN,cuinf.sfcat.link
-
 # 守候网络Emby
 DOMAIN-SUFFIX,emby.cn2gias.uk
 DOMAIN-SUFFIX,post.cn2gias.uk
+DOMAIN-SUFFIX,lite.cn2gias.uk
 
 # SarCat
 DOMAIN-SUFFIX,starcat.eu.org
