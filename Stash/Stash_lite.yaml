@@ -1,6 +1,6 @@
 # Author:https://github.com/Repcz
 # TG:https://t.me/QVQ_Channel
-# 最后更新时间: 2026-4-17 12:00
+# 最后更新时间: 2026-5-31 08:10
 #
 # Stash Version ≥ 2.6.0 
 #
@@ -27,7 +27,7 @@ proxy-providers:
     benchmark-url: http://1.1.1.1/generate_204
 
 proxy-groups:
-  - {name: Proxy, <<: *select, include-all: true, icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/applesafari.png}
+  - {name: Proxy, type: select, include-all: true, icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/applesafari.png}
 
 rules:
 
