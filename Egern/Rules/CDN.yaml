@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4565
+# 规则统计: 4566
 
 domain_set:
   - 0x0.st
@@ -766,6 +766,7 @@ domain_set:
   - cdn.myanimelist.net
   - cdn.myfonts.net
   - cdn.myfutanari.com
+  - cdn.myopenpass.com
   - cdn.myportfolio.com
   - cdn.nba.com
   - cdn.ndtv.com
