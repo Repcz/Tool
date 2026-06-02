@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 194
+# 规则统计: 192
 
 no_resolve: true
 domain_set:
@@ -53,6 +53,7 @@ domain_suffix_set:
   - cherrytv.one
   - ciallo.party
   - cinema.facmata.net
+  - cn2gias.uk
   - deja-vu.beauty
   - dicarerhome.com
   - e.degyax.one
@@ -64,7 +65,6 @@ domain_suffix_set:
   - emby.bid
   - emby.cjpc.cc
   - emby.cl
-  - emby.cn2gias.uk
   - emby.date
   - emby.eu.org
   - emby.flowercloud
@@ -120,7 +120,6 @@ domain_suffix_set:
   - jellyfin.xeton.dev
   - ju.dog
   - line.emby.men
-  - lite.cn2gias.uk
   - loseremby.org
   - lucasmedia.top
   - lyrebirdemby.com
@@ -149,7 +148,6 @@ domain_suffix_set:
   - poloemby.xyz
   - pololine.ml
   - pornemby.club
-  - post.cn2gias.uk
   - pub1.emby.wtf
   - pub1.term.wtf
   - pub1back.emby.wtf

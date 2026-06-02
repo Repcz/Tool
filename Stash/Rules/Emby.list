@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 194
+# 规则统计: 192
 
 DOMAIN,cc.coemn.com
 DOMAIN,cdn1.nebula-media.org
@@ -50,6 +50,7 @@ DOMAIN-SUFFIX,charontv.com
 DOMAIN-SUFFIX,cherrytv.one
 DOMAIN-SUFFIX,ciallo.party
 DOMAIN-SUFFIX,cinema.facmata.net
+DOMAIN-SUFFIX,cn2gias.uk
 DOMAIN-SUFFIX,deja-vu.beauty
 DOMAIN-SUFFIX,dicarerhome.com
 DOMAIN-SUFFIX,e.degyax.one
@@ -61,7 +62,6 @@ DOMAIN-SUFFIX,emby.aiyowei.ml
 DOMAIN-SUFFIX,emby.bid
 DOMAIN-SUFFIX,emby.cjpc.cc
 DOMAIN-SUFFIX,emby.cl
-DOMAIN-SUFFIX,emby.cn2gias.uk
 DOMAIN-SUFFIX,emby.date
 DOMAIN-SUFFIX,emby.eu.org
 DOMAIN-SUFFIX,emby.flowercloud
@@ -117,7 +117,6 @@ DOMAIN-SUFFIX,infinityfly.top
 DOMAIN-SUFFIX,jellyfin.xeton.dev
 DOMAIN-SUFFIX,ju.dog
 DOMAIN-SUFFIX,line.emby.men
-DOMAIN-SUFFIX,lite.cn2gias.uk
 DOMAIN-SUFFIX,loseremby.org
 DOMAIN-SUFFIX,lucasmedia.top
 DOMAIN-SUFFIX,lyrebirdemby.com
@@ -146,7 +145,6 @@ DOMAIN-SUFFIX,pilipiliultra.top
 DOMAIN-SUFFIX,poloemby.xyz
 DOMAIN-SUFFIX,pololine.ml
 DOMAIN-SUFFIX,pornemby.club
-DOMAIN-SUFFIX,post.cn2gias.uk
 DOMAIN-SUFFIX,pub1.emby.wtf
 DOMAIN-SUFFIX,pub1.term.wtf
 DOMAIN-SUFFIX,pub1back.emby.wtf
