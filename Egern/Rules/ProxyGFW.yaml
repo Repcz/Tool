@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 7594
+# 规则统计: 7595
 
 no_resolve: true
 domain_set:
@@ -5045,6 +5045,7 @@ domain_suffix_set:
   - post76.com
   - post852.com
   - postadult.com
+  - posthog.com
   - postimg.org
   - postmarkapp.com
   - potato.im

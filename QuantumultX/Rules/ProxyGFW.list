@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 7595
+# 规则统计: 7596
 
 HOST,ccmdl.adobe.com,ProxyGFW
 HOST,cloud.oracle.com,ProxyGFW
@@ -5042,6 +5042,7 @@ HOST-SUFFIX,post01.com,ProxyGFW
 HOST-SUFFIX,post76.com,ProxyGFW
 HOST-SUFFIX,post852.com,ProxyGFW
 HOST-SUFFIX,postadult.com,ProxyGFW
+HOST-SUFFIX,posthog.com,ProxyGFW
 HOST-SUFFIX,postimg.org,ProxyGFW
 HOST-SUFFIX,postmarkapp.com,ProxyGFW
 HOST-SUFFIX,potato.im,ProxyGFW
