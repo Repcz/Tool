@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4566
+# 规则统计: 4567
 
 domain_set:
   - 0x0.st
@@ -241,6 +241,7 @@ domain_set:
   - assets.onestore.ms
   - assets.ontrack.com
   - assets.openalternative.co
+  - assets.openlogi.org
   - assets.openshift.com
   - assets.openshift.net
   - assets.orz.uno
