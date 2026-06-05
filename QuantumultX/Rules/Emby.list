@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 192
+# 规则统计: 193
 
 HOST,cc.coemn.com,Emby
 HOST,cdn1.nebula-media.org,Emby
@@ -109,6 +109,7 @@ HOST-SUFFIX,goodisp.org,Emby
 HOST-SUFFIX,gtlx.org,Emby
 HOST-SUFFIX,gugumedia.link,Emby
 HOST-SUFFIX,happyav.eu.org,Emby
+HOST-SUFFIX,hgemby.qzz.io,Emby
 HOST-SUFFIX,hovervan.org,Emby
 HOST-SUFFIX,i109.com,Emby
 HOST-SUFFIX,ii00.cc,Emby

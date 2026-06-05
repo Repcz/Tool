@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 192
+# 规则统计: 193
 
 no_resolve: true
 domain_set:
@@ -112,6 +112,7 @@ domain_suffix_set:
   - gtlx.org
   - gugumedia.link
   - happyav.eu.org
+  - hgemby.qzz.io
   - hovervan.org
   - i109.com
   - ii00.cc

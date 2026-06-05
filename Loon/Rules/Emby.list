@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 192
+# 规则统计: 193
 
 DOMAIN,cc.coemn.com
 DOMAIN,cdn1.nebula-media.org
@@ -109,6 +109,7 @@ DOMAIN-SUFFIX,goodisp.org
 DOMAIN-SUFFIX,gtlx.org
 DOMAIN-SUFFIX,gugumedia.link
 DOMAIN-SUFFIX,happyav.eu.org
+DOMAIN-SUFFIX,hgemby.qzz.io
 DOMAIN-SUFFIX,hovervan.org
 DOMAIN-SUFFIX,i109.com
 DOMAIN-SUFFIX,ii00.cc
