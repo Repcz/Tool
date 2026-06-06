@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4567
+# 规则统计: 4569
 
 domain_set:
   - 0x0.st
@@ -2216,6 +2216,7 @@ domain_set:
   - perf.hsforms.com
   - pg2dhpc3p5ec22g3.jkforum.net
   - pgw.udn.com.tw
+  - ph.langfuse.com
   - ph.northflank.com
   - ph.tryprofound.com
   - phishing.army
@@ -3139,6 +3140,7 @@ domain_set:
   - uploads.codesandbox.io
   - uploads.guim.co.uk
   - uploads.linear.app
+  - uploads.pullfrog.com
   - uploads.sitepoint.com
   - upos-sz-mirroralibstar1.bilivideo.com
   - upos-sz-mirrorcosbstar1.bilivideo.com
