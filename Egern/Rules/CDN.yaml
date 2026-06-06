@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4569
+# 规则统计: 4573
 
 domain_set:
   - 0x0.st
@@ -350,6 +350,7 @@ domain_set:
   - awsimgsrc.dmm.co.jp
   - axiecdn.axieinfinity.com
   - az700632.vo.msecnd.net
+  - b.manufact.com
   - b.peatio.com
   - b.sf-syn.com
   - b5x-sentry.1passwordservices.com
@@ -2087,6 +2088,7 @@ domain_set:
   - media.themoviedb.org
   - media.theporndude.com
   - media.theresanaiforthat.com
+  - media.trakt.tv
   - media.user.com
   - media.webtoo.ls
   - media.wired.com
@@ -3135,6 +3137,7 @@ domain_set:
   - upload.movim.eu
   - upload.teftera.com
   - upload.wikimedia.org
+  - uploadcare.mwcglobalprofile.com
   - uploads-cdn.omnicalculator.com
   - uploads.bikeindex.org
   - uploads.codesandbox.io
@@ -3211,6 +3214,7 @@ domain_set:
   - wa1.aninoapps.com
   - wac-cdn.atlassian.com
   - waitlisted.co
+  - walter-r2.trakt.tv
   - wandi-6402.kxcdn.com
   - wcpstatic.microsoft.com
   - wctour-images.worldchess.com

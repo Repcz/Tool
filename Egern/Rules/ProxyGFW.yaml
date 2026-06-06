@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 7595
+# 规则统计: 7596
 
 no_resolve: true
 domain_set:
@@ -6381,6 +6381,7 @@ domain_suffix_set:
   - tracfone.com
   - tradingview.com
   - traffichaus.com
+  - trakt.tv
   - translate.goog
   - transparency.org
   - travelinkcard.com
