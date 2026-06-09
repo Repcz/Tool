@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1561
+# 规则统计: 1562
 
 HOST,api.avax.network,Proxy
 HOST,api.revenuecat.com,Proxy
@@ -486,6 +486,7 @@ HOST-SUFFIX,firefox.com,Proxy
 HOST-SUFFIX,fish.audio,Proxy
 HOST-SUFFIX,fixupx.com,Proxy
 HOST-SUFFIX,fixvx.com,Proxy
+HOST-SUFFIX,flathub.org,Proxy
 HOST-SUFFIX,flickr.com,Proxy
 HOST-SUFFIX,flightradar24.com,Proxy
 HOST-SUFFIX,flipboard.com,Proxy

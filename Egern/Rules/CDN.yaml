@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4574
+# 规则统计: 4581
 
 domain_set:
   - 0x0.st
@@ -288,6 +288,7 @@ domain_set:
   - assets.time.com
   - assets.tokopedia.net
   - assets.toot.cafe
+  - assets.transfernow.net
   - assets.tvtropes.org
   - assets.twitch.tv
   - assets.unicorn.studio
@@ -441,6 +442,7 @@ domain_set:
   - canvas-lb.tubitv.com
   - cartodb-basemaps-a.global.ssl.fastly.net
   - cassette.sphdigital.com.sg
+  - catalogartifact.azureedge.net
   - categoriespages-cdn.trustpilot.net
   - cc-embed.adobe.com
   - cc.boyfriendtv.com
@@ -1197,6 +1199,7 @@ domain_set:
   - creator-image.javhd.com
   - crl.usertrust.com
   - crl.verisign.com
+  - crl3.digicert.com
   - crt.comodoca.com
   - crt.sectigo.com
   - crt.usertrust.com
@@ -1859,6 +1862,7 @@ domain_set:
   - imgfile.shop
   - imgix.setapp.com
   - imgopt.infoq.com
+  - imgproxy.flathub.org
   - imgproxy.fourthwall.com
   - imgrs.apkcombo.com
   - imgs.plurk.com
@@ -2123,6 +2127,7 @@ domain_set:
   - moodular.jotform.com
   - mosaic-blender.fxtwitter.com
   - mosaic.fxtwitter.com
+  - mozilla-ohttp.fastly-edge.com
   - mparticle.weather.com
   - mstdn-s3.o3o.studio
   - mta.newfold.com
@@ -3173,6 +3178,7 @@ domain_set:
   - v2.listenloop.com
   - v2uploads.zopim.io
   - vanilla-extract.style
+  - variations.brave.com
   - vbmspic.video.friday.tw
   - vcdn.anysex.com
   - vectorified.com
@@ -4320,6 +4326,7 @@ domain_suffix_set:
   - swiftypecdn.com
   - sxccdn.com
   - szjal.cn
+  - t-assets.net
   - t8cdn.com
   - tacdn.com
   - tags.f5.com

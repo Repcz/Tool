@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1559
+# 规则统计: 1560
 
 DOMAIN,api.avax.network
 DOMAIN,api.revenuecat.com
@@ -486,6 +486,7 @@ DOMAIN-SUFFIX,firefox.com
 DOMAIN-SUFFIX,fish.audio
 DOMAIN-SUFFIX,fixupx.com
 DOMAIN-SUFFIX,fixvx.com
+DOMAIN-SUFFIX,flathub.org
 DOMAIN-SUFFIX,flickr.com
 DOMAIN-SUFFIX,flightradar24.com
 DOMAIN-SUFFIX,flipboard.com

@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1559
+# 规则统计: 1560
 
 no_resolve: true
 domain_set:
@@ -489,6 +489,7 @@ domain_suffix_set:
   - fish.audio
   - fixupx.com
   - fixvx.com
+  - flathub.org
   - flickr.com
   - flightradar24.com
   - flipboard.com
