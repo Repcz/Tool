@@ -1,5 +1,5 @@
 # 规则名称: AdGuardChinese
-# 规则统计: 6404
+# 规则统计: 6418
 
 domain_suffix_set:
   - 002777.xyz
@@ -21,6 +21,7 @@ domain_suffix_set:
   - 0755rc.com
   - 07pv7k61z.com
   - 086123.xyz
+  - 08pkgxft0u.com
   - 0941.org
   - 0a0atz2sh.top
   - 0a66kw9r8.com
@@ -398,6 +399,7 @@ domain_suffix_set:
   - 4fptsi5zxo.com
   - 4fzfc1irq.com
   - 4h87y9pc59.com
+  - 4i2q0y9wv.com
   - 4ifhpfi1.xyz
   - 4jh1le34m.com
   - 4kxczstxil.com
@@ -688,6 +690,8 @@ domain_suffix_set:
   - 8feichai.com
   - 8g2a7mifv.com
   - 8gptk28oag.com
+  - 8h6oiw0uo.com
+  - 8h7j79qxm.com
   - 8hx7k0211.com
   - 8iav2fuiy.com
   - 8j7tu8vtxx.com
@@ -771,6 +775,7 @@ domain_suffix_set:
   - 9l4i9edu.top
   - 9l9ck7mdd2.com
   - 9ma1sr1tb1.com
+  - 9mdg9cu59.com
   - 9o29nhxgp.com
   - 9oru1vh0w.com
   - 9oxhstb2m2.com
@@ -2395,8 +2400,10 @@ domain_suffix_set:
   - g5xu1dslr6.com
   - g64njjhyh.com
   - g66ryy88z.com
+  - g6ird1tez2.com
   - g6x2uvza37.com
   - g8hi6r3odr.com
+  - g8nwdolod.com
   - g8ygkqhm9p.com
   - g9cvic3khh.com
   - ga1.3dmgame.com
@@ -3596,6 +3603,7 @@ domain_suffix_set:
   - m3v8x28jut.com
   - m43ocq1uoj.com
   - m485oq2gym.top
+  - m4dynuge4.com
   - m4fxreb5s.com
   - m5.66077.cn
   - m5nv2f52i.com
@@ -3712,6 +3720,7 @@ domain_suffix_set:
   - mkguynd.com
   - mkue.cn
   - ml4xbwg73.top
+  - mliyokonw.com
   - mlougq.icu
   - mm.jbzj.com
   - mm.nwell.net
@@ -4136,6 +4145,7 @@ domain_suffix_set:
   - op1z5h5171.com
   - op9dbh1i0.com
   - opendsp.vip
+  - operation67.com
   - operetta17.com
   - opicrutuk.com
   - opkrerkaidf.com
@@ -4385,6 +4395,7 @@ domain_suffix_set:
   - putmtmkfjbitxzlhijfc.top
   - pv.dakawm.cc
   - pv4b.com
+  - pv7ezc6as.com
   - pvgcyyh.icu
   - pvhbhnqip.com
   - pvkc.cn
@@ -4681,6 +4692,7 @@ domain_suffix_set:
   - rpvqhicca.com
   - rrpaafci9i.com
   - rstdfyerm.icu
+  - rstqbtoqrxbvpk.com
   - rt5x78mhcq.com
   - rta4z4ncsl.com
   - rtau9pif4.com
@@ -5291,6 +5303,7 @@ domain_suffix_set:
   - uk3eymh64c.com
   - ukew6uo7u1.com
   - ukfp.cn
+  - uks8suop4b.com
   - ukx6umuvu.com
   - ulatammyspb.com
   - ulgroiklf.com
@@ -5854,6 +5867,7 @@ domain_suffix_set:
   - xhgwho0fx.com
   - xhr7cqlob.com
   - xhtkm35sw.com
+  - xhxtdjx.com
   - xianliao.voto
   - xiaopinwo.com
   - xiaoshuoyun.cn
