@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 193
+# 规则统计: 194
 
 HOST,cc.coemn.com,Emby
 HOST,cdn1.nebula-media.org,Emby
@@ -39,6 +39,7 @@ HOST-SUFFIX,bangumi.ca,Emby
 HOST-SUFFIX,bddup.com,Emby
 HOST-SUFFIX,bili.de,Emby
 HOST-SUFFIX,bili.rip,Emby
+HOST-SUFFIX,biliblili.uk,Emby
 HOST-SUFFIX,blueseacdn.com,Emby
 HOST-SUFFIX,carlos.trade,Emby
 HOST-SUFFIX,carryz.net,Emby

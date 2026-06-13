@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 193
+# 规则统计: 194
 
 DOMAIN,cc.coemn.com
 DOMAIN,cdn1.nebula-media.org
@@ -39,6 +39,7 @@ DOMAIN-SUFFIX,bangumi.ca
 DOMAIN-SUFFIX,bddup.com
 DOMAIN-SUFFIX,bili.de
 DOMAIN-SUFFIX,bili.rip
+DOMAIN-SUFFIX,biliblili.uk
 DOMAIN-SUFFIX,blueseacdn.com
 DOMAIN-SUFFIX,carlos.trade
 DOMAIN-SUFFIX,carryz.net

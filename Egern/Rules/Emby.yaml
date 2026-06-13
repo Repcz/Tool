@@ -1,5 +1,5 @@
 # 规则名称: Emby
-# 规则统计: 193
+# 规则统计: 194
 
 no_resolve: true
 domain_set:
@@ -42,6 +42,7 @@ domain_suffix_set:
   - bddup.com
   - bili.de
   - bili.rip
+  - biliblili.uk
   - blueseacdn.com
   - carlos.trade
   - carryz.net
