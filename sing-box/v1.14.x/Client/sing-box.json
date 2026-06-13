@@ -115,6 +115,20 @@
         "connection_receive_window": 0
         }
     ],
+    "services": [
+        {
+            "type": "api",
+            "tag": "sing-box dashboard",
+            "listen": "127.0.0.1",
+            "listen_port": 9091,
+            "secret": "",
+            "access_control_allow_origin": [
+                "http://sing-box-dashboard.sagernet.org",
+                "http://dash.sing-box.app"
+            ],
+            "access_control_allow_private_network": true
+        }
+    ],
     "experimental": {
         "cache_file": {
             "enabled": true,
@@ -122,10 +136,7 @@
         },
         "clash_api": {
             "default_mode": "规则模式",
-            "external_controller": "127.0.0.1:9090",
-            "external_ui": "ui",
-            "external_ui_download_url": "https://git.repcz.link/github.com/Zephyruso/zashboard/releases/latest/download/dist.zip",
-            "external_ui_download_detour": "Direct"
+            "external_controller": "127.0.0.1:9090"
         }
     },
     "inbounds": [
