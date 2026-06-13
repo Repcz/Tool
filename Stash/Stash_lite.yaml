@@ -1,6 +1,6 @@
 # Author:https://github.com/Repcz
 # TG:https://t.me/QVQ_Channel
-# 最后更新时间: 2026-5-31 08:10
+# 最后更新时间: 2026-6-13 15:00
 #
 # Stash Version ≥ 2.6.0 
 #
@@ -15,10 +15,8 @@ dns:
   nameserver: [223.5.5.5, 119.29.29.29]
   fake-ip-filter: ['+.lan', '*', '+.local', '+.cmpassport.com', 'id6.me', 'open.e.189.cn', 'mdn.open.wo.cn', 'opencloud.wostore.cn', 'auth.wosms.cn', '+.10099.com.cn', '+.msftconnecttest.com', '+.msftncsi.com', 'lancache.steamcontent.com']
 
-# > 订阅信息展示
 subscribe-url: 
 
-# > 远程服务器
 proxy-providers:
   Subscribe:
     interval: 86400
@@ -41,7 +39,6 @@ rules:
   - GEOSITE,google,Proxy
   - GEOSITE,geolocation-!cn,Proxy
   - GEOSITE,private,DIRECT
-
   - GEOIP,telegram,Proxy
   - GEOIP,twitter,Proxy
   - GEOIP,google,Proxy

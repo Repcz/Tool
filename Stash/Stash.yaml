@@ -1,6 +1,6 @@
 # Author:https://github.com/Repcz
 # TG:https://t.me/QVQ_Channel
-# 最后更新时间: 2026-4-17 12:00
+# 最后更新时间: 2026-6-13 15:00
 #
 # Stash Version ≥ 2.6.0 
 #
@@ -12,15 +12,11 @@ mode: rule
 log-level: info       
 
 dns:
-  # 默认的域名解析服务器
   nameserver: [223.5.5.5, 119.29.29.29]
-  # fake ip 白名单列表'以下地址不会下发fakeip映射用于连接
   fake-ip-filter: ['+.lan', '*', '+.local', '+.cmpassport.com', 'id6.me', 'open.e.189.cn', 'mdn.open.wo.cn', 'opencloud.wostore.cn', 'auth.wosms.cn', '+.10099.com.cn', '+.msftconnecttest.com', '+.msftncsi.com', 'lancache.steamcontent.com']
 
-# > 订阅信息展示
 subscribe-url: 
 
-# > 远程服务器
 proxy-providers:
   Subscribe:
     interval: 86400
@@ -29,8 +25,6 @@ proxy-providers:
     benchmark-url: http://1.1.1.1/generate_204
 
 proxy-groups:
-
-  # 分流分组
 
   - {name: 手动切换, icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/%24tash.png, type: select, include-all: true, proxies: [香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, DIRECT]}
 
@@ -56,8 +50,6 @@ proxy-groups:
 
   - {name: 兜底分流, icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/friestash.png, type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, DIRECT]}
 
-  # 节点地区分流
-
   - {name: 香港节点, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png, type: url-test, interval: 300, include-all: true, filter: "(?i)🇭🇰|香港|(\b(HK|Hong)\b)"}
 
   - {name: 美国节点, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png, type: url-test, interval: 300, include-all: true, filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)"}
@@ -73,7 +65,6 @@ rule-providers:
   Direct: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Direct.list}
   Lan: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Lan.list}
   Reject: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Reject.list}
-  AppleCN: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/AppleCN.list}
   AppleProxy: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/AppleServers.list}
   Microsoft: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Microsoft.list}
   OneDrive: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/OneDrive.list}
@@ -117,7 +108,6 @@ rules:
   - RULE-SET,TikTok,国际媒体
   - RULE-SET,Spotify,Spotify
   - RULE-SET,Proxy,国外网站
-  - RULE-SET,AppleCN,DIRECT
   - RULE-SET,AppleProxy,香港节点
   - RULE-SET,Lan,DIRECT
   - GEOIP,CN,DIRECT

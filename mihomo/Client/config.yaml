@@ -1,6 +1,6 @@
 # Author:https://github.com/Repcz
 # TG:https://t.me/@LUCYChannel_1024
-# 最后更新时间: 2026-4-27 17:40
+# 最后更新时间: 2026-6-13 15:00
 #
 # Mihomo Version ≥ 1.19.23
 # 官方文档: https://github.com/MetaCubeX/mihomo/blob/Meta/docs/config.yaml
@@ -86,7 +86,6 @@ rule-providers:
   Direct: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Direct.list}
   Lan: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Lan.list}
   Reject: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Reject.list}
-  AppleCN: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/AppleCN.list}
   AppleProxy: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/AppleServers.list}
   Microsoft: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Microsoft.list}
   OneDrive: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/OneDrive.list}
@@ -130,7 +129,6 @@ rules:
   - RULE-SET,TikTok,国际媒体
   - RULE-SET,Spotify,Spotify
   - RULE-SET,Proxy,国外网站
-  - RULE-SET,AppleCN,DIRECT
   - RULE-SET,AppleProxy,香港节点
   - RULE-SET,Lan,DIRECT
   - GEOIP,CN,DIRECT

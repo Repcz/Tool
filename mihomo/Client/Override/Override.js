@@ -2,7 +2,7 @@
 //
 // Clash Verge Rev (Version ≥ 17.2) & Mihomo-Party (Version ≥ 1.5.10)
 //
-// 最后更新时间: 2026-4-27 17:40
+// 最后更新时间: 2026-6-13 15:00
 
 // 规则集通用配置
 const ruleProviderCommon = {
@@ -241,11 +241,6 @@ function main(config) {
       "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Reject.list"
     },
-    "AppleCN": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/AppleCN.list"
-    },
     "AppleProxy": {
       ...ruleProviderCommon,
       "behavior": "classical",
@@ -371,7 +366,6 @@ function main(config) {
     "RULE-SET,TikTok,国际媒体",
     "RULE-SET,Spotify,Spotify",
     "RULE-SET,Proxy,国外网站",
-    "RULE-SET,AppleCN,DIRECT",
     "RULE-SET,AppleProxy,香港节点",
     "RULE-SET,Lan,DIRECT",
     "GEOIP,CN,DIRECT",

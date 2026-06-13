@@ -1,6 +1,6 @@
 # Author:https://github.com/Repcz
 # TG:https://t.me/LUCYChannel_1024
-# 最后更新时间: 2026-4-17 12:00
+# 最后更新时间: 2026-6-13 15:00
 #
 # Egern Version ≥ v2.0.0(552)
 # 官方文档: https://doc.egernapp.com
@@ -245,9 +245,6 @@ rules:
 - rule_set:
     match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Proxy.yaml
     policy: 国外网站
-- rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/AppleCN.yaml
-    policy: DIRECT
 - rule_set:
     match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/AppleServers.yaml
     policy: 香港节点

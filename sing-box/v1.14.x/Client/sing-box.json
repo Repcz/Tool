@@ -18,11 +18,11 @@
         ],
         "rules": [
             {"rule_set": ["Ads"],"action": "reject"},
-            {"rule_set": ["ChinaDomain"],"action": "route","server": "ali-doh"},
+            {"rule_set": ["ChinaDomain"],"action": "route","server": "ali-udp"},
             {"query_type": "HTTPS","action": "reject"},
             {"domain_suffix": ["lancache.steamcontent.com","10099.com.cn","msftconnecttest.com","msftncsi.com","local","lan","home","internal","corp","example.com"],"server": "local"},
             {"query_type": ["A","AAAA"],"action": "route","server": "fakeip","rewrite_ttl": 1},
-            {"clash_mode": "全局直连","action": "route","server": "ali-doh"},
+            {"clash_mode": "全局直连","action": "route","server": "ali-udp"},
             {"clash_mode": "全局代理","action": "route","server": "fakeip"}
         ],
         "reverse_mapping": true,
@@ -71,7 +71,6 @@
             {"tag": "HBO", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/HBO.srs", "http_client": "default"},
             {"tag": "TikTok", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/TikTok.srs", "http_client": "default"},
             {"tag": "Proxy", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Proxy.srs", "http_client": "default"},
-            {"tag": "AppleCN", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/AppleCN.srs", "http_client": "default"},
             {"tag": "AppleProxy", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/AppleServers.srs", "http_client": "default"},
             {"tag": "ChinaDomain", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/ChinaDomain.srs", "http_client": "default"},
             {"tag": "ChinaIP", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Loyalsoldier/geoip/raw/release/srs/cn.srs", "http_client": "default"}
@@ -95,7 +94,7 @@
             {"rule_set": ["Proxy"],"action": "route","outbound": "Proxy"},
             {"rule_set": ["AppleProxy"],"action": "route","outbound": "🇭🇰 HongKong"},        
             {"action": "resolve"},
-            {"rule_set": ["ChinaDomain","ChinaIP","AppleCN"],"action": "route","outbound": "Direct"}  
+            {"rule_set": ["ChinaDomain","ChinaIP"],"action": "route","outbound": "Direct"}  
         ],
         "auto_detect_interface": true,
         "default_domain_resolver": "ali-udp",
