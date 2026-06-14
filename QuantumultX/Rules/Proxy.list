@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1562
+# 规则统计: 1563
 
 HOST,api.avax.network,Proxy
 HOST,api.revenuecat.com,Proxy
@@ -130,6 +130,7 @@ HOST-SUFFIX,anyporn.com,Proxy
 HOST-SUFFIX,anysex.com,Proxy
 HOST-SUFFIX,ao3.org,Proxy
 HOST-SUFFIX,aol.com,Proxy
+HOST-SUFFIX,ap.org,Proxy
 HOST-SUFFIX,apernet.io,Proxy
 HOST-SUFFIX,api.acaisbest.shop,Proxy
 HOST-SUFFIX,apibay.org,Proxy

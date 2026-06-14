@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1560
+# 规则统计: 1561
 
 no_resolve: true
 domain_set:
@@ -133,6 +133,7 @@ domain_suffix_set:
   - anysex.com
   - ao3.org
   - aol.com
+  - ap.org
   - apernet.io
   - api.acaisbest.shop
   - apibay.org
