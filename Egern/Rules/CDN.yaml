@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4584
+# 规则统计: 4586
 
 domain_set:
   - 0x0.st
@@ -1439,6 +1439,7 @@ domain_set:
   - frontend.floatplane.com
   - fs.mingpao.com
   - fscdn.eppo.cloud
+  - fullstackopen.com
   - g-static.ap4r.com
   - g.newsweek.com
   - g1.nyt.com
@@ -1477,6 +1478,7 @@ domain_set:
   - headway-widget.net
   - heatmap-external-a.strava.com
   - hello.zonos.com
+  - hentai0.com
   - hentaiworldtv.b-cdn.net
   - heroicons.com
   - hhhhhhome86227170.wordpress.com
