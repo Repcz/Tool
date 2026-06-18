@@ -23,23 +23,69 @@ proxy_latency_test_url: http://1.1.1.1/generate_204
 # 直连延迟测试
 direct_latency_test_url: http://connectivitycheck.platform.hicloud.com/generate_204
 dns:
-  # DNS 引导器：用于解析上游DNS(DoT、DoH、DoQ)，默认 system
   bootstrap:
-    - system
+  - system
   upstreams:
-    # 国内公共 DNS
     Domestic-DNS:
     - 223.5.5.5
     - 119.29.29.29
-  # DNS 转发规则
+    Domestic-Encrypted-DNS:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    Foreign-Encrypted-DNS:
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.google/dns-query
   forward:
-  - wildcard: # 通配符规则
-      match: "*"
+  - domain_wildcard:
+      match: '*.local'
+      value: system
+  - domain_wildcard:
+      match: '*.lan'
+      value: system
+  - domain_wildcard:
+      match: '*.home'
+      value: system
+  - domain_wildcard:
+      match: '*.internal'
+      value: system
+  - domain_wildcard:
+      match: '*.corp'
+      value: system
+  - domain_wildcard:
+      match: '*.example.com'
+      value: system
+  - domain_wildcard:
+      match: lancache.steamcontent.com
+      value: system
+  - domain_wildcard:
+      match: '*.lancache.steamcontent.com'
+      value: system
+  - domain_wildcard:
+      match: 10099.com.cn
+      value: system
+  - domain_wildcard:
+      match: msftconnecttest.com
+      value: system
+  - domain_wildcard:
+      match: '*.msftconnecttest.com'
+      value: system
+  - domain_wildcard:
+      match: msftncsi.com
+      value: system
+  - domain_wildcard:
+      match: '*.msftncsi.com'
+      value: system
+  - domain_wildcard:
+      match: '*'
       value: Domestic-DNS
+      disabled: false
   hosts:
-    # App Store 下载请求解析 金山CDN
-    iosapps.itunes.apple.com:
-    - iosapps.itunes.apple.com.download.ks-cdn.com
+    dns.google: 8.8.8.8, 8.8.4.4, 2001:4860:4860::8888, 2001:4860:4860::8844 # https://dns.google/dns-query
+    cloudflare-dns.com: 104.16.249.249, 104.16.248.249, 2606:4700::6810:f8f9, 2606:4700::6810:f9f9 #https://cloudflare-dns.com/dns-query
+    dns.alidns.com: 223.5.5.5, 223.6.6.6, 2400:3200:baba::1, 2400:3200::1 # https://dns.alidns.com/dns-query
+    doh.pub: 1.12.12.12, 120.53.53.53 # https://doh.pub/dns-query
+    dot.pub: 1.12.12.12, 120.53.53.53 # dot.pub:853
+  proxy_nameservers:
 policy_groups:
 - external:
     name: 手动选择
