@@ -1,6 +1,6 @@
 # Author:https://github.com/Repcz
 # TG:https://t.me/LUCYChannel_1024
-# 最后更新时间: 2026-06-18 19:14:52
+# 最后更新时间: 2026-06-18 19:45
 #
 # Egern Version ≥ v2.20.0(772)
 # 官方文档: https://doc.egernapp.com
@@ -41,7 +41,7 @@ dns:
       disabled: false
   - domain_wildcard:
       match: '*'
-      value: Foreign-Encrypted-DNS
+      value: Domestic-Encrypted-DNS
       disabled: false
   hosts:
     dns.google:
