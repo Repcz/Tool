@@ -1,5 +1,5 @@
 # 规则名称: Apple
-# 规则统计: 44
+# 规则统计: 67
 
 no_resolve: true
 domain_set:
@@ -51,3 +51,27 @@ ip_cidr6_set:
   - 2620:149::/32
   - 2a01:b740::/32
   - 2a01:b747::/32
+user_agent_set:
+  - "%E5%9C%B0%E5%9B%BE*"
+  - "%E6%9F%A5%E6%89%BE*"
+  - "%E8%AE%BE%E7%BD%AE*"
+  - "*WeatherFoundation*"
+  - "*com.apple.mobileme.fmip1*"
+  - "AppStore*"
+  - "AppleNews*"
+  - "AppleTV*"
+  - "FMDClient*"
+  - "FMFD*"
+  - "FindMy*"
+  - "Maps*"
+  - "Music*"
+  - "TestFlight*"
+  - "com.apple.Maps*"
+  - "com.apple.appstored*"
+  - "com.apple.geod*"
+  - "com.apple.news*"
+  - "com.apple.trustd*"
+  - "com.apple.tv*"
+  - "fmflocatord*"
+  - "geod*"
+  - "locationd*"

@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 858
+# 规则统计: 861
 
 domain_set:
   - acg.tv
@@ -861,4 +861,8 @@ domain_suffix_set:
   - zuoyebang.com
   - zybang.com
 domain_wildcard_set:
-  - *.qhimgs?.com
+  - "*.qhimgs?.com"
+user_agent_set:
+  - "%E4%BC%98%E9%85%B7*"
+  - "%E6%89%8B%E6%9C%BA%E6%B7%98%E5%AE%9D*"
+  - "TeslaMap"

@@ -1,5 +1,5 @@
 # 规则名称: AppleMusic
-# 规则统计: 9
+# 规则统计: 10
 
 domain_set:
   - aod-ssl.itunes.apple.com
@@ -12,3 +12,5 @@ domain_suffix_set:
   - applemusic.com
   - blobstore.apple.com
   - music.apple.com
+user_agent_set:
+  - "Music*"

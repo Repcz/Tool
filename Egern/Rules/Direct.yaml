@@ -40,4 +40,4 @@ domain_suffix_set:
   - subhd.tv
   - test-ipv6.com
 dest_port_set:
-  - 22
+  - "22"

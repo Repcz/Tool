@@ -1,5 +1,5 @@
 # 规则名称: AppleProxy
-# 规则统计: 39
+# 规则统计: 44
 
 domain_set:
   - api-glb-sea.smoot.apple.com
@@ -42,3 +42,9 @@ domain_suffix_set:
   - hls.itunes.apple.com
   - ocsp.apple.com
   - tv.apple.com
+user_agent_set:
+  - "AppleNews*"
+  - "AppleTV*"
+  - "com.apple.news*"
+  - "com.apple.trustd*"
+  - "com.apple.tv*"

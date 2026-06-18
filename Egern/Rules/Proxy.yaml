@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 1561
+# 规则统计: 1563
 
 no_resolve: true
 domain_set:
@@ -1567,3 +1567,6 @@ ip_cidr_set:
   - 18.206.50.220/32
   - 3.136.94.196/32
   - 44.205.88.94/32
+user_agent_set:
+  - "Roam*"
+  - "SpeedTest*"

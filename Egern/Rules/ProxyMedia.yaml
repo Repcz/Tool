@@ -1,5 +1,5 @@
 # 规则名称: ProxyMedia
-# 规则统计: 272
+# 规则统计: 321
 
 domain_set:
   - 44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
@@ -276,3 +276,53 @@ domain_keyword_set:
   - tvbanywhere
   - uk-live
   - voddazn
+user_agent_set:
+  - "*Spotify*"
+  - "AbemaTV*"
+  - "All4*"
+  - "Anime*"
+  - "AppleTV*"
+  - "Argo*"
+  - "BBCiPlayer*"
+  - "DAZN*"
+  - "DPlus*"
+  - "Deezer*"
+  - "Disney+*"
+  - "FOX NOW*"
+  - "FOXPlus*"
+  - "HBO NOW*"
+  - "HBOMAX*"
+  - "HWTVMobile*"
+  - "Himalaya*"
+  - "Hulu*"
+  - "ITV_Player*"
+  - "InstantVideo.US*"
+  - "JOOX*"
+  - "KKTV*"
+  - "LINE TV*"
+  - "My5*"
+  - "Naver TV*"
+  - "Niconico*"
+  - "Overcast*"
+  - "PBS*"
+  - "PPlus*"
+  - "Pandora*"
+  - "PeacockMobile*"
+  - "Prime Video*"
+  - "SoundCloud*"
+  - "TIDAL*"
+  - "TVer-Release*"
+  - "TaiwanGood*"
+  - "TikTok*"
+  - "Viu*"
+  - "WeMusic*"
+  - "WeTV*"
+  - "YouTube*"
+  - "YouTubeMusic*"
+  - "com.apple.tv*"
+  - "com.google.ios.youtube*"
+  - "com.google.ios.youtubemusic*"
+  - "com.kktv.ios.kktv*"
+  - "discovery+*"
+  - "encoreTVB*"
+  - "mytv*"

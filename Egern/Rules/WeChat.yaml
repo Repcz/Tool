@@ -1,5 +1,5 @@
 # 规则名称: WeChat
-# 规则统计: 339
+# 规则统计: 341
 
 no_resolve: true
 domain_set:
@@ -346,3 +346,6 @@ ip_cidr6_set:
   - 240E:FF:9018:100::/60
   - 240E:FF:F100::/44
   - 240e:e1:a900:50::/112
+user_agent_set:
+  - "MicroMessenger*"
+  - "WeChat*"

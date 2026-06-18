@@ -1,5 +1,5 @@
 # 规则名称: Reject
-# 规则统计: 6209
+# 规则统计: 6210
 
 no_resolve: true
 domain_set:
@@ -6216,3 +6216,5 @@ ip_cidr_set:
   - 60.190.139.164/32
 ip_cidr6_set:
   - 2402:4e00:1200:ed00:0:9089:6dac:96b6/128
+user_agent_set:
+  - "AVOS*"
