@@ -1,6 +1,6 @@
 # Author:https://github.com/Repcz
 # TG:https://t.me/LUCYChannel_1024
-# 最后更新时间: 2026-6-18 15:40
+# 最后更新时间: 2026-6-18 16:40
 #
 # Egern Version ≥ v2.20.0(772)
 # 官方文档: https://doc.egernapp.com
@@ -8,19 +8,14 @@
 # 以 ';' 或 '#' 或 '//' 开头的配置文件行为注释行
 #
 # ================
-
-# TUN模式
+http_port: 6152
+socks_port: 6153
 vif_only: true
-# 劫持 DNS 服务器
 hijack_dns:
 - '*:53'
-# 自定义 MaxMind 数据库
 geoip_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
-# 自定义 ASN 数据库
 asn_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-ASN.mmdb
-# 代理延迟测试
 proxy_latency_test_url: http://1.1.1.1/generate_204
-# 直连延迟测试
 direct_latency_test_url: http://connectivitycheck.platform.hicloud.com/generate_204
 dns:
   bootstrap:
@@ -37,55 +32,36 @@ dns:
     - https://dns.google/dns-query
   forward:
   - domain_wildcard:
-      match: '*.local'
-      value: system
-  - domain_wildcard:
-      match: '*.lan'
-      value: system
-  - domain_wildcard:
-      match: '*.home'
-      value: system
-  - domain_wildcard:
-      match: '*.internal'
-      value: system
-  - domain_wildcard:
-      match: '*.corp'
-      value: system
-  - domain_wildcard:
-      match: '*.example.com'
-      value: system
-  - domain_wildcard:
-      match: lancache.steamcontent.com
-      value: system
-  - domain_wildcard:
-      match: '*.lancache.steamcontent.com'
-      value: system
-  - domain_wildcard:
-      match: 10099.com.cn
-      value: system
-  - domain_wildcard:
-      match: msftconnecttest.com
-      value: system
-  - domain_wildcard:
-      match: '*.msftconnecttest.com'
-      value: system
-  - domain_wildcard:
-      match: msftncsi.com
-      value: system
-  - domain_wildcard:
-      match: '*.msftncsi.com'
-      value: system
-  - domain_wildcard:
       match: '*'
       value: Domestic-DNS
       disabled: false
   hosts:
-    dns.google: 8.8.8.8, 8.8.4.4, 2001:4860:4860::8888, 2001:4860:4860::8844 # https://dns.google/dns-query
-    cloudflare-dns.com: 104.16.249.249, 104.16.248.249, 2606:4700::6810:f8f9, 2606:4700::6810:f9f9 #https://cloudflare-dns.com/dns-query
-    dns.alidns.com: 223.5.5.5, 223.6.6.6, 2400:3200:baba::1, 2400:3200::1 # https://dns.alidns.com/dns-query
-    doh.pub: 1.12.12.12, 120.53.53.53 # https://doh.pub/dns-query
-    dot.pub: 1.12.12.12, 120.53.53.53 # dot.pub:853
-  proxy_nameservers:
+    dns.google:
+    - 8.8.8.8, 8.8.4.4, 2001:4860:4860::8888, 2001:4860:4860::8844
+    cloudflare-dns.com:
+    - 104.16.249.249, 104.16.248.249, 2606:4700::6810:f8f9, 2606:4700::6810:f9f9
+    dns.alidns.com:
+    - 223.5.5.5, 223.6.6.6, 2400:3200:baba::1, 2400:3200::1
+    doh.pub:
+    - 1.12.12.12, 120.53.53.53
+    dot.pub:
+    - 1.12.12.12, 120.53.53.53
+real_ip_domains:
+- lancache.steamcontent.com
+- '*.msftconnecttest.com'
+- '*.msftncsi.com'
+- '*.srv.nintendo.net'
+- '*.stun.playstation.net'
+- xbox.*.microsoft.com
+- '*.xboxlive.com'
+- '*.logon.battlenet.com.cn'
+- '*.logon.battle.net'
+- stun.l.google.com
+- easy-login.10099.com.cn
+- '*-update.xoyocdn.com'
+- '*.prod.cloud.netflix.com'
+- appboot.netflix.com
+- '*-appboot.netflix.com'
 policy_groups:
 - external:
     name: 手动选择
