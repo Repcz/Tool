@@ -28,7 +28,7 @@
         "reverse_mapping": true,
         "strategy": "ipv4_only",
         "optimistic": true,
-        "final": "cf-doh"
+        "final": "ali-doh"
     },
     "outbounds": [
         {"tag": "Direct","type": "direct"},
