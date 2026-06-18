@@ -1,8 +1,8 @@
 # Author:https://github.com/Repcz
 # TG:https://t.me/LUCYChannel_1024
-# 最后更新时间: 2026-6-13 15:00
+# 最后更新时间: 2026-6-18 15:40
 #
-# Egern Version ≥ v2.0.0(552)
+# Egern Version ≥ v2.20.0(772)
 # 官方文档: https://doc.egernapp.com
 #
 # 以 ';' 或 '#' 或 '//' 开头的配置文件行为注释行
@@ -259,7 +259,49 @@ rules:
 mitm:
   enabled: true
 modules:
-- url: https://github.com/Repcz/Tool/raw/X/Egern/Module/YouTube.yaml
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/广告平台拦截器.beta.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/拦截HTTPDNS.beta.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/高德地图去广告.beta.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/闲鱼去广告.beta.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/酷安去广告.beta.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/知乎去广告.beta.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/滴滴出行去广告.beta.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/微博轻享版去广告.beta.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/微信小程序去广告.beta.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/微信公众号去广告.beta.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/小红书去广告.beta.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/什么值得买去广告.beta.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/IT之家去广告.beta.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/fmz200/wool_scripts/refs/heads/main/Surge/module/XWebAds.module
+  enabled: true
+- url: https://raw.githubusercontent.com/Keywos/rule/main/script/wy/wy.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/Maasea/sgmodule/master/YouTube.Enhance.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Module/Block/Advertising.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/githubdulong/Script/master/Surge/jd_price2.sgmodule
+  enabled: true
+- url: https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.surge.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/kokoryh/Sparkle/refs/heads/master/release/surge/module/bilibili.sgmodule
+  enabled: true
+- url: https://raw.githubusercontent.com/xream/scripts/main/surge/modules/network-info/network-info-lite.sgmodule
+  enabled: false
+- url: https://raw.githubusercontent.com/001ProMax/Surge/main/Module/AD/Spotify.sgmodule
   enabled: false
 - name: SubStore
   url: https://raw.githubusercontent.com/sub-store-org/Sub-Store/refs/heads/master/config/Egern.yaml
