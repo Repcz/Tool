@@ -1,6 +1,6 @@
 # Author:https://github.com/Repcz
 # TG:https://t.me/LUCYChannel_1024
-# 最后更新时间: 2026-6-18 16:40
+# 最后更新时间: 2026-6-18 16:55
 #
 # Egern Version ≥ v2.20.0(772)
 # 官方文档: https://doc.egernapp.com
@@ -31,9 +31,17 @@ dns:
     - https://cloudflare-dns.com/dns-query
     - https://dns.google/dns-query
   forward:
+  - proxy_rule_set:
+      match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Reject.yaml
+      value: REJECT
+      disabled: false
+  - proxy_rule_set:
+      match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/ChinaDomain.yaml
+      value: Domestic-DNS
+      disabled: false
   - domain_wildcard:
       match: '*'
-      value: Domestic-DNS
+      value: Foreign-Encrypted-DNS
       disabled: false
   hosts:
     dns.google:
