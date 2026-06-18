@@ -1,6 +1,6 @@
 # Author:https://github.com/Repcz
 # TG:https://t.me/LUCYChannel_1024
-# 最后更新时间: 2026-6-18 17:05
+# 最后更新时间: 2026-06-18 19:14:52
 #
 # Egern Version ≥ v2.20.0(772)
 # 官方文档: https://doc.egernapp.com
@@ -41,7 +41,7 @@ dns:
       disabled: false
   - domain_wildcard:
       match: '*'
-      value: Domestic-Encrypted-DNS
+      value: Foreign-Encrypted-DNS
       disabled: false
   hosts:
     dns.google:
@@ -54,6 +54,9 @@ dns:
     - 1.12.12.12, 120.53.53.53
     dot.pub:
     - 1.12.12.12, 120.53.53.53
+  proxy_nameservers:
+  - 119.29.29.29
+  - 223.5.5.5
 real_ip_domains:
 - lancache.steamcontent.com
 - '*.msftconnecttest.com'
