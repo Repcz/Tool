@@ -1,11 +1,6 @@
 # 规则名称: Xbox
-# 规则统计: 42
+# 规则统计: 36
 
-domain_set:
-  - img-prod-cms-rt-microsoft-com.akamaized.net
-  - login.live.com
-  - logincdn.msauth.net
-  - store-images.s-microsoft.com
 domain_suffix_set:
   - beth.games
   - bethesda.net
@@ -32,7 +27,6 @@ domain_suffix_set:
   - xbox360.eu
   - xbox360.org
   - xboxab.com
-  - xboxab.net
   - xboxgamepass.com
   - xboxgamestudios.com
   - xboxlive.cn
@@ -41,7 +35,6 @@ domain_suffix_set:
   - xboxone.com
   - xboxone.eu
   - xboxplayanywhere.com
-  - xboxservice.com
   - xboxservices.com
   - xboxstudios.com
   - xbx.lv

@@ -1,10 +1,6 @@
 # 规则名称: Xbox
-# 规则统计: 42
+# 规则统计: 36
 
-HOST,img-prod-cms-rt-microsoft-com.akamaized.net,Xbox
-HOST,login.live.com,Xbox
-HOST,logincdn.msauth.net,Xbox
-HOST,store-images.s-microsoft.com,Xbox
 HOST-SUFFIX,beth.games,Xbox
 HOST-SUFFIX,bethesda.net,Xbox
 HOST-SUFFIX,bethesdagamestudios.com,Xbox
@@ -30,7 +26,6 @@ HOST-SUFFIX,xbox360.com,Xbox
 HOST-SUFFIX,xbox360.eu,Xbox
 HOST-SUFFIX,xbox360.org,Xbox
 HOST-SUFFIX,xboxab.com,Xbox
-HOST-SUFFIX,xboxab.net,Xbox
 HOST-SUFFIX,xboxgamepass.com,Xbox
 HOST-SUFFIX,xboxgamestudios.com,Xbox
 HOST-SUFFIX,xboxlive.cn,Xbox
@@ -39,7 +34,6 @@ HOST-SUFFIX,xboxone.co,Xbox
 HOST-SUFFIX,xboxone.com,Xbox
 HOST-SUFFIX,xboxone.eu,Xbox
 HOST-SUFFIX,xboxplayanywhere.com,Xbox
-HOST-SUFFIX,xboxservice.com,Xbox
 HOST-SUFFIX,xboxservices.com,Xbox
 HOST-SUFFIX,xboxstudios.com,Xbox
 HOST-SUFFIX,xbx.lv,Xbox

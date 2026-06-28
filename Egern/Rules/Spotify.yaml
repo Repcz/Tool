@@ -1,14 +1,7 @@
 # 规则名称: Spotify
-# 规则统计: 29
+# 规则统计: 20
 
 no_resolve: true
-domain_set:
-  - audio4-ak-spotify-com.akamaized.net
-  - cdn-spotify-experiments.conductrics.com
-  - heads-ak-spotify-com.akamaized.net
-  - spotify.com.edgesuite.net
-  - spotify.map.fastly.net
-  - spotify.map.fastlylb.net
 domain_suffix_set:
   - audio-ak-spotify-com.akamaized.net
   - byspotify.com
@@ -27,11 +20,9 @@ domain_suffix_set:
   - spotifycodes.com
   - spotifyforbrands.com
   - spotifyjobs.com
-  - spotifynewsroom.jp
-  - spotilocal.com
-  - tospotify.com
 domain_keyword_set:
-  - spotify
+  - -spotify-com
 ip_cidr_set:
-  - 104.154.127.126/32
   - 35.186.224.47/32
+user_agent_set:
+  - "Spotify*"
