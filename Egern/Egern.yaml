@@ -1,6 +1,6 @@
 # Author:https://github.com/Repcz
 # TG:https://t.me/LUCYChannel_1024
-# 最后更新时间: 2026-06-18 19:45
+# 最后更新时间: 2026-6-28 20:30
 #
 # Egern Version ≥ v2.20.0(772)
 # 官方文档: https://doc.egernapp.com
@@ -15,8 +15,8 @@ hijack_dns:
 - '*:53'
 geoip_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb
 asn_db_url: https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-ASN.mmdb
-proxy_latency_test_url: http://1.1.1.1/generate_204
-direct_latency_test_url: http://connectivitycheck.platform.hicloud.com/generate_204
+proxy_latency_test_url: http://cp.cloudflare.com/generate_204
+direct_latency_test_url: http://wifi.vivo.com.cn/generate_204
 dns:
   bootstrap:
   - system
@@ -132,7 +132,7 @@ policy_groups:
     - 手动选择
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
 - select:
-    name: 推特消息
+    name: 社交媒体
     policies:
     - 香港节点
     - 美国节点
@@ -231,14 +231,8 @@ rules:
     match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Github.yaml
     policy: 微软服务
 - rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/OneDrive.yaml
-    policy: 微软服务
-- rule_set:
     match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Microsoft.yaml
     policy: 微软服务
-- rule_set:
-    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/YouTube.yaml
-    policy: 谷歌服务
 - rule_set:
     match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Google.yaml
     policy: 谷歌服务
@@ -247,7 +241,10 @@ rules:
     policy: 电报消息
 - rule_set:
     match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Twitter.yaml
-    policy: 推特消息
+    policy: 社交媒体
+- rule_set:
+    match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Facebook.yaml
+    policy: 社交媒体
 - rule_set:
     match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Game.yaml
     policy: 游戏平台
