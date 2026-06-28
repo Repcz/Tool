@@ -28,12 +28,9 @@ ipv6: false
 log-level: info
 unified-delay: true
 
-geodata-mode: true
+geodata-mode: false
 geox-url:
-  geoip: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat"
-  geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
-  mmdb: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb"
-  asn: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-ASN.mmdb"
+  mmdb: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-without-asn.mmdb"
 
 profile: { store-selected: true, store-fake-ip: false }
 sniffer: { enable: true, sniff: { HTTP: { ports: [80], override-destination: true }, TLS: { ports: [443, 8443] }, QUIC: { ports: [443, 8443] } } }
@@ -53,7 +50,7 @@ dns:
   nameserver: [223.5.5.5, 119.29.29.29]
 
 # 锚点参数
-pg: &pg {type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, DIRECT]}
+pg: &pg {type: select, proxies: [Manual, HongKong, United States, Singapore, Japan, Taiwan, DIRECT]}
 url-test: &url-test {type: url-test, url: http://1.1.1.1/generate_204, interval: 300, tolerance: 0, include-all: true}
 select: &select {type: select, include-all: true}
 fallback: &fallback {type: fallback, url: http://1.1.1.1/generate_204, interval: 300, include-all: true}
@@ -62,24 +59,23 @@ c: &c {type: http, behavior: classical, format: text, interval: 86400}
 
 proxy-groups:
 
-  - {name: 手动切换, type: select, include-all: true, proxies: [香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点, DIRECT], icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/applesafari.png}
-  - {name: 国外网站, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png}
-  - {name: 国际媒体, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png}
-  - {name: 苹果服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_1.png}
-  - {name: 微软服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png}
-  - {name: 谷歌服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png}
-  - {name: 电报消息, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png}
-  - {name: 社交媒体, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png}
+  - {name: Manual, type: select, include-all: true, proxies: [HongKong, United States, Singapore, Japan, Taiwan, DIRECT], icon: https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/applesafari.png}
+  - {name: Global, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png}
+  - {name: Streaming, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png}
+  - {name: Microsoft, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png}
+  - {name: Google, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png}
   - {name: AI, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png}
-  - {name: 游戏平台, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png}
+  - {name: Social, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png}
+  - {name: Telegram, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png}
+  - {name: Game, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png}
   - {name: Emby, <<: *pg, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png}
   - {name: Spotify, <<: *pg, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png}
-  - {name: 兜底分流, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png}
-  - {name: 香港节点, <<: *url-test, filter: "(?i)🇭🇰|香港|(\b(HK|Hong)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png}
-  - {name: 美国节点, <<: *url-test, filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png}
-  - {name: 狮城节点, <<: *url-test, filter: "(?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png}
-  - {name: 日本节点, <<: *url-test, filter: "(?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png}
-  - {name: 台湾节点, <<: *url-test, filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png}
+  - {name: Final, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png}
+  - {name: HongKong, <<: *url-test, filter: "(?i)🇭🇰|香港|(\b(HK|Hong)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png}
+  - {name: United States, <<: *url-test, filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png}
+  - {name: Singapore, <<: *url-test, filter: "(?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png}
+  - {name: Japan, <<: *url-test, filter: "(?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png}
+  - {name: Taiwan, <<: *url-test, filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png}
 
 rule-providers:
   
@@ -110,24 +106,24 @@ rules:
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Reject,REJECT
   - RULE-SET,AI,AI
-  - RULE-SET,Github,微软服务
-  - RULE-SET,Microsoft,微软服务
-  - RULE-SET,Google,谷歌服务
-  - RULE-SET,Twitter,社交媒体
-  - RULE-SET,Facebook,社交媒体
-  - RULE-SET,Telegram,电报消息
-  - RULE-SET,Steam,游戏平台
-  - RULE-SET,Epic,游戏平台
+  - RULE-SET,Telegram,Telegram
+  - RULE-SET,Twitter,Social
+  - RULE-SET,Facebook,Social
+  - RULE-SET,TikTok,Social
+  - RULE-SET,Steam,Game
+  - RULE-SET,Epic,Game
+  - RULE-SET,Google,Google
+  - RULE-SET,Github,Microsoft
+  - RULE-SET,Microsoft,Microsoft
   - RULE-SET,Emby,Emby
-  - RULE-SET,Bahamut,国际媒体
-  - RULE-SET,Netflix,国际媒体
-  - RULE-SET,Disney,国际媒体
-  - RULE-SET,PrimeVideo,国际媒体
-  - RULE-SET,HBO,国际媒体
-  - RULE-SET,TikTok,国际媒体
   - RULE-SET,Spotify,Spotify
-  - RULE-SET,Proxy,国外网站
-  - RULE-SET,AppleProxy,香港节点
+  - RULE-SET,Bahamut,Streaming
+  - RULE-SET,Netflix,Streaming
+  - RULE-SET,Disney,Streaming
+  - RULE-SET,PrimeVideo,Streaming
+  - RULE-SET,HBO,Streaming
+  - RULE-SET,Proxy,Global
+  - RULE-SET,AppleProxy,HongKong
   - RULE-SET,Lan,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,兜底分流
+  - MATCH,Final

@@ -85,73 +85,66 @@ function main(config) {
   config["proxy-groups"] = [
     {
       ...groupBaseOption,
-      "name": "手动切换",
+      "name": "Manual",
       "type": "select",
-      "proxies": ["香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
+      "proxies": ["HongKong", "United States", "Singapore", "Japan", "Taiwan", "DIRECT"],
       "include-all": true,
       "icon": "https://github.com/shindgewongxj/WHATSINStash/raw/main/icon/applesafari.png"
     },
     {
       ...groupBaseOption,
-      "name": "国外网站",
+      "name": "Global",
       "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
+      "proxies": ["Manual", "HongKong", "United States", "Singapore", "Japan", "Taiwan", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png"
     },
     {
       ...groupBaseOption,
-      "name": "国际媒体",
+      "name": "Streaming",
       "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
+      "proxies": ["Manual", "HongKong", "United States", "Singapore", "Japan", "Taiwan", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png"
     },
     {
       ...groupBaseOption,
-      "name": "苹果服务",
+      "name": "Microsoft",
       "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
-      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_1.png"
-    },
-    {
-      ...groupBaseOption,
-      "name": "微软服务",
-      "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
+      "proxies": ["Manual", "HongKong", "United States", "Singapore", "Japan", "Taiwan", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png"
     },
     {
       ...groupBaseOption,
-      "name": "谷歌服务",
+      "name": "Google",
       "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
+      "proxies": ["Manual", "HongKong", "United States", "Singapore", "Japan", "Taiwan", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png"
-    },
-    {
-      ...groupBaseOption,
-      "name": "电报消息",
-      "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
-      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png"
-    },
-    {
-      ...groupBaseOption,
-      "name": "社交媒体",
-      "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
-      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png"
     },
     {
       ...groupBaseOption,
       "name": "AI",
       "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
+      "proxies": ["Manual", "HongKong", "United States", "Singapore", "Japan", "Taiwan", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png"
     },
     {
       ...groupBaseOption,
-      "name": "游戏平台",
+      "name": "Social",
       "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
+      "proxies": ["Manual", "HongKong", "United States", "Singapore", "Japan", "Taiwan", "DIRECT"],
+      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png"
+    },
+    {
+      ...groupBaseOption,
+      "name": "Telegram",
+      "type": "select",
+      "proxies": ["Manual", "HongKong", "United States", "Singapore", "Japan", "Taiwan", "DIRECT"],
+      "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png"
+    },
+    {
+      ...groupBaseOption,
+      "name": "Game",
+      "type": "select",
+      "proxies": ["Manual", "HongKong", "United States", "Singapore", "Japan", "Taiwan", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png"
     },
     {
@@ -159,7 +152,7 @@ function main(config) {
       "name": "Emby",
       "type": "select",
       "include-all": true,
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
+      "proxies": ["Manual", "HongKong", "United States", "Singapore", "Japan", "Taiwan", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png"
     },
     {
@@ -167,20 +160,20 @@ function main(config) {
       "name": "Spotify",
       "type": "select",
       "include-all": true,
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
+      "proxies": ["Manual", "HongKong", "United States", "Singapore", "Japan", "Taiwan", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png"
     },
     {
       ...groupBaseOption,
-      "name": "兜底分流",
+      "name": "Final",
       "type": "select",
-      "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
+      "proxies": ["Manual", "HongKong", "United States", "Singapore", "Japan", "Taiwan", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png"
     },
     // 地区分组
     {
       ...groupBaseOption,
-      "name": "香港节点",
+      "name": "HongKong",
       "type": "url-test",
       "tolerance": 0,
       "include-all": true,
@@ -189,7 +182,7 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "美国节点",
+      "name": "United States",
       "type": "url-test",
       "tolerance": 0,
       "include-all": true,
@@ -198,7 +191,7 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "狮城节点",
+      "name": "Singapore",
       "type": "url-test",
       "tolerance": 0,
       "include-all": true,
@@ -207,7 +200,7 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "日本节点",
+      "name": "Japan",
       "type": "url-test",
       "tolerance": 0,
       "include-all": true,
@@ -216,7 +209,7 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "台湾节点",
+      "name": "Taiwan",
       "type": "url-test",
       "tolerance": 0,
       "include-all": true,
@@ -344,27 +337,27 @@ function main(config) {
     "RULE-SET,Direct,DIRECT",
     "RULE-SET,Reject,REJECT",
     "RULE-SET,AI,AI",
-    "RULE-SET,Github,微软服务",
-    "RULE-SET,Microsoft,微软服务",
-    "RULE-SET,Google,谷歌服务",
-    "RULE-SET,Twitter,社交媒体",
-    "RULE-SET,Facebook,社交媒体",
-    "RULE-SET,Telegram,电报消息",
-    "RULE-SET,Steam,游戏平台",
-    "RULE-SET,Epic,游戏平台",
+    "RULE-SET,Telegram,Telegram",
+    "RULE-SET,Twitter,Social",
+    "RULE-SET,Facebook,Social",
+    "RULE-SET,TikTok,Social",
+    "RULE-SET,Steam,Game",
+    "RULE-SET,Epic,Game",
+    "RULE-SET,Google,Google",
+    "RULE-SET,Github,Microsoft",
+    "RULE-SET,Microsoft,Microsoft",
     "RULE-SET,Emby,Emby",
-    "RULE-SET,Bahamut,国际媒体",
-    "RULE-SET,Netflix,国际媒体",
-    "RULE-SET,Disney,国际媒体",
-    "RULE-SET,PrimeVideo,国际媒体",
-    "RULE-SET,HBO,国际媒体",
-    "RULE-SET,TikTok,国际媒体",
     "RULE-SET,Spotify,Spotify",
-    "RULE-SET,Proxy,国外网站",
-    "RULE-SET,AppleProxy,香港节点",
+    "RULE-SET,Bahamut,Streaming",
+    "RULE-SET,Netflix,Streaming",
+    "RULE-SET,Disney,Streaming",
+    "RULE-SET,PrimeVideo,Streaming",
+    "RULE-SET,HBO,Streaming",
+    "RULE-SET,Proxy,Global",
+    "RULE-SET,AppleProxy,HongKong",
     "RULE-SET,Lan,DIRECT",
     "GEOIP,CN,DIRECT",
-    "MATCH,兜底分流"
+    "MATCH,Final"
   ];
 
   // 返回修改后的配置
