@@ -1,5 +1,5 @@
 # 规则名称: Steam
-# 规则统计: 19
+# 规则统计: 20
 
 HOST-SUFFIX,fanatical.com,Steam
 HOST-SUFFIX,humblebundle.com,Steam
@@ -9,6 +9,7 @@ HOST-SUFFIX,steam-api.com,Steam
 HOST-SUFFIX,steam-chat.com,Steam
 HOST-SUFFIX,steam.tv,Steam
 HOST-SUFFIX,steamcommunity.com,Steam
+HOST-SUFFIX,steamconnecttest.com,Steam
 HOST-SUFFIX,steamcontent.com,Steam
 HOST-SUFFIX,steamcontent.tnkjmec.com,Steam
 HOST-SUFFIX,steamdeck.com,Steam

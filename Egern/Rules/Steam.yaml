@@ -1,5 +1,5 @@
 # 规则名称: Steam
-# 规则统计: 19
+# 规则统计: 20
 
 domain_suffix_set:
   - fanatical.com
@@ -10,6 +10,7 @@ domain_suffix_set:
   - steam-chat.com
   - steam.tv
   - steamcommunity.com
+  - steamconnecttest.com
   - steamcontent.com
   - steamcontent.tnkjmec.com
   - steamdeck.com
