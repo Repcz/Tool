@@ -1,14 +1,22 @@
-# Tool
+<div align="center">
 
-> 跨平台代理规则集与配置方案 · 自动化构建 · 生产就绪
+# 🛠️ Tool
+
+> 自动化构建
+
+[![](https://visitor-badge.laobi.icu/badge?page_id=Repcz.Tool&left_color=gray&right_color=blue)](#)
+[![](https://img.shields.io/github/stars/Repcz/Tool?style=flat&label=Stars&color=ffcb2e)](https://github.com/Repcz/Tool/stargazers)
+[![](https://img.shields.io/github/forks/Repcz/Tool?style=flat&label=Forks&color=2ea043)](https://github.com/Repcz/Tool/forks)
+[![](https://img.shields.io/github/repo-size/Repcz/Tool?style=flat&label=Repo%20Size&color=8441c4)](https://github.com/Repcz/Tool)
+[![](https://img.shields.io/badge/License-MIT-22c55e?style=flat)](LICENSE)
+[![](https://img.shields.io/github/last-commit/Repcz/Tool?style=flat&label=Updated&color=3178c6)](https://github.com/Repcz/Tool/commits)
+
+</div>
 
 ---
 
 > [!Caution]
 > **禁止任何形式的转载或发布至国内平台**
-
-> [!WARNING]
-> **禁止 FORK**
 
 > [!IMPORTANT]
 > 任何以任何方式查看此项目的人或直接或间接使用该项目的使用者都应仔细阅读此声明。
@@ -82,7 +90,11 @@ rules:
 
 ---
 
-<p align="center">
-  <b>Tool</b> · 由 <a href="https://github.com/Repcz">@Repcz</a> 维护<br>
-  <sub>仅用于学习和研究目的</sub>
-</p>
+<div align="center">
+
+**🛠️ Tool** · 由 [@Repcz](https://github.com/Repcz) 维护 ·
+![](https://img.shields.io/badge/Made%20with-♥-ff4d4d?style=flat-square)
+
+<sub>仅用于学习和研究目的</sub>
+
+</div>
