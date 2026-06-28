@@ -1,6 +1,13 @@
 # 规则名称: Steam
-# 规则统计: 54
+# 规则统计: 61
 
+domain_set:
+  - steambroadcast.akamaized.net
+  - steamcommunity-a.akamaihd.net
+  - steampipe.akamaized.net
+  - steamstore-a.akamaihd.net
+  - steamusercontent-a.akamaihd.net
+  - steamuserimages-a.akamaihd.net
 domain_suffix_set:
   - cdn-ali.content.steamchina.com
   - cdn-qc.content.steamchina.com
@@ -42,6 +49,7 @@ domain_suffix_set:
   - steampipe.akamaized.net
   - steampowered.com
   - steampowered.com.8686c.com
+  - steamserver.net
   - steamstat.us
   - steamstatic.com
   - steamstatic.com.8686c.com

@@ -1,6 +1,12 @@
 # 规则名称: Steam
-# 规则统计: 54
+# 规则统计: 61
 
+HOST,steambroadcast.akamaized.net,Steam
+HOST,steamcommunity-a.akamaihd.net,Steam
+HOST,steampipe.akamaized.net,Steam
+HOST,steamstore-a.akamaihd.net,Steam
+HOST,steamusercontent-a.akamaihd.net,Steam
+HOST,steamuserimages-a.akamaihd.net,Steam
 HOST-SUFFIX,cdn-ali.content.steamchina.com,Steam
 HOST-SUFFIX,cdn-qc.content.steamchina.com,Steam
 HOST-SUFFIX,cdn-ws.content.steamchina.com,Steam
@@ -41,6 +47,7 @@ HOST-SUFFIX,steampipe-partner.akamaized.net,Steam
 HOST-SUFFIX,steampipe.akamaized.net,Steam
 HOST-SUFFIX,steampowered.com,Steam
 HOST-SUFFIX,steampowered.com.8686c.com,Steam
+HOST-SUFFIX,steamserver.net,Steam
 HOST-SUFFIX,steamstat.us,Steam
 HOST-SUFFIX,steamstatic.com,Steam
 HOST-SUFFIX,steamstatic.com.8686c.com,Steam
