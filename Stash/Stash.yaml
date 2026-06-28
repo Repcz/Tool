@@ -1,6 +1,6 @@
 # Author:https://github.com/Repcz
 # TG:https://t.me/QVQ_Channel
-# 最后更新时间: 2026-6-13 15:00
+# 最后更新时间: 2026-6-28 20:30
 #
 # Stash Version ≥ 2.6.0 
 #
@@ -38,7 +38,7 @@ proxy-groups:
 
   - {name: 电报消息, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png, type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点]}
 
-  - {name: 推特消息, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png, type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点]}
+  - {name: 社交媒体, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png, type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点]}
 
   - {name: AI, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png, type: select, proxies: [手动切换, 香港节点, 美国节点, 狮城节点, 日本节点, 台湾节点]}
 
@@ -65,14 +65,13 @@ rule-providers:
   Direct: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Direct.list}
   Lan: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Lan.list}
   Reject: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Reject.list}
-  AppleProxy: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/AppleServers.list}
+  AppleServers: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/AppleServers.list}
   Microsoft: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Microsoft.list}
-  OneDrive: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/OneDrive.list}
   Github: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Github.list}
-  YouTube: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/YouTube.list}
   Google: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Google.list}
   Telegram: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Telegram.list}
   Twitter: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Twitter.list}
+  Facebook: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Facebook.list}
   Steam: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Steam.list}
   Epic: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/Epic.list}
   AI: {behavior: classical, format: text, interval: 86400, url: https://github.com/Repcz/Tool/raw/X/Stash/Rules/AI.list}
@@ -91,11 +90,10 @@ rules:
   - RULE-SET,Reject,REJECT
   - RULE-SET,AI,AI
   - RULE-SET,Github,微软服务
-  - RULE-SET,OneDrive,微软服务
   - RULE-SET,Microsoft,微软服务
-  - RULE-SET,YouTube,谷歌服务
   - RULE-SET,Google,谷歌服务
-  - RULE-SET,Twitter,推特消息
+  - RULE-SET,Twitter,社交媒体
+  - RULE-SET,Facebook,社交媒体
   - RULE-SET,Telegram,电报消息
   - RULE-SET,Steam,游戏平台
   - RULE-SET,Epic,游戏平台
@@ -108,7 +106,7 @@ rules:
   - RULE-SET,TikTok,国际媒体
   - RULE-SET,Spotify,Spotify
   - RULE-SET,Proxy,国外网站
-  - RULE-SET,AppleProxy,香港节点
+  - RULE-SET,AppleServers,香港节点
   - RULE-SET,Lan,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,兜底分流
