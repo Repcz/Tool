@@ -1,6 +1,6 @@
 # Author:https://github.com/Repcz
 # TG:https://t.me/@LUCYChannel_1024
-# 最后更新时间: 2026-6-21 13:00
+# 最后更新时间: 2026-6-28 20:30
 #
 # Mihomo Version ≥ 1.19.23
 # 官方文档: https://github.com/MetaCubeX/mihomo/blob/Meta/docs/config.yaml
@@ -69,7 +69,7 @@ proxy-groups:
   - {name: 微软服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Microsoft.png}
   - {name: 谷歌服务, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google_Search.png}
   - {name: 电报消息, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png}
-  - {name: 推特消息, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png}
+  - {name: 社交媒体, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png}
   - {name: AI, <<: *pg, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png}
   - {name: 游戏平台, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Game.png}
   - {name: Emby, <<: *pg, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png}
@@ -88,12 +88,11 @@ rule-providers:
   Reject: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Reject.list}
   AppleProxy: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/AppleServers.list}
   Microsoft: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Microsoft.list}
-  OneDrive: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/OneDrive.list}
   Github: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Github.list}
-  YouTube: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/YouTube.list}
   Google: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Google.list}
   Telegram: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Telegram.list}
   Twitter: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Twitter.list}
+  Facebook: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Facebook.list}
   Steam: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Steam.list}
   Epic: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Epic.list}
   AI: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/AI.list}
@@ -112,11 +111,10 @@ rules:
   - RULE-SET,Reject,REJECT
   - RULE-SET,AI,AI
   - RULE-SET,Github,微软服务
-  - RULE-SET,OneDrive,微软服务
   - RULE-SET,Microsoft,微软服务
-  - RULE-SET,YouTube,谷歌服务
   - RULE-SET,Google,谷歌服务
-  - RULE-SET,Twitter,推特消息
+  - RULE-SET,Twitter,社交媒体
+  - RULE-SET,Facebook,社交媒体
   - RULE-SET,Telegram,电报消息
   - RULE-SET,Steam,游戏平台
   - RULE-SET,Epic,游戏平台

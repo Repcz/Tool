@@ -2,7 +2,7 @@
 //
 // Clash Verge Rev (Version ≥ 17.2) & Mihomo-Party (Version ≥ 1.5.10)
 //
-// 最后更新时间: 2026-6-21 13:00
+// 最后更新时间: 2026-6-28 20:30
 
 
 // 规则集通用配置
@@ -135,7 +135,7 @@ function main(config) {
     },
     {
       ...groupBaseOption,
-      "name": "推特消息",
+      "name": "社交媒体",
       "type": "select",
       "proxies": ["手动切换", "香港节点", "美国节点", "狮城节点", "日本节点", "台湾节点", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Twitter.png"
@@ -252,20 +252,10 @@ function main(config) {
       "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Microsoft.list"
     },
-    "OneDrive": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/OneDrive.list"
-    },
     "Github": {
       ...ruleProviderCommon,
       "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Github.list"
-    },
-    "YouTube": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/YouTube.list"
     },
     "Google": {
       ...ruleProviderCommon,
@@ -276,6 +266,11 @@ function main(config) {
       ...ruleProviderCommon,
       "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Twitter.list"
+    },
+    "Facebook": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Facebook.list"
     },
     "Telegram": {
       ...ruleProviderCommon,
@@ -350,11 +345,10 @@ function main(config) {
     "RULE-SET,Reject,REJECT",
     "RULE-SET,AI,AI",
     "RULE-SET,Github,微软服务",
-    "RULE-SET,OneDrive,微软服务",
     "RULE-SET,Microsoft,微软服务",
-    "RULE-SET,YouTube,谷歌服务",
     "RULE-SET,Google,谷歌服务",
-    "RULE-SET,Twitter,推特消息",
+    "RULE-SET,Twitter,社交媒体",
+    "RULE-SET,Facebook,社交媒体",
     "RULE-SET,Telegram,电报消息",
     "RULE-SET,Steam,游戏平台",
     "RULE-SET,Epic,游戏平台",
