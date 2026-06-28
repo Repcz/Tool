@@ -1,0 +1,10 @@
+#!name=节点检测工具
+#!desc=适用于Loon的节点检测工具，可进行地理位置、节点解锁、入口落地等查询。请在所有节点页面选择一个节点长按，出现菜单后进行测试。\n@xream, @Keywos, @KOP-XIAO, @dcpengx
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/Node_detection_tool.lpx
+#!date=2026-06-01 17:11:35
+
+[Script]
+入口落地查询 = type=generic,script-path=https://kelee.one/Resource/JavaScript/Node_detection_tool/NetworkEntryAndExitQueries.js,timeout=10,img-url=globe.asia.australia.system
+地理位置查询 = type=generic,script-path=https://kelee.one/Resource/JavaScript/Node_detection_tool/LocationDetection.js,timeout=10,img-url=location.circle.system
+节点解锁查询 = type=generic,script-path=https://kelee.one/Resource/JavaScript/Node_detection_tool/NodeUnlockDetection.js,timeout=20,img-url=play.circle.system

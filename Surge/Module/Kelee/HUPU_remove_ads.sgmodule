@@ -1,0 +1,24 @@
+#!name=虎扑去广告
+#!desc=移除虎扑开屏广告、首页顶部推广、我的页面多余模块及各类横幅推广。\n@ZenmoFeiShi
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/HUPU_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Map Local]
+^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bplapi\/reddot\/v1\/app\/getReddot data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/bbs\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/(bbsallapi\/tag\/v1\/heatTag|bbsrankapi\/v1\/rating\/list) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/search\/v2\/(hintkeylist|hotkeylist) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/goblin\.hupu\.com\/\d\/\d\.\d\.\d+\/interfaceAd\/getOther\/v\d data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/goblin\.hupu\.com\/\d\/\d\.\d\.\d+\/interfaceAd\/getOther\/batch data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/fairy\.mobileapi\.hupu\.com\/gallery\/getmod2 data-type=text data=" " status-code=200
+^https:\/\/games\.mobileapi\.hupu\.com\/3\/8\.0\.86\/bplcommentapi\/bpl\/score_tab\/groups data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/games\.mobileapi\.hupu\.com\/3\/8\.0\.86\/bplapi\/banner\/getLocationBanners data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[Script]
+移除虎扑广告 = type=http-response,pattern=^https:\/\/fairy\.mobileapi\.hupu\.com\/mang\/preview\/banners,script-path=https://kelee.one/Resource/JavaScript/HUPU/HUPU_remove_ads.js,requires-body=true
+移除虎扑广告_2 = type=http-response,pattern=^https:\/\/bbs\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bbsallapi\/lego\/data,script-path=https://kelee.one/Resource/JavaScript/HUPU/HUPU_remove_ads.js,requires-body=true
+移除虎扑广告_3 = type=http-response,pattern=^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/buffer\/hotList,script-path=https://kelee.one/Resource/JavaScript/HUPU/HUPU_remove_ads.js,requires-body=true
+移除虎扑广告_4 = type=http-response,pattern=^https:\/\/games\.mobileapi\.hupu\.com\/\d\/\d\.\d\.\d+\/bplapi\/user\/v1\/more,script-path=https://kelee.one/Resource/JavaScript/HUPU/HUPU_remove_ads.js,requires-body=true
+
+[MITM]
+hostname = %APPEND% games.mobileapi.hupu.com, fairy.mobileapi.hupu.com, bbs.mobileapi.hupu.com, goblin.hupu.com

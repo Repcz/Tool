@@ -1,0 +1,31 @@
+#!name=测测去广告
+#!desc=移除开屏广告、活动皮肤、各类弹窗及横幅、金刚位红点文字，精简首页标签及搜索页面。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/Cece_remove_ads.lpx
+#!date=2026-05-13 00:20:48
+
+[Body Rewrite]
+http-response-jq ^https:\/\/api\.cece\.com\/user\/init\? 'delpaths([["data","launch_img_url"],["data","launch_goto_url"]])'
+http-response-jq ^https:\/\/api\.cece\.com\/common\/app\/app_config\? 'if (getpath(["data"]) | has("is_new_year")) then (setpath(["data","is_new_year"]; false)) else . end | if (getpath(["data"]) | has("spring_festival")) then (setpath(["data","spring_festival"]; false)) else . end | if (getpath(["data"]) | has("show_feedback_entry")) then (setpath(["data","show_feedback_entry"]; false)) else . end | if (getpath(["data"]) | has("show_course_entry")) then (setpath(["data","show_course_entry"]; false)) else . end | if (getpath(["data"]) | has("show_store_entry")) then (setpath(["data","show_store_entry"]; false)) else . end | if (getpath(["data"]) | has("show_luna")) then (setpath(["data","show_luna"]; false)) else . end | if (getpath(["data"]) | has("show_ead")) then (setpath(["data","show_ead"]; false)) else . end | if (getpath(["data"]) | has("show_ad")) then (setpath(["data","show_ad"]; false)) else . end | if (getpath(["data"]) | has("show_live_filter_tarot")) then (setpath(["data","show_live_filter_tarot"]; false)) else . end | if (getpath(["data"]) | has("community_feed_adswitch")) then (setpath(["data","community_feed_adswitch"]; false)) else . end | if (getpath(["data"]) | has("open_screen_ad_times")) then (setpath(["data","open_screen_ad_times"]; 0)) else . end | if (getpath(["data"]) | has("open_screen_ad_duration")) then (setpath(["data","open_screen_ad_duration"]; 0)) else . end | if (getpath(["data"]) | has("isShowThumbsGif")) then (setpath(["data","isShowThumbsGif"]; false)) else . end | if (getpath(["data"]) | has("teenager_mode_open")) then (setpath(["data","teenager_mode_open"]; false)) else . end | if (getpath(["data"]) | has("flu_log")) then (setpath(["data","flu_log"]; false)) else . end'
+http-response-jq ^https:\/\/api\.cece\.com\/common\/app\/app_config\? 'delpaths([["data","activity_list"],["data","fortune_ab_config"]])'
+http-response-jq ^https:\/\/api\.cece\.com\/chart\/tools\/home_10_tools\? '.data.tools |= map(del(.icon_tip_image))'
+http-response-jq ^https:\/\/api\.cece\.com\/user\/index\/tab_list\? '.data.tabs |= map(select(.type != "shop"))'
+http-response-jq ^https:\/\/api\.cece\.com\/common\/app\/risk_entrance\? 'if (getpath(["data"]) | has("ai_fortune_show_ask_tool")) then (setpath(["data","ai_fortune_show_ask_tool"]; false)) else . end | if (getpath(["data"]) | has("ai_sign_show_ask_tool")) then (setpath(["data","ai_sign_show_ask_tool"]; false)) else . end | if (getpath(["data"]) | has("single_tool_show_dice_card")) then (setpath(["data","single_tool_show_dice_card"]; false)) else . end | if (getpath(["data"]) | has("single_tool_show_tarot_card")) then (setpath(["data","single_tool_show_tarot_card"]; false)) else . end | if (getpath(["data"]) | has("single_tool_show_bazi_card")) then (setpath(["data","single_tool_show_bazi_card"]; false)) else . end | if (getpath(["data"]) | has("single_tool_show_hepan_card")) then (setpath(["data","single_tool_show_hepan_card"]; false)) else . end | if (getpath(["data"]) | has("single_tool_show_ziwei_card")) then (setpath(["data","single_tool_show_ziwei_card"]; false)) else . end | if (getpath(["data"]) | has("single_tool_show_xingpan_card")) then (setpath(["data","single_tool_show_xingpan_card"]; false)) else . end | if (getpath(["data"]) | has("multi_tool_show_card")) then (setpath(["data","multi_tool_show_card"]; false)) else . end | if (getpath(["data"]) | has("ai_ccai_show_multi_tool")) then (setpath(["data","ai_ccai_show_multi_tool"]; false)) else . end'
+
+[Map Local]
+^https:\/\/api\.cece\.com\/user\/index\/banners\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.cece\.com\/ask\/ai_chat\/popup\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.cece\.com\/user\/popup\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.cece\.com\/chart\/easter_egg\/popup\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.cece\.com\/user\/register_task\/notice_task\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.cece\.com\/ask\/ask\/alert_minus\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.cece\.com\/msgAsk\/question\/new_coupon_status\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.cece\.com\/user\/user\/myPageBanner\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.cece\.com\/live\/user\/coupon_tab\? data-type=text data="{\"code\":0,\"msg\":\"\"}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.cece\.com\/live\/recommend\/new_user\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.cece\.com\/chart\/tools\/get_search_recommend\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.cece\.com\/user\/rank\/list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.cece\.com\/chart\/config\/chart_activity\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% api.cece.com

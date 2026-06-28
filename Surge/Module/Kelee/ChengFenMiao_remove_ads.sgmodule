@@ -1,0 +1,17 @@
+#!name=成分喵去广告
+#!desc=移除首页推广活动、广告组件请求、移除被查商品购买链接、搜索发现。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/ChengFenMiao_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Body Rewrite]
+http-response-jq ^https:\/\/app\.chengfenmiao\.com\/helper\/setting\? 'delpaths([["detail_buy_sites"],["bottom_sites"]])'
+
+[Map Local]
+^https:\/\/app\.chengfenmiao\.com\/Listing\/LiveHots\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/app\.chengfenmiao\.com\/helper\/VersionCheck\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/app\.chengfenmiao\.com\/item\/closet\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/app\.chengfenmiao\.com\/Helper\/HotWords\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% app.chengfenmiao.com

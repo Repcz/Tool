@@ -1,0 +1,122 @@
+{
+    "log": {
+        "disabled": false,
+        "level": "info",
+        "timestamp": true
+    },
+
+    "certificate_providers": [
+        {
+            "type": "acme",
+            "tag": "ip_cert",
+            "domain": [
+                "your_server_ip"
+            ],
+            "email": "admin@example.com"
+        }
+    ],
+
+    "dns": {
+        "servers": [
+            {
+                "tag": "google",
+                "type": "udp",
+                "server": "8.8.8.8"
+            },
+            {"tag": "local","type": "local","neighbor_domain": [".local",".lan"]}
+        ],
+        "rules": [
+            {
+                "query_type": [
+                    "A",
+                    "AAAA"
+                ],
+                "action": "route",
+                "server": "google"
+            }
+        ],
+        "optimistic": true,
+        "strategy": "prefer_ipv4",
+        "final": "google"
+    },
+    
+    "inbounds": [
+        {
+            "type": "tun",
+            "tag": "tun-in",
+            "interface_name": "tun0",
+            "address": [
+                "172.18.0.1/30",
+                "fdfe:dcba:9876::1/126"
+            ],
+            "mtu": 9000,
+            "auto_route": true,
+            "strict_route": true,
+            "stack": "mixed",
+            "dns_mode": "hijack",
+            "dns_address": [
+                "172.18.0.2",
+                "fdfe:dcba:9876::2"
+            ],
+            "endpoint_independent_nat": false,
+            "udp_timeout": "5m"
+        },
+        {
+            "type": "anytls",
+            "tag": "anytls-in",
+            "listen": "::",
+            "listen_port": 443,
+            "users": [
+                {
+                    "name": "singbox",
+                    "password": ""
+                }
+            ],
+            "padding_scheme": [],
+            "tls": {
+                "enabled": true,
+                "server_name": "your_server_ip",
+                "certificate_provider": "ip_cert"
+            }
+        }
+    ],
+
+    "route": {
+        "rules": [
+            {
+                "inbound": [
+                    "anytls-in",
+                    "tun-in"
+                ],
+                "action": "sniff"
+            },
+            {
+                "inbound": [
+                    "tun-in"
+                ],
+                "port": [
+                    53
+                ],
+                "protocol": "dns",
+                "action": "hijack-dns"
+            }
+        ],
+        "auto_detect_interface": true,
+        "default_domain_resolver": "google",
+        "final": "direct"
+    },
+
+    "outbounds": [
+        {
+            "type": "direct",
+            "tag": "direct"
+        }
+    ],
+
+    "ntp": {
+        "enabled": true,
+        "server": "time.apple.com",
+        "server_port": 123,
+        "interval": "30m"
+    }
+}

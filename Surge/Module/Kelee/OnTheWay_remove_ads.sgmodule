@@ -1,0 +1,16 @@
+#!name=行者户外去广告
+#!desc=移除弹窗广告、发现页面横幅推广的推广金刚位，移除我的页面横幅推广。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/OnTheWay_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Body Rewrite]
+http-response-jq ^https:\/\/www\.imxingzhe\.com\/api\/v4\/account\/get_user_info\? 'delpaths([["banner"]])'
+http-response-jq ^https:\/\/www\.imxingzhe\.com\/api\/v4\/discovery\/ios\/\? 'delpaths([["banners"],["ad"]])'
+http-response-jq ^https:\/\/www\.imxingzhe\.com\/api\/v4\/discovery\/ios\/\? '.display_areas |= map(select(.name == "赛事" or .name == "行者帮" or .name == "头条" or .name == "排行榜" or .name == "约伴"))'
+
+[Map Local]
+^https:\/\/www\.imxingzhe\.com\/api\/v1\/pop\/window\/\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% www.imxingzhe.com

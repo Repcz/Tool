@@ -1,0 +1,19 @@
+#!name=数字心动去广告
+#!desc=移除开屏广告、首页顶部标签、轮播图、悬浮挂件、热门搜索、信息流广告。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/DigitalHeartbeat_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Body Rewrite]
+http-response-jq ^https:\/\/api-changzheng\.chinaath\.com\/changzheng-common-proxy-api\/api\/advertising\/proxy\/getOpenScreenAdvertising$ 'if (getpath(["data"]) | has("advertisingList")) then (setpath(["data","advertisingList"]; [])) else . end'
+http-response-jq ^https:\/\/api-changzheng\.chinaath\.com\/changzheng-race-proxy-api\/api\/home\/page\/getBrand$ '.data |= map(select(.advertisementName == "路跑赛事" or .advertisementName == "线上赛" or .advertisementName == "越野赛事"))'
+http-response-jq ^https:\/\/api-changzheng\.chinaath\.com\/changzheng-race-proxy-api\/api\/home\/page\/get$ 'delpaths([["data","topHotSearchList"],["data","bannerListTwo"],["data","textAdvertisementList"]])'
+http-response-jq ^https:\/\/api-changzheng\.chinaath\.com\/changzheng-race-proxy-api\/api\/home\/page\/get$ '.data.recommendList |= map(select(.raceAdList | not or length == 0))'
+
+[Map Local]
+^https:\/\/api-changzheng\.chinaath\.com\/changzheng-basic-center-api\/api\/appConfigBanner\/listBannerRelease\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api-changzheng\.chinaath\.com\/changzheng-content-center-api\/api\/global\/search\/hotSearch\/list$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api-changzheng\.chinaath\.com\/changzheng-basic-center-api\/api\/advertisement\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% api-changzheng.chinaath.com

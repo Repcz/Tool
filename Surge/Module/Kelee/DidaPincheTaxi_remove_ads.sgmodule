@@ -1,0 +1,11 @@
+#!name=滴答出行去广告
+#!desc=移除开屏广告、弹窗广告、横幅广告，精简底栏和我的页面。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/DidaPincheTaxi_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Map Local]
+^https:\/\/capis\.didapinche\.com\/adbase\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% capis.didapinche.com

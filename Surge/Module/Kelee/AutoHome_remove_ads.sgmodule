@@ -1,0 +1,37 @@
+#!name=汽车之家去广告
+#!desc=移除开屏广告、各类广告横幅、各类信息流广告、各类弹窗推广、各类浮窗、我的页面广告。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/AutoHome_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Map Local]
+^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/carcard\/findEquitysV5 data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/carcard\/mycardv6 data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/usercenter\/chat\/gse\/recquery data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/autoapi\.autohome\.com\.cn\/ypttd\/yjc\/web\/mkgt\/act\/seckillInfo data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/usercenter\/gethotactcards data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/carcard\/extendedcards data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/usercenter\/getwashcarlist data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/usercenter\/getdealertab data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/usercenter\/getoillist data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/pcmx\.autohome\.com\.cn\/queryCreativeList data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/maam\.pingan\.com\.cn\/maam\/buoy\/getBuoyList\.do data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/news\.app\.autohome\.com\.cn\/cont_v\d+(?:\.\d+){2}\/api\/article\/extenddata data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/adproxy\.autohome\.com\.cn\/AdvertiseService\/AppHandler\.ashx data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/club\.app\.autohome\.com\.cn\/club_v\d+(?:\.\d+){2}\/club\/channelqa\/header data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/dealer\.m\.autohome\.com\.cn\/handler\/other\/getdata\?__action=super\.list data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/autoapi\.autohome\.com\.cn\/arvr-dealercloud-api\/online\/aggregation\/exhibitionList data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/dealer\.m\.autohome\.com\.cn\/handler\/other\/getdata\?__action=vrcore\.list data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/dealer\.m\.autohome\.com\.cn\/handler\/other\/getdata\?__action=platform\.search data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/a\.athm\.cn\/clientlive\.api\.autohome\.com\.cn\/api\/live\/getserieswindowsinfo data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[Script]
+精简我的页面 = type=http-response,pattern=^https:\/\/news\.app\.autohome\.com\.cn\/news_v\d+(?:\.\d+){2}\/news\/homenavigation,script-path=https://kelee.one/Resource/JavaScript/AutoHome/AutoHome_remove_ads.js,requires-body=true
+精简我的页面_2 = type=http-response,pattern=^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/((usercenter\/getservicecards)|(carcard\/allcard)|(carcard\/mycardv\d+)|(carcard\/cards)),script-path=https://kelee.one/Resource/JavaScript/AutoHome/AutoHome_remove_ads.js,requires-body=true
+社区广场去广告 = type=http-response,pattern=^https:\/\/(a\.athm\.cn\/)?club\.app\.autohome\.com\.cn\/club_v\d+(?:\.\d+){2}\/club\/index\/businessv\d+,script-path=https://kelee.one/Resource/JavaScript/AutoHome/AutoHome_remove_ads.js,requires-body=true
+移除直播浮窗 = type=http-response,pattern=^https:\/\/(a\.athm\.cn\/)?cars\.app\.autohome\.com\.cn\/carstreaming\/selectcarportal\/reclist,script-path=https://kelee.one/Resource/JavaScript/AutoHome/AutoHome_remove_ads.js,requires-body=true
+移除报价页面直播内容 = type=http-response,pattern=^https:\/\/(a\.athm\.cn\/)?cars\.app\.autohome\.com\.cn\/carstreaming\/selectcarportal\/seriestopwithtagscard,script-path=https://kelee.one/Resource/JavaScript/AutoHome/AutoHome_remove_ads.js,requires-body=true
+移除二手车竖版轮播图 = type=http-response,pattern=^https:\/\/(a\.athm\.cn\/)?apiautoappusc\.che168\.com\/apic\/v\d+\/gethomepagefeed,script-path=https://kelee.one/Resource/JavaScript/AutoHome/AutoHome_remove_ads.js,requires-body=true
+
+[MITM]
+hostname = %APPEND% a.athm.cn, adproxy.autohome.com.cn, apiautoappusc.che168.com, autoapi.autohome.com.cn, cars.app.autohome.com.cn, clientlive.api.autohome.com.cn, club.app.autohome.com.cn, dealer.m.autohome.com.cn, maam.pingan.com.cn, mobile.app.autohome.com.cn, news.app.autohome.com.cn, pcmx.autohome.com.cn

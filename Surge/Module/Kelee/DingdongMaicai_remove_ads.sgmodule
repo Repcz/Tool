@@ -1,0 +1,38 @@
+#!name=叮咚买菜去广告
+#!desc=移除开屏广告、弹窗推广、搜索推荐、信息流广告、悬浮广告、各页面购物推荐、精简我的页面，移除底栏和各页面AI入口。\n@zirawell, @可莉🅥, @wish
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/DingdongMaicai_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Rule]
+DOMAIN,trackercollect.ddxq.mobi,REJECT,extended-matching,pre-matching
+DOMAIN,ddfs-public.ddimg.mobi,REJECT,extended-matching,pre-matching
+DOMAIN,rttrack.ddxq.mobi,REJECT,extended-matching,pre-matching
+
+[URL Rewrite]
+^https?:\/\/maicai\.api\.ddxq\.mobi\/advert\/ - reject
+^https?:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/getHomeAdPop - reject
+
+[Body Rewrite]
+http-response-jq ^https:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/categoriesNewDetail\? 'delpaths([["data","ad_info"]])'
+http-response-jq ^https:\/\/maicai\.api\.ddxq\.mobi\/tool\/getConfig\? 'delpaths([["data","ai_enter_config"]])'
+http-response-jq ^https?:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/newDetails\? 'delpaths([["data","top_advert_data"],["data","suspension"]])'
+http-response-jq ^https?:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/newDetails\? '.data.list |= map(select(has("capsule_freedom_zone") | not))'
+http-response-jq ^https:\/\/maicai\.api\.ddxq\.mobi\/guide-service\/productApi\/productDetail\/info\? 'delpaths([["data","detail","chatEntry"]])'
+http-response-jq ^https?:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/bottomNavi 'del(.data.adId?) | if (.data.bottom_list? | length > 0) then .data.bottom_list |= map(select(.type != "eatwhat")) else . end'
+http-response-jq ^https?:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/homeFlowDetail 'walk(if type == "object" and has("list") then .list |= map(if type == "object" and has("multi_advertise_data_list") then del(.multi_advertise_data_list) else . end) else . end)'
+
+[Map Local]
+^https?:\/\/119\.29\.29\.\d+\/d data-type=text data=" " status-code=200
+^https:\/\/maicai\.api\.ddxq\.mobi\/vip\/getVipAd\/\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/marketingNotice\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/maicai\.api\.ddxq\.mobi\/search\/rollHotKeyword\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/maicai\.api\.ddxq\.mobi\/search\/rankingList\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/maicai\.api\.ddxq\.mobi\/search\/hotKeyword\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/maicai\.api\.ddxq\.mobi\/order\/getRecommend$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/maicai\.api\.ddxq\.mobi\/homeApi\/userLike\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/user\.api\.ddxq\.mobi\/userportal-service\/api\/v1\/user\/queryMyPage\/\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/maicai\.api\.ddxq\.mobi\/guide-service\/userLike\/flowData$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% 119.29.29.*, maicai.api.ddxq.mobi, user.api.ddxq.mobi

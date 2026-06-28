@@ -1,0 +1,20 @@
+#!name=最右去广告
+#!desc=移除开屏广告、信息流广告和广告轮播图。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/ZuiYou_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Rule]
+DOMAIN,adapi.izuiyou.com,REJECT,extended-matching,pre-matching
+URL-REGEX,"^http:\/\/mercury-gateway\.ixiaochuan\.cn\/mercury\/v1\/ad\/",REJECT,extended-matching
+URL-REGEX,"^http:\/\/file-share\.izuiyou\.com\/octopus\/media\/templates\/search_home_page_(nv|nv_v2)\/search_home_page_nv",REJECT,extended-matching
+
+[URL Rewrite]
+^https?:\/\/api\.izuiyou\.com\/ad\/ - reject
+
+[Map Local]
+^https?:\/\/api\.izuiyou\.com\/config\/get_banner data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/zyfile\.izuiyou\.com\/zyfile\/c2\/a0\/[a-z0-9-]+\.json data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% api.izuiyou.com, zyfile.izuiyou.com

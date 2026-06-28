@@ -1,0 +1,10 @@
+# 规则名称: Bahamut
+# 规则统计: 5
+
+domain_set:
+  - bahamut.akamaized.net
+  - gamer-cds.cdn.hinet.net
+  - gamer2-cds.cdn.hinet.net
+domain_suffix_set:
+  - bahamut.com.tw
+  - gamer.com.tw

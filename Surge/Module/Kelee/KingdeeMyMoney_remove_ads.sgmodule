@@ -1,0 +1,18 @@
+#!name=随手记去广告
+#!desc=移除开屏广告、神象云账本内部广告、我的页面广告，移除社区入口。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/KingdeeMyMoney_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[URL Rewrite]
+^https:\/\/api\.feidee\.net\/v1\/configs\/client\/configs - reject
+
+[Map Local]
+^https:\/\/tg\.feidee\.com\/online_ad\/api\/search\.do$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/yunmk\.feidee\.net\/cab-market-ws\/market\/v2\/contents$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/tg\.feidee\.com\/vis-ad-engine-ws\/api\/v2\/ads\/.+esultNum data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/tg\.feidee\.com\/vis-ad-engine-ws\/api\/show data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/yun\.feidee\.net\/cab-periodic-activity-ws\/terminal\/v1\/members\/status data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% tg.feidee.com, yunmk.feidee.net, community.feidee.com, api.feidee.net, yun.feidee.net

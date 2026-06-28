@@ -1,0 +1,34 @@
+#!name=Soul去广告
+#!desc=移除开屏广告、移除话题页面热Soul话题、移除评论区礼物榜、移除更新提示、移除青少年弹窗、移除我的页面推广、移除悬浮部件。\n@ZenmoFeiShi, @RuCu6, @可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/Soul_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Rule]
+DOMAIN-SUFFIX,soulapp.cn,DIRECT,extended-matching
+IP-CIDR,8.210.3.170/32,DIRECT,no-resolve
+IP-CIDR,47.75.72.47/32,DIRECT,no-resolve
+DOMAIN,ad-h5-cdn.soulapp.cn,REJECT,extended-matching,pre-matching
+DOMAIN,ad-h5-station-cdn.soulapp.cn,REJECT,extended-matching,pre-matching
+DOMAIN,ad-r.soulapp.cn,REJECT,extended-matching,pre-matching
+DOMAIN,soul-ad.soulapp.cn,REJECT,extended-matching,pre-matching
+IP-CIDR,47.56.131.76/32,REJECT,no-resolve,pre-matching
+IP-CIDR,47.97.215.55/32,REJECT,no-resolve,pre-matching
+IP-CIDR,47.99.42.29/32,REJECT,no-resolve,pre-matching
+IP-CIDR,47.110.187.87/32,REJECT,no-resolve,pre-matching
+IP-CIDR,47.243.147.125/32,REJECT,no-resolve,pre-matching
+IP-CIDR,120.27.235.201/32,REJECT,no-resolve,pre-matching
+IP-CIDR,121.196.197.147/32,REJECT,no-resolve,pre-matching
+
+[Body Rewrite]
+http-response-jq ^https:\/\/(?:api-\w+|gateway-mobile-gray|post)\.soulapp\.cn\/(?:furion\/position\/content|hot\/soul\/rank|mobile\/app\/version\/queryIos|official\/scene\/module|teenager\/config|v2\/post\/gift\/list|v\d\/post\/homepage\/guide\/card) 'delpaths([["data"]])'
+
+[Map Local]
+^https:\/\/ssp\.soulapp\.cn\/api\/q data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/chat-live\.soulapp\.cn\/live\/planet\/recListV2 data-type=text data=" " status-code=200
+
+[Script]
+移除Soul广告 = type=http-response,pattern=^https:\/\/(?:api-\w+|chat-live|post)\.soulapp\.cn\/(?:chat\/limitInfo|chatroom\/chatClassifyRoomList|homepage\/diamond\/position\/info|v2\/post\/recSquare\/subTabs|v6\/planet\/config),script-path=https://kelee.one/Resource/JavaScript/Soul/Soul_remove_ads.js,requires-body=true
+
+[MITM]
+hostname = %APPEND% api*.soulapp.cn, gateway-mobile-gray.soulapp.cn, post.soulapp.cn, ssp.soulapp.cn

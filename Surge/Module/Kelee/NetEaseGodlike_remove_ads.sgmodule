@@ -1,0 +1,14 @@
+#!name=网易大神去广告
+#!desc=移除开屏广告，精简大量冗余的配置文件，精简我的页面。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/NetEaseGodlike_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[URL Rewrite]
+^https:\/\/god\.gameyw\.netease\.com\/v\d\/ad - reject
+
+[Script]
+网易大神去广告 = type=http-response,pattern=^https:\/\/app-conf\.ds\.163\.com\/v1\/app\/base\/conf\/static\/start-config\?os=ios,script-path=https://kelee.one/Resource/JavaScript/NetEaseGodlike/NetEaseGodlike_remove_ads.js,requires-body=true,timeout=10
+
+[MITM]
+hostname = %APPEND% god.gameyw.netease.com, app-conf.ds.163.com

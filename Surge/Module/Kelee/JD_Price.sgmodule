@@ -1,0 +1,12 @@
+#!name=京东比价
+#!desc=首次使用需安装慢慢买应用，之后点击进入[我的]页面以捕获Cookie，捕获成功后方可在商品详情页面查看比价内容。\n@wf021325, @githubdulong, @mw418
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/JD_Price.lpx
+#!date=2026-06-01 17:11:35
+
+[Script]
+捕获令牌 = type=http-request,pattern=^https?:\/\/apapia-sqk-weblogic\.manmanbuy\.com\/baoliao\/center\/menu$,script-path=https://kelee.one/Resource/JavaScript/JD/JD_Price.js,requires-body=true,timeout=10
+京东比价 = type=http-response,pattern=^https?:\/\/in\.m\.jd\.com\/product\/graphext\/\d+\.html,script-path=https://kelee.one/Resource/JavaScript/JD/JD_Price.js,requires-body=true,timeout=10
+
+[MITM]
+hostname = %APPEND% in.m.jd.com, apapia-sqk-weblogic.manmanbuy.com

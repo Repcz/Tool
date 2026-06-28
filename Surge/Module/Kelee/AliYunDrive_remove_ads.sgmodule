@@ -1,0 +1,19 @@
+#!name=阿里云盘去广告
+#!desc=移除首页广告横幅、弹窗和顶部奖励。\n@RuCu6
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/AliYunDrive_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Rule]
+IP-CIDR,203.107.1.1/24,REJECT,no-resolve,pre-matching
+
+[Map Local]
+^https:\/\/member\.alipan\.com\/v2\/activity\/sign_in_luckyBottle data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.alipan\.com\/adrive\/v1\/file\/getTopFolders data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[Script]
+移除阿里云盘广告 = type=http-response,pattern=^https:\/\/(biz)?api\.alipan\.com\/apps\/v\d\/users?\/home\/(news|widgets),script-path=https://kelee.one/Resource/JavaScript/AliYunDrive/AliYunDrive_remove_ads.js,requires-body=true
+移除阿里云盘广告_2 = type=http-response,pattern=^https:\/\/member\.alipan\.com\/v1\/users\/onboard_list,script-path=https://kelee.one/Resource/JavaScript/AliYunDrive/AliYunDrive_remove_ads.js,requires-body=true
+
+[MITM]
+hostname = %APPEND% api.alipan.com, member.alipan.com, bizapi.alipan.com

@@ -1,0 +1,12 @@
+#!name=智慧苏州去广告
+#!desc=移除开屏广告、横幅，移除信息流推广。\n@xream
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/SuZhouCitizenCard_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Map Local]
+^https?:\/\/newapp2\.szsmk\.com\/app\/config\/queryMainAd data-type=text data="{\"message\":\"操作成功\",\"main_ad_list\":[],\"code\":\"000000\"}" header="Content-Type:application/json"
+^https?:\/\/newapp2\.szsmk\.com\/app\/config\/(queryCarousel|queryRecommendation)\/ data-type=text data="{\"code\":\"000000\",\"message\":\"操作成功\",\"list\":[]}" header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% newapp2.szsmk.com

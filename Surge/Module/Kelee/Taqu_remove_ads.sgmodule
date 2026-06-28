@@ -1,0 +1,24 @@
+#!name=他趣去广告
+#!desc=移除各类弹窗、横幅，精简我的页面。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/Taqu_remove_ads.lpx
+#!date=2026-06-12 14:11:11
+
+[Body Rewrite]
+http-response-jq ^https:\/\/gw-cn\.jiaoliuqu\.com\/mp-dolphin\/v\d\/rec\/recByPositions\? '.info.data |= map(if .materials and (.materials | type) == "array" then .materials |= map(select(has("adPosition") | not)) else . end)'
+http-response-jq ^https:\/\/gw-cn\.jiaoliuqu\.com\/mp-dolphin\/v\d\/rec\/recByPositions\? '.info.data |= map(if .materials and (.materials | type) == "array" then .materials |= map(select((keys | length) != 2 or (keys | sort) != ["link", "pic"])) else . end)'
+http-response-jq ^https:\/\/gw-cn\.jiaoliuqu\.com\/bbs\/v5\/Home\/getHomePageModulesBySortV\d\? '(.info.data.modules_list // []) |= [.[] | [.[] | del(.relaction_title, .scrollow_contents)]] | (.info.data.top_fix_list // []) |= [.[] | del(.subtitle_list)]'
+
+[Map Local]
+^https:\/\/gw-cn\.jiaoliuqu\.com\/taqu-homepage\/v\d\/Banner\/getBannerByPositions\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/gw-cn\.jiaoliuqu\.com\/bbs\/v5\/Guide\/photoGuide\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/gw-cn\.jiaoliuqu\.com\/i\/v\d\/homepage\/completeGuideV\d\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/gw-cn\.jiaoliuqu\.com\/i\/v\d\/asset\/toast\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/gw-cn\.jiaoliuqu\.com\/bbs\/v5\/Sign\/getDailySigninInfoV4\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/gw-cn\.jiaoliuqu\.com\/taqu-hichat\/v\d\/Hichat\/getRecommendInfo\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/gw-cn\.jiaoliuqu\.com\/live_api\/v\d\/Banner\/getBannerListV\d\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/gw-cn\.jiaoliuqu\.com\/live_api\/v\d\/HallScroll\/getList\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/gw-cn\.jiaoliuqu\.com\/taqu-msg-guide\/v\d\/RecommendColumn\/getList\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% gw-cn.jiaoliuqu.com

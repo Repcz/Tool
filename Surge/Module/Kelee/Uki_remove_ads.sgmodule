@@ -1,0 +1,22 @@
+#!name=Uki去广告
+#!desc=移除开屏广告、应用内悬浮窗，各类横幅、信息流广告、搜索填充词、我的页面广告。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/Uki_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Map Local]
+^https:\/\/api\.chenlongtech\.cn\/v\d\/friends\/startInfo$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.chenlongtech\.cn\/v\d\/friends\/indexBanner$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.chenlongtech\.cn\/v\d\/friends\/getPopup data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.chenlongtech\.cn\/v\d\/friends\/allPopUpConfig$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.chenlongtech\.cn\/v\d\/friends\/advConf$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.chenlongtech\.cn\/v\d\/user\/checkQTSheInsurance$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[Script]
+移除匹配卡横幅 = type=http-response,pattern=^https:\/\/api\.chenlongtech\.cn\/v\d\/lover\/productList,script-path=https://kelee.one/Resource/JavaScript/Uki/Uki_remove_ads.js,requires-body=true
+移除密友横幅 = type=http-response,pattern=^https:\/\/api\.chenlongtech\.cn\/v\d\/friends\/closeFriend\/home,script-path=https://kelee.one/Resource/JavaScript/Uki/Uki_remove_ads.js,requires-body=true
+移除娱乐页面横幅和悬浮窗配置 = type=http-response,pattern=^https:\/\/api\.chenlongtech\.cn\/v\d\/party\/config$,script-path=https://kelee.one/Resource/JavaScript/Uki/Uki_remove_ads.js,requires-body=true
+移除广场搜索填充词 = type=http-response,pattern=^https:\/\/api\.chenlongtech\.cn\/v1\/post\/fetchSearchRecommend$,script-path=https://kelee.one/Resource/JavaScript/Uki/Uki_remove_ads.js,requires-body=true
+
+[MITM]
+hostname = %APPEND% api.chenlongtech.cn

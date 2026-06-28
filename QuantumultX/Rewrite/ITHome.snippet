@@ -1,0 +1,11 @@
+#!name = IT之家去广告
+#!desc = @keywos
+
+#[rewrite_local]
+^https?:\/\/api\.zuihuimai\.com\/static\/.*\/hongbao url reject
+^https?:\/\/dat\.ruanmei\.com\/ithome\/money\/acd\.json$ url reject
+
+^https:\/\/napi\.ithome\.com\/api\/(news\/index|topmenu\/getfeeds\?) url script-response-body https://raw.githubusercontent.com/Keywos/rule/main/JS/surgeithome.js
+
+#[mitm]
+hostname = api.ithome.com, napi.ithome.com, api.zuihuimai.com, dat.ruanmei.com

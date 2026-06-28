@@ -1,0 +1,20 @@
+#!name=触站去广告
+#!desc=移除开屏广告、弹窗广告、各页面横幅推广，移除首页悬浮挂件。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/Chuzhan_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Body Rewrite]
+http-response-jq ^https:\/\/app\.huashi6\.com\/app\/common\/config$ 'if (getpath(["data"]) | has("disableAd")) then (setpath(["data","disableAd"]; true)) else . end | if (getpath(["data"]) | has("showTopFloatAdvanceTips")) then (setpath(["data","showTopFloatAdvanceTips"]; false)) else . end'
+http-response-jq ^https:\/\/app\.huashi6\.com\/app\/common\/config$ 'delpaths([["data","adsConfigIOS"],["data","adsConfigAndroid"],["data","url","tabMarket"]])'
+http-response-jq ^https:\/\/app\.huashi6\.com\/app\/common\/layouts$ '.data |= {CZ_MINE_MENUS: .CZ_MINE_MENUS}'
+http-response-jq ^https:\/\/app\.huashi6\.com\/app\/common\/themeConfig$ '.data.tabbars |= map(select(.title != "商城"))'
+
+[Map Local]
+^https:\/\/app\.huashi6\.com\/app\/index\/ad\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/app\.huashi6\.com\/app\/works\/relative$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/app\.huashi6\.com\/app\/index\/follow\/all_random\/list$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/app\.huashi6\.com\/app\/index\/csyxh\/icon$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% app.huashi6.com

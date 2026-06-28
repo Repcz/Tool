@@ -1,0 +1,15 @@
+#!name=摩天轮去广告
+#!desc=移除开屏广告、弹窗，精简底栏。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/FerrisWheel_remove_ads.lpx
+#!date=2026-06-02 02:30:18
+
+[Map Local]
+^https:\/\/appapi\.motianlun\.cn\/showapi\/pub\/site\/\d+\/app\/loading\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/appapi\.motianlun\.cn\/showapi\/pub\/site\/\d+\/banner\/app\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/appapi\.motianlun\.cn\/userdataapi\/pub\/v\d\/top\/keywords\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/appapi\.motianlun\.cn\/buyerapi\/buyer\/v\d\/search\/index\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/appapi\.motianlun\.cn\/showapi\/site\/\d+\/transfer\/recentShows\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% appapi.motianlun.cn

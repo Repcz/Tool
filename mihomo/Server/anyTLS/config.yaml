@@ -1,0 +1,43 @@
+# Author:https://github.com/Repcz
+# TG:https://t.me/@LUCYChannel_1024
+# 最后更新时间: 2026-4-17 12:00
+#
+# Mihomo Version ≥ 1.19.23
+# 官方文档: https://github.com/MetaCubeX/mihomo/blob/Meta/docs/config.yaml
+#
+# 以 ';' 或 '#' 或 '//' 开头的配置文件行为注释行
+#
+# ================
+
+mixed-port: 65222 # HTTP(S) 和 SOCKS 代理混合端口
+tcp-concurrent: true # TCP 并发连接所有 IP, 将使用最快握手的 TCP
+allow-lan: false # 允许局域网连接
+ipv6: false # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录
+log-level: info # 日志等级 silent/error/warning/info/debug
+
+hosts:
+  "localhost": 127.0.0.1
+
+dns:
+  enable: true
+  listen: :65223 # 开启 DNS 服务器监听
+  ipv6: false # false 将返回 AAAA 的空结果
+  use-hosts: true # 查询 hosts
+  enhanced-mode: redir-host
+  default-nameserver: [1.1.1.1]
+  nameserver: [8.8.4.4, 1.1.1.1]
+  
+rules:
+  - MATCH,DIRECT
+
+listeners: #搭建代理节点
+
+  - name: anytls
+    type: anytls
+    port: 60112
+    listen: 0.0.0.0
+    users:
+      username1: +53N4IrJVaULrc7h4xGN6g==
+    # openssl req -x509 -nodes -newkey ec:<(openssl ecparam -name prime256v1) -keyout /root/mihomo/server.key -out /root/mihomo/server.crt -subj "/CN=bing.com" -days 36500 && sudo chown mihomo /root/mihomo/server.key && sudo chown mihomo /root/mihomo/server.crt
+    certificate: ./server.crt # 证书 PEM 格式，或者 证书的路径
+    private-key: ./server.key

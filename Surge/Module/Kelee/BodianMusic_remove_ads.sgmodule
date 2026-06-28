@@ -1,0 +1,32 @@
+#!name=波点音乐去广告
+#!desc=精简应用配置，禁用P2P传输。移除开屏广告、横幅推广、悬浮广告、歌曲广告、商城入口、搜索推广、评论区推广、试听语音提醒。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/BodianMusic_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Body Rewrite]
+http-response-jq ^https:\/\/bd-api\.kuwo\.cn\/api\/service\/conf\/all\? 'delpaths([["data","groupSign","adStartAppDialog"],["data","groupSign","adGuideTest"],["data","groupSign","playTips"],["data","groupSign","adExitChange"],["data","conf","adGuidePopCount"],["data","conf","adDownListOpen"]])'
+http-response-jq ^https:\/\/bd-api\.kuwo\.cn\/api\/service\/conf\/all\? 'if (getpath(["data","conf","flowControlConfig"]) | has("uploadEnable")) then (setpath(["data","conf","flowControlConfig","uploadEnable"]; false)) else . end | if (getpath(["data","conf","flowControlConfig"]) | has("p2pEnable")) then (setpath(["data","conf","flowControlConfig","p2pEnable"]; false)) else . end'
+http-response-jq ^https:\/\/ab-bodian\.kuwo\.cn\/abtest\/ui\/info\? 'delpaths([["data","mapTestInfo","CommentADPosition"],["data","mapTestInfo","DiscoverADPosition"],["data","mapTestInfo","DownloadAd"],["data","mapTestInfo","FreeModVoiceReminder"],["data","mapTestInfo","GamesTrans"],["data","mapTestInfo","bodianmvdialog"],["data","mapTestInfo","MvTryShowAds"],["data","mapTestInfo","insert"]])'
+http-response-jq ^https:\/\/bd-api\.kuwo\.cn\/api\/service\/global\/config\/scene\? 'delpaths([["data","iosP2PCacheEnable"],["data","warmStartDialog"],["data","adsNotFinishVipPop4DayInterval"]])'
+http-response-jq ^https:\/\/bd-api\.kuwo\.cn\/api\/service\/global\/config\/scene\? 'if (getpath(["data"]) | has("showShopEntry")) then (setpath(["data","showShopEntry"]; false)) else . end | if (getpath(["data"]) | has("iosP2pEnableSendDataLimit")) then (setpath(["data","iosP2pEnableSendDataLimit"]; 1)) else . end'
+http-response-jq ^https:\/\/bd-api\.kuwo\.cn\/api\/search\/topic\/word\/list\? 'delpaths([["data","hotTopic"],["data","searchFind"],["data","globalJumpInfo"],["data","hotWord"]])'
+http-response-jq ^https:\/\/bd-api\.kuwo\.cn\/api\/service\/home\/index\? '.data.moduleList |= map(select(.type | tostring | (. != "8" and . != "1")))'
+http-response-jq ^https:\/\/bd-api\.kuwo\.cn\/api\/service\/music\/recommendList\? '.data.musicList[] |= del(.showAd)'
+http-response-jq ^https:\/\/bd-api\.kuwo\.cn\/api\/comments\/v3\/topInfo\? 'delpaths([["data","putao"],["data","bannerVos"]])'
+
+[Map Local]
+^https:\/\/bd-api\.kuwo\.cn\/api\/(play|service|advert)\/advert\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/bd-api\.kuwo\.cn\/api\/service\/banner\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/bd-api\.kuwo\.cn\/api\/ucenter\/vip\/give\/config\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/bd-api\.kuwo\.cn\/api\/service\/home\/module\?.*&moduleId=6 data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/bd-api\.kuwo\.cn\/api\/pay\/vip\/lowPriceText\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/bd-api\.kuwo\.cn\/api\/service\/global\/config\/vipEnter\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/bd-api\.kuwo\.cn\/api\/popup\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/bd-api\.kuwo\.cn\/api\/pay\/vip\/invitation\/swell\/popup\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/bd-api\.kuwo\.cn\/api\/service\/version\/popup\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/bd-api\.kuwo\.cn\/api\/pay\/vip\/invitation\/assist\/popup\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/bd-api\.kuwo\.cn\/api\/pay\/h5\/common\/popup\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% bd-api.kuwo.cn

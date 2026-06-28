@@ -1,0 +1,11 @@
+#!name=WARP节点查询
+#!desc=显示WARP节点的详细信息，请在所有节点页面选择一个节点长按，出现菜单后进行测试。\n@VirgilClyne, @I-am-R-E
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/WARP_Node_Query.lpx
+#!date=2026-06-01 17:11:35
+
+[Script]
+WARP___INFO = type=generic,script-path=https://raw.githubusercontent.com/VirgilClyne/Cloudflare/main/js/1.1.1.1.panel.js,timeout=10,img-url=icloud.circle.system
+
+[MITM]
+hostname = %APPEND% api.cloudflareclient.com, zero-trust-client.cloudflareclient.com

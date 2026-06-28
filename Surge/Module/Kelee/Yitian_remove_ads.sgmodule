@@ -1,0 +1,15 @@
+#!name=一甜相机去广告
+#!desc=移除开屏广告、悬浮广告及图片选择器横幅广告。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/Yitian_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Body Rewrite]
+http-response-jq ^https:\/\/(m2u-api\.getkwai|api-m2u\.kuaishou)\.com\/api-server\/api\/v1\/system\/configs\? 'delpaths([["data","shouldUseLMAdFirst"],["data","incentiveCfgList"]])'
+
+[Map Local]
+^https:\/\/(m2u-api\.getkwai|api-m2u\.kuaishou)\.com\/api-server\/api\/v1\/ad\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/(m2u-api\.getkwai|api-m2u\.kuaishou)\.com\/api-server\/api\/v4\/op\/actPositions\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% m2u-api.getkwai.com, api-m2u.kuaishou.com

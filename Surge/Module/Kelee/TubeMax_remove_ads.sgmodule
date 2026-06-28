@@ -1,0 +1,22 @@
+#!name=TubeMax去广告
+#!desc=过滤TubeMax广告\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/TubeMax_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Rule]
+DOMAIN,app.tubemaxapp.com,DIRECT,extended-matching
+DOMAIN-SUFFIX,adjust.com,REJECT,extended-matching,pre-matching
+DOMAIN-SUFFIX,applvn.com,REJECT,extended-matching,pre-matching
+DOMAIN-SUFFIX,app-measurement.com,REJECT,extended-matching,pre-matching
+DOMAIN-SUFFIX,pangle.io,REJECT,extended-matching,pre-matching
+DOMAIN-SUFFIX,applovin.com,REJECT,extended-matching,pre-matching
+DOMAIN-SUFFIX,appier.net,REJECT,extended-matching,pre-matching
+DOMAIN-SUFFIX,adsmoloco.com,REJECT,extended-matching,pre-matching
+DOMAIN-SUFFIX,adcanvas.com,REJECT,extended-matching,pre-matching
+
+[URL Rewrite]
+^https:\/\/.*\.i18n-pglstatp\.com\/obj\/ad-pattern-sg - reject
+
+[MITM]
+hostname = %APPEND% *.i18n-pglstatp.com

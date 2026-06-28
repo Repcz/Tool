@@ -1,0 +1,15 @@
+#!name=自动加入TestFlight
+#!desc=自动监控TestFlight名额，一旦有新的名额即刻加入。\n@奶思, @DecoAri, @xream
+#!category=⚙️ ▸ Kelee Mode
+#!arguments=CaptureAccountToken:false,RunTask:"false",RunMonitor:"true",TaskCron:"0 0/2 * * * ?",TaskMonitor:"0 * * * * ?"
+#!URL=https://kelee.one/Tool/Loon/Lpx/Auto_Join_TF.lpx
+#!input=App_ID
+#!date=2026-06-01 17:11:35
+
+[Rule]
+DOMAIN,testflight.apple.com,DIRECT,extended-matching
+
+[Script]
+获取账号令牌 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v3\/accounts\/.*\/apps$,script-path=https://kelee.one/Resource/JavaScript/TestFlight/CaptureAccountToken.js,enabled={CaptureAccountToken}
+自动加入TF = type=cron,cronexp={TaskCron},script-path=https://kelee.one/Resource/JavaScript/TestFlight/AutoJoinTF.js,timeout=600,enabled={RunTask}
+监控TF位置 = type=cron,cronexp={TaskMonitor},script-path=https://kelee.one/Resource/JavaScript/TestFlight/AutoMonitorTF.js,timeout=30,enabled={RunMonitor}

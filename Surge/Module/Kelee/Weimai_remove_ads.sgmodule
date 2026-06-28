@@ -1,0 +1,12 @@
+#!name=微脉圈去广告
+#!desc=移除开屏广告、聊天页横幅提示及发现页面的横幅广告。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/Weimai_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Body Rewrite]
+http-response-jq ^https:\/\/confssl\d?\.iweimai\.cn\/wm_ios_update\.json\? 'if (getpath([]) | has("isShowCJAd")) then (setpath(["isShowCJAd"]; 0)) else . end'
+http-response-jq ^https:\/\/confssl\d?\.iweimai\.cn\/wm_ios_update\.json\? 'delpaths([["launchAd"],["adBanners"],["ad"]])'
+
+[MITM]
+hostname = %APPEND% confssl*.iweimai.cn

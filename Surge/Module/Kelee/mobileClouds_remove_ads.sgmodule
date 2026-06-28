@@ -1,0 +1,12 @@
+#!name=中国移动云盘去广告
+#!desc=移除中国移动云盘开屏广告及应用内广告，首页的多余卡片可滑到最底部自定义隐藏掉，插件对此不做处理。\n@RuCu6
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/mobileClouds_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Script]
+移除开屏广告 = type=http-response,pattern=^https:\/\/jzts\.cmpassport\.com\/personalized\/getPushContent,script-path=https://kelee.one/Resource/JavaScript/mobileClouds/mobileClouds_remove_ads.js,requires-body=true
+移除应用内广告 = type=http-response,pattern=^https:\/\/ad\.mcloud\.139\.com\/advertapi\/adv-filter\/,script-path=https://kelee.one/Resource/JavaScript/mobileClouds/mobileClouds_remove_ads.js,requires-body=true
+
+[MITM]
+hostname = %APPEND% jzts.cmpassport.com, ad.mcloud.139.com

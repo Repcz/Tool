@@ -1,0 +1,28 @@
+#!name=DNS防泄露
+#!desc=专为小白设计的DNS防泄露\n@非正常人类研究中心
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/Prevent_DNS_Leaks.lpx
+#!date=2026-06-01 17:11:35
+
+[Rule]
+DOMAIN-SUFFIX,dnsleaktest.com,DIRECT,extended-matching
+DOMAIN-SUFFIX,dnsleak.com,DIRECT,extended-matching
+DOMAIN-SUFFIX,expressvpn.com,DIRECT,extended-matching
+DOMAIN-SUFFIX,nordvpn.com,DIRECT,extended-matching
+DOMAIN-SUFFIX,surfshark.com,DIRECT,extended-matching
+DOMAIN-SUFFIX,ipleak.net,DIRECT,extended-matching
+DOMAIN-SUFFIX,perfect-privacy.com,DIRECT,extended-matching
+DOMAIN-SUFFIX,browserleaks.com,DIRECT,extended-matching
+DOMAIN-SUFFIX,browserleaks.org,DIRECT,extended-matching
+DOMAIN-SUFFIX,vpnunlimited.com,DIRECT,extended-matching
+DOMAIN-SUFFIX,whoer.net,DIRECT,extended-matching
+DOMAIN-SUFFIX,whrq.net,DIRECT,extended-matching
+DOMAIN-SUFFIX,astrill.com,DIRECT,extended-matching
+DOMAIN-SUFFIX,astrill.org,DIRECT,extended-matching
+DOMAIN-SUFFIX,dnsleak.asn247.net,DIRECT,extended-matching
+DOMAIN-SUFFIX,surfsharkdns.com,DIRECT,extended-matching
+DOMAIN-SUFFIX,pixelscan.net,DIRECT,extended-matching
+DOMAIN,ipv4.ping0.cc,DIRECT,extended-matching
+DOMAIN,ipv6.ping0.cc,DIRECT,extended-matching
+DOMAIN-SUFFIX,ipapi.co,DIRECT,extended-matching
+DOMAIN,ip-scan.adspower.net,DIRECT,extended-matching

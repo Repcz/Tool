@@ -1,0 +1,21 @@
+#!name=驾考宝典去广告
+#!desc=移除开屏广告、横幅广告、悬浮窗广告、社区帖子广告，精简我的页面。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/JiaKaoBaoDian_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Map Local]
+^https:\/\/scs\.kakamobi\.cn\/api\/open\/v3\/advert-sdk\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/cheyouquan\.kakamobi\.com\/api\/open\/group\/recommend-subscribe-tag\.htm data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/swallow\.kakamobi\.cn\/api\/open\/config\/get-config\.htm data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/monkey\.kakamobi\.cn\/api\/open\/live\/get-recommend-live-protocol\.htm data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/jiaxiao-awd\.kakamobi\.cn\/api\/h5\/v4\/home-lead-advertise\/abtest\.htm data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/mcbd\.maiche\.com\/api\/open\/v3\/user\/get-popup-window\.htm data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/jiakao-misc\.kakamobi\.cn\/api\/open\/my-tab-config\/selection-list\.htm data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/jiakao-misc\.kakamobi\.cn\/api\/open\/my-tab-config\/banner-list\.htm data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/squirrel\.kakamobi\.cn\/api\/open\/recommend-goods\/get-my-page-banner\.htm data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/mcbd\.maiche\.com\/api\/open\/v2\/jiakao-business\/get-naben-advert\.htm data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/monkey\.kakamobi\.cn\/api\/open\/live-room\/get-resource\.htm data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% jiaxiao-awd.kakamobi.cn, cheyouquan.kakamobi.com, swallow.kakamobi.cn, monkey.kakamobi.cn, mcbd.maiche.com, jiakao-misc.kakamobi.cn, squirrel.kakamobi.cn, scs.kakamobi.cn

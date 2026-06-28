@@ -1,0 +1,39 @@
+#!name=快看漫画去广告
+#!desc=移除开屏广告、悬浮窗、漫画广告、社区广告、各类弹窗，精简顶部标签、我的页面。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/KuaiKanComic_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Rule]
+DOMAIN,ad.v3mh.com,REJECT,extended-matching,pre-matching
+DOMAIN,ipv6.kkmh.com,REJECT,extended-matching,pre-matching
+DOMAIN,ipv4.kkmh.com,REJECT,extended-matching,pre-matching
+
+[Map Local]
+^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/ad\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/(cdn-)?h5\.kuaikanmanhua\.com\/user\/scene\/api\/new_user\/sign_in\/list data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/business\/activities\/get data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/business\/mine\/business_config data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/(cdn-)?topic\.kkmh\.com\/gamecard\/v\d\/activityModule\/userSignInInfo\?activitySignInConfigId data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/(cdn-)?topic\.kkmh\.com\/gamecard\/v\d\/activityModule\/fetchButtonInfo\?buttonConfigId data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/(cdn-)?topic\.kkmh\.com\/gamecard\/v\d\/activityText\/getUserActivityTextInfo\?activityTextConfigId data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/kb\/comic_page_banner\/detail data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/business\/fake_push\/info data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/(cdn-)?shop\.kkmh\.com\/mbff\/popup_administration\/page_management_popup_administration$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/vip\/banner_tip_list data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/vip\/charge_tip_list data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/h5\.kuaikanmanhua\.com\/v\d\/kb\/recharge_good\/list_h5 data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/kb\/wallet data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/checkin\/api\/new_user\/tab_info$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/h5\.kuaikanmanhua\.com\/game-h5\/new-user-welfare\/index\.html data-type=text data=" " status-code=200
+^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/vip\/platform_base\/popups_display$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/checkin\/task_center\/get_by_task_type data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[Script]
+修改广告参数 = type=http-response,pattern=^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/ironman\/comic\/recommend,script-path=https://kelee.one/Resource/JavaScript/KuaiKanComic/KuaiKanComic_remove_ads.js,requires-body=true
+精简首页热门标签 = type=http-response,pattern=^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/ironman\/discovery_v\d\/tab_list_v\d,script-path=https://kelee.one/Resource/JavaScript/KuaiKanComic/KuaiKanComic_remove_ads.js,requires-body=true
+精简社区标签 = type=http-response,pattern=^https:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/homepage\/comicVideo\/v\d\/configs,script-path=https://kelee.one/Resource/JavaScript/KuaiKanComic/KuaiKanComic_remove_ads.js,requires-body=true
+精简社区信息流 = type=http-response,pattern=^https:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/unified_feed$,script-path=https://kelee.one/Resource/JavaScript/KuaiKanComic/KuaiKanComic_remove_ads.js,requires-body=true
+
+[MITM]
+hostname = %APPEND% api.kkmh.com, cdn-api.kkmh.com, social.kkmh.com, cdn-social.kkmh.com, h5.kuaikanmanhua.com, cdn-h5.kuaikanmanhua.com, pay.kkmh.com, cdn-pay.kkmh.com, shop.kkmh.com, cdn-shop.kkmh.com, topic.kkmh.com, cdn-topic.kkmh.com

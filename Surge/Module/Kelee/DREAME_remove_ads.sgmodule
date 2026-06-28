@@ -1,0 +1,17 @@
+#!name=DREAME去广告
+#!desc=移除开屏广告、首页大图推广、横幅推广，精简底栏，阻止桌面图标替换。仅支持2.5.1版。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/DREAME_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Body Rewrite]
+http-response-jq ^https:\/\/cn\.iot\.dreame\.tech:13267\/dreame-system\/dreame-app\/setting\/query$ 'delpaths([["data","appIconConfig"]])'
+
+[Map Local]
+^https:\/\/cn\.iot\.dreame\.tech:\d+\/dreame-product\/public\/advertisement\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/cn-mall\.dreame\.tech\/dreame-mall\/api\/v1\/tag\/list$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/cn-wxmall\.dreame\.tech\/main\/goods\/get-topgoods$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/cn\.iot\.dreame\.tech:\d+\/dreame-product\/public\/common-plugin$ data-type=text data="{\"code\":0,\"success\":true,\"data\":{\"version\":1144,\"appVer\":20,\"url\":\"https://kelee.one/Resource/Zip/DREAME/d6996fee95380affdf740ee44a85fbe9___UNI__EDB922E.zip\",\"md5\":\"e0cc9cb77d9e0cf275e41e73dba3f988\",\"validDate\":\"\",\"changeLog\":\"\",\"status\":\"\"},\"msg\":\"操作成功\"}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% cn-mall.dreame.tech, cn-wxmall.dreame.tech, cn.iot.dreame.tech

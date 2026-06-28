@@ -1,0 +1,10 @@
+#!name=Foodie去广告
+#!desc=移除开屏广告和弹窗广告\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/Foodie_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Rule]
+DOMAIN,api-ad.kajicam.com,REJECT,extended-matching,pre-matching
+DOMAIN,zjres-ad.kajicam.com,REJECT,extended-matching,pre-matching
+DOMAIN,popup-api.b612kaji.com,REJECT,extended-matching,pre-matching

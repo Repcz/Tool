@@ -1,0 +1,32 @@
+name: Clear Commits
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Target branch to clean'
+        required: true
+        default: 'X'
+        type: string
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.branch }}
+          fetch-depth: 0
+      - name: Squash all commits
+        run: |
+          git config --local user.email "${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com"
+          git config --local user.name "${{ github.actor }}"
+          ROOT=$(git rev-list --max-parents=0 HEAD)
+          git reset --soft "$ROOT"
+          git commit --amend -m "Rebuild"
+          git push -f origin ${{ inputs.branch }}
+      - name: Cleanup Workflow
+        uses: Mattraks/delete-workflow-runs@main
+        with:
+          retain_days: 0
+          keep_minimum_runs: 0

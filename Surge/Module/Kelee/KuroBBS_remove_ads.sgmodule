@@ -1,0 +1,14 @@
+#!name=库街区去广告
+#!desc=移除开屏广告、弹窗广告、搜索页面的热搜及话题热榜。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/KuroBBS_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Map Local]
+^https:\/\/api\.kurobbs\.com\/config\/getOpenScreen$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.kurobbs\.com\/config\/index\/windows$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.kurobbs\.com\/config\/search\/getSearchConfig\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.kurobbs\.com\/forum\/app\/topic\/hotlist\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% api.kurobbs.com

@@ -1,0 +1,12 @@
+#!name=知识星球去水印
+#!desc=移除内容的水印编号\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/UnnooQuan_remove_watermark.lpx
+#!date=2026-06-01 17:11:35
+
+[Body Rewrite]
+http-response-jq ^https:\/\/api\.zsxq\.com\/v2\/groups\/\d+$ 'if (getpath(["resp_data","group","policies"]) | has("enable_watermark")) then (setpath(["resp_data","group","policies","enable_watermark"]; false)) else . end'
+http-response ^https:\/\/articles\.zsxq\.com\/inline_form\/id_[a-z0-9]+\.html name="group_enable_watermark"\x20value="true" name="group_enable_watermark"\x20value="false"
+
+[MITM]
+hostname = %APPEND% api.zsxq.com

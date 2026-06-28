@@ -1,0 +1,20 @@
+#!name=宝宝树孕育去广告
+#!desc=过滤宝宝树孕育广告\n@RuCu6
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/BabyTree_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Rule]
+URL-REGEX,"^http:\/\/go\.babytree\.com\/go_pregnancy\/api\/(index_activity\/get_app_index_activity|sign\/sign_h_5)\?",REJECT,extended-matching
+URL-REGEX,"^http:\/\/go\.babytree\.com\/go_search\/api\/mobile_search_new\/get_multi_search_default_keywords\?",REJECT,extended-matching
+URL-REGEX,"^http:\/\/m\.meitun\.com\/newapi\/router\/topic\/hometptf\/feedRecommend",REJECT,extended-matching
+URL-REGEX,"^http:\/\/pic08\.babytreeimg\.com\/knowledge\/2022\/0923\/\w+",REJECT,extended-matching
+URL-REGEX,"^http:\/\/plough\.babytree\.com\/plough\.do",REJECT,extended-matching
+
+[Script]
+调整整体配置 = type=http-response,pattern=^http:\/\/api\.babytree\.com\/bafconfigcenter_intf\/config\/get\?,script-path=https://kelee.one/Resource/JavaScript/BabyTree/BabyTree_remove_ads.js,requires-body=true
+移除各页面推广 = type=http-response,pattern=^http:\/\/go\.babytree\.com\/go_pregnancy\/api\/(app_index\/get_app_tab|cms_column\/get_column_list|feeds\/get_index_feeds_list|user\/get_user_info)\?,script-path=https://kelee.one/Resource/JavaScript/BabyTree/BabyTree_remove_ads.js,requires-body=true
+移除搜索列表推广 = type=http-response,pattern=^http:\/\/go\.babytree\.com\/go_search\/api\/mobile_search_new\/search_index,script-path=https://kelee.one/Resource/JavaScript/BabyTree/BabyTree_remove_ads.js,requires-body=true
+
+[MITM]
+hostname = %APPEND% api.babytree.com, go.babytree.com

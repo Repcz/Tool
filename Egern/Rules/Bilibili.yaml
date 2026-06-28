@@ -1,0 +1,25 @@
+# 规则名称: Bilibili
+# 规则统计: 20
+
+domain_set:
+  - apiintl.biliapi.net
+  - upos-hz-mirrorakam.akamaized.net
+domain_suffix_set:
+  - acg.tv
+  - acgvideo.com
+  - b23.tv
+  - bigfun.cn
+  - bigfunapp.cn
+  - biliapi.com
+  - biliapi.net
+  - bilibili.co
+  - bilibili.com
+  - bilibili.tv
+  - biligame.com
+  - biligame.net
+  - biliintl.co
+  - bilivideo.cn
+  - bilivideo.com
+  - hdslb.com
+  - im9.com
+  - smtcdns.net

@@ -1,0 +1,23 @@
+#!name=华尔街见闻去广告
+#!desc=移除开屏广告、文末广告、信息流广告，精简底栏。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/FinanceNews_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Body Rewrite]
+http-response-jq ^https:\/\/api-one-wscn\.awtmt\.com\/apiv1\/kvconfig\/items\/tabbarconfig1$ '.data.items |= [.[] | select(.key == "news" or .key == "live")]'
+http-response-jq ^https:\/\/api-one-wscn\.awtmt\.com\/apiv1\/content\/articles\/ 'delpaths([["data","recommend_vip_img_uri"]])'
+http-response-jq ^https:\/\/api-one-wscn\.awtmt\.com\/\/apiv1\/kvconfig\/items\/membersrights$ 'delpaths([["data","vip_article"]])'
+
+[Map Local]
+^https:\/\/api-one-wscn\.awtmt\.com\/apiv1\/advertising\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api-one-wscn\.awtmt\.com\/apiv1\/kvconfig\/items\/search_keywords_wscnvip$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api-one-wscn\.awtmt\.com\/apiv1\/search\/hotsearch\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api-one-wscn\.awtmt\.com\/apiv1\/content\/articles\/hot\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/wallstreetcn\.com\/app-faas\/coupon\/user\/search\/popup$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api-one-wscn\.awtmt\.com\/apiv1\/content\/lives\/relateddata\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api-one-wscn\.awtmt\.com\/apiv1\/content\/articles\/relateddata\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api-one-wscn\.awtmt\.com\/apiv1\/content\/carousel\/information-flow\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% api-one-wscn.awtmt.com

@@ -1,0 +1,19 @@
+#!name=YouTube去广告
+#!desc=移除YouTube视频、瀑布流、搜索和Shorts中的广告，移除底栏的Shorts按钮和上传按钮，增加画中画及字幕翻译功能。移除YouTube Music底栏的上传、选段和升级按钮，增加歌词翻译，支持二者的后台播放。此插件需要启用MitM over HTTP/2和QUIC回退保护。支持Premium订阅用户使用，不支持tvOS设备。\n@Maasea, @VirgilClyne, @Choler, @DivineEngine, @app2smile
+#!category=⚙️ ▸ Kelee Mode
+#!arguments=blockUpload:false,blockShorts:false,blockImmersive:false,captionLang:"zh-Hans",lyricLang:"zh-Hans",debug:false
+#!URL=https://kelee.one/Tool/Loon/Lpx/YouTube_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Rule]
+AND,((DOMAIN-SUFFIX, googlevideo.com), (PROTOCOL, QUIC)),REJECT
+AND,((DOMAIN-SUFFIX, youtubei.googleapis.com), (PROTOCOL, QUIC)),REJECT
+
+[Map Local]
+^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad data-type=text data=" " status-code=200
+
+[Script]
+YouTube去广告 = type=http-response,pattern=^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$,script-path=https://kelee.one/Resource/JavaScript/YouTube/YouTube_remove_ads/YouTube_remove_ads_response.js,requires-body=true,argument=[{blockUpload},{blockShorts},{blockImmersive},{captionLang},{lyricLang},{debug}],binary-body-mode=true
+
+[MITM]
+hostname = %APPEND% *.googlevideo.com, youtubei.googleapis.com

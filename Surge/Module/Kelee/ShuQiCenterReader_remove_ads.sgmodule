@@ -1,0 +1,22 @@
+#!name=书旗小说去广告
+#!desc=移除书城横幅广告、听书广告、阅读广告、章末推荐、福利入口、悬浮窗、推荐搜索词，精简我的页面。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/ShuQiCenterReader_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Rule]
+DOMAIN,render-web.11222.cn,REJECT,extended-matching,pre-matching
+
+[URL Rewrite]
+^https:\/\/ocean\.shuqireader\.com\/api\/render\/load\/resource - reject
+
+[Map Local]
+^https:\/\/huichuan\.sm\.cn\/nativead data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/ocean\.shuqireader\.com\/api\/route\/iosReadPage\/adV2 data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/ocean\.shuqireader\.com\/api\/route\/ios\/readPage$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[Script]
+移除书城横幅和阅读广告 = type=http-response,pattern=^https:\/\/ocean\.shuqireader\.com\/sqios\/render\/render\/page\/bookstore$,script-path=https://kelee.one/Resource/JavaScript/ShuQiCenterReader/ShuQiCenterReader_remove_ads.js,requires-body=true
+
+[MITM]
+hostname = %APPEND% ocean.shuqireader.com, huichuan.sm.cn

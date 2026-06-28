@@ -1,0 +1,11 @@
+#!name=Reddit去广告
+#!desc=过滤应用内推广，阻止NSFW提示。\n@xream
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/Reddit_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Body Rewrite]
+http-response-jq ^https?:\/\/gql(-fed)?\.reddit\.com 'jq-path="https://kelee.one/Resource/JQLang/Reddit/Reddit_remove_ads.jq"'
+
+[MITM]
+hostname = %APPEND% gql.reddit.com, gql-fed.reddit.com

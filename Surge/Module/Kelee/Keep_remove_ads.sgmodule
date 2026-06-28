@@ -1,0 +1,28 @@
+#!name=Keep去广告
+#!desc=移除开屏广告、搜索推荐和弹窗广告，精简底栏和首页标签。移除关注推荐、文章相关推荐和信息流中的课程推广。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/Keep_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Rule]
+DOMAIN,kad.gotokeep.com,REJECT,extended-matching,pre-matching
+
+[Body Rewrite]
+http-response-jq ^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v1\/configs$ 'delpaths([["data","adTimeoutReport"],["data","spotShowReport"],["data","adSupplementIntervalMinutes"],["data","adSupplementSwitch"],["data","hotFeedSpotAdRequestMoment"],["data","activityBrandFeedSpotAdRequestMoment"],["data","searchFeedSpotAdRequestMoment"],["data","feedDetailSpotAdRequestMoment"],["data","homePageFeedSpotAdRequestMoment"],["data","followFeedSpotAdRequestMoment"],["data","hotFeedRecommendSpotAdRequestMoment"],["data","activityFeedSpotAdRequestMoment"],["data","hotFeedFindSpotAdRequestMoment"],["data","hotFeedSpotFixedPositionSecond"],["data","searchFeedSpotFixedPositionSecond"],["data","followFeedSpotFixedPositionSecond"],["data","activityFeedSpotFixedPositionSecond"],["data","searchFeedSpotFixedPositionThird"],["data","hotFeedFindSpotFixedPositionSecond"],["data","hotFeedFindSpotFixedPositionThird"],["data","activityFeedSpotFixedPositionInitial"],["data","activityFeedSpotFixedPositionThird"],["data","hotFeedDynamicSpotPosition"],["data","feedDetailDynamicSpotPosition"],["data","hotFeedRecommendDynamicSpotPosition"],["data","hotFeedFindDynamicSpotPosition"],["data","homePageFeedDynamicSpotPosition"],["data","followFeedDynamicSpotPosition"],["data","searchFeedSpotPositionDynamic"],["data","activityFeedSpotPositionDynamic"],["data","activityBrandFeedSpotPositionDynamic"],["data","splashAdLoadTimeLimit"],["data","courseAdLoadTimeLimit"],["data","feedAdLoadTimeLimit"],["data","aliHCSpotConfig"],["data","gdtSpotConfig"],["data","pugcThresholdPercent"],["data","pugcStepMinSeconds"],["data","pugcStepMaxSeconds"],["data","pugcPreLoadEarlySeconds"],["data","pugcLoadPostPreRolls"],["data","closeConfirmButtonText"]])'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/twins\/union\/feed\/union_feed_all$ '.data.modules |= map(select(.code == "unionFeedEntry"))'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/twins\/v4\/feed\/entryDetail\? 'if (getpath([]) | has("data")) then (setpath(["data"]; {})) else . end'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/config\/v3\/basic\? '.data.bottomBarControl.tabs |= map(select(.tabType | . == "home" or . == "schedule" or . == "dynamic_sports" or . == "personal")) | .data.homeTabs |= map(select(.type | . == "socialTab" or . == "union_feed_all" or . == "homeRecommend" or . == "suitTab" or . == "union_feed_route"))'
+http-response-jq ^https:\/\/api\.gotokeep\.com\/pencil-webapp\/play\/v1\/games\? '.data.games[].microGames[] |= if .leftIcon? and .leftIcon.type == "aiMode" then del(.leftIcon) else . end'
+
+[Map Local]
+^https:\/\/api\.gotokeep\.com\/op-engine-webapp\/v1\/ad\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.gotokeep\.com\/search\/v6\/default\/keyword\/list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.gotokeep\.com\/twins\/v4\/feed\/followPage\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.gotokeep\.com\/twins\/union\/feed\/function\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.gotokeep\.com\/guide-webapp\/v1\/popup\/getPopUp\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.gotokeep\.com\/search\/v5\/hotCourse\/list$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.gotokeep\.com\/search\/v4\/hotHashtag\/list$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.gotokeep\.com\/search\/v4\/hotword\/list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% api.gotokeep.com

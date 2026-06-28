@@ -1,0 +1,17 @@
+#!name=省钱快报去广告
+#!desc=移除开屏广告、横幅广告、商品推荐，精简我的页面。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/YueDanBa_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Body Rewrite]
+http-response-jq ^https:\/\/api\.17gwx\.com\/operate\/elements\? '.data |= with_entries(select(.key | test("home_mid_many|home_mid_banner_multi|user_center_slide_show_pic|newfeed_detail_oper_middle|main_rebate_banner|zhekou_coupon_detail_oper|zhekou_jdcoupon_detail_oper|zhekou_vipcoupon_detail_oper|zhekou_pddcoupon_detail_oper") | not))'
+
+[Map Local]
+^https:\/\/api\.17gwx\.com\/v2\/base\/app\/ad\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.17gwx\.com\/v2\/growth\/popup\/remind$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.17gwx\.com\/v2\/recommend\/feed\/list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.17gwx\.com\/v2\/homepage\/feed\/similarList\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% api.17gwx.com

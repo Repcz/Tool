@@ -1,0 +1,13 @@
+#!name=图怪兽去广告
+#!desc=移除开屏广告、弹窗广告、各页面横幅推广。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/TuGuaiShou_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Map Local]
+^https:\/\/api\.818ps\.com\/v4\/advertisement\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.818ps\.com\/v4\/popup\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.818ps\.com\/v4\/festival\/newYear\/pop\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% api.818ps.com

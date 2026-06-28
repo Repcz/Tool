@@ -1,0 +1,12 @@
+#!name=Follow每日签到
+#!desc=Follow每日签到，需要进入此插件的主页链接，阅读使用说明操作。\n@gideonsenku, @可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!arguments=token:"",cookie:"",cron:"0 1 * * *"
+#!URL=https://kelee.one/Tool/Loon/Lpx/FollowRSS_checkin.lpx
+#!date=2026-06-01 17:11:35
+
+[Script]
+Follow每日签到 = type=cron,cronexp={cron},script-path=https://kelee.one/Resource/JavaScript/FollowRSS/FollowRSS_checkin.js,timeout=120,argument=[{token},{cookie}]
+
+[MITM]
+hostname = %APPEND% api.follow.is

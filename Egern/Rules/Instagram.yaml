@@ -1,0 +1,9 @@
+# 规则名称: Instagram
+# 规则统计: 4
+
+domain_suffix_set:
+  - cdninstagram.com
+  - instagr.am
+  - instagram.com
+domain_keyword_set:
+  - instagram

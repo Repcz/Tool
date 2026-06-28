@@ -1,0 +1,11 @@
+#!name=磁力宅播放器去广告
+#!desc=移除开屏广告、弹窗和文件列表广告。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/XFuse_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[URL Rewrite]
+^https:\/\/cili\.xfuse\.fun\/s\/ - reject
+
+[MITM]
+hostname = %APPEND% cili.xfuse.fun, i.micecube.com, img.mofyi.com

@@ -1,0 +1,24 @@
+#!name=薄荷健康去广告
+#!desc=移除记录页大家都在看、移除各类弹窗，移除广场横幅推广，精简代谢中心页面。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/BooHee_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Body Rewrite]
+http-response-jq ^https:\/\/api\.boohee\.com\/meta-interface\/v2\/index\? 'delpaths([["data","recom_cards"],["data","recom_btns"]])'
+http-response-jq ^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/plaza\? 'delpaths([["data","tabs",1,"badge"],["data","recommend_ads"]])'
+http-response-jq ^https:\/\/api\.boohee\.com\/open-interface\/v1\/string\/market_page\?title=metabolism_config$ 'delpaths([["top_banner"],["diagnos_config"],["partner_hospital"],["question_answer"],["product"],["brand_story"]])'
+
+[Map Local]
+^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/page_float_bubbles\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/tool_buttons\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.boohee\.com\/app-interface\/v1\/search\/search\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/status\.boohee\.com\/api\/v1\/merged_messages$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/bohe\.sfo-tx-shanghai-01\.saas\.sensorsdata\.cn\/api\/v2\/sfo\/user_popup_configs\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/sensor-banners\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[Script]
+移除广场推荐页面横幅 = type=http-response,pattern=^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/plaza-flow\?,script-path=https://kelee.one/Resource/JavaScript/BooHee/BooHee_remove_ads.js,requires-body=true
+
+[MITM]
+hostname = %APPEND% api.boohee.com, bohe.sfo-tx-shanghai-01.saas.sensorsdata.cn, lego.boohee.com, status.boohee.com

@@ -1,0 +1,12 @@
+#!name=IPA工具箱助手
+#!desc=这是IPA工具箱的辅助插件，用于下载IPA包和应用降级。IPA工具箱是运行在Scripting应用中的脚本，需要购买Scripting的Pro版本才能运行。\n@小白脸
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/IPATool.lpx
+#!date=2026-06-14 20:11:24
+
+[Script]
+App_Store_API = type=http-request,pattern=^https:\/\/apple-api\.com,script-path=https://kelee.one/Resource/JavaScript/IPATool/AppStoreAPI.js,requires-body=true
+安装器 = type=http-request,pattern=^https:\/\/xiaobai\.app,script-path=https://kelee.one/Resource/JavaScript/IPATool/Installer.js
+
+[MITM]
+hostname = %APPEND% apple-api.com, xiaobai.app

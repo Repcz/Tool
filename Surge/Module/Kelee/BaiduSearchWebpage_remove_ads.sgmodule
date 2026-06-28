@@ -1,0 +1,11 @@
+#!name=百度网页去广告
+#!desc=移除百度搜索移动端网页的首页广告信息流\n@Keywos
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/BaiduSearchWebpage_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Script]
+移除百度搜索首页信息流广告 = type=http-response,pattern=^https?:\/\/(www|m)\.baidu\.com\/?($|\?from=\w{8,9}),script-path=https://kelee.one/Resource/JavaScript/BaiduSearch/BaiduSearchHomePage_remove_ads.js,requires-body=true
+
+[MITM]
+hostname = %APPEND% m.baidu.com, www.baidu.com

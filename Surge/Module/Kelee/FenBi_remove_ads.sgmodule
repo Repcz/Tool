@@ -1,0 +1,25 @@
+#!name=粉笔去广告
+#!desc=移除开屏广告、弹窗广告、悬浮广告、热门搜索，移除底栏皮肤，精简我的页面。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/FenBi_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Body Rewrite]
+http-response-jq ^https:\/\/hera-webapp\.fenbi\.com\/(iphone|ipad)\/recommend\/info\? 'delpaths([["data","rollingBanner"]])'
+http-response-jq ^https:\/\/ke\.fenbi\.com\/(iphone|ipad)\/v3\/apps\/config\? 'delpaths([["data","bottomIconInfos","position","iconDefaultUrl"],["data","bottomIconInfos","position","iconSelectedUrl"],["data","bottomIconInfos","position","nightModeIconDefaultUrl"],["data","bottomIconInfos","position","nightModeIconSelectedUrl"]])'
+
+[Map Local]
+^https:\/\/keapi\.fenbi\.com\/app\/(iphone|ipad)\/position_resource\/get_banners\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/market-api\.fenbi\.com\/(iphone|ipad)\/v1\/assistant\/info\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/keapi\.fenbi\.com\/app\/(iphone|ipad)\/position_resource\/get_home_banners\?.*position_resource_type=1 data-type=text data="{\"code\":1,\"msg\":\"\",\"data\":{\"positionResourceType\":1,\"payload\":{\"items\":[{\"id\":17868,\"courseSetId\":2,\"content\":\"妹子图\",\"imageUrl\":\"https://i.im.ge/2025/11/24/4DrVp0.mm.png\",\"url\":\"null\",\"redirectType\":1,\"ordinal\":8,\"createdTime\":1746799144383,\"startTime\":1759850171000,\"endTime\":4070880000000,\"type\":0,\"bizType\":4}],\"count\":1}}}" status-code=200 header="Content-Type:application/json"
+^https:\/\/keapi\.fenbi\.com\/app\/(iphone|ipad)\/position_resource\/get_home_banners\?.*position_resource_type=2 data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/keapi\.fenbi\.com\/app\/iphone\/\w+\/reddot\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/ke\.fenbi\.com\/(iphone|ipad)\/v3\/timetable\/today_with_public_episodes\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/hera-webapp\.fenbi\.com\/(iphone|ipad)\/topic\/hotquery\/list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/hera-webapp\.fenbi\.com\/(iphone|ipad)\/explore\/consts\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/hera-webapp\.fenbi\.com\/(iphone|ipad)\/announcement\/hotquery\/list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/ke\.fenbi\.com\/(iphone|ipad)\/v3\/user_member\/entry\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/market-api\.fenbi\.com\/(iphone|ipad)\/v1\/assistant\/my\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% keapi.fenbi.com, market-api.fenbi.com, ke.fenbi.com, hera-webapp.fenbi.com

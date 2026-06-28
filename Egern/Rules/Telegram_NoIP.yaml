@@ -1,0 +1,36 @@
+# 规则名称: Telegram_NoIP
+# 规则统计: 30
+
+domain_set:
+  - api.mixpanel.com
+  - events-gateway.ncdev.site
+domain_suffix_set:
+  - cdn-telegram.org
+  - comments.app
+  - contest.com
+  - graph.org
+  - imem.app
+  - iturrit.com
+  - legra.ph
+  - mbrx.app
+  - quiz.directory
+  - stel.com
+  - swiftgram.app
+  - t.me
+  - tdesktop.com
+  - telega.one
+  - telegra.ph
+  - telegram-cdn.org
+  - telegram.dog
+  - telegram.me
+  - telegram.org
+  - telegram.space
+  - telegramdownload.com
+  - telesco.pe
+  - tg.dev
+  - tx.me
+  - usercontent.dev
+  - walletbot.me
+domain_keyword_set:
+  - nicegram
+  - telegram

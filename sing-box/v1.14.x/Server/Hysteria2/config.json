@@ -1,0 +1,99 @@
+{
+    "log": {
+        "disabled": false,
+        "level": "info",
+        "timestamp": true
+    },
+
+    "certificate_providers": [
+        {
+            "type": "acme",
+            "tag": "ip_cert",
+            "domain": [
+                "your_server_ip"
+            ],
+            "email": "admin@example.com"
+        }
+    ],
+
+    "dns": {
+        "servers": [
+            {
+                "tag": "cloudflare",
+                "type": "udp",
+                "server": "1.1.1.1"
+            }
+        ],
+        "rules": [
+            {
+                "query_type": [
+                    "A",
+                    "AAAA"
+                ],
+                "action": "route",
+                "server": "cloudflare"
+            }
+        ],
+        "strategy": "prefer_ipv4",
+        "final": "cloudflare"
+    },
+
+    "inbounds": [
+        {
+            "type": "hysteria2",
+            "tag": "hy2-in",
+            "listen": "::",
+            "listen_port": 443,
+            "users": [
+                {
+                    "name": "singbox",
+                    "password": ""
+                }
+            ],
+            "up_mbps": 200,
+            "down_mbps": 200,
+            "ignore_client_bandwidth": false,
+            "obfs": {},
+            "tls": {
+                "enabled": true,
+                "server_name": "your_server_ip",
+                "certificate_provider": "ip_cert"
+            },
+            "masquerade": {
+                "type": "string",
+                "status_code": 200,
+                "headers": {
+                    "Content-Type": [
+                        "text/html"
+                    ]
+                },
+                "content": "<!DOCTYPE html><title>OK</title><p>Service is running.</p>"
+            }
+        }
+    ],
+
+    "route": {
+        "rules": [
+            {
+                "inbound": [
+                    "hy2-in"
+                ],
+                "action": "sniff"
+            }
+        ],
+        "default_domain_resolver": "cloudflare"
+    },
+
+    "outbounds": [
+        {
+            "type": "direct"
+        }
+    ],
+
+    "ntp": {
+        "enabled": true,
+        "server": "time.apple.com",
+        "server_port": 123,
+        "interval": "30m"
+    }
+}

@@ -1,0 +1,17 @@
+#!name=配音秀去广告
+#!desc=移除开屏广告、弹窗、横幅、各类关注推荐。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/DubbingShow_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Body Rewrite]
+http-response-jq ^https:\/\/iosapi\.peiyinxiu\.com\/Api\/live\/LiveList 'delpaths([["data","banners"]])'
+http-response-jq ^https:\/\/iosapi\.peiyinxiu\.com\/api\/live\/FollowList 'delpaths([["obj","data"]])'
+http-response-jq ^https:\/\/iosapi\.peiyinxiu\.com\/Api\/Friend\/GetRecommendUsers 'delpaths([["obj","data"]])'
+http-response-jq ^https:\/\/iosapi\.peiyinxiu\.com\/api\/Union\/HomeData 'delpaths([["obj","data"]])'
+
+[Script]
+移除首页底部弹窗 = type=http-response,pattern=^https:\/\/iosapi\.peiyinxiu\.com\/Api\/Film\/GetConfigValue,script-path=https://kelee.one/Resource/JavaScript/DubbingShow/DubbingShow_remove_ads.js,requires-body=true
+
+[MITM]
+hostname = %APPEND% iosapi.peiyinxiu.com

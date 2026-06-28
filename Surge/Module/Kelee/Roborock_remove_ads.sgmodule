@@ -1,0 +1,18 @@
+#!name=Roborock去广告
+#!desc=移除横幅、活动推广、机器人图标，精简服务中心。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/Roborock_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[URL Rewrite]
+^https:\/\/cniot\.roborock\.com\/api\/v1\/app\/theme\/device\/icon\? - reject
+
+[Body Rewrite]
+http-response-jq ^https:\/\/api\.roborock\.com\/v2\/h5\.page\.item\.info\?id=4115$ '.data |= map(select(.title == "常用功能"))'
+
+[Map Local]
+^https:\/\/cniot\.roborock\.com\/api\/v1\/activity\/banner\/list$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/cniot\.roborock\.com\/api\/v1\/activity\/latest$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% cniot.roborock.com, api.roborock.com

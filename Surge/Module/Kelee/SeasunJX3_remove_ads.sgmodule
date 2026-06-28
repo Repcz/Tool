@@ -1,0 +1,14 @@
+#!name=剑网三无界去广告
+#!desc=移除热门推送活动，并解决无法在Loon运行时更新和登录的问题。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/SeasunJX3_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[General]
+real-ip = %APPEND% *-update.xoyocdn.com, xg-flow.xoyo.com
+
+[URL Rewrite]
+^https:\/\/jx3comm\.xoyocdn\.com\/jx3gc\/zhcn\/login_ad\/WebCareer\/WebCareerTab\.txt - reject
+
+[MITM]
+hostname = %APPEND% jx3comm.xoyocdn.com

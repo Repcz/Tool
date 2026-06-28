@@ -1,0 +1,36 @@
+#!name=优酷视频去广告
+#!desc=移除开屏广告、视频广告、信息流广告。其余广告由于请求已加密，故无法移除。\n@可莉🅥, @RuCu6
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/YouKu_Video_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Rule]
+DOMAIN,push.m.youku.com,DIRECT,extended-matching
+DOMAIN,un-acs.youku.com,DIRECT,extended-matching
+DOMAIN,dorangesource.alicdn.com,DIRECT,extended-matching
+DOMAIN,h-adashx.ut.taobao.com,REJECT,extended-matching,pre-matching
+DOMAIN,adx-core.youku.com,REJECT,extended-matching,pre-matching
+DOMAIN,adx-open-service.youku.com,REJECT,extended-matching,pre-matching
+DOMAIN,yk-ssp.ad.youku.com,REJECT,extended-matching,pre-matching
+DOMAIN,cad.youku.com,REJECT,extended-matching,pre-matching
+DOMAIN,ykad-data.youku.com,REJECT,extended-matching,pre-matching
+DOMAIN,amdc.m.youku.com,REJECT,extended-matching,pre-matching
+DOMAIN,nbsdk-baichuan.alicdn.com,REJECT,extended-matching,pre-matching
+DOMAIN,youku-crm-product.youku.com,REJECT,extended-matching,pre-matching
+DOMAIN,dr-danmu.youku.com,REJECT,extended-matching,pre-matching
+DOMAIN,group-ssl-danmu-ori.youku.com,REJECT,extended-matching,pre-matching
+DOMAIN,m.atm.youku.com,REJECT,extended-matching,pre-matching
+DOMAIN,mc.atm.youku.com,REJECT,extended-matching,pre-matching
+DOMAIN,vali-g1.cp31.ott.cibntv.net,REJECT,extended-matching,pre-matching
+DOMAIN,vali-ugc.cp31.ott.cibntv.net,REJECT,extended-matching,pre-matching
+DOMAIN-SUFFIX,iyes.youku.com,REJECT,extended-matching,pre-matching
+DOMAIN,adsmind.ugdtimg.com,REJECT,extended-matching,pre-matching
+DOMAIN,pre-acs.youku.com,REJECT,extended-matching,pre-matching
+DOMAIN,youku-acs.m.taobao.com,REJECT,extended-matching,pre-matching
+
+[Body Rewrite]
+http-response-jq ^https:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get 'delpaths([["data","data","ad"],["data","data","watermark"],["data","data","ykad"]])'
+http-response-jq ^https:\/\/push\.m\.youku\.com\/collect-api\/get_push_interval_config_wx\? 'delpaths([["data","tipContent"],["data","tipContentNew"]])'
+
+[MITM]
+hostname = %APPEND% push.m.youku.com, un-acs.youku.com

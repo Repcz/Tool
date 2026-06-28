@@ -1,0 +1,4 @@
+# 规则名称: FILTER_REGION
+# 规则统计: 1
+
+GEOIP,CN,FILTER_REGION

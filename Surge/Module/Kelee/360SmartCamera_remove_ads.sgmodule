@@ -1,0 +1,15 @@
+#!name=360摄像机去广告
+#!desc=移除开屏广告、首页推广、底栏商城入口及我的页面推广。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/360SmartCamera_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Rule]
+DOMAIN,ad.jia.360.cn,REJECT,extended-matching,pre-matching
+DOMAIN,ad.iot.360.cn,REJECT,extended-matching,pre-matching
+
+[Body Rewrite]
+http-response-jq ^https:\/\/jia\.360\.cn\/conf\/v1\.json 'delpaths([["tab_conf"],["ad_conf"],["activity"]])'
+
+[MITM]
+hostname = %APPEND% jia.360.cn

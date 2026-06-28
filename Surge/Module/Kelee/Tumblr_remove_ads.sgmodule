@@ -1,0 +1,11 @@
+#!name=Tumblr去广告
+#!desc=移除信息流广告\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/Tumblr_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Body Rewrite]
+http-response-jq ^https:\/\/api-http2\.tumblr\.com\/v2\/config$ 'delpaths([["response","ad_placement_configuration"],["response","configuration","fan_placement_id"],["response","configuration","display_io_max_ad_count"],["response","configuration","display_io_max_ad_loading_count"],["response","configuration","display_io_placement_id"],["response","configuration","display_io_test_placement_id"],["response","configuration","display_io_interscroller_display_test_placement_id"],["response","configuration","display_io_interscroller_video_test_placement_id"],["response","configuration","dfp_ad_unit_id"],["response","configuration","adx_total_queue_size"],["response","configuration","adx_loading_queue_size"],["response","configuration","fan_total_queue_size"],["response","configuration","fan_loading_queue_size"],["response","configuration","yahoo_total_queue_size"],["response","configuration","yahoo_loading_queue_size"],["response","configuration","min_minutes_between_sponsored_moments"],["response","configuration","rewarded_ad_timeout_seconds"],["response","configuration","vungle_ad_token_sync_seconds"],["response","configuration","static_interstitial_close_button_delay_seconds"],["response","configuration","video_interstitial_close_button_delay_seconds"],["response","configuration","static_interstitial_bid_floor_usd"],["response","configuration","video_interstitial_bid_floor_usd"]])'
+
+[MITM]
+hostname = %APPEND% api-http2.tumblr.com

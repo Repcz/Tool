@@ -1,0 +1,13 @@
+#!name=萝卜快跑去广告
+#!desc=移除开屏广告、弹窗广告、横幅广告、新用户活动皮肤，保留优惠活动。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/RoboTaxi_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Map Local]
+^https:\/\/idgdata\.baidu\.com\/mc\/app\/api\/listterminal\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/idgdata\.baidu\.com\/operation\/api\/announce\/screen\/image_manage\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/idgdata\.baidu\.com\/idgactivity\/api\/newuser\/info\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% idgdata.baidu.com

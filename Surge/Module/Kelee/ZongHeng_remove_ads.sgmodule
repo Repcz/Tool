@@ -1,0 +1,14 @@
+#!name=纵横小说去广告
+#!desc=移除纵横小说开屏广告和弹窗\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/ZongHeng_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[URL Rewrite]
+^https:\/\/api1\.zongheng\.com\/iosapi\/system\/startup$ - reject
+
+[Map Local]
+^https:\/\/api2\.zongheng\.com\/api\/giftBag\/bindingBag$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% api?.zongheng.com

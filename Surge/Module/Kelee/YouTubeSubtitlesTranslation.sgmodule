@@ -1,0 +1,23 @@
+#!name=YouTube双语翻译
+#!desc=字幕增强及双语翻译，支持Youtube Music歌词翻译。此插件需要置于YouTube去广告插件之下，且和YouTube去广告插件的歌词翻译冲突，不支持tvOS设备。\n@VirgilClyne
+#!category=⚙️ ▸ Kelee Mode
+#!arguments=Type:"Official",AutoCC:true,ShowOnly:true,Position:"Forward"
+#!URL=https://kelee.one/Tool/Loon/Lpx/YouTubeSubtitlesTranslation.lpx
+#!date=2026-06-01 17:11:35
+
+[Script]
+JSON_YouTube播放器请求 = type=http-request,pattern=^https?:\/\/(www|m|tv)\.youtube\.com\/youtubei\/v1\/player\?(.*),script-path=https://kelee.one/Resource/JavaScript/YouTube/YouTube_Subtitles_Translate/YouTube_Subtitles_request.js,requires-body=true,argument=[{Type},{AutoCC},{ShowOnly},{Position}]
+JSON_YouTube播放器响应 = type=http-response,pattern=^https?:\/\/(www|m|tv)\.youtube\.com\/youtubei\/v1\/player\?(.*),script-path=https://kelee.one/Resource/JavaScript/YouTube/YouTube_Subtitles_Translate/YouTube_Subtitles_response.js,requires-body=true,argument=[{Type},{AutoCC},{ShowOnly},{Position}]
+Proto_YouTube播放器请求 = type=http-request,pattern=^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/player\?(.*),script-path=https://kelee.one/Resource/JavaScript/YouTube/YouTube_Subtitles_Translate/YouTube_Subtitles_request.js,requires-body=true,argument=[{Type},{AutoCC},{ShowOnly},{Position}],binary-body-mode=true
+Proto_YouTube播放器响应.proto = type=http-response,pattern=^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/player\?(.*),script-path=https://kelee.one/Resource/JavaScript/YouTube/YouTube_Subtitles_Translate/YouTube_Subtitles_response.js,requires-body=true,argument=[{Type},{AutoCC},{ShowOnly},{Position}],binary-body-mode=true
+Proto_GetWatch响应 = type=http-response,pattern=^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/get_watch\?(.*),script-path=https://kelee.one/Resource/JavaScript/YouTube/YouTube_Subtitles_Translate/YouTube_Subtitles_response.js,requires-body=true,argument=[{Type},{AutoCC},{ShowOnly},{Position}],binary-body-mode=true
+YouTube定时文本请求 = type=http-request,pattern=^https?:\/\/(www|m)\.youtube\.com\/api\/timedtext\?(.*),script-path=https://kelee.one/Resource/JavaScript/YouTube/YouTube_Subtitles_Translate/YouTube_Subtitles_request.js,requires-body=false,argument=[{Type},{AutoCC},{ShowOnly},{Position}]
+YouTube合成定时文本响应 = type=http-response,pattern=^https?:\/\/(www|m)\.youtube\.com\/api\/timedtext\?(.*)subtype=(Official|External),script-path=https://kelee.one/Resource/JavaScript/YouTube/YouTube_Subtitles_Translate/YouTube_Composite_Subtitles_response.js,requires-body=true,argument=
+YouTube翻译定时文本响应 = type=http-response,pattern=^https?:\/\/(www|m)\.youtube\.com\/api\/timedtext\?(.*)subtype=Translate,script-path=https://kelee.one/Resource/JavaScript/YouTube/YouTube_Subtitles_Translate/YouTube_Subtitles_Translate_response.js,requires-body=true,argument=
+JSON_YouTube_Music浏览请求 = type=http-request,pattern=^https?:\/\/music\.youtube\.com\/youtubei\/v1\/browse\?(.*),script-path=https://kelee.one/Resource/JavaScript/YouTube/YouTube_Subtitles_Translate/YouTube_Subtitles_request.js,requires-body=true,argument=[{Type},{AutoCC},{ShowOnly},{Position}]
+Proto_YouTube_Music浏览请求 = type=http-request,pattern=^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/browse\?(.*),script-path=https://kelee.one/Resource/JavaScript/YouTube/YouTube_Subtitles_Translate/YouTube_Subtitles_request.js,requires-body=true,argument=[{Type},{AutoCC},{ShowOnly},{Position}],binary-body-mode=true
+JSON_YouTube_Music翻译歌词响应 = type=http-response,pattern=^https?:\/\/music\.youtube\.com\/youtubei\/v1\/browse\?(.*)subtype=Translate,script-path=https://kelee.one/Resource/JavaScript/YouTube/YouTube_Subtitles_Translate/YouTube_Subtitles_Translate_response.js,requires-body=true,argument=
+Proto_YouTube_Music翻译歌词响应 = type=http-response,pattern=^https?:\/\/youtubei\.googleapis\.com\/youtubei\/v1\/browse\?(.*)subtype=Translate,script-path=https://kelee.one/Resource/JavaScript/YouTube/YouTube_Subtitles_Translate/YouTube_Subtitles_Translate_response.js,requires-body=true,argument=,binary-body-mode=true
+
+[MITM]
+hostname = %APPEND% www.youtube.com, m.youtube.com, tv.youtube.com, music.youtube.com, youtubei.googleapis.com

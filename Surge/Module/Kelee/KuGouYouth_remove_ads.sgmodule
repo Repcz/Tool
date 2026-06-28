@@ -1,0 +1,22 @@
+#!name=酷狗概念版去广告
+#!desc=移除广告服务模块、播放器广告，精简乐库及搜索页面。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/KuGouYouth_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Body Rewrite]
+http-response-jq ^https:\/\/gateway\.kugou\.com\/youth\/v1\/yueku\/tab\? '.data.responses |= map(select(.module == "new_song_publish" or .module == "song_rank"))'
+
+[Map Local]
+^https:\/\/gateway\.kugou\.com\/ads\.service\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/gateway\.kugou\.com\/youth\/v1\/start_img\/last\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/gateway\.kugou\.com\/ads\.gateway\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^http:\/\/mobilelog\.kugou\.com\/adtrackconfig\.json$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/gateway\.kugou\.com\/youth\/v1\/experiment\/get_params\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/gateway\.kugou\.com\/youth\/api\/user\/v1\/init\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/gateway\.kugou\.com\/youth\/v2\/activity\/task_list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/gateway\.kugou\.com\/youth\/v1\/channel\/tab_list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/gateway\.kugou\.com\/goddess\/v1\/content\/biz_list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% gateway.kugou.com

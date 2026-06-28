@@ -1,0 +1,19 @@
+#!name=中国人保去广告
+#!desc=移除中国人保开屏广告和应用内广告\n@Sliverkiss
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/PICC_Insurance_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[URL Rewrite]
+^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/h\/headlines\/queryHeadlines - reject
+
+[Map Local]
+^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/a\/update\/startupPage\/v1 data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/a\/config\/guessYouLike\/v3 data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[Script]
+移除主页推广 = type=http-response,pattern=^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/a\/config\/homeInit\/v3,script-path=https://kelee.one/Resource/JavaScript/PICC_Insurance/PICC_Insurance_remove_ads.js,requires-body=true
+移除我的页面推广 = type=http-response,pattern=^https:\/\/zgrb\.epicc\.com\.cn\/G-HAPP\/mpageconfig\/myPageConfigList\/v3,script-path=https://kelee.one/Resource/JavaScript/PICC_Insurance/PICC_Insurance_remove_ads.js,requires-body=true
+
+[MITM]
+hostname = %APPEND% zgrb.epicc.com.cn

@@ -1,0 +1,8 @@
+#!name=代理链路检测
+#!desc=查看目标节点的代理走向，在插件列表中点击此插件上的链接查看使用方法。\n@I-am-R-E
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/NodeLinkCheck.lpx
+#!date=2026-06-01 17:11:35
+
+[Script]
+代理链路检测 = type=generic,script-path=https://kelee.one/Resource/JavaScript/NodeLinkCheck/NodeLinkCheck.js,img-url=link.circle.system

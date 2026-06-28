@@ -1,0 +1,18 @@
+#!name=堆糖去广告
+#!desc=移除开屏广告、信息流广告、热搜排行榜广告、我的页面横幅广告，移除关注推荐，精简底部导航栏。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/DuiTang_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Body Rewrite]
+http-response-jq ^https:\/\/meta\.duitang\.com\/napi\/infra\/settings\/ 'delpaths([["data","AD_LINKS"]])'
+http-response-jq ^https:\/\/(www|api-2)\.duitang\.com\/napi\/home\/bottom_tab\/detail\/\? '.data.tabs |= map(select(.group == "home" or .group == "category" or .group == "me"))'
+http-response-jq ^https:\/\/api-2\.duitang\.com\/napi\/settings\/ 'delpaths([["data","SPLASH_SWING_OPEN"],["data","STICKER_SEARCH_HOT_KEYWORDS"],["data","REWARD_AD_PAG_EDITOR"],["data","REWARD_AD_PHOTO_EDITOR"],["data","REWARD_AD_CUTOUT_NUM"],["data","MAIN_EVENTS"],["data","QA_TOOLTIP_BOTTOM"],["data","OC_FOLLOW_OFFICIAL"],["data","AD_MENU_SELECTIONS"],["data","FEATURE_TEMPLATES"],["data","FEEDBACK_URL"],["data","AVATAR_MALL_UPDATE"],["data","WATERMARK_MALL_UPDATE"],["data","OC_MALL_UPDATE"],["data","3D_AVATAR_UPDATE"],["data","BENEFIT_LIST"],["data","SHARE_BANNER"]])'
+
+[Map Local]
+^https:\/\/xapi\.duitang\.com\/napi\/ads\/\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api-2\.duitang\.com\/napi\/vienna\/daren\/daren\/recommend\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/www\.duitang\.com\/napi\/hot\/search\/list\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% www.duitang.com, api-2.duitang.com, meta.duitang.com

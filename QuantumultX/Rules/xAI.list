@@ -1,0 +1,5 @@
+# 规则名称: xAI
+# 规则统计: 2
+
+HOST-SUFFIX,grok.com,xAI
+HOST-SUFFIX,x.ai,xAI

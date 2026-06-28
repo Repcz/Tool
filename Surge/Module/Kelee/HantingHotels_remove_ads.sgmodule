@@ -1,0 +1,19 @@
+#!name=华住会去广告
+#!desc=移除弹窗、横幅，精简首页。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/HantingHotels_remove_ads.lpx
+#!date=2026-06-12 16:06:38
+
+[Body Rewrite]
+http-response-jq ^https:\/\/res-pub\.huazhu\.com\/frontconf\/homeconfig_45\/\w+\.json$ 'if has("content") and (.content | type) == "object" then .content |= with_entries(select(.key == "topBanner" or .key == "topBannerImages")) else . end'
+http-response-jq ^https:\/\/res-pub\.huazhu\.com\/frontconf\/tabbarconfig_45\/\w+\.json$ '.content.tabbar |= map(select(.attributes.tabName == "首页" or .attributes.tabName == "服务" or .attributes.tabName == "我的"))'
+
+[Map Local]
+^https:\/\/hweb-manager\.huazhu\.com\/notice\/getAppPopupNotifyAlert$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/hweb-hotel\.huazhu\.com\/home\/getHomeLoinBanner$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/hweb-hotel\.huazhu\.com\/\/home\/querySelectHotel$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/hweb-hotel\.huazhu\.com\/home\/queryHotelBrand$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/hweb-manager\.huazhu\.com\/hotels\/ad\/getHotelListNoticeMerge$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% hweb-manager.huazhu.com, hweb-hotel.huazhu.com, res-pub.huazhu.com

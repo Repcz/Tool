@@ -1,0 +1,12 @@
+#!name=Hong Kong Toolbar去广告
+#!desc=移除开屏互动广告、直播前贴片广告及视频广告\n@C.Hiang
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/HongKongToolbar_remove_ads.lpx
+#!date=2026-06-24 16:45:00
+
+[Rule]
+URL-REGEX,"^https:\/\/a\.881903\.com\/live\/preroll\/.*\/.*",REJECT,extended-matching
+URL-REGEX,"^https:\/\/a\.881903\.com\/v\d\/app\/game\/.*",REJECT,extended-matching
+
+[MITM]
+hostname = %APPEND% a.881903.com

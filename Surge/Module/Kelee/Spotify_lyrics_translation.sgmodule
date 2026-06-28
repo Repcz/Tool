@@ -1,0 +1,17 @@
+#!name=Spotify歌词增强
+#!desc=将Spotify的外语歌词翻译为简体中文，并提供双语翻译支持。\n@VirgilClyne
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/Spotify_lyrics_translation.lpx
+#!date=2026-06-01 17:11:35
+
+[Script]
+跟踪响应_JSON = type=http-response,pattern=^https?:\/\/api\.spotify\.com\/v1\/tracks\? requires-body=true,,script-path=https://kelee.one/Resource/JavaScript/Spotify/Spotify_response.js
+歌词请求_JSON = type=http-request,pattern=^https?:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/(.+)\?(.*)format=json requires-body=true,,script-path=https://kelee.one/Resource/JavaScript/Spotify/Spotify_request.js
+歌词请求_Proto = type=http-request,pattern=^https?:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/\w+\?(.*) requires-body=true, binary-body-mode=true,,script-path=https://kelee.one/Resource/JavaScript/Spotify/Spotify_request.js
+翻译歌词响应_JSON = type=http-response,pattern=^https?:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/(.+)\?(.*)format=json(.*)subtype=Translate requires-body=true,,script-path=https://kelee.one/Resource/JavaScript/Spotify/Translate_response.js
+翻译歌词响应_Proto = type=http-response,pattern=^https?:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/\w+\?(.*)subtype=Translate requires-body=true, binary-body-mode=true,,script-path=https://kelee.one/Resource/JavaScript/Spotify/Translate_response.js
+外部歌词响应_JSON = type=http-response,pattern=^https?:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/(.+)\?(.*)format=json(.*)subtype=External requires-body=true,,script-path=https://kelee.one/Resource/JavaScript/Spotify/External_Lyrics_response.js
+外部歌词响应_Proto = type=http-response,pattern=^https?:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/\w+\?(.*)subtype=External requires-body=true, binary-body-mode=true,,script-path=https://kelee.one/Resource/JavaScript/Spotify/External_Lyrics_response.js
+
+[MITM]
+hostname = %APPEND% api.spotify.com, spclient.wg.spotify.com

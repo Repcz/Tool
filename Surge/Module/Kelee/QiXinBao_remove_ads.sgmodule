@@ -1,0 +1,22 @@
+#!name=启信宝去广告
+#!desc=移除开屏广告、应用内弹窗、首页轮播图、悬浮部件和个性化推荐信息流。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/QiXinBao_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[URL Rewrite]
+^https:\/\/qxb-minicode-pic-osscache\.qixin\.com\/web\/ - reject
+
+[Map Local]
+^https:\/\/appc\.qixin\.com\/v4\/general\/getSearchPlaceholderRedirect$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/appc-v6\.qixin\.com\/v4\/general\/getAppFloatAd$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/appc-v6\.qixin\.com\/v4\/general\/getAppBanners$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/appc-v6\.qixin\.com\/v4\/user\/getUserActivitys$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/appc-v6\.qixin\.com\/v4\/enterprise\/homePageRecommend\/recommendCard\d+ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/appc-v6\.qixin\.com\/v4\/user\/getRecommendPersons$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/appc-v6\.qixin\.com\/v4\/enterprise\/getRecommendEnts$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/appc-v6\.qixin\.com\/v4\/enterprise\/getRecommendation$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/appc-v6\.qixin\.com\/v4\/general\/getAppBottomBanners$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[MITM]
+hostname = %APPEND% appc.qixin.com, appc-v6.qixin.com, qxb-minicode-pic-osscache.qixin.com

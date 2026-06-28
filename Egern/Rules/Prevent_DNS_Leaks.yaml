@@ -1,0 +1,27 @@
+# 规则名称: Prevent_DNS_Leaks
+# 规则统计: 21
+
+domain_set:
+  - ip-scan.adspower.net
+domain_suffix_set:
+  - addr.tools
+  - browserleaks.com
+  - browserleaks.net
+  - browserleaks.org
+  - browserscan.net
+  - dnscheck.tools
+  - dnsleak.com
+  - dnsleaktest.com
+  - edns.ip-api.com
+  - expressvpn.com
+  - immersivetranslate.com
+  - ipleak.net
+  - ipv4.surfsharkdns.com
+  - nordvpn.com
+  - perfect-privacy.com
+  - surfshark.com
+  - vpnunlimited.com
+  - whoer.net
+  - whrq.net
+domain_keyword_set:
+  - leak

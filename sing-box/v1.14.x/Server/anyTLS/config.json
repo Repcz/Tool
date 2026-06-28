@@ -1,0 +1,86 @@
+{
+    "log": {
+        "disabled": false,
+        "level": "info",
+        "timestamp": true
+    },
+
+    "certificate_providers": [
+        {
+            "type": "acme",
+            "tag": "ip_cert",
+            "domain": [
+                "your_server_ip"
+            ],
+            "email": "admin@example.com"
+        }
+    ],
+
+    "dns": {
+        "servers": [
+            {
+                "tag": "cloudflare",
+                "type": "udp",
+                "server": "1.1.1.1"
+            }
+        ],
+        "rules": [
+            {
+                "query_type": [
+                    "A",
+                    "AAAA"
+                ],
+                "action": "route",
+                "server": "cloudflare"
+            }
+        ],
+        "strategy": "prefer_ipv4",
+        "final": "cloudflare"
+    },
+
+    "inbounds": [
+        {
+            "type": "anytls",
+            "tag": "anytls-in",
+            "listen": "::",
+            "listen_port": 443,
+            "users": [
+                {
+                    "name": "singbox",
+                    "password": ""
+                }
+            ],
+            "padding_scheme": [],
+            "tls": {
+                "enabled": true,
+                "server_name": "your_server_ip",
+                "certificate_provider": "ip_cert"
+            }
+        }
+    ],
+
+    "route": {
+        "rules": [
+            {
+                "inbound": [
+                    "anytls-in"
+                ],
+                "action": "sniff"
+            }
+        ],
+        "default_domain_resolver": "cloudflare"
+    },
+
+    "outbounds": [
+        {
+            "type": "direct"
+        }
+    ],
+
+    "ntp": {
+        "enabled": true,
+        "server": "time.apple.com",
+        "server_port": 123,
+        "interval": "30m"
+    }
+}

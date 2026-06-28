@@ -1,0 +1,46 @@
+#!name=Line去广告
+#!desc=移除Line各类广告\n@jkgtw
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/Line_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Rule]
+URL-REGEX,"^https:\/\/a\.line\.me\/er\/lads\/v\d\/ei\?",REJECT-TINYGIF,extended-matching
+URL-REGEX,"^https:\/\/a\.line\.me\/er\/l.*\/v\d\/event\/image",REJECT-TINYGIF,extended-matching
+URL-REGEX,"^https:\/\/a\.line\.me\/lass\/api\/v\d\/ads$",REJECT,extended-matching
+URL-REGEX,"^https:\/\/a\.line\.me\/oa\/v\d\/e$",REJECT,extended-matching
+URL-REGEX,"^https:\/\/a\.line\.me\/cs\/v\d\/oa$",REJECT,extended-matching
+URL-REGEX,"^https:\/\/w\.line\.me\/adp\/api\/ad\/v\d\/",REJECT,extended-matching
+URL-REGEX,"^https:\/\/crs-event\.line\.me\/v\d\/imp",REJECT,extended-matching
+URL-REGEX,"^https:\/\/sch\.line\.me\/api\/v\d\/ads$",REJECT,extended-matching
+URL-REGEX,"^https:\/\/uts-front\.line-apps\.com\/event$",REJECT,extended-matching
+URL-REGEX,"^https:\/\/uts-front\.line-apps\.com\/settings$",REJECT,extended-matching
+URL-REGEX,"^https:\/\/obs\.line-scdn\.net\/0h[a-zA-Z0-9_-]{50}[a-zA-Z0-9_-]*",REJECT,extended-matching
+URL-REGEX,"^https:\/\/obs\.line-scdn\.net\/0h.+\/(o|m)\d+x\d+$",REJECT,extended-matching
+URL-REGEX,"^https:\/\/obs\.line-scdn\.net\/0hGH\d",REJECT,extended-matching
+URL-REGEX,"^https:\/\/obs\.line-scdn\.net\/0h.+\/\d+p\.mp4$",REJECT,extended-matching
+URL-REGEX,"^https:\/\/obs\.line-scdn\.net\/r\/linecrs\/.+\/m180x180$",REJECT-TINYGIF,extended-matching
+URL-REGEX,"^https:\/\/ec-bot-obs\.line-scdn\.net\/0h[0-9a-zA-Z_-]{50}[0-9a-zA-Z_-]*",REJECT-TINYGIF,extended-matching
+URL-REGEX,"^https:\/\/d\.line-scdn\.net\/lcp-prod-photo\/20.+\.(jpg|jpeg|png)",REJECT-TINYGIF,extended-matching
+URL-REGEX,"^https:\/\/web-mmap-pay\.line-apps\.com\/tw\/liff\/campaign\/v\d\/aggregate\/ad\/banner\/",REJECT-TINYGIF,extended-matching
+URL-REGEX,"^https:\/\/scdn\.line-apps\.com\/lan\/image\/line\/bannerImageEvent\/",REJECT,extended-matching
+URL-REGEX,"^https:\/\/scdn\.line-apps\.com\/lan\/document\/pageEvent\/line\/ios\/",REJECT,extended-matching
+
+[URL Rewrite]
+^https:\/\/gw\.line\.naver\.jp\/ext\/lgfp\/lad\/v\d$ - reject
+^https:\/\/gw\.line\.naver\.jp\/lass\/api\/v\d\/ads$ - reject
+^https:\/\/gw\.line\.naver\.jp\/tr\/event$ - reject
+^https:\/\/legy\.line-apps\.com:443\/ext\/lgfp\/lad\/v\d$ - reject
+^https:\/\/legy\.line-apps\.com:443\/ext\/smartch\/banner\/sch\/v\d$ - reject
+^https:\/\/legy\.line-apps\.com\/line\.gcs\.GcsModuleService\/GetModulesByModuleIds$ - reject
+^https:\/\/legy\.line-apps\.com:443\/tr\/event$ - reject
+^https:\/\/lan\.line\.me\/v\d\/line\/ios - reject
+^https:\/\/buy\.line\.me\/api\/graphql\?variables - reject
+^https:\/\/nelo2-col\.linecorp\.com\/_store$ - reject
+^https:\/\/cix\.line-apps\.com\/R\d\? - reject
+^https:\/\/ad\.line-scdn\.net\/0h - reject
+^https:\/\/static\.line-scdn\.net\/ad-sdk\/ - reject
+^https:\/\/scdn\.line-apps\.com\/appresources\/moretab\/list\.json - reject
+
+[MITM]
+hostname = %APPEND% a.line.me, ad.line-scdn.net, w.line.me, gw.line.naver.jp, lan.line.me, buy.line.me, crs-event.line.me, obs.line-scdn.net, d.line-scdn.net, scdn.line-apps.com, sch.line.me, static.line-scdn.net, nelo2-col.linecorp.com, uts-front.line-apps.com, cix.line-apps.com, legy.line-apps.com, ec-bot-obs.line-scdn.net

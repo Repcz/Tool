@@ -1,0 +1,36 @@
+name: Youtube (Music) Enhance
+desc: |-
+  适用于 Youtube & Youtube Music
+  作者: @Maasea @Script-Hub
+  最后更新时间: 2025-04-22 19:45
+icon: https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/YouTube.png
+category: ⚙️ ▸ NoAds
+
+http:
+
+  mitm:
+    - "*.googlevideo.com"
+    - "youtubei.googleapis.com"
+
+  url-rewrite:
+    - >-
+      ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - reject-200
+
+  script:
+    - match: ^https:\/\/youtubei\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch))(\?(.*))?$
+      name: "youtube.response"
+      type: response
+      require-body: true
+      max-size: -1
+      binary-mode: true
+      argument: |-
+        {"lyricLang":"off","captionLang":"off","blockUpload":true,"blockImmersive":true,"blockShorts":false,"debug":false}
+
+script-providers:
+  "youtube.response":
+    url: https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js
+    interval: 86400
+
+rules:
+  - AND,((PROTOCOL,UDP),(DOMAIN-SUFFIX,googlevideo.com)),REJECT
+  - AND,((PROTOCOL,UDP),(DOMAIN-SUFFIX,googleapi.com)),REJECT

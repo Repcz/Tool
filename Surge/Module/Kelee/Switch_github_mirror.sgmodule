@@ -1,0 +1,17 @@
+#!name=GitHub加速
+#!desc=此插件通过重定向至镜像站的方式解决GitHub的RAW资源下载困难的问题，使用前需要配置此插件的镜像源。由于镜像站均为热心网友提供，可能无法保证服务的长期可用性。若开启此插件后无法下载RAW资源，可尝试切换镜像源，或者禁用此插件。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/Switch_github_mirror.lpx
+#!select=镜像源,A镜像,B镜像
+#!date=2026-06-01 17:11:35
+
+[Rule]
+DOMAIN,fastraw.ixnic.net,DIRECT,extended-matching
+DOMAIN,hub.incept.pw,DIRECT,extended-matching
+DOMAIN,raw.kkgithub.com,DIRECT,extended-matching
+
+[Script]
+GitHub加速 = type=http-request,pattern=^https:\/\/raw\.githubusercontent\.com\/,script-path=https://kelee.one/Resource/JavaScript/GitHub/Switch_github_mirror.js
+
+[MITM]
+hostname = %APPEND% raw.githubusercontent.com

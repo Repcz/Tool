@@ -1,0 +1,20 @@
+#!name=朴朴超市去广告
+#!desc=移除超市去开屏广告，移除首页顶部轮播图和图标广告、启动小弹图广告、首页右下角悬浮动画、搜索热搜榜、搜索建议词、搜索发现热词、订单页面商，精简我的页面。\n@kelv1n1n, @可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/PuPuMall_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[URL Rewrite]
+^https:\/\/j1\.pupuapi\.com\/client\/account\/discount\/order - reject
+^https:\/\/j1\.pupuapi\.com\/client\/marketing\/banner\/v7\?position_types=100 - reject
+
+[Script]
+移除朴朴超市广告 = type=http-response,pattern=^https:\/\/j1\.pupuapi\.com\/client\/marketing\/banner\/v7,script-path=https://kelee.one/Resource/JavaScript/PuPuMall/PuPuMall_remove_ads.js,requires-body=true
+移除朴朴超市广告_2 = type=http-response,pattern=^https:\/\/j1\.pupuapi\.com\/client\/marketing\/banner\/search_component_banner,script-path=https://kelee.one/Resource/JavaScript/PuPuMall/PuPuMall_remove_ads.js,requires-body=true
+移除朴朴超市广告_3 = type=http-response,pattern=^https:\/\/j1\.pupuapi\.com\/client\/search\/hot_keywords\/v3,script-path=https://kelee.one/Resource/JavaScript/PuPuMall/PuPuMall_remove_ads.js,requires-body=true
+移除朴朴超市广告_4 = type=http-response,pattern=^https:\/\/j1\.pupuapi\.com\/client\/app_resource\/resource_preload\/list_h5_resource,script-path=https://kelee.one/Resource/JavaScript/PuPuMall/PuPuMall_remove_ads.js,requires-body=true
+移除朴朴超市广告_5 = type=http-response,pattern=^https:\/\/j1\.pupuapi\.com\/client\/recommendation\/interests\/products,script-path=https://kelee.one/Resource/JavaScript/PuPuMall/PuPuMall_remove_ads.js,requires-body=true
+移除朴朴超市广告_6 = type=http-response,pattern=^https:\/\/j1\.pupuapi\.com\/client\/marketing\/advertisement\/v1,script-path=https://kelee.one/Resource/JavaScript/PuPuMall/PuPuMall_remove_ads.js,requires-body=true
+
+[MITM]
+hostname = %APPEND% j1.pupuapi.com

@@ -1,0 +1,19 @@
+#!name=百度输入法去广告
+#!desc=过滤百度输入法广告，替换个人主页随机图。\n@Keywos
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/Baidu_input_method_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Map Local]
+^https?:\/\/mime\.baidu\.com\/v5\/start_screen_ads/list data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https?:\/\/mime\.baidu\.com\/sapi\/v1\/lccorpus\/(applist|pannellist) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https?:\/\/mime\.baidu\.com\/sapi\/v1\/(circle\/joinedlist|lccorpus\/usercorpussync|aihelpactivity\/aihelpresource) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https?:\/\/mime\.baidu\.com\/commer\/pocket_api\/enterprise_list data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https?:\/\/mbd\.baidu\.com\/ccs\/v1\/start\/confsync\?appname=baidu_input data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/mime\.baidu\.com\/v5\/(fb\/st\?logtype|(notiv3|cellloc_noti|noti_cloudswitch_noti)\/info) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[Script]
+百度输入法去广告 = type=http-response,pattern=^https?:\/\/mime\.baidu\.com\/(imrobot\/v1\/pub\/relation\/get_robot_list|v5\/custom_page\/(layout|getdata)),script-path=https://kelee.one/Resource/JavaScript/Baidu_input_method/Baidu_input_method_remove_ads.js,requires-body=true
+
+[MITM]
+hostname = %APPEND% imeres.baidu.com, mbd.baidu.com, mime.baidu.com
