@@ -9,8 +9,6 @@
 [![](https://img.shields.io/github/last-commit/Repcz/Tool?style=flat&label=Updated&color=3178c6&logo=githubactions&logoColor=white)](https://github.com/Repcz/Tool/commits)
 [![](https://img.shields.io/github/commit-activity/m/Repcz/Tool?style=flat&label=Activity&color=ff69b4)](https://github.com/Repcz/Tool/commits)
 
-<img src="https://github.com/Repcz/Tool/blob/X/.github/assets/head.svg" alt="header" width="100%" />
-
 </div>
 
 ---
