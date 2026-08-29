@@ -1,14 +1,15 @@
 <div align="center">
 
-# 🛠️ Tool
-
-> 自动化构建
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=3000&pause=1000&color=3178C6&center=true&vCenter=true&multiline=true&repeat=true&width=620&height=80&lines=%F0%9F%9B%A0%EF%B8%8F+Tool+%E2%80%94+%E4%BB%A3%E7%90%86%E8%A7%84%E5%88%99%E4%BB%93%E5%BA%93;%E8%87%AA%E5%8A%A8%E5%8C%96%E6%9E%84%E5%BB%BA+%C2%B7+%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0+%C2%B7+%E5%A4%9A%E5%B9%B3%E5%8F%B0%E6%94%AF%E6%8C%81" alt="Tool — 代理规则仓库 | 自动化构建 · 持续更新 · 多平台支持" />
 
 [![](https://visitor-badge.laobi.icu/badge?page_id=Repcz.Tool&left_color=gray&right_color=blue)](#)
-[![](https://img.shields.io/github/stars/Repcz/Tool?style=flat&label=Stars&color=ffcb2e)](https://github.com/Repcz/Tool/stargazers)
-[![](https://img.shields.io/github/forks/Repcz/Tool?style=flat&label=Forks&color=2ea043)](https://github.com/Repcz/Tool/forks)
-[![](https://img.shields.io/badge/License-MIT-22c55e?style=flat)](LICENSE)
-[![](https://img.shields.io/github/last-commit/Repcz/Tool?style=flat&label=Updated&color=3178c6)](https://github.com/Repcz/Tool/commits)
+[![](https://img.shields.io/github/stars/Repcz/Tool?style=flat&label=Stars&color=ffcb2e&logo=github)](https://github.com/Repcz/Tool/stargazers)
+[![](https://img.shields.io/github/forks/Repcz/Tool?style=flat&label=Forks&color=2ea043&logo=github)](https://github.com/Repcz/Tool/forks)
+[![](https://img.shields.io/badge/License-MIT-22c55e?style=flat&logo=opensourceinitiative&logoColor=white)](LICENSE)
+[![](https://img.shields.io/github/last-commit/Repcz/Tool?style=flat&label=Updated&color=3178c6&logo=githubactions&logoColor=white)](https://github.com/Repcz/Tool/commits)
+[![](https://img.shields.io/github/commit-activity/m/Repcz/Tool?style=flat&label=Activity&color=ff69b4)](https://github.com/Repcz/Tool/commits)
+
+<img src="https://github.com/Repcz/Tool/blob/X/.github/assets/head.svg" alt="header" width="100%" />
 
 </div>
 
@@ -115,6 +116,6 @@ rules:
 
 <div align="center">
 
-<sub>仅用于学习和研究目的</sub>
+<img src="https://img.shields.io/badge/%E4%BB%85%E7%94%A8%E4%BA%8E%E5%AD%A6%E4%B9%A0%E5%92%8C%E7%A0%94%E7%A9%B6%E7%9B%AE%E7%9A%84-3178C6?style=flat-square" alt="仅用于学习和研究目的" />
 
 </div>
