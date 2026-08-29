@@ -1,0 +1,111 @@
+{
+    "dns": {
+        "servers": [
+            {"tag": "hosts_fix","type": "hosts","predefined": {
+                "dns.alidns.com": ["223.5.5.5","223.6.6.6"]}
+            },
+            {"tag": "ali-doh","type": "https","server": "dns.alidns.com","domain_resolver": "hosts_fix"},
+            {"tag": "ali-udp","type": "udp","server": "223.5.5.5"},
+            {"tag": "fakeip","type": "fakeip","inet4_range": "198.18.0.0/15","inet6_range": "fc00::/18"},
+            {"tag": "local","type": "local","neighbor_domain": [".local",".lan"]}
+        ],
+        "rules": [
+            {"rule_set": ["Reject"],"action": "reject"},
+            {"rule_set": ["ChinaDomain"],"action": "route","server": "ali-udp","timeout": "3s"},
+            {"query_type": "HTTPS","action": "reject"},
+            {"domain_suffix": ["lancache.steamcontent.com","10099.com.cn","msftconnecttest.com","msftncsi.com","local","lan","home","internal","corp","example.com"],"server": "local"},
+            {"query_type": ["A","AAAA"],"action": "route","server": "fakeip","rewrite_ttl": 1},
+            {"clash_mode": "Global","action": "route","server": "fakeip"},
+            {"clash_mode": "Direct","action": "route","server": "local"}
+        ],
+        "reverse_mapping": true,
+        "strategy": "ipv4_only",
+        "optimistic": true,
+        "final": "ali-doh"
+    },
+    "outbounds": [
+        {"tag": "Direct","type": "direct"},
+        {"tag": "Proxy","type": "selector","outbounds": ["Direct"],"default": "Direct","interrupt_exist_connections": true},
+        {"tag": "AI","type": "selector","outbounds": ["Proxy"],"default":"Proxy","interrupt_exist_connections": true},
+        {"tag": "Telegram","type": "selector","outbounds": ["Proxy"],"default": "Proxy","interrupt_exist_connections": true},
+        {"tag": "Final","type": "selector","outbounds": ["Proxy","Direct"],"default": "Proxy","interrupt_exist_connections": true}
+    ],
+    "route": {
+        "rule_set": [
+            {
+                "tag": ["Reject","AI", "Telegram", "Twitter", "Google", "Microsoft", "Github", "Proxy", "ChinaDomain", "ChinaIP"],
+                "type": "remote", "format": "binary",
+                "url": "https://github.com/Repcz/Tool/raw/X/sing-box/Rules/{tag}.srs"
+            }
+        ],
+        "rules": [
+            {"action": "sniff","sniffer": ["http","tls","quic","dns"]},
+            {"protocol": "dns","action": "hijack-dns"},
+            {"ip_is_private": true,"action": "route","outbound": "Direct"},
+            {"clash_mode": "Direct","action": "route","outbound": "Direct"},
+            {"clash_mode": "Global","action": "route","outbound": "Proxy"},
+            {"rule_set": ["Reject"],"action": "reject"},
+            {"rule_set": ["AI"],"action": "route","outbound": "AI"},
+            {"rule_set": ["Telegram"],"action": "route","outbound": "Telegram"},
+            {"rule_set": ["Twitter", "Google", "Microsoft", "Github", "Proxy"],"action": "route","outbound": "Proxy"},
+            {"action": "resolve"},
+            {"rule_set": ["ChinaDomain","ChinaIP"],"action": "route","outbound": "Direct"}
+        ],
+        "auto_detect_interface": true,
+        "default_http_client": "default",
+        "default_domain_resolver": "ali-udp",
+        "final": "Final"
+    },
+    "log": {
+        "disabled": false,
+        "level": "info",
+        "output": "sing-box.log",
+        "timestamp": true
+    },
+    "http_clients": [
+        {
+        "tag": "default",
+        "version": 2,
+        "detour": "Proxy"
+        }
+    ],
+    "services": [
+        {
+            "type": "api",
+            "tag": "sing-box dashboard",
+            "listen": "127.0.0.1",
+            "listen_port": 9091,
+            "secret": "",
+            "access_control_allow_origin": [
+                "http://sing-box-dashboard.sagernet.org",
+                "http://dash.sing-box.app"
+            ],
+            "access_control_allow_private_network": true
+        }
+    ],
+    "inbounds": [
+        {
+            "type": "mixed",
+            "tag": "mixed",
+            "listen": "127.0.0.1",
+            "listen_port": 7080
+       },
+        {
+            "type": "tun",
+            "tag": "tun",
+            "address": [
+                "172.18.0.1/30",
+                "fdfe:dcba:9876::1/126"
+            ],
+            "platform": {
+                "http_proxy": {
+                    "enabled": true,
+                    "server": "127.0.0.1",
+                    "server_port": 7080
+                }
+            },
+            "stack": "mixed",
+            "auto_route": true
+        }
+    ]
+}

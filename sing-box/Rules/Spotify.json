@@ -1,0 +1,41 @@
+{
+  "version": 4,
+  "rules": [
+    {
+      "domain_suffix": [
+        "audio-ak-spotify-com.akamaized.net",
+        "byspotify.com",
+        "heads4-ak-spotify-com.akamaized.net",
+        "pscdn.co",
+        "scdn.co",
+        "spoti.fi",
+        "spotify-com.akamaized.net",
+        "spotify-everywhere.com",
+        "spotify.app.link",
+        "spotify.com",
+        "spotify.design",
+        "spotifycdn.com",
+        "spotifycdn.net",
+        "spotifycharts.com",
+        "spotifycodes.com",
+        "spotifyforbrands.com",
+        "spotifyjobs.com"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "-spotify-com"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "35.186.224.47/32"
+      ]
+    },
+    {
+      "process_name": [
+        "com.spotify.music"
+      ]
+    }
+  ]
+}

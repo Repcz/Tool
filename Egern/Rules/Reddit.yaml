@@ -1,0 +1,12 @@
+# 规则名称: Reddit
+# 规则统计: 8
+
+domain_suffix_set:
+  - redd.it
+  - reddit.com
+  - redditmail.com
+  - redditmedia.com
+  - redditstatic.com
+  - reddituploads.com
+  - reddituploads.com.cdn-cf.behance.net
+  - reddituploads.com.cdn-cf.dropbox.com

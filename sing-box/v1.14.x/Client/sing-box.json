@@ -1,0 +1,158 @@
+{
+    "dns": {
+        "servers": [
+            {"tag": "hosts_fix","type": "hosts","predefined": {
+                "dns.alidns.com": ["223.5.5.5","223.6.6.6"],
+                "doh.pub": ["1.12.12.21","120.53.53.53"],
+                "dns.google": ["8.8.8.8","8.8.4.4"],
+                "cloudflare-dns.com": ["104.16.248.249","104.16.249.249"]}
+            },
+            {"tag": "cf-doh","type": "https","server": "cloudflare-dns.com","detour": "Manual","domain_resolver": "hosts_fix"},
+            {"tag": "gg-doh","type": "https","server": "dns.google","detour": "Manual","domain_resolver": "hosts_fix"},
+            {"tag": "ali-doh","type": "https","server": "dns.alidns.com","domain_resolver": "hosts_fix"},
+            {"tag": "tx-doh","type": "https","server": "doh.pub","domain_resolver": "hosts_fix"},
+            {"tag": "ali-udp","type": "udp","server": "223.5.5.5"},
+            {"tag": "tx-udp","type": "udp","server": "119.29.29.29"},
+            {"tag": "fakeip","type": "fakeip","inet4_range": "198.18.0.0/15","inet6_range": "fc00::/18"},
+            {"tag": "local","type": "local","neighbor_domain": [".local",".lan"]}
+        ],
+        "rules": [
+            {"rule_set": ["Reject"],"action": "reject"},
+            {"rule_set": ["ChinaDomain"],"query_type": ["A","AAAA"],"action": "evaluate","server": "ali-udp","tag": "ali-response","timeout": "3s"},
+            {"rule_set": ["ChinaDomain"],"query_type": ["A","AAAA"],"action": "evaluate","server": "tx-udp","tag": "tx-response","timeout": "3s"},
+            {"rule_set": ["ChinaDomain"],"query_type": ["A","AAAA"],"match_response": "ali-response","ip_accept_any": true,"action": "respond","race": true},
+            {"rule_set": ["ChinaDomain"],"query_type": ["A","AAAA"],"match_response": "tx-response","ip_accept_any": true,"action": "respond","race": true},
+            {"rule_set": ["ChinaDomain"],"action": "route","server": "ali-udp","timeout": "3s"},
+            {"query_type": "HTTPS","action": "reject"},
+            {"domain_suffix": ["lancache.steamcontent.com","10099.com.cn","msftconnecttest.com","msftncsi.com","local","lan","home","internal","corp","example.com"],"server": "local"},
+            {"query_type": ["A","AAAA"],"action": "route","server": "fakeip","rewrite_ttl": 1},
+            {"clash_mode": "Global","action": "route","server": "fakeip"},
+            {"clash_mode": "Direct","action": "route","server": "local"}
+        ],
+        "reverse_mapping": true,
+        "strategy": "ipv4_only",
+        "optimistic": true,
+        "final": "ali-doh"
+    },
+    "outbounds": [
+        {"tag": "Direct","type": "direct"},
+        {"tag": "Manual","type": "selector","outbounds": ["HongKong","United States","Singapore","Japan","Taiwan","Direct"],"default": "Direct","interrupt_exist_connections": true},
+        {"tag": "AI","type": "selector","outbounds": ["Manual","HongKong","United States","Singapore","Japan","Taiwan"],"default": "United States","interrupt_exist_connections": true},
+        {"tag": "Google","type": "selector","outbounds": ["Manual","HongKong","United States","Singapore","Japan","Taiwan"],"default": "United States","interrupt_exist_connections": true},
+        {"tag": "Microsoft","type": "selector","outbounds": ["Manual","HongKong","United States","Singapore","Japan","Taiwan","Direct"],"default": "United States","interrupt_exist_connections": true},
+        {"tag": "Social","type": "selector","outbounds": ["Manual","HongKong","United States","Singapore","Japan","Taiwan"],"default": "Manual","interrupt_exist_connections": true},
+        {"tag": "Telegram","type": "selector","outbounds": ["Manual","HongKong","United States","Singapore","Japan","Taiwan"],"default": "Singapore","interrupt_exist_connections": true},
+        {"tag": "Game","type": "selector","outbounds": ["Manual","HongKong","United States","Singapore","Japan","Taiwan","Direct"],"default": "Manual","interrupt_exist_connections": true},
+        {"tag": "Emby","type": "selector","outbounds": ["Manual","HongKong","United States","Singapore","Japan","Taiwan","Direct"],"default": "Manual","interrupt_exist_connections": true},
+        {"tag": "Spotify","type": "selector","outbounds": ["Manual","HongKong","United States","Singapore","Japan","Taiwan","Direct"],"default": "Manual","interrupt_exist_connections": true},
+        {"tag": "Streaming","type": "selector","outbounds": ["Manual","HongKong","United States","Singapore","Japan","Taiwan"],"default": "Manual","interrupt_exist_connections": true},
+        {"tag": "Final","type": "selector","outbounds": ["Manual","HongKong","United States","Singapore","Japan","Taiwan","Direct"],"default": "Manual","interrupt_exist_connections": true},
+        {"tag": "HongKong","type": "urltest","outbounds": [],"url": "http://1.1.1.1/generate_204","interrupt_exist_connections": true},
+        {"tag": "United States","type": "urltest","outbounds": [],"url": "http://1.1.1.1/generate_204","interrupt_exist_connections": true},
+        {"tag": "Singapore","type": "urltest","outbounds": [],"url": "http://1.1.1.1/generate_204","interrupt_exist_connections": true},
+        {"tag": "Japan","type": "urltest","outbounds": [],"url": "http://1.1.1.1/generate_204","interrupt_exist_connections": true},
+        {"tag": "Taiwan","type": "urltest","outbounds": [],"url": "http://1.1.1.1/generate_204","interrupt_exist_connections": true}
+    ],
+    "route": {
+        "rule_set": [
+            {
+                "tag": [
+                    "Reject",
+                    "AI", "Telegram", "Twitter", "Facebook", "TikTok",
+                    "Steam", "Epic",
+                    "Google", "Microsoft", "Github",
+                    "Emby", 
+                    "Spotify", "Bahamut", "Netflix", "Disney", "PrimeVideo", "HBO", 
+                    "Proxy", "AppleProxy", 
+                    "ChinaDomain", "ChinaIP"
+                ],
+                "type": "remote", "format": "binary",
+                "url": "https://github.com/Repcz/Tool/raw/X/sing-box/Rules/{tag}.srs"
+            }
+        ],
+        "rules": [
+            {"action": "sniff","sniffer": ["http","tls","quic","dns"]},
+            {"protocol": "dns","action": "hijack-dns"},
+            {"ip_is_private": true,"action": "route","outbound": "Direct"},
+            {"clash_mode": "Direct","action": "route","outbound": "Direct"},
+            {"clash_mode": "Global","action": "route","outbound": "Manual"},
+            {"rule_set": ["Reject"],"action": "reject"},
+            {"rule_set": ["AI"],"action": "route","outbound": "AI"},
+            {"rule_set": ["Telegram"],"action": "route","outbound": "Telegram"},
+            {"type": "logical","mode": "and","rules": [{"inbound": ["telegram-socks"]},{"rule_set": ["Telegram"],"invert": true}],"action": "reject"},
+            {"rule_set": ["Twitter","Facebook","TikTok"],"action": "route","outbound": "Social"},
+            {"rule_set": ["Steam","Epic"],"action": "route","outbound": "Game"},
+            {"rule_set": ["Google"],"action": "route","outbound": "Google"},
+            {"rule_set": ["Microsoft","Github"],"action": "route","outbound": "Microsoft"},
+            {"rule_set": ["Emby"],"action": "route","outbound": "Emby"},
+            {"rule_set": ["Spotify"],"action": "route","outbound": "Spotify"},
+            {"rule_set": ["Bahamut","Netflix","Disney","PrimeVideo","HBO"],"action": "route","outbound": "Streaming"},
+            {"rule_set": ["Proxy"],"action": "route","outbound": "Manual"},
+            {"rule_set": ["AppleProxy"],"action": "route","outbound": "HongKong"},
+            {"action": "resolve"},
+            {"rule_set": ["ChinaDomain","ChinaIP"],"action": "route","outbound": "Direct"}
+        ],
+        "auto_detect_interface": true,
+        "default_http_client": "default",
+        "default_domain_resolver": "ali-udp",
+        "final": "Final"
+    },
+    "log": {
+        "disabled": false,
+        "level": "info",
+        "output": "sing-box.log",
+        "timestamp": true
+    },
+    "http_clients": [
+        {
+        "tag": "default",
+        "version": 2,
+        "detour": "Manual"
+        }
+    ],
+    "services": [
+        {
+            "type": "api",
+            "tag": "sing-box dashboard",
+            "listen": "127.0.0.1",
+            "listen_port": 9091,
+            "secret": "",
+            "access_control_allow_origin": [
+                "http://sing-box-dashboard.sagernet.org",
+                "http://dash.sing-box.app"
+            ],
+            "access_control_allow_private_network": true
+        }
+    ],
+    "inbounds": [
+        {
+            "type": "mixed",
+            "tag": "mixed",
+            "listen": "127.0.0.1",
+            "listen_port": 7080
+       },
+        {
+            "type": "socks",
+            "tag": "telegram-socks",
+            "listen": "127.0.0.1",
+            "listen_port": 6153
+        },
+        {
+            "type": "tun",
+            "tag": "tun",
+            "address": [
+                "172.18.0.1/30",
+                "fdfe:dcba:9876::1/126"
+            ],
+            "platform": {
+                "http_proxy": {
+                    "enabled": true,
+                    "server": "127.0.0.1",
+                    "server_port": 7080
+                }
+            },
+            "stack": "mixed",
+            "auto_route": true
+        }
+    ]
+}

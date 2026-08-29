@@ -1,0 +1,13 @@
+#!name=Peekabo GIGO INFO
+#!desc=龙鸡服务器信息展示\n@Repcz\nPowerd by DeepSeek V4 Flash
+#!category=⚙️ ▸ Function
+
+#!arguments=id,token,icon:xserve,icon-color:3B82F6,ip-mode:mask,daily-notify:true
+#!arguments-desc=官网: gigo.peekabo.io\n\nServer ID 获取方式: \n    ├ 1.进入 control panel\n    └ 2.网页链接“/sever/”后的内容即为ID\nAPI Token 获取方式: \n    ├ 1.进入 control panel\n    ├ 2.点击左上角“Account”\n    └ 3.点击第二行“API”\nip-mode: \n    ├ full\n    ├ mask\n    └ hide\ndaily-notify: 每日 09:00 推送流量日报(默认开启)\n    ├ true\n    └ false
+
+[Panel]
+Peekabo GIGO 信息 = title="Peekabo Server",content="正在获取...",style=info,script-name=peekabo-info-panel,update-interval=60
+
+[Script]
+peekabo-info-panel = type=generic,script-path=https://github.com/Repcz/Tool/raw/X/Surge/Scripts/peekabo-panel.js,argument="id={{{id}}}&token={{{token}}}&icon={{{icon}}}&icon-color={{{icon-color}}}&ip-mode={{{ip-mode}}}&daily-notify={{{daily-notify}}}"
+peekabo-info-daily = type=cron,cronexp="0 9 * * *",wake-system=true,timeout=30,script-path=https://github.com/Repcz/Tool/raw/X/Surge/Scripts/peekabo-panel.js,argument="id={{{id}}}&token={{{token}}}&icon={{{icon}}}&icon-color={{{icon-color}}}&ip-mode={{{ip-mode}}}&daily-notify={{{daily-notify}}}"

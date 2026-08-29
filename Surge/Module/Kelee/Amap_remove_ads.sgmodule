@@ -1,0 +1,49 @@
+#!name=高德地图去广告
+#!desc=过滤高德地图开屏广告、各页面推广，精简我的页面。\n@RuCu6, @kelv1n1n, @可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/Amap_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Rule]
+DOMAIN,amap-aos-info-nogw.amap.com,REJECT,extended-matching,pre-matching
+DOMAIN,free-aos-cdn-image.amap.com,REJECT,extended-matching,pre-matching
+DOMAIN-SUFFIX,v.smtcdns.com,REJECT,extended-matching,pre-matching
+
+[Body Rewrite]
+http-response-jq ^https:\/\/m5\.amap\.com\/ws\/shield\/search_business\/process\/marketingOperationStructured\? 'delpaths([["data","commonMaterial"],["data","tipsOperationLocation"],["data","resourcePlacement"]])'
+http-response-jq ^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/homepage\? 'delpaths([["history_tags"]])'
+http-response-jq ^https:\/\/m5-zb\.amap\.com\/ws\/sharedtrip\/taxi\/order_detail_car_tips\? 'delpaths([["data","carTips","data","popupInfo"]])'
+
+[Map Local]
+^https:\/\/m5\.amap\.com\/ws\/shield\/search\/new_hotword\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/card-service-(?:car-end|route-plan) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/tips_adv\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/oss\.amap\.com\/ws\/banner\/lists\/\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/ai\.amap\.com\/v1\/ai_rec\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/m5\.amap\.com\/ws\/aos\/main\/page\/product\/list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/(?:main-page-assets|main-page-location|ridewalk-end-fc|usr-profile-fc\/homeV2) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/m5\.amap\.com\/ws\/(?:mapapi\/hint_text\/offline_data|message\/notice\/list|shield\/search\/new_hotword) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/m5\.amap\.com\/ws\/valueadded\/weather\/v2\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/sns\.amap\.com\/ws\/msgbox\/pull_mp\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:order\/car\/(?:feedback\/get_card_questions|feedback\/viptips|king_toolbox_car_bubble|remark\/satisfactionConf|rights_information)|tips\/onscene_visual_optimization) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:pay\/web\/paySuccess\/info\/request|transportation\/diversion\/resource\/driving) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
+[Script]
+移除路线规划推广 = type=http-response,pattern=^https:\/\/m5\.amap\.com\/ws\/aos\/perception\/publicTravel\/beforeNavi\?,script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
+移除路线规划_导航结束页推广 = type=http-response,pattern=^https:\/\/m5\.amap\.com\/ws\/bus\/plan\/integrate\?,script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
+移除导航详情页底部酒店_处理附近页 = type=http-response,pattern=^https:\/\/m5\.amap\.com\/ws\/c3frontend\/(?:af-(?:hotel|launch)\/page\/main|af-nearby\/nearby),script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
+移除路线规划推广_2 = type=http-response,pattern=^https:\/\/m5\.amap\.com\/ws\/perception\/drive\/(?:routeInfo|routePlan),script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
+移除搜索栏推广 = type=http-response,pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search_bff\/hotword\?,script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
+移除搜索详情页推广 = type=http-response,pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/(?:mps|search\/sp|sug|tips_operation_location),script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
+移除首页推广 = type=http-response,pattern=^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/(?:card-service-plan-home|main-page),script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
+移除首页推广_2 = type=http-response,pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable\/1\?,script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
+移除我的页面推广 = type=http-response,pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaasv3\?,script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
+移除附近页推广 = type=http-response,pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search\/nearbyrec_smart\?,script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
+移除开屏广告 = type=http-response,pattern=^https:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\?,script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
+移除打车页推广卡片_弹窗 = type=http-response,pattern=^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:car\/order\/content_info|order_web\/friendly_information),script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
+移除打车页红点角标_天气图标 = type=http-response,pattern=^https:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource(\/home)?\?,script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
+移除导航详情页推广 = type=http-response,pattern=^https:\/\/(?:info|m5)\.amap\.com\/ws\/shield\/search\/(?:common\/coupon\/info|poi\/detail),script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
+
+[MITM]
+hostname = %APPEND% *.amap.com

@@ -1,0 +1,42 @@
+{
+  "version": 4,
+  "rules": [
+    {
+      "domain_suffix": [
+        "aaplimg.com",
+        "apple-cloudkit.com",
+        "apple-dns.net",
+        "apple-mapkit.com",
+        "apple.co",
+        "apple.com",
+        "apple.news",
+        "appsto.re",
+        "appstore.com",
+        "cdn-apple.com",
+        "icloud-content.com",
+        "icloud.com",
+        "itunes.com",
+        "me.com",
+        "organicfruitapps.com",
+        "push-apple.com.akadns.net"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "17.0.0.0/8"
+      ]
+    },
+    {
+      "process_name": [
+        "CoreLocationAgent",
+        "WeatherWidget",
+        "apsd",
+        "com.apple.Maps",
+        "com.apple.geod",
+        "findmydevice-user-agent",
+        "fmfd",
+        "mapspushd"
+      ]
+    }
+  ]
+}

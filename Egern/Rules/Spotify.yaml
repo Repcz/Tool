@@ -1,0 +1,28 @@
+# 规则名称: Spotify
+# 规则统计: 20
+
+no_resolve: true
+domain_keyword_set:
+  - '-spotify-com'
+domain_suffix_set:
+  - audio-ak-spotify-com.akamaized.net
+  - byspotify.com
+  - heads4-ak-spotify-com.akamaized.net
+  - pscdn.co
+  - scdn.co
+  - spoti.fi
+  - spotify-com.akamaized.net
+  - spotify-everywhere.com
+  - spotify.app.link
+  - spotify.com
+  - spotify.design
+  - spotifycdn.com
+  - spotifycdn.net
+  - spotifycharts.com
+  - spotifycodes.com
+  - spotifyforbrands.com
+  - spotifyjobs.com
+ip_cidr_set:
+  - 35.186.224.47/32
+user_agent_set:
+  - 'Spotify*'

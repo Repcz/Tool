@@ -1,0 +1,8 @@
+# 规则名称: TestFlight
+# 规则统计: 3
+
+domain_set:
+  - beta.apple.com
+  - testflight.apple.com
+domain_keyword_set:
+  - testflight

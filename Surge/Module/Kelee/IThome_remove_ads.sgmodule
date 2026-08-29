@@ -1,0 +1,15 @@
+#!name=IT之家去广告
+#!desc=过滤IT之家信息流广告和文末广告，自定义移除置顶和轮播图，自定义移除项需在插件配置。\n@可莉🅥
+#!category=⚙️ ▸ Kelee Mode
+#!arguments=removePinnedArticles:false,removeAllBanners:false
+#!URL=https://kelee.one/Tool/Loon/Lpx/IThome_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[URL Rewrite]
+^https?:\/\/dat\.ruanmei\.com\/ithome\/money\/acd\.json$ - reject
+
+[Script]
+IT之家去广告 = type=http-response,pattern=^https:\/\/napi\.ithome\.com\/api\/(news\/indexv2\/iphone\/\d+|topmenu\/getfeeds\?),script-path=https://kelee.one/Resource/JavaScript/IThome/IThome_remove_ads.js,requires-body=true,argument=[{removeAllBanners},{removePinnedArticles}]
+
+[MITM]
+hostname = %APPEND% napi.ithome.com, api.zuihuimai.com, dat.ruanmei.com

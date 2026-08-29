@@ -1,0 +1,13 @@
+# 规则名称: AppleMusic
+# 规则统计: 10
+
+HOST,aod-ssl.itunes.apple.com,AppleMusic
+HOST,aod.itunes.apple.com,AppleMusic
+HOST,audio-ssl.itunes.apple.com,AppleMusic
+HOST,audio.itunes.apple.com,AppleMusic
+HOST,mvod.itunes.apple.com,AppleMusic
+HOST,streamingaudio.itunes.apple.com,AppleMusic
+HOST-SUFFIX,applemusic.com,AppleMusic
+HOST-SUFFIX,blobstore.apple.com,AppleMusic
+HOST-SUFFIX,music.apple.com,AppleMusic
+USER-AGENT,Music*,AppleMusic

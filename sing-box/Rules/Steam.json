@@ -1,0 +1,29 @@
+{
+  "version": 4,
+  "rules": [
+    {
+      "domain_suffix": [
+        "fanatical.com",
+        "humblebundle.com",
+        "playartifact.com",
+        "s.team",
+        "steam-api.com",
+        "steam-chat.com",
+        "steam.tv",
+        "steamcommunity.com",
+        "steamconnecttest.com",
+        "steamcontent.com",
+        "steamcontent.tnkjmec.com",
+        "steamdeck.com",
+        "steamgames.com",
+        "steampowered.com",
+        "steamserver.net",
+        "steamstat.us",
+        "steamstatic.com",
+        "steamusercontent.com",
+        "underlords.com",
+        "valvesoftware.com"
+      ]
+    }
+  ]
+}

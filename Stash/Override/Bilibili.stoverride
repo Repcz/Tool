@@ -1,0 +1,129 @@
+name: Bilibili增强
+desc: |-
+  拜托，没有广告的哔哩哔哩真的超酷的
+  作者: @kokoryh @Script-Hub
+  最后更新时间: 2025-07-12 22:05
+icon: https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Bilibili.png
+category: ⚙️ ▸ NoAds
+arguments-desc: |-
+  动态最常访问: [true, false, auto]\n- true: 始终显示\n- false: 始终隐藏\n- auto: 仅当列表中存在直播状态时显示\n\n创作中心: [1, 0]\n- 1: 显示\n- 0: 隐藏\n\n过滤置顶评论广告: [1, 0]\n- 1: 开启\n- 0: 关闭\n\n空降助手: 默认开启，配置为"#"时关闭\n\n空降助手弹幕版: 默认关闭，需手动开启\n\n替换鉴权字段: 默认关闭，配置为"h"时开启，需填写Authorization
+
+rules:
+  - DOMAIN,api.biliapi.com,REJECT
+  - DOMAIN,app.biliapi.com,REJECT
+  - DOMAIN,api.biliapi.net,REJECT
+  - DOMAIN,app.biliapi.net,REJECT
+  - DOMAIN-SUFFIX,chat.bilibili.com,REJECT
+
+http:
+
+  mitm:
+    - "grpc.biliapi.net"
+    - "app.bilibili.com"
+    - "api.bilibili.com"
+    - "api.live.bilibili.com"
+    - "line3-h5-mobile-api.biligame.com"
+
+  url-rewrite:
+    - >-
+      ^https:\/\/api\.live\.bilibili\.com\/xlive\/e-commerce-interface\/v1\/ecommerce-user\/get_shopping_info\? - reject-dict
+
+  body-rewrite:
+    - >-
+      ^https:\/\/api\.bilibili\.com\/pgc\/view\/v2\/app\/season\? response-jq del(.data.payment)
+    - >-
+      ^https:\/\/api\.bilibili\.com\/pgc\/page\/(bangumi|cinema\/tab)\? response-jq .result.modules |= if . then map(if (.style | startswith("tip")) or (.module_id | IN(241, 1283, 1441, 1284)) then .items = [] elif .style | startswith("banner") then .items |= if . then map(select(.link | contains("play"))) else [] end elif .style | startswith("function") then .items |= if . then map(select(.blink | startswith("bilibili"))) else [] end end) end
+    - >-
+      ^https:\/\/api\.live\.bilibili\.com\/xlive\/(app-interface\/v2\/index\/feed|app-room\/v1\/index\/getInfoBy(Room|User))\? response-jq .data |= (del(.play_together_info, .play_together_info_v2, .activity_banner_info) | if .function_card then .function_card[] = null end | if .new_tab_info.outer_list then .new_tab_info.outer_list |= map(select(.biz_id != 33)) end | if .card_list then .card_list |= map(select(.card_type | IN("banner_v2", "activity_card_v1") | not)) end | reduce ([["show_reserve_status"], false], [["reserve_info", "show_reserve_status"], false], [["shopping_info", "is_show"], 0]) as [$path, $value] (.; if getpath($path) then setpath($path; $value) end))
+
+  script:
+    - match: ^https:\/\/ap[ip]\.bilibili\.com\/x\/(resource\/(top\/activity|patch\/tab)|v2\/search\/square|vip\/ads\/materials)\?
+      name: "echoResponse"
+      type: request
+      timeout: 60
+      argument: |-
+        text=%7B%22code%22%3A-404%2C%22message%22%3A%22-404%22%2C%22ttl%22%3A1%2C%22data%22%3Anull%7D
+
+    - match: ^https:\/\/api\.bilibili\.com\/pgc\/activity\/deliver\/material\/receive\?
+      name: "echoResponse"
+      type: request
+      timeout: 60
+      argument: |-
+        text=%7B%22code%22%3A0%2C%22data%22%3A%7B%22closeType%22%3A%22close_win%22%2C%22container%22%3A%5B%5D%2C%22showTime%22%3A%22%22%7D%2C%22message%22%3A%22success%22%7D
+
+    - match: ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.interface\.v1\.Teenagers\/ModeStatus$
+      name: "echoResponse"
+      type: request
+      timeout: 60
+      argument: |-
+        base64=AAAAABMKEQgCEgl0ZWVuYWdlcnMgAioA
+
+    - match: ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.interface\.v1\.Search\/DefaultWords$
+      name: "echoResponse"
+      type: request
+      timeout: 60
+      argument: |-
+        base64=AAAAACkaHeaQnOe0ouinhumikeOAgeeVquWJp%2BaIlnVw5Li7IgAoAToAQgBKAA%3D%3D
+
+    - match: ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.view\.v1\.View\/TFInfo$
+      name: "echoResponse"
+      type: request
+      timeout: 60
+      argument: |-
+        base64=AAAAAAIIAQ%3D%3D
+
+    - match: ^https:\/\/line3-h5-mobile-api\.biligame\.com\/game\/live\/large_card_material\?
+      name: "echoResponse"
+      type: request
+      timeout: 60
+      argument: |-
+        text=%7B%22code%22%3A0%2C%22message%22%3A%22success%22%7D
+
+    - match: ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.community\.service\.dm\.v1\.DM\/DmSegMobile$
+      name: "bilibili.airborne_24"
+      type: request
+      require-body: true
+      max-size: -1
+      binary-mode: true
+      argument: |-
+        {"logLevel":"info"}
+
+    - match: ^https:\/\/app\.bilibili\.com\/x\/resource\/show\/skin\?
+      name: "bilibili.skin_25"
+      type: response
+      require-body: true
+      max-size: -1
+
+    - match: ^https:\/\/app\.bilibili\.com\/x\/(resource\/show\/tab\/v2|v2\/(splash\/(list|show|event\/list2)|feed\/index(\/story)?|account\/(mine(\/ipad)?|myinfo)))\?
+      name: "bilibili.json_26"
+      type: response
+      require-body: true
+      max-size: -1
+      argument: |-
+        {"showCreatorHub":0}
+
+    - match: ^https:\/\/(grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.(app\.(show\.v1\.Popular\/Index|dynamic\.v2\.Dynamic\/DynAll|view(unite)?\.v1\.View\/(View|ViewProgress|RelatesFeed)|playurl\.v1\.PlayURL\/PlayView|playerunite\.v1\.Player\/PlayViewUnite)|polymer\.app\.search\.v1\.Search\/SearchAll|community\.service\.dm\.v1\.DM\/(DmView|DmSegMobile)|main\.community\.reply\.v1\.Reply\/MainList|pgc\.gateway\.player\.v2\.PlayURL\/PlayView)$
+      name: "bilibili.protobuf_27"
+      type: response
+      require-body: true
+      max-size: -1
+      binary-mode: true
+      argument: |-
+        {"showUpList":"auto","filterTopReplies":1,"airborne":"bilibili.airborne","logLevel":"info"}
+
+script-providers:
+  "echoResponse":
+    url: https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/echo-response.js
+    interval: 86400
+  "bilibili.airborne_24":
+    url: https://raw.githubusercontent.com/kokoryh/Sparkle/refs/heads/master/dist/bilibili.airborne.js
+    interval: 86400
+  "bilibili.skin_25":
+    url: https://raw.githubusercontent.com/kokoryh/Script/master/js/bili-suit-diy.js
+    interval: 86400
+  "bilibili.json_26":
+    url: https://raw.githubusercontent.com/kokoryh/Sparkle/refs/heads/master/dist/bilibili.json.js
+    interval: 86400
+  "bilibili.protobuf_27":
+    url: https://raw.githubusercontent.com/kokoryh/Sparkle/refs/heads/master/dist/bilibili.protobuf.js
+    interval: 86400

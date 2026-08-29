@@ -1,0 +1,14 @@
+#!name=航旅纵横去广告
+#!desc=过滤航旅纵横广告\n@佚名
+#!category=⚙️ ▸ Kelee Mode
+#!URL=https://kelee.one/Tool/Loon/Lpx/Umetrip_remove_ads.lpx
+#!date=2026-06-01 17:11:35
+
+[Rule]
+URL-REGEX,"^http?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/native",REJECT,extended-matching
+
+[Script]
+移除首页广告 = type=http-response,pattern=^http?:\/\/(114\.115\.217\.129)|(home\.umetrip\.com)\/gateway\/api\/umetrip\/native$,script-path=https://kelee.one/Resource/JavaScript/Umetrip/Umetrip_remove_ads.js
+
+[MITM]
+hostname = %APPEND% 114.115.217.129, home.umetrip.com
