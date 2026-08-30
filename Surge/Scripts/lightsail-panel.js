@@ -15,8 +15,11 @@
  *   region       区域, 逗号分隔可填多个, 默认 ap-northeast-1
  *   threshold    告警阈值 (%), 默认 90, 超过后面板标红
  *   icon         面板图标名, 默认 cloud
- *   icon-color   图标颜色, 默认 FF9900
+ *   icon-color   图标颜色, 6位HEX(不含#), 默认 FF9900
  *   mode         panel=面板 / daily=每日通知
+ *
+ * 面板显示风格对齐 PeekaboPanel: 逐行「字段: 值」, 字节数自适应单位,
+ * 错误态统一使用 ⚠️ 图标 + 红色
  */
 
 const SERVICE = 'lightsail';
@@ -199,6 +202,31 @@ function lightsail(region, action, params, ak, sk) {
 
 /* ================= 业务逻辑 ================= */
 
+const PANEL_TITLE = 'AWS Lightsail';                // 面板标题
+const DEFAULT_ICON = 'cloud';                       // 默认面板图标
+const DEFAULT_ICON_COLOR = '#FF9900';               // 默认图标颜色
+const ERROR_ICON = 'exclamationmark.triangle.fill'; // 错误态图标
+const ERROR_COLOR = '#EF4444';                      // 错误态颜色
+
+// 字节数自适应单位, 与 PeekaboPanel 格式一致: 1.23 GB / 128 KB
+function formatBytes(bytes) {
+  if (!Number.isFinite(bytes) || bytes < 0) return 'N/A';
+  const units = ['B', 'KB', 'MB', 'GB', 'TB', 'PB'];
+  let i = 0;
+  let v = bytes;
+  while (v >= 1024 && i < units.length - 1) {
+    v /= 1024;
+    i++;
+  }
+  return v.toFixed(v >= 100 ? 0 : 2) + ' ' + units[i];
+}
+
+// 图标颜色校验: 6位HEX(不含#), 合法补#, 非法回退默认
+function normalizeIconColor(raw, fallback) {
+  const s = String(raw || '').trim();
+  return /^[0-9a-fA-F]{6}$/.test(s) ? '#' + s : fallback;
+}
+
 function getArgs() {
   const raw = typeof $argument === 'string' ? $argument : '';
   const out = {};
@@ -284,10 +312,15 @@ function renderRows(rows, threshold) {
   const multiRegion = Object.keys(byRegion).length > 1;
   const lines = [];
   Object.keys(byRegion).sort().forEach(region => {
-    if (multiRegion) lines.push('[' + region + ']');
+    if (multiRegion) lines.push('地区: ' + region);
     byRegion[region].forEach(r => {
-      const quotaText = r.quotaGb ? r.quotaGb + ' GB' : '配额未知';
-      lines.push(r.name + '  ' + r.billedGB.toFixed(2) + ' / ' + quotaText + ' (' + r.pct.toFixed(1) + '%)');
+      lines.push(
+        '实例: ' + r.name +
+        '\n已用: ' + formatBytes(r.billedGB * BYTES_PER_GB) +
+        ' / ' + (r.quotaGb ? formatBytes(r.quotaGb * BYTES_PER_GB) : '未知') +
+        ' (' + r.pct.toFixed(2) + '%)' +
+        (r.over || r.pct > threshold ? ' ⚠️' : '')
+      );
     });
   });
   const overAny = rows.some(r => r.over || r.pct > threshold);
@@ -298,8 +331,8 @@ async function main() {
   const args = getArgs();
   const mode = args.mode || 'panel';
   const threshold = parseFloat(args.threshold || '90') || 90;
-  const icon = args.icon || 'cloud';
-  const iconColor = args['icon-color'] || args.iconColor || 'FF9900';
+  const icon = args.icon || DEFAULT_ICON;
+  const iconColor = normalizeIconColor(args['icon-color'] || args.iconColor, DEFAULT_ICON_COLOR);
 
   try {
     const rows = await fetchUsage(args);
@@ -318,19 +351,20 @@ async function main() {
     }
 
     $done({
-      title: 'AWS Lightsail',
+      title: PANEL_TITLE,
       content: text,
       style: overAny ? 'error' : 'info',
       icon,
       'icon-color': iconColor,
     });
   } catch (err) {
-    const msg = '获取失败: ' + err.message;
+    const msg = '❌ 获取失败: ' + err.message;
     if (mode === 'daily') {
       $notification.post('AWS Lightsail 流量日报', '查询异常', String(err.message));
       return $done();
     }
-    $done({ title: 'AWS Lightsail', content: msg, style: 'error', icon, 'icon-color': iconColor });
+    // 错误态与 PeekaboPanel 一致: 统一 ⚠️ 图标 + 红色
+    $done({ title: PANEL_TITLE, content: msg, style: 'error', icon: ERROR_ICON, 'icon-color': ERROR_COLOR });
   }
 }
 
