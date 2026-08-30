@@ -13,12 +13,13 @@
  * 模块参数 (argument):
  *   ak / sk      IAM AccessKeyId / SecretAccessKey
  *   region       区域, 逗号分隔可填多个, 默认 ap-northeast-1
- *   threshold    告警阈值 (%), 默认 90, 超过后面板标红
  *   icon         面板图标名, 默认 cloud
  *   icon-color   图标颜色, 6位HEX(不含#), 默认 FF9900
+ *   ip-mode      IP 显示模式: full 完整 / mask 打码 / hide 隐藏, 默认 mask
  *   mode         panel=面板 / daily=每日通知
  *
  * 面板显示风格对齐 PeekaboPanel: 逐行「字段: 值」, 字节数自适应单位,
+ * 实例公网 IP 经 ip-api.com/ipwho.is 反查中文地区(缓存 24h),
  * 错误态统一使用 ⚠️ 图标 + 红色
  */
 
@@ -207,6 +208,71 @@ const DEFAULT_ICON = 'cloud';                       // 默认面板图标
 const DEFAULT_ICON_COLOR = '#FF9900';               // 默认图标颜色
 const ERROR_ICON = 'exclamationmark.triangle.fill'; // 错误态图标
 const ERROR_COLOR = '#EF4444';                      // 错误态颜色
+const GEO_CACHE_TTL = 24 * 60 * 60 * 1000;          // IP 地区反查缓存 24h
+const GEO_CACHE_PREFIX = 'lightsail_geo_';          // 缓存 key 前缀
+
+// IP 显示模式: full 完整 / mask 后两段打码 / hide 隐藏
+function normalizeIpMode(raw) {
+  const s = String(raw || 'mask').trim().toLowerCase();
+  return ['full', 'mask', 'hide'].includes(s) ? s : 'mask';
+}
+
+function maskIp(ip) {
+  const parts = String(ip).split('.');
+  return parts.length === 4 ? `${parts[0]}.${parts[1]}.*.*` : ip;
+}
+
+// 地区组合: 国家 + 省州 + 城市, 去重去空
+function composeRegion(country, regionName, city) {
+  const parts = [];
+  if (country) parts.push(country);
+  if (regionName && regionName !== country && !parts.includes(regionName)) parts.push(regionName);
+  if (city && !parts.includes(city)) parts.push(city);
+  return parts.join(' ') || null;
+}
+
+// IP 反查中文地区: 主 ip-api.com(中文), 备 ipwho.is(https), 结果缓存 24h
+async function getGeo(ip) {
+  const key = GEO_CACHE_PREFIX + ip;
+  try {
+    const cached = JSON.parse($persistentStore.read(key) || 'null');
+    if (cached && Date.now() - cached.ts < GEO_CACHE_TTL) return cached.region;
+  } catch (_) {}
+
+  let region = null;
+  try {
+    const res = await httpGet(
+      `http://ip-api.com/json/${encodeURIComponent(ip)}?lang=zh-CN&fields=status,country,regionName,city,query`,
+      { Accept: 'application/json' }
+    );
+    if (res.status === 200) {
+      const geo = JSON.parse(res.body);
+      if (geo && geo.status === 'success') region = composeRegion(geo.country, geo.regionName, geo.city);
+    }
+  } catch (_) {}
+
+  if (!region) {
+    try {
+      const res = await httpGet(`https://ipwho.is/${encodeURIComponent(ip)}`, { Accept: 'application/json' });
+      if (res.status === 200) {
+        const geo = JSON.parse(res.body);
+        if (geo && geo.success) region = composeRegion(geo.country, geo.region, geo.city);
+      }
+    } catch (_) {}
+  }
+
+  try { $persistentStore.write(JSON.stringify({ region, ts: Date.now() }), key); } catch (_) {}
+  return region;
+}
+
+function httpGet(url, headers) {
+  return new Promise((resolve, reject) => {
+    $httpClient.get({ url, headers, timeout: 10000 }, (error, response, data) => {
+      if (error) reject(new Error(error));
+      else resolve({ status: response.status, body: data });
+    });
+  });
+}
 
 // 字节数自适应单位, 与 PeekaboPanel 格式一致: 1.23 GB / 128 KB
 function formatBytes(bytes) {
@@ -293,6 +359,7 @@ async function fetchUsage(args) {
       rows.push({
         region,
         name: inst.name,
+        ip: (inst.publicIpAddress || '').trim(), // 实例公网 IP
         inGB: inB / BYTES_PER_GB,
         outGB: outB / BYTES_PER_GB,
         billedGB: billed / BYTES_PER_GB,
@@ -305,45 +372,55 @@ async function fetchUsage(args) {
   return rows;
 }
 
-function renderRows(rows, threshold) {
+function renderRows(rows, ipMode) {
   const byRegion = {};
   rows.forEach(r => { (byRegion[r.region] = byRegion[r.region] || []).push(r); });
 
   const multiRegion = Object.keys(byRegion).length > 1;
   const lines = [];
   Object.keys(byRegion).sort().forEach(region => {
-    if (multiRegion) lines.push('地区: ' + region);
+    if (multiRegion) lines.push('区域: ' + region);
     byRegion[region].forEach(r => {
+      const ipText = r.ip && ipMode !== 'hide' ? 'IP: ' + (ipMode === 'mask' ? maskIp(r.ip) : r.ip) : null;
       lines.push(
         '实例: ' + r.name +
+        (ipText ? '\n' + ipText : '') +
+        (r.geo ? '\n地区: ' + r.geo : '') +
         '\n已用: ' + formatBytes(r.billedGB * BYTES_PER_GB) +
         ' / ' + (r.quotaGb ? formatBytes(r.quotaGb * BYTES_PER_GB) : '未知') +
-        ' (' + r.pct.toFixed(2) + '%)' +
-        (r.over || r.pct > threshold ? ' ⚠️' : '')
+        ' (' + r.pct.toFixed(2) + '%)'
       );
     });
   });
-  const overAny = rows.some(r => r.over || r.pct > threshold);
-  return { text: lines.join('\n') || '未找到 Lightsail 实例', overAny };
+  return { text: lines.join('\n') || '未找到 Lightsail 实例' };
 }
 
 async function main() {
   const args = getArgs();
   const mode = args.mode || 'panel';
-  const threshold = parseFloat(args.threshold || '90') || 90;
+  const ipMode = normalizeIpMode(args['ip-mode']);
   const icon = args.icon || DEFAULT_ICON;
   const iconColor = normalizeIconColor(args['icon-color'] || args.iconColor, DEFAULT_ICON_COLOR);
 
   try {
     const rows = await fetchUsage(args);
-    const { text, overAny } = renderRows(rows, threshold);
+
+    if (mode === 'panel' && ipMode !== 'hide') {
+      // 并发反查各实例公网 IP 的中文地区(缓存 24h), 失败不阻塞面板
+      await Promise.all(rows.map(async r => {
+        if (!r.ip) return;
+        try { r.geo = await getGeo(r.ip); } catch (_) { r.geo = null; }
+      }));
+    }
+
+    const { text } = renderRows(rows, ipMode);
 
     if (mode === 'daily') {
       if (args.dailyNotify === 'false') return $done();
       const ts = new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' });
       $notification.post(
         'AWS Lightsail 流量日报',
-        '阈值 ' + threshold + '% · ' + rows.length + ' 个实例',
+        rows.length + ' 个实例',
         text + '\n\n' + ts,
         { url: 'https://lightsail.aws.amazon.com/' },
       );
@@ -351,12 +428,12 @@ async function main() {
     }
 
     // 不返回 style 字段(对齐 PeekaboPanel), 外观完全由 icon/icon-color 控制,
-    // 避免非法 style 值导致图标回退为内置叹号; 超阈值在内容行尾以 ⚠️ 提示
+    // 避免非法 style 值导致图标回退为内置叹号
     $done({
       title: PANEL_TITLE,
       content: text,
       icon,
-      'icon-color': overAny ? '#EF4444' : iconColor,
+      'icon-color': iconColor,
     });
   } catch (err) {
     const msg = '❌ 获取失败: ' + err.message;
