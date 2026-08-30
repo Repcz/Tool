@@ -1,5 +1,5 @@
-#!name=Peekabo GIGO INFO
-#!desc=龙鸡服务器信息展示\n@Repcz\nPowerd by DeepSeek V4 Flash
+#!name=Peekabo GIGO Traffic
+#!desc=实例当月流量面板\n@Repcz @DeepSeek-V4-Flash
 #!category=⚙️ ▸ Function
 
 #!arguments=id,token,icon:xserve,icon-color:3B82F6,ip-mode:mask,daily-notify:true

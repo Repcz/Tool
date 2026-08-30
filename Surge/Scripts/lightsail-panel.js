@@ -13,7 +13,6 @@
  * 模块参数 (argument):
  *   ak / sk      IAM AccessKeyId / SecretAccessKey
  *   region       区域, 逗号分隔可填多个, 默认 ap-northeast-1
- *   quota        可选, 手动覆盖配额 (GB)
  *   threshold    告警阈值 (%), 默认 90, 超过后面板标红
  *   icon         面板图标名, 默认 cloud
  *   icon-color   图标颜色, 默认 FF9900
@@ -132,7 +131,7 @@ function amzDateNow() {
 
 function monthStartIso() {
   const n = new Date();
-  return new Date(Date.UTC(n.getUTCFullYear(), n.getUTCMonth(), 1)).toISOString().replace('.000', '');
+  return new Date(Date.UTC(n.getUTCFullYear(), n.getUTCMonth(), 1)).toISOString();
 }
 
 function buildAuthHeader(method, host, target, body, region, ak, sk, amzDate) {
@@ -143,8 +142,10 @@ function buildAuthHeader(method, host, target, body, region, ak, sk, amzDate) {
     'x-amz-date:' + amzDate + '\n' +
     'x-amz-target:' + target + '\n';
   const signedHeaders = 'content-type;host;x-amz-date;x-amz-target';
+  // SigV4 规范: method \n canonicalURI \n canonicalQueryString \n canonicalHeaders \n ...
+  // query string 为空时必须保留一个空行
   const canonicalRequest = [
-    method, '/', canonicalHeaders, signedHeaders,
+    method, '/', '', canonicalHeaders, signedHeaders,
     sha256Hex(utf8(body)),
   ].join('\n');
   const scope = dateStamp + '/' + region + '/' + SERVICE + '/aws4_request';
@@ -221,12 +222,17 @@ async function getBundleMap(ak, sk, region) {
   return map;
 }
 
+function monthStartEpoch() {
+  const n = new Date();
+  return Math.floor(new Date(Date.UTC(n.getUTCFullYear(), n.getUTCMonth(), 1)).getTime() / 1000);
+}
+
 function getTraffic(ak, sk, region, name) {
   const base = {
     instanceName: name,
     period: 86400,
-    startTime: monthStartIso(),
-    endTime: new Date().toISOString().replace('.000', ''),
+    startTime: monthStartEpoch(),
+    endTime: Math.floor(Date.now() / 1000),
     unit: 'Bytes',
     statistics: ['Sum'],
   };
@@ -240,7 +246,6 @@ async function fetchUsage(args) {
   const ak = args.ak || '';
   const sk = args.sk || '';
   const regions = (args.region || 'ap-northeast-1').split(',').map(s => s.trim()).filter(Boolean);
-  const manualQuota = parseFloat(args.quota || '0') || 0;
 
   if (!ak || !sk) throw new Error('未配置 IAM 凭证, 请填写模块参数 access-key-id / secret-access-key');
 
@@ -254,8 +259,7 @@ async function fetchUsage(args) {
     for (const inst of instances) {
       const [inB, outB] = await getTraffic(ak, sk, region, inst.name);
       const billed = Math.max(inB, outB);
-      const quotaGb = manualQuota
-        || (inst.networking && inst.networking.monthlyTrafficAllocationInGb)
+      const quotaGb = (inst.networking && inst.networking.monthlyTrafficAllocationInGb)
         || bundleMap[inst.bundleId] || 0;
       const quotaB = quotaGb * BYTES_PER_GB;
       rows.push({
