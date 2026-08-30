@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4710
+# 规则统计: 4723
 
 HOST,0x0.st,CDN
 HOST,3dna.nationbuilder.com,CDN
@@ -608,6 +608,7 @@ HOST,cdn.camweara.com,CDN
 HOST,cdn.candid.org,CDN
 HOST,cdn.candu.ai,CDN
 HOST,cdn.candy.ai,CDN
+HOST,cdn.candycode.com,CDN
 HOST,cdn.casestudies.svc.ui.com,CDN
 HOST,cdn.casetify.com,CDN
 HOST,cdn.catch.dmm.co.jp,CDN
@@ -1051,6 +1052,8 @@ HOST,cdn2.stamped.io,CDN
 HOST,cdn2.suno.ai,CDN
 HOST,cdn2.sysgears.com,CDN
 HOST,cdn2.techbang.com,CDN
+HOST,cdn2.telegram.space,CDN
+HOST,cdn2.telesco.pe,CDN
 HOST,cdn2.ttloli.com,CDN
 HOST,cdn2.tubeteen18.com,CDN
 HOST,cdn2.turboviplay.cc,CDN
@@ -1063,6 +1066,8 @@ HOST,cdn3.iconfinder.com,CDN
 HOST,cdn3.onlyfans.com,CDN
 HOST,cdn3.stamped.io,CDN
 HOST,cdn3.sysgears.com,CDN
+HOST,cdn3.telegram.space,CDN
+HOST,cdn3.telesco.pe,CDN
 HOST,cdn3.tubeteen18.com,CDN
 HOST,cdn3.unrealengine.com,CDN
 HOST,cdn4.bigcommerce.com,CDN
@@ -1277,6 +1282,7 @@ HOST,db.onlinewebfonts.com,CDN
 HOST,dc-cdn.cdw.com,CDN
 HOST,dd.blackhawknetwork.com,CDN
 HOST,dd.dexscreener.com,CDN
+HOST,delivery.twentythree.com,CDN
 HOST,demo.unified-streaming.com,CDN
 HOST,demotiles.maplibre.org,CDN
 HOST,denali-static.grammarly.com,CDN
@@ -1431,6 +1437,7 @@ HOST,file.izanm.org,CDN
 HOST,file.zoom.us,CDN
 HOST,file1.hkepc.net,CDN
 HOST,files.armorgames.com,CDN
+HOST,files.blocktempo.ai,CDN
 HOST,files.buildwithfern.com,CDN
 HOST,files.gempages.net,CDN
 HOST,files.iwara.tv,CDN
@@ -1632,6 +1639,7 @@ HOST,image-stgus.samsung.com,CDN
 HOST,image-us.samsung.com,CDN
 HOST,image.acg.lol,CDN
 HOST,image.ap-mail.org,CDN
+HOST,image.blocktempo.com,CDN
 HOST,image.civitai.com,CDN
 HOST,image.cnbcfm.com,CDN
 HOST,image.comicbz.com,CDN
@@ -3025,6 +3033,7 @@ HOST,static1.smartbear.co,CDN
 HOST,static1.squarespace.com,CDN
 HOST,static10.lottiefiles.com,CDN
 HOST,static2.avg.com,CDN
+HOST,static2.giroditalia.it,CDN
 HOST,static2.lottiefiles.com,CDN
 HOST,static2.onlyfans.com,CDN
 HOST,static2.sharepointonline.com,CDN
@@ -3286,6 +3295,7 @@ HOST,video-meta.humix.com,CDN
 HOST,video.bsky.app,CDN
 HOST,video.cdnbye.com,CDN
 HOST,video.dailymail.co.uk,CDN
+HOST,video.giroditalia.it,CDN
 HOST,video1.7mmtv.sx,CDN
 HOST,video2.7mmtv.sx,CDN
 HOST,video3.mingpao.com,CDN
@@ -3345,6 +3355,7 @@ HOST,webp.frostming.com,CDN
 HOST,website-cdn.ipinfo.io,CDN
 HOST,website-media.deel.com,CDN
 HOST,website-prod.cache.wpscdn.com,CDN
+HOST,websiteres.nmteam.xyz,CDN
 HOST,webstatic.chargebee.com,CDN
 HOST,widget.allkeyshop.com,CDN
 HOST,widget.automizely.com,CDN
@@ -3828,6 +3839,7 @@ HOST-SUFFIX,gateway.scarf.sh,CDN
 HOST-SUFFIX,gateway.serph.network,CDN
 HOST-SUFFIX,gauthstatic.com,CDN
 HOST-SUFFIX,gayzyimage.com,CDN
+HOST-SUFFIX,gazzettaobjects.it,CDN
 HOST-SUFFIX,gcr.si,CDN
 HOST-SUFFIX,gdvid.info,CDN
 HOST-SUFFIX,gentcdn.com,CDN
@@ -4295,6 +4307,7 @@ HOST-SUFFIX,rawgithub.com,CDN
 HOST-SUFFIX,raxcdn.com,CDN
 HOST-SUFFIX,raygun.io,CDN
 HOST-SUFFIX,rbxcdn.com,CDN
+HOST-SUFFIX,rcsobjects.it,CDN
 HOST-SUFFIX,rdtcdn.com,CDN
 HOST-SUFFIX,react.dev,CDN
 HOST-SUFFIX,reactjs.org,CDN
