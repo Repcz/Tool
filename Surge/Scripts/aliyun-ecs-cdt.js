@@ -198,11 +198,13 @@ async function getEcsInstance(ak, sk, region, instanceId) {
   const list = (resp.Instances && resp.Instances.Instance) || [];
   if (!list.length) throw new Error('未找到实例 ' + instanceId);
   const inst = list[0];
-  const ipList = (inst.PublicIpAddress && inst.PublicIpAddress.IpAddress) || [];
+  // 公网 IP 取值优先级: 固定公网 IP(PublicIpAddress) > 绑定的弹性公网 IP(EipAddress) > VPC 辅助公网 IP
+  const fixedIp = (inst.PublicIpAddress && inst.PublicIpAddress.IpAddress) || [];
+  const eip = (inst.EipAddress && inst.EipAddress.IpAddress) || '';
   return {
     status: inst.Status || '未知',
     name: inst.InstanceName || instanceId,
-    ip: (ipList[0] || '').trim(),
+    ip: (fixedIp[0] || eip || '').trim(),
   };
 }
 
