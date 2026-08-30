@@ -350,12 +350,13 @@ async function main() {
       return $done();
     }
 
+    // 不返回 style 字段(对齐 PeekaboPanel), 外观完全由 icon/icon-color 控制,
+    // 避免非法 style 值导致图标回退为内置叹号; 超阈值在内容行尾以 ⚠️ 提示
     $done({
       title: PANEL_TITLE,
       content: text,
-      style: overAny ? 'error' : 'info',
       icon,
-      'icon-color': iconColor,
+      'icon-color': overAny ? '#EF4444' : iconColor,
     });
   } catch (err) {
     const msg = '❌ 获取失败: ' + err.message;
@@ -364,7 +365,7 @@ async function main() {
       return $done();
     }
     // 错误态与 PeekaboPanel 一致: 统一 ⚠️ 图标 + 红色
-    $done({ title: PANEL_TITLE, content: msg, style: 'error', icon: ERROR_ICON, 'icon-color': ERROR_COLOR });
+    $done({ title: PANEL_TITLE, content: msg, icon: ERROR_ICON, 'icon-color': ERROR_COLOR });
   }
 }
 
