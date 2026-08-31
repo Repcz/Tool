@@ -2,21 +2,27 @@
     "dns": {
         "servers": [
             {"tag": "hosts_fix","type": "hosts","predefined": {
-                "dns.alidns.com": ["223.5.5.5","223.6.6.6"]}
+                "dns.alidns.com": ["223.5.5.5","223.6.6.6"],
+                "doh.pub": ["1.12.12.21","120.53.53.53"]}
             },
             {"tag": "ali-doh","type": "https","server": "dns.alidns.com","domain_resolver": "hosts_fix"},
             {"tag": "ali-udp","type": "udp","server": "223.5.5.5"},
+            {"tag": "tx-doh","type": "https","server": "doh.pub","domain_resolver": "hosts_fix"},
+            {"tag": "tx-udp","type": "udp","server": "119.29.29.29"},
             {"tag": "fakeip","type": "fakeip","inet4_range": "198.18.0.0/15","inet6_range": "fc00::/18"},
             {"tag": "local","type": "local","neighbor_domain": [".local",".lan"]}
         ],
         "rules": [
             {"rule_set": ["Reject"],"action": "reject"},
-            {"rule_set": ["ChinaDomain"],"action": "route","server": "ali-udp","timeout": "3s"},
             {"query_type": "HTTPS","action": "reject"},
             {"domain_suffix": ["lancache.steamcontent.com","10099.com.cn","msftconnecttest.com","msftncsi.com","local","lan","home","internal","corp","example.com"],"server": "local"},
             {"query_type": ["A","AAAA"],"action": "route","server": "fakeip","rewrite_ttl": 1},
             {"clash_mode": "Global","action": "route","server": "fakeip"},
-            {"clash_mode": "Direct","action": "route","server": "local"}
+            {"clash_mode": "Direct","action": "route","server": "local"},
+            {"action": "evaluate","server": "ali-doh","tag": "ali"},
+            {"action": "evaluate","server": "tx-doh","tag": "tencent"},
+            {"match_response": "ali","response_rcode": "NOERROR","action": "respond","race": true},
+            {"match_response": "tencent","response_rcode": "NOERROR","action": "respond","race": true}
         ],
         "reverse_mapping": true,
         "strategy": "ipv4_only",
