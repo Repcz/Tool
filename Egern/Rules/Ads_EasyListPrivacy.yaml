@@ -1,5 +1,5 @@
 # 规则名称: Ads_EasyListPrivacy
-# 规则统计: 42987
+# 规则统计: 43012
 
 domain_suffix_set:
   - 0.0.0.1
@@ -5163,6 +5163,7 @@ domain_suffix_set:
   - analytics.adobe.io
   - analytics.adobe.ly
   - analytics.adultswim.co.uk
+  - analytics.afirstsoft.cn
   - analytics.agenedia.com
   - analytics.agoda.com
   - analytics.ahrefs.dev
@@ -7553,6 +7554,7 @@ domain_suffix_set:
   - bestboundary.com
   - bestbuy.actonservice.com
   - bestclimbers.net
+  - bestcoffeemachine.net
   - bestill.help.no
   - bestinfo.bluetrustloans.com
   - bestshoesboot.com
@@ -7645,6 +7647,7 @@ domain_suffix_set:
   - biologylog.com
   - biophysicsgroup.actonservice.com
   - birthdaybelief.com
+  - biscuitbox.net
   - bisko.mall.tv
   - bismetrics.experian.com
   - bison.actonservice.com
@@ -11696,6 +11699,7 @@ domain_suffix_set:
   - druzja.canmart.co.kr
   - drvive.lamoda.ru
   - drydrum.com
+  - dryerwasher.com
   - dryvit.actonservice.com
   - ds-aksb-a.akamaihd.net
   - ds.haaretz.co.il
@@ -13568,6 +13572,7 @@ domain_suffix_set:
   - feedten.com
   - feelwarmth.com
   - feignedfaucet.com
+  - felinesocial.com
   - femalecook.com
   - femetrics.grammarly.io
   - fencesync.com
@@ -13616,6 +13621,7 @@ domain_suffix_set:
   - filemobile.actonservice.com
   - files.info.posteitaliane.it
   - files.urlinsgroup.com
+  - fileshareengine.com
   - fillthemap.com
   - filmoljupci.com
   - filtercutter.com
@@ -13642,6 +13648,7 @@ domain_suffix_set:
   - fipsta.urbanara.co.uk
   - fipsta.worldfitness.de
   - fire.solutions.jci.com
+  - fireanalytics.firestream.to
   - firebaselogging-pa.googleapis.com
   - firebaselogging.googleapis.com
   - firecatfilms.com
@@ -14163,6 +14170,7 @@ domain_suffix_set:
   - gallerysouvlakeri.openapp.link
   - galop.leferacheval-saintcloud.com
   - gameplanfinancial.actonservice.com
+  - gamerone.net
   - gammamaximum.com
   - ganon.yahoo.com
   - gardenovens.com
@@ -15102,6 +15110,7 @@ domain_suffix_set:
   - gomerchant.groupon.com
   - gondolagnome.com
   - gone.pronhub.fun
+  - goodandwild.com
   - goodfoodtours.com
   - google-analytics-cn.com
   - googleoptimize-cn.com
@@ -17343,6 +17352,7 @@ domain_suffix_set:
   - ingredients.firmenich.com
   - ingress.linktr.ee
   - ingress.trendii.com
+  - inkcoupon.com
   - inkubate.actonservice.com
   - inmtuj.jobs.ie
   - inmuzp.popsockets.com
@@ -17963,6 +17973,7 @@ domain_suffix_set:
   - jufhxk.audienhearing.com
   - juicebard.com
   - juiceblocks.com
+  - juicemovement.com
   - juicingoasis.com
   - jujtcq.amnibus.com
   - jumbo.zomato.com
@@ -17973,6 +17984,7 @@ domain_suffix_set:
   - jupiterhealth-app.hotdoc.com.au
   - just.playvici.com
   - justconfig.com
+  - justfordocs.com
   - justicejudo.com
   - justlagoon.com
   - justpickaname.com
@@ -23657,6 +23669,7 @@ domain_suffix_set:
   - mightyspiders.com
   - mikelperaia.openapp.link
   - mill-all.actonservice.com
+  - millhouses.com
   - millswell.com
   - mimakiusa.actonservice.com
   - mimosamajor.com
@@ -23679,6 +23692,7 @@ domain_suffix_set:
   - missionrewards.com
   - missionrs.actonservice.com
   - missvent.com
+  - mistertees.net
   - mistervillas.com
   - mistyhorizon.com
   - mit.bhw.de
@@ -24198,6 +24212,7 @@ domain_suffix_set:
   - nekgtz.bluestoneperennials.com
   - neocounter.neoworx-blog-tools.net
   - neoncsr21.net.anwalt.de
+  - neonsites.com
   - neosllc.actonservice.com
   - neowiv.brumbrum.it
   - nerldv.ullapopken.pl
@@ -24359,6 +24374,7 @@ domain_suffix_set:
   - nimblebird.co
   - nimbleplot.com
   - nimbleswan.io
+  - nimbuswatersystem.com
   - ninja.akamaized.net
   - ninja.onap.io
   - ninjatravels.com
@@ -24649,6 +24665,7 @@ domain_suffix_set:
   - obs.esnlocco.com
   - obs.greencolumnblog.com
   - obs.jollyoutdoorjogger.com
+  - obs.sd4823.spglobal.com
   - obs.system1onesource.com
   - obscenesidewalk.com
   - obscurespace.com
@@ -25252,6 +25269,7 @@ domain_suffix_set:
   - outdoorsoil.com
   - outdoorthingy.com
   - outerwords.com
+  - outletpeople.com
   - outreach.allmy-data.com
   - outreach.connectednation.org
   - outreach.crossref.org
@@ -25618,6 +25636,7 @@ domain_suffix_set:
   - performanceplay.co.kr
   - performantcorp.actonservice.com
   - pergeroni.openapp.link
+  - permagroove.com
   - permission.au.actonservice.com
   - permutive.app
   - perr.h-cdn.com
@@ -25788,6 +25807,7 @@ domain_suffix_set:
   - pixel.smartmedia.tj
   - pixel.sprinklr.com
   - pixel.tuko.co.ke
+  - pixel.uppromote.com
   - pixel.veritone-ce.com
   - pixel.videohub.tv
   - pixel.visitiq.io
@@ -25865,6 +25885,7 @@ domain_suffix_set:
   - plans.ceteraretirement.com
   - plans.fundtherebuild.com
   - plantcourse.com
+  - plantscafe.net
   - plas.imfeld.dev
   - platform.iteratehq.com
   - platformsolutions.shutterstock.com
@@ -26091,6 +26112,7 @@ domain_suffix_set:
   - popmixradio.com
   - popplantation.com
   - popup-static.unisender.com
+  - porksoda.com
   - poro.58.com
   - porpoise.azettl.net
   - porqhi.topictravel.nl
@@ -26108,6 +26130,7 @@ domain_suffix_set:
   - postgraduate.smu.edu.sg
   - postgraduate2.smu.edu.sg
   - potatoinvention.com
+  - potentmagic.com
   - power.viggo.com
   - powerfulblends.com
   - powerfulcopper.com
@@ -26237,6 +26260,7 @@ domain_suffix_set:
   - processplantation.com
   - processserver.abclegal.com
   - processusmetier.ricoh.fr
+  - procollecting.com
   - procroanalytics.com
   - procurement.cipscomms.org
   - prod-events.nykaa.com
@@ -34906,6 +34930,7 @@ domain_suffix_set:
   - stats.xn--antnio-dxa.pt
   - stats.yourfone.de
   - stats.zimri.net
+  - stats.zoogletools.net
   - stats.zotabox.com
   - 'stats2.*.fdnames.com'
   - stats2.architecturaldigest.com

@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4723
+# 规则统计: 4724
 
 domain_set:
   - 0x0.st
@@ -1152,6 +1152,7 @@ domain_set:
   - clara.iwara.tv
   - claritystatic.azureedge.net
   - clickup.marketlinc.com
+  - client-log-forwarder.1password.com
   - clientsdk.launchdarkly.com
   - clientstream.launchdarkly.com
   - clips-media-assets2.twitch.tv
