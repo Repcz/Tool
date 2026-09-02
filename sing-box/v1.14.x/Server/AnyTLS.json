@@ -18,23 +18,17 @@
 
     "dns": {
         "servers": [
-            {
-                "tag": "cloudflare",
-                "type": "udp",
-                "server": "1.1.1.1"
-            }
+            {"tag": "cloudflare","type": "udp","server": "1.1.1.1"},
+            {"tag": "google","type": "udp","server": "8.8.8.8"}
         ],
         "rules": [
-            {
-                "query_type": [
-                    "A",
-                    "AAAA"
-                ],
-                "action": "route",
-                "server": "cloudflare"
-            }
+            {"action": "evaluate","server": "cloudflare","tag": "cf"},
+            {"action": "evaluate","server": "google","tag": "gg"},
+            {"match_response": "cf","response_rcode": "NOERROR","action": "respond","race": true},
+            {"match_response": "gg","response_rcode": "NOERROR","action": "respond","race": true}
         ],
         "strategy": "prefer_ipv4",
+        "optimistic": true,
         "final": "cloudflare"
     },
 
