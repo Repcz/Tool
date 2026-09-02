@@ -7,7 +7,8 @@
  * 统计口径与 AWS 控制台一致:
  *   - 统计窗口: 当月 1 日 00:00 UTC 至今 (Lightsail 配额按自然月 UTC 重置)
  *   - 指标: NetworkIn / NetworkOut (逐日 Sum 累加)
- *   - 计费流量: max(入站, 出站), Lightsail 双向取大者计费
+ *   - 已用流量: 入站 + 出站, 两个方向均计入月度流量配额;
+ *     超出配额后仅对出站流量 (Transfer OUT) 收费, 入站超出不额外收费
  *   - 配额: GetBundles 的 transferPerMonthInGb (缓存 24h), 可用 quota 参数覆盖
  *
  * 模块参数 (argument):
@@ -352,7 +353,9 @@ async function fetchUsage(args) {
 
     for (const inst of instances) {
       const [inB, outB] = await getTraffic(ak, sk, region, inst.name);
-      const billed = Math.max(inB, outB);
+      // Lightsail 月度配额同时计入入站与出站流量, 用量为两者之和;
+      // 超出配额后仅出站方向计费, 入站超出部分免费
+      const used = inB + outB;
       const quotaGb = (inst.networking && inst.networking.monthlyTrafficAllocationInGb)
         || bundleMap[inst.bundleId] || 0;
       const quotaB = quotaGb * BYTES_PER_GB;
@@ -362,10 +365,10 @@ async function fetchUsage(args) {
         ip: (inst.publicIpAddress || '').trim(), // 实例公网 IP
         inGB: inB / BYTES_PER_GB,
         outGB: outB / BYTES_PER_GB,
-        billedGB: billed / BYTES_PER_GB,
+        usedGB: used / BYTES_PER_GB,
         quotaGb,
-        pct: quotaB ? (billed / quotaB) * 100 : 0,
-        over: !!(quotaB && billed > quotaB),
+        pct: quotaB ? (used / quotaB) * 100 : 0,
+        over: !!(quotaB && used > quotaB),
       });
     }
   }
@@ -386,7 +389,9 @@ function renderRows(rows, ipMode) {
         '实例: ' + r.name +
         (ipText ? '\n' + ipText : '') +
         (r.geo ? '\n地区: ' + r.geo : '') +
-        '\n已用: ' + formatBytes(r.billedGB * BYTES_PER_GB) +
+        '\n入站: ' + formatBytes(r.inGB * BYTES_PER_GB) +
+        '\n出站: ' + formatBytes(r.outGB * BYTES_PER_GB) +
+        '\n已用: ' + formatBytes(r.usedGB * BYTES_PER_GB) +
         ' / ' + (r.quotaGb ? formatBytes(r.quotaGb * BYTES_PER_GB) : '未知') +
         ' (' + r.pct.toFixed(2) + '%)'
       );
