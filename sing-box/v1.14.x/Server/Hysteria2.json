@@ -87,7 +87,8 @@
 
     "outbounds": [
         {
-            "type": "direct"
+            "type": "direct",
+            "tag": "direct"
         }
     ],
 
