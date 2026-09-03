@@ -2,7 +2,7 @@
 #!desc=此插件是所有去广告插件的依赖，拦截常见的HTTPDNS服务，以确保这些请求都能够在Loon的DNS框架下工作。\n@可莉🅥, @VirgilClyne
 #!category=⚙️ ▸ Kelee Mode
 #!URL=https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx
-#!date=2026-07-04 20:05:14
+#!date=2026-09-03 16:04:36
 
 [Rule]
 DOMAIN-KEYWORD,httpdns,REJECT,extended-matching,pre-matching
@@ -144,6 +144,10 @@ IP-CIDR,182.61.194.7/32,REJECT,no-resolve,pre-matching
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve,pre-matching
 IP-CIDR6,240c:409f:1000::/128,REJECT,no-resolve,pre-matching
 DOMAIN,hd.xiaojukeji.com,REJECT,extended-matching,pre-matching
+IP-CIDR,116.85.2.41/32,REJECT,no-resolve,pre-matching
+IP-CIDR,116.85.3.39/32,REJECT,no-resolve,pre-matching
+IP-CIDR,123.207.209.142/32,REJECT,no-resolve,pre-matching
+IP-CIDR,139.199.240.84/32,REJECT,no-resolve,pre-matching
 DOMAIN,serveraddr.service.kugou.com,REJECT,extended-matching,pre-matching
 DOMAIN,twns.p2ptun.qq.com,REJECT,extended-matching,pre-matching
 DOMAIN,tp2p.kg.qq.com,REJECT,extended-matching,pre-matching
