@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4728
+# 规则统计: 4729
 
 domain_set:
   - 0x0.st
@@ -743,6 +743,7 @@ domain_set:
   - cdn.imageengine.io
   - cdn.imago-images.com
   - cdn.img.ly
+  - cdn.imgchest.com
   - cdn.infoq.com
   - cdn.insightmediagroup.io
   - cdn.inviter.co
