@@ -2,7 +2,7 @@
 #!desc=移除开屏广告、弹窗广告、横幅推广，精简我的页面。\n@可莉🅥
 #!category=⚙️ ▸ Kelee Mode
 #!URL=https://kelee.one/Tool/Loon/Lpx/DiDi_remove_ads.lpx
-#!date=2026-09-03 16:19:24
+#!date=2026-09-04 18:10:18
 
 [Rule]
 DOMAIN,gwp.xiaojukeji.com,REJECT,extended-matching,pre-matching
@@ -12,7 +12,7 @@ DOMAIN,adtrack.xiaojukeji.com,REJECT,extended-matching,pre-matching
 [Body Rewrite]
 http-response-jq ^https:\/\/as\.xiaojukeji\.com\/ep\/as\/toggles\? '.data |= map(select(.name != "isUseNetConnectivity"))'
 http-response-jq ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/other\/slow\? 'delpaths([["data","order_cards","new_loss_banner_card"],["data","order_cards","call_car_card_80"]])'
-http-response-jq ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/core\? '.data.order_cards.nav_list_card.data |= map(select(.nav_id == "dache_anycar" or .nav_id == "carmate" or .nav_id == "driverservice" or .nav_id == "zhandianbashi" or .nav_id == "yuancheng" or .nav_id == "pincheche" or .nav_id == "bike" or .nav_id == "special_ride" or .nav_id == "nav_more_v3")) | .data.disorder_cards.top_nav_list.data.top_nav_info |= map(select(.nav_id == "chu_xing" or .nav_id == "freight_cargo"))'
+http-response-jq ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/core\? '.data.order_cards.nav_list_card.data |= map(select(.nav_id == "dache_anycar" or .nav_id == "carmate" or .nav_id == "driverservice" or .nav_id == "zhandianbashi" or .nav_id == "pincheche" or .nav_id == "bike" or .nav_id == "nav_more_v3")) | .data.disorder_cards.top_nav_list.data.top_nav_info |= map(select(.nav_id == "chu_xing" or .nav_id == "freight_cargo"))'
 http-response-jq ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/other\/fast\? 'delpaths([["data","disorder_cards","communicate_card"],["data","disorder_cards","not_login_bottom_bar"],["data","disorder_cards","riding_code_card"],["data","order_cards"],["data","disorder_cards","car_icon","data","icon_info_new_agreement"]])'
 http-response-jq ^https:\/\/common\.diditaxi\.com\.cn\/common\/v\d\/usercenter\/layout$ '.data |= (.instances |= (to_entries | map(select(.key as $k | ["center_base_info_card", "center_tool_card", "center_wallet_finance_card", "center_order_related_card"] | index($k))) | from_entries)) | .data.instances.center_wallet_finance_card.data.view_info |= map(select(.title == "优惠卡券"))'
 http-response-jq ^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/other\/fast\? 'delpaths([["data","disorder_cards","guess_card"],["data","disorder_cards","scene_list_card"]])'

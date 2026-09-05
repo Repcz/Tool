@@ -1,5 +1,5 @@
 # 规则名称: Ads_EasyListPrivacy
-# 规则统计: 43012
+# 规则统计: 43037
 
 domain_suffix_set:
   - 0.0.0.1
@@ -4469,6 +4469,7 @@ domain_suffix_set:
   - adbsmetrics.thewhoo.com
   - adc-js.nine.com.au
   - adcontroll.com
+  - addefend-platform.com
   - addictedattention.com
   - addressfriend.com
   - ade.deskstyle.info
@@ -5119,6 +5120,7 @@ domain_suffix_set:
   - analytics-api.gemcommerce.com
   - analytics-api.klickly.com
   - analytics-api.samsunghealthcn.com
+  - analytics-assets.tes.com
   - analytics-batch.blitz.gg
   - analytics-beacon.p.uliza.jp
   - analytics-cf.bigcrunch.com
@@ -6422,7 +6424,6 @@ domain_suffix_set:
   - app.pandasuite.io
   - app.panomoments.com
   - app.partner.fisglobal.com
-  - app.partnerboost.com
   - app.pawsket.com
   - app.payments-response.americanexpress.co.uk
   - app.payments.53.com
@@ -8533,12 +8534,14 @@ domain_suffix_set:
   - cdn-rum.ngenix.net
   - cdn.9gtb.com
   - cdn.arcstudiopro.com
+  - cdn.dfsdk.com
   - cdn.eaec.fpfis.tech.ec.europa.eu
   - cdn.net.dz.jumia.com
   - cdn.net.elogia.net
   - cdn.polarbyte.com
   - cdn.prod.euid.eu
   - cdn.ravm.tv
+  - cdn.seonintelligence.com
   - cdn.sy-d.io
   - cdn.usefathom.com
   - cdn1.skrill.com
@@ -9445,6 +9448,7 @@ domain_suffix_set:
   - consulting.mcgladrey.com
   - consumer.equifax.com
   - consumer.inform.equifax.com
+  - consumerdebtnegotiation.com
   - consumerknowhow.com
   - consumerzero.com
   - contact-us.adp.ca
@@ -11221,6 +11225,7 @@ domain_suffix_set:
   - digital.medimpact.com
   - digital.opsbase.com
   - digital.setpointis.com
+  - digitalatticnewsletter.com
   - digitalblend.net
   - digitalmarketing.gogsg.com
   - digitalmarketing.smu.edu.sg
@@ -11714,6 +11719,7 @@ domain_suffix_set:
   - dsoxjxin5jji.controlconceptsusa.com
   - dsp-track-global.zmaticoo.com
   - dspx.tv
+  - dsspn.com
   - dst05lp2.net.mydays.de
   - dsvmgu.snipes.it
   - dt-tracker.mamikos.com
@@ -14144,6 +14150,7 @@ domain_suffix_set:
   - g4p.redtram.com
   - g594253006.co
   - g792337340.co
+  - g792337341.co
   - g792337342.co
   - g792337343.co
   - g8715710740.co
@@ -17568,7 +17575,6 @@ domain_suffix_set:
   - ip2c.landscape.co.jp
   - ip7prksb2muxvmmh25t6rxl2te0tfulc.lambda-url.eu-west-1.on.aws
   - ipcfgw.pieces.com
-  - ipcheck.blogsys.jp
   - ipdmlm.yoriso.com
   - iphufr.circleline.com
   - ipinternational.actonservice.com
@@ -26395,6 +26401,7 @@ domain_suffix_set:
   - pu.pretunique.fr
   - pub.servidoresge.com
   - pub.sheknows.com
+  - pubbug.com
   - pubfs.com
   - pubimgs.com
   - public.9gtb.com
@@ -26411,6 +26418,7 @@ domain_suffix_set:
   - puffypaste.com
   - puffypull.com
   - puffypurpose.com
+  - pugspress.com
   - puiwrs.misterspex.de
   - pulsar.ebay.com
   - pulsaredit.com
@@ -26887,6 +26895,7 @@ domain_suffix_set:
   - receive.wmcdp.io
   - receptivereaction.com
   - recessrain.com
+  - recipepile.net
   - recipepin.com
   - reco.target2sell.com
   - reconditeprison.com
@@ -26907,6 +26916,7 @@ domain_suffix_set:
   - redclassic.actonservice.com
   - redditstream.arborapps.io
   - reddwarf.till-sanders.de
+  - redexecs.com
   - redirect.cuballama.com
   - redirect.indacar.io
   - redirect.kataklop.com
@@ -27010,6 +27020,7 @@ domain_suffix_set:
   - renaultbankdirekt.efscle.com
   - rent.mgrc.com
   - rentinfinity.com
+  - rentinfrared.com
   - renting.aldautomotive.es
   - rentpenny.com
   - repdata.12newsnow.com
@@ -27067,6 +27078,7 @@ domain_suffix_set:
   - reports.tunein.com
   - reportsk.web.sdo.com
   - reppify.actonservice.com
+  - republicfarm.net
   - reqssx.centerparcs.fr
   - request.idangels.org
   - request.verisign.com
@@ -27215,6 +27227,7 @@ domain_suffix_set:
   - retrack.q-divisioncdn.de
   - retrievemint.com
   - retrocrypt.com
+  - retrorays.com
   - reuniondepadres.unisabana.edu.co
   - reverb.digitalviscosity.com
   - reversetickets.com
@@ -27311,6 +27324,7 @@ domain_suffix_set:
   - robotsrefinery.com
   - rochelle.wantsext.me
   - rockagainst.com
+  - rockcarving.com
   - rocketmonitor.com
   - rockstarwriter.com
   - roedwy.imidapeptide.com
@@ -27415,6 +27429,7 @@ domain_suffix_set:
   - rtxpx-a.akamaihd.net
   - ru-go.experian.com
   - ru-ru.siemensplmevents.com
+  - rubouthunger.com
   - rubyswinehouse.com
   - rudder-tracking.rudderstack.com
   - rugttt.robinson.com
@@ -27924,6 +27939,7 @@ domain_suffix_set:
   - safetravelsapp.progressive.com
   - safety.west.com
   - saffronrefuge.com
+  - sagetrack.net
   - sagxlv.daniellashevel.com
   - sailinsight-app.sapsailing.com
   - sailinsight20-app.sapsailing.com
@@ -28144,6 +28160,7 @@ domain_suffix_set:
   - sandboxbid.com
   - sandstrophies.com
   - sandypocket.com
+  - sandytaco.com
   - sanl.champssports.ca
   - sanl.champssports.com
   - sanl.eastbay.com
@@ -28363,6 +28380,7 @@ domain_suffix_set:
   - screechingfurniture.com
   - screechingstocking.com
   - screechingstove.com
+  - screenphotos.com
   - scribblestring.com
   - scribe.wongnai.com
   - scrippscookingchannel.cookingchanneltv.com
@@ -32582,6 +32600,7 @@ domain_suffix_set:
   - smoggysnakes.com
   - smoggysongs.com
   - smoggystation.com
+  - smoketester.com
   - smon.activate.cz
   - smon.blackhistorymonth.gov
   - smon.congress.gov
@@ -32718,6 +32737,7 @@ domain_suffix_set:
   - solarrecharge.net
   - soleblinds.com
   - solicitud.pacifico.com.pe
+  - solidfiles.net
   - solidscape.actonservice.com
   - solidsub.com
   - solmax.actonservice.com
@@ -33116,6 +33136,7 @@ domain_suffix_set:
   - specialtypin.com
   - spectacularstamp.com
   - spectrum.gettyimages.com
+  - speedmethod.com
   - speedtrap.shopdirect.com
   - speedyfox.io
   - speedyrhino.co
@@ -33940,6 +33961,7 @@ domain_suffix_set:
   - startrekk.flaconi.de
   - startrekk.flaconi.fr
   - startrekk.flaconi.pl
+  - starwinmedia.com
   - stas.outbrain.com
   - stat-58home.58che.com
   - stat-ssl.akiba-souken.com
@@ -34344,6 +34366,7 @@ domain_suffix_set:
   - stats.erikinthekitchen.com
   - stats.erlef.org
   - stats.esecured.net
+  - stats.estrema.it
   - stats.evenchilada.com
   - stats.executebig.org
   - stats.exploratv.ca
@@ -34998,6 +35021,7 @@ domain_suffix_set:
   - steadfastsystem.com
   - stealsteel.com
   - steel.newmill.com
+  - steelcasket.com
   - steelmaiden.com
   - steepsister.com
   - steepsquirrel.com
@@ -39188,6 +39212,7 @@ domain_suffix_set:
   - tracking.vodafone.com
   - tracking.voordeeluitjes.nl
   - tracking.voxeus.com
+  - tracking.vviinn.com
   - tracking.wallapop.com
   - tracking.wao-corp.com
   - tracking.wao.ne.jp

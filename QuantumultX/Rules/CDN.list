@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4729
+# 规则统计: 4731
 
 HOST,0x0.st,CDN
 HOST,3dna.nationbuilder.com,CDN
@@ -2876,6 +2876,7 @@ HOST,static.hosting.com,CDN
 HOST,static.hotjar.com,CDN
 HOST,static.hubspot.com,CDN
 HOST,static.hugedomains.com,CDN
+HOST,static.idp.sph.com.sg,CDN
 HOST,static.ietf.org,CDN
 HOST,static.ifunny.co,CDN
 HOST,static.incapsula.com,CDN
@@ -4234,6 +4235,7 @@ HOST-SUFFIX,paypalobjects.com,CDN
 HOST-SUFFIX,pcdn.co,CDN
 HOST-SUFFIX,permaweb.eu.org,CDN
 HOST-SUFFIX,permaweb.io,CDN
+HOST-SUFFIX,pgimgs.com,CDN
 HOST-SUFFIX,pgl.yoyo.org,CDN
 HOST-SUFFIX,phncdn.com,CDN
 HOST-SUFFIX,photobucket.com,CDN

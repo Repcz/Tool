@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4674
+# 规则统计: 4676
 
 DOMAIN,0x0.st
 DOMAIN,3dna.nationbuilder.com
@@ -2876,6 +2876,7 @@ DOMAIN,static.hosting.com
 DOMAIN,static.hotjar.com
 DOMAIN,static.hubspot.com
 DOMAIN,static.hugedomains.com
+DOMAIN,static.idp.sph.com.sg
 DOMAIN,static.ietf.org
 DOMAIN,static.ifunny.co
 DOMAIN,static.incapsula.com
@@ -4234,6 +4235,7 @@ DOMAIN-SUFFIX,paypalobjects.com
 DOMAIN-SUFFIX,pcdn.co
 DOMAIN-SUFFIX,permaweb.eu.org
 DOMAIN-SUFFIX,permaweb.io
+DOMAIN-SUFFIX,pgimgs.com
 DOMAIN-SUFFIX,pgl.yoyo.org
 DOMAIN-SUFFIX,phncdn.com
 DOMAIN-SUFFIX,photobucket.com
