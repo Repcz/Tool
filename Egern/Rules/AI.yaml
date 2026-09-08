@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 51
+# 规则统计: 52
 
 domain_set:
   - ai.google.dev
@@ -31,6 +31,7 @@ domain_suffix_set:
   - claude.com
   - clipdrop.co
   - cloudcode-pa.googleapis.com
+  - cursor.sh
   - deepmind.com
   - deepmind.google
   - dify.ai
