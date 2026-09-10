@@ -1,5 +1,5 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 940
+# 规则统计: 945
 
 domain_suffix_set:
   - 1500020991.vodplayer.wxamedia.com
@@ -45,7 +45,6 @@ domain_suffix_set:
   - ad.tencentmusic.com
   - ad.toutiao.com
   - ad.v3mh.com
-  - ad.weibo.com
   - ad.winrar.com.cn
   - ad.ximalaya.com
   - ad.xunkids.com
@@ -78,9 +77,11 @@ domain_suffix_set:
   - adjust.com
   - adks.hpplay.cn
   - adlink-api.huan.tv
+  - adlog.vivo.com.cn
   - adm.funshion.com
   - admarketing.yahoo.net
   - admobile.top
+  - adreq.vivo.com.cn
   - ads-api-o.api.leiniao.com
   - ads-api.tiktok.com
   - ads-api.twitter.com
@@ -190,7 +191,9 @@ domain_suffix_set:
   - adx.sogaha.cn
   - adx.tuia.cn
   - adxlog-adnet.vivo.com.cn
+  - adxlog.vivo.com.cn
   - adxserver.ad.cmvideo.cn
+  - adxstatic.vivo.com.cn
   - aegis.qq.com
   - aem.dentsuchina.cn
   - afs.googlesyndication.com
@@ -291,6 +294,7 @@ domain_suffix_set:
   - bj.ad.track.66mobi.com
   - books-analytics-events.apple.com
   - bootpreload.uve.weibo.com
+  - brandadsstatic.vivo.com.cn
   - browser.events.data.msn.cn
   - browser.events.data.msn.com
   - browsercfg-drcn.cloud.dbankcloud.cn
@@ -367,6 +371,7 @@ domain_suffix_set:
   - downloadxml.changhong.upgrade2.huan.tv
   - dsp-x.jd.com
   - dsp.fcbox.com
+  - dsplog-adnet.vivo.com.cn
   - dualstack-logs.amap.com
   - dxp.baidu.com
   - dyp2p-ali.douyucdn.cn
@@ -457,7 +462,6 @@ domain_suffix_set:
   - iadmoo.apple.com
   - iadmusicmat.music.126.net
   - iadsdk.apple.com
-  - iadworkbench.apple.com
   - ifacelog.iqiyi.com
   - ifs.tanx.com
   - ii.gdt.qq.com
@@ -704,7 +708,7 @@ domain_suffix_set:
   - s8t.teads.tv
   - saad.ms.zhangyue.net
   - saas.hpplay.cn
-  - safebrowsing.urlsec.gg.com
+  - safebrowsing.urlsec.qq.com
   - samsung-com.112.2o7.net
   - samsungads.com
   - saxysec.com
@@ -833,6 +837,7 @@ domain_suffix_set:
   - tracker-prd.aldi.com.cn
   - tracker.ai.xiaomi.com
   - tracker.gitee.com
+  - tracking-adnet.vivo.com.cn
   - tracking.miui.com
   - tracking.rus.miui.com
   - tuiguang.meitu.com
