@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4731
+# 规则统计: 4739
 
 DOMAIN,0x0.st
 DOMAIN,3dna.nationbuilder.com
@@ -258,6 +258,7 @@ DOMAIN,assets.polarbyte.com
 DOMAIN,assets.poool.fr
 DOMAIN,assets.porndig.com
 DOMAIN,assets.positional-bucket.com
+DOMAIN,assets.production.linktr.ee
 DOMAIN,assets.prowritingaid.com
 DOMAIN,assets.pscp.tv
 DOMAIN,assets.queue-it.net
@@ -1188,6 +1189,7 @@ DOMAIN,code.jquery.com
 DOMAIN,code.piano.io
 DOMAIN,code.trygravity.ai
 DOMAIN,code.upscope.io
+DOMAIN,coin-images.coingecko.com
 DOMAIN,comm.res.easebar.com
 DOMAIN,common-header.nimg.jp
 DOMAIN,community-cdn.openstreetmap.org
@@ -2476,6 +2478,7 @@ DOMAIN,resources.allstate.com
 DOMAIN,resources.chessbase.com
 DOMAIN,resources.digital-cloud.medallia.com
 DOMAIN,resources.help.salesforce.com
+DOMAIN,resources.redbull.tv
 DOMAIN,resources.whatwg.org
 DOMAIN,rest.happierleads.com
 DOMAIN,reviews-badge.capterra.com
@@ -2895,6 +2898,7 @@ DOMAIN,static.izanmei.icu
 DOMAIN,static.j51.net
 DOMAIN,static.javhd.com
 DOMAIN,static.jsbin.com
+DOMAIN,static.jup.ag
 DOMAIN,static.k2s.cc
 DOMAIN,static.killedbygoogle.com
 DOMAIN,static.klaviyo.com
@@ -3139,10 +3143,12 @@ DOMAIN,texture.laby.net
 DOMAIN,th.bing.com
 DOMAIN,themes.fourthwall.com
 DOMAIN,themes.hibootstrap.com
+DOMAIN,thumb.wikimedia.org
 DOMAIN,thumbnail.missav.com
 DOMAIN,thumbnailer.mixcloud.com
 DOMAIN,thumbnails.applegamingwiki.com
 DOMAIN,thumbnails.cbsig.net
+DOMAIN,thumbnails.padre.gg
 DOMAIN,thumbor.4gamers.com.tw
 DOMAIN,thumbor.forbes.com
 DOMAIN,thumbs.onlyfans.com
@@ -3231,6 +3237,7 @@ DOMAIN,ubistatic-a.ubisoft.com
 DOMAIN,ubistatic2-a.akamaihd.net
 DOMAIN,ubistatic2-a.ubisoft.com
 DOMAIN,udata.namespace.so
+DOMAIN,ugc.production.linktr.ee
 DOMAIN,uhf.microsoft.com
 DOMAIN,ui-cdn.digitalocean-ui.com
 DOMAIN,ui-cdn.digitalocean.com
@@ -3513,6 +3520,7 @@ DOMAIN-SUFFIX,aweber-static.com
 DOMAIN-SUFFIX,awsstatic.com
 DOMAIN-SUFFIX,awxcdn.com
 DOMAIN-SUFFIX,ax1x.com
+DOMAIN-SUFFIX,axiom-cdn.io
 DOMAIN-SUFFIX,axis-cdn.net
 DOMAIN-SUFFIX,azurestaticapps.net
 DOMAIN-SUFFIX,b2c-contenthub.com

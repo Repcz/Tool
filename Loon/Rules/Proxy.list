@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 17544
+# 规则统计: 17545
 
 DOMAIN,api.avax.network
 DOMAIN,api.revenuecat.com
@@ -2542,6 +2542,7 @@ DOMAIN-SUFFIX,boundhub.com
 DOMAIN-SUFFIX,bountyhunterporn.com
 DOMAIN-SUFFIX,box.com
 DOMAIN-SUFFIX,box.net
+DOMAIN-SUFFIX,boxcloud.com
 DOMAIN-SUFFIX,boxofficemojo.com
 DOMAIN-SUFFIX,boxpn.com
 DOMAIN-SUFFIX,boxun.tv
