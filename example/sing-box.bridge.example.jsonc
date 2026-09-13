@@ -21,16 +21,15 @@
             {"tag": "hosts_fix","type": "hosts","predefined": {
                 "dns.alidns.com": ["223.5.5.5","223.6.6.6"],
                 "doh.pub": ["1.12.12.21","120.53.53.53"],
-                "cloudflare-dns.com": ["1.1.1.1", "1.0.0.1"]
-            }
+                "cloudflare-dns.com": ["1.1.1.1", "1.0.0.1"]}
             },
-            // 国内明文 UDP：作为默认解析器，延迟最低
             {"tag": "ali-udp", "type": "udp", "server": "223.5.5.5"},
-            // 国内 DoH：需要加密查询时的备选
-            {"tag": "ali-doh", "type": "https", "server": "dns.alidns.com", "domain_resolver": "hosts"},
+            {"tag": "tx-udp", "type": "udp", "server": "119.29.29.29"},
+            {"tag": "ali-doh", "type": "https", "server": "dns.alidns.com", "domain_resolver": "hosts_fix"},
+            {"tag": "tx-doh", "type": "https", "server": "doh.pub", "domain_resolver": "hosts_fix"},
             // 远程 DoH：经 Proxy 出站，避免国内 DNS 对代理域名的污染
             // 注意：detour 不能指向空的 direct 出站（"detour to an empty direct outbound makes no sense"）
-            {"tag": "cf-doh", "type": "https", "server": "cloudflare-dns.com", "domain_resolver": "hosts", "detour": "Proxy"}
+            {"tag": "cf-doh", "type": "https", "server": "cloudflare-dns.com", "domain_resolver": "hosts_fix", "detour": "Proxy"}
         ],
 
         // DNS 规则：自上而下匹配，首条命中即生效
@@ -44,8 +43,19 @@
             // Clash 模式覆盖：Direct 用本地解析，Global 全量走远程解析
             {"clash_mode": "Direct", "server": "local"},
             {"clash_mode": "Global", "server": "cf-doh"},
-            // 国内域名用国内 DNS，保证 CDN 就近解析
-            {"rule_set": ["ChinaDomain"], "server": "ali-udp"},
+            // 国内域名 DNS 竞速：命中 ChinaDomain 后，向阿里/腾讯 DoH 同时发起评估查询。
+            // 本竞速组仅作用于 ChinaDomain 域名（位于该规则集判定之后、respond 之前），
+            // 国外域名不进入此处，仍由下方 rule_set 代理规则与 final 走 cf-doh，互不影响。
+            {"rule_set": ["ChinaDomain"], "action": "evaluate", "server": "ali-doh", "tag": "ali", "speculative": true},
+            {"rule_set": ["ChinaDomain"], "action": "evaluate", "server": "tx-doh", "tag": "tencent", "speculative": true},
+            // 竞态判定 #1（污染防护）：应答含私有/保留地址（127.0.0.1、10.x 等污染特征）时
+            // 该竞态规则「不匹配」→ 规则继续等待另一方；双方均污染则落到下方 ali-udp 兜底重试
+            {"match_response": "ali", "ip_is_private": true, "action": "reject", "race": true},
+            {"match_response": "tencent", "ip_is_private": true, "action": "reject", "race": true},
+            // 竞态判定 #2：先返回 NOERROR 且不含私有地址的一方胜出，立即采用其响应，取消另一方。
+            // 效果：任一上游故障或返回污染结果时自动切换，DNS 解析稳定性优于单上游
+            {"match_response": "ali", "response_rcode": "NOERROR", "action": "respond", "race": true},
+            {"match_response": "tencent", "response_rcode": "NOERROR", "action": "respond", "race": true},
             // 代理域名用远程 DNS，避免污染与 DNS 泄漏
             // 注意：此处只可引用「含域名规则」的规则集；ChinaIP 为纯 IP 规则集，写入 DNS 规则会触发弃用报错
             {"rule_set": ["AI", "Telegram", "Twitter", "Google", "Microsoft", "Github", "Proxy", "AppleProxy"], "server": "cf-doh"}
@@ -114,7 +124,7 @@
             // L3 快速直连：preferred_by 仅在预匹配阶段成立，本规则对 L4 流量自动失效。
             // 命中依据：ChinaIP（真实 IP 模式下 TUN 目标本就是 IP）+
             // ChinaDomain（依赖 reverse_mapping 反查出的域名）
-            {"preferred_by": "bridge", "rule_set": ["ChinaDomain", "ChinaIP"], "action": "route", "outbound": "bridge-direct"},
+            {"preferred_by": "bridge-direct", "rule_set": ["ChinaDomain", "ChinaIP"], "action": "route", "outbound": "bridge-direct"},
             // 协议嗅探：还原真实域名供后续域名规则使用。
             // TCP 的预匹配会在此处停止并转入 L4 常规匹配（故其必须位于 bridge 规则之后）
             {"action": "sniff", "sniffer": ["http", "tls", "quic"]},
@@ -155,10 +165,12 @@
         // 新版 API 服务（自 1.14.0 起替代 experimental.clash_api），提供 Dashboard 与 clash 风格 API
         {
             "type": "api",
-            "tag": "api",
+            "tag": "sing-box dashboard",
             "listen": "127.0.0.1",
             "listen_port": 9091,
-            // 自定义 secret 并同步修改 Dashboard 连接信息（/proxies 等 API 已不向浏览器开放 CORS）
+            // 生产环境建议设置非空 secret
+            "secret": "",
+            // 允许官方 Dashboard 网页跨域访问
             "access_control_allow_origin": [
                 "http://sing-box-dashboard.sagernet.org",
                 "http://dash.sing-box.app"
@@ -168,7 +180,7 @@
     ],
     // -------------------------------------------------------------- 入站
     "inbounds": [
-        // 本地代理端口：供浏览器/SwitchyOmega 等显式使用
+        // 本地代理端口：供浏览器/显式代理客户端使用
         {
             "type": "mixed",
             "tag": "mixed",

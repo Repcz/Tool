@@ -11,11 +11,11 @@
                 "doh.pub": ["1.12.12.21", "120.53.53.53"],
                 "cloudflare-dns.com": ["1.1.1.1", "1.0.0.1"]}
             },
-            {"tag": "tx-udp", "type": "udp", "server": "119.29.29.29"},
             {"tag": "ali-udp", "type": "udp", "server": "223.5.5.5"},
+            {"tag": "tx-udp", "type": "udp", "server": "119.29.29.29"},
             {"tag": "ali-doh", "type": "https", "server": "dns.alidns.com", "domain_resolver": "hosts_fix"},
             {"tag": "tx-doh", "type": "https", "server": "doh.pub", "domain_resolver": "hosts_fix"},
-            {"tag": "cf-doh", "type": "https", "server": "cloudflare-dns.com", "domain_resolver": "hosts", "detour": "Proxy"},
+            {"tag": "cf-doh", "type": "https", "server": "cloudflare-dns.com", "domain_resolver": "hosts_fix", "detour": "Proxy"},
             {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"},
             {"tag": "local", "type": "local", "neighbor_domain": [".local", ".lan"]}
         ],

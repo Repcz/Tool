@@ -26,7 +26,7 @@
             {"tag": "ali-udp", "type": "udp", "server": "223.5.5.5"},
             {"tag": "ali-doh", "type": "https", "server": "dns.alidns.com", "domain_resolver": "hosts_fix"},
             {"tag": "tx-doh", "type": "https", "server": "doh.pub", "domain_resolver": "hosts_fix"},
-            {"tag": "cf-doh", "type": "https", "server": "cloudflare-dns.com", "domain_resolver": "hosts", "detour": "Proxy"},
+            {"tag": "cf-doh", "type": "https", "server": "cloudflare-dns.com", "domain_resolver": "hosts_fix", "detour": "Proxy"},
             // fake-ip 地址池：只在本机 TUN 内可见，不占用公网
             {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"},
             // 系统解析：处理 .local/.lan 等邻居域名（mDNS/NetBIOS 类）

@@ -10,21 +10,26 @@
             {"tag": "hosts_fix","type": "hosts","predefined": {
                 "dns.alidns.com": ["223.5.5.5","223.6.6.6"],
                 "doh.pub": ["1.12.12.21","120.53.53.53"],
-                "cloudflare-dns.com": ["1.1.1.1", "1.0.0.1"]
-            }
+                "cloudflare-dns.com": ["1.1.1.1", "1.0.0.1"]}
             },
             {"tag": "ali-udp", "type": "udp", "server": "223.5.5.5"},
-            {"tag": "ali-doh", "type": "https", "server": "dns.alidns.com", "domain_resolver": "hosts"},
-            {"tag": "cf-doh", "type": "https", "server": "cloudflare-dns.com", "domain_resolver": "hosts", "detour": "Proxy"}
+            {"tag": "tx-udp", "type": "udp", "server": "119.29.29.29"},
+            {"tag": "ali-doh", "type": "https", "server": "dns.alidns.com", "domain_resolver": "hosts_fix"},
+            {"tag": "tx-doh", "type": "https", "server": "doh.pub", "domain_resolver": "hosts_fix"},
+            {"tag": "cf-doh", "type": "https", "server": "cloudflare-dns.com", "domain_resolver": "hosts_fix", "detour": "Proxy"}
         ],
-
         "rules": [
             {"query_type": ["HTTPS", "SVCB"], "action": "reject"},
             {"rule_set": ["Reject"], "action": "reject"},
             {"domain_suffix": ["lancache.steamcontent.com", "10099.com.cn", "msftconnecttest.com", "msftncsi.com", "local", "lan", "home", "internal", "corp", "example.com"], "server": "local"},
             {"clash_mode": "Direct", "server": "local"},
             {"clash_mode": "Global", "server": "cf-doh"},
-            {"rule_set": ["ChinaDomain"], "server": "ali-udp"},
+            {"rule_set": ["ChinaDomain"], "action": "evaluate", "server": "ali-doh", "tag": "ali", "speculative": true},
+            {"rule_set": ["ChinaDomain"], "action": "evaluate", "server": "tx-doh", "tag": "tencent", "speculative": true},
+            {"match_response": "ali", "ip_is_private": true, "action": "reject", "race": true},
+            {"match_response": "tencent", "ip_is_private": true, "action": "reject", "race": true},
+            {"match_response": "ali", "response_rcode": "NOERROR", "action": "respond", "race": true},
+            {"match_response": "tencent", "response_rcode": "NOERROR", "action": "respond", "race": true},
             {"rule_set": ["AI", "Telegram", "Twitter", "Google", "Microsoft", "Github", "Proxy", "AppleProxy"], "server": "cf-doh"}
         ],
         "final": "cf-doh",
@@ -64,7 +69,7 @@
             {"clash_mode": "Direct", "action": "route", "outbound": "Direct"},
             {"clash_mode": "Global", "action": "route", "outbound": "Proxy"},
             {"network": "icmp", "action": "route", "outbound": "Direct"},
-            {"preferred_by": "bridge", "rule_set": ["ChinaDomain", "ChinaIP"], "action": "route", "outbound": "bridge-direct"},
+            {"preferred_by": "bridge-direct", "rule_set": ["ChinaDomain", "ChinaIP"], "action": "route", "outbound": "bridge-direct"},
             {"action": "sniff", "sniffer": ["http", "tls", "quic"]},
             {"rule_set": ["Reject"], "action": "reject"},
             {"rule_set": ["AI"], "action": "route", "outbound": "AI"},
@@ -89,9 +94,10 @@
     "services": [
         {
             "type": "api",
-            "tag": "api",
+            "tag": "sing-box dashboard",
             "listen": "127.0.0.1",
             "listen_port": 9091,
+            "secret": "",
             "access_control_allow_origin": [
                 "http://sing-box-dashboard.sagernet.org",
                 "http://dash.sing-box.app"
