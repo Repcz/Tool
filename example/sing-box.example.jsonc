@@ -1,9 +1,7 @@
 // sing-box 1.14.x 客户端配置（fake-ip 版）
-// 校验：sing-box check -c example/sing-box.jsonc
-// 运行：sing-box run -c example/sing-box.jsonc
-//
-// 与 sing-box.bridge.jsonc 的差异：本模版启用 fake-ip + DNS 竞态（evaluate/respond），
-// 不含 bridge 出站；两份模版二选一使用。
+// 支持：Linux、macOS、Windows、Android、iOS
+// 校验：sing-box check -c sing-box.example.jsonc
+// 运行：sing-box run -c sing-box.example.jsonc
 {
     // 日志：level 可选 trace/debug/info/warn/error/fatal
     "log": {

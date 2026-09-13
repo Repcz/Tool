@@ -1,6 +1,6 @@
 // sing-box 1.14.x 客户端配置
-// 校验：sing-box check -c example/sing-box.jsonc
-// 运行：sing-box run -c example/sing-box.jsonc
+// 校验：sing-box check -c sing-box.example.jsonc
+// 运行：sing-box run -c sing-box.example.jsonc
 //
 // 注意：地区 urltest 组的 outbounds 由外部程序按「节点名地区前缀」注入；
 {

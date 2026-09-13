@@ -1,7 +1,7 @@
 // sing-box 1.14.x 客户端配置（bridge 出站）
 // 支持：Linux、macOS、Windows、rooted Android 和越狱 iOS
-// 校验：sing-box check -c example/sing-box.bridge.jsonc
-// 运行：sudo sing-box run -c example/sing-box.bridge.jsonc   （bridge 需要特权）
+// 校验：sing-box check -c sing-box.bridge.example.jsonc
+// 运行：sudo sing-box run -c sing-box.bridge.example.jsonc
 {
     // 日志：level 可选 trace/debug/info/warn/error/fatal
     "log": {
