@@ -133,7 +133,7 @@
             }
         ],
         "rules": [
-            // sniff：按 http/tls/quic 嗅探还原真实目标域名，使后续域名规则可匹配。
+            // sniff：按 http/tls/quic/dns 嗅探还原真实目标域名，使后续域名规则可匹配。
             { "action": "sniff", "sniffer": ["http", "tls", "quic", "dns"] },
             // 劫持 DNS 查询转交内部 DNS 模块，防止绕过本机 DNS。
             {

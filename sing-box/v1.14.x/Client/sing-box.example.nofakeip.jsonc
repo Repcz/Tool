@@ -142,9 +142,10 @@
         ],
         // 路由规则：自上而下匹配，首条「动作终结型」规则命中即结束
         "rules": [
+            // 嗅探：按 http/tls/quic/dns 还原真实目标域名，使域名规则可匹配。
+            // nofakeip 模式下绕过本机 DNS 的应用产生裸 IP 连接，只能靠嗅探还原域名；
+            { "action": "sniff", "sniffer": ["http", "tls", "quic", "dns"] },
             // 劫持 DNS 查询转交内部 DNS 模块，防止绕过本机 DNS。
-            // 逻辑 OR：53 端口（预匹配即可命中，不依赖嗅探）或
-            // 嗅探判定为 DNS 的任意端口（如 mDNS 5353）
             {
                 "type": "logical",
                 "mode": "or",
@@ -176,9 +177,6 @@
             { "rule_set": ["Proxy"], "action": "route", "outbound": "Manual" },
             // 苹果海外服务默认香港（对大陆友好的就近节点）
             { "rule_set": ["AppleProxy"], "action": "route", "outbound": "HongKong" },
-            // 嗅探：按 http/tls/quic 还原真实目标域名，使域名规则可匹配。
-            // 置于代理规则之后：真实 DNS 模式下 TUN 目标多为 IP，早期嗅探收益有限
-            { "action": "sniff", "sniffer": ["http", "tls", "quic"] },
             // resolve：将剩余域名解析为真实 IP，使 ChinaIP 规则集可对
             // 「未命中 ChinaDomain 的直连域名」生效（真实 DNS 模式必需）
             { "action": "resolve" },
