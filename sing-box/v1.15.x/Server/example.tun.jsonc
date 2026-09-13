@@ -1,4 +1,4 @@
-// sing-box v1.14.x 多协议整合服务端示例
+// sing-box v1.15.x 多协议整合服务端示例
 // ─────────────────────────────────────────────────────────────
 // $schema 仅供编辑器集成（字段自动补全、悬停文档与实时校验），
 // 运行时无作用；JSONC 注释与校验可共存
@@ -158,7 +158,6 @@
                 "172.18.0.1/30",
                 "fdfe:dcba:9876::1/126"
             ],
-            "stack": "mixed",
             // auto_redirect：Linux 专属优化，nftables 替代 tproxy 转发，
             // 性能更高并避免 TUN 与 Docker 桥接网络冲突（需 auto_route）；
             // 与 route.default_mark 冲突
