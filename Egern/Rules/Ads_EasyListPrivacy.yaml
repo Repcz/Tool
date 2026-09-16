@@ -1,5 +1,5 @@
 # 规则名称: Ads_EasyListPrivacy
-# 规则统计: 43048
+# 规则统计: 43071
 
 domain_suffix_set:
   - 0.0.0.1
@@ -5201,6 +5201,7 @@ domain_suffix_set:
   - analytics.bestreviews.com
   - analytics.betterplaces.nl
   - analytics.bgr.com
+  - analytics.bhaskarsaikia.in
   - analytics.bigfishgames.com
   - analytics.bitchute.com
   - analytics.bitrix.info
@@ -7727,6 +7728,8 @@ domain_suffix_set:
   - blsoof.wirwinzer.de
   - blue-rocket.actonservice.com
   - blue.nbc4i.com
+  - bluebellbooks.com
+  - bluebirdteam.com
   - bluebusiness.actonservice.com
   - bluecollarmuse.com
   - bluecore-email.branch.rocks
@@ -8069,6 +8072,7 @@ domain_suffix_set:
   - broadcastbed.com
   - broaddoor.com
   - broadstreet.ai
+  - broflask.com
   - bronxvanilla.openapp.link
   - brooklynway.openapp.link
   - brotherslocket.com
@@ -8311,6 +8315,7 @@ domain_suffix_set:
   - caamcs.julipet.it
   - caapp.levi.com
   - cache2.delvenetworks.com
+  - cactus.jd.com
   - cactus.joybuy.com
   - caderonline.bu.edu
   - cadsuta.net
@@ -9814,6 +9819,7 @@ domain_suffix_set:
   - crypticgenius.com
   - crypto.egghead.link
   - crystalboulevard.com
+  - crystaldewfarm.com
   - crzohw.intersport.gr
   - cs.analytics.lego.com
   - cs.bankmillennium.pl
@@ -10957,6 +10963,7 @@ domain_suffix_set:
   - debug-inform.liilix.com
   - debug-r.rover.com
   - decidedrum.com
+  - decimalnet.com
   - decisionhut.com
   - decisivebase.com
   - decisivedrawer.com
@@ -11691,6 +11698,7 @@ domain_suffix_set:
   - drau.viessmann.si
   - dreamsdome.com
   - drfdisvc.walmart.com
+  - driedwheat.com
   - driftingchef.com
   - driftpizza.com
   - drive.carpoollogistics.com
@@ -13259,6 +13267,7 @@ domain_suffix_set:
   - events.pella.com
   - events.pickrr.com
   - events.plus.yandex.net
+  - events.plutus.ninja
   - events.practo.com
   - events.prd.api.max.com
   - events.privy.com
@@ -13449,6 +13458,7 @@ domain_suffix_set:
   - f928.pandasuite.io
   - fa5.dn4.it
   - fabcharting.com
+  - fabledglory.com
   - fabledsoul.com
   - fabryczna.viessmann.pl
   - fabulousbooking.com
@@ -13520,6 +13530,7 @@ domain_suffix_set:
   - faucons.viessmann.fr
   - faultycanvas.com
   - fauzxn.hairlavie.com
+  - faxardent.net
   - faxcoupons.com
   - fazphz.theiconic.com.au
   - fb.echovisuals.com
@@ -13661,6 +13672,7 @@ domain_suffix_set:
   - firebaselogging.googleapis.com
   - firecatfilms.com
   - fireworkcamp.com
+  - firmasset.com
   - firstendpoint.com
   - firstpac.actonservice.com
   - firstparty.alloyio.com
@@ -15469,6 +15481,7 @@ domain_suffix_set:
   - hemblx.vans.cl
   - herbgreencolumn.com
   - herbstarsbuilding.com
+  - hermes.jd.com
   - herpes2.pa-ruit.jp
   - hesconet.actonservice.com
   - hesprh.sony.jp
@@ -17363,6 +17376,7 @@ domain_suffix_set:
   - ingress.trendii.com
   - inkcoupon.com
   - inkubate.actonservice.com
+  - inmobicdn.net
   - inmtuj.jobs.ie
   - inmuzp.popsockets.com
   - innerskinresearch.com
@@ -19598,6 +19612,7 @@ domain_suffix_set:
   - log-ads.r7.com
   - log-api.cli.im
   - log-gateway.zoom.us
+  - log-h5.imdada.cn
   - log-lb.skyperfectv.co.jp
   - log-pq.shopfully.cloud
   - log-upload-os.hoyolab.com
@@ -22081,6 +22096,7 @@ domain_suffix_set:
   - merchant-app.th3rdwave.coffee
   - merchant-mail.neosurf.com
   - merchant.libertycarz.com
+  - mercury.jd.com
   - mercuryace.com
   - meremark.com
   - merequartz.com
@@ -23800,6 +23816,7 @@ domain_suffix_set:
   - mlinks.helloalfred.com
   - mlkblr.la-becanerie.com
   - mlkklg.suncamp.de
+  - mllog.jd.com
   - mlmswk.janpara.co.jp
   - mlqzau.koffer.com
   - mluszz.eyelashgarage.jp
@@ -26676,6 +26693,7 @@ domain_suffix_set:
   - quickkoala.io
   - quicklyedit.com
   - quickpcfixer.click
+  - quicktattoo.com
   - quicktrick.net
   - quidel.actonservice.com
   - quietknowledge.com
@@ -35543,6 +35561,7 @@ domain_suffix_set:
   - sync.adap.tv
   - sync.rambler.ru
   - sync.shinobi.jp
+  - synccache.com
   - syncingbridge.com
   - synonymoussticks.com
   - synthesizescarecrow.com
@@ -36673,6 +36692,7 @@ domain_suffix_set:
   - thebigvan.com
   - thebrainybulb.com
   - thecea.actonservice.com
+  - thecodingpad.com
   - thecounter.net
   - thecrazychili.com
   - thefishstops.com
@@ -38345,6 +38365,7 @@ domain_suffix_set:
   - track.docusign.mx
   - track.docusign.nl
   - track.dunedinincomegrowth.co.uk
+  - track.dws.com
   - track.dws.de
   - track.eadv.it
   - track.education.intostudy.com
@@ -40168,6 +40189,7 @@ domain_suffix_set:
   - uqd.io
   - uqhpej.wiberrentacar.com
   - ur.b.inhaabit.com
+  - uranus.jd.com
   - urbanairship.com
   - urbanlaurel.com
   - urbanopus.net
@@ -41583,6 +41605,7 @@ domain_suffix_set:
   - wl-analytics.tsp.li
   - wl-pixel.index.digital
   - wl.bl.frequentvalues.com.au
+  - wl.jd.com
   - wlct-one.de
   - wlct-two.de
   - wlkojk.orange.ro
