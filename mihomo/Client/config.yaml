@@ -1,8 +1,8 @@
 # Author:https://github.com/Repcz
 # TG:https://t.me/@LUCYChannel_1024
-# 最后更新时间: 2026-6-28 20:30
+# 最后更新时间: 2026-9-17 10:50
 #
-# Mihomo Version ≥ 1.19.23
+# mihomo ≥ v1.19.31
 # 官方文档: https://github.com/MetaCubeX/mihomo/blob/Meta/docs/config.yaml
 #
 # 以 ';' 或 '#' 或 '//' 开头的配置文件行为注释行
@@ -37,7 +37,7 @@ sniffer: { enable: true, sniff: { HTTP: { ports: [80], override-destination: tru
 
 tun:
   enable: true
-  stack: mixed
+  stack: mips
   dns-hijack: [any:53]
         
 dns:

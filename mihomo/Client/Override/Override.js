@@ -1,8 +1,8 @@
 // 参考 Verge Rev 示例 Script 配置
 //
-// Clash Verge Rev (Version ≥ 17.2) & Mihomo-Party (Version ≥ 1.5.10)
+// mihomo ≥ v1.19.31
 //
-// 最后更新时间: 2026-6-28 20:30
+// 最后更新时间: 2026-9-17 10:50
 
 
 // 规则集通用配置
@@ -77,7 +77,7 @@ function main(config) {
   // 覆盖 tun 配置
   config["tun"] = {
     "enable": true,
-    "stack": "mixed",
+    "stack": "mips",
     "dns-hijack": ["any:53"]
   };
 
