@@ -1,6 +1,6 @@
 # Author:https://github.com/Repcz
 # TG:https://t.me/@LUCYChannel_1024
-# 最后更新时间: 2026-9-17 10:50
+# 最后更新时间: 2026-9-17 11:30
 #
 # mihomo ≥ v1.19.31
 # 官方文档: https://github.com/MetaCubeX/mihomo/blob/Meta/docs/config.yaml
@@ -29,17 +29,26 @@ log-level: info
 unified-delay: true
 
 geodata-mode: false
+geo-auto-update: true
+geo-update-interval: 24
 geox-url:
-  mmdb: "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country-without-asn.mmdb"
+  mmdb: "https://fastly.jsdelivr.net/gh/Loyalsoldier/geoip@release/Country-without-asn.mmdb"
 
 profile: { store-selected: true, store-fake-ip: false }
-sniffer: { enable: true, sniff: { HTTP: { ports: [80], override-destination: true }, TLS: { ports: [443, 8443] }, QUIC: { ports: [443, 8443] } } }
+sniffer:
+  enable: true
+  force-dns-mapping: true # 对 redir-host/TUN 流量强制嗅探
+  parse-pure-ip: true # 对无域名流量的纯 IP 连接强制嗅探
+  sniff: { HTTP: { ports: [80], override-destination: true }, TLS: { ports: [443, 8443] }, QUIC: { ports: [443, 8443] } }
 
 tun:
   enable: true
   stack: mips
   dns-hijack: [any:53]
-        
+  auto-route: true # 配置路由表
+  auto-detect-interface: true # 自动识别出口网卡
+  strict-route: false
+
 dns:
   enable: true
   ipv6: false
@@ -47,7 +56,20 @@ dns:
   listen: :1053
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter: ['+.lan', '*', '+.local', '+.cmpassport.com', 'id6.me', 'open.e.189.cn', 'mdn.open.wo.cn', 'opencloud.wostore.cn', 'auth.wosms.cn', '+.10099.com.cn', '+.msftconnecttest.com', '+.msftncsi.com', 'lancache.steamcontent.com']
-  nameserver: [223.5.5.5, 119.29.29.29]
+  cache-algorithm: arc
+  default-nameserver: # 默认 DNS, 用于解析 DNS 服务器 的域名
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver: # 默认的域名解析服务器
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  proxy-server-nameserver: # 代理节点域名解析服务器，仅用于解析代理节点的域名
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+
+hosts:
+  dns.alidns.com: [223.5.5.5,223.6.6.6]
+  doh.pub: [1.12.12.21,120.53.53.53]
 
 # 锚点参数
 pg: &pg {type: select, proxies: [Manual, HongKong, United States, Singapore, Japan, Taiwan, DIRECT]}
@@ -71,11 +93,11 @@ proxy-groups:
   - {name: Emby, <<: *pg, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png}
   - {name: Spotify, <<: *pg, include-all: true, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png}
   - {name: Final, <<: *pg, icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png}
-  - {name: HongKong, <<: *url-test, filter: "(?i)🇭🇰|香港|(\b(HK|Hong)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png}
-  - {name: United States, <<: *url-test, filter: "(?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png}
-  - {name: Singapore, <<: *url-test, filter: "(?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png}
-  - {name: Japan, <<: *url-test, filter: "(?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png}
-  - {name: Taiwan, <<: *url-test, filter: "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)", icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png}
+  - {name: HongKong, <<: *url-test, filter: '(?i)🇭🇰|香港|(\b(HK|Hong)\b)', icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png}
+  - {name: United States, <<: *url-test, filter: '(?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)', icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png}
+  - {name: Singapore, <<: *url-test, filter: '(?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)', icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png}
+  - {name: Japan, <<: *url-test, filter: '(?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)', icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png}
+  - {name: Taiwan, <<: *url-test, filter: '(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)', icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png}
 
 rule-providers:
   
@@ -103,6 +125,7 @@ rule-providers:
   Proxy: {<<: *c, url: https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Proxy.list}
 
 rules:
+  - RULE-SET,Lan,DIRECT
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Reject,REJECT
   - RULE-SET,AI,AI
@@ -124,6 +147,5 @@ rules:
   - RULE-SET,HBO,Streaming
   - RULE-SET,Proxy,Global
   - RULE-SET,AppleProxy,HongKong
-  - RULE-SET,Lan,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,Final

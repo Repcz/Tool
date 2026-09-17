@@ -1,9 +1,6 @@
-// 参考 Verge Rev 示例 Script 配置
-//
 // mihomo ≥ v1.19.31
 //
-// 最后更新时间: 2026-9-17 10:50
-
+// 最后更新时间: 2026-9-17 11:30
 
 // 规则集通用配置
 const ruleProviderCommon = {
@@ -15,8 +12,7 @@ const ruleProviderCommon = {
 // 策略组通用配置
 const groupBaseOption = {
   "interval": 300,
-  "url": "http://1.1.1.1/generate_204",
-  "max-failed-times": 3,
+  "url": "http://1.1.1.1/generate_204"
 };
 
 // 程序入口
@@ -29,47 +25,62 @@ function main(config) {
   }
 
   // 覆盖通用配置
-  config["mixed-port"] = "7890";
+  config["mixed-port"] = 7893;
   config["tcp-concurrent"] = true;
   config["allow-lan"] = true;
   config["ipv6"] = false;
   config["log-level"] = "info";
-  config["unified-delay"] = "true";
+  config["unified-delay"] = true;
+
+  // 覆盖 profile 配置
+  config["profile"] = {
+    "store-selected": true,
+    "store-fake-ip": false
+  };
 
   // 覆盖 dns 配置
   config["dns"] = {
     "enable": true,
-    "listen": "0.0.0.0:1053",
+    "listen": ":1053",
     "ipv6": false,
     "enhanced-mode": "fake-ip",
     "fake-ip-range": "198.18.0.1/16",
     "fake-ip-filter": ['+.lan', '*', '+.local', '+.cmpassport.com', 'id6.me', 'open.e.189.cn', 'mdn.open.wo.cn', 'opencloud.wostore.cn', 'auth.wosms.cn', '+.10099.com.cn', '+.msftconnecttest.com', '+.msftncsi.com', 'lancache.steamcontent.com'],
-    "nameserver": ["223.5.5.5", "119.29.29.29"]
+    "cache-algorithm": "arc",
+    "default-nameserver": ["223.5.5.5", "119.29.29.29"],
+    "nameserver": ["https://dns.alidns.com/dns-query", "https://doh.pub/dns-query"],
+    "proxy-server-nameserver": ["https://dns.alidns.com/dns-query", "https://doh.pub/dns-query"]
+  };
+
+  // 覆盖 hosts 配置, 固定 DoH 服务器域名解析, 避免回环
+  config["hosts"] = {
+    "dns.alidns.com": ["223.5.5.5", "223.6.6.6"],
+    "doh.pub": ["1.12.12.21", "120.53.53.53"]
   };
 
   // 覆盖 geodata 配置
-  config["geodata-mode"] = true;
+  config["geodata-mode"] = false;
+  config["geo-auto-update"] = true;
+  config["geo-update-interval"] = 24;
   config["geox-url"] = {
-    "geoip": "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat",
-    "geosite": "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat",
-    "mmdb": "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb",
-    "asn": "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-ASN.mmdb"
+    "mmdb": "https://fastly.jsdelivr.net/gh/Loyalsoldier/geoip@release/Country-without-asn.mmdb"
   };
 
   // 覆盖 sniffer 配置
   config["sniffer"] = {
     "enable": true,
-    "parse-pure-ip": true,
+    "force-dns-mapping": true, // 对 redir-host/TUN 流量强制嗅探
+    "parse-pure-ip": true, // 对无域名流量的纯 IP 连接强制嗅探
     "sniff": {
-      "TLS": {
-        "ports": ["443", "8443"]
-      },
       "HTTP": {
-        "ports": ["80", "8080-8880"],
+        "ports": [80],
         "override-destination": true
       },
+      "TLS": {
+        "ports": [443, 8443]
+      },
       "QUIC": {
-        "ports": ["443", "8443"]
+        "ports": [443, 8443]
       }
     }
   };
@@ -78,7 +89,10 @@ function main(config) {
   config["tun"] = {
     "enable": true,
     "stack": "mips",
-    "dns-hijack": ["any:53"]
+    "dns-hijack": ["any:53"],
+    "auto-route": true, // 配置路由表
+    "auto-detect-interface": true, // 自动识别出口网卡
+    "strict-route": false
   };
 
   // 覆盖策略组
@@ -170,14 +184,14 @@ function main(config) {
       "proxies": ["Manual", "HongKong", "United States", "Singapore", "Japan", "Taiwan", "DIRECT"],
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png"
     },
-    // 地区分组
+    // 地区分组（filter 使用单引号语义，JS 中 "\\b" 传输字面量 \b 给 mihomo 正则）
     {
       ...groupBaseOption,
       "name": "HongKong",
       "type": "url-test",
       "tolerance": 0,
       "include-all": true,
-      "filter": "(?i)🇭🇰|香港|(\b(HK|Hong)\b)",
+      "filter": "(?i)🇭🇰|香港|(\\b(HK|Hong)\\b)",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png"
     },
     {
@@ -186,7 +200,7 @@ function main(config) {
       "type": "url-test",
       "tolerance": 0,
       "include-all": true,
-      "filter": "(?i)🇺🇸|美国|洛杉矶|圣何塞|(\b(US|United States)\b)",
+      "filter": "(?i)🇺🇸|美国|洛杉矶|圣何塞|(\\b(US|United States)\\b)",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png"
     },
     {
@@ -195,7 +209,7 @@ function main(config) {
       "type": "url-test",
       "tolerance": 0,
       "include-all": true,
-      "filter": "(?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)",
+      "filter": "(?i)🇸🇬|新加坡|狮|(\\b(SG|Singapore)\\b)",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png"
     },
     {
@@ -204,7 +218,7 @@ function main(config) {
       "type": "url-test",
       "tolerance": 0,
       "include-all": true,
-      "filter": "(?i)🇯🇵|日本|东京|(\b(JP|Japan)\b)",
+      "filter": "(?i)🇯🇵|日本|东京|(\\b(JP|Japan)\\b)",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png"
     },
     {
@@ -213,7 +227,7 @@ function main(config) {
       "type": "url-test",
       "tolerance": 0,
       "include-all": true,
-      "filter": "(?i)🇨🇳|🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)",
+      "filter": "(?i)🇨🇳|🇹🇼|台湾|(\\b(TW|Tai|Taiwan)\\b)",
       "icon": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png"
     }
   ];
@@ -223,7 +237,7 @@ function main(config) {
     "Direct": {
       ...ruleProviderCommon,
       "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/DIRECT.list"
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Direct.list"
     },
     "Lan": {
       ...ruleProviderCommon,
@@ -255,6 +269,11 @@ function main(config) {
       "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Google.list"
     },
+    "Telegram": {
+      ...ruleProviderCommon,
+      "behavior": "classical",
+      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Telegram.list"
+    },
     "Twitter": {
       ...ruleProviderCommon,
       "behavior": "classical",
@@ -264,11 +283,6 @@ function main(config) {
       ...ruleProviderCommon,
       "behavior": "classical",
       "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Facebook.list"
-    },
-    "Telegram": {
-      ...ruleProviderCommon,
-      "behavior": "classical",
-      "url": "https://github.com/Repcz/Tool/raw/X/mihomo/Rules/Telegram.list"
     },
     "Steam": {
       ...ruleProviderCommon,
@@ -334,6 +348,7 @@ function main(config) {
 
   // 覆盖规则
   config["rules"] = [
+    "RULE-SET,Lan,DIRECT",
     "RULE-SET,Direct,DIRECT",
     "RULE-SET,Reject,REJECT",
     "RULE-SET,AI,AI",
@@ -355,7 +370,6 @@ function main(config) {
     "RULE-SET,HBO,Streaming",
     "RULE-SET,Proxy,Global",
     "RULE-SET,AppleProxy,HongKong",
-    "RULE-SET,Lan,DIRECT",
     "GEOIP,CN,DIRECT",
     "MATCH,Final"
   ];
