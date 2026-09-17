@@ -5,6 +5,7 @@
   双模式(同一脚本):
     - Panel (type=generic): 面板展示服务器名称/IP/地区/已用/剩余/到期
     - Daily (type=cron):    每日定时推送流量日报; 剩余<=5天时改为到期提醒(均按天去重)
+  "已续费请忽略" 类提示仅在剩余 <= NOTIFY_DAYS(5) 天时出现, >5 天不出现
   已用流量按服务器出站流量(tx)统计, 与 Peekabo 计费口径一致
   地区: ip-api.com 反查(中文), 失败回退 ipwho.is, 结果经 $persistentStore 缓存 24h
 */
@@ -166,14 +167,16 @@ function notifyExpiring(daysLeft, planName, expire) {
 }
 
 // 每日流量日报, 按天去重(每天最多一次)
+// 仅当剩余 <= NOTIFY_DAYS 天时, 才附加"已续费请忽略剩余天数"(>NOTIFY_DAYS 天不出现)
 function notifyDaily(planName, usedText, totalText, percent, daysLeft, expire) {
   const key = `peekabo_daily_${todayKey()}`;
   try {
     if ($persistentStore.read(key)) return; // 今天已推送过
+    const tip = daysLeft <= NOTIFY_DAYS ? "\n已续费请忽略剩余天数" : "";
     $notification.post(
       "Peekabo 流量日报",
       `${planName} 已用 ${usedText} / ${totalText} (${percent}%)`,
-      `剩余 ${daysLeft} 天，到期: ${formatDate(expire)}\n已续费请忽略剩余天数`
+      `剩余 ${daysLeft} 天，到期: ${formatDate(expire)}${tip}`
     );
     $persistentStore.write("1", key);
   } catch (_) {}
