@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4739
+# 规则统计: 4742
 
 domain_set:
   - 0x0.st
@@ -685,6 +685,7 @@ domain_set:
   - cdn.european-alternatives.eu
   - cdn.evbstatic.com
   - cdn.evgnet.com
+  - cdn.eye-able.com
   - cdn.f5.com
   - cdn.faire.com
   - cdn.fastcomments.com
@@ -1748,6 +1749,7 @@ domain_set:
   - images.profile.autodesk.com
   - images.ptt.cc
   - images.purevpn-tools.com
+  - images.radio-canada.ca
   - images.rss.app
   - images.samsung.com
   - images.scalero.io
@@ -2941,6 +2943,7 @@ domain_set:
   - static.nyse.com
   - static.observablehq.com
   - static.oklink.com
+  - static.okou.io
   - static.okx.cab
   - static.okx.com
   - static.olelive.com
@@ -4390,6 +4393,7 @@ domain_suffix_set:
   - scripts.gatorapi.com
   - seadn.io
   - seecdn.com
+  - seecdn.net
   - seeusercontent.com
   - sendspace.com
   - senja.io
@@ -4556,7 +4560,6 @@ domain_suffix_set:
   - trackerslist.com
   - trafficdeposit.com
   - transcend-cdn.com
-  - tripcdn.com
   - trustless-gateway.link
   - ttcache.com
   - ttl.sh
