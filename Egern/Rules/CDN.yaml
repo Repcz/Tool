@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4742
+# 规则统计: 4746
 
 domain_set:
   - 0x0.st
@@ -746,6 +746,7 @@ domain_set:
   - cdn.img.ly
   - cdn.imgchest.com
   - cdn.infoq.com
+  - cdn.infrawire.net
   - cdn.insightmediagroup.io
   - cdn.inviter.co
   - cdn.ionos.de
@@ -1025,6 +1026,7 @@ domain_set:
   - cdn1.iconfinder.com
   - cdn1.identitymind.com
   - cdn1.plesk.com
+  - cdn1.singteldigital.com
   - cdn1.stamped.io
   - cdn1.suno.ai
   - cdn1.sysgears.com
@@ -1978,6 +1980,7 @@ domain_set:
   - js-1-cdn.airdroid.com
   - js-eu1.hsforms.net
   - js-s3.quickcep.com
+  - js.arcgis.com
   - js.assemblyexchange.com
   - js.braintreegateway.com
   - js.chargebee.com
@@ -3200,6 +3203,7 @@ domain_set:
   - tiles2.mapiful.com
   - tiles2.planet.com
   - tiles3.planet.com
+  - tileserver.b10s.net
   - tileserver.gnome.org
   - tileserver.memomaps.de
   - time-a.nist.gov

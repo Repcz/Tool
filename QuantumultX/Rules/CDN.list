@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4742
+# 规则统计: 4746
 
 HOST,0x0.st,CDN
 HOST,3dna.nationbuilder.com,CDN
@@ -745,6 +745,7 @@ HOST,cdn.imago-images.com,CDN
 HOST,cdn.img.ly,CDN
 HOST,cdn.imgchest.com,CDN
 HOST,cdn.infoq.com,CDN
+HOST,cdn.infrawire.net,CDN
 HOST,cdn.insightmediagroup.io,CDN
 HOST,cdn.inviter.co,CDN
 HOST,cdn.ionos.de,CDN
@@ -1024,6 +1025,7 @@ HOST,cdn1.hotmoza.tv,CDN
 HOST,cdn1.iconfinder.com,CDN
 HOST,cdn1.identitymind.com,CDN
 HOST,cdn1.plesk.com,CDN
+HOST,cdn1.singteldigital.com,CDN
 HOST,cdn1.stamped.io,CDN
 HOST,cdn1.suno.ai,CDN
 HOST,cdn1.sysgears.com,CDN
@@ -1977,6 +1979,7 @@ HOST,jotai.org,CDN
 HOST,js-1-cdn.airdroid.com,CDN
 HOST,js-eu1.hsforms.net,CDN
 HOST,js-s3.quickcep.com,CDN
+HOST,js.arcgis.com,CDN
 HOST,js.assemblyexchange.com,CDN
 HOST,js.braintreegateway.com,CDN
 HOST,js.chargebee.com,CDN
@@ -3199,6 +3202,7 @@ HOST,tiles1.planet.com,CDN
 HOST,tiles2.mapiful.com,CDN
 HOST,tiles2.planet.com,CDN
 HOST,tiles3.planet.com,CDN
+HOST,tileserver.b10s.net,CDN
 HOST,tileserver.gnome.org,CDN
 HOST,tileserver.memomaps.de,CDN
 HOST,time-a.nist.gov,CDN

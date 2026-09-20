@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 13210
+# 规则统计: 13212
 
 no_resolve: true
 domain_set:
@@ -2808,6 +2808,7 @@ domain_suffix_set:
   - cmdcl.cn
   - cmdcxls.com
   - cmdev.cn
+  - cmecloud.cn
   - cmedia360.com
   - cmf.biz
   - cmf.ltd
@@ -3706,6 +3707,7 @@ domain_suffix_set:
   - econtactsplus.com
   - ecp-cloud.com
   - ecp-cloud.net
+  - ecpan.cn
   - ectencent.cn
   - ectencent.com
   - ectencent.com.cn

@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 13210
+# 规则统计: 13212
 
 HOST,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com,ChinaDomain
 HOST,0gr4uqmtt8y41hcjsgrzdrc3s.ourdvsss.com,ChinaDomain
@@ -2803,6 +2803,7 @@ HOST-SUFFIX,cmct.tv,ChinaDomain
 HOST-SUFFIX,cmdcl.cn,ChinaDomain
 HOST-SUFFIX,cmdcxls.com,ChinaDomain
 HOST-SUFFIX,cmdev.cn,ChinaDomain
+HOST-SUFFIX,cmecloud.cn,ChinaDomain
 HOST-SUFFIX,cmedia360.com,ChinaDomain
 HOST-SUFFIX,cmf.biz,ChinaDomain
 HOST-SUFFIX,cmf.ltd,ChinaDomain
@@ -3701,6 +3702,7 @@ HOST-SUFFIX,ecombdvod.com,ChinaDomain
 HOST-SUFFIX,econtactsplus.com,ChinaDomain
 HOST-SUFFIX,ecp-cloud.com,ChinaDomain
 HOST-SUFFIX,ecp-cloud.net,ChinaDomain
+HOST-SUFFIX,ecpan.cn,ChinaDomain
 HOST-SUFFIX,ectencent.cn,ChinaDomain
 HOST-SUFFIX,ectencent.com,ChinaDomain
 HOST-SUFFIX,ectencent.com.cn,ChinaDomain
