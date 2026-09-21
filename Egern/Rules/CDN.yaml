@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4746
+# 规则统计: 4751
 
 domain_set:
   - 0x0.st
@@ -1643,6 +1643,7 @@ domain_set:
   - image-cdn.porndig.com
   - image-forwarder.notaku.so
   - image-stgus.samsung.com
+  - image-tc.galaxy.tf
   - image-us.samsung.com
   - image.acg.lol
   - image.ap-mail.org
@@ -1723,6 +1724,7 @@ domain_set:
   - images.g2crowd.com
   - images.github.media
   - images.gog.com
+  - images.hibob.com
   - images.hothardware.com
   - images.icon-icons.com
   - images.indianexpress.com
@@ -2104,6 +2106,7 @@ domain_set:
   - media-cms.ayoba.me
   - media-cms.onesignal.com
   - media-hls.growcdnssedge.com
+  - media-process.hibob.com
   - media-s3-us-east-1.ceros.com
   - media.beehiiv.com
   - media.breitbart.com
@@ -2321,6 +2324,7 @@ domain_set:
   - ph.tryprofound.com
   - pha-prx.ops.cloud.nx.app
   - phishing.army
+  - photos.flightaware.com
   - photos5.appleinsider.com
   - pic-bstarstatic.akamaized.net
   - pic.7mmtv.me
@@ -3178,6 +3182,7 @@ domain_set:
   - tiles-a.koordinates.com
   - tiles-eu.stadiamaps.com
   - tiles.arcgis.com
+  - tiles.flightaware.com
   - tiles.gsj.jp
   - tiles.immich.cloud
   - tiles.locationiq.com

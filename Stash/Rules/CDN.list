@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4691
+# 规则统计: 4696
 
 DOMAIN,0x0.st
 DOMAIN,3dna.nationbuilder.com
@@ -1642,6 +1642,7 @@ DOMAIN,imag.malavida.com
 DOMAIN,image-cdn.porndig.com
 DOMAIN,image-forwarder.notaku.so
 DOMAIN,image-stgus.samsung.com
+DOMAIN,image-tc.galaxy.tf
 DOMAIN,image-us.samsung.com
 DOMAIN,image.acg.lol
 DOMAIN,image.ap-mail.org
@@ -1722,6 +1723,7 @@ DOMAIN,images.flightradar24.com
 DOMAIN,images.g2crowd.com
 DOMAIN,images.github.media
 DOMAIN,images.gog.com
+DOMAIN,images.hibob.com
 DOMAIN,images.hothardware.com
 DOMAIN,images.icon-icons.com
 DOMAIN,images.indianexpress.com
@@ -2103,6 +2105,7 @@ DOMAIN,media-central.indianexpress.com
 DOMAIN,media-cms.ayoba.me
 DOMAIN,media-cms.onesignal.com
 DOMAIN,media-hls.growcdnssedge.com
+DOMAIN,media-process.hibob.com
 DOMAIN,media-s3-us-east-1.ceros.com
 DOMAIN,media.beehiiv.com
 DOMAIN,media.breitbart.com
@@ -2320,6 +2323,7 @@ DOMAIN,ph.northflank.com
 DOMAIN,ph.tryprofound.com
 DOMAIN,pha-prx.ops.cloud.nx.app
 DOMAIN,phishing.army
+DOMAIN,photos.flightaware.com
 DOMAIN,photos5.appleinsider.com
 DOMAIN,pic-bstarstatic.akamaized.net
 DOMAIN,pic.7mmtv.me
@@ -3177,6 +3181,7 @@ DOMAIN,tilemaps.icgc.cat
 DOMAIN,tiles-a.koordinates.com
 DOMAIN,tiles-eu.stadiamaps.com
 DOMAIN,tiles.arcgis.com
+DOMAIN,tiles.flightaware.com
 DOMAIN,tiles.gsj.jp
 DOMAIN,tiles.immich.cloud
 DOMAIN,tiles.locationiq.com
