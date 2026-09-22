@@ -1,5 +1,5 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 956
+# 规则统计: 958
 
 domain_suffix_set:
   - 1500020991.vodplayer.wxamedia.com
@@ -667,6 +667,8 @@ domain_suffix_set:
   - pgdt.gtimg.cn
   - pgdt.ugdtimg.com
   - pglstatp-toutiao.com
+  - pica-a-display.diwodiwo.xyz
+  - pica-ad-api.diwodiwo.xyz
   - pig.pupuapi.com
   - pin.hpplay.cn
   - pixon.ads-pixiv.net

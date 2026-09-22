@@ -1,5 +1,5 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 956
+# 规则统计: 958
 
 DOMAIN-SUFFIX,1500020991.vodplayer.wxamedia.com
 DOMAIN-SUFFIX,1500022744.vodplayer.wxamedia.com
@@ -666,6 +666,8 @@ DOMAIN-SUFFIX,pcm-img.zhls.qq.com
 DOMAIN-SUFFIX,pgdt.gtimg.cn
 DOMAIN-SUFFIX,pgdt.ugdtimg.com
 DOMAIN-SUFFIX,pglstatp-toutiao.com
+DOMAIN-SUFFIX,pica-a-display.diwodiwo.xyz
+DOMAIN-SUFFIX,pica-ad-api.diwodiwo.xyz
 DOMAIN-SUFFIX,pig.pupuapi.com
 DOMAIN-SUFFIX,pin.hpplay.cn
 DOMAIN-SUFFIX,pixon.ads-pixiv.net
