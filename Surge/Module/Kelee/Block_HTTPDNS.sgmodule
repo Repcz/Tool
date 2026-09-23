@@ -2,7 +2,7 @@
 #!desc=此插件是所有去广告插件的依赖，拦截常见的HTTPDNS服务，以确保这些请求都能够在Loon的DNS框架下工作。\n@可莉🅥, @VirgilClyne
 #!category=⚙️ ▸ Kelee Mode
 #!URL=https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx
-#!date=2026-09-03 16:04:36
+#!date=2026-09-23 11:40:22
 
 [Rule]
 DOMAIN-KEYWORD,httpdns,REJECT,extended-matching,pre-matching
@@ -80,6 +80,11 @@ IP-CIDR,203.107.1.0/24,REJECT,no-resolve,pre-matching
 DOMAIN,amdc.alipay.com,REJECT,extended-matching,pre-matching
 DOMAIN,ucdc.upaas.quark.cn,REJECT,extended-matching,pre-matching
 DOMAIN,httpdns.danuoyi.tbcache.com,REJECT,extended-matching,pre-matching
+URL-REGEX,"^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatchh",REJECT,extended-matching
+URL-REGEX,"^http:\/\/47\.246\.103\.9\/amdc\/mobileDispatch",REJECT,extended-matching
+URL-REGEX,"^http:\/\/47\.246\.103\.10\/amdc\/mobileDispatch",REJECT,extended-matching
+URL-REGEX,"^http:\/\/59\.82\.113\.10\/amdc\/mobileDispatch",REJECT,extended-matching
+URL-REGEX,"^http:\/\/59\.82\.113\.219\/amdc\/mobileDispatch",REJECT,extended-matching
 DOMAIN,httpdns.cctv.com,REJECT,extended-matching,pre-matching
 DOMAIN,httpdns-browser.platform.dbankcloud.cn,REJECT,extended-matching,pre-matching
 DOMAIN,httpdns.huaweicloud.com,REJECT,extended-matching,pre-matching
