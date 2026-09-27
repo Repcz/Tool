@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4752
+# 规则统计: 4753
 
 domain_set:
   - 0x0.st
@@ -1315,6 +1315,7 @@ domain_set:
   - dl.airdroid.com
   - dlassets-ssl.xboxlive.com
   - dlstats.izzyondroid.org
+  - dma.canyon.com
   - dmm-extension.com
   - do.featurebase.app
   - docs.brew.sh
@@ -2149,6 +2150,7 @@ domain_set:
   - media.inhumanity.com
   - media.invisioncic.com
   - media.istockphoto.com
+  - media.karousell.com
   - media.kit.com
   - media.lantern.io
   - media.letsdeel.com
@@ -4046,7 +4048,6 @@ domain_suffix_set:
   - ipfs.cyou
   - ipfs.decoo.io
   - ipfs.denarius.io
-  - ipfs.ecolatam.com
   - ipfs.eternum.io
   - ipfs.eth.aragon.network
   - ipfs.filebase.io
