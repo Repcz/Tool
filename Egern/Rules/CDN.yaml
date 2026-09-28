@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4753
+# 规则统计: 4754
 
 domain_set:
   - 0x0.st
@@ -2868,6 +2868,7 @@ domain_set:
   - static.frame.work
   - static.freedownloadmanager.org
   - static.fundraiseup.com
+  - static.gamma.app
   - static.garmin.com
   - static.generated.photos
   - static.getbutton.io
