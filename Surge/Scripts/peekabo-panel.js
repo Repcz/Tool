@@ -151,6 +151,17 @@ async function getGeo(ip) {
   return region;
 }
 
+// 通知正文多行渲染(参考 aliyun-ecs-cdt.js: 明细逐行 + 结尾时间戳)
+// Surge 的 body 支持 \n 换行, subtitle 会被压成单行, 故明细一律写入 body
+function buildBody(lines) {
+  return lines.filter((v) => v !== null && v !== undefined).join("\n");
+}
+
+// 本地时间戳(Asia/Shanghai), 与阿里云脚本日报一致
+function localTimestamp() {
+  return new Date().toLocaleString("zh-CN", { timeZone: "Asia/Shanghai" });
+}
+
 // 剩余天数 <= NOTIFY_DAYS 时发送到期提醒, 按天去重(每天最多一次)
 function notifyExpiring(daysLeft, planName, expire) {
   if (daysLeft > NOTIFY_DAYS) return;
@@ -160,7 +171,14 @@ function notifyExpiring(daysLeft, planName, expire) {
     $notification.post(
       "Peekabo 到期提醒",
       `${planName} 剩余 ${daysLeft} 天`,
-      `到期时间: ${formatDate(expire)}\n已续费请忽略此提醒`
+      buildBody([
+        `服务器: ${planName}`,
+        `剩余: ${daysLeft} 天`,
+        `到期: ${formatDate(expire)}`,
+        "",
+        "已续费请忽略此提醒",
+        localTimestamp(),
+      ])
     );
     $persistentStore.write("1", key);
   } catch (_) {}
@@ -172,11 +190,19 @@ function notifyDaily(planName, usedText, totalText, percent, daysLeft, expire) {
   const key = `peekabo_daily_${todayKey()}`;
   try {
     if ($persistentStore.read(key)) return; // 今天已推送过
-    const tip = daysLeft <= NOTIFY_DAYS ? "\n已续费请忽略剩余天数" : "";
+    const tip = daysLeft <= NOTIFY_DAYS ? "已续费请忽略剩余天数" : null;
     $notification.post(
       "Peekabo 流量日报",
-      `${planName} 已用 ${usedText} / ${totalText} (${percent}%)`,
-      `剩余 ${daysLeft} 天，到期: ${formatDate(expire)}${tip}`
+      `${planName} 已用 ${percent}%`,
+      buildBody([
+        `服务器: ${planName}`,
+        `已用: ${usedText} / ${totalText} (${percent}%)`,
+        `剩余: ${daysLeft} 天`,
+        `到期: ${formatDate(expire)}`,
+        tip,
+        "",
+        localTimestamp(),
+      ])
     );
     $persistentStore.write("1", key);
   } catch (_) {}
