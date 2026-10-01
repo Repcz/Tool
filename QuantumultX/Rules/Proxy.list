@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 17545
+# 规则统计: 17546
 
 HOST,api.avax.network,Proxy
 HOST,api.revenuecat.com,Proxy
@@ -14284,6 +14284,7 @@ HOST-SUFFIX,todoist.com,Proxy
 HOST-SUFFIX,togetter.com,Proxy
 HOST-SUFFIX,toggleable.com,Proxy
 HOST-SUFFIX,toh.info,Proxy
+HOST-SUFFIX,tokens.ci,Proxy
 HOST-SUFFIX,tokto-motion.net,Proxy
 HOST-SUFFIX,tokyo-247.com,Proxy
 HOST-SUFFIX,tokyo-hot.com,Proxy

@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 17545
+# 规则统计: 17546
 
 no_resolve: true
 domain_set:
@@ -14304,6 +14304,7 @@ domain_suffix_set:
   - togetter.com
   - toggleable.com
   - toh.info
+  - tokens.ci
   - tokto-motion.net
   - tokyo-247.com
   - tokyo-hot.com

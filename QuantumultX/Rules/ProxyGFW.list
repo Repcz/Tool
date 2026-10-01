@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 7605
+# 规则统计: 7606
 
 HOST,ccmdl.adobe.com,ProxyGFW
 HOST,cloud.oracle.com,ProxyGFW
@@ -6333,6 +6333,7 @@ HOST-SUFFIX,togetter.com,ProxyGFW
 HOST-SUFFIX,toh.info,ProxyGFW
 HOST-SUFFIX,token.im,ProxyGFW
 HOST-SUFFIX,tokenlon.im,ProxyGFW
+HOST-SUFFIX,tokens.ci,ProxyGFW
 HOST-SUFFIX,tokto-motion.net,ProxyGFW
 HOST-SUFFIX,tokyo-247.com,ProxyGFW
 HOST-SUFFIX,tokyo-hot.com,ProxyGFW

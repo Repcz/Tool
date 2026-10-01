@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 17545
+# 规则统计: 17546
 
 DOMAIN,api.avax.network
 DOMAIN,api.revenuecat.com
@@ -14284,6 +14284,7 @@ DOMAIN-SUFFIX,todoist.com
 DOMAIN-SUFFIX,togetter.com
 DOMAIN-SUFFIX,toggleable.com
 DOMAIN-SUFFIX,toh.info
+DOMAIN-SUFFIX,tokens.ci
 DOMAIN-SUFFIX,tokto-motion.net
 DOMAIN-SUFFIX,tokyo-247.com
 DOMAIN-SUFFIX,tokyo-hot.com
