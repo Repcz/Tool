@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 13212
+# 规则统计: 13223
 
 no_resolve: true
 domain_set:
@@ -1481,6 +1481,8 @@ domain_suffix_set:
   - allinbots.com
   - alllget.com
   - alloyteam.com
+  - alltuu.cn
+  - alltuu.com
   - allyes.com
   - alyms.cn
   - alyns.cn
@@ -4891,6 +4893,7 @@ domain_suffix_set:
   - guigu.org
   - guijj.com
   - guishuji.com
+  - guituu.com
   - guoguo-app.com
   - guokr.com
   - guotv.com
@@ -7932,6 +7935,8 @@ domain_suffix_set:
   - pipaw.net
   - pipix.com
   - pitayaio.com
+  - piufoto.com
+  - piuphoto.com
   - pixocial.com
   - play-analytics.com
   - playbattleaces.com
@@ -8987,6 +8992,7 @@ domain_suffix_set:
   - shoujikong.cn
   - shouyou.com
   - shouyoubus.com
+  - showmephoto.com
   - showshell.com
   - shrbank.com
   - shsyfzq.cn
@@ -9095,6 +9101,7 @@ domain_suffix_set:
   - sinasws.com
   - sinauda.com
   - sinaurl.cn
+  - singaphoto.com
   - singapore01.kuaipandata.com
   - sinocache.cn
   - sinocache.com.cn
@@ -10618,6 +10625,7 @@ domain_suffix_set:
   - tuniu.com
   - tuniucdn.com
   - tuolajieightscore.com
+  - tupianzhibo.com
   - tushumi.com
   - tushuu.com
   - tutuapp.com
@@ -11079,6 +11087,8 @@ domain_suffix_set:
   - vosvmamt.com
   - voxlearning.com
   - vpgame.com
+  - vphant.cn
+  - vphant.com
   - vplay8.com
   - vplayer.net
   - vqskrzmq.com
@@ -11970,6 +11980,7 @@ domain_suffix_set:
   - xwuorvhz.com
   - xx-sapce.com
   - xx31xs.org
+  - xxalbum.com
   - xxbiquge.com
   - xxsy.com
   - xxsy.net

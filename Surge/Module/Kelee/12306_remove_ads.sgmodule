@@ -2,16 +2,17 @@
 #!desc=过滤12306应用内广告及开屏广告\n@RuCu6, @可莉🅥
 #!category=⚙️ ▸ Kelee Mode
 #!URL=https://kelee.one/Tool/Loon/Lpx/12306_remove_ads.lpx
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN,ad.12306.cn,DIRECT,extended-matching
 
 [Body Rewrite]
-http-response-jq ^https:\/\/ad\.12306\.cn\/ad\/ser\/getAdList$ 'delpaths([["materialsList"],["advertParam"]])'
+http-response-jq (?i)^https://ad\.12306\.cn/ad/ser/getAdList$ 'delpaths([["materialsList"]])'
+http-response-jq (?i)^https://ad\.12306\.cn/ad/ser/getAdList$ 'delpaths([["advertParam"]])'
 
 [Script]
-移除12306应用内广告 = type=http-request,pattern=^https:\/\/mobile\.12306\.cn\/otsmobile\/app\/mgs\/mgw\.htm$,script-path=https://kelee.one/Resource/JavaScript/12306/12306_remove_ads.js
+移除12306应用内广告 = type=http-request,pattern=(?i)^https://mobile\.12306\.cn/otsmobile/app/mgs/mgw\.htm$,script-path=https://kelee.one/Resource/JavaScript/12306/12306_remove_ads.js
 
 [MITM]
 hostname = %APPEND% ad.12306.cn, mobile.12306.cn

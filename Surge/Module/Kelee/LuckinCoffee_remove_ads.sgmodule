@@ -2,17 +2,17 @@
 #!desc=移除开屏广告、弹窗和各类横幅推广。\n@Sliverkiss
 #!category=⚙️ ▸ Kelee Mode
 #!URL=https://kelee.one/Tool/Loon/Lpx/LuckinCoffee_remove_ads.lpx
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [URL Rewrite]
-^https:\/\/capi\.lkcoffee\.com\/resource\/m\/growUp\/calendarList - reject
-^https:\/\/capi\.lkcoffee\.com\/resource\/m\/promotion\/giftCard\/topPage - reject
-^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/base\/myLittleLuck - reject
-^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v2\/menu\/ordinaryUserLayeredArea - reject
-^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/common\/modules - reject
-^https:\/\/capi\.lkcoffee\.com\/resource\/core\/v2\/homepage\/homePageCoffeeList - reject
-^https:\/\/capi\.lkcoffee\.com\/resource\/m\/eorder\/product\/popAppTagProductList - reject
-^https:\/\/capi\.lkcoffee\.com\/resource\/m\/sys\/app\/adposNew - reject
+(?i)^https://capi\.lkcoffee\.com/resource/m/growUp/calendarList _ reject
+(?i)^https://capi\.lkcoffee\.com/resource/m/promotion/giftCard/topPage _ reject
+(?i)^https://capi\.lkcoffee\.com/resource/m/sys/base/myLittleLuck _ reject
+(?i)^https://capi\.lkcoffee\.com/resource/core/v2/menu/ordinaryUserLayeredArea _ reject
+(?i)^https://capi\.lkcoffee\.com/resource/m/sys/common/modules _ reject
+(?i)^https://capi\.lkcoffee\.com/resource/core/v2/homepage/homePageCoffeeList _ reject
+(?i)^https://capi\.lkcoffee\.com/resource/m/eorder/product/popAppTagProductList _ reject
+(?i)^https://capi\.lkcoffee\.com/resource/m/sys/app/adposNew _ reject
 
 [MITM]
 hostname = %APPEND% capi.lkcoffee.com

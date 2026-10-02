@@ -3,13 +3,13 @@
 #!category=⚙️ ▸ Kelee Mode
 #!arguments=removePinnedArticles:false,removeAllBanners:false
 #!URL=https://kelee.one/Tool/Loon/Lpx/IThome_remove_ads.lpx
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [URL Rewrite]
-^https?:\/\/dat\.ruanmei\.com\/ithome\/money\/acd\.json$ - reject
+(?i)^https?://dat\.ruanmei\.com/ithome/money/acd\.json$ _ reject
 
 [Script]
-IT之家去广告 = type=http-response,pattern=^https:\/\/napi\.ithome\.com\/api\/(news\/indexv2\/iphone\/\d+|topmenu\/getfeeds\?),script-path=https://kelee.one/Resource/JavaScript/IThome/IThome_remove_ads.js,requires-body=true,argument=[{removeAllBanners},{removePinnedArticles}]
+IT之家去广告 = type=http-response,pattern=(?i)^https://napi\.ithome\.com/api/(news/indexv2/iphone/\d+|topmenu/getfeeds\?),script-path=https://kelee.one/Resource/JavaScript/IThome/IThome_remove_ads.js,requires-body=true
 
 [MITM]
 hostname = %APPEND% napi.ithome.com, api.zuihuimai.com, dat.ruanmei.com

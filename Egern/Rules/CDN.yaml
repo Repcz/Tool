@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4756
+# 规则统计: 4758
 
 domain_set:
   - 0x0.st
@@ -278,6 +278,7 @@ domain_set:
   - assets.sendinblue.com
   - assets.shazam.com
   - assets.shots.so
+  - assets.singaporeair.com
   - assets.slater.app
   - assets.sololearn.com
   - assets.speedvitals.com
@@ -3833,6 +3834,7 @@ domain_suffix_set:
   - faceit-cdn.net
   - fakeimg.pl
   - fakestoreapi.com
+  - fal.media
   - fast-sfc.com
   - fastlycdn.com
   - favicone.com

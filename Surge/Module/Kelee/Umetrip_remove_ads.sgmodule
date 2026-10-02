@@ -2,13 +2,13 @@
 #!desc=过滤航旅纵横广告\n@佚名
 #!category=⚙️ ▸ Kelee Mode
 #!URL=https://kelee.one/Tool/Loon/Lpx/Umetrip_remove_ads.lpx
-#!date=2026-06-01 17:11:35
+#!date=2026-10-02 13:57:49
 
 [Rule]
 URL-REGEX,"^http?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/native",REJECT,extended-matching
 
 [Script]
-移除首页广告 = type=http-response,pattern=^http?:\/\/(114\.115\.217\.129)|(home\.umetrip\.com)\/gateway\/api\/umetrip\/native$,script-path=https://kelee.one/Resource/JavaScript/Umetrip/Umetrip_remove_ads.js
+移除首页广告 = type=http-response,pattern=(?i)^http?://(114\.115\.217\.129)|(home\.umetrip\.com)/gateway/api/umetrip/native$,script-path=https://kelee.one/Resource/JavaScript/Umetrip/Umetrip_remove_ads.js
 
 [MITM]
 hostname = %APPEND% 114.115.217.129, home.umetrip.com
