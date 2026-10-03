@@ -1,5 +1,5 @@
 # 规则名称: Ads_EasyListPrivacy
-# 规则统计: 43190
+# 规则统计: 43192
 
 DOMAIN-SUFFIX,0.0.0.1
 DOMAIN-SUFFIX,0.myikas.com
@@ -5187,6 +5187,7 @@ DOMAIN-SUFFIX,analytics.andrewsmith.com.au
 DOMAIN-SUFFIX,analytics.animexx.de
 DOMAIN-SUFFIX,analytics.api.justeattakeaway.com
 DOMAIN-SUFFIX,analytics.apnewsregistry.com
+DOMAIN-SUFFIX,analytics.app.funnelish.com
 DOMAIN-SUFFIX,analytics.archive.org
 DOMAIN-SUFFIX,analytics.argeton.com
 DOMAIN-SUFFIX,analytics.arunraghavan.net
@@ -20300,6 +20301,7 @@ DOMAIN-SUFFIX,mapp.jysk.nl
 DOMAIN-SUFFIX,mapp.peacocks.co.uk
 DOMAIN-SUFFIX,mapp.yesstyle.com
 DOMAIN-SUFFIX,marblediscussion.com
+DOMAIN-SUFFIX,marbleseeds.com
 DOMAIN-SUFFIX,marceline.wantsext.me
 DOMAIN-SUFFIX,march.landing.ni.com
 DOMAIN-SUFFIX,marcom.biodex.com

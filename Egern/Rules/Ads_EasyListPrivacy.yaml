@@ -1,5 +1,5 @@
 # 规则名称: Ads_EasyListPrivacy
-# 规则统计: 43190
+# 规则统计: 43192
 
 domain_suffix_set:
   - 0.0.0.1
@@ -5188,6 +5188,7 @@ domain_suffix_set:
   - analytics.animexx.de
   - analytics.api.justeattakeaway.com
   - analytics.apnewsregistry.com
+  - analytics.app.funnelish.com
   - analytics.archive.org
   - analytics.argeton.com
   - analytics.arunraghavan.net
@@ -20301,6 +20302,7 @@ domain_suffix_set:
   - mapp.peacocks.co.uk
   - mapp.yesstyle.com
   - marblediscussion.com
+  - marbleseeds.com
   - marceline.wantsext.me
   - march.landing.ni.com
   - marcom.biodex.com
