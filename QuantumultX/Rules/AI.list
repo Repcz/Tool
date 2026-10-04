@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 51
+# 规则统计: 52
 
 HOST,ai.google.dev,AI
 HOST,aida.googleapis.com,AI
@@ -22,6 +22,7 @@ HOST-SUFFIX,bard.google.com,AI
 HOST-SUFFIX,chat.com,AI
 HOST-SUFFIX,chatgpt.com,AI
 HOST-SUFFIX,chatgpt.site,AI
+HOST-SUFFIX,clau.de,AI
 HOST-SUFFIX,claude.ai,AI
 HOST-SUFFIX,claude.com,AI
 HOST-SUFFIX,clipdrop.co,AI
