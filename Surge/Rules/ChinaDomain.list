@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 13233
+# 规则统计: 13232
 
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc3s.ourdvsss.com
@@ -13043,7 +13043,6 @@ IP-CIDR,124.232.186.0/24,no-resolve
 IP-CIDR,124.243.218.22/32,no-resolve
 IP-CIDR,124.243.218.23/32,no-resolve
 IP-CIDR,124.243.218.24/32,no-resolve
-IP-CIDR,125.64.107.13/11,no-resolve
 IP-CIDR,125.88.149.0/24,no-resolve
 IP-CIDR,129.226.107.244/32,no-resolve
 IP-CIDR,129.226.3.47/32,no-resolve

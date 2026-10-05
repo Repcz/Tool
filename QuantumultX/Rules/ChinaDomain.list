@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 13223
+# 规则统计: 13222
 
 HOST,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com,ChinaDomain
 HOST,0gr4uqmtt8y41hcjsgrzdrc3s.ourdvsss.com,ChinaDomain
@@ -13043,7 +13043,6 @@ IP-CIDR,124.232.186.0/24,ChinaDomain
 IP-CIDR,124.243.218.22/32,ChinaDomain
 IP-CIDR,124.243.218.23/32,ChinaDomain
 IP-CIDR,124.243.218.24/32,ChinaDomain
-IP-CIDR,125.64.107.13/11,ChinaDomain
 IP-CIDR,125.88.149.0/24,ChinaDomain
 IP-CIDR,129.226.107.244/32,ChinaDomain
 IP-CIDR,129.226.3.47/32,ChinaDomain
