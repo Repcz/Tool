@@ -1,5 +1,5 @@
 # 规则名称: Prevent_DNS_Leaks
-# 规则统计: 21
+# 规则统计: 22
 
 DOMAIN,ip-scan.adspower.net
 DOMAIN-SUFFIX,addr.tools
@@ -13,6 +13,7 @@ DOMAIN-SUFFIX,dnsleaktest.com
 DOMAIN-SUFFIX,edns.ip-api.com
 DOMAIN-SUFFIX,expressvpn.com
 DOMAIN-SUFFIX,immersivetranslate.com
+DOMAIN-SUFFIX,ip.net.coffee
 DOMAIN-SUFFIX,ipleak.net
 DOMAIN-SUFFIX,ipv4.surfsharkdns.com
 DOMAIN-SUFFIX,nordvpn.com

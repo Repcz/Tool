@@ -1,5 +1,5 @@
 # 规则名称: Prevent_DNS_Leaks
-# 规则统计: 21
+# 规则统计: 22
 
 HOST,ip-scan.adspower.net,Prevent_DNS_Leaks
 HOST-SUFFIX,addr.tools,Prevent_DNS_Leaks
@@ -13,6 +13,7 @@ HOST-SUFFIX,dnsleaktest.com,Prevent_DNS_Leaks
 HOST-SUFFIX,edns.ip-api.com,Prevent_DNS_Leaks
 HOST-SUFFIX,expressvpn.com,Prevent_DNS_Leaks
 HOST-SUFFIX,immersivetranslate.com,Prevent_DNS_Leaks
+HOST-SUFFIX,ip.net.coffee,Prevent_DNS_Leaks
 HOST-SUFFIX,ipleak.net,Prevent_DNS_Leaks
 HOST-SUFFIX,ipv4.surfsharkdns.com,Prevent_DNS_Leaks
 HOST-SUFFIX,nordvpn.com,Prevent_DNS_Leaks

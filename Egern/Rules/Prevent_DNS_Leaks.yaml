@@ -1,5 +1,5 @@
 # 规则名称: Prevent_DNS_Leaks
-# 规则统计: 21
+# 规则统计: 22
 
 domain_set:
   - ip-scan.adspower.net
@@ -17,6 +17,7 @@ domain_suffix_set:
   - edns.ip-api.com
   - expressvpn.com
   - immersivetranslate.com
+  - ip.net.coffee
   - ipleak.net
   - ipv4.surfsharkdns.com
   - nordvpn.com
