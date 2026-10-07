@@ -1,5 +1,5 @@
 # 规则名称: Ads_EasyListPrivacy
-# 规则统计: 43192
+# 规则统计: 43205
 
 domain_suffix_set:
   - 0.0.0.1
@@ -5063,6 +5063,7 @@ domain_suffix_set:
   - ams-pageview-public.s3.amazonaws.com
   - ams.lelong.com.my
   - ams.oraclecloud.com
+  - amspbs.com
   - amsunsolar.actonservice.com
   - amuckafternoon.com
   - amusedbucket.com
@@ -5111,6 +5112,7 @@ domain_suffix_set:
   - analytic.fishtrack.com
   - analytic.hawaii.aaa.com
   - analytic.hotelclub.com
+  - analytic.is
   - analytic.newmexico.aaa.com
   - analytic.northernnewengland.aaa.com
   - analytic.rollout.io
@@ -8237,6 +8239,7 @@ domain_suffix_set:
   - bwkpkx.projectxparis.com
   - bwmxdg.kimono-365.jp
   - bwntyd.neuve-a.net
+  - bws.airwallex.com
   - bwspqc.bloomonline.jp
   - bwujxl.yoga-lava.com
   - bx-cloud.com
@@ -8559,6 +8562,7 @@ domain_suffix_set:
   - cdn-channels-pixel.ex.co
   - cdn-eu.usefathom.com
   - cdn-rum.ngenix.net
+  - cdn-vitals.com
   - cdn.9gtb.com
   - cdn.arcstudiopro.com
   - cdn.dfsdk.com
@@ -11705,6 +11709,7 @@ domain_suffix_set:
   - dpckzt.mesrecettesfaciles.fr
   - dplp1.ibmnorthamerica.adobesandbox.com
   - dpm.demdex.net.iberostar.com
+  - dppesulohfqre.cloudfront.net
   - dppublishinginc.actonservice.com
   - dptgdj.usagi-online.com
   - dptkdh.joinhoney.com
@@ -13765,6 +13770,7 @@ domain_suffix_set:
   - floodedpixel.com
   - floodprincipal.com
   - floorforce.actonservice.com
+  - floors.dev
   - flotech.actonservice.com
   - flourishingcollaboration.com
   - flourishingendeavor.com
@@ -14057,6 +14063,7 @@ domain_suffix_set:
   - fsm.lapresse.ca
   - fsqwdj.live-tennis.eu
   - fsresidential.actonservice.com
+  - fsrv.io
   - fst-ec.perimeterx.net
   - fsugco.rcn.nl
   - fsz1.francoisesaget.com
@@ -28417,6 +28424,7 @@ domain_suffix_set:
   - scheduling.qualifi.hr
   - schinnerer.actonservice.com
   - scholarloop.com
+  - scholarsark.com
   - schoolpaws.com
   - schwacke.autovistagroup.com
   - schwaebischhall.efscle.com
@@ -33975,6 +33983,7 @@ domain_suffix_set:
   - st.onemazdausa.com
   - st.picshuffle.com
   - st.preciousamber.com
+  - st.putler.com
   - st.s-bahn-muenchen-magazin.de
   - st.sawlive.tv
   - st.tulastudio.se
@@ -34506,6 +34515,7 @@ domain_suffix_set:
   - stats.fishersci.de
   - stats.fishersci.it
   - stats.flightsphere.com
+  - stats.flixcloud.cc
   - stats.flixhq.live
   - stats.florianfritz.net
   - stats.flowphantom.com
@@ -36211,6 +36221,7 @@ domain_suffix_set:
   - tao.barstoolsports.com
   - tap.carling.com
   - tapi.kaufda.de
+  - tapoutmusic.com
   - target-omtrdc.deka.de
   - target-test.cisco.com
   - target-us.samsung.com
@@ -37169,6 +37180,7 @@ domain_suffix_set:
   - topicalcartel.com
   - topicjungle.com
   - toplaunch.net
+  - topratedwaterfilter.com
   - topsecretapp.net
   - topspin.npo.nl
   - topthrowbacks.com
@@ -41024,6 +41036,7 @@ domain_suffix_set:
   - visma.e-conomic.dk
   - vismaturva.visma.fi
   - visor.sberbank.ru
+  - visualcommservices.com
   - visualscience.external.bbc.co.uk
   - vitalimages.actonservice.com
   - vitalmedia.actonservice.com
