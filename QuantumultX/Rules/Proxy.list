@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 17385
+# 规则统计: 17388
 
 HOST,c33hcgiwev3.cloudfront.net,Proxy
 HOST,cc-ext-prod-pkgs.s3.amazonaws.com,Proxy
@@ -1205,6 +1205,7 @@ HOST-SUFFIX,appdynamics.info,Proxy
 HOST-SUFFIX,appdynamics.jp,Proxy
 HOST-SUFFIX,appdynamics.org,Proxy
 HOST-SUFFIX,approvedusedbmw.com,Proxy
+HOST-SUFFIX,approveit.today,Proxy
 HOST-SUFFIX,appshopper.com,Proxy
 HOST-SUFFIX,appsocks.net,Proxy
 HOST-SUFFIX,appspot.com,Proxy
@@ -13548,6 +13549,7 @@ HOST-SUFFIX,surge-activation.com,Proxy
 HOST-SUFFIX,surge.run,Proxy
 HOST-SUFFIX,suroot.com,Proxy
 HOST-SUFFIX,surrenderat20.net,Proxy
+HOST-SUFFIX,surveymonkey.com,Proxy
 HOST-SUFFIX,susebr.org,Proxy
 HOST-SUFFIX,susegeek.com,Proxy
 HOST-SUFFIX,suseitalia.org,Proxy
@@ -14883,6 +14885,7 @@ HOST-SUFFIX,vanithaveedu.com,Proxy
 HOST-SUFFIX,vanityfair.com,Proxy
 HOST-SUFFIX,vanpeople.com,Proxy
 HOST-SUFFIX,vansky.com,Proxy
+HOST-SUFFIX,vanta.com,Proxy
 HOST-SUFFIX,vaticannews.va,Proxy
 HOST-SUFFIX,vatn.org,Proxy
 HOST-SUFFIX,vaultproject.io,Proxy

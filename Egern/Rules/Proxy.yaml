@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 17385
+# 规则统计: 17388
 
 no_resolve: true
 domain_set:
@@ -1221,6 +1221,7 @@ domain_suffix_set:
   - appdynamics.jp
   - appdynamics.org
   - approvedusedbmw.com
+  - approveit.today
   - appshopper.com
   - appsocks.net
   - appspot.com
@@ -13564,6 +13565,7 @@ domain_suffix_set:
   - surge.run
   - suroot.com
   - surrenderat20.net
+  - surveymonkey.com
   - susebr.org
   - susegeek.com
   - suseitalia.org
@@ -14899,6 +14901,7 @@ domain_suffix_set:
   - vanityfair.com
   - vanpeople.com
   - vansky.com
+  - vanta.com
   - vaticannews.va
   - vatn.org
   - vaultproject.io

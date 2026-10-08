@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4758
+# 规则统计: 4763
 
 domain_set:
   - 0x0.st
@@ -307,6 +307,7 @@ domain_set:
   - assets.unredacted.org
   - assets.upload.io
   - assets.userstyles.org
+  - assets.vanta.com
   - assets.vantage.sh
   - assets.vercel.com
   - assets.video.yahoo.net
@@ -2234,6 +2235,7 @@ domain_set:
   - mwcm.nyt.com
   - mwf-service.akamaized.net
   - my-json-server.typicode.com
+  - n.approveit.today
   - na-library.klarnaservices.com
   - namedotcom-cdn.name.tools
   - nas2.d.tube
@@ -2512,6 +2514,7 @@ domain_set:
   - rules2.clearurls.xyz
   - rum-agent.na-01.cloud.solarwinds.com
   - rum-cdn.perfops.net
+  - rum-ingest.us1.signalfx.com
   - runkit-packages-static-executables.com
   - runkit-packages-static.com
   - rv-assets.softonic.com
@@ -2781,6 +2784,7 @@ domain_set:
   - static-www.sendsafely.com
   - static.3dporndude.com
   - static.4shared.com
+  - static.acm.account.sony.com
   - static.ada.support
   - static.addtoany.com
   - static.adguardvpn.com
@@ -4743,6 +4747,7 @@ domain_wildcard_set:
   - 'ocsp.*.amazontrust.com'
   - 'proxy-*.dailymotion.com'
   - 'rr?---??.ouo.si'
+  - 'rum-ingest.*.signalfx.com'
   - 's3-*.figma.com'
   - 's3.*.wasabisys.com'
   - 's?.maxstream.org'

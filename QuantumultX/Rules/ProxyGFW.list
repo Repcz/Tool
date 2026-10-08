@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 7606
+# 规则统计: 7609
 
 HOST,ccmdl.adobe.com,ProxyGFW
 HOST,cloud.oracle.com,ProxyGFW
@@ -444,6 +444,7 @@ HOST-SUFFIX,appdownloader.net,ProxyGFW
 HOST-SUFFIX,appledaily.com,ProxyGFW
 HOST-SUFFIX,appledaily.com.hk,ProxyGFW
 HOST-SUFFIX,appledaily.com.tw,ProxyGFW
+HOST-SUFFIX,approveit.today,ProxyGFW
 HOST-SUFFIX,appshopper.com,ProxyGFW
 HOST-SUFFIX,appsocks.net,ProxyGFW
 HOST-SUFFIX,appspot-preview.com,ProxyGFW
@@ -5953,6 +5954,7 @@ HOST-SUFFIX,surfsharkdns.com,ProxyGFW
 HOST-SUFFIX,surge-activation.com,ProxyGFW
 HOST-SUFFIX,suroot.com,ProxyGFW
 HOST-SUFFIX,surrenderat20.net,ProxyGFW
+HOST-SUFFIX,surveymonkey.com,ProxyGFW
 HOST-SUFFIX,sustainability.google,ProxyGFW
 HOST-SUFFIX,suyangg.com,ProxyGFW
 HOST-SUFFIX,svsfx.com,ProxyGFW
@@ -6750,6 +6752,7 @@ HOST-SUFFIX,vanilla-jp.com,ProxyGFW
 HOST-SUFFIX,vanityfair.com,ProxyGFW
 HOST-SUFFIX,vanpeople.com,ProxyGFW
 HOST-SUFFIX,vansky.com,ProxyGFW
+HOST-SUFFIX,vanta.com,ProxyGFW
 HOST-SUFFIX,vaticannews.va,ProxyGFW
 HOST-SUFFIX,vatn.org,ProxyGFW
 HOST-SUFFIX,vcf-online.org,ProxyGFW

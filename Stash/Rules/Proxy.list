@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 17399
+# 规则统计: 17402
 
 DOMAIN,c33hcgiwev3.cloudfront.net
 DOMAIN,cc-ext-prod-pkgs.s3.amazonaws.com
@@ -1205,6 +1205,7 @@ DOMAIN-SUFFIX,appdynamics.info
 DOMAIN-SUFFIX,appdynamics.jp
 DOMAIN-SUFFIX,appdynamics.org
 DOMAIN-SUFFIX,approvedusedbmw.com
+DOMAIN-SUFFIX,approveit.today
 DOMAIN-SUFFIX,appshopper.com
 DOMAIN-SUFFIX,appsocks.net
 DOMAIN-SUFFIX,appspot.com
@@ -13548,6 +13549,7 @@ DOMAIN-SUFFIX,surge-activation.com
 DOMAIN-SUFFIX,surge.run
 DOMAIN-SUFFIX,suroot.com
 DOMAIN-SUFFIX,surrenderat20.net
+DOMAIN-SUFFIX,surveymonkey.com
 DOMAIN-SUFFIX,susebr.org
 DOMAIN-SUFFIX,susegeek.com
 DOMAIN-SUFFIX,suseitalia.org
@@ -14883,6 +14885,7 @@ DOMAIN-SUFFIX,vanithaveedu.com
 DOMAIN-SUFFIX,vanityfair.com
 DOMAIN-SUFFIX,vanpeople.com
 DOMAIN-SUFFIX,vansky.com
+DOMAIN-SUFFIX,vanta.com
 DOMAIN-SUFFIX,vaticannews.va
 DOMAIN-SUFFIX,vatn.org
 DOMAIN-SUFFIX,vaultproject.io

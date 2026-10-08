@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 13222
+# 规则统计: 13223
 
 HOST,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com,ChinaDomain
 HOST,0gr4uqmtt8y41hcjsgrzdrc3s.ourdvsss.com,ChinaDomain
@@ -11700,6 +11700,7 @@ HOST-SUFFIX,xiaomi.com,ChinaDomain
 HOST-SUFFIX,xiaomi.net,ChinaDomain
 HOST-SUFFIX,xiaomi.open.qingting.fm,ChinaDomain
 HOST-SUFFIX,xiaomi.org,ChinaDomain
+HOST-SUFFIX,xiaomiauto.com,ChinaDomain
 HOST-SUFFIX,xiaomicache.com,ChinaDomain
 HOST-SUFFIX,xiaomicorp.cn,ChinaDomain
 HOST-SUFFIX,xiaomicorp.com,ChinaDomain

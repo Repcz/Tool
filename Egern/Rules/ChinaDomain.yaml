@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 13222
+# 规则统计: 13223
 
 no_resolve: true
 domain_set:
@@ -11705,6 +11705,7 @@ domain_suffix_set:
   - xiaomi.net
   - xiaomi.open.qingting.fm
   - xiaomi.org
+  - xiaomiauto.com
   - xiaomicache.com
   - xiaomicorp.cn
   - xiaomicorp.com
