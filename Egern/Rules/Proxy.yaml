@@ -1,8 +1,11 @@
 # 规则名称: Proxy
-# 规则统计: 17388
+# 规则统计: 17450
 
 no_resolve: true
 domain_set:
+  - api.avax.network
+  - api.sprig.com
+  - api2.amplitude.com
   - c33hcgiwev3.cloudfront.net
   - cc-ext-prod-pkgs.s3.amazonaws.com
   - ccmdl.adobe.com
@@ -21,6 +24,7 @@ domain_set:
   - e122475.dscg.akamaiedge.net
   - ees.elsevier.com
   - help.ubnt.com
+  - http-inputs-notion.splunkcloud.com
   - ip-scan.adspower.net
   - l-0005.dc-msedge.net
   - l-0005.l-msedge.net
@@ -31,7 +35,9 @@ domain_set:
   - litvfreemobile-hichannel.cdn.hinet.net
   - news.ycombinator.com
   - rhr7kgmtrq1v.cloudfront.net
+  - sessions.bugsnag.com
   - store.ui.com.cn
+  - tronlink-images.s3.us-east-2.amazonaws.com
   - wego.here.com
 domain_keyword_set:
   - avoddashs
@@ -45,6 +51,7 @@ domain_keyword_set:
   - openai
   - pinterest
   - sci-hub
+  - speedtest
   - whatsapp
 domain_suffix_set:
   - 01.org
@@ -783,6 +790,7 @@ domain_suffix_set:
   - akatsukiworks.com
   - akiba-online.com
   - akiba-web.com
+  - akile.io
   - akow.org
   - al-islam.com
   - al-qimmah.net
@@ -1120,6 +1128,7 @@ domain_suffix_set:
   - animestigma.com
   - animezilla.com
   - aniscartujo.com
+  - ankr.com
   - anm.co.uk
   - annamilk.com
   - annas-archive.org
@@ -1848,6 +1857,7 @@ domain_suffix_set:
   - bimbim.com
   - binance.cc
   - binance.com
+  - binance.info
   - binance.me
   - bing.com
   - binoculus.com
@@ -1873,6 +1883,8 @@ domain_suffix_set:
   - bitcointalk.org
   - bitcoinworld.com
   - bitfinex.com
+  - bitflyer.com
+  - bitget.com
   - bithumb.com
   - bitinka.com.ar
   - bitly.com
@@ -1883,6 +1895,7 @@ domain_suffix_set:
   - bitporno.com
   - bitshare.com
   - bitsnoop.com
+  - bitstamp.net
   - bitterwinter.org
   - bitvise.com
   - bitwarden.com
@@ -2705,6 +2718,7 @@ domain_suffix_set:
   - byjav.me
   - byjhd.com
   - bynet.co.il
+  - bytevirt.com
   - bzazi.com
   - c-est-simple.com
   - c-ij.com
@@ -2977,6 +2991,7 @@ domain_suffix_set:
   - celeron.net
   - celestrak.com
   - cell.com
+  - cellmaps.com
   - cellulo.info
   - cencoastbmw.com
   - cenews.eu
@@ -3290,6 +3305,7 @@ domain_suffix_set:
   - cloudapp.net
   - cloudburstresearch.com
   - cloudchoose.com
+  - cloudcone.com
   - cloudcredibility.com
   - cloudflare-dns.com
   - cloudflare-ipfs.com
@@ -3410,6 +3426,7 @@ domain_suffix_set:
   - coingecko.com
   - coingi.com
   - coinmarketcap.com
+  - coinpedia.org
   - coinrail.co.kr
   - cointiger.com
   - cointobe.com
@@ -3569,7 +3586,9 @@ domain_suffix_set:
   - cruel-furies.com
   - crunchyroll.com
   - crypto.com
+  - crypto.news
   - cryptocompare.com
+  - cryptonews.com
   - crystalgunnsworld.com
   - crystalmiss.com
   - cs.co
@@ -3737,6 +3756,7 @@ domain_suffix_set:
   - dataliberation.org
   - datalore.io
   - datawav.club
+  - datawave.sh
   - date2night.xyz
   - dato.porn
   - daum.net
@@ -4014,6 +4034,7 @@ domain_suffix_set:
   - dmcdn.net
   - dmgmediaprivacy.co.uk
   - dmhy.org
+  - dmit.io
   - dmm-extension.com
   - dmm.co.jp
   - dmm.com
@@ -4259,6 +4280,7 @@ domain_suffix_set:
   - dwnews.net
   - dx9527.cc
   - dxiong.com
+  - dydx.exchange
   - dykycl.com
   - dyn.com
   - dynamic-dns.net
@@ -4418,6 +4440,8 @@ domain_suffix_set:
   - eilieili.cc
   - eireinikotaerukai.com
   - eisbb.com
+  - ekahau.cloud
+  - ekahau.com
   - ekhindi.com
   - ekolojik.org
   - eksisozluk.com
@@ -5112,6 +5136,7 @@ domain_suffix_set:
   - fasebokk.com
   - fasebook.com
   - faseboox.com
+  - fast.com
   - fastindianporn.com
   - fastlane.ci
   - fastlane.tools
@@ -5890,6 +5915,7 @@ domain_suffix_set:
   - gelbooru.me
   - gelbooru.wjcodes.com
   - gemfire.net
+  - gemini.com
   - generated.photos
   - geni.us
   - genitourinaryexam.com
@@ -5946,6 +5972,7 @@ domain_suffix_set:
   - getscorecash.com
   - getsexgames.com
   - getsocialscope.com
+  - getsurfboard.com
   - getsync.com
   - gettoby.com
   - gettrials.com
@@ -6201,6 +6228,10 @@ domain_suffix_set:
   - good-gay.com
   - gooday.xyz
   - gooddns.info
+  - goodnotes.com
+  - goodnotes.email
+  - goodnotescloud.com
+  - goodnotesplatform.com
   - goodporn.to
   - goodporno.cc
   - goodreaders.com
@@ -8349,6 +8380,7 @@ domain_suffix_set:
   - justporno.sex
   - justporno.tv
   - justswallows.com
+  - justswap.link
   - justtristan.com
   - justusboys.com
   - juyuange.org
@@ -8533,6 +8565,7 @@ domain_suffix_set:
   - koalaporn.com
   - kobo.com
   - kobobooks.com
+  - kodif.io
   - kodingen.com
   - komoot.com
   - komoot.net
@@ -10036,6 +10069,7 @@ domain_suffix_set:
   - naol.ca
   - naol.cc
   - napiszex.com
+  - nariox.org
   - narod.ru
   - narumiya.xii.jp
   - nasa.gov
@@ -10249,6 +10283,7 @@ domain_suffix_set:
   - nineentertainmentco.com.au
   - ninemediaroom.com.au
   - ninemsn.com.au
+  - ninerealms.com
   - nineteentube.com
   - ning.com
   - ninjacloak.com
@@ -10358,6 +10393,7 @@ domain_suffix_set:
   - nsfwmemes.com
   - nsfwr34.com
   - nsimg.net
+  - nsloon.app
   - nsstatic.net
   - nssurge.com
   - ntbk.gov.tw
@@ -10563,6 +10599,7 @@ domain_suffix_set:
   - okk.tw
   - okkisokuho.com
   - okx.com
+  - okx.com.cdn.cloudflare.net
   - olabloga.pl
   - old-cat.net
   - older-women-movies.com
@@ -10655,6 +10692,8 @@ domain_suffix_set:
   - onthehunt.com
   - ontrac.com
   - onxxxtube.com
+  - ookla.com
+  - ooklaserver.net
   - oopsforum.com
   - ooyala.com
   - op7979.com
@@ -11217,6 +11256,7 @@ domain_suffix_set:
   - ping.pe
   - ping0.cc
   - pingguotv.xyz
+  - pingtest.net
   - pingxiangpuer.com
   - pinimg.com
   - pinkdino.com
@@ -11941,6 +11981,7 @@ domain_suffix_set:
   - qualtrics.com
   - quannengshen.org
   - quantumbooter.net
+  - quantumult.app
   - quay.io
   - questvisual.com
   - quicinc.com
@@ -11978,6 +12019,7 @@ domain_suffix_set:
   - rabbitscams.com
   - rabbitscams.sex
   - rabbitsreviews.com
+  - racknerd.com
   - radeon.com
   - radicalparty.org
   - radiko.jp
@@ -12357,6 +12399,7 @@ domain_suffix_set:
   - salesforce.org
   - salesforceliveagent.com
   - salmiyuck.com
+  - saltyfish.io
   - salvation.org.hk
   - samair.ru
   - sambaporno.com
@@ -12814,6 +12857,7 @@ domain_suffix_set:
   - sharizelvideos.com
   - sharkdolphin.com
   - sharmota.com
+  - sharon.io
   - sharpdaily.com.hk
   - sharpdaily.hk
   - shat-tibet.com
@@ -13287,9 +13331,12 @@ domain_suffix_set:
   - speakerdeck.com
   - spec.org
   - spectraltube.com
+  - speed.cloudflare.com
+  - speed.dler.io
   - speedify.com
   - speedpan.com
   - speedsmart.net
+  - speedtest.co
   - speedtest.com.hk
   - speedtest.net
   - speedtestcustom.com
@@ -13409,6 +13456,7 @@ domain_suffix_set:
   - starp2p.com
   - startpage.com
   - startuplivingchina.com
+  - stash.wiki
   - stat.gov.tw
   - state.gov
   - static-cisco.com
@@ -13866,6 +13914,7 @@ domain_suffix_set:
   - theav.cc
   - thebcomplex.com
   - thebestfetishsites.com
+  - thebittimes.com
   - theblemish.com
   - thebobs.com
   - thebodyshop-usa.com
@@ -14303,6 +14352,8 @@ domain_suffix_set:
   - trixhentai.com
   - trmini.com
   - troisrivieresmini.com
+  - trongrid.io
+  - tronlink.org
   - tronscan.org
   - tropictube.com
   - trouw.nl
@@ -14318,6 +14369,7 @@ domain_suffix_set:
   - trustedanalytics.net
   - trustpilot.com
   - trustpilot.net
+  - trustwallet.com
   - trustwave.com
   - truth101.co.tv
   - truthontour.org
@@ -14575,6 +14627,7 @@ domain_suffix_set:
   - twivert.com
   - twiyia.com
   - twlegs.com
+  - twnodes.com
   - twnorth.org.tw
   - twoo.com
   - twskype.com
@@ -14743,6 +14796,7 @@ domain_suffix_set:
   - unification.org.tw
   - uninhibitedcomix.com
   - unirule.cloud
+  - uniswap.org
   - unitedbsd.com
   - unitedsocialpress.com
   - unity.cn
@@ -14765,6 +14819,7 @@ domain_suffix_set:
   - untraceable.us
   - unusualporn.net
   - uocn.org
+  - upbit.com
   - upcitemdb.com
   - updatestar.com
   - updatetube.com
@@ -15360,6 +15415,7 @@ domain_suffix_set:
   - waiwaier.com
   - wakatime.com
   - wallet.com
+  - walletconnect.com
   - wallmama.com
   - wallornot.org
   - wallpapercasa.com
@@ -15383,6 +15439,7 @@ domain_suffix_set:
   - wankzvr.com
   - want-daily.com
   - wanz-factory.com
+  - wap.ac
   - wapedia.mobi
   - waplog.com
   - waranlov.com
@@ -15479,6 +15536,7 @@ domain_suffix_set:
   - webs-tv.net
   - websitepulse.com
   - websnapr.com
+  - webtest.net
   - webtoons.com
   - webtype.com
   - webupd8.org
@@ -17134,6 +17192,7 @@ ip_cidr_set:
   - 179.60.192.0/22
   - 18.184.0.0/15
   - 18.194.0.0/15
+  - 18.206.50.220/32
   - 18.208.0.0/13
   - 18.232.0.0/14
   - 182.162.192.0/20
@@ -17210,6 +17269,7 @@ ip_cidr_set:
   - 23.160.0.0/24
   - 27.0.236.0/22
   - 3.123.36.126/32
+  - 3.136.94.196/32
   - 31.13.24.0/21
   - 31.13.64.0/18
   - 35.157.215.84/32
@@ -17220,6 +17280,7 @@ ip_cidr_set:
   - 37.9.64.0/18
   - 37.9.64.0/24
   - 37.9.73.0/24
+  - 44.205.88.94/32
   - 45.113.128.0/22
   - 45.64.40.0/22
   - 5.255.192.0/18
@@ -17396,3 +17457,4 @@ user_agent_set:
   - 'LINE%20TV*'
   - 'Prime%20Video*'
   - 'Roam*'
+  - 'SpeedTest*'
