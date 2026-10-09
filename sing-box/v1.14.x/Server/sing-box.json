@@ -36,10 +36,41 @@
 
     "inbounds": [
         {
+            "type": "snell",
+            "tag": "snell-in",
+            "listen": "::",
+            "listen_port": 443,
+            "tcp_fast_open": true,
+            "tcp_multi_path": true,
+            "version": 6,
+            "psk": "",
+            "mode": "default"
+        },
+        {
+            "type": "anytls",
+            "tag": "anytls-in",
+            "listen": "::",
+            "listen_port": 443,
+            "tcp_fast_open": true,
+            "tcp_multi_path": true,
+            "users": [
+                {
+                    "name": "singbox",
+                    "password": ""
+                }
+            ],
+            "padding_scheme": [],
+            "tls": {
+                "enabled": true,
+                "server_name": "your_server_ip",
+                "certificate_provider": "ip_cert"
+            }
+        },
+                {
             "type": "hysteria2",
             "tag": "hy2-in",
             "listen": "::",
-            "listen_port": 443,
+            "listen_port": 8443,
             "users": [
                 {
                     "name": "singbox",
@@ -71,13 +102,13 @@
         "rules": [
             {
                 "inbound": [
-                    "hy2-in"
+                    "anytls-in","hy2-in","snell-in"
                 ],
                 "action": "sniff"
             },
             {
                 "inbound": [
-                    "hy2-in"
+                    "anytls-in","hy2-in","snell-in"
                 ],
                 "action": "route-options",
                 "udp_disable_domain_unmapping": true
