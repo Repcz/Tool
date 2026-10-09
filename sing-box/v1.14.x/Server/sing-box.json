@@ -66,7 +66,7 @@
                 "certificate_provider": "ip_cert"
             }
         },
-                {
+        {
             "type": "hysteria2",
             "tag": "hy2-in",
             "listen": "::",
