@@ -1,5 +1,5 @@
 # 规则名称: AdGuardChinese
-# 规则统计: 6274
+# 规则统计: 6252
 
 domain_suffix_set:
   - 002777.xyz
@@ -204,6 +204,7 @@ domain_suffix_set:
   - 1iuh5l.com
   - 1iw9r46xh5.com
   - 1j397opcuw.com
+  - 1jlbewhnp5.com
   - 1jlp1qbgu.com
   - 1jzocofm4.com
   - 1k1bd77k9.com
@@ -255,14 +256,12 @@ domain_suffix_set:
   - 222aa333bb.com
   - 223qu6jnqv.com
   - 224oztn8dq.com
-  - 22588888.com
   - 22eo9qlbpt.com
   - 22qcvn8hq.com
   - 22svkcdbyp.com
   - 22vie9ula.com
   - 23cox7hu4.com
   - 23dx6xe42.com
-  - 2481e.com
   - 24jp8wjmho.com
   - 24nf8sxd9p.com
   - 2529.com
@@ -404,6 +403,7 @@ domain_suffix_set:
   - 3t4j5adg9x.com
   - 3vkgutjorg.com
   - 3vvuu0z8ui.com
+  - 3wrv1uzotr.com
   - 3wzq2yxde.com
   - 3x1ry6we9.com
   - 3x5h6x434.com
@@ -416,6 +416,7 @@ domain_suffix_set:
   - 40vhwswtr6.com
   - 412dyo1ef.com
   - 41vtzzt0s.com
+  - 42mu2c4akt.com
   - 42vaywaovr.com
   - 431kls9qsf.com
   - 43gu7zzn0.com
@@ -423,7 +424,6 @@ domain_suffix_set:
   - 444223564.xyz
   - 44b2zlch5q.com
   - 44ipavmq2n.com
-  - 4567.org
   - 45yz5i35r.com
   - 4667gwyg1.com
   - 46q8oxohlt.com
@@ -610,7 +610,6 @@ domain_suffix_set:
   - 68pzwbugo.com
   - 68td4yete.com
   - 68tkaiaji.com
-  - 693836.com
   - 6acupxubky.com
   - 6aontlsdf.com
   - 6aoodbdx94.com
@@ -620,6 +619,7 @@ domain_suffix_set:
   - 6bgubwkwoh.com
   - 6c34boi06m.com
   - 6cmxoje5k.com
+  - 6cq8d7xyk.com
   - 6ejvq6ykg2.com
   - 6ez760nwf0.com
   - 6f42v90nz.com
@@ -635,6 +635,7 @@ domain_suffix_set:
   - 6j7ywcn8sx.com
   - 6jei0t6xp.com
   - 6jtqdplfz7.com
+  - 6k1alauto.com
   - 6k2fehacp.com
   - 6knlhnjfv.com
   - 6kpudsordv.com
@@ -863,7 +864,6 @@ domain_suffix_set:
   - 999d.com
   - 999xx333kk.com
   - 99d8z9oqnu.com
-  - 99smsf.com
   - 9a4v0clpi.com
   - 9ck9umcyvt.com
   - 9cwcu1574.com
@@ -990,7 +990,6 @@ domain_suffix_set:
   - a1.tuke8.com
   - a1.twtym.com
   - a1.zhanzhang.net
-  - a1714.com
   - a1ajfrk4i.com
   - a2.xinhuanet.com
   - a2424xe80.com
@@ -1108,7 +1107,6 @@ domain_suffix_set:
   - adp.cnool.net
   - adpai.thepaper.cn
   - adrs.sdo.com
-  - ads-6686.top
   - ads-union.jd.com
   - ads.sohu.com
   - ads.tvb.com
@@ -1184,7 +1182,6 @@ domain_suffix_set:
   - airport89.com
   - aiwanma99.com
   - aiwen.cc
-  - aixuntupian.oss-cn-hongkong.aliyuncs.com
   - aizhantj.com
   - ajazaci.icu
   - ajhwwlye.com
@@ -1269,6 +1266,7 @@ domain_suffix_set:
   - ax.ifeng.com
   - ax07in8xkr.com
   - ax2t0u9ly.com
+  - axkozwhiqah.in
   - axq9j15p0.com
   - aybhalkar.com
   - aybikaemg.com
@@ -1306,7 +1304,6 @@ domain_suffix_set:
   - b8o9c4s42l.com
   - b9jda4zig.com
   - bahpqcq.com
-  - baidu-jxf.co
   - baidu1.cardbaobao.com
   - baidu1.codejie.net
   - baiducom.bj.bcebos.com
@@ -1837,13 +1834,10 @@ domain_suffix_set:
   - d1129ldr7.com
   - d13jhr4vol1304.cloudfront.net
   - d15cjcet1djbmv.cloudfront.net
-  - d1zoi2q7y0e4d.cloudfront.net
   - d24fx92qb.com
   - d2c1htpgj.com
   - d2kadvyeq051an.cloudfront.net
   - d2pfd8w05h.com
-  - d2un76zvb5mgzx.cloudfront.net
-  - d3d7a0q05k6bvz.cloudfront.net
   - d3iih5w7xp5hdg.cloudfront.net
   - d3q5v0ai8.com
   - d48paxyhx.com
@@ -1890,7 +1884,6 @@ domain_suffix_set:
   - dan4irc1i.com
   - danpy3riac.com
   - daqnetgw.com
-  - darren01.oss-cn-beijing.aliyuncs.com
   - dat1.jzjxmj.com
   - data.waptime.cn
   - datas.tianqistatic.com
@@ -1946,7 +1939,6 @@ domain_suffix_set:
   - dfi09250kq.com
   - dfqzah.xyz
   - dftraanudh.com
-  - dgaxrjj0jwpwp.cloudfront.net
   - dgnqrl.icu
   - dgpvbzhqklzddy.com
   - dgrpeldt54.com
@@ -2020,7 +2012,6 @@ domain_suffix_set:
   - dm1.ddwk8.cn
   - dm1.zjydt.com
   - dmdcstsyv3.com
-  - dmg-dd.oss-accelerate.aliyuncs.com
   - dmm.aizhan.com
   - dmr.cnhoney.com
   - dms.fx678.com
@@ -2106,7 +2097,6 @@ domain_suffix_set:
   - e4iwtfza99.com
   - e4qn0um0b.com
   - e59x4phq3a.com
-  - e5yx.com
   - e68k5d1yw6.com
   - e75liqii98.com
   - e7x2ccuv9.com
@@ -2276,7 +2266,6 @@ domain_suffix_set:
   - f9bnlbgjf.com
   - fa5hnea2f.com
   - fa7z99cnam.com
-  - facai383.oss-cn-guangzhou.aliyuncs.com
   - fadrvppkhuhdhs.com
   - fagmiethe.com
   - fagp.cn
@@ -2344,7 +2333,6 @@ domain_suffix_set:
   - fjzimaoqu.cn
   - fk0hwmdoh.com
   - fk8k4t55e.com
-  - fkesfg.com
   - fkfovt.icu
   - fkhagviev.com
   - fl0hg5wlr.com
@@ -2404,6 +2392,7 @@ domain_suffix_set:
   - fukzsbkp8.com
   - fuma8ligq.com
   - fummd03je4.com
+  - funambulist98.com
   - fuoo1.top
   - fuw6cipmw.com
   - fuztty4b5g.com
@@ -2733,7 +2722,6 @@ domain_suffix_set:
   - h4tmdz92jq.com
   - h57vpulpu.com
   - h5o61akbx.com
-  - h6295.com
   - h6dc4eiwjf.com
   - h6fh0e4hg.com
   - h6n6i7v98.com
@@ -2778,15 +2766,12 @@ domain_suffix_set:
   - hcyo99iyr.com
   - hczj7w56k.top
   - hd2o34yu8.com
-  - hdapp1003-a.akamaihd.net
-  - hdapp1008-a.akamaihd.net
   - hdbvfhjebfiendhr.com
   - hdc.maxli.cn
   - hdcvecyv8.com
   - hdjthzg.cn
   - hdo0zseqy.com
   - hdry1a0g9.com
-  - hdsrc-a.akamaihd.net
   - he3tf77ow.com
   - he4j6lz6d.com
   - hebaidu.cc
@@ -2962,6 +2947,7 @@ domain_suffix_set:
   - identity39.com
   - idzdsbanio.com
   - iedchqswx7.com
+  - iemshbwfg.com
   - ifb33zuqc.com
   - ifnb6hfem.com
   - ig65.vip
@@ -3334,7 +3320,6 @@ domain_suffix_set:
   - kls24qtvc.com
   - klt2ojvew1.com
   - kmdjdu5cc.com
-  - kmmgoogle.oss-ap-southeast-1.aliyuncs.com
   - kmqianneng66.com
   - knie8wmsk.com
   - knnfkwf.com
@@ -3402,7 +3387,6 @@ domain_suffix_set:
   - l8rbwdji18.com
   - l9moubljmc.com
   - l9qxrmda6.com
-  - lady177.com
   - lafacw.xyz
   - lamtc2wny.com
   - lanmxf.icu
@@ -3616,7 +3600,6 @@ domain_suffix_set:
   - m9sz0hh3f7.com
   - m9ylqs5rn.com
   - ma1.meishij.net
-  - magnetdog.net
   - magnolia77.top
   - maideatp.com
   - main.jiukang.org
@@ -4288,7 +4271,6 @@ domain_suffix_set:
   - putmtmkfjbitxzlhijfc.top
   - pututzdgwybrha.com
   - pv.dakawm.cc
-  - pv4b.com
   - pv7ezc6as.com
   - pv848vdcv.com
   - pvgcyyh.icu
@@ -4662,7 +4644,6 @@ domain_suffix_set:
   - s8.pw
   - s9dik0ydj.com
   - sa.sina.cn
-  - sa669.com
   - sab5a4zz5.com
   - saddlebag32.com
   - sal5ab6uf.com
@@ -4795,7 +4776,6 @@ domain_suffix_set:
   - staircase59.com
   - stamina4.top
   - star-media.cn
-  - star-seo.oss-ap-northeast-1.aliyuncs.com
   - starboard65.com
   - stateroom28.com
   - static-cn.plista.com
@@ -5040,7 +5020,6 @@ domain_suffix_set:
   - ttimhethzm.com
   - ttkxny.com
   - ttnjhlhys.icu
-  - tttppp.oss-cn-guangzhou.aliyuncs.com
   - ttzerqriro.com
   - tu1500919341.cc
   - tu2.taohuaimg.com
@@ -5464,6 +5443,7 @@ domain_suffix_set:
   - w0kaf7jjg.com
   - w11.zhongkaohelp.com
   - w18.9939.com
+  - w19lu17a2.com
   - w1irjtvdt4.com
   - w2j4kdjma.com
   - w2q5p09n8.com
@@ -5688,7 +5668,6 @@ domain_suffix_set:
   - xclikgrueb.com
   - xcnfzp.icu
   - xcultur.com
-  - xdh0808.com
   - xdhrvr.icu
   - xdlipr.icu
   - xdnjqtn.com
@@ -5797,7 +5776,6 @@ domain_suffix_set:
   - xmm.wxc.cc
   - xmo0oixbx8.com
   - xn--2ss830adjbqy7h.xn--fiqs8s
-  - xn--w9q675dm1p7em.net
   - xnemz1rc5j.com
   - xnm4x0ali.com
   - xnrinp.icu
@@ -5808,7 +5786,6 @@ domain_suffix_set:
   - xoqsxdpx.xyz
   - xoxitt.icu
   - xpdgvlxwn.icu
-  - xpj08.oss-cn-beijing.aliyuncs.com
   - xpjcg.oss-accelerate.aliyuncs.com
   - xpzodh.icu
   - xqhfb9hzrs.com
@@ -6009,7 +5986,6 @@ domain_suffix_set:
   - ytralvbmto.com
   - ytv7335mt.com
   - yuhn5w31n.com
-  - yunsennet.com
   - yunzuowen.com
   - yur09111og.com
   - yur09121og.com
@@ -6243,6 +6219,7 @@ domain_suffix_set:
   - zsz8xljo8y.top
   - zt2088.com
   - zthuhludil.com
+  - zttrpnhufhdxno.com
   - ztyumn.ifeng.com
   - zu9srbxg0t.com
   - zujtlj.icu
@@ -6260,6 +6237,7 @@ domain_suffix_set:
   - zvrl.cn
   - zwbngpnpa.com
   - zwfqxj.icu
+  - zwg5j61a8.com
   - zwlhfjh4h.com
   - zwlpdo.cn
   - zwvq.cn
