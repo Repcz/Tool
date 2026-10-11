@@ -1,5 +1,5 @@
 # 规则名称: Ads_EasyListPrivacy
-# 规则统计: 43205
+# 规则统计: 43223
 
 domain_suffix_set:
   - 0.0.0.1
@@ -4386,6 +4386,7 @@ domain_suffix_set:
   - ad-ebis.mynavi-job20s.jp
   - ad-ebis.toysub.jp
   - ad-log.dable.io
+  - ad-manager.matsukiyococokara-online.com
   - ad-platform.jmty.jp
   - ad-tracker-api.luizalabs.com
   - ad.320320.net
@@ -5653,6 +5654,7 @@ domain_suffix_set:
   - analytics.truckingauthority.com
   - analytics.trust.page
   - analytics.trutv.com
+  - analytics.tsoftapps.com
   - analytics.tufos.com.br
   - analytics.turnertv.com
   - analytics.tver.jp
@@ -6841,6 +6843,7 @@ domain_suffix_set:
   - argos.citruserve.com
   - argyleforum.actonservice.com
   - aria.inhaabit.com
+  - ariaclean.com
   - ariane.abtasty.com
   - arigng.door.ac
   - arincol.arin-innovation.com
@@ -7654,6 +7657,7 @@ domain_suffix_set:
   - bilahh.feuvert.fr
   - bilder11.markt.de
   - bilingualgeek.com
+  - billionpet.com
   - billowybead.com
   - billowybelief.com
   - billtable.com
@@ -7711,6 +7715,7 @@ domain_suffix_set:
   - blackenterprise.black.news
   - blackjack.abzorbagames.com
   - blackmesh.actonservice.com
+  - blackrednecks.com
   - blacktri-a.akamaihd.net
   - bladv.actonservice.com
   - blaltn.physicianschoice.com
@@ -7837,6 +7842,7 @@ domain_suffix_set:
   - bopmkf.lolahome.es
   - boqufs.2nn.jp
   - boredcrown.com
+  - borefee.com
   - boringberry.com
   - boringpirate.com
   - boss.openapp.link
@@ -8489,6 +8495,7 @@ domain_suffix_set:
   - carsarace.com
   - carte.fleet-page.total.fr
   - cartelsalsa.com
+  - cartersci.com
   - cartjoint.com
   - cartlug.com
   - cartoon.hardalist.com
@@ -8515,6 +8522,7 @@ domain_suffix_set:
   - catracking.finning.com
   - cats.d20.rs
   - catschickens.com
+  - catsthumb.com
   - cattell.loanzify.app
   - cattlecommittee.com
   - cauldronfest.com
@@ -8728,6 +8736,7 @@ domain_suffix_set:
   - ciszhp.finanzfrage.net
   - ciszhp.gesundheitsfrage.net
   - ciszhp.motorradfrage.net
+  - citizensactive.com
   - citizensclimate.actonservice.com
   - citizenship.quantresear.ch
   - citydeal.net
@@ -8848,6 +8857,7 @@ domain_suffix_set:
   - clickatell.actonservice.com
   - clickcount.cnool.net
   - clicked.ebates.com
+  - clickersdigest.com
   - clickins.slixa.com
   - clicks.6thstreet.com
   - clicks.burgerking.co.uk
@@ -8959,6 +8969,7 @@ domain_suffix_set:
   - cltr.willhaben.at
   - cltxxq.cruises.united.com
   - clumsycar.com
+  - clutchcourses.com
   - clyexf.decathlon.ie
   - cm-exchange.toast.com
   - cm-in.americanexpress.com
@@ -9174,6 +9185,7 @@ domain_suffix_set:
   - collegeauthority.actonservice.com
   - colliers.actonservice.com
   - coloradoserves.com
+  - colorandnoise.com
   - colorfulneon.com
   - colorfulpet.com
   - coloroptimizer.com
@@ -9642,6 +9654,7 @@ domain_suffix_set:
   - copyvibes.com
   - coralcranes.com
   - coralreverie.com
+  - coralwatches.com
   - core-apps.b-cdn.net
   - corgibeachday.com
   - corporate-klm.americanexpress.nl
@@ -12778,7 +12791,6 @@ domain_suffix_set:
   - emptyboats.com
   - emptyescort.com
   - emrdnt.sumaity.com
-  - emrld.cc
   - ems-a8net-tracking.easy-myshop.jp
   - ems.youku.com
   - emsexam.quantresear.ch
@@ -14552,7 +14564,6 @@ domain_suffix_set:
   - gkgygj.verivox.de
   - gkopqp.coccodrillo.eu
   - gksqdt.reitmans.com
-  - gkx.gokwik.co
   - gl5g98t0vfjb.panprices.com
   - gladysway.com
   - glamhawk.com
@@ -20165,6 +20176,7 @@ domain_suffix_set:
   - ma.betterbusiness.se
   - ma.brightby.se
   - ma.cbre.com
+  - ma.gamersnexus.net
   - ma.hitachi-systems.com
   - ma.hmhco.com
   - ma.kyloepartners.com
@@ -24116,6 +24128,7 @@ domain_suffix_set:
   - muqtti.motoin.de
   - mushroomgods.com
   - mushywaste.com
+  - musicenforcer.com
   - musicflashcard.com
   - muteknife.com
   - mutemailbox.com
@@ -25917,6 +25930,7 @@ domain_suffix_set:
   - pixel.wp.pl
   - pixel.yabidos.com
   - pixel.yola.com
+  - pixel2.realclever.com
   - pixel6.wp.pl
   - pixeledhub.com
   - pixelmoonstudio.com
@@ -29256,6 +29270,7 @@ domain_suffix_set:
   - services.releasepoint.com
   - servicing.business.hsbc.com
   - servicing.unitedautocredit.net
+  - session.bugsnag.kindle.amazon.dev
   - session.timecommerce.net
   - sessions.embeddables.com
   - setaram.actonservice.com
@@ -34684,6 +34699,7 @@ domain_suffix_set:
   - stats.localmetravel.com
   - stats.lord.io
   - stats.lotlinx.com
+  - stats.lrb.co.uk
   - stats.lstfnd.de
   - stats.ltdhunt.com
   - stats.luieremmer.net
@@ -35076,6 +35092,7 @@ domain_suffix_set:
   - stats.zimri.net
   - stats.zoogletools.net
   - stats.zotabox.com
+  - stats.zruvix.com
   - 'stats2.*.fdnames.com'
   - stats2.architecturaldigest.com
   - stats2.bonappetit.com
@@ -37199,6 +37216,7 @@ domain_suffix_set:
   - townsquareinteractive.actonservice.com
   - toysbasics.com
   - toytakeover.com
+  - tp-em.cc
   - tp.ackermann.ch
   - tp.ambria.de
   - tp.baur.de
