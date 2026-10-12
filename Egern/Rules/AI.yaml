@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 53
+# 规则统计: 56
 
 domain_set:
   - ai.google.dev
@@ -13,9 +13,12 @@ domain_set:
   - daily-cloudcode-pa.googleapis.com
   - file.oaiusercontent.com
   - gateway.ai.cloudflare.com
+  - inference.codeium.com
   - jules.google.com
   - openrouter.ai
   - robinfrontend-pa.googleapis.com
+  - server.codeium.com
+  - server.self-serve.windsurf.com
 domain_keyword_set:
   - alkalimakersuite-pa.clients6.google.com
   - openai

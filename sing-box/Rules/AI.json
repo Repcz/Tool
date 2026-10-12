@@ -14,9 +14,12 @@
         "daily-cloudcode-pa.googleapis.com",
         "file.oaiusercontent.com",
         "gateway.ai.cloudflare.com",
+        "inference.codeium.com",
         "jules.google.com",
         "openrouter.ai",
-        "robinfrontend-pa.googleapis.com"
+        "robinfrontend-pa.googleapis.com",
+        "server.codeium.com",
+        "server.self-serve.windsurf.com"
       ]
     },
     {

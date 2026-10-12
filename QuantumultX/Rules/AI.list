@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 52
+# 规则统计: 55
 
 HOST,ai.google.dev,AI
 HOST,aida.googleapis.com,AI
@@ -12,9 +12,12 @@ HOST,api.jetbrains.ai,AI
 HOST,daily-cloudcode-pa.googleapis.com,AI
 HOST,file.oaiusercontent.com,AI
 HOST,gateway.ai.cloudflare.com,AI
+HOST,inference.codeium.com,AI
 HOST,jules.google.com,AI
 HOST,openrouter.ai,AI
 HOST,robinfrontend-pa.googleapis.com,AI
+HOST,server.codeium.com,AI
+HOST,server.self-serve.windsurf.com,AI
 HOST-SUFFIX,ai.com,AI
 HOST-SUFFIX,aistudio.google.com,AI
 HOST-SUFFIX,anthropic.com,AI
