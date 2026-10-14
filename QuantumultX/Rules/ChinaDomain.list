@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 13223
+# 规则统计: 13251
 
 HOST,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com,ChinaDomain
 HOST,0gr4uqmtt8y41hcjsgrzdrc3s.ourdvsss.com,ChinaDomain
@@ -2076,6 +2076,8 @@ HOST-SUFFIX,blackberry.com,ChinaDomain
 HOST-SUFFIX,blackdragon.com,ChinaDomain
 HOST-SUFFIX,blah.me,ChinaDomain
 HOST-SUFFIX,blingoffice.com,ChinaDomain
+HOST-SUFFIX,blkcan.cn,ChinaDomain
+HOST-SUFFIX,blkcan.com,ChinaDomain
 HOST-SUFFIX,bllyxw.com,ChinaDomain
 HOST-SUFFIX,blnovel.com,ChinaDomain
 HOST-SUFFIX,blogchina.org,ChinaDomain
@@ -2315,6 +2317,11 @@ HOST-SUFFIX,caocaotravel.cc,ChinaDomain
 HOST-SUFFIX,caocaotrip.cc,ChinaDomain
 HOST-SUFFIX,caocaotrip.cn,ChinaDomain
 HOST-SUFFIX,caocaotrip.com,ChinaDomain
+HOST-SUFFIX,capcut.cn,ChinaDomain
+HOST-SUFFIX,capcut.com,ChinaDomain
+HOST-SUFFIX,capcutapi.com,ChinaDomain
+HOST-SUFFIX,capcutapi.us,ChinaDomain
+HOST-SUFFIX,capcutstatic.com,ChinaDomain
 HOST-SUFFIX,capturetheflag.fun,ChinaDomain
 HOST-SUFFIX,carbonxprogram.com,ChinaDomain
 HOST-SUFFIX,cardbaobao.com,ChinaDomain
@@ -3549,6 +3556,7 @@ HOST-SUFFIX,dpsoidf.com,ChinaDomain
 HOST-SUFFIX,dqf14u8573.com,ChinaDomain
 HOST-SUFFIX,dratio.com,ChinaDomain
 HOST-SUFFIX,dreamavatar.com,ChinaDomain
+HOST-SUFFIX,dreamina.cn,ChinaDomain
 HOST-SUFFIX,drivergenius.com,ChinaDomain
 HOST-SUFFIX,drm-lic-dom.net,ChinaDomain
 HOST-SUFFIX,druqq.cn,ChinaDomain
@@ -3742,6 +3750,8 @@ HOST-SUFFIX,edgeonevod1.com,ChinaDomain
 HOST-SUFFIX,edgeonevod1.net,ChinaDomain
 HOST-SUFFIX,edgep.net,ChinaDomain
 HOST-SUFFIX,edgesrv.com,ChinaDomain
+HOST-SUFFIX,editorjianying.com,ChinaDomain
+HOST-SUFFIX,editorjianyingk.com,ChinaDomain
 HOST-SUFFIX,edra5.cn,ChinaDomain
 HOST-SUFFIX,edu.cn,ChinaDomain
 HOST-SUFFIX,edu4399.com,ChinaDomain
@@ -5015,6 +5025,7 @@ HOST-SUFFIX,healthybaike.com,ChinaDomain
 HOST-SUFFIX,hebaoi.com,ChinaDomain
 HOST-SUFFIX,hehecam.com,ChinaDomain
 HOST-SUFFIX,hehecamera.com,ChinaDomain
+HOST-SUFFIX,heiguantou.cn,ChinaDomain
 HOST-SUFFIX,heihei.com,ChinaDomain
 HOST-SUFFIX,heisha.net,ChinaDomain
 HOST-SUFFIX,heiyan.com,ChinaDomain
@@ -5035,6 +5046,10 @@ HOST-SUFFIX,henkuai.com,ChinaDomain
 HOST-SUFFIX,hetu2.com,ChinaDomain
 HOST-SUFFIX,hetushu.com,ChinaDomain
 HOST-SUFFIX,hexun.com,ChinaDomain
+HOST-SUFFIX,hey-can.cn,ChinaDomain
+HOST-SUFFIX,hey-can.com,ChinaDomain
+HOST-SUFFIX,hey-creator.cn,ChinaDomain
+HOST-SUFFIX,hey-creator.com,ChinaDomain
 HOST-SUFFIX,heycan.com,ChinaDomain
 HOST-SUFFIX,heytap.cn,ChinaDomain
 HOST-SUFFIX,heytap.com,ChinaDomain
@@ -5946,6 +5961,8 @@ HOST-SUFFIX,jianliao.com,ChinaDomain
 HOST-SUFFIX,jianshu.com,ChinaDomain
 HOST-SUFFIX,jianshu.io,ChinaDomain
 HOST-SUFFIX,jianshuapi.com,ChinaDomain
+HOST-SUFFIX,jianying.com,ChinaDomain
+HOST-SUFFIX,jianyingmicro.com,ChinaDomain
 HOST-SUFFIX,jianzhi8.com,ChinaDomain
 HOST-SUFFIX,jiaodong.net,ChinaDomain
 HOST-SUFFIX,jiaoyibao.com,ChinaDomain
@@ -5968,7 +5985,10 @@ HOST-SUFFIX,jikeiot.cloud,ChinaDomain
 HOST-SUFFIX,jikejia.cn,ChinaDomain
 HOST-SUFFIX,jikexueyuan.com,ChinaDomain
 HOST-SUFFIX,jilin55.com,ChinaDomain
+HOST-SUFFIX,jimeng.cn,ChinaDomain
 HOST-SUFFIX,jimeng.com,ChinaDomain
+HOST-SUFFIX,jimeng.com.cn,ChinaDomain
+HOST-SUFFIX,jimengai.com.cn,ChinaDomain
 HOST-SUFFIX,jindidata.com,ChinaDomain
 HOST-SUFFIX,jingdong.com,ChinaDomain
 HOST-SUFFIX,jingdongjinrong.com,ChinaDomain
@@ -8583,6 +8603,7 @@ HOST-SUFFIX,rescdn.cn,ChinaDomain
 HOST-SUFFIX,researchchina.cn,ChinaDomain
 HOST-SUFFIX,resouxs.com,ChinaDomain
 HOST-SUFFIX,restapi.amap.com,ChinaDomain
+HOST-SUFFIX,retouchpics.com,ChinaDomain
 HOST-SUFFIX,rexpos.cn,ChinaDomain
 HOST-SUFFIX,rextech.cn,ChinaDomain
 HOST-SUFFIX,reyoo.net,ChinaDomain
@@ -10803,10 +10824,13 @@ HOST-SUFFIX,ukanshu.com,ChinaDomain
 HOST-SUFFIX,ukoo.com.cn,ChinaDomain
 HOST-SUFFIX,ukve4smo9gapv.com,ChinaDomain
 HOST-SUFFIX,ulanzou.com,ChinaDomain
+HOST-SUFFIX,ulikeapi.com,ChinaDomain
 HOST-SUFFIX,ulikecam.cn,ChinaDomain
 HOST-SUFFIX,ulikecam.com,ChinaDomain
 HOST-SUFFIX,ulikecam.mobi,ChinaDomain
 HOST-SUFFIX,ulikecam.net,ChinaDomain
+HOST-SUFFIX,ulikepic.com,ChinaDomain
+HOST-SUFFIX,ulikestatic.com,ChinaDomain
 HOST-SUFFIX,um.run,ChinaDomain
 HOST-SUFFIX,um0.cn,ChinaDomain
 HOST-SUFFIX,um1.cn,ChinaDomain
@@ -11021,6 +11045,9 @@ HOST-SUFFIX,vivotc.com,ChinaDomain
 HOST-SUFFIX,viyouhui.com,ChinaDomain
 HOST-SUFFIX,vk6oqcevmd1a.com,ChinaDomain
 HOST-SUFFIX,vkrtzzc.com,ChinaDomain
+HOST-SUFFIX,vlabimg.com,ChinaDomain
+HOST-SUFFIX,vlabstatic.com,ChinaDomain
+HOST-SUFFIX,vlabvod.com,ChinaDomain
 HOST-SUFFIX,vlinkapi.com,ChinaDomain
 HOST-SUFFIX,vlms.cn,ChinaDomain
 HOST-SUFFIX,vmall-hw.com,ChinaDomain
@@ -11802,6 +11829,7 @@ HOST-SUFFIX,xindongdinglv.com,ChinaDomain
 HOST-SUFFIX,xinghua.org.cn,ChinaDomain
 HOST-SUFFIX,xingread.cn,ChinaDomain
 HOST-SUFFIX,xingtan001.com,ChinaDomain
+HOST-SUFFIX,xingtupics.com,ChinaDomain
 HOST-SUFFIX,xingxuanwaimai.com,ChinaDomain
 HOST-SUFFIX,xingyaocq.com,ChinaDomain
 HOST-SUFFIX,xingyaoss.com,ChinaDomain

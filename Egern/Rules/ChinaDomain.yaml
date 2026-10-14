@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 13223
+# 规则统计: 13251
 
 no_resolve: true
 domain_set:
@@ -2081,6 +2081,8 @@ domain_suffix_set:
   - blackdragon.com
   - blah.me
   - blingoffice.com
+  - blkcan.cn
+  - blkcan.com
   - bllyxw.com
   - blnovel.com
   - blogchina.org
@@ -2320,6 +2322,11 @@ domain_suffix_set:
   - caocaotrip.cc
   - caocaotrip.cn
   - caocaotrip.com
+  - capcut.cn
+  - capcut.com
+  - capcutapi.com
+  - capcutapi.us
+  - capcutstatic.com
   - capturetheflag.fun
   - carbonxprogram.com
   - cardbaobao.com
@@ -3554,6 +3561,7 @@ domain_suffix_set:
   - dqf14u8573.com
   - dratio.com
   - dreamavatar.com
+  - dreamina.cn
   - drivergenius.com
   - drm-lic-dom.net
   - druqq.cn
@@ -3747,6 +3755,8 @@ domain_suffix_set:
   - edgeonevod1.net
   - edgep.net
   - edgesrv.com
+  - editorjianying.com
+  - editorjianyingk.com
   - edra5.cn
   - edu.cn
   - edu4399.com
@@ -5020,6 +5030,7 @@ domain_suffix_set:
   - hebaoi.com
   - hehecam.com
   - hehecamera.com
+  - heiguantou.cn
   - heihei.com
   - heisha.net
   - heiyan.com
@@ -5040,6 +5051,10 @@ domain_suffix_set:
   - hetu2.com
   - hetushu.com
   - hexun.com
+  - hey-can.cn
+  - hey-can.com
+  - hey-creator.cn
+  - hey-creator.com
   - heycan.com
   - heytap.cn
   - heytap.com
@@ -5951,6 +5966,8 @@ domain_suffix_set:
   - jianshu.com
   - jianshu.io
   - jianshuapi.com
+  - jianying.com
+  - jianyingmicro.com
   - jianzhi8.com
   - jiaodong.net
   - jiaoyibao.com
@@ -5973,7 +5990,10 @@ domain_suffix_set:
   - jikejia.cn
   - jikexueyuan.com
   - jilin55.com
+  - jimeng.cn
   - jimeng.com
+  - jimeng.com.cn
+  - jimengai.com.cn
   - jindidata.com
   - jingdong.com
   - jingdongjinrong.com
@@ -8588,6 +8608,7 @@ domain_suffix_set:
   - researchchina.cn
   - resouxs.com
   - restapi.amap.com
+  - retouchpics.com
   - rexpos.cn
   - rextech.cn
   - reyoo.net
@@ -10808,10 +10829,13 @@ domain_suffix_set:
   - ukoo.com.cn
   - ukve4smo9gapv.com
   - ulanzou.com
+  - ulikeapi.com
   - ulikecam.cn
   - ulikecam.com
   - ulikecam.mobi
   - ulikecam.net
+  - ulikepic.com
+  - ulikestatic.com
   - um.run
   - um0.cn
   - um1.cn
@@ -11026,6 +11050,9 @@ domain_suffix_set:
   - viyouhui.com
   - vk6oqcevmd1a.com
   - vkrtzzc.com
+  - vlabimg.com
+  - vlabstatic.com
+  - vlabvod.com
   - vlinkapi.com
   - vlms.cn
   - vmall-hw.com
@@ -11807,6 +11834,7 @@ domain_suffix_set:
   - xinghua.org.cn
   - xingread.cn
   - xingtan001.com
+  - xingtupics.com
   - xingxuanwaimai.com
   - xingyaocq.com
   - xingyaoss.com

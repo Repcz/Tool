@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 13233
+# 规则统计: 13261
 
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com
 DOMAIN,0gr4uqmtt8y41hcjsgrzdrc3s.ourdvsss.com
@@ -2076,6 +2076,8 @@ DOMAIN-SUFFIX,blackberry.com
 DOMAIN-SUFFIX,blackdragon.com
 DOMAIN-SUFFIX,blah.me
 DOMAIN-SUFFIX,blingoffice.com
+DOMAIN-SUFFIX,blkcan.cn
+DOMAIN-SUFFIX,blkcan.com
 DOMAIN-SUFFIX,bllyxw.com
 DOMAIN-SUFFIX,blnovel.com
 DOMAIN-SUFFIX,blogchina.org
@@ -2315,6 +2317,11 @@ DOMAIN-SUFFIX,caocaotravel.cc
 DOMAIN-SUFFIX,caocaotrip.cc
 DOMAIN-SUFFIX,caocaotrip.cn
 DOMAIN-SUFFIX,caocaotrip.com
+DOMAIN-SUFFIX,capcut.cn
+DOMAIN-SUFFIX,capcut.com
+DOMAIN-SUFFIX,capcutapi.com
+DOMAIN-SUFFIX,capcutapi.us
+DOMAIN-SUFFIX,capcutstatic.com
 DOMAIN-SUFFIX,capturetheflag.fun
 DOMAIN-SUFFIX,carbonxprogram.com
 DOMAIN-SUFFIX,cardbaobao.com
@@ -3549,6 +3556,7 @@ DOMAIN-SUFFIX,dpsoidf.com
 DOMAIN-SUFFIX,dqf14u8573.com
 DOMAIN-SUFFIX,dratio.com
 DOMAIN-SUFFIX,dreamavatar.com
+DOMAIN-SUFFIX,dreamina.cn
 DOMAIN-SUFFIX,drivergenius.com
 DOMAIN-SUFFIX,drm-lic-dom.net
 DOMAIN-SUFFIX,druqq.cn
@@ -3742,6 +3750,8 @@ DOMAIN-SUFFIX,edgeonevod1.com
 DOMAIN-SUFFIX,edgeonevod1.net
 DOMAIN-SUFFIX,edgep.net
 DOMAIN-SUFFIX,edgesrv.com
+DOMAIN-SUFFIX,editorjianying.com
+DOMAIN-SUFFIX,editorjianyingk.com
 DOMAIN-SUFFIX,edra5.cn
 DOMAIN-SUFFIX,edu.cn
 DOMAIN-SUFFIX,edu4399.com
@@ -5015,6 +5025,7 @@ DOMAIN-SUFFIX,healthybaike.com
 DOMAIN-SUFFIX,hebaoi.com
 DOMAIN-SUFFIX,hehecam.com
 DOMAIN-SUFFIX,hehecamera.com
+DOMAIN-SUFFIX,heiguantou.cn
 DOMAIN-SUFFIX,heihei.com
 DOMAIN-SUFFIX,heisha.net
 DOMAIN-SUFFIX,heiyan.com
@@ -5035,6 +5046,10 @@ DOMAIN-SUFFIX,henkuai.com
 DOMAIN-SUFFIX,hetu2.com
 DOMAIN-SUFFIX,hetushu.com
 DOMAIN-SUFFIX,hexun.com
+DOMAIN-SUFFIX,hey-can.cn
+DOMAIN-SUFFIX,hey-can.com
+DOMAIN-SUFFIX,hey-creator.cn
+DOMAIN-SUFFIX,hey-creator.com
 DOMAIN-SUFFIX,heycan.com
 DOMAIN-SUFFIX,heytap.cn
 DOMAIN-SUFFIX,heytap.com
@@ -5946,6 +5961,8 @@ DOMAIN-SUFFIX,jianliao.com
 DOMAIN-SUFFIX,jianshu.com
 DOMAIN-SUFFIX,jianshu.io
 DOMAIN-SUFFIX,jianshuapi.com
+DOMAIN-SUFFIX,jianying.com
+DOMAIN-SUFFIX,jianyingmicro.com
 DOMAIN-SUFFIX,jianzhi8.com
 DOMAIN-SUFFIX,jiaodong.net
 DOMAIN-SUFFIX,jiaoyibao.com
@@ -5968,7 +5985,10 @@ DOMAIN-SUFFIX,jikeiot.cloud
 DOMAIN-SUFFIX,jikejia.cn
 DOMAIN-SUFFIX,jikexueyuan.com
 DOMAIN-SUFFIX,jilin55.com
+DOMAIN-SUFFIX,jimeng.cn
 DOMAIN-SUFFIX,jimeng.com
+DOMAIN-SUFFIX,jimeng.com.cn
+DOMAIN-SUFFIX,jimengai.com.cn
 DOMAIN-SUFFIX,jindidata.com
 DOMAIN-SUFFIX,jingdong.com
 DOMAIN-SUFFIX,jingdongjinrong.com
@@ -8583,6 +8603,7 @@ DOMAIN-SUFFIX,rescdn.cn
 DOMAIN-SUFFIX,researchchina.cn
 DOMAIN-SUFFIX,resouxs.com
 DOMAIN-SUFFIX,restapi.amap.com
+DOMAIN-SUFFIX,retouchpics.com
 DOMAIN-SUFFIX,rexpos.cn
 DOMAIN-SUFFIX,rextech.cn
 DOMAIN-SUFFIX,reyoo.net
@@ -10803,10 +10824,13 @@ DOMAIN-SUFFIX,ukanshu.com
 DOMAIN-SUFFIX,ukoo.com.cn
 DOMAIN-SUFFIX,ukve4smo9gapv.com
 DOMAIN-SUFFIX,ulanzou.com
+DOMAIN-SUFFIX,ulikeapi.com
 DOMAIN-SUFFIX,ulikecam.cn
 DOMAIN-SUFFIX,ulikecam.com
 DOMAIN-SUFFIX,ulikecam.mobi
 DOMAIN-SUFFIX,ulikecam.net
+DOMAIN-SUFFIX,ulikepic.com
+DOMAIN-SUFFIX,ulikestatic.com
 DOMAIN-SUFFIX,um.run
 DOMAIN-SUFFIX,um0.cn
 DOMAIN-SUFFIX,um1.cn
@@ -11021,6 +11045,9 @@ DOMAIN-SUFFIX,vivotc.com
 DOMAIN-SUFFIX,viyouhui.com
 DOMAIN-SUFFIX,vk6oqcevmd1a.com
 DOMAIN-SUFFIX,vkrtzzc.com
+DOMAIN-SUFFIX,vlabimg.com
+DOMAIN-SUFFIX,vlabstatic.com
+DOMAIN-SUFFIX,vlabvod.com
 DOMAIN-SUFFIX,vlinkapi.com
 DOMAIN-SUFFIX,vlms.cn
 DOMAIN-SUFFIX,vmall-hw.com
@@ -11802,6 +11829,7 @@ DOMAIN-SUFFIX,xindongdinglv.com
 DOMAIN-SUFFIX,xinghua.org.cn
 DOMAIN-SUFFIX,xingread.cn
 DOMAIN-SUFFIX,xingtan001.com
+DOMAIN-SUFFIX,xingtupics.com
 DOMAIN-SUFFIX,xingxuanwaimai.com
 DOMAIN-SUFFIX,xingyaocq.com
 DOMAIN-SUFFIX,xingyaoss.com

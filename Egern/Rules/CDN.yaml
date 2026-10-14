@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4764
+# 规则统计: 4765
 
 domain_set:
   - 0x0.st
@@ -1737,6 +1737,7 @@ domain_set:
   - images.klipfolio.com
   - images.loox.io
   - images.macrumors.com
+  - images.macworld.co.uk
   - images.mathworks.com
   - images.mattel.net
   - images.microcms-assets.io
