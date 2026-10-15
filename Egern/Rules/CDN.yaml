@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4765
+# 规则统计: 4767
 
 domain_set:
   - 0x0.st
@@ -861,6 +861,7 @@ domain_set:
   - cdn.plus500.com
   - cdn.plyr.io
   - cdn.pricespider.com
+  - cdn.priv.center
   - cdn.privacy-mgmt.com
   - cdn.privacy.com
   - cdn.privacy.paramount.com
@@ -1270,6 +1271,7 @@ domain_set:
   - css.createsend1.com
   - css.yymanhua.com
   - curl.se
+  - customer-first-focus.b-cdn.net
   - cw-image-resizer.cwg.tw
   - cwsimages.ingramcontent.com
   - d.newsweek.com

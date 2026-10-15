@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4765
+# 规则统计: 4767
 
 HOST,0x0.st,CDN
 HOST,3dna.nationbuilder.com,CDN
@@ -860,6 +860,7 @@ HOST,cdn.plu.mx,CDN
 HOST,cdn.plus500.com,CDN
 HOST,cdn.plyr.io,CDN
 HOST,cdn.pricespider.com,CDN
+HOST,cdn.priv.center,CDN
 HOST,cdn.privacy-mgmt.com,CDN
 HOST,cdn.privacy.com,CDN
 HOST,cdn.privacy.paramount.com,CDN
@@ -1269,6 +1270,7 @@ HOST,css.comicbz.com,CDN
 HOST,css.createsend1.com,CDN
 HOST,css.yymanhua.com,CDN
 HOST,curl.se,CDN
+HOST,customer-first-focus.b-cdn.net,CDN
 HOST,cw-image-resizer.cwg.tw,CDN
 HOST,cwsimages.ingramcontent.com,CDN
 HOST,d.newsweek.com,CDN
