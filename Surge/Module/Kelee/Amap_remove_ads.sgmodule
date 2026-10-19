@@ -1,51 +1,67 @@
 #!name=高德地图去广告
-#!desc=过滤高德地图开屏广告、各页面推广，精简我的页面。\n@RuCu6, @kelv1n1n, @可莉🅥
+#!desc=过滤高德地图开屏广告、各页面推广，精简我的页面。\n@可莉🅥
 #!category=⚙️ ▸ Kelee Mode
 #!URL=https://kelee.one/Tool/Loon/Lpx/Amap_remove_ads.lpx
-#!date=2026-10-02 13:57:49
-
-[Rule]
-DOMAIN,amap-aos-info-nogw.amap.com,REJECT,extended-matching,pre-matching
-DOMAIN,free-aos-cdn-image.amap.com,REJECT,extended-matching,pre-matching
-DOMAIN-SUFFIX,v.smtcdns.com,REJECT,extended-matching,pre-matching
+#!date=2026-10-19 09:00:57
 
 [Body Rewrite]
-http-response-jq (?i)^https://m5\.amap\.com/ws/shield/search_business/process/marketingOperationStructured\? 'delpaths([["data","commonMaterial"]])'
-http-response-jq (?i)^https://m5\.amap\.com/ws/shield/search_business/process/marketingOperationStructured\? 'delpaths([["data","tipsOperationLocation"]])'
-http-response-jq (?i)^https://m5\.amap\.com/ws/shield/search_business/process/marketingOperationStructured\? 'delpaths([["data","resourcePlacement"]])'
-http-response-jq (?i)^https://m5\.amap\.com/ws/shield/search_poi/homepage\? 'delpaths([["history_tags"]])'
-http-response-jq (?i)^https://m5-zb\.amap\.com/ws/sharedtrip/taxi/order_detail_car_tips\? 'delpaths([["data","carTips","data","popupInfo"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","adStatementConfig"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","adCustomerRetainArchitecture"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","adImEntryConfig"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","adVenueConfig"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","adPerfSwitch"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","EndNaviC3AdCard"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","infoCpcReport"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","hotsaleConfig"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","marketing_resource_config"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","coupon_risk_asac"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","commonCouponSceneLog"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","sug_coupon_opt"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","giftEntryConfig"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","splashscreen"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","SplashScreenControl"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","splashview_config"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","feedback_banner"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","TrainOrderBanner"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","nearby_business_popup"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","shortcut_popup_frequency"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","tel_retention_popup"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","hotel_activity"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","taxi_activity"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","hotel_privilege"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","sportsActivityConfig"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","activity_qingke_contry_control"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","920bestwishes"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","custom_consultdata","widget_guide"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","free_ride"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","homepage_resource_config"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","home_message_guide"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","hotel_tipsicon"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","sur_bar"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","nearby_map_entry_guide"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","comment_info"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","small_biz_index"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","small_biz_fun"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","setpagesearch"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","wallet"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/dsp/profile/index/nodefaasv3\? 'del(.data.tipData, .data.wallet) | .data.cardList |= map(select(.dataKey == "MineNewFootprintCard" or .dataKey == "MineNewBEntranceCardV4")) | (.data.cardList[] | select(.dataKey == "MineNewBEntranceCardV4") | .content.entranceList_1) |= map(select(.id == 7 or .id == 8 or .id == 10 or .id == 17)) | (.data.cardList[] | select(.dataKey == "MineNewBEntranceCardV4") | .content.entranceList_2) |= map(select(.id == 32 or .id == 4 or .id == 9 or .id == 16 or .id == 14))'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/scene/recommend\? 'delpaths([["$","data","shadingWords"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/scene/recommend\? '.data.toolsRecommend.data.default |= map(select(.id == 102 or .id == 103 or .id == 106 or .id == 151))'
+http-response-jq (?i)^https://sns\.amap\.com/ws/opc/tools/list\? '(if (type == "object") and ((.data | type) == "object") and ((.data.category | type) == "array") then (.data.category[] | select(type == "object") | .tools | select(type == "array") | .[] | select(type == "object")) |= del(.tips) else . end) | (if (type == "object") and ((.data | type) == "object") and ((.data.category | type) == "array") then (.data.category[] | select(type == "object") | .tools | select(type == "array")) |= map(select(if type == "object" then (((.id | type) == "string" and .id == "547") or ((.id | type) == "number" and .id == 547)) | not else true end)) else . end)'
+http-response-jq (?i)^https://m5-zb\.amap\.com/ws/boss/car/order/content_info\? 'delpaths([["data","lubanData","skin"]])'
+http-response-jq (?i)^https://m5-zb\.amap\.com/ws/boss/car/order/content_info\? 'delpaths([["data","lubanData","kingToolBoxBubble"]])'
+http-response-jq (?i)^https://m5-zb\.amap\.com/ws/boss/car/order/content_info\? 'delpaths([["data","lubanData","popup"]])'
+http-response-jq (?i)^https://m5-zb\.amap\.com/ws/boss/car/order/content_info\? 'def on_path($p; $t; f): if (try (getpath($p) | type == $t) catch false) then getpath($p) |= f else . end; (on_path(["data","lubanData","kingToolSort","dataList"]; "array"; map(if type == "object" then (if ((try (.biz | type) catch null) == "object" and (.biz | has("kingToolIdList"))) then (.biz.kingToolIdList |= (if type == "array" then map(select(IN("dache_toolbox_GDIntercity","dache_toolbox_hitch","dache_toolbox_chauffeur","dache_toolbox_quality","dache_toolbox_charterCar"))) else . end)) else . end) else . end))) | on_path(["data","lubanData","kingToolBox","dataList"]; "array"; map(select(if type == "object" then ((try (.biz | type) catch null) == "object" and (try (.biz.id | IN("dache_toolbox_GDIntercity","dache_toolbox_hitch","dache_toolbox_chauffeur","dache_toolbox_quality","dache_toolbox_charterCar")) catch false)) else false end)))'
+http-response-jq (?i)^https://m5-zb\.amap\.com/ws/amap/hitch/passenger/content_info\? 'delpaths([["data","lubanData","banner"]])'
+http-response-jq (?i)^https://center\.amap\.com/ws/amc/server/conv/raise_list\? 'def on_path($p; $t; f): if (try (getpath($p) | type == $t) catch false) then getpath($p) |= f else . end; on_path(["data","dataList"]; "array"; map(select(if type == "object" then (has("categoryId") or ((.data | type) == "object" and .data.id == "M_100007")) else false end)))'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/scene/recommend\? 'delpaths([["data","wordInbox"]])'
 
 [Map Local]
-(?i)^https://m5\.amap\.com/ws/shield/search/new_hotword\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-(?i)^https://m5\.amap\.com/ws/faas/amap-navigation/card-service-(?:car-end|route-plan) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-(?i)^https://m5\.amap\.com/ws/shield/search_poi/tips_adv\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-(?i)^https://oss\.amap\.com/ws/banner/lists/\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-(?i)^https://ai\.amap\.com/v1/ai_rec/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-(?i)^https://m5\.amap\.com/ws/aos/main/page/product/list\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-(?i)^https://m5\.amap\.com/ws/faas/amap-navigation/(?:main-page-assets|main-page-location|ridewalk-end-fc|usr-profile-fc/homeV2) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-(?i)^https://m5\.amap\.com/ws/(?:mapapi/hint_text/offline_data|message/notice/list|shield/search/new_hotword) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-(?i)^https://m5\.amap\.com/ws/shield/scene/recommend\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-(?i)^https://m5\.amap\.com/ws/valueadded/weather/v2\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-(?i)^https://sns\.amap\.com/ws/msgbox/pull_mp\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-(?i)^https://m5-zb\.amap\.com/ws/boss/(?:order/car/(?:feedback/get_card_questions|feedback/viptips|king_toolbox_car_bubble|remark/satisfactionConf|rights_information)|tips/onscene_visual_optimization) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-(?i)^https://m5-zb\.amap\.com/ws/boss/(?:pay/web/paySuccess/info/request|transportation/diversion/resource/driving) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-[Script]
-移除路线规划推广 = type=http-response,pattern=(?i)^https://m5\.amap\.com/ws/aos/perception/publicTravel/beforeNavi\?,script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
-移除路线规划_导航结束页推广 = type=http-response,pattern=(?i)^https://m5\.amap\.com/ws/bus/plan/integrate\?,script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
-移除导航详情页底部酒店_处理附近页 = type=http-response,pattern=(?i)^https://m5\.amap\.com/ws/c3frontend/(?:af-(?:hotel|launch)/page/main|af-nearby/nearby),script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
-移除路线规划推广_2 = type=http-response,pattern=(?i)^https://m5\.amap\.com/ws/perception/drive/(?:routeInfo|routePlan),script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
-移除搜索栏推广 = type=http-response,pattern=(?i)^https://m5\.amap\.com/ws/shield/search_bff/hotword\?,script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
-移除搜索详情页推广 = type=http-response,pattern=(?i)^https://m5\.amap\.com/ws/shield/search_poi/(?:mps|search/sp|sug|tips_operation_location),script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
-移除首页推广 = type=http-response,pattern=(?i)^https://m5\.amap\.com/ws/faas/amap-navigation/(?:card-service-plan-home|main-page),script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
-移除首页推广_2 = type=http-response,pattern=(?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\?,script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
-移除我的页面推广 = type=http-response,pattern=(?i)^https://m5\.amap\.com/ws/shield/dsp/profile/index/nodefaasv3\?,script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
-移除附近页推广 = type=http-response,pattern=(?i)^https://m5\.amap\.com/ws/shield/search/nearbyrec_smart\?,script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
-移除开屏广告 = type=http-response,pattern=(?i)^https://m5\.amap\.com/ws/valueadded/alimama/splash_screen\?,script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
-移除打车页推广卡片_弹窗 = type=http-response,pattern=(?i)^https://m5-zb\.amap\.com/ws/boss/(?:car/order/content_info|order_web/friendly_information),script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
-移除打车页红点角标_天气图标 = type=http-response,pattern=(?i)^https://m5-zb\.amap\.com/ws/promotion-web/resource(/home)?\?,script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
-移除导航详情页推广 = type=http-response,pattern=(?i)^https://(?:info|m5)\.amap\.com/ws/shield/search/(?:common/coupon/info|poi/detail),script-path=https://kelee.one/Resource/JavaScript/Amap/Amap_remove_ads.js,requires-body=true
+(?i)^https://m5\.amap\.com/ws/faas/amap-navigation/main-page-assets\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+(?i)^https://m5\.amap\.com/ws/faas/amap-navigation/main-page-aiqs\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+(?i)^https://ai\.amap\.com/v1/ai_rec/home_qs\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+(?i)^https://m5-zb\.amap\.com/ws/promotion-web/resource(/home)?\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+(?i)^https://m5\.amap\.com/ws/info_bff/rankingCard\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 [MITM]
-hostname = %APPEND% *.amap.com
+hostname = %APPEND% m5.amap.com, ai.amap.com, m5-zb.amap.com, center.amap.com, sns.amap.com

@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 7609
+# 规则统计: 7610
 
 HOST,ccmdl.adobe.com,ProxyGFW
 HOST,cloud.oracle.com,ProxyGFW
@@ -4556,6 +4556,7 @@ HOST-SUFFIX,nordvpn.com,ProxyGFW
 HOST-SUFFIX,nos.nl,ProxyGFW
 HOST-SUFFIX,note.com,ProxyGFW
 HOST-SUFFIX,notepad-plus-plus.org,ProxyGFW
+HOST-SUFFIX,notion.com,ProxyGFW
 HOST-SUFFIX,notion.site,ProxyGFW
 HOST-SUFFIX,notion.so,ProxyGFW
 HOST-SUFFIX,nottinghampost.com,ProxyGFW

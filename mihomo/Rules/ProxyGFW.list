@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 7608
+# 规则统计: 7609
 
 DOMAIN,ccmdl.adobe.com
 DOMAIN,cloud.oracle.com
@@ -4556,6 +4556,7 @@ DOMAIN-SUFFIX,nordvpn.com
 DOMAIN-SUFFIX,nos.nl
 DOMAIN-SUFFIX,note.com
 DOMAIN-SUFFIX,notepad-plus-plus.org
+DOMAIN-SUFFIX,notion.com
 DOMAIN-SUFFIX,notion.site
 DOMAIN-SUFFIX,notion.so
 DOMAIN-SUFFIX,nottinghampost.com

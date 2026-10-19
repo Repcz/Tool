@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 7609
+# 规则统计: 7610
 
 no_resolve: true
 domain_set:
@@ -4588,6 +4588,7 @@ domain_suffix_set:
   - nos.nl
   - note.com
   - notepad-plus-plus.org
+  - notion.com
   - notion.site
   - notion.so
   - nottinghampost.com
