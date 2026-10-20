@@ -1,8 +1,8 @@
 #!name=高德地图去广告
-#!desc=过滤高德地图开屏广告、各页面推广，精简我的页面。\n@可莉🅥
+#!desc=移除开屏广告、首页推荐、搜索推荐、打车广告、地点推荐及广告，精简我的页面。\n@可莉🅥
 #!category=⚙️ ▸ Kelee Mode
 #!URL=https://kelee.one/Tool/Loon/Lpx/Amap_remove_ads.lpx
-#!date=2026-10-19 09:00:57
+#!date=2026-10-20 12:06:08
 
 [Body Rewrite]
 http-response-jq (?i)^https://m5\.amap\.com/ws/shield/frogserver/aocs/updatable/1\? 'delpaths([["data","adStatementConfig"]])'
@@ -48,20 +48,27 @@ http-response-jq (?i)^https://m5\.amap\.com/ws/shield/dsp/profile/index/nodefaas
 http-response-jq (?i)^https://m5\.amap\.com/ws/shield/scene/recommend\? 'delpaths([["$","data","shadingWords"]])'
 http-response-jq (?i)^https://m5\.amap\.com/ws/shield/scene/recommend\? '.data.toolsRecommend.data.default |= map(select(.id == 102 or .id == 103 or .id == 106 or .id == 151))'
 http-response-jq (?i)^https://sns\.amap\.com/ws/opc/tools/list\? '(if (type == "object") and ((.data | type) == "object") and ((.data.category | type) == "array") then (.data.category[] | select(type == "object") | .tools | select(type == "array") | .[] | select(type == "object")) |= del(.tips) else . end) | (if (type == "object") and ((.data | type) == "object") and ((.data.category | type) == "array") then (.data.category[] | select(type == "object") | .tools | select(type == "array")) |= map(select(if type == "object" then (((.id | type) == "string" and .id == "547") or ((.id | type) == "number" and .id == 547)) | not else true end)) else . end)'
+http-response-jq (?i)^https://info\.amap\.com/ws/c3frontend/af-search/search\? 'if (try (.data.modules.quickLink.data.list | type) catch null) == "array" then .data.modules.quickLink.data.list |= map(if type == "object" and (.badge | type) == "object" and (.badge | has("text")) then .badge.text = "" else . end) else . end'
 http-response-jq (?i)^https://m5-zb\.amap\.com/ws/boss/car/order/content_info\? 'delpaths([["data","lubanData","skin"]])'
 http-response-jq (?i)^https://m5-zb\.amap\.com/ws/boss/car/order/content_info\? 'delpaths([["data","lubanData","kingToolBoxBubble"]])'
 http-response-jq (?i)^https://m5-zb\.amap\.com/ws/boss/car/order/content_info\? 'delpaths([["data","lubanData","popup"]])'
 http-response-jq (?i)^https://m5-zb\.amap\.com/ws/boss/car/order/content_info\? 'def on_path($p; $t; f): if (try (getpath($p) | type == $t) catch false) then getpath($p) |= f else . end; (on_path(["data","lubanData","kingToolSort","dataList"]; "array"; map(if type == "object" then (if ((try (.biz | type) catch null) == "object" and (.biz | has("kingToolIdList"))) then (.biz.kingToolIdList |= (if type == "array" then map(select(IN("dache_toolbox_GDIntercity","dache_toolbox_hitch","dache_toolbox_chauffeur","dache_toolbox_quality","dache_toolbox_charterCar"))) else . end)) else . end) else . end))) | on_path(["data","lubanData","kingToolBox","dataList"]; "array"; map(select(if type == "object" then ((try (.biz | type) catch null) == "object" and (try (.biz.id | IN("dache_toolbox_GDIntercity","dache_toolbox_hitch","dache_toolbox_chauffeur","dache_toolbox_quality","dache_toolbox_charterCar")) catch false)) else false end)))'
 http-response-jq (?i)^https://m5-zb\.amap\.com/ws/amap/hitch/passenger/content_info\? 'delpaths([["data","lubanData","banner"]])'
 http-response-jq (?i)^https://center\.amap\.com/ws/amc/server/conv/raise_list\? 'def on_path($p; $t; f): if (try (getpath($p) | type == $t) catch false) then getpath($p) |= f else . end; on_path(["data","dataList"]; "array"; map(select(if type == "object" then (has("categoryId") or ((.data | type) == "object" and .data.id == "M_100007")) else false end)))'
-http-response-jq (?i)^https://m5\.amap\.com/ws/shield/scene/recommend\? 'delpaths([["data","wordInbox"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/shield/scene/recommend\? '(if (try (.data.shadingWords.data.regions.content | type == "array") catch false) then .data.shadingWords.data.regions.content |= map(select(IN("quickLink","history","searchFind"))) else . end) | (if (try (.data.shadingWords.data.modules | type == "object") catch false) then .data.shadingWords.data.modules |= with_entries(select(.key == "searchFind")) else . end)'
+http-response-jq (?i)^https://info\.amap\.com/ws/shield/search_business/process/middleLayer/sug\? '.tip_list |= map(select(.tip.task_tag == "common_content_general" or .tip.task_tag == "sp"))'
+http-response-jq (?i)^https://info\.amap\.com/ws/shield/search/poi/detail\? 'delpaths([["data","modules","combineReviews","data","write_comment","btnRightTag"]])'
+http-response-jq (?i)^https://info\.amap\.com/ws/shield/search/poi/detail\? 'delpaths([["data","modules","combineReviews","data","write_comment","title"]])'
+http-response-jq (?i)^https://m5\.amap\.com/ws/smartui/near_recommend\? 'delpaths([["data","operation_activity"]])'
 
 [Map Local]
+(?i)^https://m5\.amap\.com/ws/valueadded/alimama/splash_screen\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 (?i)^https://m5\.amap\.com/ws/faas/amap-navigation/main-page-assets\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 (?i)^https://m5\.amap\.com/ws/faas/amap-navigation/main-page-aiqs\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 (?i)^https://ai\.amap\.com/v1/ai_rec/home_qs\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 (?i)^https://m5-zb\.amap\.com/ws/promotion-web/resource(/home)?\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 (?i)^https://m5\.amap\.com/ws/info_bff/rankingCard\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+(?i)^https://m5\.amap\.com/ws/shield/search_business/process/marketingOperationStructured\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 [MITM]
-hostname = %APPEND% m5.amap.com, ai.amap.com, m5-zb.amap.com, center.amap.com, sns.amap.com
+hostname = %APPEND% m5.amap.com, ai.amap.com, m5-zb.amap.com, center.amap.com, sns.amap.com, info.amap.com
