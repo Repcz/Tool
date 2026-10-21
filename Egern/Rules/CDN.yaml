@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4773
+# 规则统计: 4775
 
 domain_set:
   - 0x0.st
@@ -2216,6 +2216,7 @@ domain_set:
   - melonbooks.akamaized.net
   - meteorclient.com
   - metrics.kapa.ai
+  - metrics.manus.im
   - mgx-backend-cdn.metadl.com
   - micro.rubiconproject.com
   - mintlify.b-cdn.net
@@ -2776,6 +2777,7 @@ domain_set:
   - static-mh.content.disney.io
   - static-oforms.onlyoffice.com
   - static-overlay.ubisoft.com
+  - static-page.tp-link.com
   - static-production.npmjs.com
   - static-r.kamihimeproject.net
   - static-r2.gear4music.com
