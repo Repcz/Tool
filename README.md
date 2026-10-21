@@ -53,14 +53,14 @@ rules:
     policy: 国际媒体
 ```
 
-```json
+```jsonc
 // sing-box 示例
 {
   "rule_set": [
     {
       "tag": "netflix",
       "type": "remote",
-      "format": "source",
+      "format": "binary",
       "url": "https://github.com/Repcz/Tool/raw/X/sing-box/Rules/Netflix.srs"
     }
   ]
@@ -69,7 +69,7 @@ rules:
 
 自 `sing-box 1.14.0-alpha.46` 起: `tag` 也接受一组标签，用于一次定义多个共享其他选项的规则集。
 
-```json
+```jsonc
 // sing-box 多 tag 示例
 {
   "rule_set": [
