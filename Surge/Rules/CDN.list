@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4775
+# 规则统计: 4777
 
 DOMAIN,0x0.st
 DOMAIN,3dna.nationbuilder.com
@@ -4569,7 +4569,9 @@ DOMAIN-SUFFIX,tpucdn.com
 DOMAIN-SUFFIX,trackerslist.com
 DOMAIN-SUFFIX,trafficdeposit.com
 DOMAIN-SUFFIX,transcend-cdn.com
+DOMAIN-SUFFIX,travel-assets.com
 DOMAIN-SUFFIX,trustless-gateway.link
+DOMAIN-SUFFIX,trvl-media.com
 DOMAIN-SUFFIX,ttcache.com
 DOMAIN-SUFFIX,ttl.sh
 DOMAIN-SUFFIX,ttwstatic.com
