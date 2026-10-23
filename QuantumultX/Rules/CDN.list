@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4777
+# 规则统计: 4785
 
 HOST,0x0.st,CDN
 HOST,3dna.nationbuilder.com,CDN
@@ -121,7 +121,9 @@ HOST,assets-next.matters.news,CDN
 HOST,assets-next.mattersprotocol.io,CDN
 HOST,assets-proxy.anthropic.com,CDN
 HOST,assets-s3-us-east-1.ceros.com,CDN
+HOST,assets-static.99.co,CDN
 HOST,assets-themes.chess.com,CDN
+HOST,assets-v2.99.co,CDN
 HOST,assets-v2.i-scmp.com,CDN
 HOST,assets-v2.super.so,CDN
 HOST,assets-www.readspeaker.com,CDN
@@ -203,6 +205,7 @@ HOST,assets.getpostman.com,CDN
 HOST,assets.github.dev,CDN
 HOST,assets.goat.com,CDN
 HOST,assets.gorgias.help,CDN
+HOST,assets.grab.com,CDN
 HOST,assets.grammarly.com,CDN
 HOST,assets.grooveapps.com,CDN
 HOST,assets.guim.co.uk,CDN
@@ -1138,6 +1141,7 @@ HOST,celebrities-small.porndig.com,CDN
 HOST,certificates.godaddy.com,CDN
 HOST,cf-assets.www.cloudflare.com,CDN
 HOST,cf-images.ap-northeast-1.prod.boltdns.net,CDN
+HOST,cf-images.ap-southeast-1.prod.boltdns.net,CDN
 HOST,cf-images.us-east-1.prod.boltdns.net,CDN
 HOST,cf.channel.io,CDN
 HOST,cf.eip.telegraph.co.uk,CDN
@@ -2347,6 +2351,7 @@ HOST,pic.cangku.moe,CDN
 HOST,pic.imge.cc,CDN
 HOST,pic.macked.app,CDN
 HOST,pic.onlinewebfonts.com,CDN
+HOST,pic2.99.co,CDN
 HOST,piccdn.7mmtv.sx,CDN
 HOST,pics.dmm.co.jp,CDN
 HOST,pics.hentai.name,CDN
@@ -2614,6 +2619,7 @@ HOST,screenshots.codesandbox.io,CDN
 HOST,screenshots.debian.net,CDN
 HOST,screenshots.downloadtorrentfile.com,CDN
 HOST,screenshots.webflow.com,CDN
+HOST,scribe-web-sdk.grab.com,CDN
 HOST,script.custobar.com,CDN
 HOST,scripts.dailymail.co.uk,CDN
 HOST,scripts.scriptwrapper.com,CDN
@@ -3069,6 +3075,7 @@ HOST,static1.e621.net,CDN
 HOST,static1.lottiefiles.com,CDN
 HOST,static1.smartbear.co,CDN
 HOST,static1.squarespace.com,CDN
+HOST,static1.straitstimes.com.sg,CDN
 HOST,static10.lottiefiles.com,CDN
 HOST,static2.avg.com,CDN
 HOST,static2.giroditalia.it,CDN
@@ -4745,6 +4752,7 @@ HOST-WILDCARD,cdn?-dl.pornhost.com,CDN
 HOST-WILDCARD,cdn?.18girlssex.com,CDN
 HOST-WILDCARD,cdn?.mikuclub.fun,CDN
 HOST-WILDCARD,cdns.*.gigya.com,CDN
+HOST-WILDCARD,cf-images.*.prod.boltdns.net,CDN
 HOST-WILDCARD,chunk-*.mux.com,CDN
 HOST-WILDCARD,fastly-*.allmovie.com,CDN
 HOST-WILDCARD,file?.mikuclub.fun,CDN

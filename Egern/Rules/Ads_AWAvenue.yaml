@@ -1,5 +1,5 @@
 # 规则名称: Ads_AWAvenue
-# 规则统计: 958
+# 规则统计: 969
 
 domain_suffix_set:
   - 1500020991.vodplayer.wxamedia.com
@@ -14,6 +14,8 @@ domain_suffix_set:
   - abtest-ch.snssdk.com
   - ad-api.4pyun.com
   - ad-cdn.qingting.fm
+  - ad-cmp.hismarttv.com
+  - ad-download.hismarttv.com
   - ad-files.4pyun.com
   - ad-scope.com
   - ad-scope.com.cn
@@ -295,6 +297,7 @@ domain_suffix_set:
   - bj-td-menta-01-callback.advlion.com
   - bj.ad.track.66mobi.com
   - books-analytics-events.apple.com
+  - boost-cmp.hismarttv.com
   - bootpreload.uve.weibo.com
   - brandadsstatic.vivo.com.cn
   - browser.events.data.msn.cn
@@ -401,6 +404,7 @@ domain_suffix_set:
   - fxgate.baidu.com
   - g-adnet.hiaiabc.com
   - g-staic.ganjingworld.com
+  - g.cn.miaozhen.com
   - g.dtv.cn.miaozhen.com
   - g.fancyapi.com
   - g2.ganjing.world
@@ -476,6 +480,7 @@ domain_suffix_set:
   - img-x.jd.com
   - img.adnyg.com.w.kunlungr.com
   - img2.360buyimg.com
+  - imp-cmp.hismarttv.com
   - impression-asia.chinaliftoff.io
   - impression-asia.liftoff.io
   - impression.appsflyer.com
@@ -522,6 +527,7 @@ domain_suffix_set:
   - lives.l.ott.video.qq.com
   - livewebbs2pcdn.msstatic.com
   - lm10111.jtrincc.cn
+  - loading-cmp.hismarttv.com
   - log-api-mn.huxiu.com
   - log-api.huxiu.com
   - log-api.pangolin-sdk-toutiao-b.com
@@ -611,6 +617,7 @@ domain_suffix_set:
   - ms4.applovin.com
   - ms4.applvn.com
   - msdk.voiceads.cn
+  - msg-cmp.hismarttv.com
   - mssdk.volces.com
   - mssdk.zijieapi.com
   - mtj.baidu.com
@@ -660,6 +667,7 @@ domain_suffix_set:
   - pagead2.googleadservices.com
   - pagead2.googlesyndication.com
   - pangolin-sdk-toutiao-b.com
+  - paster-cmp.hismarttv.com
   - pay.sboot.cn
   - pcdn.xmcdn.com
   - pcdn.yximgs.com
@@ -689,6 +697,7 @@ domain_suffix_set:
   - qn-cdnfile1pcdn.msstatic.com
   - qqdata.ab.qq.com
   - qzs.gdtimg.com
+  - recmd-cmp.hismarttv.com
   - recommend-drcn.hms.dbankcloud.cn
   - report.dxunion.cn
   - report.tencentmusic.com
@@ -699,6 +708,7 @@ domain_suffix_set:
   - res2.hubcloud.com.cn
   - res3.hubcloud.com.cn
   - resolve.umeng.com
+  - resource-cmp.hismarttv.com
   - review.gdtimg.com
   - rlog.popin.cc
   - rms-drcn.platform.dbankcloud.cn
@@ -894,6 +904,7 @@ domain_suffix_set:
   - v2-ad.video.yximgs.com
   - v2-api-channel-launcher.hismarttv.com
   - v2.gdt.qq.com
+  - v2.reachmax.cn
   - v2mi.gdt.qq.com
   - v3-ad.video.yximgs.com
   - v3.gdt.qq.com
