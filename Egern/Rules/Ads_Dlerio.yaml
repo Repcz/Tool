@@ -1,5 +1,5 @@
 # 规则名称: Ads_Dlerio
-# 规则统计: 7255
+# 规则统计: 7257
 
 no_resolve: true
 domain_set:
@@ -1576,6 +1576,7 @@ domain_suffix_set:
   - bobo.163.com
   - borsendental.com
   - bosiwangzi.cn
+  - bouncex.net
   - box.anchorfree.net
   - boxercrazy.org
   - boxshows.com
@@ -6642,6 +6643,7 @@ domain_suffix_set:
   - wjguc.com
   - wka8.com
   - wkanc.com
+  - wknd.ai
   - wl.51taifu.com
   - wl.eastlady.cn
   - wlkpa.cn

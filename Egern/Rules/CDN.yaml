@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4785
+# 规则统计: 4790
 
 domain_set:
   - 0x0.st
@@ -616,6 +616,7 @@ domain_set:
   - cdn.candu.ai
   - cdn.candy.ai
   - cdn.candycode.com
+  - cdn.capcom-unity.com
   - cdn.casestudies.svc.ui.com
   - cdn.casetify.com
   - cdn.catch.dmm.co.jp
@@ -870,6 +871,7 @@ domain_set:
   - cdn.privacy.paramount.com
   - cdn.prod.ext.web.purview.azure.com
   - cdn.prod.www.spiegel.de
+  - cdn.promo.capcomusa.com
   - cdn.promotekit.com
   - cdn.prowritingaid.com
   - cdn.quadpay.com
@@ -1667,6 +1669,7 @@ domain_set:
   - image.dooo.ng
   - image.email.microsoftemail.com
   - image.freepik.com
+  - image.gameapps.hk
   - image.goat.com
   - image.gyutto.com
   - image.gyutto.jp
@@ -2834,6 +2837,7 @@ domain_set:
   - static.bytepan.com
   - static.c-spanvideo.org
   - static.canva.com
+  - static.capcom.com
   - static.captcha-delivery.com
   - static.captcha.awswaf.com
   - static.carfax.com
@@ -3042,6 +3046,7 @@ domain_set:
   - static.tp-link.com
   - static.tradingview.com
   - static.tronscan.org
+  - static.truemed.com
   - static.tryprofound.com
   - static.tumblr.com
   - static.tvtropes.org
