@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 13251
+# 规则统计: 13252
 
 no_resolve: true
 domain_set:
@@ -2326,6 +2326,7 @@ domain_suffix_set:
   - capcut.com
   - capcutapi.com
   - capcutapi.us
+  - capcutcdn-us.com
   - capcutstatic.com
   - capturetheflag.fun
   - carbonxprogram.com

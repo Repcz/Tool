@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 13251
+# 规则统计: 13252
 
 HOST,0gr4uqmtt8y41hcjsgrzdrc31.ourdvsss.com,ChinaDomain
 HOST,0gr4uqmtt8y41hcjsgrzdrc3s.ourdvsss.com,ChinaDomain
@@ -2321,6 +2321,7 @@ HOST-SUFFIX,capcut.cn,ChinaDomain
 HOST-SUFFIX,capcut.com,ChinaDomain
 HOST-SUFFIX,capcutapi.com,ChinaDomain
 HOST-SUFFIX,capcutapi.us,ChinaDomain
+HOST-SUFFIX,capcutcdn-us.com,ChinaDomain
 HOST-SUFFIX,capcutstatic.com,ChinaDomain
 HOST-SUFFIX,capturetheflag.fun,ChinaDomain
 HOST-SUFFIX,carbonxprogram.com,ChinaDomain
