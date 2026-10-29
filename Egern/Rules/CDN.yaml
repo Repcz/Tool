@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4775
+# 规则统计: 4777
 
 domain_set:
   - 0x0.st
@@ -1970,6 +1970,7 @@ domain_set:
   - imgsrc.dmm.com
   - imgsrv.crunchyroll.com
   - imgssl.constantcontact.com
+  - imgur.la
   - import-cdn.default.com
   - ims.windy.com
   - info.cloudflare.com
@@ -4489,6 +4490,7 @@ domain_suffix_set:
   - static.gartner.com
   - static.mega.co.nz
   - static.microsoft
+  - static.pub
   - static.skymavis.com
   - static2cdn.hubspot.com
   - statically.io
