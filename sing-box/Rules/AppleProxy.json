@@ -4,6 +4,8 @@
     {
       "domain": [
         "api-glb-sea.smoot.apple.com",
+        "apple-relay.apple.com",
+        "apple-relay.fastly-edge.com",
         "apple.comscoreresearch.com",
         "books.itunes.apple.com",
         "cdn.apple-cloudkit.com",
@@ -14,11 +16,15 @@
         "docs-assets.developer.apple.com",
         "gspe1-ssl.ls.apple.com",
         "hls-svod.itunes.apple.com",
+        "hls.itunes.apple.com",
         "itunes.apple.com",
         "js-cdn.music.apple.com",
         "lookup-api.apple.com",
+        "mask-api.fe.apple-dns.net",
         "mask-api.icloud.com",
         "mask-h2.icloud.com",
+        "mask-t.apple-dns.net",
+        "mask.apple-dns.net",
         "mask.icloud.com",
         "news-assets.apple.com",
         "news-client.apple.com",
@@ -34,23 +40,49 @@
     },
     {
       "domain_suffix": [
+        "aaplimg.com",
+        "apple-cloudkit.com",
         "apple-dns.net",
+        "apple-mapkit.com",
+        "apple.co",
+        "apple.com",
         "apple.news",
         "apps.apple.com",
         "appsto.re",
+        "appstore.com",
         "audio-ssl.itunes.apple.com",
         "blobstore.apple.com",
         "cdn-apple.com",
         "digicert.com",
         "hls-amt.itunes.apple.com",
         "hls.itunes.apple.com",
+        "icloud-content.com",
+        "icloud.com",
+        "itunes.com",
+        "me.com",
         "ocsp.apple.com",
+        "organicfruitapps.com",
+        "push-apple.com.akadns.net",
+        "safebrowsing.apple",
         "tv.apple.com"
       ]
     },
     {
+      "ip_cidr": [
+        "17.0.0.0/8"
+      ]
+    },
+    {
       "process_name": [
-        "LookupViewService"
+        "CoreLocationAgent",
+        "LookupViewService",
+        "WeatherWidget",
+        "apsd",
+        "com.apple.Maps",
+        "com.apple.geod",
+        "findmydevice-user-agent",
+        "fmfd",
+        "mapspushd"
       ]
     }
   ]

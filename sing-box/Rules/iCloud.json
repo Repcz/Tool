@@ -2,23 +2,21 @@
   "version": 5,
   "rules": [
     {
+      "domain": [
+        "www-cdn.icloud.com.akadns.net"
+      ]
+    },
+    {
       "domain_suffix": [
-        "apple-cloudkit.com",
         "apple-icloud.cn",
-        "apple-livephotoskit.com",
         "appleicloud.cn",
         "applemx-icloud.com",
-        "apzones.com",
-        "cdn-apple.com",
-        "gc.apple.com",
         "icloud-apple.cn",
         "icloud-content.com",
         "icloud-content.com.cn",
         "icloud-isupport.com",
         "icloud-sandbox.com",
-        "icloud.apple.com",
         "icloud.ch",
-        "icloud.cn",
         "icloud.com",
         "icloud.com.cn",
         "icloud.de",
@@ -57,17 +55,14 @@
         "icloudsecure.net",
         "icloudsetup.com",
         "ios-icloud.com",
-        "iwork.apple.com",
+        "mask-api.icloud.com",
+        "mask-h2.icloud.com",
+        "mask.icloud.com",
         "me.com",
         "myicloud.net",
         "mylcloud.net",
         "www-cdn.icloud.com.akadns.net",
         "wwwicloud.com"
-      ]
-    },
-    {
-      "domain_keyword": [
-        "icloud.com.akadns.net"
       ]
     }
   ]

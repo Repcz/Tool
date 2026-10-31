@@ -1,16 +1,23 @@
 # 规则名称: AppleMusic
-# 规则统计: 10
+# 规则统计: 18
 
 domain_set:
-  - aod-ssl.itunes.apple.com
-  - aod.itunes.apple.com
-  - audio-ssl.itunes.apple.com
-  - audio.itunes.apple.com
-  - mvod.itunes.apple.com
-  - streamingaudio.itunes.apple.com
-domain_suffix_set:
-  - applemusic.com
-  - blobstore.apple.com
+  - amp-api-edge.music.apple.com
+  - amp-api.music.apple.com
+  - js-cdn.music.apple.com
   - music.apple.com
-user_agent_set:
-  - 'Music*'
+  - musicstatus.music.apple.com
+  - play.music.apple.com
+  - speedysub.music.apple.com
+domain_suffix_set:
+  - applemusic.berlin
+  - applemusic.co
+  - applemusic.com
+  - applemusic.com.au
+  - applemusic.hamburg
+  - applemusic.wang
+  - applemusicconnect.com
+  - applemusicfestival.com
+  - music.apple.com
+  - musickit.net
+  - wwwapplemusic.com

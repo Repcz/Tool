@@ -1,6 +1,7 @@
 # 规则名称: PayPal
 # 规则统计: 248
 
+DOMAIN,venmo.s3.amazonaws.com
 DOMAIN-SUFFIX,account-paypal.info
 DOMAIN-SUFFIX,account-paypal.net
 DOMAIN-SUFFIX,account-paypal.org
@@ -111,7 +112,6 @@ DOMAIN-SUFFIX,paypal-mainstreet.net
 DOMAIN-SUFFIX,paypal-marketing.com
 DOMAIN-SUFFIX,paypal-media.com
 DOMAIN-SUFFIX,paypal-merchantloyalty.com
-DOMAIN-SUFFIX,paypal-mktg.com
 DOMAIN-SUFFIX,paypal-mobilemoney.com
 DOMAIN-SUFFIX,paypal-network.org
 DOMAIN-SUFFIX,paypal-notice.com

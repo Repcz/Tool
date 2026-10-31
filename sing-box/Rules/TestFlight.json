@@ -3,7 +3,6 @@
   "rules": [
     {
       "domain": [
-        "beta.apple.com",
         "testflight.apple.com"
       ]
     },

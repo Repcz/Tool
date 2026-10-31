@@ -1,13 +1,21 @@
 # 规则名称: AppleMusic
-# 规则统计: 10
+# 规则统计: 18
 
-HOST,aod-ssl.itunes.apple.com,AppleMusic
-HOST,aod.itunes.apple.com,AppleMusic
-HOST,audio-ssl.itunes.apple.com,AppleMusic
-HOST,audio.itunes.apple.com,AppleMusic
-HOST,mvod.itunes.apple.com,AppleMusic
-HOST,streamingaudio.itunes.apple.com,AppleMusic
+HOST,amp-api-edge.music.apple.com,AppleMusic
+HOST,amp-api.music.apple.com,AppleMusic
+HOST,js-cdn.music.apple.com,AppleMusic
+HOST,music.apple.com,AppleMusic
+HOST,musicstatus.music.apple.com,AppleMusic
+HOST,play.music.apple.com,AppleMusic
+HOST,speedysub.music.apple.com,AppleMusic
+HOST-SUFFIX,applemusic.berlin,AppleMusic
+HOST-SUFFIX,applemusic.co,AppleMusic
 HOST-SUFFIX,applemusic.com,AppleMusic
-HOST-SUFFIX,blobstore.apple.com,AppleMusic
+HOST-SUFFIX,applemusic.com.au,AppleMusic
+HOST-SUFFIX,applemusic.hamburg,AppleMusic
+HOST-SUFFIX,applemusic.wang,AppleMusic
+HOST-SUFFIX,applemusicconnect.com,AppleMusic
+HOST-SUFFIX,applemusicfestival.com,AppleMusic
 HOST-SUFFIX,music.apple.com,AppleMusic
-USER-AGENT,Music*,AppleMusic
+HOST-SUFFIX,musickit.net,AppleMusic
+HOST-SUFFIX,wwwapplemusic.com,AppleMusic

@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 17450
+# 规则统计: 17451
 
 no_resolve: true
 domain_set:
@@ -10372,6 +10372,7 @@ domain_suffix_set:
   - npm.io
   - npmjs.com
   - npmjs.org
+  - npmx.dev
   - npnt.me
   - npr.org
   - nps.gov

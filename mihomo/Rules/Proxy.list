@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 17463
+# 规则统计: 17464
 
 DOMAIN,api.avax.network
 DOMAIN,api.sprig.com
@@ -10355,6 +10355,7 @@ DOMAIN-SUFFIX,npm.im
 DOMAIN-SUFFIX,npm.io
 DOMAIN-SUFFIX,npmjs.com
 DOMAIN-SUFFIX,npmjs.org
+DOMAIN-SUFFIX,npmx.dev
 DOMAIN-SUFFIX,npnt.me
 DOMAIN-SUFFIX,npr.org
 DOMAIN-SUFFIX,nps.gov

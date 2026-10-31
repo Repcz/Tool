@@ -1,7 +1,9 @@
 # 规则名称: AppleProxy
-# 规则统计: 40
+# 规则统计: 68
 
 DOMAIN,api-glb-sea.smoot.apple.com
+DOMAIN,apple-relay.apple.com
+DOMAIN,apple-relay.fastly-edge.com
 DOMAIN,apple.comscoreresearch.com
 DOMAIN,books.itunes.apple.com
 DOMAIN,cdn.apple-cloudkit.com
@@ -12,11 +14,15 @@ DOMAIN,devstreaming-cdn.apple.com
 DOMAIN,docs-assets.developer.apple.com
 DOMAIN,gspe1-ssl.ls.apple.com
 DOMAIN,hls-svod.itunes.apple.com
+DOMAIN,hls.itunes.apple.com
 DOMAIN,itunes.apple.com
 DOMAIN,js-cdn.music.apple.com
 DOMAIN,lookup-api.apple.com
+DOMAIN,mask-api.fe.apple-dns.net
 DOMAIN,mask-api.icloud.com
 DOMAIN,mask-h2.icloud.com
+DOMAIN,mask-t.apple-dns.net
+DOMAIN,mask.apple-dns.net
 DOMAIN,mask.icloud.com
 DOMAIN,news-assets.apple.com
 DOMAIN,news-client.apple.com
@@ -28,16 +34,38 @@ DOMAIN,sandbox.itunes.apple.com
 DOMAIN,testflight.apple.com
 DOMAIN,tv.applemusic.com
 DOMAIN,uts-api.itunes.apple.com
+DOMAIN-SUFFIX,aaplimg.com
+DOMAIN-SUFFIX,apple-cloudkit.com
 DOMAIN-SUFFIX,apple-dns.net
+DOMAIN-SUFFIX,apple-mapkit.com
+DOMAIN-SUFFIX,apple.co
+DOMAIN-SUFFIX,apple.com
 DOMAIN-SUFFIX,apple.news
 DOMAIN-SUFFIX,apps.apple.com
 DOMAIN-SUFFIX,appsto.re
+DOMAIN-SUFFIX,appstore.com
 DOMAIN-SUFFIX,audio-ssl.itunes.apple.com
 DOMAIN-SUFFIX,blobstore.apple.com
 DOMAIN-SUFFIX,cdn-apple.com
 DOMAIN-SUFFIX,digicert.com
 DOMAIN-SUFFIX,hls-amt.itunes.apple.com
 DOMAIN-SUFFIX,hls.itunes.apple.com
+DOMAIN-SUFFIX,icloud-content.com
+DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,itunes.com
+DOMAIN-SUFFIX,me.com
 DOMAIN-SUFFIX,ocsp.apple.com
+DOMAIN-SUFFIX,organicfruitapps.com
+DOMAIN-SUFFIX,push-apple.com.akadns.net
+DOMAIN-SUFFIX,safebrowsing.apple
 DOMAIN-SUFFIX,tv.apple.com
+IP-CIDR,17.0.0.0/8,no-resolve
+PROCESS-NAME,CoreLocationAgent
 PROCESS-NAME,LookupViewService
+PROCESS-NAME,WeatherWidget
+PROCESS-NAME,apsd
+PROCESS-NAME,com.apple.Maps
+PROCESS-NAME,com.apple.geod
+PROCESS-NAME,findmydevice-user-agent
+PROCESS-NAME,fmfd
+PROCESS-NAME,mapspushd

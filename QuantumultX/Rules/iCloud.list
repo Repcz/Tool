@@ -1,22 +1,16 @@
 # 规则名称: iCloud
-# 规则统计: 61
+# 规则统计: 56
 
-HOST-SUFFIX,apple-cloudkit.com,iCloud
+HOST,www-cdn.icloud.com.akadns.net,iCloud
 HOST-SUFFIX,apple-icloud.cn,iCloud
-HOST-SUFFIX,apple-livephotoskit.com,iCloud
 HOST-SUFFIX,appleicloud.cn,iCloud
 HOST-SUFFIX,applemx-icloud.com,iCloud
-HOST-SUFFIX,apzones.com,iCloud
-HOST-SUFFIX,cdn-apple.com,iCloud
-HOST-SUFFIX,gc.apple.com,iCloud
 HOST-SUFFIX,icloud-apple.cn,iCloud
 HOST-SUFFIX,icloud-content.com,iCloud
 HOST-SUFFIX,icloud-content.com.cn,iCloud
 HOST-SUFFIX,icloud-isupport.com,iCloud
 HOST-SUFFIX,icloud-sandbox.com,iCloud
-HOST-SUFFIX,icloud.apple.com,iCloud
 HOST-SUFFIX,icloud.ch,iCloud
-HOST-SUFFIX,icloud.cn,iCloud
 HOST-SUFFIX,icloud.com,iCloud
 HOST-SUFFIX,icloud.com.cn,iCloud
 HOST-SUFFIX,icloud.de,iCloud
@@ -55,10 +49,11 @@ HOST-SUFFIX,icloudpay.net,iCloud
 HOST-SUFFIX,icloudsecure.net,iCloud
 HOST-SUFFIX,icloudsetup.com,iCloud
 HOST-SUFFIX,ios-icloud.com,iCloud
-HOST-SUFFIX,iwork.apple.com,iCloud
+HOST-SUFFIX,mask-api.icloud.com,iCloud
+HOST-SUFFIX,mask-h2.icloud.com,iCloud
+HOST-SUFFIX,mask.icloud.com,iCloud
 HOST-SUFFIX,me.com,iCloud
 HOST-SUFFIX,myicloud.net,iCloud
 HOST-SUFFIX,mylcloud.net,iCloud
 HOST-SUFFIX,www-cdn.icloud.com.akadns.net,iCloud
 HOST-SUFFIX,wwwicloud.com,iCloud
-HOST-KEYWORD,icloud.com.akadns.net,iCloud

@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 7610
+# 规则统计: 7611
 
 HOST,ccmdl.adobe.com,ProxyGFW
 HOST,cloud.oracle.com,ProxyGFW
@@ -4572,6 +4572,7 @@ HOST-SUFFIX,npm.im,ProxyGFW
 HOST-SUFFIX,npm.io,ProxyGFW
 HOST-SUFFIX,npmjs.com,ProxyGFW
 HOST-SUFFIX,npmjs.org,ProxyGFW
+HOST-SUFFIX,npmx.dev,ProxyGFW
 HOST-SUFFIX,npnt.me,ProxyGFW
 HOST-SUFFIX,npr.org,ProxyGFW
 HOST-SUFFIX,nps.gov,ProxyGFW

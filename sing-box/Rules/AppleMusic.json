@@ -3,24 +3,28 @@
   "rules": [
     {
       "domain": [
-        "aod-ssl.itunes.apple.com",
-        "aod.itunes.apple.com",
-        "audio-ssl.itunes.apple.com",
-        "audio.itunes.apple.com",
-        "mvod.itunes.apple.com",
-        "streamingaudio.itunes.apple.com"
+        "amp-api-edge.music.apple.com",
+        "amp-api.music.apple.com",
+        "js-cdn.music.apple.com",
+        "music.apple.com",
+        "musicstatus.music.apple.com",
+        "play.music.apple.com",
+        "speedysub.music.apple.com"
       ]
     },
     {
       "domain_suffix": [
+        "applemusic.berlin",
+        "applemusic.co",
         "applemusic.com",
-        "blobstore.apple.com",
-        "music.apple.com"
-      ]
-    },
-    {
-      "process_name": [
-        "Music"
+        "applemusic.com.au",
+        "applemusic.hamburg",
+        "applemusic.wang",
+        "applemusicconnect.com",
+        "applemusicfestival.com",
+        "music.apple.com",
+        "musickit.net",
+        "wwwapplemusic.com"
       ]
     }
   ]

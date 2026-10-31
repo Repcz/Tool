@@ -1,5 +1,5 @@
 # 规则名称: ProxyGFW
-# 规则统计: 7609
+# 规则统计: 7610
 
 DOMAIN,ccmdl.adobe.com
 DOMAIN,cloud.oracle.com
@@ -4572,6 +4572,7 @@ DOMAIN-SUFFIX,npm.im
 DOMAIN-SUFFIX,npm.io
 DOMAIN-SUFFIX,npmjs.com
 DOMAIN-SUFFIX,npmjs.org
+DOMAIN-SUFFIX,npmx.dev
 DOMAIN-SUFFIX,npnt.me
 DOMAIN-SUFFIX,npr.org
 DOMAIN-SUFFIX,nps.gov

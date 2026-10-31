@@ -1,6 +1,5 @@
 # 规则名称: TestFlight
-# 规则统计: 3
+# 规则统计: 2
 
-HOST,beta.apple.com,TestFlight
 HOST,testflight.apple.com,TestFlight
 HOST-KEYWORD,testflight,TestFlight

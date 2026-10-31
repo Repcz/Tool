@@ -1,6 +1,7 @@
 # 规则名称: PayPal
 # 规则统计: 248
 
+HOST,venmo.s3.amazonaws.com,PayPal
 HOST-SUFFIX,account-paypal.info,PayPal
 HOST-SUFFIX,account-paypal.net,PayPal
 HOST-SUFFIX,account-paypal.org,PayPal
@@ -111,7 +112,6 @@ HOST-SUFFIX,paypal-mainstreet.net,PayPal
 HOST-SUFFIX,paypal-marketing.com,PayPal
 HOST-SUFFIX,paypal-media.com,PayPal
 HOST-SUFFIX,paypal-merchantloyalty.com,PayPal
-HOST-SUFFIX,paypal-mktg.com,PayPal
 HOST-SUFFIX,paypal-mobilemoney.com,PayPal
 HOST-SUFFIX,paypal-network.org,PayPal
 HOST-SUFFIX,paypal-notice.com,PayPal

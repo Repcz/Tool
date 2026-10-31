@@ -1,5 +1,5 @@
 # 规则名称: Ads_EasyListPrivacy
-# 规则统计: 43296
+# 规则统计: 43330
 
 domain_suffix_set:
   - 0.0.0.1
@@ -7388,6 +7388,7 @@ domain_suffix_set:
   - b73c.pandasuite.io
   - b7tp47v2nb3x-a.akamaihd.net
   - baahnj.bezokularow.pl
+  - babelfreak.com
   - bablace.com
   - baccarat.abzorbagames.com
   - backoffice.verintsystemsinc.com
@@ -7562,6 +7563,7 @@ domain_suffix_set:
   - beewhispering.com
   - beginnerpancake.com
   - behave.sn.at
+  - beholdthyson.com
   - belong.curtin.edu.au
   - benchlamp.com
   - beneficios.davivienda.hn
@@ -7583,6 +7585,7 @@ domain_suffix_set:
   - bestcoffeemachine.net
   - bestill.help.no
   - bestinfo.bluetrustloans.com
+  - bestpriceonly.com
   - bestshoesboot.com
   - bestsportsbra.com
   - besucher.nona.de
@@ -7644,6 +7647,7 @@ domain_suffix_set:
   - bidpapers.com
   - bidswitch.net
   - bienvenido.americanindustriesgroup.com
+  - bifrost-api.hotstar.com
   - bigcustomernetwork.actonservice.com
   - bigdata.clarin.com
   - bigfishapparel.com
@@ -7673,6 +7677,7 @@ domain_suffix_set:
   - bio.chups.co
   - bioagiliytix.actonservice.com
   - bioanalyticalmarketing.eurofins-info.com
+  - biocatalysts.net
   - biologylog.com
   - biophysicsgroup.actonservice.com
   - biotechnologysciences.com
@@ -8028,6 +8033,7 @@ domain_suffix_set:
   - branchtest.whataburger.com
   - branchtrk.lendingtree.com
   - brand.adp.ca
+  - brandcasters.com
   - brands.cambrio.com
   - brands.lookfantastic.com
   - brands.picklebutnotcucumber.com
@@ -8354,6 +8360,7 @@ domain_suffix_set:
   - cafejunior.net
   - cafescampfires.com
   - cafirebreather.com
+  - cageylogic.com
   - cagkpu.suitdirect.co.uk
   - cakeagenda.com
   - cakesdrum.com
@@ -8484,6 +8491,7 @@ domain_suffix_set:
   - carepay.gaf.com
   - cargas.actonservice.com
   - cargdk.bakerross.co.uk
+  - cargrasp.com
   - cargurus.actonservice.com
   - caringcast.com
   - carlisleit.actonservice.com
@@ -9813,6 +9821,7 @@ domain_suffix_set:
   - crabbychin.com
   - craftessays.com
   - crafthenry.com
+  - crashbamboo.com
   - crashchance.com
   - crashpandas.com
   - cratecamera.com
@@ -10885,6 +10894,7 @@ domain_suffix_set:
   - dbbest.actonservice.com
   - dbex-tracker-v2.driveback.ru
   - dbhbgz.suitableshop.nl
+  - dbik.literatur-couch.de
   - dbj.quebecregion.com
   - dbl.cadriamarketing.com
   - dblarson.com
@@ -13133,6 +13143,7 @@ domain_suffix_set:
   - etznkn.ec-store.net
   - eu-1-id5-sync.com
   - eu-mobile.events.data.microsoft.com
+  - eu-office.events.data.microsoft.com
   - eu.business.samsung.com
   - eu.cignaglobalhealth.com
   - eu.gldn.io
@@ -13831,6 +13842,7 @@ domain_suffix_set:
   - fls-na.amazon.com
   - fltuyy.philippemodel.com
   - fluentco.actonservice.com
+  - fluffybirds.com
   - flushingbeast.com
   - flutteringfireman.com
   - fly.caljetelite.com
@@ -15291,6 +15303,7 @@ domain_suffix_set:
   - grassrootsunwired.actonservice.com
   - gravitygive.com
   - gravitykick.com
+  - gravitypics.com
   - graychalk.com
   - graylog.prod.cams.run
   - grayoranges.com
@@ -15316,6 +15329,7 @@ domain_suffix_set:
   - grocerycrew.com
   - grocerydog.com
   - grofag.hollandandbarrett.ie
+  - groglog.com
   - groovespacing.com
   - groovyornament.com
   - grouchybrothers.com
@@ -15513,6 +15527,7 @@ domain_suffix_set:
   - hdnagl.womensecret.com
   - hdu-deeplinks.mindtickle.com
   - hdxdhu.zumnorde.de
+  - headbandeau.com
   - headydegree.com
   - healflowers.com
   - health-metrics-api.setapp.com
@@ -15542,6 +15557,7 @@ domain_suffix_set:
   - hearthow.com
   - heatmap.support-inc.co.jp
   - heatmaps.lcisoft.it
+  - heatrave.com
   - heavydetail.com
   - heavyplayground.com
   - heimdall.hearstapps.com
@@ -15575,6 +15591,7 @@ domain_suffix_set:
   - helpflame.com
   - helpingbits.com
   - hemblx.vans.cl
+  - hensonempire.com
   - herbgreencolumn.com
   - herbstarsbuilding.com
   - hermes.jd.com
@@ -15585,6 +15602,7 @@ domain_suffix_set:
   - hevqaz.submarino.com.br
   - heyaxr.fashiondays.bg
   - heycomputers.com
+  - heyhotshots.com
   - hf.forevernetworks.com
   - hfc195b.com
   - hfmogh.piatradesign.ro
@@ -15612,6 +15630,7 @@ domain_suffix_set:
   - hickeysmith.actonservice.com
   - hidjoi.perfumesclub.com
   - highered.franklincovey.com
+  - higherhub.com
   - highfalutinbox.com
   - highfalutinhoney.com
   - highlights-schadenmanager.schwacke.de
@@ -15752,6 +15771,7 @@ domain_suffix_set:
   - honeyscene.com
   - honorablehydrant.com
   - honorableland.com
+  - hoofersailing.com
   - hoojts.demmelhuber.net
   - hookconference.com
   - hoorayplay.com
@@ -16683,6 +16703,7 @@ domain_suffix_set:
   - indiyo.38-8931.com
   - indmetric.rediff.com
   - indoeasia.edm.globalsources.com
+  - indscout.com
   - ineed2s.ro
   - inencr.woodhouseclothing.com
   - inetprocess.actonservice.com
@@ -19763,7 +19784,6 @@ domain_suffix_set:
   - log.mix.sina.com.cn
   - log.mofa.go.kr
   - log.news.baidu.com
-  - log.nordot.jp
   - log.olark.com
   - log.outbrain.com
   - log.pinterest.com
@@ -25891,6 +25911,7 @@ domain_suffix_set:
   - pingback.issuu.com
   - pingjs.qq.com
   - pingo.staticmoly.me
+  - pingprove.com
   - pings.conviva.com
   - pings.vidpulse.com
   - pingsurvey.com
@@ -25905,6 +25926,7 @@ domain_suffix_set:
   - pipelinepub.actonservice.com
   - piper.amocrm.ru
   - pippio.com
+  - pipsgain.com
   - piq4.inseec.education
   - piquantgrove.com
   - piquantmeadow.com
@@ -25972,6 +25994,7 @@ domain_suffix_set:
   - pixel.poptok.com
   - pixel.propublica.org
   - pixel.pub.lilyai.net
+  - pixel.quantserve.com
   - pixel.redgifs.com
   - pixel.roymorgan.com
   - pixel.s3xified.com
@@ -26272,6 +26295,7 @@ domain_suffix_set:
   - politeplanes.com
   - politicalporter.com
   - poll.pollinatepolls.com
+  - polopremier.com
   - polypak.actonservice.com
   - ponos.zeronaught.com
   - ponyo.cheriefm.fr
@@ -26445,6 +26469,7 @@ domain_suffix_set:
   - prod.tahoe-analytics.publishers.advertising.a2z.com
   - prod.tracking.refinitiv.com
   - proditor.sparda.de
+  - prodsmax.com
   - producecopy.com
   - producepickle.com
   - product.cel-fi.com
@@ -26845,6 +26870,7 @@ domain_suffix_set:
   - quickkoala.io
   - quicklyedit.com
   - quickpcfixer.click
+  - quickpints.com
   - quicktattoo.com
   - quicktrick.net
   - quidel.actonservice.com
@@ -26944,6 +26970,7 @@ domain_suffix_set:
   - rabbitrifle.com
   - rac.ruutu.fi
   - racemanager-app.sapsailing.com
+  - racerpets.com
   - rackforstorage.com
   - radar.imgsmail.ru
   - radar.wizzo.media
@@ -27032,6 +27059,7 @@ domain_suffix_set:
   - read.telecoms.com
   - readingguilt.com
   - readingpartners.actonservice.com
+  - readourminds.com
   - ready.curriculumassociates.com
   - ready.nerdery.com
   - readymoon.com
@@ -27167,6 +27195,7 @@ domain_suffix_set:
   - rehabilitatereason.com
   - rehmann.actonservice.com
   - reico.actonservice.com
+  - reignfans.com
   - rek.www.wp.pl
   - rel-link.californiapsychics.com
   - relacionamento.edpcomunicacao.com.br
@@ -34707,6 +34736,7 @@ domain_suffix_set:
   - stats.jerickson.net
   - stats.jetzt-aktivieren.de
   - stats.jhsheridan.com
+  - stats.jiosaavn.com
   - stats.jjude.com
   - stats.jkdesa.com
   - stats.joaopedro.dev
@@ -36212,6 +36242,7 @@ domain_suffix_set:
   - ta.taxslayer.com
   - ta.trs.cn
   - tabcarts.com
+  - tableleaders.com
   - tablesafe.actonservice.com
   - tackytrains.com
   - tacojournal.com
@@ -36569,7 +36600,6 @@ domain_suffix_set:
   - tbihvt.pickawood.com
   - tbjasp.cyrillus.de
   - tbknig.ecc.jp
-  - tblcontent.com
   - tbmgyz.centerparcs.de
   - tbvjrd.gocase.com.br
   - tc.europcar.com
@@ -36674,6 +36704,7 @@ domain_suffix_set:
   - technologyadvice.actonservice.com
   - technologyservices.equifax.com
   - technologyservices.inform.equifax.com
+  - technonstop.com
   - techprovider.intel.com
   - techpump.com
   - techservices.trapptechnology.com
@@ -37202,6 +37233,7 @@ domain_suffix_set:
   - tms.hft.goodchop.com
   - tms.hft.greenchef.com
   - tms.hft.hellofresh.com
+  - tms.wape.autodesk.com
   - tmt.intelligence.informa.com
   - tmvasapp.fitnessyard.com
   - tmwkya.jh-profishop.at
@@ -38987,6 +39019,7 @@ domain_suffix_set:
   - tracking.digitalocean.com
   - tracking.direxion.com
   - tracking.dominanteladies.de
+  - tracking.dpmlol.com
   - tracking.dr-10.com
   - tracking.dr-8.com
   - tracking.drreddys.com
@@ -42998,6 +43031,7 @@ domain_suffix_set:
   - yourcare.pennstatehealth.org
   - yourerc.actonservice.com
   - yourfuture.walsh.edu
+  - yourgiftedbaby.com
   - yourhealth.bassett.org
   - yourhealth.bassetthealthnews.org
   - yourhealth.cooperhealth.org

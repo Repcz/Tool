@@ -2,6 +2,11 @@
   "version": 5,
   "rules": [
     {
+      "domain": [
+        "venmo.s3.amazonaws.com"
+      ]
+    },
+    {
       "domain_suffix": [
         "account-paypal.info",
         "account-paypal.net",
@@ -113,7 +118,6 @@
         "paypal-marketing.com",
         "paypal-media.com",
         "paypal-merchantloyalty.com",
-        "paypal-mktg.com",
         "paypal-mobilemoney.com",
         "paypal-network.org",
         "paypal-notice.com",

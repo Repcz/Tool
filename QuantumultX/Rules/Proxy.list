@@ -1,5 +1,5 @@
 # 规则名称: Proxy
-# 规则统计: 17450
+# 规则统计: 17451
 
 HOST,api.avax.network,Proxy
 HOST,api.sprig.com,Proxy
@@ -10355,6 +10355,7 @@ HOST-SUFFIX,npm.im,Proxy
 HOST-SUFFIX,npm.io,Proxy
 HOST-SUFFIX,npmjs.com,Proxy
 HOST-SUFFIX,npmjs.org,Proxy
+HOST-SUFFIX,npmx.dev,Proxy
 HOST-SUFFIX,npnt.me,Proxy
 HOST-SUFFIX,npr.org,Proxy
 HOST-SUFFIX,nps.gov,Proxy
