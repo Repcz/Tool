@@ -1,5 +1,5 @@
 # 规则名称: Ads_EasyListPrivacy
-# 规则统计: 43330
+# 规则统计: 43336
 
 domain_suffix_set:
   - 0.0.0.1
@@ -8742,6 +8742,7 @@ domain_suffix_set:
   - cinemafair.com
   - ciqtracking.com
   - circadence.actonservice.com
+  - circascope.com
   - circle.pandasuite.io
   - circlelevel.com
   - cis.schibsted.com
@@ -13331,6 +13332,7 @@ domain_suffix_set:
   - events.mcgladrey.com
   - events.medio.com
   - events.mercadolibre.com
+  - events.mics-notrack.com
   - events.mikescerealshack.co
   - events.missena.io
   - events.mywd.com
@@ -17863,6 +17865,7 @@ domain_suffix_set:
   - javascriptcounter.appspot.com
   - javs.actonservice.com
   - javvso.newone-shop.com
+  - jazzpianofast.com
   - jbbljg.autoscout24.bg
   - jbezdi.ilsole24ore.com
   - jc917x3.adaptive.marketing
@@ -18065,6 +18068,7 @@ domain_suffix_set:
   - journeys.journeyed.com
   - jowtkv.vertbaudet.de
   - joy.ochronus.online
+  - joybegins.com
   - joyfulharbor.com
   - joyouspool.com
   - joyoussurprise.com
@@ -18245,6 +18249,7 @@ domain_suffix_set:
   - keyade.ooreka.fr
   - keyade.uniqlo.com
   - keyes.myre.io
+  - keymono.net
   - keynotegroup.actonservice.com
   - kftfhp.furusato-tax.jp
   - kgbokc.masrefacciones.mx
@@ -40214,6 +40219,7 @@ domain_suffix_set:
   - uatshare.entertainment.com
   - uawefo.guylook.co.kr
   - uazmti.a101.com.tr
+  - ubbrobccheck20.cc
   - ubdjfy.maje.com
   - ubdsej.notino.pl
   - ubiquitoussea.com
