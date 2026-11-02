@@ -1,11 +1,12 @@
 # 规则名称: Ads_Dlerio
-# 规则统计: 7257
+# 规则统计: 7258
 
 no_resolve: true
 domain_set:
   - 118.89.204.198
   - ad.bn.netease.com
   - appcloud2.in.zhihu.com
+  - dm.wo.com.cn
   - duclick.baidu.com
   - hm.baidu.com
   - hmma.baidu.com
