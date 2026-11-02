@@ -5,11 +5,11 @@
 #!date=2026-10-02 13:57:49
 
 [Script]
-修复时间线 = type=http-request,pattern=(?i)^https://api\.weibo\.cn/2/users/show\?,script-path=https://kelee.one/Resource/JavaScript/VVebo/VVebo_repair.js
-修复时间线_2 = type=http-request,pattern=(?i)^https://api\.weibo\.cn/2/statuses/user_timeline\?,script-path=https://kelee.one/Resource/JavaScript/VVebo/VVebo_repair.js
-修复时间线_3 = type=http-request,pattern=(?i)^https://api\.weibo\.cn/2/remind/unread_count\?,script-path=https://kelee.one/Resource/JavaScript/VVebo/VVebo_repair.js
-修复时间线_4 = type=http-response,pattern=(?i)^https://api\.weibo\.cn/2/profile/statuses/tab\?,script-path=https://kelee.one/Resource/JavaScript/VVebo/VVebo_repair.js,requires-body=true
-修复我的页面 = type=http-response,pattern=(?i)^https://api\.weibo\.cn/2/cardlist\?,script-path=https://kelee.one/Resource/JavaScript/VVebo/VVebo_repair.js,requires-body=true
+修复时间线 = type=http-request,pattern=(?i)^https://api\.weibo\.cn/2/users/show\?,script-path=https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/VVebo/VVebo_repair.js
+修复时间线_2 = type=http-request,pattern=(?i)^https://api\.weibo\.cn/2/statuses/user_timeline\?,script-path=https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/VVebo/VVebo_repair.js
+修复时间线_3 = type=http-request,pattern=(?i)^https://api\.weibo\.cn/2/remind/unread_count\?,script-path=https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/VVebo/VVebo_repair.js
+修复时间线_4 = type=http-response,pattern=(?i)^https://api\.weibo\.cn/2/profile/statuses/tab\?,script-path=https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/VVebo/VVebo_repair.js,requires-body=true
+修复我的页面 = type=http-response,pattern=(?i)^https://api\.weibo\.cn/2/cardlist\?,script-path=https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/VVebo/VVebo_repair.js,requires-body=true
 
 [MITM]
 hostname = %APPEND% api.weibo.cn
