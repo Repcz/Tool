@@ -1,5 +1,5 @@
 # 规则名称: AppleProxy
-# 规则统计: 64
+# 规则统计: 65
 
 HOST,api-glb-sea.smoot.apple.com,AppleProxy
 HOST,apple-relay.apple.com,AppleProxy
@@ -48,6 +48,7 @@ HOST-SUFFIX,audio-ssl.itunes.apple.com,AppleProxy
 HOST-SUFFIX,blobstore.apple.com,AppleProxy
 HOST-SUFFIX,cdn-apple.com,AppleProxy
 HOST-SUFFIX,digicert.com,AppleProxy
+HOST-SUFFIX,dittocdn.com,AppleProxy
 HOST-SUFFIX,hls-amt.itunes.apple.com,AppleProxy
 HOST-SUFFIX,hls.itunes.apple.com,AppleProxy
 HOST-SUFFIX,icloud-content.com,AppleProxy

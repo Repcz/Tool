@@ -1,5 +1,5 @@
 # 规则名称: HBO
-# 规则统计: 93
+# 规则统计: 94
 
 domain_suffix_set:
   - 44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
@@ -14,6 +14,7 @@ domain_suffix_set:
   - execute-api.ap-southeast-1.amazonaws.com
   - execute-api.us-east-1.amazonaws.com
   - forthethrone.com
+  - h264.io
   - hbo
   - hbo-europe.com
   - hbo.ba

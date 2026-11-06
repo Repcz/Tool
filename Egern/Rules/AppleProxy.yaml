@@ -1,5 +1,5 @@
 # 规则名称: AppleProxy
-# 规则统计: 64
+# 规则统计: 65
 
 no_resolve: true
 domain_set:
@@ -51,6 +51,7 @@ domain_suffix_set:
   - blobstore.apple.com
   - cdn-apple.com
   - digicert.com
+  - dittocdn.com
   - hls-amt.itunes.apple.com
   - hls.itunes.apple.com
   - icloud-content.com

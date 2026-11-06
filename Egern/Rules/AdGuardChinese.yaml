@@ -1,9 +1,10 @@
 # 规则名称: AdGuardChinese
-# 规则统计: 6124
+# 规则统计: 6135
 
 domain_suffix_set:
   - 002777.xyz
   - 003store.com
+  - 007bq3y7e5.com
   - 00k456wyh.com
   - 011qt7cln.com
   - 0171pjx5q.com
@@ -21,6 +22,7 @@ domain_suffix_set:
   - 067oij53m.com
   - 06cp8ypn8j.com
   - 06evyxnibl.com
+  - 06f2egypr.com
   - 06hkgn0jl3.com
   - 0755rc.com
   - 078pwrxpbg.com
@@ -392,6 +394,7 @@ domain_suffix_set:
   - 3f1l3f80xm.com
   - 3f6e7oacgi.com
   - 3fcu1sqox2.com
+  - 3g0p5hjwa.com
   - 3ge064tt79.com
   - 3hfmrv8d45.com
   - 3hg6yh6h0.com
@@ -414,6 +417,7 @@ domain_suffix_set:
   - 3q9j4w2r9d.com
   - 3qtdjf4830.com
   - 3qx0pnhyzi.com
+  - 3r6fs2855.com
   - 3rc04o1rmy.com
   - 3rev8wh22y.com
   - 3rs337ci4.com
@@ -456,6 +460,7 @@ domain_suffix_set:
   - 48dswtxkw.com
   - 48r3l2u5l2.com
   - 490i1rrbd.com
+  - 494b6x7u8.com
   - 49dlt9myv.com
   - 49ioqq6kt.com
   - 49o4m4a5eo.com
@@ -1219,6 +1224,7 @@ domain_suffix_set:
   - alcoholic56.top
   - aldehyde06.com
   - aleldrodm.com
+  - alhgxftiz.com
   - alimama.alicdn.com
   - alitui.weibo.com
   - alnhfq9ov4.com
@@ -1918,6 +1924,7 @@ domain_suffix_set:
   - dd81bp3qbj.com
   - ddc888.com
   - ddckenbga.com
+  - ddft5oqi7q.com
   - ddgjjj.com
   - ddhwxwi6h.com
   - ddpoupmu.icu
@@ -1926,7 +1933,6 @@ domain_suffix_set:
   - dehua.ixinfan.com
   - dehudoz.com
   - deliver.ifeng.com
-  - delivery.playallvideos.com
   - delivery.wasu.cn
   - dependence39.com
   - derivative10.top
@@ -1981,6 +1987,7 @@ domain_suffix_set:
   - dkaktsb.icu
   - dkaon1jjeo.com
   - dkc63u5su8.com
+  - dkkm83qokh.com
   - dkphbpakvgftxm.com
   - dkweuy.com
   - dlads.cn
@@ -2322,6 +2329,7 @@ domain_suffix_set:
   - fitchpmsa.com
   - fitment47.com
   - fittomniku.com
+  - fivvdbnotgndfg.com
   - fizmvbysarrvva.com
   - fjalsr83a6.com
   - fjpopxgyfrlxvc.com
@@ -2771,6 +2779,7 @@ domain_suffix_set:
   - heky0uxng.com
   - henghost.com
   - heoddikvdm.com
+  - heptagon54.com
   - herculean57.com
   - heuristic95.top
   - hfisngksng.com
@@ -4283,6 +4292,7 @@ domain_suffix_set:
   - qgreedreau.com
   - qguwoq.cn
   - qgvvtce98.com
+  - qh7ptb6mc.com
   - qhaelqata.com
   - qhangrotl.com
   - qhirlilzda.com
@@ -4797,6 +4807,7 @@ domain_suffix_set:
   - tdlqxdwwpptpli.com
   - tebv.cn
   - tech.jiukang.org
+  - tecraccimk.com
   - tek3shnfk.com
   - telecome.cn
   - telphiruq.com
@@ -5062,6 +5073,7 @@ domain_suffix_set:
   - uhiwh2tsu.com
   - uhyqieok5u.com
   - uiakvibuzy.com
+  - uibpd67j6.com
   - uiqyuydt9t.com
   - uj08lr3rv.com
   - uj2h8xm8w.com
@@ -5558,7 +5570,6 @@ domain_suffix_set:
   - xdlipr.icu
   - xdnjqtn.com
   - xdxqw9nnr.com
-  - xdyjt.com
   - xdyn03010jy.com
   - xdyn03011jy.com
   - xdyn03021jy.com

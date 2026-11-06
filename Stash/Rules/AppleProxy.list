@@ -1,5 +1,5 @@
 # 规则名称: AppleProxy
-# 规则统计: 68
+# 规则统计: 69
 
 DOMAIN,api-glb-sea.smoot.apple.com
 DOMAIN,apple-relay.apple.com
@@ -48,6 +48,7 @@ DOMAIN-SUFFIX,audio-ssl.itunes.apple.com
 DOMAIN-SUFFIX,blobstore.apple.com
 DOMAIN-SUFFIX,cdn-apple.com
 DOMAIN-SUFFIX,digicert.com
+DOMAIN-SUFFIX,dittocdn.com
 DOMAIN-SUFFIX,hls-amt.itunes.apple.com
 DOMAIN-SUFFIX,hls.itunes.apple.com
 DOMAIN-SUFFIX,icloud-content.com
