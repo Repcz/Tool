@@ -1,11 +1,14 @@
 # 规则名称: Ads_Dlerio
-# 规则统计: 7258
+# 规则统计: 7311
 
 no_resolve: true
 domain_set:
   - 118.89.204.198
   - ad.bn.netease.com
   - appcloud2.in.zhihu.com
+  - cm.bilibili.com
+  - data.bilibili.com
+  - dataflow.biliapi.com
   - dm.wo.com.cn
   - duclick.baidu.com
   - hm.baidu.com
@@ -581,6 +584,8 @@ domain_suffix_set:
   - abc.yjbys.com
   - abc.zhiyaspa.com
   - abcd.zsrt88.cn
+  - abcdefgaijkl.com
+  - abcdegghijkl.com
   - abcj.dooccn.com
   - abtest.mistat.xiaomi.com
   - ac.atpanel.com
@@ -1088,6 +1093,7 @@ domain_suffix_set:
   - agoodm.m.taobao.com
   - agrant.cn
   - agrantsem.com
+  - ahdohpiechei.com
   - ahhuazhen.com
   - ahyau.com
   - ahyuns.com
@@ -1133,6 +1139,7 @@ domain_suffix_set:
   - all.orfr.adgtw.orangeads.fr
   - all.rising.com.cn
   - allxin.com
+  - alphawebzzz.com
   - als.baidu.com
   - alvares.esportsheaven.com
   - am.6park.com
@@ -1893,6 +1900,7 @@ domain_suffix_set:
   - client.88tours.com
   - client.sidesearch.lycos.com
   - client.stats.yinyuetai.com
+  - clipspacexyy.com
   - cliushow.com
   - clk.taptica.com
   - clk.uunt.com
@@ -2239,6 +2247,7 @@ domain_suffix_set:
   - data.neuroxmedia.com
   - data2.doodlemobile.com
   - datafastguru.info
+  - datapixelzzx.com
   - datax.baidu.com
   - datouniao.com
   - dawwx.com
@@ -2272,6 +2281,7 @@ domain_suffix_set:
   - ddapp.cn
   - ddd.haodizhi666.com
   - ddd.yuyouge.com
+  - dddfe.com
   - ddg1277.com
   - ddhtek.com
   - ddkkrrla.m.qxs.la
@@ -2294,6 +2304,7 @@ domain_suffix_set:
   - delivery.playallvideos.com
   - delivery.porn.com
   - delivery.wasu.cn
+  - demoforge.site
   - desk.cmix.org
   - detuns.com
   - dev-push.m.youku.com
@@ -2409,6 +2420,7 @@ domain_suffix_set:
   - dolphin4.ftimg.net
   - domed.shenbimall.com
   - dontblockme.modaco.com
+  - dooquuequezi.com
   - dopa.com
   - dot.eporner.com
   - dot2.eporner.com
@@ -2774,6 +2786,7 @@ domain_suffix_set:
   - eee.eh39.co
   - eee.kj78.org
   - eee.ttyy888.co
+  - eeeam.com
   - eeee500.com
   - eezdx.erc.18183.com
   - effectivemeasure.com
@@ -2933,6 +2946,7 @@ domain_suffix_set:
   - fkku194.com
   - flash.2144.com
   - flashtalking.com
+  - flexcloudyz.com
   - float.kankan.com
   - flowcodeapp.com
   - flstudiochina.com
@@ -3027,6 +3041,7 @@ domain_suffix_set:
   - g9s.sgzs999.com
   - gad.kugou.com
   - gadwhy.com
+  - gaetausohyei.com
   - galaxy.sogoucdn.com
   - game-res.meizu.com
   - game.9xzj.com
@@ -3144,11 +3159,13 @@ domain_suffix_set:
   - gjghy.com
   - gjreg.code.weddingeeos.com
   - glasszz.com
+  - gliderboxxyy.com
   - gload.adhood.com
   - global.ymtracking.com
   - gm682.com
   - gma1.com
   - gmota.g188.net
+  - gncrr.live
   - go-mpulse.net
   - go.gogolm.xyz
   - go.gotourls.bid
@@ -3467,6 +3484,7 @@ domain_suffix_set:
   - iiewl.com
   - iii.6park.com
   - iisl7wpf.me
+  - ijklmnopqrst.com
   - ikcode.baidu.com
   - il8r.com
   - im.ov.yahoo.co.jp
@@ -3924,6 +3942,7 @@ domain_suffix_set:
   - k3bos.com
   - kafka8.com
   - kaitongyewu.com
+  - kaiwaijaicai.com
   - karma.mdpcdn.com
   - kawa11.space
   - kbnetworkz.s3.amazonaws.com
@@ -3987,6 +4006,7 @@ domain_suffix_set:
   - kob.adxkj.com
   - kochava.com
   - kod4pc293.com
+  - kodo.bilivideo.com
   - koowo.com
   - kooyum.com
   - koukou7.com
@@ -4109,6 +4129,7 @@ domain_suffix_set:
   - lm.xiashu.la
   - lml.jfjsp.com
   - lmlicenses.wip4.adobe.com
+  - lmnopqrstuvw.com
   - lmwap.awtks.com
   - lndjj.com
   - lnk0.com
@@ -4576,6 +4597,8 @@ domain_suffix_set:
   - mbrowser.news.so.com
   - mbs.weathercn.com
   - mc.yandex.ru
+  - mcdn.bilivideo.cn
+  - mcdn.bilivideo.com
   - mclick.simba.taobao.com
   - mcore.vcgame.cn
   - md.1drj.com
@@ -4727,6 +4750,7 @@ domain_suffix_set:
   - mostat.wps.cn
   - motohelpr.com
   - mou.niu.xunlei.com
+  - mountaintoys.cn
   - moupdate10332052.wps.cn
   - moutaihotel.cn
   - movie.miaiche.cn
@@ -4847,6 +4871,7 @@ domain_suffix_set:
   - netko0o.com
   - netshelter.net
   - netspidermm.indiatimes.com
+  - netvisorhub.com
   - network.aufeminin.com
   - network.business.com
   - network.sofeminine.co.uk
@@ -4876,6 +4901,7 @@ domain_suffix_set:
   - nextcps.com
   - nextlnk9.com
   - nexus.ensighten.com
+  - nexusedgeio.com
   - nfh.cnshef.com
   - ngads.go.com
   - nicelabel.cc
@@ -4999,6 +5025,7 @@ domain_suffix_set:
   - openstat.net
   - opgirl-tmp.adbxb.cn
   - oppo.yidianzixun.com
+  - opqrsduvwxyz.com
   - optaim.com
   - optimix.asia
   - optimix.cn
@@ -5016,6 +5043,7 @@ domain_suffix_set:
   - otheve.play.aiseet.atianqi.com
   - othstr.play.aiseet.atianqi.com
   - ou188.com
+  - ourdvsss.com
   - overture.com
   - overturechina.com
   - ow.biqugego.com
@@ -5246,6 +5274,7 @@ domain_suffix_set:
   - pp2.dhzw.org
   - pp2.pptv.com
   - pp9899.com
+  - ppio.bilivideo.com
   - ppjia55.com
   - ppoi.org
   - ppurifier.game.xiaomi.com
@@ -5404,6 +5433,7 @@ domain_suffix_set:
   - qqshow2-item.qq.com
   - qqx.cqqytgpt.com
   - qqzu.com
+  - qrstuvwxyzab.com
   - qsbz2011.com
   - qshxc.com
   - qt.biqugezw.com
@@ -5412,6 +5442,7 @@ domain_suffix_set:
   - qtmojo.com
   - quanliyouxi.cn
   - quansj.cn
+  - quantazoomz.com
   - quantcount.com
   - quantserve.com
   - qucaigg.com
@@ -5537,6 +5568,7 @@ domain_suffix_set:
   - rmw.jdburl.com
   - rnfrfxqztlno.com
   - roia.com
+  - roongeimahwo.com
   - rotabanner.kulichki.net
   - rotate.ymtracking.com
   - rotator.tradetracker.net
@@ -5704,6 +5736,7 @@ domain_suffix_set:
   - scriptcc.cc
   - scupio.com
   - scw0.com
+  - scwl.cn
   - sd.0.0.0.0.cn
   - sd.kk3g.net
   - sdac.lenovomm.com
@@ -5876,6 +5909,8 @@ domain_suffix_set:
   - sod.onelink.me
   - soft.chaomeng8.com
   - sohu.wrating.com
+  - solseed.cn
+  - solseedr.cn
   - somecoding.com
   - somennew.com
   - song.fanxing.kugou.com
@@ -6006,6 +6041,7 @@ domain_suffix_set:
   - store.xl.api.3g.youku.com
   - storeconfig.mistat.xiaomi.com
   - storewidget.pcauthority.com.au
+  - stormfluxixx.com
   - stream.heavenmedia.net
   - streaming.rtbiddingplatform.com
   - strip.alicdn.com
@@ -6075,6 +6111,7 @@ domain_suffix_set:
   - sytsr.com
   - sytz1288.com
   - szb.aiyole.com
+  - szbdyd.com
   - szdzbx.com
   - szfaq.com
   - szggdw.com
@@ -6120,6 +6157,7 @@ domain_suffix_set:
   - tag.cdnmaster.cn
   - tag.digitaltarget.ru
   - tags2.adshell.net
+  - taishoopecei.com
   - tajs.qq.com
   - tajxgs.com
   - talk.nz.igexin.com
@@ -6156,6 +6194,7 @@ domain_suffix_set:
   - td.xue63.com
   - tdayi.com
   - tdrec.youku.com
+  - techvortexz1.com
   - teen.77rog.com
   - temai.snssdk.com
   - temai.taobao.com
@@ -6174,6 +6213,7 @@ domain_suffix_set:
   - tg.m.37.com
   - th21333.com
   - th7.cn
+  - thefirstchain.com
   - thejesperbay.com
   - themis.yahoo.com
   - thescenseproject.com
@@ -6627,6 +6667,7 @@ domain_suffix_set:
   - widgets.comcontent.net
   - widgets.realestate.com.au
   - widnd.dajiadou6.com
+  - wiebaijitamo.com
   - wifiapi01.51y5.net
   - wifiapi02.51y5.net
   - wifijia.net
@@ -6811,6 +6852,7 @@ domain_suffix_set:
   - xinray.com
   - xinsheng.net
   - xiongdong.com
+  - xionguamaqui.com
   - xiuxiu.android.dl.meitu.com
   - xiuxiu.mobile.meitudata.com
   - xj40666.vip
@@ -6885,6 +6927,7 @@ domain_suffix_set:
   - xyssp.com
   - xytom.com
   - xyxy01.com
+  - xyxyzz.com
   - xyy.code.weddingeeos.com
   - xz-development.oss-cn-beijing.aliyuncs.com
   - xz.ercfh.com
@@ -7069,6 +7112,7 @@ domain_suffix_set:
   - zdjby.cn
   - ze5.com
   - zedo.com
+  - zeicaefiegoh.com
   - zeus.qj.net
   - zgc66.com
   - zgdfz6h7po.me
@@ -7084,7 +7128,13 @@ domain_suffix_set:
   - zhaozecheng.cn
   - zheng.cs12d.com
   - zhengjian.org
+  - zhenidc.cn
+  - zhenxcloud.cn
   - zhenxinet.com
+  - zhenxuancdn.cn
+  - zhenxuancloud.com
+  - zhenxuanidc.cn
+  - zhenxyun.cn
   - zhichi08.com
   - zhidian3g.cn
   - zhifenjie.com
@@ -7117,6 +7167,7 @@ domain_suffix_set:
   - zmj.guanqinjie.cn
   - znsv.baidu.com
   - zo66.com
+  - zonerushappz.com
   - zp22938576.com
   - zpe.klre.18183.com
   - zq84.com
@@ -7145,12 +7196,14 @@ domain_suffix_set:
   - zxh.bzshzx.com
   - zxjjzx.com
   - zxr.fzxrjx.com
+  - zxycdn.cn
   - zxziyuan.com
   - zybpj.com
   - zyf.fzdfwy.com
   - zymo.mps.weibo.com
   - zymro.com
   - zytwq.net
+  - zyxwvutsrqpo.com
   - zyz.91friend.com
   - zyz1.91friend.com
   - zz.bdstatic.com
