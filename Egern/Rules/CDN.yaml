@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4778
+# 规则统计: 4780
 
 domain_set:
   - 0x0.st
@@ -1985,6 +1985,7 @@ domain_set:
   - interwiki.scpwiki.com
   - interwiki.scpwikicn.com
   - ip-ranges.amazonaws.com
+  - iprsoftwaremedia.com
   - ipxy.io
   - irp-cdn.multiscreensite.com
   - isitmaintained.com
@@ -2448,6 +2449,7 @@ domain_set:
   - public.komiic.com
   - public.linear.app
   - public.mocortech.com
+  - public.popclip.app
   - public.saasexch.com
   - public.zoorix.com
   - publicsuffix.org

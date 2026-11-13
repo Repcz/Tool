@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4778
+# 规则统计: 4780
 
 HOST,0x0.st,CDN
 HOST,3dna.nationbuilder.com,CDN
@@ -1984,6 +1984,7 @@ HOST,interactive.guim.co.uk,CDN
 HOST,interwiki.scpwiki.com,CDN
 HOST,interwiki.scpwikicn.com,CDN
 HOST,ip-ranges.amazonaws.com,CDN
+HOST,iprsoftwaremedia.com,CDN
 HOST,ipxy.io,CDN
 HOST,irp-cdn.multiscreensite.com,CDN
 HOST,isitmaintained.com,CDN
@@ -2447,6 +2448,7 @@ HOST,public.hare200.com,CDN
 HOST,public.komiic.com,CDN
 HOST,public.linear.app,CDN
 HOST,public.mocortech.com,CDN
+HOST,public.popclip.app,CDN
 HOST,public.saasexch.com,CDN
 HOST,public.zoorix.com,CDN
 HOST,publicsuffix.org,CDN
