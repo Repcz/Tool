@@ -1,5 +1,5 @@
 # 规则名称: Ads_EasyListPrivacy
-# 规则统计: 43427
+# 规则统计: 43443
 
 DOMAIN-SUFFIX,0.0.0.1
 DOMAIN-SUFFIX,0.myikas.com
@@ -4608,6 +4608,7 @@ DOMAIN-SUFFIX,admissions.trios.com
 DOMAIN-SUFFIX,admit.mountsaintvincent.edu
 DOMAIN-SUFFIX,adnext.co
 DOMAIN-SUFFIX,adnl.bk.mufg.jp
+DOMAIN-SUFFIX,adnz.co
 DOMAIN-SUFFIX,adobe-analytics-dc.belastingdienst.nl
 DOMAIN-SUFFIX,adobe-analytics.vionicshoes.com
 DOMAIN-SUFFIX,adobe-dev-landingpageprefix.descubre.interbank.pe
@@ -5197,6 +5198,7 @@ DOMAIN-SUFFIX,analytics.airtron.com
 DOMAIN-SUFFIX,analytics.algolia.com
 DOMAIN-SUFFIX,analytics.allovoisins.com
 DOMAIN-SUFFIX,analytics.alrajhibank.com.sa
+DOMAIN-SUFFIX,analytics.alvarezrosa.com
 DOMAIN-SUFFIX,analytics.amakings.com
 DOMAIN-SUFFIX,analytics.americanfunds.com
 DOMAIN-SUFFIX,analytics.amig.com
@@ -8587,6 +8589,7 @@ DOMAIN-SUFFIX,cdanjoyner4374.myre.io
 DOMAIN-SUFFIX,cdapi.collegedunia.com
 DOMAIN-SUFFIX,cdeatz.spartoo.it
 DOMAIN-SUFFIX,cdfhpj.automobile.it
+DOMAIN-SUFFIX,cdid.trip.com
 DOMAIN-SUFFIX,cdjbf8trk.com
 DOMAIN-SUFFIX,cdjhcf.hometogo.es
 DOMAIN-SUFFIX,cdl.lvsafe.io
@@ -8609,6 +8612,7 @@ DOMAIN-SUFFIX,cdn.ravm.tv
 DOMAIN-SUFFIX,cdn.seonintelligence.com
 DOMAIN-SUFFIX,cdn.sy-d.io
 DOMAIN-SUFFIX,cdn.usefathom.com
+DOMAIN-SUFFIX,cdn.visits.dqapis.com
 DOMAIN-SUFFIX,cdn1.skrill.com
 DOMAIN-SUFFIX,cdn7.baunetz.de
 DOMAIN-SUFFIX,cdnhst.xyz
@@ -14009,6 +14013,7 @@ DOMAIN-SUFFIX,fp.measure.office.com
 DOMAIN-SUFFIX,fp.uncensored.com
 DOMAIN-SUFFIX,fpa-cdn.adweek.com
 DOMAIN-SUFFIX,fpa-cdn.arstechnica.com
+DOMAIN-SUFFIX,fpa-events.theintercept.com
 DOMAIN-SUFFIX,fpadga.mcruises.ru
 DOMAIN-SUFFIX,fpapi.io
 DOMAIN-SUFFIX,fpaudience.com
@@ -24561,6 +24566,7 @@ DOMAIN-SUFFIX,newtest.wunderman-email.cjm.adobe.com
 DOMAIN-SUFFIX,nex.163.com
 DOMAIN-SUFFIX,nextsmarty.com
 DOMAIN-SUFFIX,nexttopchef.com
+DOMAIN-SUFFIX,nexus.firecrown.com
 DOMAIN-SUFFIX,nexxtv-events.servicebus.windows.net
 DOMAIN-SUFFIX,nffxqi.jorgebischoff.com.br
 DOMAIN-SUFFIX,nflxjp.residences-immobilier.com
@@ -25474,6 +25480,7 @@ DOMAIN-SUFFIX,ot.obi.pl
 DOMAIN-SUFFIX,ot.obi.si
 DOMAIN-SUFFIX,ot.obi.sk
 DOMAIN-SUFFIX,otel-collector.lenta.tech
+DOMAIN-SUFFIX,otel-gw.booking.com
 DOMAIN-SUFFIX,otel-mobile.doordash.com
 DOMAIN-SUFFIX,othanasis.openapp.link
 DOMAIN-SUFFIX,othisf.tagomago.pl
@@ -27573,6 +27580,7 @@ DOMAIN-SUFFIX,ringplant.com
 DOMAIN-SUFFIX,ringsrecord.com
 DOMAIN-SUFFIX,riovdv.mustit.co.kr
 DOMAIN-SUFFIX,riscitsolutions.actonservice.com
+DOMAIN-SUFFIX,riskpoc.trip.com
 DOMAIN-SUFFIX,ritzyrepresentative.com
 DOMAIN-SUFFIX,ritzyveil.com
 DOMAIN-SUFFIX,riundo.bonprix.no
@@ -27613,6 +27621,7 @@ DOMAIN-SUFFIX,rochelle.wantsext.me
 DOMAIN-SUFFIX,rockagainst.com
 DOMAIN-SUFFIX,rockcarving.com
 DOMAIN-SUFFIX,rocketmonitor.com
+DOMAIN-SUFFIX,rocketserver.net
 DOMAIN-SUFFIX,rockspreading.com
 DOMAIN-SUFFIX,rockstarwriter.com
 DOMAIN-SUFFIX,roedwy.imidapeptide.com
@@ -27783,6 +27792,7 @@ DOMAIN-SUFFIX,rxhsry.sortiraparis.com
 DOMAIN-SUFFIX,rxqqaq.hollandandbarrett.com
 DOMAIN-SUFFIX,rxtolo.domiporta.pl
 DOMAIN-SUFFIX,ry0.rythmefm.com
+DOMAIN-SUFFIX,rybbit-analytics.livecounts.io
 DOMAIN-SUFFIX,rybbit.sg-app.com
 DOMAIN-SUFFIX,ryjknw.sonnenbrillen.com
 DOMAIN-SUFFIX,rymhet.posudamart.ru
@@ -29743,6 +29753,7 @@ DOMAIN-SUFFIX,sinfo.dtcidev.co
 DOMAIN-SUFFIX,singingunicorn.com
 DOMAIN-SUFFIX,singleplatform.actonservice.com
 DOMAIN-SUFFIX,singroot.com
+DOMAIN-SUFFIX,sink.gw.booking.com
 DOMAIN-SUFFIX,sinkou.tireshop.com.br
 DOMAIN-SUFFIX,sinkportal.com
 DOMAIN-SUFFIX,sinmo.chasecenter.com
@@ -33437,6 +33448,7 @@ DOMAIN-SUFFIX,spareapp.com
 DOMAIN-SUFFIX,spark.thelyst.com
 DOMAIN-SUFFIX,sparkgoal.com
 DOMAIN-SUFFIX,sparklingshelf.com
+DOMAIN-SUFFIX,spasmgame.com
 DOMAIN-SUFFIX,spc.personalcreations.com
 DOMAIN-SUFFIX,spea.eko.com
 DOMAIN-SUFFIX,spec-sensors.actonservice.com
@@ -36349,6 +36361,7 @@ DOMAIN-SUFFIX,tag.aumago.com
 DOMAIN-SUFFIX,tag.boulanger.fr
 DOMAIN-SUFFIX,tag.brandcdn.com
 DOMAIN-SUFFIX,tag.cribnotes.jp
+DOMAIN-SUFFIX,tag.decentriq.com
 DOMAIN-SUFFIX,tag.digops.sincro.io
 DOMAIN-SUFFIX,tag.eisa.mercari.com
 DOMAIN-SUFFIX,tag.elevaate.io
@@ -36686,6 +36699,7 @@ DOMAIN-SUFFIX,tatehj.nylaarp.com
 DOMAIN-SUFFIX,tatpek.com
 DOMAIN-SUFFIX,tawdryson.com
 DOMAIN-SUFFIX,taxisubsea.com
+DOMAIN-SUFFIX,taxiwear.com
 DOMAIN-SUFFIX,taylorshellfish.actonservice.com
 DOMAIN-SUFFIX,taznfx.renters.pl
 DOMAIN-SUFFIX,tba.smrtp.link
@@ -36866,6 +36880,7 @@ DOMAIN-SUFFIX,telulr.golfgalaxy.com
 DOMAIN-SUFFIX,temails.productnotice.thomsonreuters.com
 DOMAIN-SUFFIX,temp.twicomi.com
 DOMAIN-SUFFIX,tempertrick.com
+DOMAIN-SUFFIX,tempowraps.com
 DOMAIN-SUFFIX,temptteam.com
 DOMAIN-SUFFIX,temsys.temsys.fr
 DOMAIN-SUFFIX,tendertest.com
@@ -43032,6 +43047,7 @@ DOMAIN-SUFFIX,yehyqc.hugoboss.com
 DOMAIN-SUFFIX,yellowscissors.com
 DOMAIN-SUFFIX,yes88kks.infinityscans.net
 DOMAIN-SUFFIX,yesss-a1at.mno.link
+DOMAIN-SUFFIX,yetiminis.com
 DOMAIN-SUFFIX,yewrcd.govoyages.com
 DOMAIN-SUFFIX,yezztf.pinkelephant.co.kr
 DOMAIN-SUFFIX,yf5.voyage-prive.at

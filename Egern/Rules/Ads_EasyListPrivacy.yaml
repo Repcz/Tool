@@ -1,5 +1,5 @@
 # 规则名称: Ads_EasyListPrivacy
-# 规则统计: 43427
+# 规则统计: 43443
 
 domain_suffix_set:
   - 0.0.0.1
@@ -4609,6 +4609,7 @@ domain_suffix_set:
   - admit.mountsaintvincent.edu
   - adnext.co
   - adnl.bk.mufg.jp
+  - adnz.co
   - adobe-analytics-dc.belastingdienst.nl
   - adobe-analytics.vionicshoes.com
   - adobe-dev-landingpageprefix.descubre.interbank.pe
@@ -5198,6 +5199,7 @@ domain_suffix_set:
   - analytics.algolia.com
   - analytics.allovoisins.com
   - analytics.alrajhibank.com.sa
+  - analytics.alvarezrosa.com
   - analytics.amakings.com
   - analytics.americanfunds.com
   - analytics.amig.com
@@ -8588,6 +8590,7 @@ domain_suffix_set:
   - cdapi.collegedunia.com
   - cdeatz.spartoo.it
   - cdfhpj.automobile.it
+  - cdid.trip.com
   - cdjbf8trk.com
   - cdjhcf.hometogo.es
   - cdl.lvsafe.io
@@ -8610,6 +8613,7 @@ domain_suffix_set:
   - cdn.seonintelligence.com
   - cdn.sy-d.io
   - cdn.usefathom.com
+  - cdn.visits.dqapis.com
   - cdn1.skrill.com
   - cdn7.baunetz.de
   - cdnhst.xyz
@@ -14010,6 +14014,7 @@ domain_suffix_set:
   - fp.uncensored.com
   - fpa-cdn.adweek.com
   - fpa-cdn.arstechnica.com
+  - fpa-events.theintercept.com
   - fpadga.mcruises.ru
   - fpapi.io
   - fpaudience.com
@@ -24562,6 +24567,7 @@ domain_suffix_set:
   - nex.163.com
   - nextsmarty.com
   - nexttopchef.com
+  - nexus.firecrown.com
   - nexxtv-events.servicebus.windows.net
   - nffxqi.jorgebischoff.com.br
   - nflxjp.residences-immobilier.com
@@ -25475,6 +25481,7 @@ domain_suffix_set:
   - ot.obi.si
   - ot.obi.sk
   - otel-collector.lenta.tech
+  - otel-gw.booking.com
   - otel-mobile.doordash.com
   - othanasis.openapp.link
   - othisf.tagomago.pl
@@ -27574,6 +27581,7 @@ domain_suffix_set:
   - ringsrecord.com
   - riovdv.mustit.co.kr
   - riscitsolutions.actonservice.com
+  - riskpoc.trip.com
   - ritzyrepresentative.com
   - ritzyveil.com
   - riundo.bonprix.no
@@ -27614,6 +27622,7 @@ domain_suffix_set:
   - rockagainst.com
   - rockcarving.com
   - rocketmonitor.com
+  - rocketserver.net
   - rockspreading.com
   - rockstarwriter.com
   - roedwy.imidapeptide.com
@@ -27784,6 +27793,7 @@ domain_suffix_set:
   - rxqqaq.hollandandbarrett.com
   - rxtolo.domiporta.pl
   - ry0.rythmefm.com
+  - rybbit-analytics.livecounts.io
   - rybbit.sg-app.com
   - ryjknw.sonnenbrillen.com
   - rymhet.posudamart.ru
@@ -29744,6 +29754,7 @@ domain_suffix_set:
   - singingunicorn.com
   - singleplatform.actonservice.com
   - singroot.com
+  - sink.gw.booking.com
   - sinkou.tireshop.com.br
   - sinkportal.com
   - sinmo.chasecenter.com
@@ -33438,6 +33449,7 @@ domain_suffix_set:
   - spark.thelyst.com
   - sparkgoal.com
   - sparklingshelf.com
+  - spasmgame.com
   - spc.personalcreations.com
   - spea.eko.com
   - spec-sensors.actonservice.com
@@ -36350,6 +36362,7 @@ domain_suffix_set:
   - tag.boulanger.fr
   - tag.brandcdn.com
   - tag.cribnotes.jp
+  - tag.decentriq.com
   - tag.digops.sincro.io
   - tag.eisa.mercari.com
   - tag.elevaate.io
@@ -36687,6 +36700,7 @@ domain_suffix_set:
   - tatpek.com
   - tawdryson.com
   - taxisubsea.com
+  - taxiwear.com
   - taylorshellfish.actonservice.com
   - taznfx.renters.pl
   - tba.smrtp.link
@@ -36867,6 +36881,7 @@ domain_suffix_set:
   - temails.productnotice.thomsonreuters.com
   - temp.twicomi.com
   - tempertrick.com
+  - tempowraps.com
   - temptteam.com
   - temsys.temsys.fr
   - tendertest.com
@@ -43033,6 +43048,7 @@ domain_suffix_set:
   - yellowscissors.com
   - yes88kks.infinityscans.net
   - yesss-a1at.mno.link
+  - yetiminis.com
   - yewrcd.govoyages.com
   - yezztf.pinkelephant.co.kr
   - yf5.voyage-prive.at
