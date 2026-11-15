@@ -1,13 +1,4 @@
-# 2026-06-25 09:57:16
-
-# > NTP
-# AND,((DEST-PORT,123),(PROTOCOL,UDP))
-
-# > VPS SSH
-DEST-PORT,22
-
-# > IPv4/IPv6 Test
-DOMAIN-SUFFIX,test-ipv6.com
+# 2026-11-16 08:00:00
 
 # > Goodnotes
 DOMAIN,api.goodnotescloud.com
@@ -63,8 +54,8 @@ DOMAIN,analytics.strava.com
 DOMAIN,msg.umeng.com
 DOMAIN,msg.umengcloud.com
 
-# > public_ip_lookup
-DOMAIN,ifconfig.me
-
 # > CN Speedtest
 DOMAIN-SUFFIX,cnspeedtest.cn
+
+# > Surge VIF Loopback test
+DOMAIN,loopback.nssurge.com
