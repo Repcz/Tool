@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4780
+# 规则统计: 4781
 
 domain_set:
   - 0x0.st
@@ -2939,6 +2939,7 @@ domain_set:
   - static.jsbin.com
   - static.jup.ag
   - static.k2s.cc
+  - static.karousell.com
   - static.killedbygoogle.com
   - static.klaviyo.com
   - static.kobo.com
