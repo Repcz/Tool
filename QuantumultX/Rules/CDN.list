@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4781
+# 规则统计: 4782
 
 HOST,0x0.st,CDN
 HOST,3dna.nationbuilder.com,CDN
@@ -2138,6 +2138,7 @@ HOST,media.convertkit.com,CDN
 HOST,media.crazyshit.com,CDN
 HOST,media.currys.biz,CDN
 HOST,media.daily.dev,CDN
+HOST,media.datacamp.com,CDN
 HOST,media.datacenterdynamics.com,CDN
 HOST,media.dev.to,CDN
 HOST,media.discordapp.net,CDN

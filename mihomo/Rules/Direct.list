@@ -1,5 +1,5 @@
 # 规则名称: Direct
-# 规则统计: 36
+# 规则统计: 34
 
 DOMAIN,alt1-mtalk.google.com
 DOMAIN,alt2-mtalk.google.com
@@ -18,9 +18,9 @@ DOMAIN,clientservices.googleapis.com
 DOMAIN,dl.google.com
 DOMAIN,dl.l.google.com
 DOMAIN,fairplay.l.qq.com
-DOMAIN,ifconfig.me
 DOMAIN,livew.l.qq.com
 DOMAIN,log.mmstat.com
+DOMAIN,loopback.nssurge.com
 DOMAIN,msg.umeng.com
 DOMAIN,msg.umengcloud.com
 DOMAIN,mtalk.google.com
@@ -35,5 +35,3 @@ DOMAIN-SUFFIX,fileball.app
 DOMAIN-SUFFIX,goodnotesapp.com.cn
 DOMAIN-SUFFIX,googletraveladservices.com
 DOMAIN-SUFFIX,pianyuan.org
-DOMAIN-SUFFIX,test-ipv6.com
-DST-PORT,22

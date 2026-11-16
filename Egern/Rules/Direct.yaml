@@ -1,5 +1,5 @@
 # 规则名称: Direct
-# 规则统计: 36
+# 规则统计: 34
 
 domain_set:
   - alt1-mtalk.google.com
@@ -19,9 +19,9 @@ domain_set:
   - dl.google.com
   - dl.l.google.com
   - fairplay.l.qq.com
-  - ifconfig.me
   - livew.l.qq.com
   - log.mmstat.com
+  - loopback.nssurge.com
   - msg.umeng.com
   - msg.umengcloud.com
   - mtalk.google.com
@@ -37,6 +37,3 @@ domain_suffix_set:
   - goodnotesapp.com.cn
   - googletraveladservices.com
   - pianyuan.org
-  - test-ipv6.com
-dest_port_set:
-  - '22'

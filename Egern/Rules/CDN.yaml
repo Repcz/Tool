@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4781
+# 规则统计: 4782
 
 domain_set:
   - 0x0.st
@@ -2139,6 +2139,7 @@ domain_set:
   - media.crazyshit.com
   - media.currys.biz
   - media.daily.dev
+  - media.datacamp.com
   - media.datacenterdynamics.com
   - media.dev.to
   - media.discordapp.net

@@ -1,5 +1,5 @@
 # 规则名称: Direct
-# 规则统计: 35
+# 规则统计: 34
 
 HOST,alt1-mtalk.google.com,Direct
 HOST,alt2-mtalk.google.com,Direct
@@ -18,9 +18,9 @@ HOST,clientservices.googleapis.com,Direct
 HOST,dl.google.com,Direct
 HOST,dl.l.google.com,Direct
 HOST,fairplay.l.qq.com,Direct
-HOST,ifconfig.me,Direct
 HOST,livew.l.qq.com,Direct
 HOST,log.mmstat.com,Direct
+HOST,loopback.nssurge.com,Direct
 HOST,msg.umeng.com,Direct
 HOST,msg.umengcloud.com,Direct
 HOST,mtalk.google.com,Direct
@@ -35,4 +35,3 @@ HOST-SUFFIX,fileball.app,Direct
 HOST-SUFFIX,goodnotesapp.com.cn,Direct
 HOST-SUFFIX,googletraveladservices.com,Direct
 HOST-SUFFIX,pianyuan.org,Direct
-HOST-SUFFIX,test-ipv6.com,Direct
