@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4782
+# 规则统计: 4785
 
 domain_set:
   - 0x0.st
@@ -158,6 +158,7 @@ domain_set:
   - assets.change.org
   - assets.chaos.social
   - assets.churnkey.co
+  - assets.claudeusercontent.com
   - assets.clever-cloud.com
   - assets.clibo.tw
   - assets.clickfunnels.com
@@ -2845,6 +2846,7 @@ domain_set:
   - static.change.org
   - static.chessarena.com
   - static.chrome-stats.com
+  - static.claudeusercontent.com
   - static.clips4sale.com
   - static.cloud.coveo.com
   - static.cloudcachetci.com
@@ -3297,6 +3299,7 @@ domain_set:
   - uos-support-files.svc.ui.com
   - updates.signal.org
   - updates2.signal.org
+  - upload.claudeusercontent.com
   - upload.movim.eu
   - upload.teftera.com
   - upload.wikimedia.org
@@ -3713,7 +3716,6 @@ domain_suffix_set:
   - chcdn.xyz
   - chesscomfiles.com
   - cktu01.sbs
-  - claudeusercontent.com
   - cldup.com
   - clientmetrics-pa.googleapis.com
   - cloud.influxdata.com
@@ -3892,6 +3894,7 @@ domain_suffix_set:
   - forbesimg.com
   - forgecdn.net
   - fourhoi.com
+  - frame.claudeusercontent.com
   - framercdn.com
   - framerstatic.com
   - framerusercontent.com

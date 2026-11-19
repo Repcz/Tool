@@ -1,5 +1,5 @@
 # 规则名称: AI
-# 规则统计: 59
+# 规则统计: 61
 
 domain_set:
   - ai.google.dev
@@ -11,6 +11,8 @@ domain_set:
   - antigravity.google
   - api.github.com
   - api.jetbrains.ai
+  - bridge.claudeusercontent.com
+  - claude.site
   - cloud.zed.dev
   - daily-cloudcode-pa.googleapis.com
   - daily-cloudcode-pa.sandbox.googleapis.com
