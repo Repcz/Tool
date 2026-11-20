@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4785
+# 规则统计: 4787
 
 domain_set:
   - 0x0.st
@@ -238,6 +238,7 @@ domain_set:
   - assets.mcp.corespeed.io
   - assets.media-platform.com
   - assets.monei.com
+  - assets.monetizationos.com
   - assets.monica.im
   - assets.mozilla.social
   - assets.msn.com
@@ -3627,6 +3628,7 @@ domain_suffix_set:
   - bundle.run
   - bundle.thimatic-apps.com
   - bunnycdn.com
+  - butterfly-effect-cdn.dev
   - bytebucket.org
   - bytedapm.com
   - c-dn.net
