@@ -2,11 +2,8 @@ name: '高德地图去广告'
 desc: |-
   移除开屏广告、首页推荐、搜索推荐、打车广告、地点推荐及广告，精简我的页面。
   @可莉🅥
-author: '可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]'
-homepage: 'https://hub.kelee.one'
 icon: 'https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Amap.png'
 date: '2026-10-20 12:06:08'
-openUrl: 'https://apps.apple.com/app/id461703208'
 category: '⚙️ ▸ Kelee Mode'
 http:
   mitm: #!append

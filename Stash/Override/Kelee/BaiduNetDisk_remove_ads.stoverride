@@ -2,11 +2,8 @@ name: '百度网盘去广告'
 desc: |-
   移除开屏广告、首页卡片广告、传输页面广告、各类弹窗，精简侧拉抽屉和我的页面。
   @可莉🅥
-author: '可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]'
-homepage: 'https://hub.kelee.one'
 icon: 'https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BaiduNetDisk.png'
 date: '2026-10-02 13:57:49'
-openUrl: 'https://apps.apple.com/app/id547166701'
 category: '⚙️ ▸ Kelee Mode'
 http:
   mitm: #!append

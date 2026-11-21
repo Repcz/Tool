@@ -2,11 +2,8 @@ name: '航旅纵横去广告'
 desc: |-
   过滤航旅纵横广告
   @佚名
-author: '佚名'
-homepage: 'https://hub.kelee.one'
 icon: 'https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Umetrip.png'
 date: '2026-10-02 13:57:49'
-openUrl: 'https://apps.apple.com/app/id480161784'
 category: '⚙️ ▸ Kelee Mode'
 http:
   mitm: #!append

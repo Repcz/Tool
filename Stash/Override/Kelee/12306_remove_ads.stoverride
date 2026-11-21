@@ -2,11 +2,8 @@ name: '12306去广告'
 desc: |-
   过滤12306应用内广告及开屏广告
   @RuCu6, @可莉🅥
-author: 'RuCu6[https://github.com/RuCu6], 可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]'
-homepage: 'https://hub.kelee.one'
 icon: 'https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/12306.png'
 date: '2026-10-02 13:57:49'
-openUrl: 'https://apps.apple.com/app/id564818797'
 category: '⚙️ ▸ Kelee Mode'
 http:
   mitm: #!append

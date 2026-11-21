@@ -2,11 +2,8 @@ name: '淘宝去广告'
 desc: |-
   过滤淘宝开屏广告
   @RuCu6
-author: 'RuCu6[https://github.com/RuCu6]'
-homepage: 'https://hub.kelee.one'
 icon: 'https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Taobao.png'
 date: '2026-10-02 13:57:49'
-openUrl: 'https://apps.apple.com/app/id387682726'
 category: '⚙️ ▸ Kelee Mode'
 http:
   mitm: #!append

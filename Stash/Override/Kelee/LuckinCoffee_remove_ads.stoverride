@@ -2,11 +2,8 @@ name: '瑞幸咖啡去广告'
 desc: |-
   移除开屏广告、弹窗和各类横幅推广。
   @Sliverkiss
-author: 'Sliverkiss[https://github.com/Sliverkiss]'
-homepage: 'https://hub.kelee.one'
 icon: 'https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/LuckinCoffee.png'
 date: '2026-10-02 13:57:49'
-openUrl: 'https://apps.apple.com/app/id1296749505'
 category: '⚙️ ▸ Kelee Mode'
 http:
   mitm: #!append

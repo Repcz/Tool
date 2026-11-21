@@ -2,8 +2,6 @@ name: 'HTTPDNS拦截器'
 desc: |-
   此插件是所有去广告插件的依赖，拦截常见的HTTPDNS服务，以确保这些请求都能够在Loon的DNS框架下工作。
   @可莉🅥, @VirgilClyne
-author: '可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md], VirgilClyne[https://github.com/VirgilClyne]'
-homepage: 'https://hub.kelee.one'
 icon: 'https://raw.githubusercontent.com/luestr/IconResource/main/Other_icon/120px/HTTPDNS.png'
 date: '2026-10-02 13:57:49'
 category: '⚙️ ▸ Kelee Mode'

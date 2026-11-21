@@ -2,11 +2,8 @@ name: '微信小程序去广告'
 desc: |-
   收录常用小程序的去广告，作者署名在插件内。
   @可莉🅥
-author: '可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]'
-homepage: 'https://hub.kelee.one'
 icon: 'https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/WeixinMiniPrograms.png'
 date: '2026-10-02 13:57:49'
-openUrl: 'https://apps.apple.com/app/id414478124'
 category: '⚙️ ▸ Kelee Mode'
 http:
   mitm: #!append

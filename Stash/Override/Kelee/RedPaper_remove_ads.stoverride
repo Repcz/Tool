@@ -2,11 +2,8 @@ name: '小红书去广告'
 desc: |-
   过滤信息流推广，移除图片及视频水印，如有异常，请先清除缓存再尝试。
   @RuCu6, @fmz200
-author: 'RuCu6[https://github.com/RuCu6], fmz200[https://github.com/fmz200]'
-homepage: 'https://hub.kelee.one'
 icon: 'https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/RedPaper.png'
 date: '2026-10-02 13:57:49'
-openUrl: 'https://apps.apple.com/app/id741292507'
 category: '⚙️ ▸ Kelee Mode'
 http:
   mitm: #!append
