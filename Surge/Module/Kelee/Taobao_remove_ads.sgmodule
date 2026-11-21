@@ -5,12 +5,12 @@
 #!date=2026-10-02 13:57:49
 
 [Rule]
-DOMAIN,adashx.m.taobao.com,REJECT,extended-matching,pre-matching
-DOMAIN,ossgw.alicdn.com,REJECT,extended-matching,pre-matching
-DOMAIN,ems.youku.com,REJECT,extended-matching,pre-matching
-DOMAIN,hudong.alicdn.com,REJECT,extended-matching,pre-matching
-DOMAIN,h-adashx.ut.taobao.com,REJECT,extended-matching,pre-matching
-DOMAIN,ut.taobao.com,REJECT,extended-matching,pre-matching
+DOMAIN,adashx.m.taobao.com,REJECT,pre-matching
+DOMAIN,ossgw.alicdn.com,REJECT,pre-matching
+DOMAIN,ems.youku.com,REJECT,pre-matching
+DOMAIN,hudong.alicdn.com,REJECT,pre-matching
+DOMAIN,h-adashx.ut.taobao.com,REJECT,pre-matching
+DOMAIN,ut.taobao.com,REJECT,pre-matching
 
 [Map Local]
 (?i)^https://acs\.m\.taobao\.com/gw/mtop\.fliggy\.crm\.screen\.(allresource|predict) data-type=text data="{}" status-code=200 header="Content-Type:application/json"

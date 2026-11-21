@@ -5,29 +5,29 @@
 #!date=2026-10-02 13:57:49
 
 [Rule]
-DOMAIN,acdn.adnxs.com,REJECT,extended-matching,pre-matching
-DOMAIN,mediation.adnxs.com,REJECT,extended-matching,pre-matching
-DOMAIN,sin3-ib.adnxs.com,REJECT,extended-matching,pre-matching
-DOMAIN,sdkconfig.ad.xiaomi.com,REJECT,extended-matching,pre-matching
-DOMAIN,data.mistat.xiaomi.com,REJECT,extended-matching,pre-matching
-DOMAIN,tracking.intl.miui.com,REJECT,extended-matching,pre-matching
-DOMAIN-SUFFIX,doubleclick-cn.net,REJECT,extended-matching,pre-matching
-DOMAIN-SUFFIX,doubleclick.net,REJECT,extended-matching,pre-matching
-DOMAIN,business.msstatic.com,REJECT,extended-matching,pre-matching
-DOMAIN-SUFFIX,v1d.szbdyd.com,REJECT,extended-matching,pre-matching
-URL-REGEX,"^http:\/\/cdn\.wup\.huya\.com\/launch\/queryHttpDns$",REJECT,extended-matching
-DOMAIN-SUFFIX,m1.ad.10010.com,REJECT,extended-matching,pre-matching
-DOMAIN,ad.21cn.com,REJECT,extended-matching,pre-matching
-DOMAIN,ad.k.21cn.com,REJECT,extended-matching,pre-matching
-DOMAIN,admarket.21cn.com,REJECT,extended-matching,pre-matching
-DOMAIN,adshows.21cn.com,REJECT,extended-matching,pre-matching
+DOMAIN,acdn.adnxs.com,REJECT,pre-matching
+DOMAIN,mediation.adnxs.com,REJECT,pre-matching
+DOMAIN,sin3-ib.adnxs.com,REJECT,pre-matching
+DOMAIN,sdkconfig.ad.xiaomi.com,REJECT,pre-matching
+DOMAIN,data.mistat.xiaomi.com,REJECT,pre-matching
+DOMAIN,tracking.intl.miui.com,REJECT,pre-matching
+DOMAIN-SUFFIX,doubleclick-cn.net,REJECT,pre-matching
+DOMAIN-SUFFIX,doubleclick.net,REJECT,pre-matching
+DOMAIN,business.msstatic.com,REJECT,pre-matching
+DOMAIN-SUFFIX,v1d.szbdyd.com,REJECT,pre-matching
+URL-REGEX,"^http:\/\/cdn\.wup\.huya\.com\/launch\/queryHttpDns$",REJECT
+DOMAIN-SUFFIX,m1.ad.10010.com,REJECT,pre-matching
+DOMAIN,ad.21cn.com,REJECT,pre-matching
+DOMAIN,ad.k.21cn.com,REJECT,pre-matching
+DOMAIN,admarket.21cn.com,REJECT,pre-matching
+DOMAIN,adshows.21cn.com,REJECT,pre-matching
 IP-CIDR,122.229.8.47/32,REJECT,no-resolve,pre-matching
 IP-CIDR,122.229.29.89/32,REJECT,no-resolve,pre-matching
-URL-REGEX,"^http:\/\/p\.kuaidi100\.com\/mobile\/mobileapi\.do",REJECT,extended-matching
-URL-REGEX,"^http:\/\/p\.kuaidi100\.com\/advertisement\/",REJECT,extended-matching
-DOMAIN,mall-dsp2.qinlinkeji.com,REJECT,extended-matching,pre-matching
-DOMAIN,mallapi2.qinlinkeji.com,REJECT,extended-matching,pre-matching
-DOMAIN,open-pixon.ads-pixiv.net,REJECT,extended-matching,pre-matching
+URL-REGEX,"^http:\/\/p\.kuaidi100\.com\/mobile\/mobileapi\.do",REJECT
+URL-REGEX,"^http:\/\/p\.kuaidi100\.com\/advertisement\/",REJECT
+DOMAIN,mall-dsp2.qinlinkeji.com,REJECT,pre-matching
+DOMAIN,mallapi2.qinlinkeji.com,REJECT,pre-matching
+DOMAIN,open-pixon.ads-pixiv.net,REJECT,pre-matching
 
 [URL Rewrite]
 (?i)^https?://api-access\.pangolin-sdk-toutiao\.com/api/ad/union/sdk _ reject

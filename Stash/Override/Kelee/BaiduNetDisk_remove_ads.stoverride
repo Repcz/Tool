@@ -1,0 +1,23 @@
+name: '百度网盘去广告'
+desc: |-
+  移除开屏广告、首页卡片广告、传输页面广告、各类弹窗，精简侧拉抽屉和我的页面。
+  @可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
+author: '可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]'
+homepage: 'https://hub.kelee.one'
+icon: 'https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/BaiduNetDisk.png'
+category: '去广告'
+date: '2026-10-02 13:57:49'
+openUrl: 'https://apps.apple.com/app/id547166701'
+http:
+  mitm: #!append
+    - 'pan.baidu.com'
+  url-rewrite:
+    - '(?i)^https://pan\.baidu\.com/api/getconfig\? - reject-dict'
+    - '(?i)^https://pan\.baidu\.com/api/getsyscfg\? - reject-dict'
+    - '(?i)^https://pan\.baidu\.com/api/taskscore/tasklist\? - reject-dict'
+    - '(?i)^https://pan\.baidu\.com/act/api/activityentry\? - reject-dict'
+    - '(?i)^https://pan\.baidu\.com/rest/\d\.\d/pcs/adv\? - reject-dict'
+    - '(?i)^https://pan\.baidu\.com/api/plugin/get\? - reject-dict'
+    - '(?i)^https://pan\.baidu\.com/recommend/query/list\? - reject-dict'
+  body-rewrite:
+    - '(?i)^https://pan\.baidu\.com/feed/kingkongdistrict\? response-jq .data.data |= map(select(.type != "novel" and .type != "shortplay" and .type != "print" and .type != "job_hunt"))'

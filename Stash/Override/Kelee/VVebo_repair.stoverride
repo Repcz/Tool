@@ -1,0 +1,47 @@
+name: 'VVebo时间线修复'
+desc: |-
+  修复失效的用户时间线和我的页面。使用此插件前需要禁用微博去广告插件，避免插件冲突导致失效。
+  @suiyuran[https://github.com/suiyuran], androidcn[https://github.com/androidcn]
+author: 'suiyuran[https://github.com/suiyuran], androidcn[https://github.com/androidcn]'
+homepage: 'https://hub.kelee.one'
+icon: 'https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/VVebo.png'
+category: '功能增强'
+date: '2026-10-02 13:57:49'
+openUrl: 'https://apps.apple.com/app/id670910957'
+http:
+  mitm: #!append
+    - 'api.weibo.cn'
+  script:
+    - match: '(?i)^https://api\.weibo\.cn/2/users/show\?'
+      name: '修复时间线'
+      type: 'request'
+    - match: '(?i)^https://api\.weibo\.cn/2/statuses/user_timeline\?'
+      name: '修复时间线_2'
+      type: 'request'
+    - match: '(?i)^https://api\.weibo\.cn/2/remind/unread_count\?'
+      name: '修复时间线_3'
+      type: 'request'
+    - match: '(?i)^https://api\.weibo\.cn/2/profile/statuses/tab\?'
+      name: '修复时间线_4'
+      type: 'response'
+      require-body: true
+    - match: '(?i)^https://api\.weibo\.cn/2/cardlist\?'
+      name: '修复我的页面'
+      type: 'response'
+      require-body: true
+script-providers:
+  '修复时间线':
+    url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/VVebo/VVebo_repair.js'
+    interval: 86400
+  '修复时间线_2':
+    url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/VVebo/VVebo_repair.js'
+    interval: 86400
+  '修复时间线_3':
+    url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/VVebo/VVebo_repair.js'
+    interval: 86400
+  '修复时间线_4':
+    url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/VVebo/VVebo_repair.js'
+    interval: 86400
+  '修复我的页面':
+    url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/VVebo/VVebo_repair.js'
+    interval: 86400

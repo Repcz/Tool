@@ -8,19 +8,19 @@
 AND,((URL-REGEX, "^http:\/\/((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\/d(\d)?"), (USER-AGENT, "*com.xunmeng.pinduoduo*")),REJECT
 AND,((URL-REGEX, "^http:\/\/\[[0-9a-fA-F:]+\]\/d(\d)?\?"), (USER-AGENT, "*com.xunmeng.pinduoduo*")),REJECT
 AND,((DOMAIN, api.pinduoduo.com), (PROTOCOL, QUIC)),REJECT
-DOMAIN,titan.pinduoduo.com,REJECT,extended-matching,pre-matching
-DOMAIN,xg.pinduoduo.com,REJECT,extended-matching,pre-matching
-DOMAIN,cdl-1.pddpic.com,REJECT,extended-matching,pre-matching
-DOMAIN,cdl-p2.pddpic.com,REJECT,extended-matching,pre-matching
-DOMAIN,cd-1.pddpic.com,REJECT,extended-matching,pre-matching
-DOMAIN,apm.pinduoduo.com,REJECT,extended-matching,pre-matching
-DOMAIN,th-b.pinduoduo.com,REJECT,extended-matching,pre-matching
-DOMAIN,ta.pinduoduo.com,REJECT,extended-matching,pre-matching
-DOMAIN,th.pinduoduo.com,REJECT,extended-matching,pre-matching
-DOMAIN,th-a.pinduoduo.com,REJECT,extended-matching,pre-matching
-DOMAIN,ta-a.pinduoduo.com,REJECT,extended-matching,pre-matching
-DOMAIN,meta.pinduoduo.com,REJECT,extended-matching,pre-matching
-DOMAIN,apm-a.pinduoduo.com,REJECT,extended-matching,pre-matching
+DOMAIN,titan.pinduoduo.com,REJECT,pre-matching
+DOMAIN,xg.pinduoduo.com,REJECT,pre-matching
+DOMAIN,cdl-1.pddpic.com,REJECT,pre-matching
+DOMAIN,cdl-p2.pddpic.com,REJECT,pre-matching
+DOMAIN,cd-1.pddpic.com,REJECT,pre-matching
+DOMAIN,apm.pinduoduo.com,REJECT,pre-matching
+DOMAIN,th-b.pinduoduo.com,REJECT,pre-matching
+DOMAIN,ta.pinduoduo.com,REJECT,pre-matching
+DOMAIN,th.pinduoduo.com,REJECT,pre-matching
+DOMAIN,th-a.pinduoduo.com,REJECT,pre-matching
+DOMAIN,ta-a.pinduoduo.com,REJECT,pre-matching
+DOMAIN,meta.pinduoduo.com,REJECT,pre-matching
+DOMAIN,apm-a.pinduoduo.com,REJECT,pre-matching
 
 [Body Rewrite]
 http-response-jq (?i)^https://api\.pinduoduo\.com/api/alexa/homepage/hub\? 'delpaths([["result","dy_module","irregular_banner_dy"]])'

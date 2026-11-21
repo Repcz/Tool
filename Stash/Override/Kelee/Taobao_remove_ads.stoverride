@@ -1,0 +1,51 @@
+name: '淘宝去广告'
+desc: |-
+  过滤淘宝开屏广告
+  @RuCu6[https://github.com/RuCu6]
+author: 'RuCu6[https://github.com/RuCu6]'
+homepage: 'https://hub.kelee.one'
+icon: 'https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Taobao.png'
+category: '去广告'
+date: '2026-10-02 13:57:49'
+openUrl: 'https://apps.apple.com/app/id387682726'
+http:
+  mitm: #!append
+    - 'acs.m.taobao.com'
+    - 'heic.alicdn.com'
+    - 'guide-acs.m.taobao.com'
+    - 'poplayer.template.alibaba.com'
+  url-rewrite:
+    - '(?i)^https://acs\.m\.taobao\.com/gw/mtop\.fliggy\.crm\.screen\.(allresource|predict) - reject-dict'
+    - '(?i)^https://acs\.m\.taobao\.com/gw/mtop\.alibaba\.advertisementservice\.getadv - reject-dict'
+    - '(?i)^https://acs\.m\.taobao\.com/gw/mtop\.alimama\.etao\.config\.query/.+?etao_advertise - reject-dict'
+    - '(?i)^https://acs\.m\.taobao\.com/gw/mtop\.alimusic\.common\.mobileservice\.startinit - reject-dict'
+    - '(?i)^https://acs\.m\.taobao\.com/gw/mtop\.etao\.noah\.query/.+tao_splash - reject-dict'
+    - '(?i)^https://acs\.m\.taobao\.com/gw/mtop\.film\.mtopadvertiseapi\.queryadvertise - reject-dict'
+    - '(?i)^https://acs\.m\.taobao\.com/gw/mtop\.o2o\.ad\.gateway\.get - reject-dict'
+    - '(?i)^https://acs\.m\.taobao\.com/gw/mtop\.taobao\.idle\.home\.welcome - reject-dict'
+    - '(?i)^https://acs\.m\.taobao\.com/gw/mtop\.trip\.activity\.querytmsresources - reject-dict'
+    - '(?i)^https://(?:gw|heic)\.alicdn\.com/imgextra/i\d/\d*/?[\w!]+-\d-(?:octopus|tps)-(?:1080|1125)-\d{4}\.(?:jpg|png)_(?:1\d{3}|9\d{2})x(?:\d|1\d{3}|9\d{2})q[59]0 - reject-dict'
+    - '(?i)^https://guide-acs\.m\.taobao\.com/gw/mtop\.taobao\.(volvo\.secondfloor\.getconfig|wireless\.home\.newface\.awesome\.get) - reject-dict'
+  script:
+    - match: '(?i)^https://guide-acs\.m\.taobao\.com/gw/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get)'
+      name: '移除淘宝开屏广告'
+      type: 'response'
+      require-body: true
+    - match: '(?i)^https://poplayer\.template\.alibaba\.com/\w+\.json'
+      name: '移除淘宝开屏广告_2'
+      type: 'response'
+      require-body: true
+script-providers:
+  '移除淘宝开屏广告':
+    url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/Taobao/Taobao_remove_ads.js'
+    interval: 86400
+  '移除淘宝开屏广告_2':
+    url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/Taobao/Taobao_remove_ads.js'
+    interval: 86400
+rules:
+  - 'DOMAIN,adashx.m.taobao.com,REJECT'
+  - 'DOMAIN,ossgw.alicdn.com,REJECT'
+  - 'DOMAIN,ems.youku.com,REJECT'
+  - 'DOMAIN,hudong.alicdn.com,REJECT'
+  - 'DOMAIN,h-adashx.ut.taobao.com,REJECT'
+  - 'DOMAIN,ut.taobao.com,REJECT'

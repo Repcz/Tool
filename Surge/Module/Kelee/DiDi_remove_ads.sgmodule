@@ -5,9 +5,9 @@
 #!date=2026-10-02 13:57:49
 
 [Rule]
-DOMAIN,gwp.xiaojukeji.com,REJECT,extended-matching,pre-matching
-DOMAIN,gwpgz.diditaxi.com.cn,REJECT,extended-matching,pre-matching
-DOMAIN,adtrack.xiaojukeji.com,REJECT,extended-matching,pre-matching
+DOMAIN,gwp.xiaojukeji.com,REJECT,pre-matching
+DOMAIN,gwpgz.diditaxi.com.cn,REJECT,pre-matching
+DOMAIN,adtrack.xiaojukeji.com,REJECT,pre-matching
 
 [Body Rewrite]
 http-response-jq (?i)^https://as\.xiaojukeji\.com/ep/as/toggles\? '.data |= map(select(.name != "isUseNetConnectivity") | .assign.args.rootca_pin = 0 | .assign.args.sni_list = {})'
