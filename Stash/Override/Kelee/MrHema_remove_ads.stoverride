@@ -1,13 +1,13 @@
 name: '盒马去广告'
 desc: |-
   移除开屏广告、首页信息流广告及推广、弹窗广告、悬浮挂件、商品及购物车推荐，精简底栏及我的页面。
-  @可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
+  @可莉🅥
 author: '可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]'
 homepage: 'https://hub.kelee.one'
 icon: 'https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/MrHema.png'
-category: '去广告'
 date: '2026-10-02 13:57:49'
 openUrl: 'https://apps.apple.com/app/id1063183999'
+category: '⚙️ ▸ Kelee Mode'
 http:
   mitm: #!append
     - 'acs-m.freshippo.com'

@@ -1,13 +1,13 @@
 name: 'IT之家去广告'
 desc: |-
   过滤IT之家信息流广告和文末广告，自定义移除置顶和轮播图，自定义移除项需在插件配置。
-  @可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
+  @可莉🅥
 author: '可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]'
 homepage: 'https://hub.kelee.one'
 icon: 'https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/IThome.png'
-category: '去广告'
 date: '2026-10-02 13:57:49'
 openUrl: 'https://apps.apple.com/app/id570610859'
+category: '⚙️ ▸ Kelee Mode'
 arguments-version: 1
 arguments:
   removePinnedArticles:

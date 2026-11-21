@@ -1,13 +1,13 @@
 name: '转转去广告'
 desc: |-
   移除开屏广告、应用内悬浮窗、信息流推广、商品推荐、首页弹窗，精简我的页面。
-  @可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
+  @可莉🅥
 author: '可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]'
 homepage: 'https://hub.kelee.one'
 icon: 'https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/ZhuanZhuan.png'
-category: '去广告'
 date: '2026-10-02 13:57:49'
 openUrl: 'https://apps.apple.com/app/id1002355194'
+category: '⚙️ ▸ Kelee Mode'
 http:
   mitm: #!append
     - 'app.zhuanzhuan.com'
