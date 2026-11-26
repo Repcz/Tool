@@ -1,0 +1,21 @@
+name: '航旅纵横去广告'
+desc: |-
+  过滤航旅纵横广告
+  @佚名
+icon: 'https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Umetrip.png'
+date: '2026-10-02 13:57:49'
+category: '⚙️ ▸ Kelee Mode'
+http:
+  mitm: #!append
+    - '114.115.217.129'
+    - 'home.umetrip.com'
+  script:
+    - match: '(?i)^http?://(114\.115\.217\.129)|(home\.umetrip\.com)/gateway/api/umetrip/native$'
+      name: '移除首页广告'
+      type: 'response'
+script-providers:
+  '移除首页广告':
+    url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/Umetrip/Umetrip_remove_ads.js'
+    interval: 86400
+rules:
+  - 'URL-REGEX,"^http?:\/\/(discardrp|startup)\.umetrip\.com\/gateway\/api\/umetrip\/native",REJECT'

@@ -1,0 +1,7 @@
+# 规则名称: AppleID
+# 规则统计: 4
+
+DOMAIN,appleid.apple.com
+DOMAIN,appleid.cdn-apple.com
+DOMAIN,gsa.apple.com
+DOMAIN,idmsa.apple.com

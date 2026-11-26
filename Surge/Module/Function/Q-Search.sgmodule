@@ -1,0 +1,76 @@
+#!name=功能｜快捷搜索
+#!desc=DuckDuckGo快捷搜索
+#!category=⚙️ ▸ Function
+
+[URL Rewrite]
+
+# yd  xxx (有道词典)
+^https:\/\/duckduckgo.com\/\?q=yd\+([^&]+).+ http://dict.youdao.com/search?q=$1 302
+
+# trc xxx (Google 译至中)
+^https:\/\/duckduckgo.com\/\?q=trc\+([^&]+).+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=zh-CN&text=$1 302
+
+# tre xxx (Google 译至英)
+^https:\/\/duckduckgo.com\/\?q=tre\+([^&]+).+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$1 302
+
+# trj xxx (Google 译至日)
+^https:\/\/duckduckgo.com\/\?q=trj\+([^&]+).+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=ja&text=$1 302
+
+
+# db    xxx (豆瓣)
+^https:\/\/duckduckgo.com\/\?q=db\+([^&]+).+ https://m.douban.com/search?query=$1 302
+
+# zh    xxx (知乎)
+^https:\/\/duckduckgo.com\/\?q=zh\+([^&]+).+ http://www.zhihu.com/search?q=$1 302
+
+
+# sspai xxx (少数派站内搜索)
+^https:\/\/duckduckgo.com\/\?q=sspai\+([^&]+).+ https://sspai.com/search/post/$1 302
+
+# ssp   xxx (Google 搜索少数派)
+^https:\/\/duckduckgo.com\/\?q=ssp\+([^&]+).+ https://www.google.com/search?as_q=$1&as_sitesearch=sspai.com 302
+
+# tw    xxx (Twitter)
+^https:\/\/duckduckgo.com\/\?q=tw\+([^&]+).+ https://twitter.com/search?q=$1 302
+
+# git    xxx (GitHub)
+^https:\/\/duckduckgo.com\/\?q=git\+([^&]+).+ https://github.com/search?q=$1 302
+
+
+# zdm xxx (什么值得买)
+^https:\/\/duckduckgo.com\/\?q=zdm\+([^&]+).+ https://search.m.smzdm.com/?v=b&s=$1 302
+
+# jd  xxx (京东)
+^https:\/\/duckduckgo.com\/\?q=jd\+([^&]+).+ openapp.jdmobile://virtual?params={"des":"productList","keyWord":"$1","from":"search","category":"jump"} 302
+
+
+# yt  xxx (YouTube)
+^https:\/\/duckduckgo.com\/\?q=yt\+([^&]+).+ https://www.youtube.com/results?search_query=$1 302
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+yt.+ https://www.youtube.com/results?search_query=$1 302
+
+# bd  xxx (百度搜索)
+^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+ https://www.baidu.com/s?wd=$1 302
+
+# wk  xxx (维基搜索)
+^https:\/\/duckduckgo.com\/\?q=wk\+([^&]+).+ https://zh.wikipedia.org/wiki/$1 302
+
+
+# yh  xxx (油猴搜索)
+^https:\/\/duckduckgo.com\/\?q=yh\+([^&]+).+ https://greasyfork.org/zh-CN/scripts?q=$1 302
+
+
+# bing  xxx (必应)
+^https:\/\/duckduckgo.com\/\?q=bing\+([^&]+).+ https://www.bing.com/search?q=$1 302
+
+# ios  xxx (苹果应用搜索)
+^https:\/\/duckduckgo.com\/\?q=ios\+([^&]+).+ https://www.qimai.cn/search/index/search/$1 302
+
+# tmdb  xxx (tmdb)
+^https:\/\/duckduckgo.com\/\?q=tmdb\+([^&]+).+ https://www.themoviedb.org/search?query=$1 302
+
+#     xxx （无指令默认为 Google）
+^https:\/\/duckduckgo.com\/\?q=([^&]+).+ https://www.google.com/search?q=$1 302
+
+[MITM]
+
+hostname = %APPEND% duckduckgo.com

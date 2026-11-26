@@ -1,0 +1,6 @@
+#!name = 微信公众号去广告
+#!desc = 过滤微信公众号广告 @RuCu6
+hostname = mp.weixin.qq.com
+
+(?i)^https://mp\.weixin\.qq\.com/mp/(cps_product_info|getappmsgad|jsmonitor|masonryfeed|relatedarticle)\? url reject-dict
+(?i)^https://mp\.weixin\.qq\.com/mp/relatedsearchword url reject-dict

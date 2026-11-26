@@ -1,0 +1,33 @@
+# 规则名称: Cloudflare
+# 规则统计: 30
+
+HOST-SUFFIX,cf-ipfs.com,Cloudflare
+HOST-SUFFIX,cloudflare-dns.com,Cloudflare
+HOST-SUFFIX,cloudflare-ipfs.com,Cloudflare
+HOST-SUFFIX,cloudflare-quic.com,Cloudflare
+HOST-SUFFIX,cloudflare.com,Cloudflare
+HOST-SUFFIX,cloudflare.net,Cloudflare
+HOST-SUFFIX,cloudflare.tv,Cloudflare
+HOST-SUFFIX,cloudflareaccess.com,Cloudflare
+HOST-SUFFIX,cloudflareapps.com,Cloudflare
+HOST-SUFFIX,cloudflarebolt.com,Cloudflare
+HOST-SUFFIX,cloudflareclient.com,Cloudflare
+HOST-SUFFIX,cloudflareinsights.com,Cloudflare
+HOST-SUFFIX,cloudflareok.com,Cloudflare
+HOST-SUFFIX,cloudflarepreview.com,Cloudflare
+HOST-SUFFIX,cloudflareresolve.com,Cloudflare
+HOST-SUFFIX,cloudflaressl.com,Cloudflare
+HOST-SUFFIX,cloudflarestatus.com,Cloudflare
+HOST-SUFFIX,cloudflarestorage.com,Cloudflare
+HOST-SUFFIX,cloudflarestream.com,Cloudflare
+HOST-SUFFIX,cloudflaretest.com,Cloudflare
+HOST-SUFFIX,cloudflarewarp.com,Cloudflare
+HOST-SUFFIX,every1dns.net,Cloudflare
+HOST-SUFFIX,one.one.one,Cloudflare
+HOST-SUFFIX,one.one.one.one,Cloudflare
+HOST-SUFFIX,pacloudflare.com,Cloudflare
+HOST-SUFFIX,pages.dev,Cloudflare
+HOST-SUFFIX,trycloudflare.com,Cloudflare
+HOST-SUFFIX,videodelivery.net,Cloudflare
+HOST-SUFFIX,warp.plus,Cloudflare
+HOST-SUFFIX,workers.dev,Cloudflare

@@ -1,0 +1,11 @@
+# 规则名称: Reddit
+# 规则统计: 8
+
+HOST-SUFFIX,redd.it,Reddit
+HOST-SUFFIX,reddit.com,Reddit
+HOST-SUFFIX,redditmail.com,Reddit
+HOST-SUFFIX,redditmedia.com,Reddit
+HOST-SUFFIX,redditstatic.com,Reddit
+HOST-SUFFIX,reddituploads.com,Reddit
+HOST-SUFFIX,reddituploads.com.cdn-cf.behance.net,Reddit
+HOST-SUFFIX,reddituploads.com.cdn-cf.dropbox.com,Reddit

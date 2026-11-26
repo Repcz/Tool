@@ -1,0 +1,17 @@
+#!name = 淘宝去广告
+#!desc = 过滤淘宝开屏广告 @RuCu6
+hostname = acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com
+
+(?i)^https://acs\.m\.taobao\.com/gw/mtop\.fliggy\.crm\.screen\.(allresource|predict) url reject-dict
+(?i)^https://acs\.m\.taobao\.com/gw/mtop\.alibaba\.advertisementservice\.getadv url reject-dict
+(?i)^https://acs\.m\.taobao\.com/gw/mtop\.alimama\.etao\.config\.query/.+?etao_advertise url reject-dict
+(?i)^https://acs\.m\.taobao\.com/gw/mtop\.alimusic\.common\.mobileservice\.startinit url reject-dict
+(?i)^https://acs\.m\.taobao\.com/gw/mtop\.etao\.noah\.query/.+tao_splash url reject-dict
+(?i)^https://acs\.m\.taobao\.com/gw/mtop\.film\.mtopadvertiseapi\.queryadvertise url reject-dict
+(?i)^https://acs\.m\.taobao\.com/gw/mtop\.o2o\.ad\.gateway\.get url reject-dict
+(?i)^https://acs\.m\.taobao\.com/gw/mtop\.taobao\.idle\.home\.welcome url reject-dict
+(?i)^https://acs\.m\.taobao\.com/gw/mtop\.trip\.activity\.querytmsresources url reject-dict
+(?i)^https://(?:gw|heic)\.alicdn\.com/imgextra/i\d/\d*/?[\w!]+-\d-(?:octopus|tps)-(?:1080|1125)-\d{4}\.(?:jpg|png)_(?:1\d{3}|9\d{2})x(?:\d|1\d{3}|9\d{2})q[59]0 url reject-dict
+(?i)^https://guide-acs\.m\.taobao\.com/gw/mtop\.taobao\.(volvo\.secondfloor\.getconfig|wireless\.home\.newface\.awesome\.get) url reject-dict
+(?i)^https://guide-acs\.m\.taobao\.com/gw/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get) url script-response-body https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/Taobao/Taobao_remove_ads.js
+(?i)^https://poplayer\.template\.alibaba\.com/\w+\.json url script-response-body https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/Taobao/Taobao_remove_ads.js

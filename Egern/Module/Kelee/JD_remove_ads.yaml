@@ -1,0 +1,31 @@
+name: '京东去广告'
+description: |-
+  移除京东开屏广告，精简我的页面产品推广。
+  @RuCu6, @Maasea
+rules:
+  - url_regex:
+      match: '"^http:\/\/\w{32}\.jddebug\.com\/diagnose\?"'
+      policy: 'REJECT'
+url_rewrites:
+  - match: '(?i)^https://api\.m\.jd\.com/client\.action\?functionId=(searchBoxWord|stationPullService|uniformRecommend[06])'
+    location: 'http://reject-dict/'
+body_rewrites:
+  - response_jq:
+      match: '(?i)^https://api\.m\.jd\.com/client\.action\?functionId=basicConfig'
+      filter: 'if (getpath(["data","JDMessage","socketmonitor"]) | has("isSocketEstablishedAhead")) then (setpath(["data","JDMessage","socketmonitor","isSocketEstablishedAhead"]; 0)) else . end'
+  - response_jq:
+      match: '(?i)^https://api\.m\.jd\.com/client\.action\?functionId=basicConfig'
+      filter: 'if (getpath(["data","JDMessage","socketmonitor"]) | has("isSocketReport")) then (setpath(["data","JDMessage","socketmonitor","isSocketReport"]; 0)) else . end'
+  - response_jq:
+      match: '(?i)^https://api\.m\.jd\.com/client\.action\?functionId=basicConfig'
+      filter: 'if (getpath(["data","JDHttpToolKit","httpdns"]) | has("httpdns")) then (setpath(["data","JDHttpToolKit","httpdns","httpdns"]; 0)) else . end'
+scriptings:
+  - http_response:
+      match: '(?i)^https://api\.m\.jd\.com/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome)'
+      name: '移除京东广告'
+      script_url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/JD/JD_remove_ads.js'
+      body_required: true
+mitm:
+  hostnames:
+    includes:
+      - 'api.m.jd.com'

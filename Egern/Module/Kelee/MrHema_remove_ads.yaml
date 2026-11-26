@@ -1,0 +1,39 @@
+name: '盒马去广告'
+description: |-
+  移除开屏广告、首页信息流广告及推广、弹窗广告、悬浮挂件、商品及购物车推荐，精简底栏及我的页面。
+  @可莉🅥
+url_rewrites:
+  - match: '(?i)^https://acs-m\.freshippo\.com/gw/mtop\.wdk\.render\.querysinglepage/'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://acs-m\.freshippo\.com/gw/mtop\.wdk\.sg\.queryinnerpage/'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://acs-m\.freshippo\.com/gw/mtop\.wdk\.lbs\.address\.getshopinfolist/'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://acs-m\.freshippo\.com/gw/mtop\.wdk\.render\.querysearchpage/'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://acs-m\.freshippo\.com/gw/mtop\.wdk\.sg\.querysinglescene/'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://acs-m\.freshippo\.com/gw/mtop\.wdk\.melon\.collocation/'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://acs-m\.freshippo\.com/gw/mtop\.wdk\.fc\.recommend\.feedscommondservice/'
+    location: 'http://reject-dict/'
+body_rewrites:
+  - response_jq:
+      match: '(?i)^https://acs-m\.freshippo\.com/gw/mtop\.wdk\.render\.queryindexpage/'
+      filter: 'if .data.pageType == "1" then .data.scenes |= map(select(.bizCode == "three_row_circle")) else . end'
+  - response_jq:
+      match: '(?i)^https://acs-m\.freshippo\.com/gw/mtop\.wdk\.render\.querytabfeedstream/'
+      filter: 'if .data.pageType == "5" then .data.scenes |= map(select(.sceneType == "100028")) else . end'
+  - response_jq:
+      match: '(?i)^https://acs-m\.freshippo\.com/gw/(mtop\.wdk\.render\.querychannelpage|mtop\.wdk\.render\.querysinglepage)/'
+      filter: 'if .data.pageType == "216" then .data.scenes |= map(select(.bizCode == "shop_walk_top_picture" or .bizCode == "shop_walk_shop_util" or .bizCode == "shop_walk_bistro")) else . end'
+  - response_jq:
+      match: '(?i)^https://acs-m\.freshippo\.com/gw/mtop\.wdk\.render\.querymypage/'
+      filter: '.data.scenes |= map(select(.sceneType | IN("400029", "400005", "400010", "400002", "400004", "400015")))'
+  - response_jq:
+      match: '(?i)^https://acs-m\.freshippo\.com/gw/(mtop\.wdk\.lbs\.location\.shopdecideapi\.decideformain|mtop\.wdk\.lbs\.location\.shopdecideapi\.decidebygeocode)/'
+      filter: '.data.groupList |= map(.ext.tabConfig |= (.normalTabList = (.normalTabList | map(select(.code as $c | ["HOME", "CLASSIFY", "CART", "MY"] | any(. == $c)))) | .normalTabListB = (.normalTabListB | map(select(.code as $c | ["HOME", "CLASSIFY", "CART", "MY"] | any(. == $c))))))'
+mitm:
+  hostnames:
+    includes:
+      - 'acs-m.freshippo.com'

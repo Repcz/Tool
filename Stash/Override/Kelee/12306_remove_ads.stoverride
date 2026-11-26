@@ -1,0 +1,24 @@
+name: '12306去广告'
+desc: |-
+  过滤12306应用内广告及开屏广告
+  @RuCu6, @可莉🅥
+icon: 'https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/12306.png'
+date: '2026-10-02 13:57:49'
+category: '⚙️ ▸ Kelee Mode'
+http:
+  mitm: #!append
+    - 'ad.12306.cn'
+    - 'mobile.12306.cn'
+  body-rewrite:
+    - '(?i)^https://ad\.12306\.cn/ad/ser/getAdList$ response-jq delpaths([["materialsList"]])'
+    - '(?i)^https://ad\.12306\.cn/ad/ser/getAdList$ response-jq delpaths([["advertParam"]])'
+  script:
+    - match: '(?i)^https://mobile\.12306\.cn/otsmobile/app/mgs/mgw\.htm$'
+      name: '移除12306应用内广告'
+      type: 'request'
+script-providers:
+  '移除12306应用内广告':
+    url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/12306/12306_remove_ads.js'
+    interval: 86400
+rules:
+  - 'DOMAIN,ad.12306.cn,DIRECT'

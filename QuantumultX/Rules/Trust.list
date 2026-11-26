@@ -1,0 +1,16 @@
+# 规则名称: Trust
+# 规则统计: 13
+
+HOST,api.avax.network,Trust
+HOST-SUFFIX,ankr.com,Trust
+HOST-SUFFIX,coinpedia.org,Trust
+HOST-SUFFIX,crypto.news,Trust
+HOST-SUFFIX,cryptonews.com,Trust
+HOST-SUFFIX,kodif.io,Trust
+HOST-SUFFIX,nariox.org,Trust
+HOST-SUFFIX,ninerealms.com,Trust
+HOST-SUFFIX,thebittimes.com,Trust
+HOST-SUFFIX,trongrid.io,Trust
+HOST-SUFFIX,trustwallet.com,Trust
+HOST-SUFFIX,twnodes.com,Trust
+HOST-SUFFIX,walletconnect.com,Trust

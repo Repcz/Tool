@@ -1,0 +1,6 @@
+#!name = IT之家去广告
+#!desc = 过滤IT之家信息流广告和文末广告，自定义移除置顶和轮播图，自定义移除项需在插件配置。 @可莉🅥
+hostname = napi.ithome.com, api.zuihuimai.com, dat.ruanmei.com
+
+(?i)^https?://dat\.ruanmei\.com/ithome/money/acd\.json$ url reject
+(?i)^https://napi\.ithome\.com/api/(news/indexv2/iphone/\d+|topmenu/getfeeds\?) url script-response-body https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/IThome/IThome_remove_ads.js

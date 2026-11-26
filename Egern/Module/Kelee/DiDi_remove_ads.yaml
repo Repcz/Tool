@@ -1,0 +1,103 @@
+name: '滴滴去广告'
+description: |-
+  移除开屏广告、弹窗广告、横幅推广，精简我的页面。
+  @可莉🅥
+url_rewrites:
+  - match: '(?i)^https://res\.xiaojukeji\.com/resapi/activity/mget\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://res\.xiaojukeji\.com/resapi/activity/mget$'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://daijia\.kuaidadi\.com(:443)?/gateway\?api=prado\.cms\.delivery\.batch'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://daijia\.kuaidadi\.com(:443)?/gateway\?api=prado\.cms\.AggregateDeliveryRemoteService\.aggregateDelivery'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://daijia\.kuaidadi\.com(:443)?/gateway\?api=lj\.c\.p\.queryLevelAndRightsStatus'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://daijia\.kuaidadi\.com(:443)?/gateway\?api=lj\.cos\.p\.popup'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.udache\.com/gulfstream/porsche/v\d/pSFCHomePage\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://htwkop-st\.xiaojukeji\.com/gateway\?api=cms\.htw\.delivery\.batch'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://freight\.xiaojukeji\.com/gateway\?api=freight\.d\.core\.multiDisplayV\d'
+    location: 'http://reject-dict/'
+body_rewrites:
+  - response_jq:
+      match: '(?i)^https://as\.xiaojukeji\.com/ep/as/toggles\?'
+      filter: '.data |= map(select(.name != "isUseNetConnectivity") | .assign.args.rootca_pin = 0 | .assign.args.sni_list = {})'
+  - response_jq:
+      match: '(?i)^https://conf\.diditaxi\.com\.cn/homepage/v\d/other/slow\?'
+      filter: 'delpaths([["data","order_cards","new_loss_banner_card"]])'
+  - response_jq:
+      match: '(?i)^https://conf\.diditaxi\.com\.cn/homepage/v\d/other/slow\?'
+      filter: 'delpaths([["data","order_cards","call_car_card_80"]])'
+  - response_jq:
+      match: '(?i)^https://conf\.diditaxi\.com\.cn/homepage/v\d/core\?'
+      filter: '.data.order_cards.nav_list_card.data |= map(select(.nav_id == "dache_anycar" or .nav_id == "carmate" or .nav_id == "driverservice" or .nav_id == "zhandianbashi" or .nav_id == "pincheche" or .nav_id == "bike" or .nav_id == "nav_more_v3")) | .data.disorder_cards.top_nav_list.data.top_nav_info |= map(select(.nav_id == "chu_xing" or .nav_id == "freight_cargo"))'
+  - response_jq:
+      match: '(?i)^https://conf\.diditaxi\.com\.cn/homepage/v\d/other/fast\?'
+      filter: 'delpaths([["data","disorder_cards","communicate_card"]])'
+  - response_jq:
+      match: '(?i)^https://conf\.diditaxi\.com\.cn/homepage/v\d/other/fast\?'
+      filter: 'delpaths([["data","disorder_cards","not_login_bottom_bar"]])'
+  - response_jq:
+      match: '(?i)^https://conf\.diditaxi\.com\.cn/homepage/v\d/other/fast\?'
+      filter: 'delpaths([["data","disorder_cards","riding_code_card"]])'
+  - response_jq:
+      match: '(?i)^https://conf\.diditaxi\.com\.cn/homepage/v\d/other/fast\?'
+      filter: 'delpaths([["data","order_cards"]])'
+  - response_jq:
+      match: '(?i)^https://conf\.diditaxi\.com\.cn/homepage/v\d/other/fast\?'
+      filter: 'delpaths([["data","disorder_cards","car_icon","data","icon_info_new_agreement"]])'
+  - response_jq:
+      match: '(?i)^https://common\.diditaxi\.com\.cn/common/v\d/usercenter/layout'
+      filter: '.data |= (.instances |= (to_entries | map(select(.key as $k | ["center_base_info_card", "center_tool_card", "center_wallet_finance_card", "center_order_related_card"] | index($k))) | from_entries)) | .data.instances.center_wallet_finance_card.data.view_info |= map(select(.title == "优惠卡券"))'
+  - response_jq:
+      match: '(?i)^https://conf\.diditaxi\.com\.cn/homepage/v\d/other/fast\?'
+      filter: 'delpaths([["data","disorder_cards","guess_card"]])'
+  - response_jq:
+      match: '(?i)^https://conf\.diditaxi\.com\.cn/homepage/v\d/other/fast\?'
+      filter: 'delpaths([["data","disorder_cards","scene_list_card"]])'
+  - response_jq:
+      match: '(?i)^https://api\.udache\.com/gulfstream/porsche/v\d/dache_homepage_layout\?'
+      filter: 'delpaths([["data","instances","dache_main_core_icon"]])'
+  - response_jq:
+      match: '(?i)^https://api\.udache\.com/gulfstream/porsche/v\d/dache_homepage_layout\?'
+      filter: '.data |= (.instances |= (to_entries | map(select(.key | test("feed_back_|dache_main_member|order_container_|dache_main_core_icon|dache_main_card_"))) | from_entries))'
+  - response_jq:
+      match: '(?i)^https://api\.udache\.com/intercity/ticket/api/v\d/core/getFullPageInfoLayout\?'
+      filter: '.data.disorder_components |= (map(select(.name == "history_order_card" or .name == "inprogress_order_card" or .name == "station_calendar" or .name == "main_card_v2" or .name == "user_history_order")))'
+  - response_jq:
+      match: '(?i)^https://daijia\.kuaidadi\.com(:443)?/gateway\?api=lj\.cos\.apolloConfig'
+      filter: '.data |= map(select(.name != "daijia-memberInfo-config" and .name != "daijia-transfer-share-config"))'
+  - response_jq:
+      match: '(?i)^https://daijia\.kuaidadi\.com(:443)?/gateway\?api=lj\.cos\.apolloToggle'
+      filter: '.data |= map(select(.name as $n | {daijia_app_estimate_pre_req_switch:true,daijia_agent_car_picture_check:true,daijia_bluetooth_wifi_degrade_switch:true,daijia_weixin_publish_login:true,daijia_estimate_recommend_degrade_switch:true,daijia_yugu_policy_switch:true,daijia_home_location_guide_switch:true,daijia_estimate_switch:true} | has($n)))'
+  - response_jq:
+      match: '(?i)^https://api\.udache\.com/gulfstream/porsche/v\d/bronze/pinchengle_homepage_layout$'
+      filter: '.data.instances |= with_entries(select(.key | IN("dacheanycar-certificates-1", "main-card-1", "map-1", "nav-1", "tool-container-1")))'
+  - response_jq:
+      match: '(?i)^https://api\.udache\.com/gulfstream/porsche/v\d/SFCHomeTab\?'
+      filter: '.data.tab_list |= map(select(.tab_id == "passenger" or .tab_id == "driver"))'
+  - response_jq:
+      match: '(?i)^https://poi\.map\.xiaojukeji\.com/mapapi/startinfo\?api_version'
+      filter: 'delpaths([["rec_destination"]])'
+  - response_jq:
+      match: '(?i)^https://poi\.map\.xiaojukeji\.com/mapapi/poiinfo\?product_id'
+      filter: 'delpaths([["rec_destination"]])'
+  - response_jq:
+      match: '(?i)^https://common\.diditaxi\.com\.cn/user_common/itineraryList\?'
+      filter: 'del(.data.tab_nav[]?.tab_param)'
+mitm:
+  hostnames:
+    includes:
+      - 'as.xiaojukeji.com'
+      - 'conf.diditaxi.com.cn'
+      - 'common.diditaxi.com.cn'
+      - 'res.xiaojukeji.com'
+      - 'api.udache.com'
+      - 'daijia.kuaidadi.com'
+      - 'htwkop-st.xiaojukeji.com'
+      - 'htwkop.xiaojukeji.com'
+      - 'freight.xiaojukeji.com'
+      - 'poi.map.xiaojukeji.com'

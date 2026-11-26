@@ -1,0 +1,21 @@
+name: '12306去广告'
+description: |-
+  过滤12306应用内广告及开屏广告
+  @RuCu6, @可莉🅥
+body_rewrites:
+  - response_jq:
+      match: '(?i)^https://ad\.12306\.cn/ad/ser/getAdList$'
+      filter: 'delpaths([["materialsList"]])'
+  - response_jq:
+      match: '(?i)^https://ad\.12306\.cn/ad/ser/getAdList$'
+      filter: 'delpaths([["advertParam"]])'
+scriptings:
+  - http_request:
+      match: '(?i)^https://mobile\.12306\.cn/otsmobile/app/mgs/mgw\.htm$'
+      name: '移除12306应用内广告'
+      script_url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/12306/12306_remove_ads.js'
+mitm:
+  hostnames:
+    includes:
+      - 'ad.12306.cn'
+      - 'mobile.12306.cn'

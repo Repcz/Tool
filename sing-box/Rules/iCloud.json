@@ -1,0 +1,69 @@
+{
+  "version": 5,
+  "rules": [
+    {
+      "domain": [
+        "www-cdn.icloud.com.akadns.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-icloud.cn",
+        "appleicloud.cn",
+        "applemx-icloud.com",
+        "icloud-apple.cn",
+        "icloud-content.com",
+        "icloud-content.com.cn",
+        "icloud-isupport.com",
+        "icloud-sandbox.com",
+        "icloud.ch",
+        "icloud.com",
+        "icloud.com.cn",
+        "icloud.de",
+        "icloud.ee",
+        "icloud.fi",
+        "icloud.fr",
+        "icloud.hu",
+        "icloud.ie",
+        "icloud.is",
+        "icloud.jp",
+        "icloud.lv",
+        "icloud.net.cn",
+        "icloud.om",
+        "icloud.org",
+        "icloud.pt",
+        "icloud.ro",
+        "icloud.se",
+        "icloud.si",
+        "icloud.sk",
+        "icloud.vn",
+        "icloudads.net",
+        "icloudapple.cn",
+        "icloudbox.net",
+        "icloudbrowser.net",
+        "icloude.com",
+        "icloudhome.com",
+        "icloudmail.net",
+        "icloudmusic.net",
+        "icloudnet.net",
+        "icloudo.com",
+        "icloudo.de",
+        "icloudo.net",
+        "icloudos.de",
+        "icloudos.net",
+        "icloudpay.net",
+        "icloudsecure.net",
+        "icloudsetup.com",
+        "ios-icloud.com",
+        "mask-api.icloud.com",
+        "mask-h2.icloud.com",
+        "mask.icloud.com",
+        "me.com",
+        "myicloud.net",
+        "mylcloud.net",
+        "www-cdn.icloud.com.akadns.net",
+        "wwwicloud.com"
+      ]
+    }
+  ]
+}

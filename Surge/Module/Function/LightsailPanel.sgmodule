@@ -1,0 +1,13 @@
+#!name=面板｜AWS Lightsail Traffic
+#!desc=实例当月流量面板\n@Repcz @GLM-5.3-Flash
+#!category=⚙️ ▸ Function
+
+#!arguments=access-key-id,secret-access-key,region:ap-northeast-1,icon:cloud,icon-color:FF9900,ip-mode:mask,daily-notify:true
+#!arguments-desc=AWS Lightsail 流量面板\n\nIAM AccessKey 获取方式:见 README\n\nregion: 实例所在区域, 多个用英文逗号分隔, 例:\n    ap-northeast-1,us-east-1,ap-southeast-1\n\nicon: 面板图标名, 默认 cloud\n\nicon-color: 图标颜色, 默认 FF9900\n\nip-mode: 面板 IP 显示模式, 默认 mask\n    ├ full\n    ├ mask\n    └ hide\n\ndaily-notify: 每日 09:00 推送流量日报(默认开启)\n    ├ true\n    └ false
+
+[Panel]
+Lightsail 流量 = title="AWS Lightsail",content="正在获取...",style=info,script-name=lightsail-panel,update-interval=21600
+
+[Script]
+lightsail-panel = type=generic,script-path=https://github.com/Repcz/Tool/raw/X/Surge/Scripts/lightsail-panel.js,timeout=60,argument="ak={{{access-key-id}}}&sk={{{secret-access-key}}}&region={{{region}}}&icon={{{icon}}}&icon-color={{{icon-color}}}&ip-mode={{{ip-mode}}}&mode=panel"
+lightsail-daily = type=cron,cronexp="0 9 * * *",wake-system=true,timeout=60,script-path=https://github.com/Repcz/Tool/raw/X/Surge/Scripts/lightsail-panel.js,argument="ak={{{access-key-id}}}&sk={{{secret-access-key}}}&region={{{region}}}&ip-mode={{{ip-mode}}}&daily-notify={{{daily-notify}}}&mode=daily"

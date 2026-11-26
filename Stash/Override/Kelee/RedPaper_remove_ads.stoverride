@@ -1,0 +1,108 @@
+name: '小红书去广告'
+desc: |-
+  过滤信息流推广，移除图片及视频水印，如有异常，请先清除缓存再尝试。
+  @RuCu6, @fmz200
+icon: 'https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/RedPaper.png'
+date: '2026-10-02 13:57:49'
+category: '⚙️ ▸ Kelee Mode'
+http:
+  mitm: #!append
+    - 'ci.xiaohongshu.com'
+    - 'edith.xiaohongshu.com'
+    - 'rec.xiaohongshu.com'
+    - 'so.xiaohongshu.com'
+    - 'www.xiaohongshu.com'
+  url-rewrite:
+    - '(?i)^https://ci\.xiaohongshu\.com/system_config/watermark - reject-img'
+    - '(?i)^https://edith\.xiaohongshu\.com/api/sns/v1/surprisebox/(?:get_style|open|submit_action) - reject-dict'
+    - '(?i)^https://www\.xiaohongshu\.com/api/marketing/box/trigger\? - reject-dict'
+    - '(?i)^https://edith\.xiaohongshu\.com/api/sns/(?:v2/guide/user_banner|v3/note/guide) - reject-dict'
+    - '(?i)^https://www\.xiaohongshu\.com/api/sns/(?:v1/ads/resource|v2/hey/\w+/hey_gallery) - reject-dict'
+  script:
+    - match: '(?i)^https://edith\.xiaohongshu\.com/api/sns/v1/note/(?:imagefeed|live_photo/save)'
+      name: '移除图片和实况照片水印'
+      type: 'response'
+      require-body: true
+    - match: '(?i)^https://edith\.xiaohongshu\.com/api/sns/v1/system/service/ui/config\?'
+      name: '移除整体配置_ui'
+      type: 'response'
+      require-body: true
+    - match: '(?i)^https://edith\.xiaohongshu\.com/api/sns/v1/system_service/config\?'
+      name: '移除开屏广告_config'
+      type: 'response'
+      require-body: true
+    - match: '(?i)^https://edith\.xiaohongshu\.com/api/sns/v2/system_service/splash_config'
+      name: '移除开屏广告_splash_config'
+      type: 'response'
+      require-body: true
+    - match: '(?i)^https://edith\.xiaohongshu\.com/api/sns/v2/(?:note/widgets|user/followings/followfeed)'
+      name: '移除详情页小部件_关注页感兴趣的人'
+      type: 'response'
+      require-body: true
+    - match: '(?i)^https://edith\.xiaohongshu\.com/api/sns/v4/followfeed\?'
+      name: '移除信息流广告'
+      type: 'response'
+      require-body: true
+    - match: '(?i)^https://edith\.xiaohongshu\.com/api/sns/v5/recommend/user/follow_recommend\?'
+      name: '移除详情页感兴趣的人'
+      type: 'response'
+      require-body: true
+    - match: '(?i)^https://edith\.xiaohongshu\.com/api/sns/(?:v1/interaction/comment/video/download|v5/note/comment/list)'
+      name: '移除评论区实况照片水印'
+      type: 'response'
+      require-body: true
+    - match: '(?i)^https://edith\.xiaohongshu\.com/api/sns/(?:v2/note/feed|v3/note/videofeed)'
+      name: '移除图片和视频水印'
+      type: 'response'
+      require-body: true
+    - match: '(?i)^https://(?:edith|rec)\.xiaohongshu\.com/api/sns/v6/homefeed\?'
+      name: '移除信息流广告_2'
+      type: 'response'
+      require-body: true
+    - match: '(?i)^https://(?:edith|so)\.xiaohongshu\.com/api/sns/v10/search/notes\?'
+      name: '移除搜索页广告'
+      type: 'response'
+      require-body: true
+    - match: '(?i)^https://(?:edith|rec|www)\.xiaohongshu\.com/api/sns/(?:v4/note/videofeed|v10/note/video/save)'
+      name: '移除视频水印'
+      type: 'response'
+      require-body: true
+script-providers:
+  '移除图片和实况照片水印':
+    url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/RedPaper/RedPaper_remove_ads.js'
+    interval: 86400
+  '移除整体配置_ui':
+    url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/RedPaper/RedPaper_remove_ads.js'
+    interval: 86400
+  '移除开屏广告_config':
+    url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/RedPaper/RedPaper_remove_ads.js'
+    interval: 86400
+  '移除开屏广告_splash_config':
+    url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/RedPaper/RedPaper_remove_ads.js'
+    interval: 86400
+  '移除详情页小部件_关注页感兴趣的人':
+    url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/RedPaper/RedPaper_remove_ads.js'
+    interval: 86400
+  '移除信息流广告':
+    url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/RedPaper/RedPaper_remove_ads.js'
+    interval: 86400
+  '移除详情页感兴趣的人':
+    url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/RedPaper/RedPaper_remove_ads.js'
+    interval: 86400
+  '移除评论区实况照片水印':
+    url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/RedPaper/RedPaper_remove_ads.js'
+    interval: 86400
+  '移除图片和视频水印':
+    url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/RedPaper/RedPaper_remove_ads.js'
+    interval: 86400
+  '移除信息流广告_2':
+    url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/RedPaper/RedPaper_remove_ads.js'
+    interval: 86400
+  '移除搜索页广告':
+    url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/RedPaper/RedPaper_remove_ads.js'
+    interval: 86400
+  '移除视频水印':
+    url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/RedPaper/RedPaper_remove_ads.js'
+    interval: 86400
+rules:
+  - 'AND,((PROTOCOL, QUIC), (DOMAIN-SUFFIX, xiaohongshu.com)),REJECT'

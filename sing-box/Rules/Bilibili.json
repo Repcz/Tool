@@ -1,0 +1,34 @@
+{
+  "version": 5,
+  "rules": [
+    {
+      "domain": [
+        "apiintl.biliapi.net",
+        "upos-hz-mirrorakam.akamaized.net"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "acg.tv",
+        "acgvideo.com",
+        "b23.tv",
+        "bigfun.cn",
+        "bigfunapp.cn",
+        "biliapi.com",
+        "biliapi.net",
+        "bilibili.co",
+        "bilibili.com",
+        "bilibili.tv",
+        "biligame.com",
+        "biligame.net",
+        "biliimg.com",
+        "biliintl.co",
+        "bilivideo.cn",
+        "bilivideo.com",
+        "hdslb.com",
+        "im9.com",
+        "smtcdns.net"
+      ]
+    }
+  ]
+}

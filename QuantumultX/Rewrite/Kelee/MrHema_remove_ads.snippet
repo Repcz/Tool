@@ -1,0 +1,16 @@
+#!name = 盒马去广告
+#!desc = 移除开屏广告、首页信息流广告及推广、弹窗广告、悬浮挂件、商品及购物车推荐，精简底栏及我的页面。 @可莉🅥
+hostname = acs-m.freshippo.com
+
+(?i)^https://acs-m\.freshippo\.com/gw/mtop\.wdk\.render\.querysinglepage/ url reject-dict
+(?i)^https://acs-m\.freshippo\.com/gw/mtop\.wdk\.sg\.queryinnerpage/ url reject-dict
+(?i)^https://acs-m\.freshippo\.com/gw/mtop\.wdk\.lbs\.address\.getshopinfolist/ url reject-dict
+(?i)^https://acs-m\.freshippo\.com/gw/mtop\.wdk\.render\.queryindexpage/ url jsonjq-response-body 'if .data.pageType == "1" then .data.scenes |= map(select(.bizCode == "three_row_circle")) else . end'
+(?i)^https://acs-m\.freshippo\.com/gw/mtop\.wdk\.render\.querytabfeedstream/ url jsonjq-response-body 'if .data.pageType == "5" then .data.scenes |= map(select(.sceneType == "100028")) else . end'
+(?i)^https://acs-m\.freshippo\.com/gw/(mtop\.wdk\.render\.querychannelpage|mtop\.wdk\.render\.querysinglepage)/ url jsonjq-response-body 'if .data.pageType == "216" then .data.scenes |= map(select(.bizCode == "shop_walk_top_picture" or .bizCode == "shop_walk_shop_util" or .bizCode == "shop_walk_bistro")) else . end'
+(?i)^https://acs-m\.freshippo\.com/gw/mtop\.wdk\.render\.querysearchpage/ url reject-dict
+(?i)^https://acs-m\.freshippo\.com/gw/mtop\.wdk\.sg\.querysinglescene/ url reject-dict
+(?i)^https://acs-m\.freshippo\.com/gw/mtop\.wdk\.melon\.collocation/ url reject-dict
+(?i)^https://acs-m\.freshippo\.com/gw/mtop\.wdk\.fc\.recommend\.feedscommondservice/ url reject-dict
+(?i)^https://acs-m\.freshippo\.com/gw/mtop\.wdk\.render\.querymypage/ url jsonjq-response-body '.data.scenes |= map(select(.sceneType | IN("400029", "400005", "400010", "400002", "400004", "400015")))'
+(?i)^https://acs-m\.freshippo\.com/gw/(mtop\.wdk\.lbs\.location\.shopdecideapi\.decideformain|mtop\.wdk\.lbs\.location\.shopdecideapi\.decidebygeocode)/ url jsonjq-response-body '.data.groupList |= map(.ext.tabConfig |= (.normalTabList = (.normalTabList | map(select(.code as $c | ["HOME", "CLASSIFY", "CART", "MY"] | any(. == $c)))) | .normalTabListB = (.normalTabListB | map(select(.code as $c | ["HOME", "CLASSIFY", "CART", "MY"] | any(. == $c))))))'

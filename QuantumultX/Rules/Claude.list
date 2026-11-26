@@ -1,0 +1,5 @@
+# 规则名称: Claude
+# 规则统计: 2
+
+HOST-SUFFIX,anthropic.com,Claude
+HOST-SUFFIX,claude.ai,Claude

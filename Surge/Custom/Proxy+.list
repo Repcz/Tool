@@ -1,0 +1,186 @@
+# 最后更新时间：2026-10-9 20:15
+
+# ------
+
+# ---(Crypto)---
+DOMAIN-SUFFIX,bitcointalk.org
+DOMAIN-SUFFIX,bitfinex.com
+DOMAIN-SUFFIX,bitflyer.com
+DOMAIN-SUFFIX,bitget.com
+DOMAIN-SUFFIX,bithumb.com
+DOMAIN-SUFFIX,bitstamp.net
+DOMAIN-SUFFIX,bybit.com
+DOMAIN-SUFFIX,coinbase.com
+DOMAIN-SUFFIX,coingecko.com
+DOMAIN-SUFFIX,coinmarketcap.com
+DOMAIN-SUFFIX,crypto.com
+DOMAIN-SUFFIX,dydx.exchange
+DOMAIN-SUFFIX,etherscan.io
+DOMAIN-SUFFIX,gate.io
+DOMAIN-SUFFIX,gemini.com
+DOMAIN-SUFFIX,kraken.com
+DOMAIN-SUFFIX,kucoin.com
+DOMAIN-SUFFIX,mexc.com
+DOMAIN-SUFFIX,probit.com
+DOMAIN-SUFFIX,uniswap.org
+DOMAIN-SUFFIX,upbit.com
+# > Binane
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.info
+DOMAIN-SUFFIX,bnbstatic.com
+# > OKX
+DOMAIN-SUFFIX,okx.com
+DOMAIN-SUFFIX,okx.com.cdn.cloudflare.net
+# ------
+
+# > Cloudflare
+DOMAIN-SUFFIX,cf-ipfs.com
+DOMAIN-SUFFIX,cloudflare-dns.com
+DOMAIN-SUFFIX,cloudflare-ipfs.com
+DOMAIN-SUFFIX,cloudflare-quic.com
+DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,cloudflare.net
+DOMAIN-SUFFIX,cloudflare.tv
+DOMAIN-SUFFIX,cloudflareaccess.com
+DOMAIN-SUFFIX,cloudflareapps.com
+DOMAIN-SUFFIX,cloudflarebolt.com
+DOMAIN-SUFFIX,cloudflareclient.com
+DOMAIN-SUFFIX,cloudflareinsights.com
+DOMAIN-SUFFIX,cloudflareok.com
+DOMAIN-SUFFIX,cloudflarepreview.com
+DOMAIN-SUFFIX,cloudflareresolve.com
+DOMAIN-SUFFIX,cloudflaressl.com
+DOMAIN-SUFFIX,cloudflarestatus.com
+DOMAIN-SUFFIX,cloudflarestorage.com
+DOMAIN-SUFFIX,cloudflarestream.com
+DOMAIN-SUFFIX,cloudflaretest.com
+DOMAIN-SUFFIX,cloudflarewarp.com
+DOMAIN-SUFFIX,every1dns.net
+DOMAIN-SUFFIX,one.one.one
+DOMAIN-SUFFIX,pacloudflare.com
+DOMAIN-SUFFIX,pages.dev
+DOMAIN-SUFFIX,trycloudflare.com
+DOMAIN-SUFFIX,videodelivery.net
+DOMAIN-SUFFIX,warp.plus
+DOMAIN-SUFFIX,workers.dev
+
+
+# > Gitlab
+DOMAIN-SUFFIX,gitlab.com
+DOMAIN-SUFFIX,gitlab.io
+DOMAIN-SUFFIX,gitlab.net
+
+# > Goodnotes
+DOMAIN-SUFFIX,goodnotescloud.com
+DOMAIN-SUFFIX,goodnotes.email
+DOMAIN-SUFFIX,goodnotesplatform.com 
+DOMAIN-SUFFIX,goodnotes.com
+DOMAIN,api.sprig.com
+DOMAIN,api2.amplitude.com
+
+# > Loon
+DOMAIN-SUFFIX,nsloon.app
+
+# > Notion
+DOMAIN,http-inputs-notion.splunkcloud.com
+DOMAIN-SUFFIX,notion-static.com
+DOMAIN-SUFFIX,notion.com
+DOMAIN-SUFFIX,notion.new
+DOMAIN-SUFFIX,notion.site
+DOMAIN-SUFFIX,notion.so
+
+# > pixiv
+DOMAIN-SUFFIX,pixiv.net
+DOMAIN-SUFFIX,pixiv.org
+DOMAIN-SUFFIX,pximg.net
+
+# > Prevent DNS Leaks
+DOMAIN,ip-scan.adspower.net
+DOMAIN-SUFFIX,immersivetranslate.com
+DOMAIN-SUFFIX,browserscan.net
+DOMAIN-SUFFIX,edns.ip-api.com
+DOMAIN-SUFFIX,ipv4.surfsharkdns.com
+DOMAIN-SUFFIX,dnsleaktest.com
+DOMAIN-SUFFIX,dnsleak.com
+DOMAIN-SUFFIX,dnscheck.tools
+DOMAIN-SUFFIX,addr.tools
+DOMAIN-SUFFIX,expressvpn.com
+DOMAIN-SUFFIX,nordvpn.com
+DOMAIN-SUFFIX,surfshark.com
+DOMAIN-SUFFIX,ipleak.net
+DOMAIN-SUFFIX,ip.net.coffee
+DOMAIN-SUFFIX,perfect-privacy.com
+DOMAIN-SUFFIX,browserleaks.com
+DOMAIN-SUFFIX,browserleaks.org
+DOMAIN-SUFFIX,browserleaks.net
+DOMAIN-SUFFIX,vpnunlimited.com
+DOMAIN-SUFFIX,whoer.net
+DOMAIN-SUFFIX,whrq.net
+DOMAIN-KEYWORD,leak
+
+# > QuantumultX
+DOMAIN-SUFFIX,quantumult.app
+
+
+# > Speedtest
+DOMAIN-SUFFIX,cdnst.net
+DOMAIN-SUFFIX,cellmaps.com
+DOMAIN-SUFFIX,ekahau.cloud
+DOMAIN-SUFFIX,ekahau.com
+DOMAIN-SUFFIX,fast.com
+DOMAIN-SUFFIX,ookla.com
+DOMAIN-SUFFIX,ooklaserver.net
+DOMAIN-SUFFIX,pingtest.net
+DOMAIN-SUFFIX,speed.cloudflare.com
+DOMAIN-SUFFIX,speed.dler.io
+DOMAIN-SUFFIX,speedtest.co
+DOMAIN-SUFFIX,speedtest.net
+DOMAIN-SUFFIX,speedtestcustom.com
+DOMAIN-SUFFIX,webtest.net
+DOMAIN-KEYWORD,speedtest
+USER-AGENT,SpeedTest*
+
+# > Stash
+DOMAIN-SUFFIX,stash.wiki
+
+# > Surge
+DOMAIN,sessions.bugsnag.com
+DOMAIN-SUFFIX,surge-activation.com
+DOMAIN-SUFFIX,nssurge.com
+
+# > Surfboard
+DOMAIN-SUFFIX,getsurfboard.com
+
+# > TronLink
+DOMAIN,tronlink-images.s3.us-east-2.amazonaws.com
+DOMAIN-SUFFIX,tronlink.org
+DOMAIN-SUFFIX,justswap.link
+IP-CIDR,3.136.94.196/32,no-resolve
+IP-CIDR,44.205.88.94/32,no-resolve
+IP-CIDR,18.206.50.220/32,no-resolve
+
+# > Trust
+DOMAIN,api.avax.network
+DOMAIN-SUFFIX,kodif.io
+DOMAIN-SUFFIX,trustwallet.com
+DOMAIN-SUFFIX,walletconnect.com
+DOMAIN-SUFFIX,twnodes.com
+DOMAIN-SUFFIX,nariox.org
+DOMAIN-SUFFIX,ankr.com
+DOMAIN-SUFFIX,thebittimes.com
+DOMAIN-SUFFIX,coinpedia.org
+DOMAIN-SUFFIX,crypto.news
+DOMAIN-SUFFIX,cryptonews.com
+DOMAIN-SUFFIX,ninerealms.com
+DOMAIN-SUFFIX,trongrid.io
+
+# > VPS IDC
+DOMAIN-SUFFIX,akile.io
+DOMAIN-SUFFIX,bytevirt.com
+DOMAIN-SUFFIX,cloudcone.com
+DOMAIN-SUFFIX,racknerd.com
+DOMAIN-SUFFIX,saltyfish.io
+DOMAIN-SUFFIX,sharon.io
+DOMAIN-SUFFIX,wap.ac
+DOMAIN-SUFFIX,datawave.sh
+DOMAIN-SUFFIX,dmit.io

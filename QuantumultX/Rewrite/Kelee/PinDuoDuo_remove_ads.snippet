@@ -1,0 +1,42 @@
+#!name = 拼多多去广告
+#!desc = 移除开屏广告、底栏多多视频、会场入口、聊天页面精选推荐及推广，精简首页和个人中心。 @ZenmoFeiShi, @可莉🅥
+hostname = api.pinduoduo.com, m.pinduoduo.net
+
+(?i)^https://api\.pinduoduo\.com/api/aristotle/unrated_order_for_unreceived_tab\? url reject-dict
+(?i)^https://api\.pinduoduo\.com/api/aristotle/query_order_list_tabs_element\? url reject-dict
+(?i)^https://api\.pinduoduo\.com/api/aquarius/hungary/global/homepage\? url reject-dict
+(?i)^https://api\.pinduoduo\.com/api/caterham/v3/query/order_express_group\? url reject-dict
+(?i)^https://api\.pinduoduo\.com/search_hotquery\? url reject-dict
+(?i)^https://api\.pinduoduo\.com/api/zaire_biz/chat/resource/get_list_data\? url reject-dict
+(?i)^https://api\.pinduoduo\.com/api/caterham/v3/query/new_chat_group\? url reject-dict
+(?i)^https://api\.pinduoduo\.com/api/alexa/goods/back_up\? url reject-dict
+(?i)^https://api\.pinduoduo\.com/api/caterham/v3/query/personal\? url reject-dict
+(?i)^https://api\.pinduoduo\.com/api/brand-olay/goods_detail/bybt_guide\? url reject-dict
+(?i)^https://api\.pinduoduo\.com/api/engels/reviews/require/append\? url reject-dict
+(?i)^https://api\.pinduoduo\.com/api/caterham/v3/query/my_order_group\? url reject-dict
+(?i)^https://api\.pinduoduo\.com/api/caterham/v3/query/likes\? url reject-dict
+(?i)^https://api\.pinduoduo\.com/api/phantom/gbdbpdv/extra\? url reject-dict
+(?i)^https://api\.pinduoduo\.com/api/manufacturer/cross/shortcut/list\? url reject-dict
+(?i)^https://api\.pinduoduo\.com/api/dunkirk/liveactivity/push/create/url/report\? url reject-dict
+(?i)^https://api\.pinduoduo\.com/api/growth/nagato/app/index/gather\? url reject-dict
+(?i)^https://api\.pinduoduo\.com/api/engels/wait/receive/review\? url reject-dict
+(?i)^https://api\.pinduoduo\.com/api/buffon/nasus/recommend\? url reject-dict
+(?i)^https://api\.pinduoduo\.com/api/caterham/v2/query/goods_detail_with_tags\? url reject-dict
+(?i)^https://api\.pinduoduo\.com/api/alexa/homepage/hub\? url jsonjq-response-body 'delpaths([["result","dy_module","irregular_banner_dy"]])'
+(?i)^https://api\.pinduoduo\.com/api/alexa/homepage/hub\? url jsonjq-response-body 'delpaths([["result","icon_set"]])'
+(?i)^https://api\.pinduoduo\.com/api/alexa/homepage/hub\? url jsonjq-response-body 'delpaths([["result","search_bar_hot_query"]])'
+(?i)^https://api\.pinduoduo\.com/api/alexa/homepage/hub\? url jsonjq-response-body '.result.bottom_tabs? |= map(select(.link | IN("index.html", "chat_list.html", "personal.html"))) | .result.buffer_bottom_tabs? |= map(select(.link | IN("index.html", "chat_list.html", "personal.html"))) | .result.all_top_opts |= map(del(.selected_image, .image, .height, .width))'
+(?i)^https://api\.pinduoduo\.com/search\? url jsonjq-response-body 'delpaths([["expansion"]])'
+(?i)^https://api\.pinduoduo\.com/api/philo/personal/hub\? url jsonjq-response-body 'delpaths([["monthly_card_entrance"]])'
+(?i)^https://api\.pinduoduo\.com/api/philo/personal/hub\? url jsonjq-response-body 'delpaths([["personal_center_style_v2_vo"]])'
+(?i)^https://api\.pinduoduo\.com/api/philo/personal/hub\? url jsonjq-response-body 'delpaths([["icon_set","icons"]])'
+(?i)^https://api\.pinduoduo\.com/api/philo/personal/hub\? url jsonjq-response-body 'delpaths([["icon_set","top_personal_icons"]])'
+(?i)^https://api\.pinduoduo\.com/api/philo/personal/hub\? url jsonjq-response-body 'delpaths([["personal_banner"]])'
+(?i)^https://api\.pinduoduo\.com/api/oak/integration/render\? url jsonjq-response-body 'delpaths([["bottom_section_list"]])'
+(?i)^https://api\.pinduoduo\.com/api/oak/integration/render\? url jsonjq-response-body 'delpaths([["ui","bottom_section"]])'
+(?i)^https://api\.pinduoduo\.com/api/oak/integration/render\? url jsonjq-response-body 'delpaths([["ui","live_section","float_info"]])'
+(?i)^https://api\.pinduoduo\.com/api/caterham/v3/query/order_detail_group\? url jsonjq-response-body 'delpaths([["data","goods_list"]])'
+(?i)^https://api\.pinduoduo\.com/order/ url jsonjq-response-body 'delpaths([["marketing_banner_vo"]])'
+(?i)^https://api\.pinduoduo\.com/order/ url jsonjq-response-body 'delpaths([["shipping","banner_above_recommend"]])'
+(?i)^https://api\.pinduoduo\.com/api/aristotle/order_list_v4\? url jsonjq-response-body '.orders |= map(.order_buttons |= map(del(.order_growth_tip)))'
+(?i)^https://m\.pinduoduo\.net/mdkd/package\?from_app_scan url script-response-body https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/PinDuoDuo/PinDuoDuo_remove_ads.js

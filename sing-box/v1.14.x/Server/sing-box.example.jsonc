@@ -1,0 +1,195 @@
+// sing-box v1.14.x 多协议整合服务端示例
+// ─────────────────────────────────────────────────────────────
+// $schema 仅供编辑器集成（字段自动补全、悬停文档与实时校验），
+// 运行时无作用；JSONC 注释与校验可共存
+// 入站一览（端口均为占位，可自行调整）：
+//   anytls-in  : 50443 TCP   AnyTLS    基于 TLS 的流式代理，抗主动探测
+//   hy2-in     : 51443 UDP   Hysteria2 QUIC 传输 + Brutal 拥塞控制，弱网高吞吐
+//   snell-in   : 52443 TCP   Snell v6  Surge 生态私有协议
+// 部署前必填：ACME email / domain、各入站 password / psk
+// 注意：本文件为 JSONC（带注释）。sing-box 解析配置时会过滤注释，可直接运行；
+//       如需标准 JSON（如供程序读取），删除全部 // 注释行即可。
+{
+    // 关联官方 JSON Schema，详见 https://sing-box.sagernet.org/schema.json
+    "$schema": "https://sing-box.sagernet.org/schema.json",
+    // 日志：info 级别兼顾可观测性与磁盘占用，timestamp 便于排查
+    "log": {
+        "disabled": false,
+        "level": "info",
+        "timestamp": true
+    },
+
+    // ACME 证书自动签发：AnyTLS 与 Hysteria2 两个 TLS 入站共用此 provider
+    "certificate_providers": [
+        {
+            "type": "acme",
+            "tag": "ip_cert",
+            // 证书的 SAN（主题备用名），IP 证书场景填服务器公网 IP
+            "domain": [
+                "your_server_ip"
+            ],
+            "email": "admin@example.com",
+            // 证书落盘目录：重启/续期不重复签发，防触发 CA 限频
+            "data_directory": "/var/lib/sing-box/acme",
+            // 证书私钥类型：ed25519 更小、握手更快；遇客户端兼容性问题可改 p256
+            "key_type": "ed25519"
+        }
+    ],
+
+    // DNS：双上游并行查询、按响应竞速，首个返回 NOERROR 即命中，
+    // 兼顾解析延迟与单点故障容错
+    "dns": {
+        "servers": [
+            {"tag": "cloudflare","type": "udp","server": "1.1.1.1"},
+            {"tag": "google","type": "udp","server": "8.8.8.8"}
+        ],
+        "rules": [
+            // evaluate：向两个上游发起查询，结果分别打上 cf / gg 标签
+            // （evaluate 不终止规则评估，供下方 respond 规则消费）
+            {"action": "evaluate","server": "cloudflare","tag": "cf"},
+            {"action": "evaluate","server": "google","tag": "gg"},
+            // respond + race：首个到达且为 NOERROR 的响应胜出并终止评估，
+            // 其余竞态查询将被取消
+            {"match_response": "cf","response_rcode": "NOERROR","action": "respond","race": true},
+            {"match_response": "gg","response_rcode": "NOERROR","action": "respond","race": true}
+        ],
+        // 解析结果策略：有 v4 优先用 v4
+        "strategy": "prefer_ipv4",
+        // 乐观缓存：条目过期但仍在超时窗口内时先返回旧值，并在后台异步刷新
+        "optimistic": true,
+        // final：规则未命中时使用的默认 DNS 服务器（省略时取第一个服务器）
+        "final": "cloudflare"
+    },
+
+    "inbounds": [
+        // ── AnyTLS ─────────────────────────────────
+        // 基于 TLS 的流式代理，流量形态与普通 HTTPS 一致
+        {
+            "type": "anytls",
+            "tag": "anytls-in",
+            // "::" 同时监听 IPv4（映射地址）与 IPv6
+            "listen": "::",
+            "listen_port": 50443,
+            // TCP Fast Open：允许 SYN 携带数据，节省一个 RTT
+            "tcp_fast_open": true,
+            // MPTCP 多路径传输：需 Go 1.21+ 及系统内核支持，不支持时自动回退
+            "tcp_multi_path": true,
+            "users": [
+                {
+                    "name": "singbox",
+                    "password": ""          // 部署时填写强密码
+                }
+            ],
+            // 填充方案：留空即使用协议默认方案（见 AnyTLS 文档），
+            // 用于降低流量长度与时序上的特征
+            "padding_scheme": [],
+            "tls": {
+                "enabled": true,
+                // SNI：客户端按此值建立连接；IP 证书场景填服务器公网 IP
+                "server_name": "your_server_ip",
+                // 引用上方 ACME provider 自动管理证书
+                "certificate_provider": "ip_cert"
+            }
+        },
+        // ── Hysteria2 ──────────────────────────────
+        // QUIC 传输 + Brutal 拥塞控制，高丢包环境下吞吐远超 TCP 方案
+        {
+            "type": "hysteria2",
+            "tag": "hy2-in",
+            "listen": "::",
+            "listen_port": 51443,
+            "users": [
+                {
+                    "name": "singbox",
+                    "password": ""          // 部署时填写认证密码（客户端用 userpass 时填 "用户名:密码" 组合）
+                }
+            ],
+            // 服务端收发带宽上限（Mbps），不设置则默认不限制
+            "up_mbps": 200,
+            "down_mbps": 200,
+            // ignore_client_bandwidth 结合上方 up/down_mbps 理解：
+            //   未设置 up/down_mbps 时，true = 命令客户端改用 BBR；
+            //   已设置 up/down_mbps 时，true = 禁止客户端改用 BBR（强制 Hysteria CC）
+            "ignore_client_bandwidth": false,
+            "tls": {
+                "enabled": true,
+                "server_name": "your_server_ip",
+                "certificate_provider": "ip_cert"
+            },
+            // masquerade：认证失败（如主动探测/误连）时对 HTTP/3 请求
+            // 返回固定静态页面，伪装成普通 Web 服务
+            "masquerade": {
+                "type": "string",
+                "status_code": 200,
+                "headers": {
+                    "Content-Type": [
+                        "text/html"
+                    ]
+                },
+                "content": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<title>Welcome to nginx!</title>\n<style>\n* { margin: 0; padding: 0; box-sizing: border-box; }\nbody {\n  font-family: Tahoma, Verdana, Arial, sans-serif;\n  background: #ecf0f1;\n  color: #2c3e50;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  min-height: 100vh;\n}\n.container {\n  background: #fff;\n  border-radius: 8px;\n  box-shadow: 0 2px 12px rgba(0,0,0,0.1);\n  padding: 40px 50px;\n  max-width: 600px;\n  text-align: center;\n}\nh1 {\n  font-size: 28px;\n  font-weight: 400;\n  color: #34495e;\n  margin-bottom: 10px;\n}\nh1 b { font-weight: 700; color: #e74c3c; }\np {\n  font-size: 14px;\n  line-height: 1.8;\n  color: #7f8c8d;\n  margin: 8px 0;\n}\n.code {\n  background: #f8f9fa;\n  border: 1px solid #e9ecef;\n  border-radius: 4px;\n  padding: 12px 16px;\n  font-family: Consolas, monospace;\n  font-size: 13px;\n  color: #2c3e50;\n  margin: 16px 0;\n  text-align: left;\n  word-break: break-all;\n}\nhr {\n  border: none;\n  border-top: 1px solid #eee;\n  margin: 20px 0;\n}\n.footer {\n  font-size: 12px;\n  color: #bdc3c7;\n}\n</style>\n</head>\n<body>\n<div class=\"container\">\n<h1><b>Welcome to nginx!</b></h1>\n<p>If you see this page, the nginx web server is successfully installed and working. Further configuration is required.</p>\n<p>For online documentation and support please refer to\n<a href=\"https://nginx.org/\">nginx.org</a>.<br/>\nCommercial support is available at\n<a href=\"https://nginx.com/\">nginx.com</a>.</p>\n<div class=\"code\">Server: nginx/1.24.0 (Ubuntu)<br>\nPort: 443</div>\n<hr>\n<div class=\"footer\">\n<em>Thank you for using nginx.</em>\n</div>\n</div>\n</body>\n</html>"
+            }
+        },
+        // ── Snell v6 ───────────────────────────────
+        // Surge 生态私有协议，无 TLS，安全性依赖 PSK + 外层场景
+        {
+            "type": "snell",
+            "tag": "snell-in",
+            "listen": "::",
+            "listen_port": 52443,
+            "tcp_fast_open": true,
+            "tcp_multi_path": true,
+            "version": 6,
+            // 预共享密钥：12-255 字节，可用 `sing-box generate rand --base64 32` 生成
+            "psk": "",
+            // 流量整形模式：default（默认，整形）/ unshaped（不整形）/ unsafe-raw（不处理，调试用）
+            "mode": "default"
+        }
+
+    ],
+
+    "route": {
+        "rules": [
+            // sniff：对连接执行协议嗅探，还原真实域名与协议，
+            // 供日志、DNS 解析与后续规则使用
+            {
+                "inbound": [
+                    "anytls-in","hy2-in","snell-in"
+                ],
+                "action": "sniff"
+            },
+            // route-options：对 UDP 请求保持原始地址、不做域地址反解映射，
+            // 以兼容不支持接收带域地址 UDP 包的客户端/协议
+            {
+                "inbound": [
+                    "anytls-in","hy2-in","snell-in"
+                ],
+                "action": "route-options",
+                "udp_disable_domain_unmapping": true
+            }
+        ],
+        // 所有代理流量默认直连出站（纯代理中转服务器不二次分流）
+        "final": "direct",
+        // default_domain_resolver：目标为域名时使用的默认解析服务器
+        // （如嗅探还原出的域名）
+        "default_domain_resolver": {
+            "server": "cloudflare"
+        }
+    },
+
+    "outbounds": [
+        {
+            "type": "direct",
+            "tag": "direct"
+        }
+    ],
+
+    // 内建 NTP 客户端：为 TLS 等依赖时间的协议提供校时，
+    // 适用于系统无法可靠同步时间的场景
+    "ntp": {
+        "enabled": true,
+        "server": "time.apple.com",
+        "server_port": 123,
+        // 每 30 分钟校准一次
+        "interval": "30m"
+    }
+}

@@ -1,0 +1,7 @@
+#!name = 12306去广告
+#!desc = 过滤12306应用内广告及开屏广告 @RuCu6, @可莉🅥
+hostname = ad.12306.cn, mobile.12306.cn
+
+(?i)^https://ad\.12306\.cn/ad/ser/getAdList$ url jsonjq-response-body 'delpaths([["materialsList"]])'
+(?i)^https://ad\.12306\.cn/ad/ser/getAdList$ url jsonjq-response-body 'delpaths([["advertParam"]])'
+(?i)^https://mobile\.12306\.cn/otsmobile/app/mgs/mgw\.htm$ url script-request-header https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/12306/12306_remove_ads.js

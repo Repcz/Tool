@@ -1,0 +1,9 @@
+#!name = VVebo时间线修复
+#!desc = 修复失效的用户时间线和我的页面。使用此插件前需要禁用微博去广告插件，避免插件冲突导致失效。 @suiyuran, @androidcn
+hostname = api.weibo.cn
+
+(?i)^https://api\.weibo\.cn/2/users/show\? url script-request-header https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/VVebo/VVebo_repair.js
+(?i)^https://api\.weibo\.cn/2/statuses/user_timeline\? url script-request-header https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/VVebo/VVebo_repair.js
+(?i)^https://api\.weibo\.cn/2/remind/unread_count\? url script-request-header https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/VVebo/VVebo_repair.js
+(?i)^https://api\.weibo\.cn/2/profile/statuses/tab\? url script-response-body https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/VVebo/VVebo_repair.js
+(?i)^https://api\.weibo\.cn/2/cardlist\? url script-response-body https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/VVebo/VVebo_repair.js

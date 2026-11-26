@@ -1,0 +1,131 @@
+name: '拼多多去广告'
+description: |-
+  移除开屏广告、底栏多多视频、会场入口、聊天页面精选推荐及推广，精简首页和个人中心。
+  @ZenmoFeiShi, @可莉🅥
+rules:
+  - and:
+      match:
+        - url_regex:
+            match: '"^http:\/\/((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\/d(\d)?"'
+        - user_agent:
+            match: '"*com.xunmeng.pinduoduo*"'
+      policy: 'REJECT'
+  - and:
+      match:
+        - url_regex:
+            match: '"^http:\/\/\[[0-9a-fA-F:]+\]\/d(\d)?\?"'
+        - user_agent:
+            match: '"*com.xunmeng.pinduoduo*"'
+      policy: 'REJECT'
+  - and:
+      match:
+        - protocol:
+            match: 'QUIC'
+      policy: 'REJECT'
+url_rewrites:
+  - match: '(?i)^https://api\.pinduoduo\.com/api/aristotle/unrated_order_for_unreceived_tab\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.pinduoduo\.com/api/aristotle/query_order_list_tabs_element\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.pinduoduo\.com/api/aquarius/hungary/global/homepage\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.pinduoduo\.com/api/caterham/v3/query/order_express_group\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.pinduoduo\.com/search_hotquery\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.pinduoduo\.com/api/zaire_biz/chat/resource/get_list_data\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.pinduoduo\.com/api/caterham/v3/query/new_chat_group\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.pinduoduo\.com/api/alexa/goods/back_up\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.pinduoduo\.com/api/caterham/v3/query/personal\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.pinduoduo\.com/api/brand-olay/goods_detail/bybt_guide\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.pinduoduo\.com/api/engels/reviews/require/append\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.pinduoduo\.com/api/caterham/v3/query/my_order_group\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.pinduoduo\.com/api/caterham/v3/query/likes\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.pinduoduo\.com/api/phantom/gbdbpdv/extra\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.pinduoduo\.com/api/manufacturer/cross/shortcut/list\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.pinduoduo\.com/api/dunkirk/liveactivity/push/create/url/report\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.pinduoduo\.com/api/growth/nagato/app/index/gather\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.pinduoduo\.com/api/engels/wait/receive/review\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.pinduoduo\.com/api/buffon/nasus/recommend\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.pinduoduo\.com/api/caterham/v2/query/goods_detail_with_tags\?'
+    location: 'http://reject-dict/'
+body_rewrites:
+  - response_jq:
+      match: '(?i)^https://api\.pinduoduo\.com/api/alexa/homepage/hub\?'
+      filter: 'delpaths([["result","dy_module","irregular_banner_dy"]])'
+  - response_jq:
+      match: '(?i)^https://api\.pinduoduo\.com/api/alexa/homepage/hub\?'
+      filter: 'delpaths([["result","icon_set"]])'
+  - response_jq:
+      match: '(?i)^https://api\.pinduoduo\.com/api/alexa/homepage/hub\?'
+      filter: 'delpaths([["result","search_bar_hot_query"]])'
+  - response_jq:
+      match: '(?i)^https://api\.pinduoduo\.com/api/alexa/homepage/hub\?'
+      filter: 'delpaths([["result","dy_module","irregular_banner_dy"]])'
+  - response_jq:
+      match: '(?i)^https://api\.pinduoduo\.com/api/alexa/homepage/hub\?'
+      filter: '.result.bottom_tabs? |= map(select(.link | IN("index.html", "chat_list.html", "personal.html"))) | .result.buffer_bottom_tabs? |= map(select(.link | IN("index.html", "chat_list.html", "personal.html"))) | .result.all_top_opts |= map(del(.selected_image, .image, .height, .width))'
+  - response_jq:
+      match: '(?i)^https://api\.pinduoduo\.com/search\?'
+      filter: 'delpaths([["expansion"]])'
+  - response_jq:
+      match: '(?i)^https://api\.pinduoduo\.com/api/philo/personal/hub\?'
+      filter: 'delpaths([["monthly_card_entrance"]])'
+  - response_jq:
+      match: '(?i)^https://api\.pinduoduo\.com/api/philo/personal/hub\?'
+      filter: 'delpaths([["personal_center_style_v2_vo"]])'
+  - response_jq:
+      match: '(?i)^https://api\.pinduoduo\.com/api/philo/personal/hub\?'
+      filter: 'delpaths([["icon_set","icons"]])'
+  - response_jq:
+      match: '(?i)^https://api\.pinduoduo\.com/api/philo/personal/hub\?'
+      filter: 'delpaths([["icon_set","top_personal_icons"]])'
+  - response_jq:
+      match: '(?i)^https://api\.pinduoduo\.com/api/philo/personal/hub\?'
+      filter: 'delpaths([["personal_banner"]])'
+  - response_jq:
+      match: '(?i)^https://api\.pinduoduo\.com/api/oak/integration/render\?'
+      filter: 'delpaths([["bottom_section_list"]])'
+  - response_jq:
+      match: '(?i)^https://api\.pinduoduo\.com/api/oak/integration/render\?'
+      filter: 'delpaths([["ui","bottom_section"]])'
+  - response_jq:
+      match: '(?i)^https://api\.pinduoduo\.com/api/oak/integration/render\?'
+      filter: 'delpaths([["ui","live_section","float_info"]])'
+  - response_jq:
+      match: '(?i)^https://api\.pinduoduo\.com/api/caterham/v3/query/order_detail_group\?'
+      filter: 'delpaths([["data","goods_list"]])'
+  - response_jq:
+      match: '(?i)^https://api\.pinduoduo\.com/order/'
+      filter: 'delpaths([["marketing_banner_vo"]])'
+  - response_jq:
+      match: '(?i)^https://api\.pinduoduo\.com/order/'
+      filter: 'delpaths([["shipping","banner_above_recommend"]])'
+  - response_jq:
+      match: '(?i)^https://api\.pinduoduo\.com/api/aristotle/order_list_v4\?'
+      filter: '.orders |= map(.order_buttons |= map(del(.order_growth_tip)))'
+scriptings:
+  - http_response:
+      match: '(?i)^https://m\.pinduoduo\.net/mdkd/package\?from_app_scan'
+      name: '移除扫码取件页面商品推荐及弹窗'
+      script_url: 'https://raw.githubusercontent.com/Repcz/Tool/X/Loon/Script/PinDuoDuo/PinDuoDuo_remove_ads.js'
+      body_required: true
+mitm:
+  hostnames:
+    includes:
+      - 'api.pinduoduo.com'
+      - 'm.pinduoduo.net'

@@ -1,0 +1,12 @@
+#!name = 瑞幸咖啡去广告
+#!desc = 移除开屏广告、弹窗和各类横幅推广。 @Sliverkiss
+hostname = capi.lkcoffee.com
+
+(?i)^https://capi\.lkcoffee\.com/resource/m/growUp/calendarList url reject
+(?i)^https://capi\.lkcoffee\.com/resource/m/promotion/giftCard/topPage url reject
+(?i)^https://capi\.lkcoffee\.com/resource/m/sys/base/myLittleLuck url reject
+(?i)^https://capi\.lkcoffee\.com/resource/core/v2/menu/ordinaryUserLayeredArea url reject
+(?i)^https://capi\.lkcoffee\.com/resource/m/sys/common/modules url reject
+(?i)^https://capi\.lkcoffee\.com/resource/core/v2/homepage/homePageCoffeeList url reject
+(?i)^https://capi\.lkcoffee\.com/resource/m/eorder/product/popAppTagProductList url reject
+(?i)^https://capi\.lkcoffee\.com/resource/m/sys/app/adposNew url reject

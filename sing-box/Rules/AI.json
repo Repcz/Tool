@@ -1,0 +1,77 @@
+{
+  "version": 5,
+  "rules": [
+    {
+      "domain": [
+        "ai.google.dev",
+        "aicode.googleapis.com",
+        "aida.googleapis.com",
+        "aisandbox-pa.googleapis.com",
+        "alkalicore-pa.clients6.google.com",
+        "antigravity-unleash.goog",
+        "antigravity.google",
+        "api.github.com",
+        "api.jetbrains.ai",
+        "bridge.claudeusercontent.com",
+        "claude.site",
+        "cloud.zed.dev",
+        "daily-cloudcode-pa.googleapis.com",
+        "daily-cloudcode-pa.sandbox.googleapis.com",
+        "file.oaiusercontent.com",
+        "gateway.ai.cloudflare.com",
+        "inference.codeium.com",
+        "jules.google.com",
+        "openrouter.ai",
+        "robinfrontend-pa.googleapis.com",
+        "server.codeium.com",
+        "server.self-serve.windsurf.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "ai.com",
+        "aistudio.google.com",
+        "anthropic.com",
+        "bard.google.com",
+        "chat.com",
+        "chatgpt.com",
+        "chatgpt.site",
+        "clau.de",
+        "claude.ai",
+        "claude.com",
+        "clipdrop.co",
+        "cloudcode-pa.googleapis.com",
+        "cursor.sh",
+        "deepmind.com",
+        "deepmind.google",
+        "dify.ai",
+        "g.ai",
+        "geller-pa.googleapis.com",
+        "gemini.google",
+        "gemini.google.com",
+        "generativeai.google",
+        "generativelanguage.googleapis.com",
+        "grok.com",
+        "groq.com",
+        "jasper.ai",
+        "makersuite.google.com",
+        "meta.ai",
+        "notebooklm.google",
+        "notebooklm.google.com",
+        "oaistatic.com",
+        "openart.ai",
+        "perplexity.ai",
+        "poe.com",
+        "proactivebackend-pa.googleapis.com",
+        "sora.com",
+        "x.ai"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "alkalimakersuite-pa.clients6.google.com",
+        "openai"
+      ]
+    }
+  ]
+}

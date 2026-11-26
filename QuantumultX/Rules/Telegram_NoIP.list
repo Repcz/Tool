@@ -1,0 +1,33 @@
+# 规则名称: Telegram_NoIP
+# 规则统计: 30
+
+HOST,api.mixpanel.com,Telegram_NoIP
+HOST,events-gateway.ncdev.site,Telegram_NoIP
+HOST-SUFFIX,cdn-telegram.org,Telegram_NoIP
+HOST-SUFFIX,comments.app,Telegram_NoIP
+HOST-SUFFIX,contest.com,Telegram_NoIP
+HOST-SUFFIX,graph.org,Telegram_NoIP
+HOST-SUFFIX,imem.app,Telegram_NoIP
+HOST-SUFFIX,iturrit.com,Telegram_NoIP
+HOST-SUFFIX,legra.ph,Telegram_NoIP
+HOST-SUFFIX,mbrx.app,Telegram_NoIP
+HOST-SUFFIX,quiz.directory,Telegram_NoIP
+HOST-SUFFIX,stel.com,Telegram_NoIP
+HOST-SUFFIX,swiftgram.app,Telegram_NoIP
+HOST-SUFFIX,t.me,Telegram_NoIP
+HOST-SUFFIX,tdesktop.com,Telegram_NoIP
+HOST-SUFFIX,telega.one,Telegram_NoIP
+HOST-SUFFIX,telegra.ph,Telegram_NoIP
+HOST-SUFFIX,telegram-cdn.org,Telegram_NoIP
+HOST-SUFFIX,telegram.dog,Telegram_NoIP
+HOST-SUFFIX,telegram.me,Telegram_NoIP
+HOST-SUFFIX,telegram.org,Telegram_NoIP
+HOST-SUFFIX,telegram.space,Telegram_NoIP
+HOST-SUFFIX,telegramdownload.com,Telegram_NoIP
+HOST-SUFFIX,telesco.pe,Telegram_NoIP
+HOST-SUFFIX,tg.dev,Telegram_NoIP
+HOST-SUFFIX,tx.me,Telegram_NoIP
+HOST-SUFFIX,usercontent.dev,Telegram_NoIP
+HOST-SUFFIX,walletbot.me,Telegram_NoIP
+HOST-KEYWORD,nicegram,Telegram_NoIP
+HOST-KEYWORD,telegram,Telegram_NoIP

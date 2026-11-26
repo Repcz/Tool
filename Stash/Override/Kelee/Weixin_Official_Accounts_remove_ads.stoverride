@@ -1,0 +1,15 @@
+name: '微信公众号去广告'
+desc: |-
+  过滤微信公众号广告
+  @RuCu6
+icon: 'https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Weixin.png'
+date: '2026-10-02 13:57:49'
+category: '⚙️ ▸ Kelee Mode'
+http:
+  mitm: #!append
+    - 'mp.weixin.qq.com'
+  url-rewrite:
+    - '(?i)^https://mp\.weixin\.qq\.com/mp/(cps_product_info|getappmsgad|jsmonitor|masonryfeed|relatedarticle)\? - reject-dict'
+    - '(?i)^https://mp\.weixin\.qq\.com/mp/relatedsearchword - reject-dict'
+rules:
+  - 'DOMAIN-SUFFIX,wxs.qq.com,REJECT'

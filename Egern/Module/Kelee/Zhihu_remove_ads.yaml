@@ -1,0 +1,101 @@
+name: '知乎去广告'
+description: |-
+  移除HTTPDNS和QUIC传输配置，移除开屏广告、信息流广告、回答页广告，移除回答页下的相关回答、专栏卡片及圈子卡片，移除直答页面推荐知识库和提问推荐，移除评论区评论氛围满意度调查，精简首页顶部标签及我的页面。
+  @可莉🅥
+url_rewrites:
+  - match: '(?i)^https://api\.zhihu\.com/ad-style-service/request$'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.zhihu\.com/commercial_api/'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.zhihu\.com/commercial_api/banners_v\d/app_float_corner\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.zhihu\.com/next-render\?id=\d+&type=answer'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.zhihu\.com/commercial_api/answer/\d+/bottom-v\d$'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.zhihu\.com/related_recommend/feed/waterfall\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.zhihu\.com/search/preset_words\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.zhihu\.com/search/related_queries/question/\d+$'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://zhida\.zhihu\.com/ai_ingress/knowledge/square/categories/feeds\?categoryId=1%7D$'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://zhida\.zhihu\.com/ai_ingress/ai_chat/guidance$'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.zhihu\.com/content-distribution-core/bubble/common/show$'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://www\.zhihu\.com/api/v\d/members/homepage_card$'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.zhihu\.com/people/homepage_entry_v\d$'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.zhihu\.com/kvip/right/my_card\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://api\.zhihu\.com/unlimited/go/my_card/v\d\?'
+    location: 'http://reject-dict/'
+body_rewrites:
+  - response_jq:
+      match: '(?i)^https://m-cloud\.zhihu\.com/api/cloud/zhihu/config/all\?'
+      filter: 'def drop_keys: {"km_httpdns_new_config_tars":true,"preFetchHttpDns":true,"httpdns_detector_use_concurrent":true,"httpdns_use_memory_cache":true,"httpdns_new_config_tars":true,"coreNetworkConf_useTars":true,"km_coreNetworkConf_useTars":true,"sugarQuicConfig":true,"quic_dns_detect_enable":true,"quicMixAB":true,"quic_downgrade_enable":true,"quic_priority_strategy":true,"quic_check_health_enable":true,"tquic_configuration":true,"networkExprimentList":true,"tars_ab_list":true,"zaSetExtraRequestHeader":true}; .data.configs |= map(select((drop_keys[.configKey] // false) | not) | if (.configValue | type) == "object" then del(.configValue.delayHttpdns, .configValue.dnsParser, .configValue.HTTPDNS) else . end)'
+  - response_jq:
+      match: '(?i)^https://api\.zhihu\.com/root/tab/v\d(?:\?.+)?$'
+      filter: '.tab_list |= map(select(.tab_type == "follow" or .tab_type == "recommend" or .tab_type == "hot" or .tab_type == "ring_tab"))'
+  - response_jq:
+      match: '(?i)^https://api\.zhihu\.com/topstory/recommend\?'
+      filter: '.data |= map(select(.type == "ComponentCard"))'
+  - response_jq:
+      match: '(?i)^https://api\.zhihu\.com/questions/\d+/feeds\?'
+      filter: 'delpaths([["ad_info"]])'
+  - response_jq:
+      match: '(?i)^https://api\.zhihu\.com/comment_v\d/(answers|pins)/\d+/root_comment\?'
+      filter: 'delpaths([["atmosphere_voting_config"]])'
+  - response_jq:
+      match: '(?i)^https://(api|page-info)(?:\.zhihu)?\.com/answers/v\d/\d+(?:\?.*)?$'
+      filter: 'delpaths([["third_business"]])'
+  - response_jq:
+      match: '(?i)^https://(api|page-info)(?:\.zhihu)?\.com/answers/v\d/\d+(?:\?.*)?$'
+      filter: 'delpaths([["float_search_word"]])'
+  - response_jq:
+      match: '(?i)^https://(api|page-info)(?:\.zhihu)?\.com/answers/v\d/\d+(?:\?.*)?$'
+      filter: '.structured_content.segments |= map(select(.type != "card"))'
+  - response_jq:
+      match: '(?i)^https://api\.zhihu\.com/topstory/recommend\?'
+      filter: '.data[]?.children |= (if type == "array" then map(select(.id != "ring")) else . end)'
+  - response_jq:
+      match: '(?i)^https://api\.zhihu\.com/(articles|answers|pins)/v\d/\d+\?'
+      filter: 'delpaths([["third_business"]])'
+  - response_jq:
+      match: '(?i)^https://api\.zhihu\.com/(articles|answers|pins)/v\d/\d+\?'
+      filter: 'delpaths([["ring_info"]])'
+  - response_jq:
+      match: '(?i)^https://api\.zhihu\.com/(articles|answers|pins)/v\d/\d+\?'
+      filter: 'delpaths([["interaction_bar_plugins"]])'
+  - response_jq:
+      match: '(?i)^https://api\.zhihu\.com/comment_v\d/answers/\d+/list-headers$'
+      filter: 'delpaths([["continuous_consumption_module"]])'
+  - response_jq:
+      match: '(?i)^https://api\.zhihu\.com/podcasts/hub/v\d$'
+      filter: 'delpaths([["banners"]])'
+  - response_jq:
+      match: '(?i)^https://api\.zhihu\.com/search/recommend_query/v\d\?'
+      filter: '.recommend_queries.queries |= map(select(.type == "normal"))'
+  - response_jq:
+      match: '(?i)^https://api\.zhihu\.com/search_v\d\?'
+      filter: 'delpaths([["pendant"]])'
+  - response_jq:
+      match: '(?i)^https://api\.zhihu\.com/search/tabs\?'
+      filter: '.data |= map(select(.t | IN("general", "ai_zhida", "recent", "people", "zvideo", "ring", "topic", "podcast", "column", "pin", "favlist")))'
+  - response_jq:
+      match: '(?i)^https://api\.zhihu\.com/people/self$'
+      filter: 'delpaths([["vip_info","entrance_new","right_button"]])'
+  - response_jq:
+      match: '(?i)^https://api\.zhihu\.com/people/self$'
+      filter: 'delpaths([["vip_info","entrance_v2"]])'
+mitm:
+  hostnames:
+    includes:
+      - 'm-cloud.zhihu.com'
+      - 'api.zhihu.com'
+      - 'www.zhihu.com'
+      - 'page-info.zhihu.com'
+      - 'zhida.zhihu.com'

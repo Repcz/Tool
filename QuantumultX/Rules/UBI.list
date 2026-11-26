@@ -1,0 +1,9 @@
+# 规则名称: UBI
+# 规则统计: 6
+
+HOST-SUFFIX,ubi.com,UBI
+HOST-SUFFIX,ubisoft-orbit-savegames.s3.amazonaws.com,UBI
+HOST-SUFFIX,ubisoft-uplay-savegames.s3.amazonaws.com,UBI
+HOST-SUFFIX,ubisoft.com,UBI
+HOST-SUFFIX,uplay.com,UBI
+HOST-SUFFIX,uplaypc-s-ubisoft.cdn.ubi.com,UBI

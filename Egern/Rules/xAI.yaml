@@ -1,0 +1,6 @@
+# 规则名称: xAI
+# 规则统计: 2
+
+domain_suffix_set:
+  - grok.com
+  - x.ai

@@ -1,0 +1,13 @@
+name: '微信公众号去广告'
+description: |-
+  过滤微信公众号广告
+  @RuCu6
+url_rewrites:
+  - match: '(?i)^https://mp\.weixin\.qq\.com/mp/(cps_product_info|getappmsgad|jsmonitor|masonryfeed|relatedarticle)\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://mp\.weixin\.qq\.com/mp/relatedsearchword'
+    location: 'http://reject-dict/'
+mitm:
+  hostnames:
+    includes:
+      - 'mp.weixin.qq.com'

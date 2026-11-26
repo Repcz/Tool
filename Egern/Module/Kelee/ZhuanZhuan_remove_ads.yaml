@@ -1,0 +1,70 @@
+name: '转转去广告'
+description: |-
+  移除开屏广告、应用内悬浮窗、信息流推广、商品推荐、首页弹窗，精简我的页面。
+  @可莉🅥
+url_rewrites:
+  - match: '(?i)^https://app\.zhuanzhuan\.com/zz/v2/zzlogic/getOpenScreen$'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://app\.zhuanzhuan\.com/zz/v2/zzinfoshow/getwindvanecardv2$'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://app\.zhuanzhuan\.com/zzopen/popwindow/getallpopwin\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://app\.zhuanzhuan\.com/zzopen/zzbmlogic/queryFrontPageWindowInfo\?'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://app\.zhuanzhuan\.com/zzopen/ptuserlogic/subscribehotrecommend$'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://app\.zhuanzhuan\.com/zzopen/ypmall/listData$'
+    location: 'http://reject-dict/'
+  - match: '(?i)^https://app\.zhuanzhuan\.com/zz/v2/zzusercenter/myprofilevariouscards$'
+    location: 'http://reject-dict/'
+body_rewrites:
+  - response_jq:
+      match: '(?i)^https://app\.zhuanzhuan\.com/zz/v2/zzlogic/mycontinenthomepage\?'
+      filter: 'delpaths([["respData","topOpera","leftOpera"]])'
+  - response_jq:
+      match: '(?i)^https://app\.zhuanzhuan\.com/zz/v2/zzlogic/mycontinenthomepage\?'
+      filter: 'delpaths([["respData","topOpera","rightOpera2"]])'
+  - response_jq:
+      match: '(?i)^https://app\.zhuanzhuan\.com/zz/v2/zzlogic/mycontinenthomepage\?'
+      filter: 'delpaths([["respData","topActBanner"]])'
+  - response_jq:
+      match: '(?i)^https://app\.zhuanzhuan\.com/zz/v2/zzlogic/mycontinenthomepage\?'
+      filter: 'delpaths([["respData","bmArea"]])'
+  - response_jq:
+      match: '(?i)^https://app\.zhuanzhuan\.com/zzx/transfer/getConfigInfo\?'
+      filter: 'delpaths([["respData","freeMarketTabLeadPop"]])'
+  - response_jq:
+      match: '(?i)^https://app\.zhuanzhuan\.com/zzx/transfer/getConfigInfo\?'
+      filter: 'delpaths([["respData","topOperations"]])'
+  - response_jq:
+      match: '(?i)^https://app\.zhuanzhuan\.com/zz/v2/zzinfoshow/getfeedflowinfo\?'
+      filter: 'if .respData.userRed.campName == "OCD挂件" then del(.respData.userRed) else . end | .respData.infoData |= map(del(.rotateResource,.appRecommendResource,."cargoGroupCardV2"))'
+  - response_jq:
+      match: '(?i)^https://app\.zhuanzhuan\.com/zz/transfer/getmymoretools$'
+      filter: 'walk(if type == "object" and .name == "免流量特权" then empty else . end) | del(.respData.groupList[] | select(.groupName == "活动参与" or .groupName == "金融工具"))'
+  - response_jq:
+      match: '(?i)^https://app\.zhuanzhuan\.com/zz/transfer/getmyprofilev3$'
+      filter: 'delpaths([["respData","bmNewInfo"]])'
+  - response_jq:
+      match: '(?i)^https://app\.zhuanzhuan\.com/zz/transfer/getmyprofilev3$'
+      filter: 'del(.respData.itemGroupList[].itemList[] | select(.name == "天天赚钱" or .name == "借钱")) | del(.respData.itemGroupList[] | select(.groupType == 15))'
+map_locals:
+  - match: '(?i)^https://app\.zhuanzhuan\.com/zzopen/ptsimpleshow/recommendbymyloveinfo\?'
+    status_code: 200
+    body: '{"respCode":0,"errorMsg":"null","errMsg":""}'
+    headers:
+      Content-Type: 'application/json'
+  - match: '(?i)^https://app\.zhuanzhuan\.com/zz/v2/zzinfoshow/footprintsamerecommend\?'
+    status_code: 200
+    body: '{"respCode":0,"errorMsg":"","errMsg":""}'
+    headers:
+      Content-Type: 'application/json'
+  - match: '(?i)^https://app\.zhuanzhuan\.com/zz/v2/zzinfoshow/getchoicegoodsinfos\?'
+    status_code: 200
+    body: '{"respCode":0,"respData":{},"errorMsg":"","errMsg":""}'
+    headers:
+      Content-Type: 'application/json'
+mitm:
+  hostnames:
+    includes:
+      - 'app.zhuanzhuan.com'

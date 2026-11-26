@@ -1,0 +1,19 @@
+# 规则名称: Talkatone
+# 规则统计: 16
+
+HOST-SUFFIX,agkn.com,Talkatone
+HOST-SUFFIX,cohere.com,Talkatone
+HOST-SUFFIX,crashlytics.com,Talkatone
+HOST-SUFFIX,inmobi.com,Talkatone
+HOST-SUFFIX,inner-active.mobi,Talkatone
+HOST-SUFFIX,kochava.com,Talkatone
+HOST-SUFFIX,mobilefuse.com,Talkatone
+HOST-SUFFIX,talkatone.com,Talkatone
+HOST-SUFFIX,tenor.com,Talkatone
+HOST-SUFFIX,tktn.at,Talkatone
+HOST-SUFFIX,tktn.be,Talkatone
+IP-CIDR,205.164.56.0/24,Talkatone
+IP-CIDR,216.172.154.0/24,Talkatone
+IP-CIDR,50.117.27.0/24,Talkatone
+IP-CIDR,63.251.124.0/24,Talkatone
+IP-CIDR,69.46.75.0/24,Talkatone

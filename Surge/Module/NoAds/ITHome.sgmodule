@@ -1,0 +1,15 @@
+#!name=去广告｜IT 之家
+#!desc=IT 之家去广告\n作者：@keywos
+#!category=⚙️ ▸ NoAds
+#!date=2024-08-11 12:57:27
+
+[URL Rewrite]
+^https?:\/\/api\.zuihuimai\.com\/static\/.*\/hongbao - reject
+^https?:\/\/dat\.ruanmei\.com\/ithome\/money\/acd\.json$ - reject
+
+[Script]
+IT之家去广告 = type=http-response, pattern=^https:\/\/napi\.ithome\.com\/api\/(?:news\/index|topmenu\/getfeeds\?|api\/douyin\/GetLiveInfo), script-path=https://kelee.one/Resource/Script/IThome/IThome_remove_ads.js, requires-body=true
+
+[MITM]
+hostname = %APPEND% napi.ithome.com, api.zuihuimai.com, dat.ruanmei.com
+
