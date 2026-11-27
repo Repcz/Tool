@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 4786
+# 规则统计: 4776
 
 domain_set:
   - 0x0.st
@@ -235,7 +235,6 @@ domain_set:
   - assets.matters.news
   - assets.maxon.net
   - assets.mayoclinic.org
-  - assets.mcp.corespeed.io
   - assets.media-platform.com
   - assets.monei.com
   - assets.monetizationos.com
@@ -532,6 +531,7 @@ domain_set:
   - cdn-public.sociabble.com
   - cdn-raw.modrinth.com
   - cdn-rdstaticassets.readdle.com
+  - cdn-resize-prod-com.500px.cloud
   - cdn-seo.airdroid.com
   - cdn-service.jp.sumologic.com
   - cdn-share-sprites.flaticon.com
@@ -872,6 +872,7 @@ domain_set:
   - cdn.prod.www.spiegel.de
   - cdn.promo.capcomusa.com
   - cdn.promotekit.com
+  - cdn.protect.clerk.com
   - cdn.prowritingaid.com
   - cdn.quadpay.com
   - cdn.quickemailverification.com
@@ -1335,7 +1336,6 @@ domain_set:
   - doujin-assets.dmm.co.jp
   - downloads.coindesk.com
   - drop.ndtv.com
-  - drscdn.500px.org
   - dynamic-assets.coinbase.com
   - dynamic-cdn.cms.ayoba.me
   - dz2cdn1.dzone.com
@@ -2162,7 +2162,6 @@ domain_set:
   - media.glassdoor.com
   - media.graphassets.com
   - media.hachyderm.io
-  - media.hentaifreak.org
   - media.identity.ui.com
   - media.infosec.exchange
   - media.inhumanity.com
@@ -2324,7 +2323,6 @@ domain_set:
   - p16-hera-va.larksuitecdn.com
   - p2.bahamut.com.tw
   - pa1.aninoapps.com
-  - pacdn.500px.org
   - packages.jetbrains.team
   - panda.dmm.com
   - panel-production-libs.b-cdn.net
@@ -2468,8 +2466,6 @@ domain_set:
   - r2.dejavu.moe
   - r2.gear4music.com
   - r2.leadsy.ai
-  - r2cdn.c7d.dev
-  - r2cdn.corespeed.io
   - r2cdn.myshopline.com
   - r2cdn.perplexity.ai
   - r34xyz.b-cdn.net
@@ -2615,7 +2611,6 @@ domain_set:
   - scache.vzw.com
   - scache1.vzw.com
   - scache2.vzw.com
-  - scdn.clerk.com
   - scdn.line-apps.com
   - schema-cf.bc0a.com
   - scontent.whatsapp.net
@@ -2655,7 +2650,6 @@ domain_set:
   - secure.beer7live.com
   - secure.fanboy.co.nz
   - secure.telegraph.co.uk
-  - segapi.clerk.com
   - segment.digitalocean.com
   - sellon.shiprocket.in
   - sentry.ainopara.com
@@ -2677,7 +2671,6 @@ domain_set:
   - shell.cdn.office.net
   - shields.rbtlog.dev
   - shots.codepen.io
-  - showcase.abovemarket.com
   - sig.grumpybumpers.com
   - sigma9.scpwikicn.com
   - signal.cdnbye.com
@@ -2714,7 +2707,6 @@ domain_set:
   - spcdn.incartupsell.com
   - speedmedia2.jfrog.com
   - spoprod-a.akamaihd.net
-  - spotlightimage.biggo.com
   - sprig.figma.com
   - sr-cdn-1.shiprocket.in
   - ss7.vzw.com
@@ -3071,7 +3063,6 @@ domain_set:
   - static.xgroovy.com
   - static.xns.one
   - static.xxxshake.com
-  - static.yfsp.tv
   - static.zanmei.ai
   - static.zaobao.com
   - static.zaobao.com.sg
@@ -3295,7 +3286,6 @@ domain_set:
   - uim.9uu22.com
   - unavatar.io
   - unleash.codeium.com
-  - unlimited-cdn.waifu2x.net
   - unsubscribe-imgs.leavemealone.com
   - uos-support-files.svc.ui.com
   - updates.signal.org
